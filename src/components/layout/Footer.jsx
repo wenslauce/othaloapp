@@ -68,7 +68,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="mb-4">
-              <div className="text-white text-xl font-bold">Othalo</div>
+              <Link to="/">
+                <img src="/images/logo.png" alt="Othalo Logo" className="h-8 lg:h-10 w-auto object-contain" />
+              </Link>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
               Turning plastic waste into dignified, sustainable housing for communities worldwide.

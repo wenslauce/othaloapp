@@ -49,7 +49,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center flex-shrink-0">
-            <div className="text-white text-xl font-bold">Othalo</div>
+            <img src="/images/logo.png" alt="Othalo Logo" className="h-8 lg:h-10 w-auto object-contain" />
           </Link>
 
           {/* Desktop Nav */}

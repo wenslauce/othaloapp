@@ -161,7 +161,7 @@ export default function About() {
             </div>
             <SlotIn delay={0.15}>
               <img
-                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=85"
+                src="/images/Kids crop.jpg"
                 alt="Community impact"
                 className="w-full h-[600px] object-cover rounded-sm"
               />
@@ -176,8 +176,8 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <SlotIn>
               <img
-                src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=800&q=85"
-                alt="Frank Cato Lahti founder story"
+                src="/images/Slum house crop.png"
+                alt="Challenges in informal settlements"
                 className="w-full h-80 lg:h-96 object-cover rounded-sm"
               />
             </SlotIn>

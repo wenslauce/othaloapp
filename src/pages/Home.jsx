@@ -136,25 +136,6 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/60 to-transparent" />
         </motion.div>
 
-        {/* HUD Stats */}
-        <motion.div
-          style={{ opacity: heroOpacity }}
-          className="absolute top-1/2 right-8 lg:right-16 -translate-y-1/2 hidden md:flex flex-col gap-3"
-        >
-          {[
-            { label: 'Plastic Sequestration', value: '8 Tons/Unit' },
-            { label: 'Build Time', value: '72 Hours' },
-            { label: 'Stronger than concrete', value: '7x' },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-navy/60 backdrop-blur-sm border border-teal/40 rounded-sm px-5 py-3 text-right"
-            >
-              <div className="text-white/50 text-xs uppercase tracking-widest font-heading">{stat.label}</div>
-              <div className="text-white font-heading font-semibold text-2xl">{stat.value}</div>
-            </div>
-          ))}
-        </motion.div>
 
         <motion.div
           style={{ opacity: heroOpacity }}
