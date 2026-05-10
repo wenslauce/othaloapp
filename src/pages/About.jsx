@@ -193,7 +193,7 @@ export default function About() {
               <div className="flex items-center gap-4 border-t border-tech-slate pt-6">
                 <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-teal/30">
                   <img
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80"
+                    src="/placeholder.svg"
                     alt="Frank Cato Lahti"
                     className="w-full h-full object-cover"
                   />

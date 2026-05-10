@@ -34,7 +34,7 @@ const buildFuture = [
   {
     num: '01',
     title: 'From plastic to high quality construction',
-    desc: 'Our patented technology transforms waste polyethylene plastic into structural wall panels that are 7x stronger than concrete, fully fire resistant, and designed to last 60+ years.',
+    desc: 'Our patented technology transforms recycled plastic into structural wall panels that are 7x stronger than concrete, fully fire resistant, and designed to last 60+ years.',
   },
   {
     num: '02',
@@ -225,7 +225,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <SlotIn>
               <img
-                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&q=80"
+                src="/images/Panel 3D.jpg"
                 alt="Community impact"
                 className="w-full h-80 lg:h-96 object-cover rounded-sm"
               />
@@ -238,7 +238,7 @@ export default function Home() {
               <div className="flex items-center gap-4 border-t border-white/10 pt-6">
                 <div className="w-12 h-12 rounded-full bg-teal/20 border border-teal/40 overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80"
+                    src="/placeholder.svg"
                     alt="Dr. Vincent Kitio"
                     className="w-full h-full object-cover"
                   />

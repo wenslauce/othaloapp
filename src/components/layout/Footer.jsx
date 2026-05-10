@@ -121,9 +121,7 @@ export default function Footer() {
           <p className="text-white/30 text-xs">
             &copy; {new Date().getFullYear()} Othalo AS. All rights reserved.
           </p>
-          <p className="text-white/30 text-xs">
-            Registered in Norway — Building a sustainable future
-          </p>
+
         </div>
       </div>
     </footer>

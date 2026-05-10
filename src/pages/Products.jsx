@@ -15,19 +15,14 @@ const panelFeatures = [
   { icon: Leaf, title: 'Carbon efficient', desc: 'Made from 100% recycled plastic. No cement or steel used. Low water use in construction.' },
 ];
 
-const panelSpecs = [
-  { label: 'Material', value: '100% Recycled Polyethylene (HDPE)' },
-  { label: 'Lifespan', value: '60+ years' },
-  { label: 'Strength vs. Concrete', value: '7x stronger' },
-  { label: 'Insulation vs. Concrete', value: '3x more effective' },
-  { label: 'Fire rating', value: 'Class B1 (self-extinguishing)' },
-  { label: 'Wind resistance', value: 'Category 5 hurricane (>200 km/h)' },
-  { label: 'Seismic rating', value: 'Zone 4 earthquake resistant' },
-  { label: 'Plastic per 2BR unit', value: '~8 tonnes diverted' },
-  { label: 'Construction water use', value: 'None' },
-  { label: 'Cement / steel required', value: 'None' },
-  { label: 'Panel size', value: '2.8m x 1.2m x 0.12m' },
-  { label: 'Weight per panel', value: '~28 kg' },
+const comparisonData = [
+  { particular: 'Market ready', othalo: 'full', threeD: 'none', triple: 'partial', traditional: 'full' },
+  { particular: 'Low production time', othalo: 'full', threeD: 'none', triple: 'none', traditional: 'partial' },
+  { particular: 'Recyclable', othalo: 'full', threeD: 'partial', triple: 'partial', traditional: 'none' },
+  { particular: 'Sustainable', othalo: 'full', threeD: 'partial', triple: 'partial', traditional: 'none' },
+  { particular: 'Accessible raw materials', othalo: 'full', threeD: 'none', triple: 'partial', traditional: 'none' },
+  { particular: 'Low cost', othalo: 'full', threeD: 'none', triple: 'none', traditional: 'partial' },
+  { particular: 'Industrial production', othalo: 'full', threeD: 'none', triple: 'none', traditional: 'partial' },
 ];
 
 const productLines = [
@@ -68,7 +63,7 @@ export default function Products() {
       {/* Hero */}
       <section className="relative bg-navy py-28 lg:py-36 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1509395062183-a6ab13caa6e4?w=1800&q=80" alt="" className="w-full h-full object-cover" />
+          <img src="/images/The House Kenya crop.png" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-navy/80" />
         </div>
 
@@ -127,7 +122,7 @@ export default function Products() {
                 />
                 <div className="absolute bottom-4 left-4 bg-navy/80 backdrop-blur-sm border border-white/10 rounded-sm px-4 py-3">
                   <div className="text-xs text-white/50 uppercase tracking-widest font-heading">Material</div>
-                  <div className="font-heading font-semibold text-white text-sm">100% Recycled HDPE</div>
+                  <div className="font-heading font-semibold text-white text-sm">100% Recycled Plastic</div>
                 </div>
               </div>
             </SlotIn>
@@ -162,26 +157,57 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Technical Spec Sheet */}
-      <section className="bg-surface py-24 lg:py-32">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
+      {/* Market Leading Technology */}
+      <section className="bg-teal py-24 lg:py-32">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <div className="mb-12">
-              <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
-                <span className="w-8 h-px bg-teal" />
-                Specification Sheet
-              </div>
-              <h2 className="font-heading text-3xl font-semibold text-navy">Panel Technical Specifications</h2>
-            </div>
+            <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-white mb-12 text-center">
+              Market leading technology and innovation
+            </h2>
           </SlotIn>
-          <SlotIn delay={0.08}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-tech-slate rounded-sm overflow-hidden border border-tech-slate">
-              {panelSpecs.map((spec, i) => (
-                <div key={spec.label} className={`bg-white px-6 py-4 flex items-center justify-between gap-4 ${i % 2 === 0 ? '' : 'bg-surface'}`}>
-                  <span className="text-muted-foreground text-sm">{spec.label}</span>
-                  <span className="font-heading font-semibold text-navy text-sm text-right">{spec.value}</span>
-                </div>
-              ))}
+          <SlotIn delay={0.1}>
+            <div className="overflow-x-auto rounded-sm border border-white/20 bg-white">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-navy text-white text-xs font-semibold tracking-wide">
+                    <th className="text-left py-4 px-6 font-heading">Particulars</th>
+                    <th className="text-center py-4 px-6 font-heading">Othalo</th>
+                    <th className="text-center py-4 px-6 font-heading">3D Printing</th>
+                    <th className="text-center py-4 px-6 font-heading leading-tight max-w-[120px]">Triple Panel<br/>Buildings</th>
+                    <th className="text-center py-4 px-6 font-heading leading-tight max-w-[120px]">Traditional<br/>construction</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparisonData.map((row, i) => (
+                    <tr
+                      key={row.particular}
+                      className={`border-b border-navy/10 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}
+                    >
+                      <td className="py-4 px-6 text-left font-semibold text-navy/90 font-heading text-xs">{row.particular}</td>
+                      <td className="py-4 px-6 text-center text-base">
+                        {row.othalo === 'full' && <span className="text-teal font-bold">✓</span>}
+                        {row.othalo === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
+                      </td>
+                      <td className="py-4 px-6 text-center text-base">
+                        {row.threeD === 'full' && <span className="text-teal font-bold">✓</span>}
+                        {row.threeD === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
+                      </td>
+                      <td className="py-4 px-6 text-center text-base">
+                        {row.triple === 'full' && <span className="text-teal font-bold">✓</span>}
+                        {row.triple === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
+                      </td>
+                      <td className="py-4 px-6 text-center text-base">
+                        {row.traditional === 'full' && <span className="text-teal font-bold">✓</span>}
+                        {row.traditional === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-6 flex justify-end text-white/90 text-xs gap-4 font-medium font-heading">
+              <span className="flex items-center gap-1"><span className="font-bold text-white text-sm">✓</span> Fulfilled</span>
+              <span className="flex items-center gap-1"><span className="font-bold text-white text-sm">(✓)</span> Partially fulfilled</span>
             </div>
           </SlotIn>
         </div>

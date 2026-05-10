@@ -96,6 +96,56 @@ export default function HousingDevelopers() {
         </div>
       </section>
 
+      {/* Challenge & Solution */}
+      <section className="bg-surface py-20 lg:py-28 border-b border-tech-slate">
+        <div className="max-w-8xl mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <SlotIn>
+              <div className="inline-flex items-center gap-2 text-navy/50 text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
+                <span className="w-8 h-px bg-navy/20" />
+                The Challenge
+              </div>
+              <h2 className="font-heading text-3xl font-semibold text-navy mb-6">Market pressures restricting growth</h2>
+              <ul className="space-y-4">
+                {[
+                  'Rising costs, high price volatility, and shrinking margins',
+                  'Project delays and unpredictable timelines',
+                  'Shortages in steel, cement, and skilled labour',
+                  'Complex and inefficient construction methods to scale',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-muted-foreground leading-relaxed">
+                    <span className="w-1.5 h-1.5 bg-navy/30 rounded-full flex-shrink-0 mt-2.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </SlotIn>
+            <SlotIn delay={0.15}>
+              <div className="bg-navy rounded-sm p-8 lg:p-10 text-white shadow-lg">
+                <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
+                  <span className="w-8 h-px bg-teal" />
+                  The Othalo Solution
+                </div>
+                <h2 className="font-heading text-3xl font-semibold text-white mb-6">A faster, cost-efficient model</h2>
+                <ul className="space-y-4">
+                  {[
+                    'Faster, more cost-efficient construction',
+                    'Prefabricated modular systems made from recycled plastic',
+                    'Simplified on-site execution with lightweight, scalable components',
+                    'Flexible designs adapt to your project, market, and regulation',
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-white/80 leading-relaxed">
+                      <span className="w-1.5 h-1.5 bg-teal rounded-full flex-shrink-0 mt-2.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </SlotIn>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-8xl mx-auto px-6 lg:px-12">

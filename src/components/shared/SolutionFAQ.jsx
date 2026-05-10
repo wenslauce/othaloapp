@@ -6,7 +6,7 @@ import SlotIn from '@/components/shared/SlotIn';
 const faqs = [
   {
     q: 'What is the Othalo panel made from?',
-    a: 'Othalo panels are manufactured from 100% recycled High-Density Polyethylene (HDPE) plastic — primarily sourced from collected ocean-bound and landfill plastic waste. No virgin plastic, cement, or steel is used in the structural system.',
+    a: 'Othalo panels are manufactured from 100% recycled plastic — primarily sourced from collected ocean-bound and landfill plastic waste. No virgin plastic, cement, or steel is used in the structural system.',
   },
   {
     q: 'How does the building system meet international housing standards?',
@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: 'What is the lifespan of an Othalo structure?',
-    a: 'Othalo panels are rated for a minimum of 60 years under normal environmental conditions. HDPE does not rot, corrode, or degrade from moisture exposure, making it particularly durable in tropical, coastal, and high-humidity climates.',
+    a: 'Othalo panels are rated for a minimum of 60 years under normal environmental conditions. The recycled plastic does not rot, corrode, or degrade from moisture exposure, making it particularly durable in tropical, coastal, and high-humidity climates.',
   },
   {
     q: 'How is thermal performance ensured?',
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'Is the material safe — are there any harmful emissions?',
-    a: 'HDPE is classified as one of the safest plastics. It is food-grade certified, does not off-gas under normal conditions, and does not leach harmful chemicals. Othalo panels have been tested to confirm no volatile organic compound (VOC) emissions in occupied environments.',
+    a: 'The recycled plastic we use is classified as one of the safest plastics. It is food-grade certified, does not off-gas under normal conditions, and does not leach harmful chemicals. Othalo panels have been tested to confirm no volatile organic compound (VOC) emissions in occupied environments.',
   },
   {
     q: 'How does Othalo contribute to sustainability and carbon reduction?',
@@ -72,6 +72,10 @@ function FAQItem({ item, index }) {
 }
 
 export default function SolutionFAQ() {
+  // Temporarily disabled FAQ section across all pages
+  return null;
+
+  /*
   return (
     <section className="bg-navy py-24 lg:py-32">
       <div className="max-w-8xl mx-auto px-6 lg:px-12">
@@ -100,4 +104,5 @@ export default function SolutionFAQ() {
       </div>
     </section>
   );
+  */
 }
