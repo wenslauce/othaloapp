@@ -3,7 +3,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Shield, Zap, Leaf, ArrowRight, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { motion, AnimatePresence } from 'framer-motion';
 import SlotIn from '@/components/shared/SlotIn';
+import ImageSlider from '@/components/shared/ImageSlider';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
 
 const panelFeatures = [
@@ -30,32 +32,29 @@ const panelSpecs = [
 
 const productLines = [
   {
-    name: 'The Community 1a',
-    desc: 'Single-family 2-bedroom unit, 42m². Optimized for rapid urban deployment and low-income housing programs.',
-    img: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=700&q=80',
-    specs: ['42 m²', '2 Bedrooms', '72-hr build', '8T plastic'],
-    badge: 'Flagship',
+    name: 'The Community',
+    desc: 'Single-family and multi-family units optimized for rapid urban deployment and low-income housing programs.',
+    images: ['/images/The community 1a.png', '/images/The community 2a.png', '/images/The community 2c.png'],
   },
   {
-    name: 'The Community 2c',
-    desc: 'Multi-family block of 6 units. Designed for organized housing developments and community-scale projects.',
-    img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80',
-    specs: ['6 Units', '252 m² total', '7-day build', '48T plastic'],
-    badge: 'Most Deployed',
+    name: 'The District',
+    desc: 'Medium-density residential clusters for families. Full infrastructure integration including utilities.',
+    images: ['/images/The District 2a.png', '/images/The District 2b.png'],
   },
   {
-    name: 'The District 2a',
-    desc: 'Medium-density residential cluster for 12–24 families. Full infrastructure integration including utilities.',
-    img: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&q=80',
-    specs: ['24 units', '1,008 m²', '21-day build', '192T plastic'],
-    badge: null,
+    name: 'The Emergency Shelter',
+    desc: 'Rapid deployment emergency housing for disaster relief and humanitarian aid missions.',
+    images: ['/images/The Emergency Shelter 1.png', '/images/The Emergency Shelter 1a.png', '/images/The Emergency Shelter 1b.png'],
   },
   {
-    name: 'Worker Accommodation 6x',
+    name: 'The Medical Units',
+    desc: 'Specialized healthcare modules including clinics, isolation wards, and diagnostic centers.',
+    images: ['/images/The Medical Unit 3.png', '/images/The Medical Unit 3a.png', '/images/The Medical Unit 3b.png'],
+  },
+  {
+    name: 'The Worker Accommodation',
     desc: 'Purpose-built worker accommodation for construction sites, mining operations, and industrial deployment.',
-    img: 'https://images.unsplash.com/photo-1509395062183-a6ab13caa6e4?w=700&q=80',
-    specs: ['6 rooms', '144 m²', '96-hr build', '24T plastic'],
-    badge: 'Industrial',
+    images: ['/images/The Worker Accomodation 5a.png', '/images/The Worker Accomodation 5b.png', '/images/The Worker Accomodation 6a.png'],
   },
 ];
 
@@ -122,8 +121,8 @@ export default function Products() {
             <SlotIn>
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=85"
-                  alt="Othalo structural panel"
+                  src="/images/Panels in the factory.png"
+                  alt="Othalo structural panel manufacturing"
                   className="w-full h-[480px] object-cover rounded-sm"
                 />
                 <div className="absolute bottom-4 left-4 bg-navy/80 backdrop-blur-sm border border-white/10 rounded-sm px-4 py-3">
@@ -207,24 +206,15 @@ export default function Products() {
               <SlotIn key={product.name} delay={i * 0.08}>
                 <div className="group bg-surface border border-tech-slate rounded-sm overflow-hidden hover:shadow-lg hover:border-teal/30 transition-all duration-300">
                   <div className="relative aspect-video overflow-hidden">
-                    <img src={product.img} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                    {product.badge && (
-                      <div className="absolute top-3 left-3 bg-teal text-white text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1 rounded-sm font-heading">
-                        {product.badge}
-                      </div>
-                    )}
+                    {/* Auto-sliding Image Gallery */}
+                    <ImageSlider images={product.images} name={product.name} />
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col h-full">
                     <h3 className="font-heading font-semibold text-navy text-lg mb-2">{product.name}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">{product.desc}</p>
-                    <div className="flex flex-wrap gap-2 mb-5">
-                      {product.specs.map((spec) => (
-                        <span key={spec} className="bg-tech-slate text-navy text-xs font-semibold font-heading px-3 py-1 rounded-sm">{spec}</span>
-                      ))}
-                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">{product.desc}</p>
                     <Button
                       onClick={() => setQuoteOpen(true)}
-                      className="bg-teal hover:bg-teal-light text-white font-semibold px-5 h-9 rounded-sm text-xs"
+                      className="bg-teal hover:bg-teal-light text-white font-semibold px-5 h-9 rounded-sm text-xs self-start"
                     >
                       Get a Quote
                       <ArrowRight className="ml-1.5 w-3.5 h-3.5" />

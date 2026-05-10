@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import { ArrowRight, Recycle, Clock, Shield, Leaf, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
+import ImageSlider from '@/components/shared/ImageSlider';
 
 const techFeatures = [
   {
@@ -63,30 +64,30 @@ const comparisonRows = [
   { feature: 'UN-Habitat certified', othalo: 'Yes', concrete: 'Varies', steel: 'Varies', timber: 'Varies' },
 ];
 
-const galleryImages = [
+const galleryCategories = [
   {
-    url: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=800&q=80',
-    label: 'The Community 1a',
+    label: 'The Community',
+    images: ['/images/The community 1a.png', '/images/The community 2a.png', '/images/The community 2c.png'],
   },
   {
-    url: 'https://images.unsplash.com/photo-1509395062183-a6ab13caa6e4?w=800&q=80',
+    label: 'The District',
+    images: ['/images/The District 2a.png', '/images/The District 2b.png'],
+  },
+  {
+    label: 'Emergency Shelter',
+    images: ['/images/The Emergency Shelter 1.png', '/images/The Emergency Shelter 1a.png', '/images/The Emergency Shelter 1b.png'],
+  },
+  {
+    label: 'Medical Units',
+    images: ['/images/The Medical Unit 3.png', '/images/The Medical Unit 3a.png', '/images/The Medical Unit 3b.png'],
+  },
+  {
     label: 'Worker Accommodation',
+    images: ['/images/The Worker Accomodation 5a.png', '/images/The Worker Accomodation 5b.png', '/images/The Worker Accomodation 6a.png'],
   },
   {
-    url: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
-    label: 'The Community 2c',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
-    label: 'The District 2a',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=800&q=80',
-    label: 'Township Housing',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1593696140826-c58b021acf8b?w=800&q=80',
-    label: 'Urban Development',
+    label: 'Factory Production',
+    images: ['/images/Panels in the factory.png', '/images/Panel 3D.jpg'],
   },
 ];
 
@@ -290,17 +291,13 @@ export default function Home() {
           </div>
 
           {/* Gallery */}
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-            {galleryImages.map((img, i) => (
-              <SlotIn key={img.label} delay={i * 0.06}>
-                <div className="relative overflow-hidden rounded-sm aspect-video group cursor-pointer">
-                  <img
-                    src={img.url}
-                    alt={img.label}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <span className="text-white text-sm font-heading font-medium p-4">{img.label}</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {galleryCategories.map((cat, i) => (
+              <SlotIn key={cat.label} delay={i * 0.06}>
+                <div className="relative overflow-hidden rounded-sm aspect-video group cursor-pointer border border-tech-slate">
+                  <ImageSlider images={cat.images} name={cat.label} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end z-10 pointer-events-none">
+                    <span className="text-white text-sm font-heading font-medium p-4">{cat.label}</span>
                   </div>
                 </div>
               </SlotIn>
