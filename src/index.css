@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 61% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 61% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 61% 15%;
+    --primary: 174 100% 21%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 61% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 214 32% 91%;
+    --muted-foreground: 215 25% 40%;
+    --accent: 174 100% 21%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 174 100% 21%;
+    --radius: 0.25rem;
+
+    /* Othalo Brand Tokens */
+    --navy: #0D1F3C;
+    --teal: #006D63;
+    --teal-light: #008577;
+    --slate-tech: #E2E8F0;
+    --surface: #F8FAFC;
+  }
+
+  .dark {
+    --background: 215 61% 10%;
+    --foreground: 0 0% 98%;
+    --card: 215 61% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 215 61% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 174 100% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 215 30% 20%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 174 100% 25%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 30% 20%;
+    --input: 215 30% 20%;
+    --ring: 174 100% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-navy {
+    color: #0D1F3C;
+  }
+
+  .bg-navy {
+    background-color: #0D1F3C;
+  }
+
+  .text-teal {
+    color: #006D63;
+  }
+
+  .bg-teal {
+    background-color: #006D63;
+  }
+
+  .bg-teal-light {
+    background-color: #008577;
+  }
+
+  .border-teal {
+    border-color: #006D63;
+  }
+
+  .bg-tech-slate {
+    background-color: #E2E8F0;
+  }
+
+  .bg-surface {
+    background-color: #F8FAFC;
+  }
+
+  .slot-in {
+    will-change: transform, opacity;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #006D63;
+  border-radius: 3px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
