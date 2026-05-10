@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
 import SolutionFAQ from '@/components/shared/SolutionFAQ';
+import SEOHead from '@/components/shared/SEOHead';
 
 const benefits = [
   {
@@ -59,6 +60,12 @@ export default function Corporations() {
 
   return (
     <div className="overflow-hidden">
+      <SEOHead
+        title="Corporate ESG & CSR Solutions"
+        description="Turnkey ESG platform for corporations. Convert plastic waste into homes with measurable, verifiable impact. Endorsed by UN-Habitat for social and environmental change."
+        canonical="https://othalo.com/solutions/corporations"
+        keywords={['corporate ESG', 'CSR programs', 'plastic waste impact', 'social impact housing', 'environmental reporting']}
+      />
       <GetQuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} context="corporations" />
 
       {/* Hero */}

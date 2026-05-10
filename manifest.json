@@ -1,9 +1,16 @@
 {
-  "name": "Othalo",
+  "name": "Othalo — Sustainable Housing",
   "short_name": "Othalo",
-  "description": "Othalo Application",
+  "description": "Turning plastic waste into dignified, sustainable housing for communities worldwide.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000"
+  "background_color": "#0A1628",
+  "theme_color": "#2DD4A8",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
 }

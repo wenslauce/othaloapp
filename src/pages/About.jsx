@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Linkedin, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
+import SEOHead from '@/components/shared/SEOHead';
 
 const team = [
   {
@@ -11,6 +12,7 @@ const team = [
     img: '/placeholder.svg',
     linkedin: '#',
     contribution: 'Vision & Strategy',
+    slug: 'frank-cato-lahti',
   },
   {
     name: 'Claus Skadkjaer',
@@ -18,6 +20,7 @@ const team = [
     img: '/placeholder.svg',
     linkedin: '#',
     contribution: 'Operations',
+    slug: 'claus-skadkjaer',
   },
   {
     name: 'Martin Dokkedal',
@@ -25,6 +28,7 @@ const team = [
     img: '/placeholder.svg',
     linkedin: '#',
     contribution: 'Supply Chain',
+    slug: 'martin-dokkedal',
   },
   {
     name: 'Thomas Meidell Laan',
@@ -32,6 +36,7 @@ const team = [
     img: '/placeholder.svg',
     linkedin: '#',
     contribution: 'Legal & Compliance',
+    slug: 'thomas-meidell-laan',
   },
   {
     name: 'Kjell Steen',
@@ -39,6 +44,7 @@ const team = [
     img: '/placeholder.svg',
     linkedin: '#',
     contribution: 'Manufacturing',
+    slug: 'kjell-steen',
   },
   {
     name: 'Bengt Erling Berg',
@@ -46,6 +52,7 @@ const team = [
     img: '/placeholder.svg',
     linkedin: '#',
     contribution: 'Engineering',
+    slug: 'bengt-erling-berg',
   },
   {
     name: 'Stephane Bernard',
@@ -53,6 +60,7 @@ const team = [
     img: '/placeholder.svg',
     linkedin: '#',
     contribution: 'Business Development',
+    slug: 'stephane-bernard',
   },
   {
     name: 'Wenslauce Chengo',
@@ -60,6 +68,7 @@ const team = [
     img: '/placeholder.svg',
     linkedin: '#',
     contribution: 'Kenya & PR',
+    slug: 'wenslauce-chengo',
   },
 ];
 
@@ -103,6 +112,48 @@ const impacts = [
 export default function About() {
   return (
     <div className="overflow-hidden">
+      <SEOHead
+        title="About Othalo — Our Mission, Team & Impact"
+        description="Meet the team behind Othalo. Learn about our mission to solve the global housing crisis using recycled plastic waste and creating social impact."
+        canonical="https://othalo.com/about"
+        keywords={[
+          'Othalo team', 'Frank Cato Lahti', 'Claus Skadkjaer', 'Martin Dokkedal', 
+          'Thomas Meidell Laan', 'Kjell Steen', 'Bengt Erling Berg', 'Stephane Bernard', 
+          'Wenslauce Chengo', 'sustainable housing mission', 'recycled plastic impact'
+        ]}
+      />
+
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Othalo",
+          "url": "https://othalo.com",
+          "logo": "https://othalo.com/images/logo.png",
+          "description": "Othalo transforms recycled plastic into affordable, durable housing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Oslo",
+            "addressCountry": "Norway"
+          },
+          "founders": [
+            { "@type": "Person", "name": "Frank Cato Lahti" },
+            { "@type": "Person", "name": "Claus Skadkjaer" }
+          ],
+          "employee": team.map(member => ({
+            "@type": "Person",
+            "name": member.name,
+            "jobTitle": member.title,
+            "url": `https://othalo.com/about#${member.slug}`,
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Othalo"
+            },
+            "sameAs": member.linkedin !== '#' ? [member.linkedin] : []
+          }))
+        })}
+      </script>
       {/* Vision / Mission / Values Hero */}
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-8xl mx-auto px-6 lg:px-12">
@@ -228,7 +279,10 @@ export default function About() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 mt-14">
             {team.map((member, i) => (
               <SlotIn key={member.name} delay={i * 0.07}>
-                <div className="group relative overflow-hidden rounded-sm bg-surface border border-tech-slate hover:border-teal/30 hover:shadow-lg transition-all duration-300">
+                <div 
+                  id={member.slug}
+                  className="group relative overflow-hidden rounded-sm bg-surface border border-tech-slate hover:border-teal/30 hover:shadow-lg transition-all duration-300 scroll-mt-24"
+                >
                   {/* 4:5 aspect ratio image */}
                   <div className="aspect-[4/5] overflow-hidden relative">
                     <img

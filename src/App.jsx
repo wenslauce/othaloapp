@@ -17,6 +17,8 @@ import Corporations from '@/pages/solutions/Corporations';
 import Contact from '@/pages/Contact';
 import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import TermsOfService from '@/pages/TermsOfService';
+import ScrollToTop from '@/components/shared/ScrollToTop';
+import BackToTop from '@/components/shared/BackToTop';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -68,6 +70,8 @@ function App() {
       <AuthProvider>
         <QueryClientProvider client={queryClientInstance}>
           <Router>
+            <ScrollToTop />
+            <BackToTop />
             <AuthenticatedApp />
           </Router>
           <Toaster />

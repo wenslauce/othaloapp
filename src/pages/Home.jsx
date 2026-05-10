@@ -6,6 +6,7 @@ import { ArrowRight, Recycle, Clock, Shield, Leaf, ChevronRight } from 'lucide-r
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import ImageSlider from '@/components/shared/ImageSlider';
+import SEOHead from '@/components/shared/SEOHead';
 
 const techFeatures = [
   {
@@ -111,6 +112,12 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
+      <SEOHead
+        title="Affordable, Sustainable Homes from Recycled Plastic"
+        description="Othalo transforms recycled plastic into affordable, durable housing. Patented panel technology. 72-hour build time. UN-Habitat endorsed."
+        canonical="https://othalo.com/"
+        keywords={['affordable housing', 'recycled plastic homes', 'sustainable construction', 'modular housing Africa', 'UN-Habitat', 'plastic waste solution']}
+      />
       {/* Hero */}
       <section ref={heroRef} className="relative h-[90vh] min-h-[640px] flex items-center overflow-hidden">
         <motion.div

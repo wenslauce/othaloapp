@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
 import SolutionFAQ from '@/components/shared/SolutionFAQ';
+import SEOHead from '@/components/shared/SEOHead';
 
 const benefits = [
   {
@@ -54,6 +55,12 @@ export default function Governments() {
 
   return (
     <div className="overflow-hidden">
+      <SEOHead
+        title="Government Housing Solutions"
+        description="National and municipal affordable housing programs using Othalo's recycled plastic panel system. Solve the housing crisis with sustainable, cost-effective technology."
+        canonical="https://othalo.com/solutions/governments"
+        keywords={['government housing', 'affordable housing policy', 'national housing program', 'municipal housing solutions', 'sustainable urban development']}
+      />
       <GetQuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} context="governments" />
 
       {/* Hero */}

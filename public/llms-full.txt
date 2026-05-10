@@ -1,0 +1,174 @@
+# Othalo — Full Context
+
+> Turning plastic waste into dignified, sustainable housing for communities worldwide.
+
+## About Othalo
+
+Othalo AS is a Norwegian technology company founded to address two of the world's most critical challenges simultaneously: the global plastic waste crisis and the affordable housing deficit. The company holds a patented manufacturing technology that converts recycled plastic waste into high-performance structural building panels.
+
+Othalo is endorsed by UN-Habitat for a Better Urban Future, validating its approach as a globally recognized solution to urban housing challenges.
+
+**Headquarters**: Oslo, Norway  
+**Registration**: Norway (Othalo AS)  
+**Contact**: contact@othalo.com  
+**Website**: https://othalo.com
+
+---
+
+## The Technology
+
+### Othalo Panel System
+
+The Othalo Panel is a structural wall panel manufactured from 100% recycled plastic. The manufacturing process uses no cement, no steel, and minimal water — making it one of the most environmentally efficient construction systems available.
+
+**Technical Specifications**:
+| Specification | Value |
+|---|---|
+| Material | 100% Recycled Plastic |
+| Lifespan | 60+ years |
+| Strength vs. Concrete | 7x stronger |
+| Thermal Insulation vs. Concrete | 3x more effective |
+| Fire Rating | Class B1 (self-extinguishing) |
+| Wind Resistance | Category 5 hurricane (>200 km/h) |
+| Seismic Rating | Zone 4 earthquake resistant |
+| Plastic diverted per 2BR unit | ~8 tonnes |
+| Construction water use | None |
+| Cement/steel required | None |
+| Panel size | 2.8m × 1.2m × 0.12m |
+| Weight per panel | ~28 kg |
+
+### Build Speed
+
+A complete 2-bedroom home can be assembled from raw Othalo panels in as little as 72 hours using local, unskilled labour. One standard shipping container of panels provides all the materials needed for a complete 2-bedroom home.
+
+---
+
+## Product Lines
+
+### 1. The Community
+Single and multi-family residential units designed for rapid urban deployment and low-income housing programs.
+- Community 1a: Single 2-bedroom unit (42m²)
+- Community 2c: 6-unit block (252m²)
+
+### 2. The District
+Medium-density residential clusters designed for families, with full infrastructure integration.
+- District 2a: 24-unit cluster (1,008m²)
+
+### 3. The Emergency Shelter
+Rapid-deployment emergency housing for disaster relief and humanitarian aid. Engineered for speed and durability in crisis conditions.
+
+### 4. The Medical Units
+Specialized healthcare modules including:
+- Primary clinics
+- Isolation wards
+- Diagnostic centers
+
+### 5. The Worker Accommodation
+Purpose-built accommodation for:
+- Construction site workers
+- Mining operation workers
+- Industrial and oil & gas workers
+
+---
+
+## Solutions
+
+### For Governments
+National and municipal governments face housing deficits affecting millions of citizens. Othalo provides a scalable, cost-effective alternative to traditional concrete construction that meets international building standards and can be deployed rapidly at scale.
+
+**Key Benefits**:
+- Up to 70% cost reduction vs. concrete
+- 72-hour assembly per unit
+- Meets international building codes and local regulations
+- Recyclable and circular — panels can be repurposed
+- Measurable SDG impact data for reporting
+
+**Target Applications**:
+- National affordable housing programs
+- Municipal resettlement projects
+- Emergency and disaster relief housing
+- Military and public sector accommodation
+
+### For Housing Developers
+Private housing developers face rising material costs, supply chain disruptions, skilled labour shortages, and shrinking margins. Othalo's prefabricated modular system reduces these pressures significantly.
+
+**Key Benefits**:
+- Faster construction = faster revenue recognition
+- Lower cost of materials vs. steel/concrete
+- Simplified logistics — panels shipped in containers
+- Flexible design configurations for any market
+- ESG-aligned product for green financing
+
+### For Corporations
+Corporations with ESG or CSR mandates need credible, scalable, and verifiable programs to demonstrate environmental and social impact. Othalo's turnkey ESG platform links waste collection to housing delivery.
+
+**Key Benefits**:
+- Verified plastic diversion from environment
+- Tangible social impact: homes for underserved communities
+- Scalable across geographies
+- Full impact reporting and documentation for ESG disclosure
+- Endorsed by UN-Habitat — globally recognized credibility
+
+---
+
+## Team
+
+| Name | Title |
+|---|---|
+| Frank Cato Lahti | Founder & Chief Executive Officer |
+| Claus Skadkjaer | Founder, Chief Operating Officer |
+| Martin Dokkedal | Chief Supply Chain Officer |
+| Thomas Meidell Laan | Chief Legal Officer |
+| Kjell Steen | Head of Production |
+| Bengt Erling Berg | Head of Technical Support |
+| Stephane Bernard | Chief Commercial Officer |
+| Wenslauce Chengo | Country Manager Kenya & Public Relations |
+
+---
+
+## Impact & Sustainability
+
+### UN Sustainable Development Goals
+
+Othalo's model aligns with 9 of the 17 UN Sustainable Development Goals:
+- **SDG 1**: No Poverty — affordable housing for low-income communities
+- **SDG 6**: Clean Water — construction requires no water
+- **SDG 8**: Decent Work — local job creation at every site
+- **SDG 9**: Industry & Innovation — patented technology
+- **SDG 10**: Reduced Inequalities — housing access for marginalized communities
+- **SDG 11**: Sustainable Cities — scalable urban housing solutions
+- **SDG 12**: Responsible Consumption — recycled plastic as raw material
+- **SDG 13**: Climate Action — no cement, no steel, carbon-efficient production
+- **SDG 17**: Partnerships — UN-Habitat and government partnerships
+
+### Environmental Metrics (per 2-bedroom unit)
+- ~8 tonnes of plastic diverted from environment
+- Zero cement used in construction
+- Zero steel required in structure
+- Near-zero water use in construction process
+
+---
+
+## Competitive Analysis
+
+| Particulars | Othalo | 3D Printing | Triple Panel Buildings | Traditional Construction |
+|---|---|---|---|---|
+| Market ready | ✓ | | (✓) | ✓ |
+| Low production time | ✓ | | | (✓) |
+| Recyclable | ✓ | (✓) | (✓) | |
+| Sustainable | ✓ | (✓) | (✓) | |
+| Accessible raw materials | ✓ | | (✓) | |
+| Low cost | ✓ | | | (✓) |
+| Industrial production | ✓ | | | (✓) |
+
+*✓ = Fulfilled, (✓) = Partially fulfilled*
+
+---
+
+## Contact & Quote
+
+To request a product quote or explore partnership opportunities:
+- **Website**: https://othalo.com/contact
+- **Email**: contact@othalo.com
+- **Quote Form**: https://othalo.com/products (click "Get a Product Quote")
+- **Response Time**: Within 2 business days

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://othalo.com/sitemap.xml
+
+# Crawl-delay (optional, be respectful)
+Crawl-delay: 1

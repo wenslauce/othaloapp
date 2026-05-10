@@ -5,6 +5,7 @@ import { Building2, TrendingUp, Briefcase, ArrowRight, ChevronRight } from 'luci
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
+import SEOHead from '@/components/shared/SEOHead';
 
 const solutions = [
   {
@@ -72,6 +73,12 @@ export default function Solutions() {
 
   return (
     <div className="overflow-hidden">
+      <SEOHead
+        title="Solutions — Governments, Developers & Corporations"
+        description="Scalable housing solutions for governments, housing developers, and corporations. Deploy sustainable homes at scale with Othalo's recycled plastic panel system."
+        canonical="https://othalo.com/solutions"
+        keywords={['housing solutions', 'scalable housing', 'government housing programs', 'developer housing solutions', 'corporate ESG housing']}
+      />
       <GetQuoteModal open={!!quoteContext} onClose={() => setQuoteContext(null)} context={quoteContext} />
 
       {/* Hero */}

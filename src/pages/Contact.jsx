@@ -1,6 +1,6 @@
 // Contact page
 import { useState } from 'react';
-import { Mail, MapPin, Phone, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, MapPin, Phone, CheckCircle, AlertCircle, XCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -9,6 +9,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import SlotIn from '@/components/shared/SlotIn';
 import { useTranslation } from 'react-i18next';
 import { COUNTRIES, validatePhone, validateEmail } from '@/lib/countries';
+import SEOHead from '@/components/shared/SEOHead';
+import { Turnstile } from '@marsidev/react-turnstile';
 
 function FieldError({ msg }) {
   if (!msg) return null;
@@ -23,7 +25,12 @@ function FieldError({ msg }) {
 export default function Contact() {
   const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
-  const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [apiError, setApiError] = useState('');
+  const [errors, setErrors] = useState({
+    name: '', email: '', phone: '', country: '', profileType: '', enquiryType: '', message: ''
+  });
+  const [token, setToken] = useState(null);
   const [form, setForm] = useState({
     name: '', email: '', dialCode: '', phone: '', org: '',
     country: '', profileType: '', enquiryType: '',
@@ -33,6 +40,7 @@ export default function Contact() {
   const set = (key, val) => {
     setForm(f => ({ ...f, [key]: val }));
     if (errors[key]) setErrors(e => ({ ...e, [key]: '' }));
+    if (apiError) setApiError('');
   };
 
   const showSolutionField = form.enquiryType === 'solutions' || form.enquiryType === 'partnership';
@@ -51,11 +59,30 @@ export default function Contact() {
     return errs;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setApiError('');
     const errs = validate();
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
-    setSubmitted(true);
+    if (!token) { setApiError('Please complete the security check.'); return; }
+
+    setLoading(true);
+    try {
+      // @ts-ignore
+      const apiBase = (import.meta.env && import.meta.env.VITE_API_BASE_URL) || '';
+      const res = await fetch(`${apiBase}/api/send-contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, token }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Submission failed');
+      setSubmitted(true);
+    } catch (err) {
+      setApiError(err.message || 'Something went wrong. Please email contact@othalo.com');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const contactInfo = [
@@ -66,6 +93,12 @@ export default function Contact() {
 
   return (
     <div className="overflow-hidden">
+      <SEOHead
+        title="Contact Othalo — Partner with Us"
+        description="Get in touch with Othalo. Whether you're a government, developer, or corporation, we're here to help you deploy sustainable housing solutions."
+        canonical="https://othalo.com/contact"
+        keywords={['contact Othalo', 'Othalo partnerships', 'housing project inquiry', 'recycled plastic housing quote']}
+      />
       {/* Hero */}
       <section className="bg-navy py-24 lg:py-28">
         <div className="max-w-8xl mx-auto px-6 lg:px-12">
@@ -124,12 +157,12 @@ export default function Contact() {
                     {/* Name + Email */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
-                        <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.name')} *</Label>
+                        <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{`${t('contact.name')} *`}</Label>
                         <Input value={form.name} onChange={e => set('name', e.target.value)} placeholder="Your name" className={`h-11 rounded-sm ${errors.name ? 'border-destructive' : ''}`} />
                         <FieldError msg={errors.name} />
                       </div>
                       <div>
-                        <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.email')} *</Label>
+                        <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{`${t('contact.email')} *`}</Label>
                         <Input type="email" value={form.email} onChange={e => set('email', e.target.value)} placeholder="you@org.com" className={`h-11 rounded-sm ${errors.email ? 'border-destructive' : ''}`} />
                         <FieldError msg={errors.email} />
                       </div>
@@ -170,7 +203,7 @@ export default function Contact() {
                     {/* Country + Profile */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
-                        <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.country')} *</Label>
+                        <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{`${t('contact.country')} *`}</Label>
                         <Select onValueChange={v => set('country', v)}>
                           <SelectTrigger className={`h-11 rounded-sm ${errors.country ? 'border-destructive' : ''}`}>
                             <SelectValue placeholder={t('contact.select_country')} />
@@ -184,7 +217,7 @@ export default function Contact() {
                         <FieldError msg={errors.country} />
                       </div>
                       <div>
-                        <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.profile')} *</Label>
+                        <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{`${t('contact.profile')} *`}</Label>
                         <Select onValueChange={v => set('profileType', v)}>
                           <SelectTrigger className={`h-11 rounded-sm ${errors.profileType ? 'border-destructive' : ''}`}>
                             <SelectValue placeholder={t('contact.select_profile')} />
@@ -205,7 +238,7 @@ export default function Contact() {
 
                     {/* Enquiry Type */}
                     <div>
-                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.enquiry')} *</Label>
+                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{`${t('contact.enquiry')} *`}</Label>
                       <Select onValueChange={v => set('enquiryType', v)}>
                         <SelectTrigger className={`h-11 rounded-sm ${errors.enquiryType ? 'border-destructive' : ''}`}>
                           <SelectValue placeholder={t('contact.select_enquiry')} />
@@ -305,7 +338,7 @@ export default function Contact() {
 
                     {/* Message */}
                     <div>
-                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.message')} *</Label>
+                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{`${t('contact.message')} *`}</Label>
                       <Textarea
                         rows={5}
                         value={form.message}
@@ -316,11 +349,30 @@ export default function Contact() {
                       <FieldError msg={errors.message} />
                     </div>
 
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                      <Button type="submit" size="lg" className="bg-teal hover:bg-teal-light text-white font-semibold px-10 h-12 rounded-sm text-base">
-                        {t('contact.submit')}
-                      </Button>
-                      <p className="text-xs text-muted-foreground">{t('contact.respond_note')}</p>
+                    <div className="py-2">
+                      <Turnstile 
+                        // @ts-ignore
+                        siteKey={import.meta.env.VITE_TURNSTILE_SITE_KEY} 
+                        onSuccess={(t) => setToken(t)} 
+                        onExpire={() => setToken(null)}
+                      />
+                    </div>
+
+                    <div className="flex flex-col gap-3">
+                      {apiError && (
+                        <div className="flex items-start gap-2 bg-destructive/5 border border-destructive/20 rounded-sm p-3">
+                          <XCircle className="w-4 h-4 text-destructive flex-shrink-0 mt-0.5" />
+                          <p className="text-destructive text-xs leading-relaxed">{apiError}</p>
+                        </div>
+                      )}
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <Button type="submit" size="lg" disabled={loading} className="bg-teal hover:bg-teal-light text-white font-semibold px-10 h-12 rounded-sm text-base">
+                          {loading ? (
+                            <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                          ) : t('contact.submit')}
+                        </Button>
+                        <p className="text-xs text-muted-foreground">{t('contact.respond_note')}</p>
+                      </div>
                     </div>
                   </form>
                 ) : (

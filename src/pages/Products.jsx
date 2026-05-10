@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import SlotIn from '@/components/shared/SlotIn';
 import ImageSlider from '@/components/shared/ImageSlider';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
+import SEOHead from '@/components/shared/SEOHead';
 
 const panelFeatures = [
   { icon: CheckCircle, title: 'Cost Effective', desc: 'Use of plastic waste, limited manpower and machinery needed on site, fast construction methodology.' },
@@ -58,6 +59,12 @@ export default function Products() {
 
   return (
     <div className="overflow-hidden">
+      <SEOHead
+        title="Othalo Panel System — Products & Specifications"
+        description="Explore the Othalo structural panel system. 100% recycled plastic, 7x stronger than concrete, 60+ year lifespan. Request a quote today."
+        canonical="https://othalo.com/products"
+        keywords={['Othalo panel', 'recycled plastic building panels', 'sustainable construction materials', 'modular building system', 'affordable housing product']}
+      />
       <GetQuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} context="product" />
 
       {/* Hero */}

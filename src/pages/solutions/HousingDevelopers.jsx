@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
 import SolutionFAQ from '@/components/shared/SolutionFAQ';
+import SEOHead from '@/components/shared/SEOHead';
 
 const benefits = [
   {
@@ -59,6 +60,12 @@ export default function HousingDevelopers() {
 
   return (
     <div className="overflow-hidden">
+      <SEOHead
+        title="Housing Developer Solutions"
+        description="Faster, cost-efficient construction for housing developers. Prefabricated modular systems from recycled plastic. Higher ROI and lower material costs."
+        canonical="https://othalo.com/solutions/housing-developers"
+        keywords={['housing development', 'modular construction', 'developer ROI', 'prefabricated homes', 'cost-efficient building']}
+      />
       <GetQuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} context="housing-developers" />
 
       {/* Hero */}

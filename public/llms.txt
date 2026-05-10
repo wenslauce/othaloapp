@@ -1,0 +1,44 @@
+# Othalo
+
+> Turning plastic waste into dignified, sustainable housing for communities worldwide.
+
+Othalo is a Norwegian technology company that transforms recycled plastic waste into structural building panels using patented manufacturing technology. The panels are used to construct affordable, durable, and sustainable homes — addressing two global crises simultaneously: the plastic waste epidemic and the affordable housing deficit.
+
+## Key Pages
+
+- [Home](https://othalo.com/): Company overview and technology introduction
+- [Products](https://othalo.com/products): The Othalo Panel System — specifications and product lines
+- [Solutions](https://othalo.com/solutions): Deployment solutions for different stakeholders
+- [Solutions / Governments](https://othalo.com/solutions/governments): National and municipal affordable housing programs
+- [Solutions / Housing Developers](https://othalo.com/solutions/housing-developers): Cost-efficient construction for private developers
+- [Solutions / Corporations](https://othalo.com/solutions/corporations): Turnkey ESG and CSR programs
+- [About](https://othalo.com/about): Mission, team, and impact
+- [Contact](https://othalo.com/contact): Get in touch or request a quote
+
+## Product: The Othalo Panel System
+
+Structural wall panels manufactured from 100% recycled plastic. Key specifications:
+- Lifespan: 60+ years
+- Strength: 7x stronger than concrete
+- Insulation: 3x more effective than concrete
+- Fire rating: Class B1 (self-extinguishing)
+- Wind resistance: Category 5 hurricane (>200 km/h)
+- Seismic: Zone 4 earthquake resistant
+- No cement, no steel, no water required in construction
+- Each 2-bedroom unit diverts ~8 tonnes of plastic from the environment
+- UN-Habitat endorsed for a Better Urban Future
+
+## Product Lines
+
+- **The Community**: Single and multi-family residential units (42m² per unit)
+- **The District**: Medium-density residential clusters with full infrastructure
+- **The Emergency Shelter**: Rapid deployment for disaster relief
+- **The Medical Units**: Clinics, isolation wards, diagnostic centers
+- **The Worker Accommodation**: Purpose-built for construction and industrial sites
+
+## Company
+
+- **Founded**: Norway (Othalo AS)
+- **Headquarters**: Oslo, Norway
+- **Focus Markets**: Africa, Southeast Asia, Caribbean, and other emerging markets
+- **UN Endorsement**: UN-Habitat for a Better Urban Future
