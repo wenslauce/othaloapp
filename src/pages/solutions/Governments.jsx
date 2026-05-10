@@ -1,7 +1,7 @@
 // Governments solutions page
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart3, Users, Globe } from 'lucide-react';
+import { ArrowRight, BarChart3, Users, Globe, Building2, DollarSign, Clock, Leaf, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
@@ -9,19 +9,34 @@ import SolutionFAQ from '@/components/shared/SolutionFAQ';
 
 const benefits = [
   {
-    icon: BarChart3,
-    title: 'Measurable SDG outcomes',
-    desc: 'Every deployment delivers verifiable progress against SDGs 1, 6, 8, 10, 11, and 13 — enabling transparent government reporting.',
-  },
-  {
     icon: Users,
-    title: 'Scalable social housing',
-    desc: 'Deploy from single units to entire townships. Our factory-to-field pipeline supports any scale of public housing mandate.',
+    title: 'Scale quickly and efficiently',
+    desc: 'Scale affordable homes quickly and efficiently to meet growing population demands.',
   },
   {
-    icon: Globe,
-    title: 'Urban planning integration',
-    desc: 'Our modular layouts adapt to master plans. Work with our engineers to integrate Othalo housing into broader urban development strategies.',
+    icon: Building2,
+    title: 'Higher-density urban projects',
+    desc: 'Build for higher-density urban projects with multi-storey capabilities.',
+  },
+  {
+    icon: DollarSign,
+    title: 'Reduce costs',
+    desc: 'Reduce costs with our patented alternatives to expensive steel and cement.',
+  },
+  {
+    icon: Clock,
+    title: 'Build faster',
+    desc: 'Build faster with prefabrication—delivering homes in days, not months.',
+  },
+  {
+    icon: Leaf,
+    title: 'Lower carbon footprint',
+    desc: 'Lower carbon footprint with sustainable, circular materials diverted from waste.',
+  },
+  {
+    icon: Settings,
+    title: 'Design flexibly',
+    desc: 'Design flexibly to meet specific local needs and regulatory requirements.',
   },
 ];
 

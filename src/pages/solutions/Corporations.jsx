@@ -1,7 +1,7 @@
 // Corporations solutions page
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Target, FileCheck, Handshake, BarChart2 } from 'lucide-react';
+import { ArrowRight, Target, FileCheck, Handshake, BarChart2, Leaf, Clock, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
@@ -9,24 +9,39 @@ import SolutionFAQ from '@/components/shared/SolutionFAQ';
 
 const benefits = [
   {
-    icon: Target,
-    title: 'Tangible ESG outcomes',
-    desc: 'Every Othalo deployment generates verifiable environmental (plastic diversion), social (housing units), and governance metrics for your ESG reports.',
+    icon: FileCheck,
+    title: 'Meet EPR requirements',
+    desc: 'Meet EPR requirements with measurable outcomes through plastic diversion.',
   },
   {
-    icon: FileCheck,
-    title: 'SDG-aligned reporting',
-    desc: 'Projects map directly to 9 UN SDGs. We provide full impact documentation compatible with GRI, SASB, and TCFD frameworks.',
+    icon: Leaf,
+    title: 'Turn waste into value',
+    desc: 'Turn waste into value through a circular model that transforms plastic into homes.',
+  },
+  {
+    icon: Target,
+    title: 'Deliver real ESG impact',
+    desc: 'Deliver real ESG impact across environmental, social, and governance dimensions.',
+  },
+  {
+    icon: Clock,
+    title: 'Fast deployment',
+    desc: 'Fast deployment enables immediate action and measurable results.',
   },
   {
     icon: Handshake,
-    title: 'Strategic CSR partnerships',
-    desc: 'Othalo\'s corporate program creates branded housing projects — linking your company\'s investment directly to visible, community-level impact.',
+    title: 'Strengthen brand trust',
+    desc: 'Strengthen brand and stakeholder trust with visible, community-level impact.',
   },
   {
     icon: BarChart2,
-    title: 'Worker accommodation',
-    desc: 'Deploy dignified, certified worker accommodation for your operations in emerging markets — faster and at a fraction of conventional costs.',
+    title: 'Transparent tracking',
+    desc: 'Transparent impact tracking and reporting compatible with major frameworks.',
+  },
+  {
+    icon: Globe,
+    title: 'Scalable across markets',
+    desc: 'Scalable across markets to match your operational footprint globally.',
   },
 ];
 

@@ -1,7 +1,7 @@
 // Housing Developers solutions page
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, TrendingUp, Clock, DollarSign, Package } from 'lucide-react';
+import { ArrowRight, TrendingUp, Clock, DollarSign, Package, Users, Globe, Leaf, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
@@ -9,24 +9,39 @@ import SolutionFAQ from '@/components/shared/SolutionFAQ';
 
 const benefits = [
   {
-    icon: TrendingUp,
-    title: 'Superior ROI',
-    desc: '30–50% lower construction cost vs. concrete. Faster delivery means earlier revenue recognition and reduced financing costs.',
+    icon: DollarSign,
+    title: 'Control costs',
+    desc: 'Control costs and reduce exposure to material volatility with our prefabricated systems.',
   },
   {
     icon: Clock,
-    title: 'Speed to market',
-    desc: 'A 2-bedroom unit in 72 hours. A 100-unit development in under 3 months. The fastest path from land to tenants.',
+    title: 'Build faster',
+    desc: 'Build faster with prefabrication—delivering homes in days, not months.',
   },
   {
-    icon: DollarSign,
-    title: 'Predictable pricing',
-    desc: 'Factory-manufactured panels eliminate on-site material variability. Fixed input costs protect your margin throughout the project.',
+    icon: Users,
+    title: 'Lower labour needs',
+    desc: 'Lower labour needs on-site with simplified execution and assembly.',
   },
   {
-    icon: Package,
-    title: 'Turnkey logistics',
-    desc: 'Panels ship in standard containers worldwide. Our team handles specification, delivery coordination, and local assembly training.',
+    icon: TrendingUp,
+    title: 'Higher efficiency',
+    desc: 'Higher efficiency and scalable delivery for large projects.',
+  },
+  {
+    icon: Globe,
+    title: 'Access new markets',
+    desc: 'Access new markets, particularly the affordable housing segment.',
+  },
+  {
+    icon: Leaf,
+    title: 'Strengthen ESG',
+    desc: 'Strengthen ESG with low-carbon, circular materials.',
+  },
+  {
+    icon: Settings,
+    title: 'Customisable design',
+    desc: 'Customisable design to adapt to your project, market, and regulation.',
   },
 ];
 
