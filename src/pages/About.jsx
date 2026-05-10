@@ -4,123 +4,88 @@ import { Linkedin, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import SEOHead from '@/components/shared/SEOHead';
-
-const team = [
-  {
-    name: 'Frank Cato Lahti',
-    title: 'Founder & Chief Executive Officer',
-    img: '/placeholder.svg',
-    linkedin: '#',
-    contribution: 'Vision & Strategy',
-    slug: 'frank-cato-lahti',
-  },
-  {
-    name: 'Claus Skadkjaer',
-    title: 'Founder, Chief Operating Officer',
-    img: '/placeholder.svg',
-    linkedin: '#',
-    contribution: 'Operations',
-    slug: 'claus-skadkjaer',
-  },
-  {
-    name: 'Martin Dokkedal',
-    title: 'Chief Supply Chain Officer',
-    img: '/placeholder.svg',
-    linkedin: '#',
-    contribution: 'Supply Chain',
-    slug: 'martin-dokkedal',
-  },
-  {
-    name: 'Thomas Meidell Laan',
-    title: 'Chief Legal Officer',
-    img: '/placeholder.svg',
-    linkedin: '#',
-    contribution: 'Legal & Compliance',
-    slug: 'thomas-meidell-laan',
-  },
-  {
-    name: 'Kjell Steen',
-    title: 'Head of Production',
-    img: '/placeholder.svg',
-    linkedin: '#',
-    contribution: 'Manufacturing',
-    slug: 'kjell-steen',
-  },
-  {
-    name: 'Bengt Erling Berg',
-    title: 'Head of Technical Support',
-    img: '/placeholder.svg',
-    linkedin: '#',
-    contribution: 'Engineering',
-    slug: 'bengt-erling-berg',
-  },
-  {
-    name: 'Stephane Bernard',
-    title: 'Chief Commercial Officer',
-    img: '/placeholder.svg',
-    linkedin: '#',
-    contribution: 'Business Development',
-    slug: 'stephane-bernard',
-  },
-  {
-    name: 'Wenslauce Chengo',
-    title: 'Country Manager Kenya & Public Relations',
-    img: '/placeholder.svg',
-    linkedin: '#',
-    contribution: 'Kenya & PR',
-    slug: 'wenslauce-chengo',
-  },
-];
-
-const cultureValues = [
-  {
-    title: 'Teamwork',
-    desc: 'Collaboration and mutual support drive our success. We believe in the power of working together to achieve extraordinary results.',
-  },
-  {
-    title: 'Timeliness',
-    desc: 'We respect deadlines and deliver on our promises. Punctuality and efficiency are core to our operational excellence.',
-  },
-  {
-    title: 'Communication',
-    desc: 'Open and transparent dialogue ensures alignment and understanding across all levels of our organization.',
-  },
-  {
-    title: 'Commitment',
-    desc: 'We are dedicated to our mission of creating sustainable housing solutions and making a positive impact on the world.',
-  },
-];
-
-const impacts = [
-  {
-    num: '01',
-    title: 'Environmental impact',
-    desc: 'Plastic removed from the environment, no use of cement or steel — measurable planetary impact per unit built.',
-  },
-  {
-    num: '02',
-    title: 'Social impact',
-    desc: 'Homes for low to mid-income communities. Dignified, safe housing that transforms lives and breaks cycles of poverty.',
-  },
-  {
-    num: '03',
-    title: 'Economic impact',
-    desc: 'Enabling jobs in emerging economies. Every Othalo factory and build site creates sustainable local employment.',
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function About() {
+  const { t } = useTranslation();
+
+  const team = [
+    {
+      name: t('about.team_members.frank.name'),
+      title: t('about.team_members.frank.title'),
+      img: '/placeholder.svg',
+      linkedin: '#',
+      contribution: t('about.contributions.vision'),
+      slug: 'frank-cato-lahti',
+    },
+    {
+      name: t('about.team_members.claus.name'),
+      title: t('about.team_members.claus.title'),
+      img: '/placeholder.svg',
+      linkedin: '#',
+      contribution: t('about.contributions.operations'),
+      slug: 'claus-skadkjaer',
+    },
+    {
+      name: t('about.team_members.martin.name'),
+      title: t('about.team_members.martin.title'),
+      img: '/placeholder.svg',
+      linkedin: '#',
+      contribution: t('about.contributions.supply'),
+      slug: 'martin-dokkedal',
+    },
+    {
+      name: t('about.team_members.thomas.name'),
+      title: t('about.team_members.thomas.title'),
+      img: '/placeholder.svg',
+      linkedin: '#',
+      contribution: t('about.contributions.legal'),
+      slug: 'thomas-meidell-laan',
+    },
+    {
+      name: t('about.team_members.kjell.name'),
+      title: t('about.team_members.kjell.title'),
+      img: '/placeholder.svg',
+      linkedin: '#',
+      contribution: t('about.contributions.manufacturing'),
+      slug: 'kjell-steen',
+    },
+    {
+      name: t('about.team_members.bengt.name'),
+      title: t('about.team_members.bengt.title'),
+      img: '/placeholder.svg',
+      linkedin: '#',
+      contribution: t('about.contributions.engineering'),
+      slug: 'bengt-erling-berg',
+    },
+    {
+      name: t('about.team_members.stephane.name'),
+      title: t('about.team_members.stephane.title'),
+      img: '/placeholder.svg',
+      linkedin: '#',
+      contribution: t('about.contributions.business'),
+      slug: 'stephane-bernard',
+    },
+    {
+      name: t('about.team_members.wenslauce.name'),
+      title: t('about.team_members.wenslauce.title'),
+      img: '/placeholder.svg',
+      linkedin: '#',
+      contribution: t('about.contributions.pr'),
+      slug: 'wenslauce-chengo',
+    },
+  ];
+
+  const cultureValues = t('about.culture_values', { returnObjects: true });
+  const impacts = t('about.impact_items', { returnObjects: true });
+
   return (
     <div className="overflow-hidden">
       <SEOHead
-        title="About Othalo — Our Mission, Team & Impact"
-        description="Meet the team behind Othalo. Learn about our mission to solve the global housing crisis using recycled plastic waste and creating social impact."
+        title={t('seo.about.title')}
+        description={t('seo.about.description')}
         canonical="https://othalo.com/about"
-        keywords={[
-          'Othalo team', 'Frank Cato Lahti', 'Claus Skadkjaer', 'Martin Dokkedal', 
-          'Thomas Meidell Laan', 'Kjell Steen', 'Bengt Erling Berg', 'Stephane Bernard', 
-          'Wenslauce Chengo', 'sustainable housing mission', 'recycled plastic impact'
-        ]}
+        keywords={t('seo.about.keywords').split(', ')}
       />
 
       {/* JSON-LD Structured Data */}
@@ -131,7 +96,7 @@ export default function About() {
           "name": "Othalo",
           "url": "https://othalo.com",
           "logo": "https://othalo.com/images/logo.png",
-          "description": "Othalo transforms recycled plastic into affordable, durable housing.",
+          "description": t('seo.home.description'),
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Oslo",
@@ -163,21 +128,21 @@ export default function About() {
                 <div className="mb-12">
                   <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-6 font-heading">
                     <span className="w-8 h-px bg-teal" />
-                    Our Purpose
+                    {t('about.label')}
                   </div>
                   <div className="space-y-10">
                     {[
                       {
-                        label: 'Our vision',
-                        text: 'A world where waste is a resource — where every community has access to dignified, sustainable, and safe housing.',
+                        label: t('about.vision_label'),
+                        text: t('about.vision'),
                       },
                       {
-                        label: 'Our mission',
-                        text: 'Turn plastic waste into housing and housing into hope.',
+                        label: t('about.mission_label'),
+                        text: t('about.mission'),
                       },
                       {
-                        label: 'Our values',
-                        items: ['Do good', 'Integrity', 'Equality for everyone', 'Local empowerment', 'Safe communities for the next generation'],
+                        label: t('about.values_label'),
+                        items: t('about.values_items', { returnObjects: true }),
                       },
                     ].map((block) => (
                       <div key={block.label} className="border-l-2 border-teal pl-6">
@@ -185,7 +150,7 @@ export default function About() {
                         {block.text && (
                           <p className="text-muted-foreground leading-relaxed">{block.text}</p>
                         )}
-                        {block.items && (
+                        {block.items && Array.isArray(block.items) && (
                           <ul className="space-y-1">
                             {block.items.map((item) => (
                               <li key={item} className="text-muted-foreground text-sm flex items-center gap-2">
@@ -203,7 +168,7 @@ export default function About() {
                     className="mt-10 bg-teal hover:bg-teal-light text-white font-semibold px-6 h-11 rounded-sm text-sm"
                   >
                     <Link to="/products">
-                      Discover Our Technology
+                      {t('about.cta')}
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Link>
                   </Button>
@@ -235,11 +200,11 @@ export default function About() {
             <SlotIn delay={0.15}>
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-6 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                Our Story
+                {t('about.story_label')}
               </div>
               <div className="text-navy/20 font-heading text-7xl leading-none mb-2">"</div>
               <blockquote className="font-heading text-lg text-navy font-light leading-relaxed mb-8 -mt-4">
-                After serving in the Norwegian Army and Intelligence across NATO missions in the 1990s, I witnessed both the resilience of people living through conflict and the harsh realities of refugee camps. Years later, standing on a plastic-covered beach in northern Norway, I realized the global waste crisis was closer than we think. That moment sparked a bold idea: could we turn plastic waste into safe, dignified homes? That question became the foundation of Othalo.
+                {t('about.story_quote')}
               </blockquote>
               <div className="flex items-center gap-4 border-t border-tech-slate pt-6">
                 <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-teal/30">
@@ -251,7 +216,7 @@ export default function About() {
                 </div>
                 <div>
                   <div className="font-heading font-semibold text-navy">Frank Cato Lahti</div>
-                  <div className="text-muted-foreground text-sm">Founder & CEO</div>
+                  <div className="text-muted-foreground text-sm">{t('about.team_members.frank.title')}</div>
                 </div>
               </div>
             </SlotIn>
@@ -266,12 +231,12 @@ export default function About() {
             <div className="text-center mb-6">
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                The People
+                {t('about.team_label')}
                 <span className="w-8 h-px bg-teal" />
               </div>
-              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-3">Team</h2>
+              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-3">{t('about.team_title')}</h2>
               <p className="text-muted-foreground max-w-xl mx-auto text-sm italic">
-                "A diverse group of innovators, engineers, and visionaries united by the mission to create sustainable housing solutions"
+                {`"${t('about.team_subtitle')}"`}
               </p>
             </div>
           </SlotIn>
@@ -328,13 +293,13 @@ export default function About() {
             <SlotIn>
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-5 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                Our Culture
+                {t('about.culture_label')}
               </div>
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-white mb-3">
-                Our culture
+                {t('about.culture_title')}
               </h2>
               <p className="text-white/60 mb-10">
-                What shapes our approach to work and guides us in making a positive impact on the world.
+                {t('about.culture_subtitle')}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {cultureValues.map((v, i) => (
@@ -364,10 +329,10 @@ export default function About() {
               <SlotIn>
                 <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-5 font-heading">
                   <span className="w-8 h-px bg-teal" />
-                  Measurable Change
+                  {t('about.impact_label')}
                 </div>
                 <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-10">
-                  Impact created by Othalo
+                  {t('about.impact_title')}
                 </h2>
               </SlotIn>
               <div className="space-y-8">

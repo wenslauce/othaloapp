@@ -6,78 +6,61 @@ import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
 import SEOHead from '@/components/shared/SEOHead';
-
-const solutions = [
-  {
-    key: 'governments',
-    icon: Building2,
-    label: 'Governments',
-    tag: 'Public Sector',
-    href: '/solutions/governments',
-    img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
-    headline: 'Housing at the scale governments need',
-    desc: 'Affordable homes from recycled plastic for scale. Prefabricated modular systems with UN-endorsed, patented technology.',
-    bullets: [
-      'Affordable homes from recycled plastic for scale',
-      'Prefabricated modular systems with UN-endorsed, patented technology',
-      'Faster build for speed',
-      'Multi-storey (up to 4 floors)',
-      'Globally compliant, locally adaptable',
-    ],
-    ctaLabel: 'Request a Government Brief',
-    quoteContext: 'governments',
-  },
-  {
-    key: 'housing-developers',
-    icon: TrendingUp,
-    label: 'Housing Developers',
-    tag: 'Private Sector',
-    href: '/solutions/housing-developers',
-    img: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80',
-    headline: 'The fastest path from land to delivered homes',
-    desc: 'Faster, more cost-efficient construction. Flexible designs adapt to your project, market, and regulation.',
-    bullets: [
-      'Faster, more cost-efficient construction',
-      'Prefabricated modular systems made from recycled plastic',
-      'Simplified on-site execution',
-      'Lightweight, scalable components',
-      'Flexible designs adapt to your project, market, and regulation',
-    ],
-    ctaLabel: 'Request a Developer Quote',
-    quoteContext: 'housing-developers',
-  },
-  {
-    key: 'corporations',
-    icon: Briefcase,
-    label: 'Corporations',
-    tag: 'Corporate ESG',
-    href: '/solutions/corporations',
-    img: 'https://images.unsplash.com/photo-1462206092226-f46025ffe607?w=800&q=80',
-    headline: 'ESG excellence that delivers real-world change',
-    desc: 'Turnkey ESG platform. Link compliance + environmental + social impact. Convert waste into tangible construction materials.',
-    bullets: [
-      'Turnkey ESG platform',
-      'Link compliance + environmental + social impact',
-      'Convert waste into tangible construction materials',
-      'Scalable, verified, measurable impact for reporting',
-      'Fast execution',
-      'Stakeholders engagement programs',
-    ],
-    ctaLabel: 'Explore a Corporate Partnership',
-    quoteContext: 'corporations',
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function Solutions() {
+  const { t } = useTranslation();
   const [quoteContext, setQuoteContext] = useState(null);
+
+  const solutions = [
+    {
+      key: 'governments',
+      icon: Building2,
+      label: t('solutions.cards.0.label'),
+      tag: t('solutions.cards.0.tag'),
+      href: '/solutions/governments',
+      img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
+      headline: t('solutions.cards.0.headline'),
+      desc: t('solutions.cards.0.desc'),
+      bullets: t('solutions.cards.0.bullets', { returnObjects: true }),
+      ctaLabel: t('solutions.cards.0.cta'),
+      quoteContext: 'governments',
+    },
+    {
+      key: 'housing-developers',
+      icon: TrendingUp,
+      label: t('solutions.cards.1.label'),
+      tag: t('solutions.cards.1.tag'),
+      href: '/solutions/housing-developers',
+      img: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80',
+      headline: t('solutions.cards.1.headline'),
+      desc: t('solutions.cards.1.desc'),
+      bullets: t('solutions.cards.1.bullets', { returnObjects: true }),
+      ctaLabel: t('solutions.cards.1.cta'),
+      quoteContext: 'housing-developers',
+    },
+    {
+      key: 'corporations',
+      icon: Briefcase,
+      label: t('solutions.cards.2.label'),
+      tag: t('solutions.cards.2.tag'),
+      href: '/solutions/corporations',
+      img: 'https://images.unsplash.com/photo-1462206092226-f46025ffe607?w=800&q=80',
+      headline: t('solutions.cards.2.headline'),
+      desc: t('solutions.cards.2.desc'),
+      bullets: t('solutions.cards.2.bullets', { returnObjects: true }),
+      ctaLabel: t('solutions.cards.2.cta'),
+      quoteContext: 'corporations',
+    },
+  ];
 
   return (
     <div className="overflow-hidden">
       <SEOHead
-        title="Solutions — Governments, Developers & Corporations"
-        description="Scalable housing solutions for governments, housing developers, and corporations. Deploy sustainable homes at scale with Othalo's recycled plastic panel system."
+        title={t('seo.solutions.title')}
+        description={t('seo.solutions.description')}
         canonical="https://othalo.com/solutions"
-        keywords={['housing solutions', 'scalable housing', 'government housing programs', 'developer housing solutions', 'corporate ESG housing']}
+        keywords={t('seo.solutions.keywords').split(', ')}
       />
       <GetQuoteModal open={!!quoteContext} onClose={() => setQuoteContext(null)} context={quoteContext} />
 
@@ -91,14 +74,14 @@ export default function Solutions() {
           <SlotIn>
             <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-5 font-heading">
               <span className="w-8 h-px bg-teal" />
-              What We Offer
+              {t('solutions.label')}
               <span className="w-8 h-px bg-teal" />
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-white max-w-3xl mx-auto leading-tight mb-5">
-              Solutions built for every deployment context
+              {t('solutions.title')}
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
-              Whether you're a government deploying at national scale, a developer chasing ROI, or a corporation building your ESG story — Othalo has a tailored solution for you.
+              {t('solutions.subtitle')}
             </p>
           </SlotIn>
         </div>
@@ -156,7 +139,7 @@ export default function Solutions() {
                         className="border-navy/20 text-navy hover:bg-surface font-semibold px-6 h-11 rounded-sm text-sm"
                       >
                         <Link to={sol.href}>
-                          Learn More
+                          {t('solutions.learn_more')}
                           <ChevronRight className="ml-1 w-4 h-4" />
                         </Link>
                       </Button>
@@ -173,13 +156,13 @@ export default function Solutions() {
       <section className="bg-navy py-20">
         <div className="max-w-8xl mx-auto px-6 lg:px-12 text-center">
           <SlotIn>
-            <h2 className="font-heading text-3xl font-semibold text-white mb-4">Not sure which solution fits?</h2>
-            <p className="text-white/60 max-w-md mx-auto mb-8">
-              Our team is happy to help scope the right approach for your context. Reach out and we'll respond within 2 business days.
+            <h2 className="font-heading text-3xl font-semibold text-white mb-4">{t('solutions.not_sure_title')}</h2>
+            <p className="text-white/60 max-md mx-auto mb-8">
+              {t('solutions.not_sure_subtitle')}
             </p>
             <Button asChild size="lg" className="bg-teal hover:bg-teal-light text-white font-semibold px-10 h-12 rounded-sm text-base">
               <Link to="/contact">
-                Contact Us
+                {t('solutions.contact_us')}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>

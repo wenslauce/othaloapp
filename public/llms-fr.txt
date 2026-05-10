@@ -1,0 +1,44 @@
+# Othalo
+
+> Transformer les déchets plastiques en logements dignes et durables pour les communautés du monde entier.
+
+Othalo est une entreprise technologique norvégienne qui transforme les déchets plastiques recyclés en panneaux de construction structurels grâce à une technologie de fabrication brevetée. Les panneaux sont utilisés pour construire des maisons abordables, durables et écologiques — répondant simultanément à deux crises mondiales : l'épidémie de déchets plastiques et le déficit de logements abordables.
+
+## Pages Clés
+
+- [Accueil](https://othalo.com/): Présentation de l'entreprise et introduction à la technologie
+- [Produits](https://othalo.com/products): Le système de panneaux Othalo — spécifications et gammes de produits
+- [Solutions](https://othalo.com/solutions): Solutions de déploiement pour les différentes parties prenantes
+- [Solutions / Gouvernements](https://othalo.com/solutions/governments): Programmes nationaux et municipaux de logements abordables
+- [Solutions / Promoteurs Immobiliers](https://othalo.com/solutions/housing-developers): Construction rentable pour les promoteurs privés
+- [Solutions / Entreprises](https://othalo.com/solutions/corporations): Programmes ESG et RSE clés en main
+- [À Propos](https://othalo.com/about): Mission, équipe et impact
+- [Contact](https://othalo.com/contact): Contactez-nous ou demandez un devis
+
+## Produit: Le système de panneaux Othalo
+
+Panneaux muraux structurels fabriqués à partir de plastique 100 % recyclé. Spécifications clés :
+- Durée de vie : 60 ans et plus
+- Résistance : 7 fois plus solide que le béton
+- Isolation : 3 fois plus efficace que le béton
+- Classement au feu : Classe B1 (auto-extinguible)
+- Résistance au vent : Ouragan de catégorie 5 (>200 km/h)
+- Sismique : Résistant aux séismes de zone 4
+- Pas de ciment, pas d'acier, pas d'eau nécessaire à la construction
+- Chaque unité de 2 chambres détourne environ 8 tonnes de plastique de l'environnement
+- Approuvé par l'ONU-Habitat pour un meilleur avenir urbain
+
+## Gammes de produits
+
+- **The Community**: Unités résidentielles individuelles et multifamiliales (42m² par unité)
+- **The District**: Clusters résidentiels à densité moyenne avec infrastructure complète
+- **The Emergency Shelter**: Déploiement rapide pour l'aide en cas de catastrophe
+- **The Medical Units**: Cliniques, services d'isolement, centres de diagnostic
+- **The Worker Accommodation**: Construit sur mesure pour les sites de construction et industriels
+
+## Entreprise
+
+- **Fondée**: Norvège (Othalo AS)
+- **Siège social**: Oslo, Norvège
+- **Marchés cibles**: Afrique, Asie du Sud-Est, Caraïbes et autres marchés émergents
+- **Approbation ONU**: ONU-Habitat pour un meilleur avenir urbain

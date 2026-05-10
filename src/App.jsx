@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Toaster } from "@/components/ui/toaster"
 import ErrorBoundary from '@/components/shared/ErrorBoundary'
 import { QueryClientProvider } from '@tanstack/react-query'
@@ -65,6 +67,15 @@ const AuthenticatedApp = () => {
 };
 
 function App() {
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    // Sync document language and direction
+    const lang = i18n.language || 'en';
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  }, [i18n.language]);
+
   return (
     <ErrorBoundary>
       <AuthProvider>

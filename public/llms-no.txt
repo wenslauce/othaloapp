@@ -1,0 +1,44 @@
+# Othalo
+
+> Forvandler plastavfall til verdige, bærekraftige boliger for samfunn over hele verden.
+
+Othalo er et norsk teknologiselskap som forvandler resirkulert plastavfall til strukturelle bygningspaneler ved hjelp av patentert produksjonsteknologi. Panelene brukes til å bygge rimelige, holdbare og bærekraftige hjem — og løser to globale kriser samtidig: plastavfallsepidemien og underskuddet på rimelige boliger.
+
+## Nøkkelsider
+
+- [Hjem](https://othalo.com/): Oversikt over selskapet og introduksjon til teknologien
+- [Produkter](https://othalo.com/products): Othalo panelsystem — spesifikasjoner og produktlinjer
+- [Løsninger](https://othalo.com/solutions): Implementeringsløsninger for ulike interessenter
+- [Løsninger / Myndigheter](https://othalo.com/solutions/governments): Nasjonale og kommunale boligprogrammer
+- [Løsninger / Eiendomsutviklere](https://othalo.com/solutions/housing-developers): Kostnadseffektiv konstruksjon for private utviklere
+- [Løsninger / Bedrifter](https://othalo.com/solutions/corporations): Nøkkelferdige ESG- og CSR-programmer
+- [Om oss](https://othalo.com/about): Misjon, team og påvirkning
+- [Kontakt](https://othalo.com/contact): Ta kontakt eller be om et tilbud
+
+## Produkt: Othalo panelsystem
+
+Strukturelle veggpaneler produsert av 100 % resirkulert plast. Nøkkelspesifikasjoner:
+- Levetid: 60+ år
+- Styrke: 7x sterkere enn betong
+- Isolasjon: 3x mer effektiv enn betong
+- Brannklasse: Klasse B1 (selvslukkende)
+- Vindmotstand: Kategori 5 orkan (>200 km/h)
+- Seismisk: Sone 4 jordskjelvbestandig
+- Ingen sement, ingen stål, ingen vann kreves i konstruksjonen
+- Hver 2-roms enhet fjerner ~8 tonn plast fra miljøet
+- UN-Habitat anbefalt for en bedre urban fremtid
+
+## Produktlinjer
+
+- **The Community**: Enkelt- og flerfamilieboliger (42m² per enhet)
+- **The District**: Boligklynger med middels tetthet og full infrastruktur
+- **The Emergency Shelter**: Rask utrulling for katastrofehjelp
+- **The Medical Units**: Klinikker, isolasjonsavdelinger, diagnostiske sentre
+- **The Worker Accommodation**: Spesialbygd for anleggs- og industriområder
+
+## Selskapet
+
+- **Grunnlagt**: Norge (Othalo AS)
+- **Hovedkontor**: Oslo, Norge
+- **Fokusmarkeder**: Afrika, Sørøst-Asia, Karibia og andre fremvoksende markeder
+- **FN-anbefaling**: UN-Habitat for en bedre urban fremtid

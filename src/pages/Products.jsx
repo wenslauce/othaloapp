@@ -8,62 +8,58 @@ import SlotIn from '@/components/shared/SlotIn';
 import ImageSlider from '@/components/shared/ImageSlider';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
 import SEOHead from '@/components/shared/SEOHead';
-
-const panelFeatures = [
-  { icon: CheckCircle, title: 'Cost Effective', desc: 'Use of plastic waste, limited manpower and machinery needed on site, fast construction methodology.' },
-  { icon: Shield, title: 'Quality and durability', desc: '60 years lifespan, x7 stronger than concrete, insulation x3 more effective than concrete.' },
-  { icon: Zap, title: 'Safety', desc: 'Fire resistant, hurricane and earthquake resistant. Tested to international standards.' },
-  { icon: Leaf, title: 'Carbon efficient', desc: 'Made from 100% recycled plastic. No cement or steel used. Low water use in construction.' },
-];
-
-const comparisonData = [
-  { particular: 'Market ready', othalo: 'full', threeD: 'none', triple: 'partial', traditional: 'full' },
-  { particular: 'Low production time', othalo: 'full', threeD: 'none', triple: 'none', traditional: 'partial' },
-  { particular: 'Recyclable', othalo: 'full', threeD: 'partial', triple: 'partial', traditional: 'none' },
-  { particular: 'Sustainable', othalo: 'full', threeD: 'partial', triple: 'partial', traditional: 'none' },
-  { particular: 'Accessible raw materials', othalo: 'full', threeD: 'none', triple: 'partial', traditional: 'none' },
-  { particular: 'Low cost', othalo: 'full', threeD: 'none', triple: 'none', traditional: 'partial' },
-  { particular: 'Industrial production', othalo: 'full', threeD: 'none', triple: 'none', traditional: 'partial' },
-];
-
-const productLines = [
-  {
-    name: 'The Community',
-    desc: 'Single-family and multi-family units optimized for rapid urban deployment and low-income housing programs.',
-    images: ['/images/The community 1a.png', '/images/The community 2a.png', '/images/The community 2c.png'],
-  },
-  {
-    name: 'The District',
-    desc: 'Medium-density residential clusters for families. Full infrastructure integration including utilities.',
-    images: ['/images/The District 2a.png', '/images/The District 2b.png'],
-  },
-  {
-    name: 'The Emergency Shelter',
-    desc: 'Rapid deployment emergency housing for disaster relief and humanitarian aid missions.',
-    images: ['/images/The Emergency Shelter 1.png', '/images/The Emergency Shelter 1a.png', '/images/The Emergency Shelter 1b.png'],
-  },
-  {
-    name: 'The Medical Units',
-    desc: 'Specialized healthcare modules including clinics, isolation wards, and diagnostic centers.',
-    images: ['/images/The Medical Unit 3.png', '/images/The Medical Unit 3a.png', '/images/The Medical Unit 3b.png'],
-  },
-  {
-    name: 'The Worker Accommodation',
-    desc: 'Purpose-built worker accommodation for construction sites, mining operations, and industrial deployment.',
-    images: ['/images/The Worker Accomodation 5a.png', '/images/The Worker Accomodation 5b.png', '/images/The Worker Accomodation 6a.png'],
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function Products() {
+  const { t } = useTranslation();
   const [quoteOpen, setQuoteOpen] = useState(false);
+
+  const panelFeatures = [
+    { icon: CheckCircle, title: t('products.panel_features.0.title'), desc: t('products.panel_features.0.desc') },
+    { icon: Shield, title: t('products.panel_features.1.title'), desc: t('products.panel_features.1.desc') },
+    { icon: Zap, title: t('products.panel_features.2.title'), desc: t('products.panel_features.2.desc') },
+    { icon: Leaf, title: t('products.panel_features.3.title'), desc: t('products.panel_features.3.desc') },
+  ];
+
+  const comparisonData = t('products.comparison_rows', { returnObjects: true });
+
+  const productLines = [
+    {
+      name: t('products.product_lines.0.name'),
+      desc: t('products.product_lines.0.desc'),
+      images: ['/images/The community 1a.png', '/images/The community 2a.png', '/images/The community 2c.png'],
+    },
+    {
+      name: t('products.product_lines.1.name'),
+      desc: t('products.product_lines.1.desc'),
+      images: ['/images/The District 2a.png', '/images/The District 2b.png'],
+    },
+    {
+      name: t('products.product_lines.2.name'),
+      desc: t('products.product_lines.2.desc'),
+      images: ['/images/The Emergency Shelter 1.png', '/images/The Emergency Shelter 1a.png', '/images/The Emergency Shelter 1b.png'],
+    },
+    {
+      name: t('products.product_lines.3.name'),
+      desc: t('products.product_lines.3.desc'),
+      images: ['/images/The Medical Unit 3.png', '/images/The Medical Unit 3a.png', '/images/The Medical Unit 3b.png'],
+    },
+    {
+      name: t('products.product_lines.4.name'),
+      desc: t('products.product_lines.4.desc'),
+      images: ['/images/The Worker Accomodation 5a.png', '/images/The Worker Accomodation 5b.png', '/images/The Worker Accomodation 6a.png'],
+    },
+  ];
+
+  const dualImpactItems = t('products.dual_items', { returnObjects: true });
 
   return (
     <div className="overflow-hidden">
       <SEOHead
-        title="Othalo Panel System — Products & Specifications"
-        description="Explore the Othalo structural panel system. 100% recycled plastic, 7x stronger than concrete, 60+ year lifespan. Request a quote today."
+        title={t('seo.products.title')}
+        description={t('seo.products.description')}
         canonical="https://othalo.com/products"
-        keywords={['Othalo panel', 'recycled plastic building panels', 'sustainable construction materials', 'modular building system', 'affordable housing product']}
+        keywords={t('seo.products.keywords').split(', ')}
       />
       <GetQuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} context="product" />
 
@@ -81,9 +77,9 @@ export default function Products() {
               <Award className="w-6 h-6 text-teal" />
             </div>
             <div className="text-navy font-heading font-bold text-[10px] uppercase tracking-wider leading-tight">
-              Endorsed by UN-HABITAT
+              {t('products.un_habitat_badge')}
             </div>
-            <div className="text-muted-foreground text-[9px] mt-1">For a Better Urban Future</div>
+            <div className="text-muted-foreground text-[9px] mt-1">{t('products.un_habitat_note')}</div>
           </div>
         </div>
 
@@ -91,13 +87,13 @@ export default function Products() {
           <SlotIn>
             <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-6 font-heading">
               <span className="w-8 h-px bg-teal" />
-              Product Portfolio
+              {t('products.label')}
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-white max-w-2xl leading-tight mb-5">
-              The Othalo Panel System
+              {t('products.title')}
             </h1>
             <p className="text-white/70 text-lg max-w-xl leading-relaxed mb-8">
-              Patented structural wall panels manufactured from 100% recycled plastic — the foundation of every Othalo structure.
+              {t('products.subtitle')}
             </p>
             <div className="flex flex-wrap gap-3">
               <Button
@@ -105,11 +101,11 @@ export default function Products() {
                 size="lg"
                 className="bg-teal hover:bg-teal-light text-white font-semibold px-8 h-12 rounded-sm text-base"
               >
-                Get a Product Quote
+                {t('products.cta_quote')}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button asChild variant="outline" size="lg" className="border-white/30 text-white bg-transparent hover:bg-white/10 font-semibold px-8 h-12 rounded-sm text-base">
-                <Link to="/solutions">View Solutions</Link>
+                <Link to="/solutions">{t('products.cta_solutions')}</Link>
               </Button>
             </div>
           </SlotIn>
@@ -128,18 +124,18 @@ export default function Products() {
                   className="w-full h-[480px] object-cover rounded-sm"
                 />
                 <div className="absolute bottom-4 left-4 bg-navy/80 backdrop-blur-sm border border-white/10 rounded-sm px-4 py-3">
-                  <div className="text-xs text-white/50 uppercase tracking-widest font-heading">Material</div>
-                  <div className="font-heading font-semibold text-white text-sm">100% Recycled Plastic</div>
+                  <div className="text-xs text-white/50 uppercase tracking-widest font-heading">{t('products.material_label')}</div>
+                  <div className="font-heading font-semibold text-white text-sm">{t('products.material_value')}</div>
                 </div>
               </div>
             </SlotIn>
             <SlotIn delay={0.12}>
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-5 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                Technical Advantage
+                {t('products.tech_label')}
               </div>
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-10">
-                Market leading technology and innovation
+                {t('products.tech_title')}
               </h2>
               <div className="space-y-5">
                 {panelFeatures.map((f, i) => {
@@ -169,7 +165,7 @@ export default function Products() {
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <SlotIn>
             <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-white mb-12 text-center">
-              Market leading technology and innovation
+              {t('products.comparison_title')}
             </h2>
           </SlotIn>
           <SlotIn delay={0.1}>
@@ -177,35 +173,35 @@ export default function Products() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="bg-navy text-white text-xs font-semibold tracking-wide">
-                    <th className="text-left py-4 px-6 font-heading">Particulars</th>
-                    <th className="text-center py-4 px-6 font-heading">Othalo</th>
-                    <th className="text-center py-4 px-6 font-heading">3D Printing</th>
-                    <th className="text-center py-4 px-6 font-heading leading-tight max-w-[120px]">Triple Panel<br/>Buildings</th>
-                    <th className="text-center py-4 px-6 font-heading leading-tight max-w-[120px]">Traditional<br/>construction</th>
+                    {t('products.comparison_headers', { returnObjects: true }).map((header, idx) => (
+                      <th key={header} className={`py-4 px-6 font-heading ${idx === 0 ? 'text-left' : 'text-center'}`}>
+                        {header}
+                      </th>
+                    ))}
                   </tr>
                 </thead>
                 <tbody>
-                  {comparisonData.map((row, i) => (
+                  {Array.isArray(comparisonData) && comparisonData.map((row, i) => (
                     <tr
-                      key={row.particular}
+                      key={row.p}
                       className={`border-b border-navy/10 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}
                     >
-                      <td className="py-4 px-6 text-left font-semibold text-navy/90 font-heading text-xs">{row.particular}</td>
+                      <td className="py-4 px-6 text-left font-semibold text-navy/90 font-heading text-xs">{row.p}</td>
                       <td className="py-4 px-6 text-center text-base">
-                        {row.othalo === 'full' && <span className="text-teal font-bold">✓</span>}
-                        {row.othalo === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
+                        {row.o === 'full' && <span className="text-teal font-bold">✓</span>}
+                        {row.o === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
                       <td className="py-4 px-6 text-center text-base">
-                        {row.threeD === 'full' && <span className="text-teal font-bold">✓</span>}
-                        {row.threeD === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
+                        {row.d === 'full' && <span className="text-teal font-bold">✓</span>}
+                        {row.d === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
                       <td className="py-4 px-6 text-center text-base">
-                        {row.triple === 'full' && <span className="text-teal font-bold">✓</span>}
-                        {row.triple === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
+                        {row.r === 'full' && <span className="text-teal font-bold">✓</span>}
+                        {row.r === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
                       <td className="py-4 px-6 text-center text-base">
-                        {row.traditional === 'full' && <span className="text-teal font-bold">✓</span>}
-                        {row.traditional === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
+                        {row.t === 'full' && <span className="text-teal font-bold">✓</span>}
+                        {row.t === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
                     </tr>
                   ))}
@@ -213,8 +209,8 @@ export default function Products() {
               </table>
             </div>
             <div className="mt-6 flex justify-end text-white/90 text-xs gap-4 font-medium font-heading">
-              <span className="flex items-center gap-1"><span className="font-bold text-white text-sm">✓</span> Fulfilled</span>
-              <span className="flex items-center gap-1"><span className="font-bold text-white text-sm">(✓)</span> Partially fulfilled</span>
+              <span className="flex items-center gap-1"><span className="font-bold text-white text-sm">✓</span> {t('products.fulfilled')}</span>
+              <span className="flex items-center gap-1"><span className="font-bold text-white text-sm">(✓)</span> {t('products.partially_fulfilled')}</span>
             </div>
           </SlotIn>
         </div>
@@ -227,10 +223,10 @@ export default function Products() {
             <div className="mb-14">
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                Product Lines
+                {t('products.lines_label')}
               </div>
-              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-3">Housing configurations</h2>
-              <p className="text-muted-foreground max-w-xl">Each configuration is purpose-engineered, modular, and locally adaptable.</p>
+              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-3">{t('products.lines_title')}</h2>
+              <p className="text-muted-foreground max-w-xl">{t('products.lines_subtitle')}</p>
             </div>
           </SlotIn>
 
@@ -249,7 +245,7 @@ export default function Products() {
                       onClick={() => setQuoteOpen(true)}
                       className="bg-teal hover:bg-teal-light text-white font-semibold px-5 h-9 rounded-sm text-xs self-start"
                     >
-                      Get a Quote
+                      {t('products.get_quote')}
                       <ArrowRight className="ml-1.5 w-3.5 h-3.5" />
                     </Button>
                   </div>
@@ -270,21 +266,18 @@ export default function Products() {
             <SlotIn delay={0.12}>
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-5 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                Dual Impact
+                {t('products.dual_label')}
               </div>
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-white mb-8">
-                Using one global challenge to solve another
+                {t('products.dual_title')}
               </h2>
               <div className="space-y-6">
-                {[
-                  { title: 'Plastic waste', desc: 'A global liability, over 9 billion tons already accumulated in the environment.', href: '/about' },
-                  { title: 'Affordable homes', desc: 'An ever-rising crisis: 1.6 billion people live without adequate housing.', href: '/solutions/governments' },
-                ].map((item) => (
+                {Array.isArray(dualImpactItems) && dualImpactItems.map((item, idx) => (
                   <div key={item.title} className="border-l-2 border-teal pl-5">
                     <h3 className="font-heading font-semibold text-white text-base mb-1">{item.title}</h3>
                     <p className="text-white/60 text-sm mb-3">{item.desc}</p>
                     <Button asChild size="sm" className="bg-teal hover:bg-teal-light text-white font-semibold px-4 h-9 rounded-sm text-xs">
-                      <Link to={item.href}>Learn More</Link>
+                      <Link to={idx === 0 ? '/about' : '/solutions/governments'}>{t('solutions.learn_more')}</Link>
                     </Button>
                   </div>
                 ))}

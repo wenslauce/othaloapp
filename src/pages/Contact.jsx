@@ -64,7 +64,7 @@ export default function Contact() {
     setApiError('');
     const errs = validate();
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
-    if (!token) { setApiError('Please complete the security check.'); return; }
+    if (!token) { setApiError(t('contact.security_check')); return; }
 
     setLoading(true);
     try {
@@ -86,18 +86,18 @@ export default function Contact() {
   };
 
   const contactInfo = [
-    { icon: MapPin, label: 'Headquarters', val: 'Oslo, Norway' },
-    { icon: Mail, label: 'Email', val: 'contact@othalo.com' },
-    { icon: Phone, label: 'Phone', val: '+47 00 00 00 00' },
+    { icon: MapPin, label: t('contact.hq'), val: 'Oslo, Norway' },
+    { icon: Mail, label: t('contact.email_label'), val: 'contact@othalo.com' },
+    { icon: Phone, label: t('contact.phone_label'), val: '+47 00 00 00 00' },
   ];
 
   return (
     <div className="overflow-hidden">
       <SEOHead
-        title="Contact Othalo — Partner with Us"
-        description="Get in touch with Othalo. Whether you're a government, developer, or corporation, we're here to help you deploy sustainable housing solutions."
+        title={t('seo.contact.title')}
+        description={t('seo.contact.description')}
         canonical="https://othalo.com/contact"
-        keywords={['contact Othalo', 'Othalo partnerships', 'housing project inquiry', 'recycled plastic housing quote']}
+        keywords={t('seo.contact.keywords').split(', ')}
       />
       {/* Hero */}
       <section className="bg-navy py-24 lg:py-28">
@@ -175,7 +175,7 @@ export default function Contact() {
                         <div className="flex gap-2">
                           <Select onValueChange={v => set('dialCode', v)}>
                             <SelectTrigger className="w-28 h-11 rounded-sm flex-shrink-0 text-xs">
-                              <SelectValue placeholder="+code" />
+                              <SelectValue placeholder={t('contact.phone_code')} />
                             </SelectTrigger>
                             <SelectContent className="max-h-52">
                               {COUNTRIES.map(c => (
@@ -196,7 +196,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.org')}</Label>
-                        <Input value={form.org} onChange={e => set('org', e.target.value)} placeholder="Company / Ministry" className="h-11 rounded-sm" />
+                        <Input value={form.org} onChange={e => set('org', e.target.value)} placeholder={t('contact.org_placeholder')} className="h-11 rounded-sm" />
                       </div>
                     </div>
 
@@ -223,13 +223,9 @@ export default function Contact() {
                             <SelectValue placeholder={t('contact.select_profile')} />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="government">Government / Public Agency</SelectItem>
-                            <SelectItem value="developer">Housing Developer</SelectItem>
-                            <SelectItem value="corporation">Corporation / Enterprise</SelectItem>
-                            <SelectItem value="ngo">NGO / International Organization</SelectItem>
-                            <SelectItem value="media">Media / Press</SelectItem>
-                            <SelectItem value="investor">Investor</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
+                            {Object.entries(t('contact.profiles', { returnObjects: true })).map(([key, val]) => (
+                              <SelectItem key={key} value={key}>{val}</SelectItem>
+                            ))}
                           </SelectContent>
                         </Select>
                         <FieldError msg={errors.profileType} />
@@ -244,13 +240,9 @@ export default function Contact() {
                           <SelectValue placeholder={t('contact.select_enquiry')} />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="quote">Request a Quote / Pricing</SelectItem>
-                          <SelectItem value="solutions">Solutions & Deployment Planning</SelectItem>
-                          <SelectItem value="products">Product Information & Specifications</SelectItem>
-                          <SelectItem value="partnership">Corporate Partnership / ESG Program</SelectItem>
-                          <SelectItem value="investment">Investment Opportunity</SelectItem>
-                          <SelectItem value="media">Media / Press Enquiry</SelectItem>
-                          <SelectItem value="general">General Information</SelectItem>
+                          {Object.entries(t('contact.enquiries', { returnObjects: true })).map(([key, val]) => (
+                            <SelectItem key={key} value={key}>{val}</SelectItem>
+                          ))}
                         </SelectContent>
                       </Select>
                       <FieldError msg={errors.enquiryType} />
@@ -262,11 +254,9 @@ export default function Contact() {
                         <Select onValueChange={v => set('solution', v)}>
                           <SelectTrigger className="h-11 rounded-sm"><SelectValue placeholder={t('contact.select_solution')} /></SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="governments">Governments — National/Municipal Housing</SelectItem>
-                            <SelectItem value="housing-developers">Housing Developers — Private Development</SelectItem>
-                            <SelectItem value="corporations">Corporations — ESG / CSR Program</SelectItem>
-                            <SelectItem value="worker-accommodation">Worker Accommodation</SelectItem>
-                            <SelectItem value="multiple">Multiple / Unsure</SelectItem>
+                            {Object.entries(t('contact.solutions_list', { returnObjects: true })).map(([key, val]) => (
+                              <SelectItem key={key} value={key}>{val}</SelectItem>
+                            ))}
                           </SelectContent>
                         </Select>
                       </div>
@@ -278,12 +268,9 @@ export default function Contact() {
                         <Select onValueChange={v => set('product', v)}>
                           <SelectTrigger className="h-11 rounded-sm"><SelectValue placeholder={t('contact.select_product')} /></SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="community-1a">The Community 1a — 2BR Single Unit (42m²)</SelectItem>
-                            <SelectItem value="community-2c">The Community 2c — 6-Unit Block (252m²)</SelectItem>
-                            <SelectItem value="district-2a">The District 2a — 24-Unit Cluster (1,008m²)</SelectItem>
-                            <SelectItem value="worker-6x">Worker Accommodation 6x (144m²)</SelectItem>
-                            <SelectItem value="panel-system">Panel System Only</SelectItem>
-                            <SelectItem value="custom">Custom Configuration</SelectItem>
+                            {Object.entries(t('contact.products_list', { returnObjects: true })).map(([key, val]) => (
+                              <SelectItem key={key} value={key}>{val}</SelectItem>
+                            ))}
                           </SelectContent>
                         </Select>
                       </div>
@@ -296,12 +283,9 @@ export default function Contact() {
                         <Select onValueChange={v => set('units', v)}>
                           <SelectTrigger className="h-11 rounded-sm"><SelectValue placeholder={t('contact.select_units')} /></SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="1-10">1–10 units</SelectItem>
-                            <SelectItem value="10-50">10–50 units</SelectItem>
-                            <SelectItem value="50-200">50–200 units</SelectItem>
-                            <SelectItem value="200-1000">200–1,000 units</SelectItem>
-                            <SelectItem value="1000+">1,000+ units</SelectItem>
-                            <SelectItem value="unsure">Not yet determined</SelectItem>
+                            {Object.entries(t('contact.units_list', { returnObjects: true })).map(([key, val]) => (
+                              <SelectItem key={key} value={key}>{val}</SelectItem>
+                            ))}
                           </SelectContent>
                         </Select>
                       </div>
@@ -310,11 +294,9 @@ export default function Contact() {
                         <Select onValueChange={v => set('timeline', v)}>
                           <SelectTrigger className="h-11 rounded-sm"><SelectValue placeholder={t('contact.select_timeline')} /></SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="asap">As soon as possible</SelectItem>
-                            <SelectItem value="3months">Within 3 months</SelectItem>
-                            <SelectItem value="6months">3–6 months</SelectItem>
-                            <SelectItem value="12months">6–12 months</SelectItem>
-                            <SelectItem value="planning">Planning phase only</SelectItem>
+                            {Object.entries(t('contact.timelines_list', { returnObjects: true })).map(([key, val]) => (
+                              <SelectItem key={key} value={key}>{val}</SelectItem>
+                            ))}
                           </SelectContent>
                         </Select>
                       </div>
@@ -326,11 +308,9 @@ export default function Contact() {
                         <Select onValueChange={v => set('budget', v)}>
                           <SelectTrigger className="h-11 rounded-sm"><SelectValue placeholder={t('contact.select_budget')} /></SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="under-500k">Under $500,000</SelectItem>
-                            <SelectItem value="500k-2m">$500K – $2M</SelectItem>
-                            <SelectItem value="2m-10m">$2M – $10M</SelectItem>
-                            <SelectItem value="10m+">$10M+</SelectItem>
-                            <SelectItem value="unsure">To be determined</SelectItem>
+                            {Object.entries(t('contact.budgets_list', { returnObjects: true })).map(([key, val]) => (
+                              <SelectItem key={key} value={key}>{val}</SelectItem>
+                            ))}
                           </SelectContent>
                         </Select>
                       </div>

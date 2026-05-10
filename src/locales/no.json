@@ -1,4 +1,31 @@
 {
+  "seo": {
+    "home": {
+      "title": "Othalo — Rimelige, bærekraftige hjem fra resirkulert plast",
+      "description": "Othalo forvandler resirkulert plast til rimelige, holdbare boliger. Patentert panelteknologi. 72-timers byggetid. Godkjent av UN-Habitat.",
+      "keywords": "resirkulert plastbolig, bærekraftig konstruksjon, rimelige hjem, Othalo-teknologi, plastavfallsløsning"
+    },
+    "about": {
+      "title": "Om Othalo — Vår misjon, team og påvirkning",
+      "description": "Møt teamet bak Othalo. Lær om vår misjon for å løse den globale boligkrisen ved bruk av resirkulert plastavfall og skape sosial påvirkning.",
+      "keywords": "Othalo-team, Frank Cato Lahti, Claus Skadkjaer, bærekraftig boligmisjon, resirkulert plastpåvirkning"
+    },
+    "products": {
+      "title": "Othalo-produkter — Panelsystemet og boligserier",
+      "description": "Utforsk Othalo strukturelle panelsystem. Produsert av 100 % resirkulert plast, våre boligkonfigurasjoner er modulære, holdbare og skalerbare.",
+      "keywords": "plastveggpaneler, modulære boliger, resirkulert plastbyggematerialer, Othalo-produkter"
+    },
+    "solutions": {
+      "title": "Boligløsninger for myndigheter, utbyggere og selskaper",
+      "description": "Othalo tilbyr skreddersydde utrullingsstrategier for offentlig og privat sektor, med fokus på hastighet, ROI og ESG-påvirkning.",
+      "keywords": "offentlige boligløsninger, utbygger ROI konstruksjon, bedrifts ESG-boliger, bærekraftig utvikling"
+    },
+    "contact": {
+      "title": "Kontakt Othalo — Samarbeid med oss",
+      "description": "Ta kontakt med Othalo. Enten du er en myndighet, utbygger eller et selskap, er vi her for å hjelpe deg med bærekraftige boligløsninger.",
+      "keywords": "kontakt Othalo, Othalo-partnerskap, boligprosjekt forespørsel"
+    }
+  },
   "nav": {
     "home": "Hjem",
     "about": "Om oss",
@@ -8,207 +35,655 @@
     "solutions_label": "Løsninger",
     "gov": "Myndigheter",
     "gov_desc": "Byplanlegging i stor skala",
-    "dev": "Boligutbyggere",
-    "dev_desc": "Rask ROI og markedsintroduksjon",
+    "dev": "Utbyggere",
+    "dev_desc": "Rask ROI og markedsadgang",
     "corp": "Selskaper",
-    "corp_desc": "ESG-ekspertise og rapportering"
+    "corp_desc": "ESG-ekspertise og rapportering",
+    "all_solutions": "Alle løsninger",
+    "solutions_overview": "Oversikt over alle bruksområder"
   },
   "home": {
-    "hero_badge": "Patentert teknologi",
-    "hero_title": "Rimelige, bærekraftige hjem av resirkulert plast",
-    "hero_subtitle": "Vår patenterte teknologi leverer fleksibelt design ved hjelp av paneler laget av resirkulert plast – med hurtighet og skala.",
-    "hero_cta1": "Distribuer en løsning",
+    "hero_badge": "Patentert Teknologi",
+    "hero_title": "Rimelige, bærekraftige hjem fra resirkulert plast",
+    "hero_subtitle": "Vår patenterte teknologi leverer fleksibel design med paneler laget av resirkulert plast — boliger med hastighet og skala.",
+    "hero_cta1": "Rull ut en løsning",
     "hero_cta2": "Se teknologien",
     "tech_label": "Kjerneteknologi",
     "tech_title": "Den mest effektive løsningen på Afrikas boligutfordring",
-    "tech_subtitle": "Panelene våre adresserer plastkrisen og boligunderskuddet samtidig.",
+    "tech_subtitle": "Våre paneler adresserer plastavfallskrisen og boligmangelen samtidig — én global utfordring løser en annen.",
+    "tech_features": [
+      {
+        "title": "Innovativ patentert teknologi",
+        "desc": "Vår proprietære prosess forvandler plastavfall til strukturelle paneler som er 7 ganger sterkere enn betong."
+      },
+      {
+        "title": "Miljøvennlig",
+        "desc": "Null sement, null stål, null vann i konstruksjonen. 8 tonn plast fjernes per boligenhet."
+      },
+      {
+        "title": "Rask konstruksjon",
+        "desc": "Fra råpaneler til ferdig struktur på så lite som 72 timer ved bruk av lokal arbeidskraft."
+      },
+      {
+        "title": "Sikkerhetstestet",
+        "desc": "Brannbestandig, orkan- og jordskjelvsikker. Oppfyller internasjonale byggestandarder."
+      }
+    ],
+    "quote_text": "Det finnes bare én teknologi i verden i dag som kan gjøre noe reelt med Afrikas boligmangel og plastavfallsproblemet, og det er Othalo.",
+    "quote_author": "Dr. Vincent Kitio",
+    "quote_title": "Leder, Urban Energy Unit, UN-Habitat",
     "approach_label": "Vår tilnærming",
     "approach_title": "Bygg fremtidens hjem av resirkulert plast",
-    "quote_cta": "Lær mer",
-    "comparison_label": "Konkurranseanalyse",
-    "comparison_title": "Ledende teknologi og innovasjon",
-    "comparison_subtitle": "En direkte sammenligning mot tradisjonelle byggemetoder.",
-    "esg_title": "Othalo bidrar til målbare ESG-resultater",
-    "esg_subtitle": "Tilpasset 9 av 17 FNs bærekraftsmål.",
-    "cta_title": "Løsningen din starter her",
-    "cta_subtitle": "Enten du er en regjering, utbygger eller selskap – vi har en strategi for deg.",
-    "stat_plastic": "Plastsekvensering",
-    "stat_build": "Byggetid",
-    "stat_strength": "Sterkere enn betong"
+    "approach_items": [
+      {
+        "title": "Fra plast til høykvalitets konstruksjon",
+        "desc": "Vår patenterte teknologi forvandler resirkulert plast til strukturelle veggpaneler som er 7 ganger sterkere enn betong, helt brannbestandige og designet for å vare i 60+ år."
+      },
+      {
+        "title": "Designet for virkelige forhold",
+        "desc": "Orkan-, jordskjelv- og flomsikker. Våre paneler er testet for å fungere i ekstreme klimaer, fra kystnære tropiske strøk til tørre høyland — bygget der boliger trengs mest."
+      },
+      {
+        "title": "Fleksible løsninger tilpasset lokalt",
+        "desc": "Vårt modulære system tilpasser seg enhver planløsning — eneboliger, flerfamilieboliger, skoler, helseklinikker. Hvert prosjekt konfigureres for lokale behov."
+      },
+      {
+        "title": "Bygget for skala, hastighet og påvirkning",
+        "desc": "Vår forsyningskjede fra fabrikk til felt muliggjør rask utrulling. Én container med paneler bygger en komplett to-roms bolig, levert og klar til montering på under en uke."
+      }
+    ],
+    "gallery_categories": {
+      "community": "The Community",
+      "district": "The District",
+      "emergency": "Nødboliger",
+      "medical": "Medisinske enheter",
+      "worker": "Arbeiderboliger",
+      "factory": "Fabrikkproduksjon"
+    },
+    "comparison": {
+      "label": "Konkurranseanalyse",
+      "title": "Markedsledende teknologi og innovasjon",
+      "subtitle": "En direkte sammenligning med tradisjonelle byggemetoder.",
+      "headers": ["Egenskap", "Othalo", "Betong", "Stålramme", "Treverk"],
+      "rows": [
+        { "f": "Byggetid (2BR enhet)", "o": "72 timer", "c": "3–6 måneder", "s": "2–4 måneder", "t": "1–3 måneder" },
+        { "f": "Plastavfall fjernet", "o": "8 tonn", "c": "Ingen", "s": "Ingen", "t": "Ingen" },
+        { "f": "Levetid", "o": "60+ år", "c": "40–50 år", "s": "30–50 år", "t": "20–30 år" },
+        { "f": "Brannbestandig", "o": "Ja", "c": "Ja", "s": "Nei", "t": "Nei" },
+        { "f": "Jordskjelvsikker", "o": "Ja", "c": "Varierer", "s": "Ja", "t": "Delvis" },
+        { "f": "Vannforbruk i bygging", "o": "Ingen", "c": "Høyt", "s": "Middels", "t": "Lavt" },
+        { "f": "Sement/stål påkrevd", "o": "Ingen", "c": "Høyt", "s": "Høyt", "t": "Noe" },
+        { "f": "UN-Habitat sertifisert", "o": "Ja", "c": "Varierer", "s": "Varierer", "t": "Varierer" }
+      ]
+    },
+    "esg_title": "Othalo bidrar til konkrete og målbare ESG-resultater",
+    "esg_subtitle": "Samsvarer med 9 av de 17 bærekraftsmålene til FN.",
+    "sdg_names": {
+      "1": "Utrydde fattigdom",
+      "6": "Rent vann",
+      "8": "Anstendig arbeid",
+      "9": "Industri & Innovasjon",
+      "10": "Mindre ulikhet",
+      "11": "Bærekraftige byer",
+      "12": "Ansvarlig forbruk",
+      "13": "Stoppe klimaendringene",
+      "17": "Samarbeid"
+    },
+    "cta_title": "Din løsning starter her",
+    "cta_subtitle": "Enten du representerer myndigheter, er utbygger eller et selskap — vi har en strategi for din kontekst.",
+    "quote_cta": "Lær mer"
   },
   "about": {
-    "label": "Vårt formål",
+    "label": "Vårt Formål",
     "vision_label": "Vår visjon",
-    "vision": "En verden der avfall er en ressurs – der alle samfunn har tilgang til verdig, bærekraftig og trygg bolig.",
-    "mission_label": "Vårt oppdrag",
-    "mission": "Gjør plastavfall til boliger og boliger til håp.",
+    "vision": "En verden der avfall er en ressurs — der alle lokalsamfunn har tilgang til verdige, bærekraftige og trygge boliger.",
+    "mission_label": "Vår misjon",
+    "mission": "Forvandle plastavfall til boliger og boliger til håp.",
     "values_label": "Våre verdier",
+    "values_items": [
+      "Gjøre det gode",
+      "Integritet",
+      "Likhet for alle",
+      "Lokal myndiggjøring",
+      "Trygge lokalsamfunn for neste generasjon"
+    ],
     "team_label": "Menneskene",
-    "team_title": "Team",
-    "team_subtitle": "En mangfoldig gruppe innovatører, ingeniører og visjonærer samlet om oppdraget",
-    "culture_label": "Vår kultur",
-    "culture_title": "Vår kultur",
-    "culture_subtitle": "Det som former vår tilnærming til arbeid og guider oss.",
-    "impact_label": "Målbar endring",
-    "impact_title": "Påvirkning skapt av Othalo",
-    "story_label": "Vår historie",
+    "team_title": "Vårt Team",
+    "team_subtitle": "En mangfoldig gruppe innovatører, ingeniører og visjonærer forent i misjonen om bærekraftige boliger.",
+    "team_members": {
+      "frank": {
+        "name": "Frank Cato Lahti",
+        "title": "Grunnlegger og administrerende direktør",
+        "bio": "Visjonær gründer med bakgrunn fra militær etterretning og lidenskap for miljøinnovasjon."
+      },
+      "claus": {
+        "name": "Claus Skadkjaer",
+        "title": "Grunnlegger og driftsdirektør",
+        "bio": "Driftsekspert med fokus på skalering av bærekraftig teknologi og global utrulling."
+      },
+      "martin": {
+        "name": "Martin Dokkedal",
+        "title": "Logistikksjef",
+        "bio": "Optimaliserer global logistikk for å bringe Othalo-teknologi til de mest avsidesliggende samfunnene."
+      },
+      "thomas": {
+        "name": "Thomas Meidell Laan",
+        "title": "Juridisk direktør",
+        "bio": "Sikrer overholdelse av regelverk og beskytter vår globale patentportefølje."
+      },
+      "kjell": {
+        "name": "Kjell Steen",
+        "title": "Produksjonsleder",
+        "bio": "Veteran innen industriell produksjon som leder våre panelproduksjonsanlegg."
+      },
+      "bengt": {
+        "name": "Bengt Erling Berg",
+        "title": "Teknisk supportsjef",
+        "bio": "Bidrar med teknisk ekspertise og veiledning på stedet for Othalo-utrullinger."
+      },
+      "stephane": {
+        "name": "Stephane Bernard",
+        "title": "Kommersiell direktør",
+        "bio": "Driver vekst og strategiske partnerskap i internasjonale markeder."
+      },
+      "wenslauce": {
+        "name": "Wenslauce Chengo",
+        "title": "Landssjef Kenya",
+        "bio": "Leder Othalos påvirkning og PR-arbeid i Øst-Afrika."
+      }
+    },
+    "culture_label": "Vår Kultur",
+    "culture_title": "Drevet av formål, forankret i kvalitet.",
+    "culture_subtitle": "Det som former vår tilnærming til arbeid og veileder oss i å skape en positiv påvirkning.",
+    "culture_values": [
+      {
+        "title": "Teamarbeid",
+        "desc": "Samarbeid og gjensidig støtte driver vår suksess. Vi tror på kraften i å jobbe sammen."
+      },
+      {
+        "title": "Punktlighet",
+        "desc": "Vi respekterer tidsfrister og leverer på våre løfter. Effektivitet er kjernen i vår drift."
+      },
+      {
+        "title": "Kommunikasjon",
+        "desc": "Åpen og gjennomsiktig dialog sikrer samordning og forståelse på alle nivåer."
+      },
+      {
+        "title": "Engasjement",
+        "desc": "Vi er dedikert til vår misjon om bærekraftige boligløsninger og positiv påvirkning."
+      }
+    ],
+    "impact_label": "Målbar Endring",
+    "impact_title": "Vår påvirkning på mennesker, planet og velstand.",
+    "impact_items": [
+      {
+        "num": "01",
+        "title": "Miljøpåvirkning",
+        "desc": "Plast fjernet fra miljøet, ingen bruk av sement eller stål — målbar planetpåvirkning per enhet."
+      },
+      {
+        "num": "02",
+        "title": "Sosial påvirkning",
+        "desc": "Hjem for lav- og mellominntektssamfunn. Verdige, trygge boliger som forvandler liv."
+      },
+      {
+        "num": "03",
+        "title": "Økonomisk påvirkning",
+        "desc": "Skaper arbeidsplasser i fremvoksende økonomier. Hvert anlegg skaper bærekraftig lokal sysselsetting."
+      }
+    ],
+    "contributions": {
+      "vision": "Visjon og strategi",
+      "operations": "Drift",
+      "supply": "Forsyningskjede",
+      "legal": "Juridisk og samsvar",
+      "manufacturing": "Produksjon",
+      "engineering": "Ingeniørarbeid",
+      "business": "Forretningsutvikling",
+      "pr": "Kenya og PR"
+    },
+    "story_label": "Vår Historie",
+    "story_quote": "Etter å ha tjenestegjort i den norske hæren og etterretning på 90-tallet, så jeg menneskers motstandskraft i konflikter og den harde virkeligheten i flyktningleirer. År senere, på en plastbelagt strand i Nord-Norge, innså jeg at plastkrisen var nærmere enn vi tror. Det øyeblikket tente en idé: kan vi forvandle plastavfall til trygge hjem? Det spørsmålet ble fundamentet for Othalo.",
     "cta": "Oppdag vår teknologi"
   },
   "products": {
     "label": "Produktportefølje",
-    "title": "Othalo-panelsystemet",
-    "subtitle": "Patenterte strukturelle veggpaneler laget av 100 % resirkulert plast.",
+    "title": "Othalo Panelsystem",
+    "subtitle": "Patenterte strukturelle veggpaneler produsert av 100 % resirkulert plast — fundamentet i hver Othalo-struktur.",
+    "un_habitat_badge": "Godkjent av UN-HABITAT",
+    "un_habitat_note": "For en bedre urban fremtid",
     "cta_quote": "Få et produkttilbud",
     "cta_solutions": "Se løsninger",
     "tech_label": "Teknisk fordel",
-    "tech_title": "Ledende teknologi og innovasjon",
-    "spec_label": "Spesifikasjonsark",
-    "spec_title": "Tekniske spesifikasjoner for panel",
-    "lines_label": "Produktlinjer",
+    "tech_title": "Markedsledende teknologi og innovasjon",
+    "panel_features": [
+      { "title": "Kostnadseffektivt", "desc": "Bruk av plastavfall, begrenset behov for maskineri på stedet, rask byggemetode." },
+      { "title": "Kvalitet og holdbarhet", "desc": "60 års levetid, 7x sterkere enn betong, isolasjon 3x mer effektiv enn betong." },
+      { "title": "Sikkerhet", "desc": "Brannbestandig, orkan- og jordskjelvsikker. Testet etter internasjonale standarder." },
+      { "title": "Karboneffektivt", "desc": "Laget av 100 % resirkulert plast. Ingen sement eller stål brukt. Lavt vannforbruk." }
+    ],
+    "material_label": "Materiale",
+    "material_value": "100 % resirkulert plast",
+    "comparison_title": "Markedsledende teknologi og innovasjon",
+    "comparison_headers": ["Detaljer", "Othalo", "3D-printing", "Trippelpanel", "Tradisjonell bygging"],
+    "comparison_rows": [
+      { "p": "Markedsklar", "o": "full", "d": "none", "r": "partial", "t": "full" },
+      { "p": "Lav produksjonstid", "o": "full", "d": "none", "r": "none", "t": "partial" },
+      { "p": "Resirkulerbar", "o": "full", "d": "partial", "r": "partial", "t": "none" },
+      { "p": "Bærekraftig", "o": "full", "d": "partial", "r": "partial", "t": "none" },
+      { "p": "Tilgjengelige råvarer", "o": "full", "d": "none", "r": "partial", "t": "none" },
+      { "p": "Lav kostnad", "o": "full", "d": "none", "r": "none", "t": "partial" },
+      { "p": "Industriell produksjon", "o": "full", "d": "none", "r": "none", "t": "partial" }
+    ],
+    "fulfilled": "Oppfylt",
+    "partially_fulfilled": "Delvis oppfylt",
+    "lines_label": "Produktserier",
     "lines_title": "Boligkonfigurasjoner",
-    "lines_subtitle": "Hver konfigurasjon er formålsutviklet, modulær og lokalt tilpasningsdyktig.",
-    "get_quote": "Få tilbud",
-    "dual_label": "Dobbel effekt",
-    "dual_title": "Bruke én global utfordring til å løse en annen"
+    "lines_subtitle": "Hver konfigurasjon er spesialkonstruert, modulær og lokalt tilpasningsdyktig.",
+    "product_lines": [
+      {
+        "name": "The Community",
+        "desc": "Eneboliger og flerfamilieboliger optimalisert for rask urban utrulling og sosiale boligprogrammer."
+      },
+      {
+        "name": "The District",
+        "desc": "Boligklynger med middels tetthet for familier. Full integrasjon av infrastruktur."
+      },
+      {
+        "name": "The Emergency Shelter",
+        "desc": "Nødboliger for rask utrulling ved katastrofer og humanitær hjelp."
+      },
+      {
+        "name": "The Medical Units",
+        "desc": "Spesialiserte helsemoduler inkludert klinikker og isolasjonsavdelinger."
+      },
+      {
+        "name": "The Worker Accommodation",
+        "desc": "Arbeiderboliger for anleggsplasser, gruvedrift og industriell utrulling."
+      }
+    ],
+    "get_quote": "Få et tilbud",
+    "dual_label": "Dobbel påvirkning",
+    "dual_title": "Bruke én global utfordring til å løse en annen",
+    "dual_items": [
+      { "title": "Plastavfall", "desc": "Et globalt problem, over 9 milliarder tonn allerede akkumulert i miljøet." },
+      { "title": "Rimelige hjem", "desc": "En stadig økende krise: 1,6 milliarder mennesker lever uten tilfredsstillende bolig." }
+    ]
   },
   "solutions": {
     "label": "Hva vi tilbyr",
-    "title": "Løsninger for enhver distribusjonskontekst",
-    "subtitle": "Enten du er en regjering, utbygger eller selskap – Othalo har en skreddersydd løsning for deg.",
+    "title": "Løsninger bygget for alle bruksområder",
+    "subtitle": "Enten du er en myndighet, utbygger eller et selskap — Othalo har en skreddersydd løsning for deg.",
     "learn_more": "Lær mer",
     "not_sure_title": "Usikker på hvilken løsning som passer?",
-    "not_sure_subtitle": "Teamet vårt hjelper gjerne med å finne riktig tilnærming. Ta kontakt.",
-    "contact_us": "Kontakt oss"
+    "not_sure_subtitle": "Teamet vårt hjelper deg gjerne med å finne riktig tilnærming. Vi svarer innen 2 virkedager.",
+    "contact_us": "Kontakt oss",
+    "cards": [
+      {
+        "label": "Myndigheter",
+        "tag": "Offentlig sektor",
+        "headline": "Boliger i skalaen myndigheter trenger",
+        "desc": "Rimelige hjem fra resirkulert plast for skala. Prefabrikkerte modulære systemer godkjent av FN.",
+        "bullets": [
+          "Rimelige hjem fra resirkulert plast for skala",
+          "Prefabrikkerte modulære systemer godkjent av FN",
+          "Raskere bygging",
+          "Fleretasjes (opptil 4 etasjer)",
+          "Globalt samsvar, lokalt tilpasningsdyktig"
+        ],
+        "cta": "Be om et offentlig brief"
+      },
+      {
+        "label": "Utbyggere",
+        "tag": "Privat sektor",
+        "headline": "Raskeste vei fra tomt til ferdige boliger",
+        "desc": "Raskere og mer kostnadseffektiv konstruksjon. Fleksibelt design som tilpasser seg dine behov.",
+        "bullets": [
+          "Raskere og mer kostnadseffektiv konstruksjon",
+          "Prefabrikkerte modulære systemer av resirkulert plast",
+          "Forenklet montering på stedet",
+          "Lette og skalerbare komponenter",
+          "Fleksibelt design tilpasset dine prosjekter"
+        ],
+        "cta": "Be om et utbyggertilbud"
+      },
+      {
+        "label": "Selskaper",
+        "tag": "ESG i bedrifter",
+        "headline": "ESG-løsninger som skaper reell endring",
+        "desc": "Nøkkelferdig ESG-plattform. Koble samsvar med miljømessig og sosial påvirkning.",
+        "bullets": [
+          "Nøkkelferdig ESG-plattform",
+          "Koble samsvar med miljømessig og sosial påvirkning",
+          "Forvandle avfall til konkrete byggematerialer",
+          "Skalerbar, verifisert og målbar påvirkning",
+          "Rask utførelse",
+          "Programmer for interessentengasjement"
+        ],
+        "cta": "Utforsk bedriftspartnerskap"
+      }
+    ]
   },
   "governments": {
     "label": "Løsninger — Myndigheter",
-    "title": "Boliger i den skalaen myndigheter trenger",
-    "subtitle": "Rimelige, katastrofesikre og SDG-tilpassede boliger i nasjonal skala.",
-    "cta1": "Be om et myndighetsnotat",
+    "title": "Boliger i skalaen myndigheter trenger",
+    "subtitle": "Rimelige, katastrofebestandige boliger rulles ut i nasjonal skala — uten forsinkelsene ved tradisjonell bygging.",
+    "cta1": "Be om et offentlig brief",
     "cta2": "Kontakt oss",
+    "challenge_label": "Utfordringen",
+    "challenge_title": "Begrensningene ved tradisjonell bygging",
+    "challenge_bullets": [
+      "Økende boligbehov drevet av rask urbanisering",
+      "Stigende byggekostnader og budsjettbegrensninger",
+      "Tradisjonell bygging er tregt, dyrt og har høye utslipp",
+      "Dagens metoder er ikke bærekraftige i nødvendig nasjonal skala"
+    ],
+    "solution_label": "Othalo-løsningen",
+    "solution_title": "Skala uten kompromisser",
+    "solution_bullets": [
+      "Rimelige hjem fra resirkulert plast for skala",
+      "Prefabrikkerte modulære systemer godkjent av FN",
+      "Raskere bygging",
+      "Fleretasjes (opptil 4 etasjer)",
+      "Globalt samsvar, lokalt tilpasningsdyktig"
+    ],
     "benefits_label": "Hvorfor Othalo for myndigheter",
-    "benefits_title": "En boligstrategi for offentlig sektor som leverer",
+    "benefits_title": "En offentlig boligstrategi som leverer",
+    "benefits": [
+      { "title": "Skaler raskt", "desc": "Rull ut rimelige boliger raskt og effektivt for å møte behovet." },
+      { "title": "Høyere tetthet", "desc": "Bygg urbane prosjekter med høyere tetthet med fleretasjes-løsninger." },
+      { "title": "Reduser kostnader", "desc": "Reduser kostnader med våre alternativer til dyrt stål og sement." },
+      { "title": "Bygg raskere", "desc": "Bygg raskere med prefabrikasjon — lever boliger på dager, ikke måneder." },
+      { "title": "Lavere karbonavtrykk", "desc": "Lavere karbonavtrykk med bærekraftige, sirkulære materialer." },
+      { "title": "Fleksibelt design", "desc": "Fleksibelt design som møter lokale behov og regelverk." }
+    ],
     "comparison_title": "Othalo vs. tradisjonell offentlig boligbygging",
-    "comparison_subtitle": "En direkte sammenligning av nøkkelparametere.",
-    "cta_section_title": "Klar til å utforske en nasjonal distribusjon?",
-    "cta_section_subtitle": "Teamet vårt samarbeider direkte med departementer og boligmyndigheter.",
-    "cta_contact": "Kontakt teamet"
+    "comparison_subtitle": "En direkte sammenligning av nøkkeltall.",
+    "comparison_headers": ["Mål", "Othalo", "Tradisjonell"],
+    "comparison_rows": [
+      { "f": "Byggetid (100 enheter)", "o": "< 3 måneder", "t": "18–36 måneder" },
+      { "f": "Kostnad per enhet (2BR)", "o": "30–50% lavere", "t": "Referanse" },
+      { "f": "Lokal verdiskaping", "o": "Høy — ingen tunge maskiner", "t": "Middels — maskinavhengig" },
+      { "f": "Miljøpåvirkning", "o": "Plast fjernet", "t": "CO₂ sluppet ut" },
+      { "f": "Bærekraftsrapportering", "o": "Innebygde måltall", "t": "Manuell revisjon" },
+      { "f": "Motstandskraft", "o": "Orkan Kat. 5 + Seismisk Sone 4", "t": "Varierer — ofte lavere" }
+    ],
+    "cta_section_title": "Klar for å utforske en nasjonal utrulling?",
+    "cta_section_subtitle": "Vårt team samarbeider direkte med departementer, boligbyggelag og frivillige organisasjoner.",
+    "cta_contact": "Kontakt vårt team"
   },
   "housing_dev": {
-    "label": "Løsninger — Boligutbyggere",
-    "title": "Den raskeste veien fra tomt til ferdige hjem",
-    "subtitle": "Overlegen ROI, rask markedsintroduksjon og forutsigbare kostnader.",
-    "cta1": "Be om et utviklertilbud",
+    "label": "Løsninger — Utbyggere",
+    "title": "Raskeste vei fra tomt til ferdige boliger",
+    "subtitle": "Overlegen ROI og raskere tilgang til markedet. Othalo gir utbyggere et forsprang.",
+    "cta1": "Be om et utbyggertilbud",
     "cta2": "Kontakt oss",
-    "benefits_label": "Utviklerfordeler",
-    "benefits_title": "Bygget for å forbedre din utviklingsøkonomi",
-    "roi_label": "ROI-beregninger",
-    "roi_title": "Tallene som styrker din forretningssak",
-    "cta_title": "Klar til å utvikle med Othalo?",
-    "cta_subtitle": "Vi vil guide deg gjennom spesifikasjoner, logistikk og en fullstendig finansmodell.",
-    "cta1_bottom": "Be om et utviklingsnotat",
-    "cta_contact": "Kontakt teamet"
+    "challenge_label": "Utfordringen",
+    "challenge_title": "Markedspress som begrenser vekst",
+    "challenge_bullets": [
+      "Stigende kostnader og lav forutsigbarhet i marginer",
+      "Prosjektforsinkelser og uforutsigbare tidslinjer",
+      "Mangel på stål, sement og faglært arbeidskraft",
+      "Komplekse byggemetoder som er vanskelige å skalere"
+    ],
+    "solution_label": "Othalo-løsningen",
+    "solution_title": "En raskere og mer kostnadseffektiv modell",
+    "solution_bullets": [
+      "Raskere og mer kostnadseffektiv konstruksjon",
+      "Prefabrikkerte modulære systemer av resirkulert plast",
+      "Forenklet montering med lette komponenter",
+      "Fleksibelt design tilpasset ditt prosjekt"
+    ],
+    "benefits_label": "Fordeler for utbyggere",
+    "benefits_title": "Bygget for å forbedre din prosjektøkonomi",
+    "benefits": [
+      { "title": "Kostnadskontroll", "desc": "Bedre kontroll på kostnader og redusert risiko for prisendringer på materialer." },
+      { "title": "Bygg raskere", "desc": "Bygg raskere med prefabrikasjon — lever boliger på dager, ikke måneder." },
+      { "title": "Lavere personellbehov", "desc": "Behov for færre folk på byggeplassen med forenklet montering." },
+      { "title": "Høyere effektivitet", "desc": "Høyere effektivitet og skalerbar levering for store prosjekter." },
+      { "title": "Nye markeder", "desc": "Få tilgang til markedet for rimelige boliger." },
+      { "title": "Styrket ESG", "desc": "Styrk bedriftens ESG-profil med sirkulære lavkarbon-materialer." },
+      { "title": "Tilpasningsdyktig", "desc": "Design som kan tilpasses ditt prosjekt og lokale regler." }
+    ],
+    "roi_label": "ROI-målinger",
+    "roi_title": "Tallene som styrker ditt business case",
+    "roi_items": [
+      { "label": "Kostnad vs. betong", "value": "30–50% lavere", "highlight": true },
+      { "label": "Byggetid (100 enheter)", "value": "< 3 måneder", "highlight": true },
+      { "label": "Behov for faglært arbeidskraft", "value": "Kun semiskilled", "highlight": false },
+      { "label": "Maskiner på byggeplass", "value": "Ingen", "highlight": true },
+      { "label": "Svinn på byggeplass", "value": "Nær null", "highlight": false },
+      { "label": "Beskyttelse av marginer", "value": "Fast panelpris", "highlight": false }
+    ],
+    "cta_title": "Klar for å bygge med Othalo?",
+    "cta_subtitle": "Vi veileder deg gjennom spesifikasjoner, logistikk og den finansielle modellen.",
+    "cta1_bottom": "Be om et utbyggingsbrief",
+    "cta_contact": "Kontakt vårt team"
   },
   "corporations": {
     "label": "Løsninger — Selskaper",
-    "title": "ESG-ekspertise som gir reell forandring",
-    "subtitle": "Samarbeid med Othalo for å gjøre ESG-forpliktelsene dine om til målbar effekt.",
-    "cta1": "Utforsk et bedriftspartnerskap",
+    "title": "ESG-løsninger som skaper reell endring",
+    "subtitle": "Samarbeid med Othalo for å forvandle dine ESG-forpliktelser til målbare resultater.",
+    "cta1": "Utforsk bedriftspartnerskap",
     "cta2": "Kontakt oss",
-    "benefits_label": "Bedriftsfordel",
-    "benefits_title": "Strukturert ESG-effekt for fremtidsrettede selskaper",
-    "metrics_title": "Beregninger bærekraftteamet ditt kan stole på",
-    "metrics_subtitle": "Hvert Othalo-bedriftsprosjekt genererer en full påvirkningsdatapakke.",
-    "cta_title": "Gjør ESG-forpliktelsene dine til verifisert effekt",
-    "cta_subtitle": "Snakk med bedriftspartnerteamet vårt for å utvikle et program.",
+    "challenge_label": "Utfordringen",
+    "challenge_title": "Navigering i komplekse ESG-forventninger",
+    "challenge_bullets": [
+      "Ansvar for plast- og emballasjeavfall ved livsslutt",
+      "Strengere regler for sirkularitet og økende etterlevelsespress",
+      "Behov for skalerbare og verifiserbare løsninger",
+      "Økende krav om handling fra kunder, ansatte og investorer"
+    ],
+    "solution_label": "Othalo-løsningen",
+    "solution_title": "En nøkkelferdig ESG-plattform",
+    "solution_bullets": [
+      "ESG-plattform som kobler samsvar med miljømessig og sosial påvirkning",
+      "Forvandle avfall til byggematerialer og boliger",
+      "Skalerbar, verifisert og målbar påvirkning for rapportering",
+      "Rask utførelse og gode programmer for interessentengasjement"
+    ],
+    "benefits_label": "Bedriftsfordeler",
+    "benefits_title": "Strukturert ESG-påvirkning for fremtidsrettede selskaper",
+    "benefits": [
+      { "title": "Oppfyll EPR-krav", "desc": "Møt EPR-krav med målbare resultater gjennom plastfjerning." },
+      { "title": "Avfall til verdi", "desc": "Bruk en sirkulær modell som forvandler plast til boliger." },
+      { "title": "Reell ESG-påvirkning", "desc": "Lever konkret påvirkning på miljø, sosiale forhold og styring." },
+      { "title": "Rask utrulling", "desc": "Muliggjør umiddelbar handling og målbare resultater." },
+      { "title": "Styrket merkevare", "desc": "Styrk tilliten til merkevaren med synlig påvirkning i lokalsamfunn." },
+      { "title": "Gjennomsiktig sporing", "desc": "Effektiv sporing av påvirkning kompatibel med GRI og SASB." },
+      { "title": "Global skalering", "desc": "Kan skaleres for å matche selskapets globale fotavtrykk." }
+    ],
+    "metrics_title": "Tall ditt bærekraftsteam kan stole på",
+    "metrics_subtitle": "Hver utrulling genererer en fullstendig pakke med data om påvirkning.",
+    "metrics_items": [
+      { "label": "Plast fjernet per 2BR enhet", "value": "8 tonn" },
+      { "label": "CO₂ unngått vs. betong", "value": "~12 tonn per enhet" },
+      { "label": "Bærekraftsmål adressert", "value": "9 av 17" },
+      { "label": "Lokale jobber skapt / 100 enheter", "value": "80–120 stillinger" },
+      { "label": "Støttede rapporteringsrammeverk", "value": "GRI, SASB, TCFD" },
+      { "label": "Verifisering", "value": "Tredjepartsrevidert" }
+    ],
+    "cta_title": "Forvandle dine forpliktelser til verifisert påvirkning",
+    "cta_subtitle": "Snakk med vårt team for å sette opp et program tilpasset dine mål.",
     "cta1_bottom": "Kontakt bedriftspartnerskap",
-    "cta_contact": "Kontakt teamet"
+    "cta_contact": "Kontakt vårt team"
   },
   "contact": {
-    "label": "Ta kontakt",
+    "label": "Kontakt",
     "title": "Start samtalen",
-    "subtitle": "Enten du planlegger en distribusjon, utforsker et partnerskap eller bare vil lære om Othalo — vi er her for å hjelpe.",
+    "subtitle": "Enten du planlegger et prosjekt, utforsker partnerskap eller bare vil lære mer.",
     "offices": "Våre kontorer",
+    "hq": "Hovedkontor",
+    "email_label": "E-post",
+    "phone_label": "Telefon",
     "response_label": "Responstid",
     "response_time": "Innen 2 virkedager",
-    "response_note": "Teamet vårt dekker henvendelser fra myndigheter, utbyggere og bedrifter globalt.",
+    "response_note": "Teamet vårt håndterer forespørsler fra hele verden.",
     "name": "Fullt navn",
     "email": "E-post",
     "phone": "Telefon",
-    "phone_code": "Landkode",
+    "phone_code": "Landskode",
     "org": "Organisasjon",
+    "org_placeholder": "Selskap / Departement",
     "country": "Land",
     "select_country": "Velg land",
     "profile": "Jeg representerer",
     "select_profile": "Velg profil",
-    "enquiry": "Type henvendelse",
-    "select_enquiry": "Hva gjelder henvendelsen?",
+    "enquiry": "Hva gjelder det?",
+    "select_enquiry": "Velg type forespørsel",
     "solution": "Relevant løsning",
     "select_solution": "Velg løsning",
-    "product": "Produkt av interesse",
+    "product": "Interessert i produkt",
     "select_product": "Velg produkt",
     "units": "Antall enheter",
-    "select_units": "Velg område",
+    "select_units": "Velg antall",
     "timeline": "Ønsket tidslinje",
     "select_timeline": "Velg tidslinje",
-    "budget": "Omtrentlig budsjett",
-    "select_budget": "Velg område",
+    "budget": "Budsjett",
+    "select_budget": "Velg ramme",
     "message": "Melding",
-    "message_placeholder": "Fortell oss om prosjektet ditt...",
+    "message_placeholder": "Fortell oss om ditt prosjekt eller dine spørsmål...",
     "submit": "Send melding",
     "respond_note": "Vi svarer innen 2 virkedager.",
     "success_title": "Melding mottatt",
-    "success_note": "Takk for at du tok kontakt. Et teammedlem vil ta kontakt innen 2 virkedager.",
+    "success_note": "Takk for din henvendelse. Vi kontakter deg innen 2 virkedager.",
+    "security_check": "Vennligst fullfør sikkerhetssjekken.",
     "err_name": "Fullt navn er påkrevd",
-    "err_email": "Gyldig e-postadresse er påkrevd",
-    "err_phone": "Skriv inn et gyldig telefonnummer (kun sifre, 6–15 tegn)",
+    "err_email": "Gyldig e-post er påkrevd",
+    "err_phone": "Ugyldig telefonnummer",
     "err_country": "Vennligst velg et land",
     "err_profile": "Vennligst velg profiltype",
-    "err_enquiry": "Vennligst velg type henvendelse",
-    "err_message": "Melding er påkrevd (min. 10 tegn)"
+    "err_enquiry": "Vennligst velg type forespørsel",
+    "err_message": "Melding er påkrevd (min. 10 tegn)",
+    "profiles": {
+      "government": "Myndigheter / Offentlig organ",
+      "developer": "Boligutbygger",
+      "corporation": "Selskap / Bedrift",
+      "ngo": "NGO / Internasjonal org.",
+      "media": "Media / Presse",
+      "investor": "Investor",
+      "other": "Annet"
+    },
+    "enquiries": {
+      "quote": "Be om tilbud / Pris",
+      "solutions": "Løsninger og planlegging",
+      "products": "Produktinformasjon",
+      "partnership": "Bedriftspartnerskap / ESG",
+      "investment": "Investeringsmulighet",
+      "media": "Media / Presse",
+      "general": "Generell informasjon"
+    },
+    "solutions_list": {
+      "governments": "Myndigheter — Nasjonale boliger",
+      "housing_developers": "Utbyggere — Private prosjekter",
+      "corporations": "Selskaper — ESG-program",
+      "worker_accommodation": "Arbeiderboliger",
+      "multiple": "Flere / Usikker"
+    },
+    "products_list": {
+      "community_1a": "The Community 1a — 2BR enhet (42m²)",
+      "community_2c": "The Community 2c — 6-enhets blokk (252m²)",
+      "district_2a": "The District 2a — 24-enhets klynge (1 008m²)",
+      "worker_6x": "Arbeiderboliger 6x (144m²)",
+      "panel_system": "Kun panelsystem",
+      "custom": "Tilpasset løsning"
+    },
+    "units_list": {
+      "1_10": "1–10 enheter",
+      "10_50": "10–50 enheter",
+      "50_200": "50–200 enheter",
+      "200_1000": "200–1 000 enheter",
+      "1000_plus": "1 000+ enheter",
+      "unsure": "Ikke bestemt"
+    },
+    "timelines_list": {
+      "asap": "Så snart som mulig",
+      "3months": "Innen 3 måneder",
+      "6months": "3–6 måneder",
+      "12months": "6–12 måneder",
+      "planning": "Kun planleggingsfase"
+    },
+    "budgets_list": {
+      "under_500k": "Under $500 000",
+      "500k_2m": "$500K – $2M",
+      "2m_10m": "$2M – $10M",
+      "10m_plus": "$10M+",
+      "unsure": "Ikke bestemt"
+    }
   },
   "quote": {
-    "gov_title": "Be om et myndighetsnotat",
-    "gov_subtitle": "Teamet vårt for offentlig sektor utarbeider et skreddersydd distribusjonsforslag.",
-    "dev_title": "Be om et utviklertilbud",
-    "dev_subtitle": "Få en finansmodell og logistikkplan for utviklingen din.",
-    "corp_title": "Bedriftspartnerforespørsel",
-    "corp_subtitle": "ESG-teamet vårt vil utvikle et program tilpasset dine bærekraftsmål.",
+    "gov_title": "Be om et offentlig brief",
+    "gov_subtitle": "Vårt team vil utarbeide et skreddersydd forslag.",
+    "dev_title": "Be om et utbyggertilbud",
+    "dev_subtitle": "Få en finansiell modell og logistikkplan.",
+    "corp_title": "Forespørsel om bedriftspartnerskap",
+    "corp_subtitle": "Vårt ESG-team vil utforme et program tilpasset deres mål.",
     "prod_title": "Få et produkttilbud",
-    "prod_subtitle": "Fortell oss hvilket produkt du trenger, så sender vi full prising og spesifikasjoner.",
+    "prod_subtitle": "Fortell oss hvilket produkt du trenger, så sender vi pris og spesifikasjoner.",
+    "main_title": "Få et tilbud",
+    "main_subtitle": "Fyll ut detaljene — vi svarer innen 2 virkedager.",
+    "sidebar_title": "Be om et prosjekttilbud",
+    "sidebar_desc": "Våre spesialister vil utarbeide et detaljert forslag.",
+    "sidebar_items": ["Rask utrulling", "Patentert teknologi", "FN-godkjent", "Global påvirkning"],
     "name": "Fullt navn",
     "email": "E-post",
     "phone": "Telefon",
-    "org": "Organisasjon",
-    "country": "Land / Region",
-    "product": "Produkt",
-    "select_product": "Velg produkt",
-    "units": "Antall enheter",
-    "select_units": "Velg område",
-    "timeline": "Ønsket tidslinje",
-    "select_timeline": "Velg tidslinje",
-    "budget": "Omtrentlig budsjett",
-    "select_budget": "Velg budsjettområde",
-    "message": "Melding",
-    "message_placeholder": "Fortell oss mer om prosjektet ditt...",
-    "submit": "Send henvendelse",
+    "org": "Organisasjon (Valgfritt)",
+    "org_placeholder": "Selskap / Departement",
+    "country": "Land",
+    "select_country": "Velg land",
+    "profile": "Profiltype",
+    "select_profile": "Jeg representerer...",
+    "product": "Produktkonfigurasjon",
+    "select_product": "Velg konfigurasjon",
+    "units": "Enheter påkrevd",
+    "select_units": "Prosjektskala",
+    "message": "Tilleggsnotater",
+    "message_placeholder": "Fortell oss om ditt prosjekt, tidslinje eller krav...",
+    "submit": "Be om tilbud",
     "respond_note": "Vi svarer innen 2 virkedager.",
-    "success_title": "Henvendelse mottatt",
-    "success_note": "Takk. Et teammedlem vil ta kontakt innen 2 virkedager.",
-    "close": "Lukk"
+    "success_title": "Tilbud forespurt",
+    "success_note": "Takk for interessen. En bekreftelse er sendt til {{email}}.",
+    "success_review": "En spesialist vil vurdere dine krav og svare innen 2 virkedager.",
+    "done": "Ferdig",
+    "security_check": "Vennligst fullfør sikkerhetssjekken.",
+    "err_name": "Fullt navn er påkrevd",
+    "err_email": "Gyldig e-post er påkrevd",
+    "err_phone": "Ugyldig telefonnummer",
+    "err_country": "Land er påkrevd",
+    "err_profile": "Vennligst velg profiltype",
+    "err_product": "Vennligst velg produktkonfigurasjon"
   },
   "footer": {
-    "tagline": "Gjør plastavfall til verdige, bærekraftige boliger for samfunn over hele verden.",
-    "plastic_label": "Plast fjernet fra havet",
-    "plastic_note": "og teller — oppdatert i sanntid",
+    "tagline": "Forvandler plastavfall til verdige, bærekraftige boliger for lokalsamfunn over hele verden.",
+    "plastic_label": "Plast fjernet fra havene",
+    "plastic_note": "og tallet stiger — oppdatert i sanntid",
     "company": "Selskap",
     "solutions": "Løsninger",
     "legal": "Juridisk",
     "rights": "Alle rettigheter forbeholdt.",
     "registered": "Registrert i Norge — Bygger en bærekraftig fremtid"
   },
-  "privacy": { "label": "Juridisk", "title": "Personvernerklæring", "effective": "Ikrafttredelsesdato: 9. mai 2026" },
-  "terms": { "label": "Juridisk", "title": "Tjenestevilkår", "effective": "Ikrafttredelsesdato: 9. mai 2026" },
-  "error": { "boundary_title": "Noe gikk galt", "boundary_subtitle": "Det oppsto en uventet feil. Prøv å oppdatere siden.", "refresh": "Oppdater siden", "home": "Gå hjem" },
-  "404": { "code": "404", "title": "Side ikke funnet", "subtitle": "Siden du leter etter finnes ikke eller er flyttet.", "home": "Tilbake til hjem" }
+  "privacy": {
+    "label": "Juridisk",
+    "title": "Personvernerklæring",
+    "effective": "Ikrafttredelse: 9. mai 2026"
+  },
+  "terms": {
+    "label": "Juridisk",
+    "title": "Brukervilkår",
+    "effective": "Ikrafttredelse: 9. mai 2026"
+  },
+  "error": {
+    "boundary_title": "Noe gikk galt",
+    "boundary_subtitle": "En uventet feil har oppstått. Vennligst prøv å laste siden på nytt.",
+    "refresh": "Last siden på nytt",
+    "home": "Gå til forsiden"
+  },
+  "404": {
+    "code": "404",
+    "title": "Siden ble ikke funnet",
+    "subtitle": "Siden du leter etter eksisterer ikke eller har blitt flyttet.",
+    "home": "Tilbake til forsiden"
+  }
 }

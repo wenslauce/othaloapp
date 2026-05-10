@@ -7,64 +7,31 @@ import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
 import SolutionFAQ from '@/components/shared/SolutionFAQ';
 import SEOHead from '@/components/shared/SEOHead';
-
-const benefits = [
-  {
-    icon: DollarSign,
-    title: 'Control costs',
-    desc: 'Control costs and reduce exposure to material volatility with our prefabricated systems.',
-  },
-  {
-    icon: Clock,
-    title: 'Build faster',
-    desc: 'Build faster with prefabrication—delivering homes in days, not months.',
-  },
-  {
-    icon: Users,
-    title: 'Lower labour needs',
-    desc: 'Lower labour needs on-site with simplified execution and assembly.',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Higher efficiency',
-    desc: 'Higher efficiency and scalable delivery for large projects.',
-  },
-  {
-    icon: Globe,
-    title: 'Access new markets',
-    desc: 'Access new markets, particularly the affordable housing segment.',
-  },
-  {
-    icon: Leaf,
-    title: 'Strengthen ESG',
-    desc: 'Strengthen ESG with low-carbon, circular materials.',
-  },
-  {
-    icon: Settings,
-    title: 'Customisable design',
-    desc: 'Customisable design to adapt to your project, market, and regulation.',
-  },
-];
-
-const roiMetrics = [
-  { metric: 'Cost vs. concrete', value: '30–50% lower', highlight: true },
-  { metric: 'Construction timeline (100 units)', value: '< 3 months', highlight: true },
-  { metric: 'Local labor requirement', value: 'Semi-skilled only', highlight: false },
-  { metric: 'Machinery required on site', value: 'None', highlight: true },
-  { metric: 'Material waste on site', value: 'Near zero', highlight: false },
-  { metric: 'Project margin protection', value: 'Fixed panel cost', highlight: false },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function HousingDevelopers() {
+  const { t } = useTranslation();
   const [quoteOpen, setQuoteOpen] = useState(false);
+
+  const benefits = [
+    { icon: DollarSign, title: t('housing_dev.benefits.0.title'), desc: t('housing_dev.benefits.0.desc') },
+    { icon: Clock, title: t('housing_dev.benefits.1.title'), desc: t('housing_dev.benefits.1.desc') },
+    { icon: Users, title: t('housing_dev.benefits.2.title'), desc: t('housing_dev.benefits.2.desc') },
+    { icon: TrendingUp, title: t('housing_dev.benefits.3.title'), desc: t('housing_dev.benefits.3.desc') },
+    { icon: Globe, title: t('housing_dev.benefits.4.title'), desc: t('housing_dev.benefits.4.desc') },
+    { icon: Leaf, title: t('housing_dev.benefits.5.title'), desc: t('housing_dev.benefits.5.desc') },
+    { icon: Settings, title: t('housing_dev.benefits.6.title'), desc: t('housing_dev.benefits.6.desc') },
+  ];
+
+  const roiMetrics = t('housing_dev.roi_items', { returnObjects: true });
 
   return (
     <div className="overflow-hidden">
       <SEOHead
-        title="Housing Developer Solutions"
-        description="Faster, cost-efficient construction for housing developers. Prefabricated modular systems from recycled plastic. Higher ROI and lower material costs."
+        title={t('seo.solutions.title')}
+        description={t('seo.solutions.description')}
         canonical="https://othalo.com/solutions/housing-developers"
-        keywords={['housing development', 'modular construction', 'developer ROI', 'prefabricated homes', 'cost-efficient building']}
+        keywords={t('seo.solutions.keywords').split(', ')}
       />
       <GetQuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} context="housing-developers" />
 
@@ -78,13 +45,13 @@ export default function HousingDevelopers() {
           <SlotIn>
             <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-5 font-heading">
               <span className="w-8 h-px bg-teal" />
-              Solutions — Housing Developers
+              {t('housing_dev.label')}
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-white max-w-2xl leading-tight mb-5">
-              The fastest path from land to delivered homes
+              {t('housing_dev.title')}
             </h1>
             <p className="text-white/70 text-lg max-w-xl leading-relaxed mb-8">
-              Superior ROI, speed-to-market, and predictable costs. Othalo gives developers the edge in any market.
+              {t('housing_dev.subtitle')}
             </p>
             <div className="flex flex-wrap gap-3">
               <Button
@@ -92,11 +59,11 @@ export default function HousingDevelopers() {
                 size="lg"
                 className="bg-teal hover:bg-teal-light text-white font-semibold px-8 h-12 rounded-sm text-base"
               >
-                Request a Developer Quote
+                {t('housing_dev.cta1')}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button asChild variant="outline" size="lg" className="border-white/30 text-white bg-transparent hover:bg-white/10 font-semibold px-8 h-12 rounded-sm text-base">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact">{t('housing_dev.cta2')}</Link>
               </Button>
             </div>
           </SlotIn>
@@ -110,16 +77,11 @@ export default function HousingDevelopers() {
             <SlotIn>
               <div className="inline-flex items-center gap-2 text-navy/50 text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
                 <span className="w-8 h-px bg-navy/20" />
-                The Challenge
+                {t('housing_dev.challenge_label')}
               </div>
-              <h2 className="font-heading text-3xl font-semibold text-navy mb-6">Market pressures restricting growth</h2>
+              <h2 className="font-heading text-3xl font-semibold text-navy mb-6">{t('housing_dev.challenge_title')}</h2>
               <ul className="space-y-4">
-                {[
-                  'Rising costs, high price volatility, and shrinking margins',
-                  'Project delays and unpredictable timelines',
-                  'Shortages in steel, cement, and skilled labour',
-                  'Complex and inefficient construction methods to scale',
-                ].map((item, i) => (
+                {t('housing_dev.challenge_bullets', { returnObjects: true }).map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-muted-foreground leading-relaxed">
                     <span className="w-1.5 h-1.5 bg-navy/30 rounded-full flex-shrink-0 mt-2.5" />
                     {item}
@@ -131,16 +93,11 @@ export default function HousingDevelopers() {
               <div className="bg-navy rounded-sm p-8 lg:p-10 text-white shadow-lg">
                 <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
                   <span className="w-8 h-px bg-teal" />
-                  The Othalo Solution
+                  {t('housing_dev.solution_label')}
                 </div>
-                <h2 className="font-heading text-3xl font-semibold text-white mb-6">A faster, cost-efficient model</h2>
+                <h2 className="font-heading text-3xl font-semibold text-white mb-6">{t('housing_dev.solution_title')}</h2>
                 <ul className="space-y-4">
-                  {[
-                    'Faster, more cost-efficient construction',
-                    'Prefabricated modular systems made from recycled plastic',
-                    'Simplified on-site execution with lightweight, scalable components',
-                    'Flexible designs adapt to your project, market, and regulation',
-                  ].map((item, i) => (
+                  {t('housing_dev.solution_bullets', { returnObjects: true }).map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-white/80 leading-relaxed">
                       <span className="w-1.5 h-1.5 bg-teal rounded-full flex-shrink-0 mt-2.5" />
                       {item}
@@ -160,10 +117,10 @@ export default function HousingDevelopers() {
             <div className="mb-14">
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                Developer Advantages
+                {t('housing_dev.benefits_label')}
               </div>
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy">
-                Built to improve your development economics
+                {t('housing_dev.benefits_title')}
               </h2>
             </div>
           </SlotIn>
@@ -195,23 +152,26 @@ export default function HousingDevelopers() {
             <div className="mb-12">
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                ROI Metrics
+                {t('housing_dev.roi_label')}
               </div>
-              <h2 className="font-heading text-3xl font-semibold text-navy">The numbers that move your business case</h2>
+              <h2 className="font-heading text-3xl font-semibold text-navy">{t('housing_dev.roi_title')}</h2>
             </div>
           </SlotIn>
           <SlotIn delay={0.1}>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {roiMetrics.map((m) => (
+              {Array.isArray(roiMetrics) && roiMetrics.map((m) => (
                 <div
-                  key={m.metric}
+                  key={m.label}
                   className={`rounded-sm p-6 border ${m.highlight ? 'bg-navy border-navy text-white' : 'bg-white border-tech-slate'}`}
                 >
                   <div className={`text-xs uppercase tracking-widest font-heading font-semibold mb-2 ${m.highlight ? 'text-teal' : 'text-muted-foreground'}`}>
-                    {m.metric}
+                    {m.label}
                   </div>
                   <div className={`font-heading font-semibold text-2xl ${m.highlight ? 'text-white' : 'text-navy'}`}>
                     {m.value}
+                  </div>
+                  <div className={`text-[10px] mt-1 ${m.highlight ? 'text-white/50' : 'text-muted-foreground/60'}`}>
+                    {m.desc}
                   </div>
                 </div>
               ))}
@@ -226,9 +186,9 @@ export default function HousingDevelopers() {
       <section className="bg-teal py-20">
         <div className="max-w-8xl mx-auto px-6 lg:px-12 text-center">
           <SlotIn>
-            <h2 className="font-heading text-3xl font-semibold text-white mb-4">Ready to develop with Othalo?</h2>
+            <h2 className="font-heading text-3xl font-semibold text-white mb-4">{t('housing_dev.cta_title')}</h2>
             <p className="text-white/80 max-w-lg mx-auto mb-8">
-              Our team will walk you through specifications, logistics, and a full financial model for your development.
+              {t('housing_dev.cta_subtitle')}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button
@@ -236,10 +196,10 @@ export default function HousingDevelopers() {
                 size="lg"
                 className="bg-white hover:bg-white/90 text-teal font-semibold px-10 h-12 rounded-sm text-base"
               >
-                Request a Development Brief
+                {t('housing_dev.cta1_bottom')}
               </Button>
               <Button asChild variant="outline" size="lg" className="border-white/40 text-white bg-transparent hover:bg-white/10 font-semibold px-8 h-12 rounded-sm text-base">
-                <Link to="/contact">Contact Our Team</Link>
+                <Link to="/contact">{t('housing_dev.cta_contact')}</Link>
               </Button>
             </div>
           </SlotIn>

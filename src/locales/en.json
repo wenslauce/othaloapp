@@ -1,4 +1,31 @@
 {
+  "seo": {
+    "home": {
+      "title": "Othalo — Affordable, Sustainable Homes from Recycled Plastic",
+      "description": "Othalo transforms recycled plastic into affordable, durable housing. Patented panel technology. 72-hour build time. UN-Habitat endorsed.",
+      "keywords": "recycled plastic housing, sustainable construction, affordable homes, Othalo technology, plastic waste solution"
+    },
+    "about": {
+      "title": "About Othalo — Our Mission, Team & Impact",
+      "description": "Meet the team behind Othalo. Learn about our mission to solve the global housing crisis using recycled plastic waste and creating social impact.",
+      "keywords": "Othalo team, Frank Cato Lahti, Claus Skadkjaer, sustainable housing mission, recycled plastic impact"
+    },
+    "products": {
+      "title": "Othalo Products — The Panel System & Housing Lines",
+      "description": "Explore the Othalo structural panel system. Manufactured from 100% recycled plastic, our housing configurations are modular, durable, and scalable.",
+      "keywords": "plastic wall panels, modular housing, recycled plastic building materials, Othalo products"
+    },
+    "solutions": {
+      "title": "Housing Solutions for Governments, Developers & Corporations",
+      "description": "Othalo provides tailored housing deployment strategies for public and private sectors, focused on speed, ROI, and ESG impact.",
+      "keywords": "government housing solutions, developer ROI construction, corporate ESG housing, sustainable development"
+    },
+    "contact": {
+      "title": "Contact Othalo — Partner with Us",
+      "description": "Get in touch with Othalo. Whether you're a government, developer, or corporation, we're here to help you deploy sustainable housing solutions.",
+      "keywords": "contact Othalo, Othalo partnerships, housing project inquiry"
+    }
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -11,7 +38,9 @@
     "dev": "Housing Developers",
     "dev_desc": "Rapid ROI & speed-to-market",
     "corp": "Corporations",
-    "corp_desc": "ESG excellence & reporting"
+    "corp_desc": "ESG excellence & reporting",
+    "all_solutions": "All Solutions",
+    "solutions_overview": "Overview of all deployment contexts"
   },
   "home": {
     "hero_badge": "Patented Technology",
@@ -22,19 +51,87 @@
     "tech_label": "Core Technology",
     "tech_title": "The most effective solution to Africa's housing challenge",
     "tech_subtitle": "Our panels address the plastic waste crisis and the affordable housing deficit simultaneously — one global challenge solving another.",
+    "tech_features": [
+      {
+        "title": "Innovative patented technology",
+        "desc": "Our proprietary process transforms waste plastic into structural panels 7x stronger than concrete."
+      },
+      {
+        "title": "Environmentally friendly",
+        "desc": "Zero cement, zero steel, zero water in construction. 8 tons of plastic diverted per housing unit."
+      },
+      {
+        "title": "Fast construction",
+        "desc": "From raw panels to completed structure in as little as 72 hours using local labor."
+      },
+      {
+        "title": "Safety tested",
+        "desc": "Fire resistant, hurricane and earthquake resistant. Meets international building standards."
+      }
+    ],
+    "quote_text": "There is only one technology in the world today that can do something real about Africa's housing deficiency and the plastic waste problem, and that is Othalo.",
+    "quote_author": "Dr. Vincent Kitio",
+    "quote_title": "Chief, Urban Energy Unit, UN-Habitat",
     "approach_label": "Our Approach",
     "approach_title": "Build the future of homes from recycled plastic",
-    "quote_cta": "Learn More",
-    "comparison_label": "Competitive Analysis",
-    "comparison_title": "Market leading technology and innovation",
-    "comparison_subtitle": "A direct comparison against traditional construction methods.",
+    "approach_items": [
+      {
+        "title": "From plastic to high quality construction",
+        "desc": "Our patented technology transforms recycled plastic into structural wall panels that are 7x stronger than concrete, fully fire resistant, and designed to last 60+ years."
+      },
+      {
+        "title": "Designed for real-world conditions",
+        "desc": "Hurricane, earthquake, and flood resistant. Our panels are tested to perform in extreme climates, from coastal tropics to arid highlands — built for where housing is needed most."
+      },
+      {
+        "title": "Flexible solutions tailored locally",
+        "desc": "Our modular system adapts to any layout — single units, multi-family blocks, schools, health clinics. Each project is configured for local needs and assembled by local workers."
+      },
+      {
+        "title": "Built for scale, speed and impact",
+        "desc": "Our factory-to-field supply chain enables rapid deployment. One container of panels builds a complete two-bedroom home, delivered and ready to assemble in under a week."
+      }
+    ],
+    "gallery_categories": {
+      "community": "The Community",
+      "district": "The District",
+      "emergency": "Emergency Shelter",
+      "medical": "Medical Units",
+      "worker": "Worker Accommodation",
+      "factory": "Factory Production"
+    },
+    "comparison": {
+      "label": "Competitive Analysis",
+      "title": "Market leading technology and innovation",
+      "subtitle": "A direct comparison against traditional construction methods.",
+      "headers": ["Feature", "Othalo", "Concrete", "Steel Frame", "Timber"],
+      "rows": [
+        { "f": "Build time (2BR unit)", "o": "72 hours", "c": "3–6 months", "s": "2–4 months", "t": "1–3 months" },
+        { "f": "Plastic waste diverted", "o": "8 tons", "c": "None", "s": "None", "t": "None" },
+        { "f": "Lifespan", "o": "60+ years", "c": "40–50 years", "s": "30–50 years", "t": "20–30 years" },
+        { "f": "Fire resistant", "o": "Yes", "c": "Yes", "s": "No", "t": "No" },
+        { "f": "Earthquake resistant", "o": "Yes", "c": "Varies", "s": "Yes", "t": "Partial" },
+        { "f": "Water use in construction", "o": "None", "c": "High", "s": "Medium", "t": "Low" },
+        { "f": "Cement/steel required", "o": "None", "c": "High", "s": "High", "t": "Some" },
+        { "f": "UN-Habitat certified", "o": "Yes", "c": "Varies", "s": "Varies", "t": "Varies" }
+      ]
+    },
     "esg_title": "Othalo helps deliver tangible measurable ESG outcomes",
     "esg_subtitle": "Aligned with 9 of the 17 United Nations Sustainable Development Goals.",
+    "sdg_names": {
+      "1": "No Poverty",
+      "6": "Clean Water",
+      "8": "Decent Work",
+      "9": "Industry & Innovation",
+      "10": "Reduced Inequalities",
+      "11": "Sustainable Cities",
+      "12": "Responsible Consumption",
+      "13": "Climate Action",
+      "17": "Partnerships"
+    },
     "cta_title": "Your solution starts here",
     "cta_subtitle": "Whether you're a government, developer, or corporation — we have a deployment strategy designed for your context.",
-    "stat_plastic": "Plastic Sequestration",
-    "stat_build": "Build Time",
-    "stat_strength": "Stronger than concrete"
+    "quote_cta": "Learn More"
   },
   "about": {
     "label": "Our Purpose",
@@ -43,33 +140,175 @@
     "mission_label": "Our mission",
     "mission": "Turn plastic waste into housing and housing into hope.",
     "values_label": "Our values",
+    "values_items": [
+      "Do good",
+      "Integrity",
+      "Equality for everyone",
+      "Local empowerment",
+      "Safe communities for the next generation"
+    ],
     "team_label": "The People",
-    "team_title": "Team",
-    "team_subtitle": "A diverse group of innovators, engineers, and visionaries united by the mission to create sustainable housing solutions",
+    "team_title": "Our Team",
+    "team_subtitle": "A diverse group of innovators, engineers, and visionaries united by the mission to create sustainable housing solutions.",
+    "team_members": {
+      "frank": {
+        "name": "Frank Cato Lahti",
+        "title": "Founder & CEO",
+        "bio": "Visionary entrepreneur with a background in military intelligence and a passion for environmental innovation."
+      },
+      "claus": {
+        "name": "Claus Skadkjaer",
+        "title": "Founder & COO",
+        "bio": "Operations expert focused on scaling sustainable technologies and global deployment."
+      },
+      "martin": {
+        "name": "Martin Dokkedal",
+        "title": "Chief Supply Chain Officer",
+        "bio": "Optimizing global logistics to bring Othalo technology to the most remote communities."
+      },
+      "thomas": {
+        "name": "Thomas Meidell Laan",
+        "title": "Chief Legal Officer",
+        "bio": "Ensuring regulatory compliance and protecting our global patent portfolio."
+      },
+      "kjell": {
+        "name": "Kjell Steen",
+        "title": "Head of Production",
+        "bio": "Industrial manufacturing veteran leading our panel production facilities."
+      },
+      "bengt": {
+        "name": "Bengt Erling Berg",
+        "title": "Head of Technical Support",
+        "bio": "Providing technical expertise and on-site guidance for Othalo deployments."
+      },
+      "stephane": {
+        "name": "Stephane Bernard",
+        "title": "Chief Commercial Officer",
+        "bio": "Driving growth and strategic partnerships across international markets."
+      },
+      "wenslauce": {
+        "name": "Wenslauce Chengo",
+        "title": "Country Manager Kenya",
+        "bio": "Leading Othalo's impact and public relations in East Africa."
+      }
+    },
     "culture_label": "Our Culture",
-    "culture_title": "Our culture",
+    "culture_title": "Driven by purpose, anchored in excellence.",
     "culture_subtitle": "What shapes our approach to work and guides us in making a positive impact on the world.",
+    "culture_values": [
+      {
+        "title": "Teamwork",
+        "desc": "Collaboration and mutual support drive our success. We believe in the power of working together to achieve extraordinary results."
+      },
+      {
+        "title": "Timeliness",
+        "desc": "We respect deadlines and deliver on our promises. Punctuality and efficiency are core to our operational excellence."
+      },
+      {
+        "title": "Communication",
+        "desc": "Open and transparent dialogue ensures alignment and understanding across all levels of our organization."
+      },
+      {
+        "title": "Commitment",
+        "desc": "We are dedicated to our mission of creating sustainable housing solutions and making a positive impact on the world."
+      }
+    ],
     "impact_label": "Measurable Change",
-    "impact_title": "Impact created by Othalo",
+    "impact_title": "Our triple bottom line impact — people, planet, and prosperity.",
+    "impact_items": [
+      {
+        "num": "01",
+        "title": "Environmental impact",
+        "desc": "Plastic removed from the environment, no use of cement or steel — measurable planetary impact per unit built."
+      },
+      {
+        "num": "02",
+        "title": "Social impact",
+        "desc": "Homes for low to mid-income communities. Dignified, safe housing that transforms lives and breaks cycles of poverty."
+      },
+      {
+        "num": "03",
+        "title": "Economic impact",
+        "desc": "Enabling jobs in emerging economies. Every Othalo factory and build site creates sustainable local employment."
+      }
+    ],
+    "contributions": {
+      "vision": "Vision & Strategy",
+      "operations": "Operations",
+      "supply": "Supply Chain",
+      "legal": "Legal & Compliance",
+      "manufacturing": "Manufacturing",
+      "engineering": "Engineering",
+      "business": "Business Development",
+      "pr": "Kenya & PR"
+    },
     "story_label": "Our Story",
+    "story_quote": "After serving in the Norwegian Army and Intelligence across NATO missions in the 1990s, I witnessed both the resilience of people living through conflict and the harsh realities of refugee camps. Years later, standing on a plastic-covered beach in northern Norway, I realized the global waste crisis was closer than we think. That moment sparked a bold idea: could we turn plastic waste into safe, dignified homes? That question became the foundation of Othalo.",
     "cta": "Discover Our Technology"
   },
   "products": {
     "label": "Product Portfolio",
     "title": "The Othalo Panel System",
     "subtitle": "Patented structural wall panels manufactured from 100% recycled plastic — the foundation of every Othalo structure.",
+    "un_habitat_badge": "Endorsed by UN-HABITAT",
+    "un_habitat_note": "For a Better Urban Future",
     "cta_quote": "Get a Product Quote",
     "cta_solutions": "View Solutions",
     "tech_label": "Technical Advantage",
     "tech_title": "Market leading technology and innovation",
-    "spec_label": "Specification Sheet",
-    "spec_title": "Panel Technical Specifications",
+    "panel_features": [
+      { "title": "Cost Effective", "desc": "Use of plastic waste, limited manpower and machinery needed on site, fast construction methodology." },
+      { "title": "Quality and durability", "desc": "60 years lifespan, x7 stronger than concrete, insulation x3 more effective than concrete." },
+      { "title": "Safety", "desc": "Fire resistant, hurricane and earthquake resistant. Tested to international standards." },
+      { "title": "Carbon efficient", "desc": "Made from 100% recycled plastic. No cement or steel used. Low water use in construction." }
+    ],
+    "material_label": "Material",
+    "material_value": "100% Recycled Plastic",
+    "comparison_title": "Market leading technology and innovation",
+    "comparison_headers": ["Particulars", "Othalo", "3D Printing", "Triple Panel Buildings", "Traditional construction"],
+    "comparison_rows": [
+      { "p": "Market ready", "o": "full", "d": "none", "r": "partial", "t": "full" },
+      { "p": "Low production time", "o": "full", "d": "none", "r": "none", "t": "partial" },
+      { "p": "Recyclable", "o": "full", "d": "partial", "r": "partial", "t": "none" },
+      { "p": "Sustainable", "o": "full", "d": "partial", "r": "partial", "t": "none" },
+      { "p": "Accessible raw materials", "o": "full", "d": "none", "r": "partial", "t": "none" },
+      { "p": "Low cost", "o": "full", "d": "none", "r": "none", "t": "partial" },
+      { "p": "Industrial production", "o": "full", "d": "none", "r": "none", "t": "partial" }
+    ],
+    "fulfilled": "Fulfilled",
+    "partially_fulfilled": "Partially fulfilled",
     "lines_label": "Product Lines",
     "lines_title": "Housing configurations",
     "lines_subtitle": "Each configuration is purpose-engineered, modular, and locally adaptable.",
+    "product_lines": [
+      {
+        "name": "The Community",
+        "desc": "Single-family and multi-family units optimized for rapid urban deployment and low-income housing programs."
+      },
+      {
+        "name": "The District",
+        "desc": "Medium-density residential clusters for families. Full infrastructure integration including utilities."
+      },
+      {
+        "name": "The Emergency Shelter",
+        "desc": "Rapid deployment emergency housing for disaster relief and humanitarian aid missions."
+      },
+      {
+        "name": "The Medical Units",
+        "desc": "Specialized healthcare modules including clinics, isolation wards, and diagnostic centers."
+      },
+      {
+        "name": "The Worker Accommodation",
+        "desc": "Purpose-built worker accommodation for construction sites, mining operations, and industrial deployment."
+      }
+    ],
     "get_quote": "Get a Quote",
     "dual_label": "Dual Impact",
-    "dual_title": "Using one global challenge to solve another"
+    "dual_title": "Using one global challenge to solve another",
+    "dual_items": [
+      { "title": "Plastic waste", "desc": "A global liability, over 9 billion tons already accumulated in the environment." },
+      { "title": "Affordable homes", "desc": "An ever-rising crisis: 1.6 billion people live without adequate housing." }
+    ]
   },
   "solutions": {
     "label": "What We Offer",
@@ -78,7 +317,52 @@
     "learn_more": "Learn More",
     "not_sure_title": "Not sure which solution fits?",
     "not_sure_subtitle": "Our team is happy to help scope the right approach for your context. Reach out and we'll respond within 2 business days.",
-    "contact_us": "Contact Us"
+    "contact_us": "Contact Us",
+    "cards": [
+      {
+        "label": "Governments",
+        "tag": "Public Sector",
+        "headline": "Housing at the scale governments need",
+        "desc": "Affordable homes from recycled plastic for scale. Prefabricated modular systems with UN-endorsed, patented technology.",
+        "bullets": [
+          "Affordable homes from recycled plastic for scale",
+          "Prefabricated modular systems with UN-endorsed, patented technology",
+          "Faster build for speed",
+          "Multi-storey (up to 4 floors)",
+          "Globally compliant, locally adaptable"
+        ],
+        "cta": "Request a Government Brief"
+      },
+      {
+        "label": "Housing Developers",
+        "tag": "Private Sector",
+        "headline": "The fastest path from land to delivered homes",
+        "desc": "Faster, more cost-efficient construction. Flexible designs adapt to your project, market, and regulation.",
+        "bullets": [
+          "Faster, more cost-efficient construction",
+          "Prefabricated modular systems made from recycled plastic",
+          "Simplified on-site execution",
+          "Lightweight, scalable components",
+          "Flexible designs adapt to your project, market, and regulation"
+        ],
+        "cta": "Request a Developer Quote"
+      },
+      {
+        "label": "Corporations",
+        "tag": "Corporate ESG",
+        "headline": "ESG excellence that delivers real-world change",
+        "desc": "Turnkey ESG platform. Link compliance + environmental + social impact. Convert waste into tangible construction materials.",
+        "bullets": [
+          "Turnkey ESG platform",
+          "Link compliance + environmental + social impact",
+          "Convert waste into tangible construction materials",
+          "Scalable, verified, measurable impact for reporting",
+          "Fast execution",
+          "Stakeholders engagement programs"
+        ],
+        "cta": "Explore a Corporate Partnership"
+      }
+    ]
   },
   "governments": {
     "label": "Solutions — Governments",
@@ -86,10 +370,44 @@
     "subtitle": "Affordable, disaster-resilient, SDG-aligned housing deployed at national scale — without the delays and costs of traditional construction.",
     "cta1": "Request a Government Brief",
     "cta2": "Contact Us",
+    "challenge_label": "The Challenge",
+    "challenge_title": "The limits of traditional building",
+    "challenge_bullets": [
+      "Rising housing demand driven by rapid urbanisation and population growth",
+      "Increasing construction costs and budget constraints",
+      "Traditional building is slow, expensive, and high-carbon",
+      "Current methods are not viable at the required national scale"
+    ],
+    "solution_label": "The Othalo Solution",
+    "solution_title": "Scale without compromise",
+    "solution_bullets": [
+      "Affordable homes from recycled plastic for scale",
+      "Prefabricated modular systems with UN-endorsed, patented technology",
+      "Faster build for speed",
+      "Multi-storey (up to 4 floors)",
+      "Globally compliant, locally adaptable"
+    ],
     "benefits_label": "Why Othalo for Governments",
     "benefits_title": "A public sector housing strategy that delivers",
+    "benefits": [
+      { "title": "Scale quickly and efficiently", "desc": "Scale affordable homes quickly and efficiently to meet growing population demands." },
+      { "title": "Higher-density urban projects", "desc": "Build for higher-density urban projects with multi-storey capabilities." },
+      { "title": "Reduce costs", "desc": "Reduce costs with our patented alternatives to expensive steel and cement." },
+      { "title": "Build faster", "desc": "Build faster with prefabrication—delivering homes in days, not months." },
+      { "title": "Lower carbon footprint", "desc": "Lower carbon footprint with sustainable, circular materials diverted from waste." },
+      { "title": "Design flexibly", "desc": "Design flexibly to meet specific local needs and regulatory requirements." }
+    ],
     "comparison_title": "Othalo vs. Traditional Public Housing Construction",
     "comparison_subtitle": "A direct comparison of key government procurement metrics.",
+    "comparison_headers": ["Metric", "Othalo", "Traditional"],
+    "comparison_rows": [
+      { "f": "Build time (100 units)", "o": "< 3 months", "t": "18–36 months" },
+      { "f": "Cost per unit (2BR)", "o": "30–50% lower", "t": "Baseline" },
+      { "f": "Local job creation", "o": "High — no heavy machinery", "t": "Medium — machinery dependent" },
+      { "f": "Environmental liability", "o": "Plastic diverted", "t": "CO₂ emitted" },
+      { "f": "SDG reporting", "o": "Built-in metrics", "t": "Manual audit required" },
+      { "f": "Disaster resilience", "o": "Hurricane Cat.5 + Seismic Z4", "t": "Varies — often lower" }
+    ],
     "cta_section_title": "Ready to explore a national deployment?",
     "cta_section_subtitle": "Our team works directly with government ministries, housing agencies, and NGOs to scope and deploy at scale.",
     "cta_contact": "Contact Our Team"
@@ -100,10 +418,43 @@
     "subtitle": "Superior ROI, speed-to-market, and predictable costs. Othalo gives developers the edge in any market.",
     "cta1": "Request a Developer Quote",
     "cta2": "Contact Us",
+    "challenge_label": "The Challenge",
+    "challenge_title": "Market pressures restricting growth",
+    "challenge_bullets": [
+      "Rising costs, high price volatility, and shrinking margins",
+      "Project delays and unpredictable timelines",
+      "Shortages in steel, cement, and skilled labour",
+      "Complex and inefficient construction methods to scale"
+    ],
+    "solution_label": "The Othalo Solution",
+    "solution_title": "A faster, cost-efficient model",
+    "solution_bullets": [
+      "Faster, more cost-efficient construction",
+      "Prefabricated modular systems made from recycled plastic",
+      "Simplified on-site execution with lightweight, scalable components",
+      "Flexible designs adapt to your project, market, and regulation"
+    ],
     "benefits_label": "Developer Advantages",
     "benefits_title": "Built to improve your development economics",
+    "benefits": [
+      { "title": "Control costs", "desc": "Control costs and reduce exposure to material volatility with our prefabricated systems." },
+      { "title": "Build faster", "desc": "Build faster with prefabrication—delivering homes in days, not months." },
+      { "title": "Lower labour needs", "desc": "Lower labour needs on-site with simplified execution and assembly." },
+      { "title": "Higher efficiency", "desc": "Higher efficiency and scalable delivery for large projects." },
+      { "title": "Access new markets", "desc": "Access new markets, particularly the affordable housing segment." },
+      { "title": "Strengthen ESG", "desc": "Strengthen ESG with low-carbon, circular materials." },
+      { "title": "Customisable design", "desc": "Customisable design to adapt to your project, market, and regulation." }
+    ],
     "roi_label": "ROI Metrics",
     "roi_title": "The numbers that move your business case",
+    "roi_items": [
+      { "label": "Cost vs. concrete", "value": "30–50% lower", "highlight": true },
+      { "label": "Construction timeline (100 units)", "value": "< 3 months", "highlight": true },
+      { "label": "Local labor requirement", "value": "Semi-skilled only", "highlight": false },
+      { "label": "Machinery required on site", "value": "None", "highlight": true },
+      { "label": "Material waste on site", "value": "Near zero", "highlight": false },
+      { "label": "Project margin protection", "value": "Fixed panel cost", "highlight": false }
+    ],
     "cta_title": "Ready to develop with Othalo?",
     "cta_subtitle": "Our team will walk you through specifications, logistics, and a full financial model for your development.",
     "cta1_bottom": "Request a Development Brief",
@@ -115,10 +466,43 @@
     "subtitle": "Partner with Othalo to turn your ESG commitments into measurable, independently verifiable impact on housing, waste, and communities.",
     "cta1": "Explore a Corporate Partnership",
     "cta2": "Contact Us",
+    "challenge_label": "The Challenge",
+    "challenge_title": "Navigating complex ESG expectations",
+    "challenge_bullets": [
+      "End of life responsibility for plastic and packaging waste",
+      "Stricter circularity regulations and increasing compliance pressure",
+      "A growing need for scalable, credible, and verifiable solutions",
+      "Increasing demand for tangible action from consumers, employees, and investors"
+    ],
+    "solution_label": "The Othalo Solution",
+    "solution_title": "A turnkey ESG platform",
+    "solution_bullets": [
+      "Turnkey ESG platform linking compliance with environmental and social impact",
+      "Convert waste into tangible construction materials and homes",
+      "Scalable, verified, measurable impact for reporting",
+      "Fast execution and robust stakeholder engagement programs"
+    ],
     "benefits_label": "Corporate Advantage",
     "benefits_title": "Structured ESG impact for forward-thinking companies",
+    "benefits": [
+      { "title": "Meet EPR requirements", "desc": "Meet EPR requirements with measurable outcomes through plastic diversion." },
+      { "title": "Turn waste into value", "desc": "Turn waste into value through a circular model that transforms plastic into homes." },
+      { "title": "Deliver real ESG impact", "desc": "Deliver real ESG impact across environmental, social, and governance dimensions." },
+      { "title": "Fast deployment", "desc": "Fast deployment enables immediate action and measurable results." },
+      { "title": "Strengthen brand trust", "desc": "Strengthen brand and stakeholder trust with visible, community-level impact." },
+      { "title": "Transparent tracking", "desc": "Transparent impact tracking and reporting compatible with major frameworks." },
+      { "title": "Scalable across markets", "desc": "Scalable across markets to match your operational footprint globally." }
+    ],
     "metrics_title": "Metrics your sustainability team will trust",
     "metrics_subtitle": "Every Othalo corporate deployment generates a full impact data package.",
+    "metrics_items": [
+      { "label": "Plastic diverted per 2BR unit", "value": "8 tonnes" },
+      { "label": "CO₂ avoided vs. concrete", "value": "~12 tonnes per unit" },
+      { "label": "SDGs addressed", "value": "9 of 17" },
+      { "label": "Local jobs created per 100 units", "value": "80–120 roles" },
+      { "label": "Impact frameworks supported", "value": "GRI, SASB, TCFD" },
+      { "label": "Verification", "value": "Third-party auditable" }
+    ],
     "cta_title": "Turn your ESG commitments into verified impact",
     "cta_subtitle": "Speak with our corporate partnerships team to scope a program aligned to your sustainability goals.",
     "cta1_bottom": "Contact Corporate Partnerships",
@@ -129,6 +513,9 @@
     "title": "Start the conversation",
     "subtitle": "Whether you're scoping a deployment, exploring a partnership, or just learning about Othalo — we're here to help.",
     "offices": "Our offices",
+    "hq": "Headquarters",
+    "email_label": "Email",
+    "phone_label": "Phone",
     "response_label": "Response Time",
     "response_time": "Within 2 business days",
     "response_note": "Our team covers government, developer, and corporate enquiries globally. For urgent matters, please call directly.",
@@ -137,6 +524,7 @@
     "phone": "Phone",
     "phone_code": "Country Code",
     "org": "Organization",
+    "org_placeholder": "Company / Ministry",
     "country": "Country",
     "select_country": "Select country",
     "profile": "I represent a",
@@ -159,13 +547,69 @@
     "respond_note": "We respond within 2 business days.",
     "success_title": "Message received",
     "success_note": "Thank you for reaching out. A member of our team will be in touch within 2 business days.",
+    "security_check": "Please complete the security check.",
     "err_name": "Full name is required",
     "err_email": "Valid email address is required",
     "err_phone": "Enter a valid phone number (digits only, 6–15 characters)",
     "err_country": "Please select a country",
     "err_profile": "Please select your profile type",
     "err_enquiry": "Please select enquiry type",
-    "err_message": "Message is required (min 10 characters)"
+    "err_message": "Message is required (min 10 characters)",
+    "profiles": {
+      "government": "Government / Public Agency",
+      "developer": "Housing Developer",
+      "corporation": "Corporation / Enterprise",
+      "ngo": "NGO / International Organization",
+      "media": "Media / Press",
+      "investor": "Investor",
+      "other": "Other"
+    },
+    "enquiries": {
+      "quote": "Request a Quote / Pricing",
+      "solutions": "Solutions & Deployment Planning",
+      "products": "Product Information & Specifications",
+      "partnership": "Corporate Partnership / ESG Program",
+      "investment": "Investment Opportunity",
+      "media": "Media / Press Enquiry",
+      "general": "General Information"
+    },
+    "solutions_list": {
+      "governments": "Governments — National/Municipal Housing",
+      "housing_developers": "Housing Developers — Private Development",
+      "corporations": "Corporations — ESG / CSR Program",
+      "worker_accommodation": "Worker Accommodation",
+      "multiple": "Multiple / Unsure"
+    },
+    "products_list": {
+      "community_1a": "The Community 1a — 2BR Single Unit (42m²)",
+      "community_2c": "The Community 2c — 6-Unit Block (252m²)",
+      "district_2a": "The District 2a — 24-Unit Cluster (1,008m²)",
+      "worker_6x": "Worker Accommodation 6x (144m²)",
+      "panel_system": "Panel System Only",
+      "custom": "Custom Configuration"
+    },
+    "units_list": {
+      "1_10": "1–10 units",
+      "10_50": "10–50 units",
+      "50_200": "50–200 units",
+      "200_1000": "200–1,000 units",
+      "1000_plus": "1,000+ units",
+      "unsure": "Not yet determined"
+    },
+    "timelines_list": {
+      "asap": "As soon as possible",
+      "3months": "Within 3 months",
+      "6months": "3–6 months",
+      "12months": "6–12 months",
+      "planning": "Planning phase only"
+    },
+    "budgets_list": {
+      "under_500k": "Under $500,000",
+      "500k_2m": "$500K – $2M",
+      "2m_10m": "$2M – $10M",
+      "10m_plus": "$10M+",
+      "unsure": "To be determined"
+    }
   },
   "quote": {
     "gov_title": "Request a Government Brief",
@@ -176,26 +620,39 @@
     "corp_subtitle": "Our ESG team will scope a program aligned to your sustainability goals.",
     "prod_title": "Get a Product Quote",
     "prod_subtitle": "Tell us which product you need and we'll send you full pricing and specs.",
+    "main_title": "Get a Quote",
+    "main_subtitle": "Fill in your details — we'll respond within 2 business days.",
+    "sidebar_title": "Request a Project Quote",
+    "sidebar_desc": "Our specialists will prepare a detailed technical and financial proposal tailored to your requirements and scale.",
+    "sidebar_items": ["Fast Deployment", "Patented Technology", "UN-Habitat Endorsed", "Global Impact"],
     "name": "Full Name",
     "email": "Email",
     "phone": "Phone",
-    "org": "Organization",
-    "country": "Country / Region",
-    "product": "Product",
-    "select_product": "Select product",
-    "units": "Number of Units",
-    "select_units": "Select range",
-    "timeline": "Desired Timeline",
-    "select_timeline": "Select timeline",
-    "budget": "Approximate Budget",
-    "select_budget": "Select budget range",
-    "message": "Message",
-    "message_placeholder": "Tell us more about your project...",
-    "submit": "Submit Enquiry",
+    "org": "Organization (Optional)",
+    "org_placeholder": "Company / Ministry",
+    "country": "Country",
+    "select_country": "Select country",
+    "profile": "Profile Type",
+    "select_profile": "I represent...",
+    "product": "Product Configuration",
+    "select_product": "Select configuration",
+    "units": "Units Required",
+    "select_units": "Project scale",
+    "message": "Additional Notes",
+    "message_placeholder": "Tell us about your project, timeline, or any specific requirements...",
+    "submit": "Request Quote",
     "respond_note": "We respond within 2 business days.",
-    "success_title": "Enquiry received",
-    "success_note": "Thank you. A member of our team will be in touch within 2 business days.",
-    "close": "Close"
+    "success_title": "Quote Request Submitted",
+    "success_note": "Thank you for your interest in Othalo. A confirmation has been sent to {{email}}.",
+    "success_review": "A regional specialist will review your requirements and respond within 2 business days.",
+    "done": "Done",
+    "security_check": "Please complete the security check.",
+    "err_name": "Full name is required",
+    "err_email": "Valid email address required",
+    "err_phone": "Invalid phone number format",
+    "err_country": "Country is required",
+    "err_profile": "Please select your profile type",
+    "err_product": "Please select a product configuration"
   },
   "footer": {
     "tagline": "Turning plastic waste into dignified, sustainable housing for communities worldwide.",

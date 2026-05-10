@@ -92,8 +92,8 @@ export default function Navbar() {
                               <LayoutGrid className="w-5 h-5 text-teal" />
                             </div>
                             <div>
-                              <div className="text-navy font-semibold text-sm font-heading">All Solutions</div>
-                              <div className="text-muted-foreground text-xs mt-0.5">Overview of all deployment contexts</div>
+                              <div className="text-navy font-semibold text-sm font-heading">{t('nav.all_solutions')}</div>
+                              <div className="text-muted-foreground text-xs mt-0.5">{t('nav.solutions_overview')}</div>
                             </div>
                           </Link>
                           {solutions.map((s) => {

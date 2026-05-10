@@ -7,116 +7,72 @@ import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import ImageSlider from '@/components/shared/ImageSlider';
 import SEOHead from '@/components/shared/SEOHead';
-
-const techFeatures = [
-  {
-    icon: Recycle,
-    title: 'Innovative patented technology',
-    desc: 'Our proprietary process transforms waste plastic into structural panels 7x stronger than concrete.',
-  },
-  {
-    icon: Leaf,
-    title: 'Environmentally friendly',
-    desc: 'Zero cement, zero steel, zero water in construction. 8 tons of plastic diverted per housing unit.',
-  },
-  {
-    icon: Clock,
-    title: 'Fast construction',
-    desc: 'From raw panels to completed structure in as little as 72 hours using local labor.',
-  },
-  {
-    icon: Shield,
-    title: 'Safety tested',
-    desc: 'Fire resistant, hurricane and earthquake resistant. Meets international building standards.',
-  },
-];
-
-const buildFuture = [
-  {
-    num: '01',
-    title: 'From plastic to high quality construction',
-    desc: 'Our patented technology transforms recycled plastic into structural wall panels that are 7x stronger than concrete, fully fire resistant, and designed to last 60+ years.',
-  },
-  {
-    num: '02',
-    title: 'Designed for real-world conditions',
-    desc: 'Hurricane, earthquake, and flood resistant. Our panels are tested to perform in extreme climates, from coastal tropics to arid highlands — built for where housing is needed most.',
-  },
-  {
-    num: '03',
-    title: 'Flexible solutions tailored locally',
-    desc: 'Our modular system adapts to any layout — single units, multi-family blocks, schools, health clinics. Each project is configured for local needs and assembled by local workers.',
-  },
-  {
-    num: '04',
-    title: 'Built for scale, speed and impact',
-    desc: 'Our factory-to-field supply chain enables rapid deployment. One container of panels builds a complete two-bedroom home, delivered and ready to assemble in under a week.',
-  },
-];
-
-const comparisonRows = [
-  { feature: 'Build time (2BR unit)', othalo: '72 hours', concrete: '3–6 months', steel: '2–4 months', timber: '1–3 months' },
-  { feature: 'Plastic waste diverted', othalo: '8 tons', concrete: 'None', steel: 'None', timber: 'None' },
-  { feature: 'Lifespan', othalo: '60+ years', concrete: '40–50 years', steel: '30–50 years', timber: '20–30 years' },
-  { feature: 'Fire resistant', othalo: 'Yes', concrete: 'Yes', steel: 'No', timber: 'No' },
-  { feature: 'Earthquake resistant', othalo: 'Yes', concrete: 'Varies', steel: 'Yes', timber: 'Partial' },
-  { feature: 'Water use in construction', othalo: 'None', concrete: 'High', steel: 'Medium', timber: 'Low' },
-  { feature: 'Cement/steel required', othalo: 'None', concrete: 'High', steel: 'High', timber: 'Some' },
-  { feature: 'UN-Habitat certified', othalo: 'Yes', concrete: 'Varies', steel: 'Varies', timber: 'Varies' },
-];
-
-const galleryCategories = [
-  {
-    label: 'The Community',
-    images: ['/images/The community 1a.png', '/images/The community 2a.png', '/images/The community 2c.png'],
-  },
-  {
-    label: 'The District',
-    images: ['/images/The District 2a.png', '/images/The District 2b.png'],
-  },
-  {
-    label: 'Emergency Shelter',
-    images: ['/images/The Emergency Shelter 1.png', '/images/The Emergency Shelter 1a.png', '/images/The Emergency Shelter 1b.png'],
-  },
-  {
-    label: 'Medical Units',
-    images: ['/images/The Medical Unit 3.png', '/images/The Medical Unit 3a.png', '/images/The Medical Unit 3b.png'],
-  },
-  {
-    label: 'Worker Accommodation',
-    images: ['/images/The Worker Accomodation 5a.png', '/images/The Worker Accomodation 5b.png', '/images/The Worker Accomodation 6a.png'],
-  },
-  {
-    label: 'Factory Production',
-    images: ['/images/Panels in the factory.png', '/images/Panel 3D.jpg'],
-  },
-];
-
-const esgGoals = [
-  { num: '1', color: '#E5243B', label: 'No Poverty' },
-  { num: '6', color: '#26BDE2', label: 'Clean Water' },
-  { num: '8', color: '#A21942', label: 'Decent Work' },
-  { num: '9', color: '#FD6925', label: 'Industry & Innovation' },
-  { num: '10', color: '#DD1367', label: 'Reduced Inequalities' },
-  { num: '11', color: '#FD9D24', label: 'Sustainable Cities' },
-  { num: '12', color: '#BF8B2E', label: 'Responsible Consumption' },
-  { num: '13', color: '#3F7E44', label: 'Climate Action' },
-  { num: '17', color: '#19486A', label: 'Partnerships' },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+  const { t } = useTranslation();
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
   const heroY = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
+  const techFeatures = [
+    { icon: Recycle, title: t('home.tech_features.0.title'), desc: t('home.tech_features.0.desc') },
+    { icon: Leaf, title: t('home.tech_features.1.title'), desc: t('home.tech_features.1.desc') },
+    { icon: Clock, title: t('home.tech_features.2.title'), desc: t('home.tech_features.2.desc') },
+    { icon: Shield, title: t('home.tech_features.3.title'), desc: t('home.tech_features.3.desc') },
+  ];
+
+  const buildFuture = t('home.approach_items', { returnObjects: true });
+
+  const comparisonRows = t('home.comparison.rows', { returnObjects: true });
+
+  const galleryCategories = [
+    {
+      label: t('home.gallery_categories.community'),
+      images: ['/images/The community 1a.png', '/images/The community 2a.png', '/images/The community 2c.png'],
+    },
+    {
+      label: t('home.gallery_categories.district'),
+      images: ['/images/The District 2a.png', '/images/The District 2b.png'],
+    },
+    {
+      label: t('home.gallery_categories.emergency'),
+      images: ['/images/The Emergency Shelter 1.png', '/images/The Emergency Shelter 1a.png', '/images/The Emergency Shelter 1b.png'],
+    },
+    {
+      label: t('home.gallery_categories.medical'),
+      images: ['/images/The Medical Unit 3.png', '/images/The Medical Unit 3a.png', '/images/The Medical Unit 3b.png'],
+    },
+    {
+      label: t('home.gallery_categories.worker'),
+      images: ['/images/The Worker Accomodation 5a.png', '/images/The Worker Accomodation 5b.png', '/images/The Worker Accomodation 6a.png'],
+    },
+    {
+      label: t('home.gallery_categories.factory'),
+      images: ['/images/Panels in the factory.png', '/images/Panel 3D.jpg'],
+    },
+  ];
+
+  const esgGoals = [
+    { num: '1', color: '#E5243B', label: t('home.sdg_names.1') },
+    { num: '6', color: '#26BDE2', label: t('home.sdg_names.6') },
+    { num: '8', color: '#A21942', label: t('home.sdg_names.8') },
+    { num: '9', color: '#FD6925', label: t('home.sdg_names.9') },
+    { num: '10', color: '#DD1367', label: t('home.sdg_names.10') },
+    { num: '11', color: '#FD9D24', label: t('home.sdg_names.11') },
+    { num: '12', color: '#BF8B2E', label: t('home.sdg_names.12') },
+    { num: '13', color: '#3F7E44', label: t('home.sdg_names.13') },
+    { num: '17', color: '#19486A', label: t('home.sdg_names.17') },
+  ];
+
   return (
     <div className="overflow-hidden">
       <SEOHead
-        title="Affordable, Sustainable Homes from Recycled Plastic"
-        description="Othalo transforms recycled plastic into affordable, durable housing. Patented panel technology. 72-hour build time. UN-Habitat endorsed."
+        title={t('seo.home.title')}
+        description={t('seo.home.description')}
         canonical="https://othalo.com/"
-        keywords={['affordable housing', 'recycled plastic homes', 'sustainable construction', 'modular housing Africa', 'UN-Habitat', 'plastic waste solution']}
+        keywords={t('seo.home.keywords').split(', ')}
       />
       {/* Hero */}
       <section ref={heroRef} className="relative h-[90vh] min-h-[640px] flex items-center overflow-hidden">
@@ -156,13 +112,13 @@ export default function Home() {
           >
             <div className="inline-flex items-center gap-2 bg-teal/20 border border-teal/40 text-teal-50 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-sm mb-6 font-heading">
               <span className="w-1.5 h-1.5 bg-teal rounded-full" />
-              Patented Technology
+              {t('home.hero_badge')}
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-white max-w-2xl leading-tight mb-6">
-              Affordable, sustainable homes from recycled plastic
+              {t('home.hero_title')}
             </h1>
             <p className="text-white/70 text-lg max-w-xl leading-relaxed mb-8">
-              Our patented technology delivers flexible design, using panels made from recycled plastic — delivering homes with speed and scale.
+              {t('home.hero_subtitle')}
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -171,7 +127,7 @@ export default function Home() {
                 className="bg-teal hover:bg-teal-light text-white font-semibold px-8 h-12 rounded-sm text-base"
               >
                 <Link to="/solutions/governments">
-                  Deploy a Solution
+                  {t('home.hero_cta1')}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
@@ -181,7 +137,7 @@ export default function Home() {
                 size="lg"
                 className="border-white/30 text-white bg-transparent hover:bg-white/10 font-semibold px-8 h-12 rounded-sm text-base"
               >
-                <Link to="/products">View the Technology</Link>
+                <Link to="/products">{t('home.hero_cta2')}</Link>
               </Button>
             </div>
           </motion.div>
@@ -195,14 +151,14 @@ export default function Home() {
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                Core Technology
+                {t('home.tech_label')}
                 <span className="w-8 h-px bg-teal" />
               </div>
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-4">
-                The most effective solution to Africa's housing challenge
+                {t('home.tech_title')}
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Our panels address the plastic waste crisis and the affordable housing deficit simultaneously — one global challenge solving another.
+                {t('home.tech_subtitle')}
               </p>
             </div>
           </SlotIn>
@@ -240,26 +196,26 @@ export default function Home() {
             <SlotIn delay={0.15}>
               <div className="text-white/20 font-heading text-8xl leading-none mb-4">"</div>
               <blockquote className="font-heading text-xl lg:text-2xl text-white font-light leading-relaxed mb-8 -mt-6">
-                There is only one technology in the world today that can do something real about Africa's housing deficiency and the plastic waste problem, and that is Othalo.
+                {t('home.quote_text')}
               </blockquote>
               <div className="flex items-center gap-4 border-t border-white/10 pt-6">
                 <div className="w-12 h-12 rounded-full bg-teal/20 border border-teal/40 overflow-hidden">
                   <img
                     src="/placeholder.svg"
-                    alt="Dr. Vincent Kitio"
+                    alt={t('home.quote_author')}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
-                  <div className="font-heading font-semibold text-white text-sm">Dr. Vincent Kitio</div>
-                  <div className="text-white/50 text-xs">Chief, Urban Energy Unit, UN-Habitat</div>
+                  <div className="font-heading font-semibold text-white text-sm">{t('home.quote_author')}</div>
+                  <div className="text-white/50 text-xs">{t('home.quote_title')}</div>
                 </div>
               </div>
               <Button
                 asChild
                 className="mt-8 bg-teal hover:bg-teal-light text-white font-semibold px-6 h-10 rounded-sm text-sm"
               >
-                <Link to="/about">Learn More</Link>
+                <Link to="/about">{t('home.quote_cta')}</Link>
               </Button>
             </SlotIn>
           </div>
@@ -273,16 +229,16 @@ export default function Home() {
             <div className="mb-16">
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                Our Approach
+                {t('home.approach_label')}
               </div>
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy">
-                Build the future of homes from recycled plastic
+                {t('home.approach_title')}
               </h2>
             </div>
           </SlotIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            {buildFuture.map((item, i) => (
+            {Array.isArray(buildFuture) && buildFuture.map((item, i) => (
               <SlotIn key={item.num} delay={i * 0.08}>
                 <div className="flex gap-6 p-6 border border-tech-slate rounded-sm hover:border-teal/30 hover:shadow-sm transition-all group">
                   <div className="font-heading font-semibold text-teal text-3xl leading-none flex-shrink-0">
@@ -320,14 +276,14 @@ export default function Home() {
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                Competitive Analysis
+                {t('home.comparison.label')}
                 <span className="w-8 h-px bg-teal" />
               </div>
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-white mb-4">
-                Market leading technology and innovation
+                {t('home.comparison.title')}
               </h2>
               <p className="text-white/60 max-w-xl mx-auto">
-                A direct comparison against traditional construction methods.
+                {t('home.comparison.subtitle')}
               </p>
             </div>
           </SlotIn>
@@ -336,34 +292,29 @@ export default function Home() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-white/10 bg-white/5">
-                    <th className="text-left py-4 px-5 font-heading font-semibold text-white/50 uppercase text-xs tracking-widest">
-                      Feature
-                    </th>
-                    <th className="text-center py-4 px-5 font-heading font-semibold text-teal uppercase text-xs tracking-widest">
-                      Othalo
-                    </th>
-                    <th className="text-center py-4 px-5 font-heading font-semibold text-white/40 uppercase text-xs tracking-widest">
-                      Concrete
-                    </th>
-                    <th className="text-center py-4 px-5 font-heading font-semibold text-white/40 uppercase text-xs tracking-widest">
-                      Steel Frame
-                    </th>
-                    <th className="text-center py-4 px-5 font-heading font-semibold text-white/40 uppercase text-xs tracking-widest">
-                      Timber
-                    </th>
+                    {t('home.comparison.headers', { returnObjects: true }).map((header, idx) => (
+                      <th 
+                        key={header}
+                        className={`py-4 px-5 font-heading font-semibold uppercase text-xs tracking-widest ${
+                          idx === 0 ? 'text-left text-white/50' : idx === 1 ? 'text-center text-teal' : 'text-center text-white/40'
+                        }`}
+                      >
+                        {header}
+                      </th>
+                    ))}
                   </tr>
                 </thead>
                 <tbody>
-                  {comparisonRows.map((row, i) => (
+                  {Array.isArray(comparisonRows) && comparisonRows.map((row, i) => (
                     <tr
-                      key={row.feature}
+                      key={row.f}
                       className={`border-b border-white/5 ${i % 2 === 0 ? 'bg-white/[0.02]' : ''}`}
                     >
-                      <td className="py-4 px-5 text-white/70">{row.feature}</td>
-                      <td className="py-4 px-5 text-center font-semibold text-teal font-heading">{row.othalo}</td>
-                      <td className="py-4 px-5 text-center text-white/40">{row.concrete}</td>
-                      <td className="py-4 px-5 text-center text-white/40">{row.steel}</td>
-                      <td className="py-4 px-5 text-center text-white/40">{row.timber}</td>
+                      <td className="py-4 px-5 text-white/70">{row.f}</td>
+                      <td className="py-4 px-5 text-center font-semibold text-teal font-heading">{row.o}</td>
+                      <td className="py-4 px-5 text-center text-white/40">{row.c}</td>
+                      <td className="py-4 px-5 text-center text-white/40">{row.s}</td>
+                      <td className="py-4 px-5 text-center text-white/40">{row.t}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -379,10 +330,10 @@ export default function Home() {
           <SlotIn>
             <div className="text-center mb-12">
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-4">
-                Othalo helps deliver tangible measurable ESG outcomes
+                {t('home.esg_title')}
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                Aligned with 9 of the 17 United Nations Sustainable Development Goals.
+                {t('home.esg_subtitle')}
               </p>
             </div>
           </SlotIn>
@@ -410,19 +361,19 @@ export default function Home() {
           <SlotIn>
             <div>
               <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-white mb-2">
-                Your solution starts here
+                {t('home.cta_title')}
               </h2>
               <p className="text-white/80 max-w-lg">
-                Whether you're a government, developer, or corporation — we have a deployment strategy designed for your context.
+                {t('home.cta_subtitle')}
               </p>
             </div>
           </SlotIn>
           <SlotIn delay={0.1}>
             <div className="flex flex-col sm:flex-row gap-4 flex-shrink-0">
               {[
-                { label: 'Governments', href: '/solutions/governments' },
-                { label: 'Housing Developers', href: '/solutions/housing-developers' },
-                { label: 'Corporations', href: '/solutions/corporations' },
+                { label: t('nav.gov'), href: '/solutions/governments' },
+                { label: t('nav.dev'), href: '/solutions/housing-developers' },
+                { label: t('nav.corp'), href: '/solutions/corporations' },
               ].map((s) => (
                 <Button
                   key={s.label}

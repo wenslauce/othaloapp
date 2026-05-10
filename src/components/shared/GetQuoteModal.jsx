@@ -14,6 +14,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { CheckCircle, AlertCircle, ArrowRight, Package, XCircle } from 'lucide-react';
 import { COUNTRIES, validateEmail, validatePhone } from '@/lib/countries';
 import { Turnstile } from '@marsidev/react-turnstile';
+import { useTranslation } from 'react-i18next';
 
 // @ts-ignore
 const API_BASE = (import.meta.env && import.meta.env.VITE_API_BASE_URL) || '';
@@ -34,6 +35,7 @@ const INITIAL_FORM = {
 };
 
 export default function GetQuoteModal({ open, onClose, context = 'general' }) {
+  const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [apiError, setApiError] = useState('');
@@ -51,12 +53,12 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
 
   const validate = () => {
     const errs = {};
-    if (!form.name.trim()) errs.name = 'Full name is required';
-    if (!form.email || !validateEmail(form.email)) errs.email = 'Valid email address required';
-    if (form.phone && !validatePhone(form.phone)) errs.phone = 'Invalid phone number format';
-    if (!form.country) errs.country = 'Country is required';
-    if (!form.profileType) errs.profileType = 'Please select your profile type';
-    if (!form.product) errs.product = 'Please select a product configuration';
+    if (!form.name.trim()) errs.name = t('quote.err_name');
+    if (!form.email || !validateEmail(form.email)) errs.email = t('quote.err_email');
+    if (form.phone && !validatePhone(form.phone)) errs.phone = t('quote.err_phone');
+    if (!form.country) errs.country = t('quote.err_country');
+    if (!form.profileType) errs.profileType = t('quote.err_profile');
+    if (!form.product) errs.product = t('quote.err_product');
     return errs;
   };
 
@@ -69,7 +71,7 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
       return;
     }
     if (!token) {
-      setApiError('Please complete the security check.');
+      setApiError(t('quote.security_check'));
       return;
     }
 
@@ -100,6 +102,18 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
     }, 300);
   };
 
+  const getHeaderInfo = () => {
+    switch (context) {
+      case 'governments': return { title: t('quote.gov_title'), sub: t('quote.gov_subtitle') };
+      case 'housing-developers': return { title: t('quote.dev_title'), sub: t('quote.dev_subtitle') };
+      case 'corporations': return { title: t('quote.corp_title'), sub: t('quote.corp_subtitle') };
+      case 'products': return { title: t('quote.prod_title'), sub: t('quote.prod_subtitle') };
+      default: return { title: t('quote.main_title'), sub: t('quote.main_subtitle') };
+    }
+  };
+
+  const header = getHeaderInfo();
+
   return (
     <Dialog open={open} onOpenChange={(v) => !v && handleClose()}>
       <DialogContent className="max-w-2xl p-0 overflow-hidden border-none rounded-sm sm:max-w-xl md:max-w-2xl max-h-[90vh] overflow-y-auto">
@@ -111,13 +125,13 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
                 <div className="w-10 h-10 bg-teal/20 rounded-sm flex items-center justify-center mb-6">
                   <Package className="w-5 h-5 text-teal" />
                 </div>
-                <h3 className="font-heading font-semibold text-xl mb-4">Request a Project Quote</h3>
+                <h3 className="font-heading font-semibold text-xl mb-4">{t('quote.sidebar_title')}</h3>
                 <p className="text-white/60 text-xs leading-relaxed">
-                  Our specialists will prepare a detailed technical and financial proposal tailored to your requirements and scale.
+                  {t('quote.sidebar_desc')}
                 </p>
               </div>
               <div className="space-y-3 mt-8">
-                {['Fast Deployment', 'Patented Technology', 'UN-Habitat Endorsed', 'Global Impact'].map(item => (
+                {t('quote.sidebar_items', { returnObjects: true }).map(item => (
                   <div key={item} className="flex items-center gap-3">
                     <div className="w-1.5 h-1.5 bg-teal rounded-full flex-shrink-0" />
                     <span className="text-[10px] uppercase tracking-wider text-white/50 font-bold">{item}</span>
@@ -129,9 +143,9 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
             {/* Form */}
             <div className="flex-1 bg-white p-6 md:p-8">
               <DialogHeader className="mb-5">
-                <DialogTitle className="font-heading text-2xl font-semibold text-navy">{'Get a Quote'}</DialogTitle>
+                <DialogTitle className="font-heading text-2xl font-semibold text-navy">{header.title}</DialogTitle>
                 <DialogDescription className="text-muted-foreground text-sm">
-                  {"Fill in your details — we'll respond within 2 business days."}
+                  {header.sub}
                 </DialogDescription>
               </DialogHeader>
 
@@ -139,7 +153,7 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
                 {/* Name + Email */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{'Full Name *'}</Label>
+                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{`${t('quote.name')} *`}</Label>
                     <Input
                       value={form.name}
                       onChange={e => set('name', e.target.value)}
@@ -149,7 +163,7 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
                     <FieldError msg={errors.name} />
                   </div>
                   <div className="space-y-1.5">
-                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{'Email *'}</Label>
+                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{`${t('quote.email')} *`}</Label>
                     <Input
                       type="email"
                       value={form.email}
@@ -164,10 +178,10 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
                 {/* Country + Phone */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{'Country *'}</Label>
+                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{`${t('quote.country')} *`}</Label>
                     <Select onValueChange={v => set('country', v)} value={form.country}>
                       <SelectTrigger className={`h-9 rounded-sm text-sm ${errors.country ? 'border-destructive' : ''}`}>
-                        <SelectValue placeholder="Select country" />
+                        <SelectValue placeholder={t('quote.select_country')} />
                       </SelectTrigger>
                       <SelectContent className="max-h-52">
                         {COUNTRIES.map(c => (
@@ -178,7 +192,7 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
                     <FieldError msg={errors.country} />
                   </div>
                   <div className="space-y-1.5">
-                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{'Phone'}</Label>
+                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{t('quote.phone')}</Label>
                     <div className="flex gap-1.5">
                       <Select onValueChange={v => set('dialCode', v)} value={form.dialCode}>
                         <SelectTrigger className="w-20 h-9 rounded-sm text-[10px] flex-shrink-0">
@@ -204,27 +218,24 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
                 {/* Org + Profile */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{'Organization (Optional)'}</Label>
+                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{t('quote.org')}</Label>
                     <Input
                       value={form.org}
                       onChange={e => set('org', e.target.value)}
-                      placeholder="Company / Ministry"
+                      placeholder={t('quote.org_placeholder')}
                       className="h-9 rounded-sm text-sm"
                     />
                   </div>
                   <div className="space-y-1.5">
-                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{'Profile Type *'}</Label>
+                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{`${t('quote.profile')} *`}</Label>
                     <Select onValueChange={v => set('profileType', v)} value={form.profileType}>
                       <SelectTrigger className={`h-9 rounded-sm text-sm ${errors.profileType ? 'border-destructive' : ''}`}>
-                        <SelectValue placeholder="I represent..." />
+                        <SelectValue placeholder={t('quote.select_profile')} />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="government">Government / Public Agency</SelectItem>
-                        <SelectItem value="developer">Housing Developer</SelectItem>
-                        <SelectItem value="corporation">Corporation / Enterprise</SelectItem>
-                        <SelectItem value="ngo">NGO / International Organization</SelectItem>
-                        <SelectItem value="investor">Investor</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
+                        {Object.entries(t('contact.profiles', { returnObjects: true })).map(([key, val]) => (
+                          <SelectItem key={key} value={key}>{val}</SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
                     <FieldError msg={errors.profileType} />
@@ -234,35 +245,29 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
                 {/* Product + Units */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{'Product Configuration *'}</Label>
+                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{`${t('quote.product')} *`}</Label>
                     <Select onValueChange={v => set('product', v)} value={form.product}>
                       <SelectTrigger className={`h-9 rounded-sm text-sm ${errors.product ? 'border-destructive' : ''}`}>
-                        <SelectValue placeholder="Select configuration" />
+                        <SelectValue placeholder={t('quote.select_product')} />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="community-1a">The Community 1a (2BR Single Unit)</SelectItem>
-                        <SelectItem value="community-2c">The Community 2c (6-Unit Block)</SelectItem>
-                        <SelectItem value="district-2a">The District 2a (24-Unit Cluster)</SelectItem>
-                        <SelectItem value="worker-6x">Worker Accommodation 6x</SelectItem>
-                        <SelectItem value="panel-system">Othalo Panel System Only</SelectItem>
-                        <SelectItem value="custom">Custom Development Solution</SelectItem>
+                        {Object.entries(t('contact.products_list', { returnObjects: true })).map(([key, val]) => (
+                          <SelectItem key={key} value={key}>{val}</SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
                     <FieldError msg={errors.product} />
                   </div>
                   <div className="space-y-1.5">
-                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{'Units Required'}</Label>
+                    <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{t('quote.units')}</Label>
                     <Select onValueChange={v => set('units', v)} value={form.units}>
                       <SelectTrigger className="h-9 rounded-sm text-sm">
-                        <SelectValue placeholder="Project scale" />
+                        <SelectValue placeholder={t('quote.select_units')} />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="1-10">1–10 units</SelectItem>
-                        <SelectItem value="10-50">10–50 units</SelectItem>
-                        <SelectItem value="50-200">50–200 units</SelectItem>
-                        <SelectItem value="200-1000">200–1,000 units</SelectItem>
-                        <SelectItem value="1000+">1,000+ units</SelectItem>
-                        <SelectItem value="unsure">Not yet determined</SelectItem>
+                        {Object.entries(t('contact.units_list', { returnObjects: true })).map(([key, val]) => (
+                          <SelectItem key={key} value={key}>{val}</SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
                   </div>
@@ -270,12 +275,12 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
 
                 {/* Message */}
                 <div className="space-y-1.5">
-                  <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{'Additional Notes'}</Label>
+                  <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{t('quote.message')}</Label>
                   <Textarea
                     rows={3}
                     value={form.message}
                     onChange={e => set('message', e.target.value)}
-                    placeholder="Tell us about your project, timeline, or any specific requirements..."
+                    placeholder={t('quote.message_placeholder')}
                     className="rounded-sm resize-none text-sm"
                   />
                 </div>
@@ -305,7 +310,7 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                   ) : (
                     <>
-                      {'Request Quote'}
+                      {t('quote.submit')}
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </>
                   )}
@@ -318,18 +323,18 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
             <div className="w-16 h-16 bg-teal/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <CheckCircle className="w-8 h-8 text-teal" />
             </div>
-            <h2 className="font-heading text-2xl font-bold text-navy mb-3">Quote Request Submitted</h2>
+            <h2 className="font-heading text-2xl font-bold text-navy mb-3">{t('quote.success_title')}</h2>
             <p className="text-muted-foreground text-sm max-w-sm mx-auto mb-2 leading-relaxed">
-              Thank you for your interest in Othalo. A confirmation has been sent to <strong>{form.email}</strong>.
+              {t('quote.success_note', { email: form.email })}
             </p>
             <p className="text-muted-foreground text-sm max-w-sm mx-auto mb-8 leading-relaxed">
-              A regional specialist will review your requirements and respond within <strong>2 business days</strong>.
+              {t('quote.success_review')}
             </p>
             <Button
               onClick={handleClose}
               className="bg-navy hover:bg-navy/90 text-white font-semibold px-10 rounded-sm"
             >
-              Done
+              {t('quote.done')}
             </Button>
           </div>
         )}
