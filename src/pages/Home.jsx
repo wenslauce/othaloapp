@@ -137,14 +137,6 @@ export default function Home() {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-white/30 text-white bg-transparent hover:bg-white/10 font-semibold px-8 h-12 rounded-sm text-base"
-              >
-                <Link to="/products">{t('home.hero_cta2')}</Link>
-              </Button>
             </div>
           </motion.div>
         </motion.div>
@@ -176,10 +168,6 @@ export default function Home() {
             {/* Right: Market Leading Features */}
             <div className="flex flex-col">
               <SlotIn>
-                <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
-                  <span className="w-8 h-px bg-teal" />
-                  {t('products.tech_label')}
-                </div>
                 <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-8">
                   {t('products.comparison_title')}
                 </h2>
@@ -298,9 +286,7 @@ export default function Home() {
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-4">
                 {t('home.esg_title')}
               </h2>
-              <p className="text-muted-foreground max-w-xl mx-auto">
-                {t('home.esg_subtitle')}
-              </p>
+
             </div>
           </SlotIn>
           <div className="flex flex-wrap justify-center gap-3">
