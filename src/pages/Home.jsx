@@ -97,15 +97,8 @@ export default function Home() {
             muted
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="/images/The House Kenya crop.png"
           >
             <source src="/hero-loop.mp4" type="video/mp4" />
-            {/* Fallback image if video is not supported */}
-            <img
-              src="/images/The House Kenya crop.png"
-              alt="Othalo sustainable housing"
-              className="w-full h-full object-cover"
-            />
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/60 to-transparent" />
         </motion.div>

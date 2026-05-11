@@ -373,10 +373,11 @@
     "challenge_label": "The Challenge",
     "challenge_title": "The limits of traditional building",
     "challenge_bullets": [
-      "Rising housing demand driven by rapid urbanisation and population growth",
-      "Increasing construction costs and budget constraints",
-      "Traditional building is slow, expensive, and high-carbon",
-      "Current methods are not viable at the required national scale"
+      "Rising housing demand",
+      "Rapid urbanisation + population growth",
+      "Increasing construction costs",
+      "Traditional building slow, expensive, high-carbon",
+      "Not viable at required scale"
     ],
     "solution_label": "The Othalo Solution",
     "solution_title": "Scale without compromise",
@@ -390,12 +391,12 @@
     "benefits_label": "Why Othalo for Governments",
     "benefits_title": "A public sector housing strategy that delivers",
     "benefits": [
-      { "title": "Scale quickly and efficiently", "desc": "Scale affordable homes quickly and efficiently to meet growing population demands." },
-      { "title": "Higher-density urban projects", "desc": "Build for higher-density urban projects with multi-storey capabilities." },
-      { "title": "Reduce costs", "desc": "Reduce costs with our patented alternatives to expensive steel and cement." },
-      { "title": "Build faster", "desc": "Build faster with prefabrication—delivering homes in days, not months." },
-      { "title": "Lower carbon footprint", "desc": "Lower carbon footprint with sustainable, circular materials diverted from waste." },
-      { "title": "Design flexibly", "desc": "Design flexibly to meet specific local needs and regulatory requirements." }
+      { "title": "Scale affordable homes quickly and efficiently", "desc": "Scale affordable homes quickly and efficiently to meet growing population demands." },
+      { "title": "Build for higher-density urban projects", "desc": "Build for higher-density urban projects with multi-storey capabilities." },
+      { "title": "Reduce costs with alternatives to steel and cement", "desc": "Reduce costs with our patented alternatives to expensive steel and cement." },
+      { "title": "Build faster with prefabrication (days, not months)", "desc": "Build faster with prefabrication—delivering homes in days, not months." },
+      { "title": "Lower carbon footprint with circular materials", "desc": "Lower carbon footprint with sustainable, circular materials diverted from waste." },
+      { "title": "Design flexibly to meet local needs", "desc": "Design flexibly to meet specific local needs and regulatory requirements." }
     ],
     "comparison_title": "Othalo vs. Traditional Public Housing Construction",
     "comparison_subtitle": "A direct comparison of key government procurement metrics.",
@@ -421,28 +422,29 @@
     "challenge_label": "The Challenge",
     "challenge_title": "Market pressures restricting growth",
     "challenge_bullets": [
-      "Rising costs, high price volatility, and shrinking margins",
-      "Project delays and unpredictable timelines",
-      "Shortages in steel, cement, and skilled labour",
-      "Complex and inefficient construction methods to scale"
+      "Rising costs (high price volatility), shrinking margins",
+      "Delays, unpredictable timelines",
+      "Steel, cement, labour shortages",
+      "Complex, inefficient construction to scale"
     ],
     "solution_label": "The Othalo Solution",
     "solution_title": "A faster, cost-efficient model",
     "solution_bullets": [
       "Faster, more cost-efficient construction",
       "Prefabricated modular systems made from recycled plastic",
-      "Simplified on-site execution with lightweight, scalable components",
+      "Simplified on-site execution",
+      "Lightweight, scalable components",
       "Flexible designs adapt to your project, market, and regulation"
     ],
     "benefits_label": "Developer Advantages",
     "benefits_title": "Built to improve your development economics",
     "benefits": [
-      { "title": "Control costs", "desc": "Control costs and reduce exposure to material volatility with our prefabricated systems." },
-      { "title": "Build faster", "desc": "Build faster with prefabrication—delivering homes in days, not months." },
+      { "title": "Control costs and reduce exposure to material volatility", "desc": "Control costs and reduce exposure to material volatility with our prefabricated systems." },
+      { "title": "Build faster with prefabrication (days, not months)", "desc": "Build faster with prefabrication—delivering homes in days, not months." },
       { "title": "Lower labour needs", "desc": "Lower labour needs on-site with simplified execution and assembly." },
-      { "title": "Higher efficiency", "desc": "Higher efficiency and scalable delivery for large projects." },
-      { "title": "Access new markets", "desc": "Access new markets, particularly the affordable housing segment." },
-      { "title": "Strengthen ESG", "desc": "Strengthen ESG with low-carbon, circular materials." },
+      { "title": "Higher efficiency, scalable delivery", "desc": "Higher efficiency and scalable delivery for large projects." },
+      { "title": "Access new markets (affordable segment)", "desc": "Access new markets, particularly the affordable housing segment." },
+      { "title": "Strengthen ESG with low-carbon, circular materials", "desc": "Strengthen ESG with low-carbon, circular materials." },
       { "title": "Customisable design", "desc": "Customisable design to adapt to your project, market, and regulation." }
     ],
     "roi_label": "ROI Metrics",
@@ -469,28 +471,31 @@
     "challenge_label": "The Challenge",
     "challenge_title": "Navigating complex ESG expectations",
     "challenge_bullets": [
-      "End of life responsibility for plastic and packaging waste",
-      "Stricter circularity regulations and increasing compliance pressure",
-      "A growing need for scalable, credible, and verifiable solutions",
-      "Increasing demand for tangible action from consumers, employees, and investors"
+      "End of life responsibility for plastic (including plastic waste)",
+      "Stricter circularity regulations",
+      "Increasing compliance pressure",
+      "Need for scalable, credible solutions",
+      "Increasing demand from consumers, employees and investors"
     ],
     "solution_label": "The Othalo Solution",
     "solution_title": "A turnkey ESG platform",
     "solution_bullets": [
-      "Turnkey ESG platform linking compliance with environmental and social impact",
-      "Convert waste into tangible construction materials and homes",
+      "Turnkey ESG platform",
+      "Link compliance + environmental + social impact",
+      "Convert waste into tangible construction materials",
       "Scalable, verified, measurable impact for reporting",
-      "Fast execution and robust stakeholder engagement programs"
+      "Fast execution",
+      "Stakeholders engagement programs"
     ],
     "benefits_label": "Corporate Advantage",
     "benefits_title": "Structured ESG impact for forward-thinking companies",
     "benefits": [
-      { "title": "Meet EPR requirements", "desc": "Meet EPR requirements with measurable outcomes through plastic diversion." },
-      { "title": "Turn waste into value", "desc": "Turn waste into value through a circular model that transforms plastic into homes." },
+      { "title": "Meet EPR requirements with measurable outcomes", "desc": "Meet EPR requirements with measurable outcomes through plastic diversion." },
+      { "title": "Turn waste into value through circular model", "desc": "Turn waste into value through a circular model that transforms plastic into homes." },
       { "title": "Deliver real ESG impact", "desc": "Deliver real ESG impact across environmental, social, and governance dimensions." },
-      { "title": "Fast deployment", "desc": "Fast deployment enables immediate action and measurable results." },
-      { "title": "Strengthen brand trust", "desc": "Strengthen brand and stakeholder trust with visible, community-level impact." },
-      { "title": "Transparent tracking", "desc": "Transparent impact tracking and reporting compatible with major frameworks." },
+      { "title": "Fast deployment, immediate action", "desc": "Fast deployment enables immediate action and measurable results." },
+      { "title": "Strengthen brand & stakeholder trust", "desc": "Strengthen brand and stakeholder trust with visible, community-level impact." },
+      { "title": "Transparent impact tracking & reporting", "desc": "Transparent impact tracking and reporting compatible with major frameworks." },
       { "title": "Scalable across markets", "desc": "Scalable across markets to match your operational footprint globally." }
     ],
     "metrics_title": "Metrics your sustainability team will trust",

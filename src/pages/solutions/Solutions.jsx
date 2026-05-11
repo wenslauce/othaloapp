@@ -1,16 +1,13 @@
 // Solutions page
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Building2, TrendingUp, Briefcase, ArrowRight, ChevronRight } from 'lucide-react';
+import { Building2, TrendingUp, Briefcase, ChevronRight, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
-import GetQuoteModal from '@/components/shared/GetQuoteModal';
 import SEOHead from '@/components/shared/SEOHead';
 import { useTranslation } from 'react-i18next';
 
 export default function Solutions() {
   const { t } = useTranslation();
-  const [quoteContext, setQuoteContext] = useState(null);
 
   const solutions = [
     {
@@ -23,8 +20,6 @@ export default function Solutions() {
       headline: t('solutions.cards.0.headline'),
       desc: t('solutions.cards.0.desc'),
       bullets: t('solutions.cards.0.bullets', { returnObjects: true }),
-      ctaLabel: t('solutions.cards.0.cta'),
-      quoteContext: 'governments',
     },
     {
       key: 'housing-developers',
@@ -36,8 +31,6 @@ export default function Solutions() {
       headline: t('solutions.cards.1.headline'),
       desc: t('solutions.cards.1.desc'),
       bullets: t('solutions.cards.1.bullets', { returnObjects: true }),
-      ctaLabel: t('solutions.cards.1.cta'),
-      quoteContext: 'housing-developers',
     },
     {
       key: 'corporations',
@@ -49,8 +42,6 @@ export default function Solutions() {
       headline: t('solutions.cards.2.headline'),
       desc: t('solutions.cards.2.desc'),
       bullets: t('solutions.cards.2.bullets', { returnObjects: true }),
-      ctaLabel: t('solutions.cards.2.cta'),
-      quoteContext: 'corporations',
     },
   ];
 
@@ -62,8 +53,6 @@ export default function Solutions() {
         canonical="https://othalo.com/solutions"
         keywords={t('seo.solutions.keywords').split(', ')}
       />
-      <GetQuoteModal open={!!quoteContext} onClose={() => setQuoteContext(null)} context={quoteContext} />
-
       {/* Hero */}
       <section className="bg-navy py-28 lg:py-36 relative overflow-hidden">
         <div className="absolute inset-0">
@@ -127,16 +116,8 @@ export default function Solutions() {
                     </ul>
                     <div className="flex flex-wrap gap-3">
                       <Button
-                        onClick={() => setQuoteContext(sol.quoteContext)}
-                        className="bg-teal hover:bg-teal-light text-white font-semibold px-6 h-11 rounded-sm text-sm"
-                      >
-                        {sol.ctaLabel}
-                        <ArrowRight className="ml-2 w-4 h-4" />
-                      </Button>
-                      <Button
                         asChild
-                        variant="outline"
-                        className="border-navy/20 text-navy hover:bg-surface font-semibold px-6 h-11 rounded-sm text-sm"
+                        className="bg-teal hover:bg-teal-light text-white font-semibold px-6 h-11 rounded-sm text-sm"
                       >
                         <Link to={sol.href}>
                           {t('solutions.learn_more')}

@@ -1,172 +1,328 @@
 // Housing Developers solutions page
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight, TrendingUp, Clock, DollarSign, Package, Users, Globe, Leaf, Settings } from 'lucide-react';
+import { AlertCircle, CheckCircle, XCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import SlotIn from '@/components/shared/SlotIn';
-import GetQuoteModal from '@/components/shared/GetQuoteModal';
 import SEOHead from '@/components/shared/SEOHead';
 import { useTranslation } from 'react-i18next';
+import { validatePhone, validateEmail } from '@/lib/countries';
+import { Turnstile } from '@marsidev/react-turnstile';
+
+function FieldError({ msg }) {
+  if (!msg) return null;
+  return (
+    <div className="flex items-center gap-1.5 mt-1">
+      <AlertCircle className="w-3.5 h-3.5 text-destructive flex-shrink-0" />
+      <span className="text-destructive text-xs">{msg}</span>
+    </div>
+  );
+}
+
+const REASONS = [
+  { value: 'general',     label: 'General Inquiry' },
+  { value: 'partnership', label: 'Partnerships & Projects' },
+  { value: 'pricing',     label: 'Request Pricing / Proposal' },
+  { value: 'technical',   label: 'Technical & Product Information' },
+  { value: 'investor',    label: 'Investor Inquiry' },
+  { value: 'media',       label: 'Media / Press' },
+  { value: 'careers',     label: 'Careers' },
+];
+
+const INITIAL_FORM = {
+  name: '', email: '', phone: '', org: '', title: '', reason: '', message: '',
+};
 
 export default function HousingDevelopers() {
   const { t } = useTranslation();
-  const [quoteOpen, setQuoteOpen] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [apiError, setApiError] = useState('');
+  const [errors, setErrors] = useState({});
+  const [token, setToken] = useState(null);
+  const [form, setForm] = useState(INITIAL_FORM);
 
-  const benefits = [
-    { icon: DollarSign, title: t('housing_dev.benefits.0.title'), desc: t('housing_dev.benefits.0.desc') },
-    { icon: Clock, title: t('housing_dev.benefits.1.title'), desc: t('housing_dev.benefits.1.desc') },
-    { icon: Users, title: t('housing_dev.benefits.2.title'), desc: t('housing_dev.benefits.2.desc') },
-    { icon: TrendingUp, title: t('housing_dev.benefits.3.title'), desc: t('housing_dev.benefits.3.desc') },
-    { icon: Globe, title: t('housing_dev.benefits.4.title'), desc: t('housing_dev.benefits.4.desc') },
-    { icon: Leaf, title: t('housing_dev.benefits.5.title'), desc: t('housing_dev.benefits.5.desc') },
-    { icon: Settings, title: t('housing_dev.benefits.6.title'), desc: t('housing_dev.benefits.6.desc') },
-  ];
+  const set = (key, val) => {
+    setForm(f => ({ ...f, [key]: val }));
+    if (errors[key]) setErrors(e => ({ ...e, [key]: '' }));
+    if (apiError) setApiError('');
+  };
 
-  const roiMetrics = t('housing_dev.roi_items', { returnObjects: true });
+  const validate = () => {
+    const errs = {};
+    if (!form.name.trim()) errs.name = t('contact.err_name');
+    if (!form.email || !validateEmail(form.email)) errs.email = t('contact.err_email');
+    if (form.phone && !validatePhone(form.phone)) errs.phone = t('contact.err_phone');
+    if (!form.org.trim()) errs.org = 'Organisation is required';
+    if (!form.reason) errs.reason = 'Please select a reason';
+    if (!form.message.trim() || form.message.trim().length < 10) errs.message = t('contact.err_message');
+    return errs;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setApiError('');
+    const errs = validate();
+    if (Object.keys(errs).length > 0) { setErrors(errs); return; }
+    if (!token) { setApiError(t('contact.security_check')); return; }
+
+    setLoading(true);
+    try {
+      // @ts-ignore
+      const apiBase = (import.meta.env && import.meta.env.VITE_API_BASE_URL) || '';
+      const res = await fetch(`${apiBase}/api/send-contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          org: form.org,
+          enquiryType: form.reason,
+          profileType: 'developer',
+          message: form.message,
+          token,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Submission failed');
+      setSubmitted(true);
+    } catch (err) {
+      setApiError(err.message || 'Something went wrong. Please email contact@othalo.com');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const challengeBullets = t('housing_dev.challenge_bullets', { returnObjects: true });
+  const solutionBullets  = t('housing_dev.solution_bullets',  { returnObjects: true });
+  const benefits         = t('housing_dev.benefits',          { returnObjects: true });
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-white">
       <SEOHead
         title={t('seo.solutions.title')}
         description={t('seo.solutions.description')}
         canonical="https://othalo.com/solutions/housing-developers"
         keywords={t('seo.solutions.keywords').split(', ')}
       />
-      <GetQuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} context="housing-developers" />
 
-      {/* Hero */}
-      <section className="relative bg-navy py-28 lg:py-36 overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="/images/The community 1a.png" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-navy/60" />
-        </div>
-        <div className="relative z-10 max-w-8xl mx-auto px-6 lg:px-12">
+      {/* ── MAIN CONTENT: centered narrow column ── */}
+      <section className="py-16 lg:py-24 px-4">
+        <div className="max-w-2xl mx-auto">
+
+          {/* Page heading */}
           <SlotIn>
-            <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-5 font-heading">
-              <span className="w-8 h-px bg-teal" />
-              {t('housing_dev.label')}
-            </div>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-white max-w-2xl leading-tight mb-5">
-              {t('housing_dev.title')}
+            <h1 className="font-heading text-3xl md:text-4xl font-semibold text-navy text-center mb-12">
+              You are a Housing Developer
             </h1>
-            <p className="text-white/70 text-lg max-w-xl leading-relaxed mb-8">
-              {t('housing_dev.subtitle')}
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Button
-                onClick={() => setQuoteOpen(true)}
-                size="lg"
-                className="bg-teal hover:bg-teal-light text-white font-semibold px-8 h-12 rounded-sm text-base"
-              >
-                {t('housing_dev.cta1')}
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button asChild variant="outline" size="lg" className="border-white/30 text-white bg-transparent hover:bg-white/10 font-semibold px-8 h-12 rounded-sm text-base">
-                <Link to="/contact">{t('housing_dev.cta2')}</Link>
-              </Button>
-            </div>
           </SlotIn>
-        </div>
-      </section>
 
-      {/* Challenge & Solution */}
-      <section className="bg-surface py-20 lg:py-28 border-b border-tech-slate">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <SlotIn>
-              <div className="inline-flex items-center gap-2 text-navy/50 text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
-                <span className="w-8 h-px bg-navy/20" />
-                {t('housing_dev.challenge_label')}
-              </div>
-              <h2 className="font-heading text-3xl font-semibold text-navy mb-6">{t('housing_dev.challenge_title')}</h2>
-              <ul className="space-y-4">
-                {t('housing_dev.challenge_bullets', { returnObjects: true }).map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-muted-foreground leading-relaxed">
-                    <span className="w-1.5 h-1.5 bg-navy/30 rounded-full flex-shrink-0 mt-2.5" />
-                    {item}
-                  </li>
+          {/* Challenge */}
+          <SlotIn delay={0.05}>
+            <div className="text-center mb-10">
+              <h2 className="font-heading font-bold text-teal text-xl mb-4">Challenge</h2>
+              <ul className="space-y-1.5">
+                {Array.isArray(challengeBullets) && challengeBullets.map((item, i) => (
+                  <li key={i} className="text-navy/80 text-sm">{item}</li>
                 ))}
               </ul>
-            </SlotIn>
-            <SlotIn delay={0.15}>
-              <div className="bg-navy rounded-sm p-8 lg:p-10 text-white shadow-lg">
-                <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
-                  <span className="w-8 h-px bg-teal" />
-                  {t('housing_dev.solution_label')}
-                </div>
-                <h2 className="font-heading text-3xl font-semibold text-white mb-6">{t('housing_dev.solution_title')}</h2>
-                <ul className="space-y-4">
-                  {t('housing_dev.solution_bullets', { returnObjects: true }).map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-white/80 leading-relaxed">
-                      <span className="w-1.5 h-1.5 bg-teal rounded-full flex-shrink-0 mt-2.5" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </SlotIn>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits */}
-      <section className="bg-white py-24 lg:py-32">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <SlotIn>
-            <div className="mb-14">
-              <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
-                <span className="w-8 h-px bg-teal" />
-                {t('housing_dev.benefits_label')}
-              </div>
-              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy">
-                {t('housing_dev.benefits_title')}
-              </h2>
             </div>
           </SlotIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {benefits.map((b, i) => {
-              const Icon = b.icon;
-              return (
-                <SlotIn key={b.title} delay={i * 0.08}>
-                  <div className="flex gap-5 p-6 bg-surface border border-tech-slate rounded-sm hover:border-teal/30 hover:shadow-md transition-all group">
-                    <div className="w-11 h-11 bg-teal/10 rounded-sm flex items-center justify-center flex-shrink-0 group-hover:bg-teal/20 transition-colors">
-                      <Icon className="w-5 h-5 text-teal" />
+
+          {/* Othalo solution */}
+          <SlotIn delay={0.1}>
+            <div className="text-center mb-10">
+              <h2 className="font-heading font-bold text-teal text-xl mb-4">Othalo solution</h2>
+              <ul className="space-y-1.5">
+                {Array.isArray(solutionBullets) && solutionBullets.map((item, i) => (
+                  <li key={i} className="text-navy/80 text-sm">{item}</li>
+                ))}
+              </ul>
+            </div>
+          </SlotIn>
+
+          {/* Key benefits */}
+          <SlotIn delay={0.15}>
+            <div className="text-center mb-10">
+              <h2 className="font-heading font-bold text-teal text-xl mb-4">Key benefits</h2>
+              <ul className="space-y-1.5">
+                {Array.isArray(benefits) && benefits.map((b, i) => (
+                  <li key={i} className="text-navy/80 text-sm">{b.title}</li>
+                ))}
+              </ul>
+            </div>
+          </SlotIn>
+
+          {/* Partner tagline */}
+          <SlotIn delay={0.18}>
+            <p className="text-center font-heading font-semibold text-navy text-sm mb-12">
+              Partner with Othalo to build faster, reduce costs, and unlock new growth opportunities.
+            </p>
+          </SlotIn>
+
+          {/* ── CONTACT FORM ── */}
+          <SlotIn delay={0.2}>
+            <div className="bg-white border border-tech-slate rounded-sm shadow-sm p-8">
+              {!submitted ? (
+                <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+
+                  {/* Full Name + Email */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
+                        Full Name *
+                      </Label>
+                      <Input
+                        value={form.name}
+                        onChange={e => set('name', e.target.value)}
+                        placeholder="John Smith"
+                        className={`h-10 rounded-sm ${errors.name ? 'border-destructive' : ''}`}
+                      />
+                      <FieldError msg={errors.name} />
                     </div>
                     <div>
-                      <h3 className="font-heading font-semibold text-navy text-base mb-1.5">{b.title}</h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed">{b.desc}</p>
+                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
+                        Email Address *
+                      </Label>
+                      <Input
+                        type="email"
+                        value={form.email}
+                        onChange={e => set('email', e.target.value)}
+                        placeholder="john@company.com"
+                        className={`h-10 rounded-sm ${errors.email ? 'border-destructive' : ''}`}
+                      />
+                      <FieldError msg={errors.email} />
                     </div>
                   </div>
-                </SlotIn>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
+                  {/* Phone + Company */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
+                        Phone *
+                      </Label>
+                      <Input
+                        value={form.phone}
+                        onChange={e => set('phone', e.target.value.replace(/[^0-9\s\-().+]/g, ''))}
+                        placeholder="+1 234 567 8900"
+                        className={`h-10 rounded-sm ${errors.phone ? 'border-destructive' : ''}`}
+                      />
+                      <FieldError msg={errors.phone} />
+                    </div>
+                    <div>
+                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
+                        Company/Organisation *
+                      </Label>
+                      <Input
+                        value={form.org}
+                        onChange={e => set('org', e.target.value)}
+                        placeholder="Company Name"
+                        className={`h-10 rounded-sm ${errors.org ? 'border-destructive' : ''}`}
+                      />
+                      <FieldError msg={errors.org} />
+                    </div>
+                  </div>
 
+                  {/* Title */}
+                  <div>
+                    <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
+                      Title *
+                    </Label>
+                    <Input
+                      value={form.title}
+                      onChange={e => set('title', e.target.value)}
+                      placeholder="Job Title"
+                      className="h-10 rounded-sm"
+                    />
+                  </div>
 
-      {/* CTA */}
-      <section className="bg-teal py-20">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12 text-center">
-          <SlotIn>
-            <h2 className="font-heading text-3xl font-semibold text-white mb-4">{t('housing_dev.cta_title')}</h2>
-            <p className="text-white/80 max-w-lg mx-auto mb-8">
-              {t('housing_dev.cta_subtitle')}
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button
-                onClick={() => setQuoteOpen(true)}
-                size="lg"
-                className="bg-white hover:bg-white/90 text-teal font-semibold px-10 h-12 rounded-sm text-base"
-              >
-                {t('housing_dev.cta1_bottom')}
-              </Button>
-              <Button asChild variant="outline" size="lg" className="border-white/40 text-white bg-transparent hover:bg-white/10 font-semibold px-8 h-12 rounded-sm text-base">
-                <Link to="/contact">{t('housing_dev.cta_contact')}</Link>
-              </Button>
+                  {/* Reason for contacting us */}
+                  <div>
+                    <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
+                      Reason for contacting us
+                    </Label>
+                    <Select onValueChange={v => set('reason', v)} value={form.reason}>
+                      <SelectTrigger className={`h-10 rounded-sm ${errors.reason ? 'border-destructive' : ''}`}>
+                        <SelectValue placeholder="Partnerships & Projects" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {REASONS.map(r => (
+                          <SelectItem key={r.value} value={r.value}>{r.label}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <FieldError msg={errors.reason} />
+                  </div>
+
+                  {/* Message */}
+                  <div>
+                    <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
+                      Message *
+                    </Label>
+                    <Textarea
+                      rows={5}
+                      value={form.message}
+                      onChange={e => set('message', e.target.value)}
+                      placeholder="Tell us about your interest..."
+                      className={`rounded-sm resize-none ${errors.message ? 'border-destructive' : ''}`}
+                    />
+                    <FieldError msg={errors.message} />
+                  </div>
+
+                  {/* Turnstile */}
+                  <div className="py-1">
+                    <Turnstile
+                      // @ts-ignore
+                      siteKey={import.meta.env.VITE_TURNSTILE_SITE_KEY}
+                      onSuccess={(t) => setToken(t)}
+                      onExpire={() => setToken(null)}
+                    />
+                  </div>
+
+                  {/* API Error */}
+                  {apiError && (
+                    <div className="flex items-start gap-2 bg-destructive/5 border border-destructive/20 rounded-sm p-3">
+                      <XCircle className="w-4 h-4 text-destructive flex-shrink-0 mt-0.5" />
+                      <p className="text-destructive text-xs leading-relaxed">{apiError}</p>
+                    </div>
+                  )}
+
+                  {/* Submit */}
+                  <div className="flex justify-center pt-1">
+                    <Button
+                      type="submit"
+                      disabled={loading}
+                      className="bg-navy hover:bg-navy/90 text-white font-semibold px-10 h-11 rounded-sm text-sm tracking-wide uppercase"
+                    >
+                      {loading ? (
+                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      ) : 'Send Message'}
+                    </Button>
+                  </div>
+
+                </form>
+              ) : (
+                <div className="py-12 text-center">
+                  <div className="w-16 h-16 bg-teal/10 rounded-full flex items-center justify-center mx-auto mb-5">
+                    <CheckCircle className="w-8 h-8 text-teal" />
+                  </div>
+                  <h3 className="font-heading font-semibold text-navy text-2xl mb-3">{t('contact.success_title')}</h3>
+                  <p className="text-muted-foreground max-w-sm mx-auto text-sm leading-relaxed">{t('contact.success_note')}</p>
+                  <Button
+                    onClick={() => { setSubmitted(false); setForm(INITIAL_FORM); }}
+                    className="mt-8 bg-navy hover:bg-navy/90 text-white font-semibold px-8 rounded-sm"
+                  >
+                    Send another message
+                  </Button>
+                </div>
+              )}
             </div>
           </SlotIn>
+
         </div>
       </section>
     </div>
