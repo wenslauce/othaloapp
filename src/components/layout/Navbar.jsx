@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-navy shadow-lg' : 'bg-navy/95 backdrop-blur-sm'
+        scrolled ? 'bg-white shadow-lg border-b border-navy/5' : 'bg-white/95 backdrop-blur-md border-b border-navy/5'
       }`}
     >
       <div className="max-w-8xl mx-auto px-6 lg:px-12">
@@ -66,7 +66,7 @@ export default function Navbar() {
                   <Link
                     to="/solutions"
                     className={`flex items-center gap-1 text-sm font-medium transition-colors py-2 ${
-                      isSolutionsActive ? 'text-white border-b-2 border-teal pb-0.5' : 'text-white/80 hover:text-white'
+                      isSolutionsActive ? 'text-teal border-b-2 border-teal pb-0.5' : 'text-navy/80 hover:text-teal'
                     }`}
                   >
                     {link.label}
@@ -80,7 +80,7 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
                         transition={{ duration: 0.18 }}
-                        className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[500px] bg-white rounded-sm shadow-2xl border border-tech-slate overflow-hidden"
+                        className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[260px] bg-white rounded-sm shadow-2xl border border-tech-slate overflow-hidden"
                       >
                         <div className="p-2">
                           {/* Overview link */}
@@ -92,8 +92,7 @@ export default function Navbar() {
                               <LayoutGrid className="w-5 h-5 text-teal" />
                             </div>
                             <div>
-                              <div className="text-navy font-semibold text-sm font-heading">{t('nav.all_solutions')}</div>
-                              <div className="text-muted-foreground text-xs mt-0.5">{t('nav.solutions_overview')}</div>
+                              <div className="text-navy font-semibold text-sm font-heading group-hover:text-teal transition-colors">{t('nav.all_solutions')}</div>
                             </div>
                           </Link>
                           {solutions.map((s) => {
@@ -108,8 +107,7 @@ export default function Navbar() {
                                   <Icon className="w-5 h-5 text-teal" />
                                 </div>
                                 <div>
-                                  <div className="text-navy font-semibold text-sm font-heading">{s.label}</div>
-                                  <div className="text-muted-foreground text-xs mt-0.5">{s.desc}</div>
+                                  <div className="text-navy font-semibold text-sm font-heading group-hover:text-teal transition-colors">{s.label}</div>
                                 </div>
                               </Link>
                             );
@@ -125,8 +123,8 @@ export default function Navbar() {
                   to={link.href}
                   className={`text-sm font-medium transition-colors ${
                     location.pathname === link.href
-                      ? 'text-white border-b-2 border-teal pb-0.5'
-                      : 'text-white/80 hover:text-white'
+                      ? 'text-teal border-b-2 border-teal pb-0.5'
+                      : 'text-navy/80 hover:text-teal'
                   }`}
                 >
                   {link.label}
@@ -137,7 +135,7 @@ export default function Navbar() {
 
           {/* Right: Language + CTA */}
           <div className="hidden lg:flex items-center gap-2">
-            <LanguageSwitcher variant="dark" />
+            <LanguageSwitcher variant="light" />
             <Button
               asChild
               className="bg-teal hover:bg-teal-light text-white font-semibold px-6 h-10 rounded-sm text-sm tracking-wide"
@@ -148,9 +146,9 @@ export default function Navbar() {
 
           {/* Mobile Toggle */}
           <div className="lg:hidden flex items-center gap-2">
-            <LanguageSwitcher variant="dark" />
+            <LanguageSwitcher variant="light" />
             <button
-              className="text-white p-2"
+              className="text-navy p-2"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
             >
@@ -167,19 +165,19 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-navy border-t border-white/10 overflow-hidden"
+            className="lg:hidden bg-white border-t border-navy/10 overflow-hidden"
           >
             <div className="px-6 py-4 flex flex-col gap-1">
               {navLinks.map((link) =>
                 link.hasMegaMenu ? (
                   <div key={link.label}>
-                    <div className="flex items-center border-b border-white/10">
-                      <Link to="/solutions" className="flex-1 text-white/80 text-sm font-medium py-3">
+                    <div className="flex items-center border-b border-navy/10">
+                      <Link to="/solutions" className="flex-1 text-navy/80 text-sm font-medium py-3">
                         {link.label}
                       </Link>
                       <button
                         onClick={() => setSolutionsOpen(!solutionsOpen)}
-                        className="text-white/60 px-2 py-3"
+                        className="text-navy/60 px-2 py-3"
                       >
                         <ChevronDown className={`w-4 h-4 transition-transform ${solutionsOpen ? 'rotate-180' : ''}`} />
                       </button>
@@ -187,7 +185,7 @@ export default function Navbar() {
                     {solutionsOpen && (
                       <div className="pl-4 py-2 flex flex-col gap-2">
                         {solutions.map((s) => (
-                          <Link key={s.label} to={s.href} className="text-white/70 hover:text-white text-sm py-1.5">
+                          <Link key={s.label} to={s.href} className="text-navy/70 hover:text-teal text-sm py-1.5">
                             {s.label}
                           </Link>
                         ))}
@@ -198,7 +196,7 @@ export default function Navbar() {
                   <Link
                     key={link.label}
                     to={link.href}
-                    className="text-white/80 hover:text-white text-sm font-medium py-3 border-b border-white/10"
+                    className="text-navy/80 hover:text-teal text-sm font-medium py-3 border-b border-navy/10"
                   >
                     {link.label}
                   </Link>

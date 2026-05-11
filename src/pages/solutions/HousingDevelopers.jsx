@@ -5,7 +5,6 @@ import { ArrowRight, TrendingUp, Clock, DollarSign, Package, Users, Globe, Leaf,
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
-import SolutionFAQ from '@/components/shared/SolutionFAQ';
 import SEOHead from '@/components/shared/SEOHead';
 import { useTranslation } from 'react-i18next';
 
@@ -180,7 +179,6 @@ export default function HousingDevelopers() {
         </div>
       </section>
 
-      <SolutionFAQ />
 
       {/* CTA */}
       <section className="bg-teal py-20">

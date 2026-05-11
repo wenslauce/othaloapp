@@ -34,13 +34,19 @@ export default function LanguageSwitcher({ variant = 'default', className = '' }
     localStorage.setItem('i18nextLng', code);
   };
 
+  const isLight = variant === 'light';
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button 
-          variant={variant === 'dark' ? 'ghost' : 'outline'} 
+          variant="ghost" 
           size="sm" 
-          className={`gap-2 h-9 rounded-sm border-white/20 text-white hover:bg-white/10 hover:text-white px-2 lg:px-3 ${className}`}
+          className={`gap-2 h-9 rounded-sm px-2 lg:px-3 transition-colors ${
+            isLight 
+              ? 'text-navy hover:bg-navy/5 border-navy/10' 
+              : 'text-white hover:bg-white/10 border-white/20'
+          } ${className}`}
         >
           <img 
             src={`https://flagcdn.com/w40/${currentLanguage.flag}.png`}

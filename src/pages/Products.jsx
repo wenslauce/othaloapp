@@ -65,9 +65,9 @@ export default function Products() {
 
       {/* Hero */}
       <section className="relative bg-navy py-28 lg:py-36 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-40">
           <img src="/images/The House Kenya crop.png" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-navy/80" />
+          <div className="absolute inset-0 bg-navy/60" />
         </div>
 
         {/* UN-Habitat Badge */}

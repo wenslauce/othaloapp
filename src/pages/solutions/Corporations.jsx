@@ -5,7 +5,6 @@ import { ArrowRight, Target, FileCheck, Handshake, BarChart2, Leaf, Clock, Globe
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
-import SolutionFAQ from '@/components/shared/SolutionFAQ';
 import SEOHead from '@/components/shared/SEOHead';
 import { useTranslation } from 'react-i18next';
 
@@ -169,7 +168,6 @@ export default function Corporations() {
         </div>
       </section>
 
-      <SolutionFAQ />
 
       {/* CTA */}
       <section className="bg-teal py-20">

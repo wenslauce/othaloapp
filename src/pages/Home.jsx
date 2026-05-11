@@ -118,10 +118,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="inline-flex items-center gap-2 bg-teal/20 border border-teal/40 text-teal-50 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-sm mb-6 font-heading">
-              <span className="w-1.5 h-1.5 bg-teal rounded-full" />
-              {t('home.hero_badge')}
-            </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-white max-w-2xl leading-tight mb-6">
               {t('home.hero_title')}
             </h1>
@@ -167,7 +163,7 @@ export default function Home() {
                 {/* UN-Habitat Badge Overlay */}
                 <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 max-w-[140px] md:max-w-[180px]">
                   <img 
-                    src="/images/UN Habitat endorsed logo 6.png" 
+                    src="/images/UN Habitat endorsed logo 5.png" 
                     alt="Endorsed by UN-Habitat" 
                     className="w-full h-auto drop-shadow-md"
                   />
