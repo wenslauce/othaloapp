@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Maximize2, X } from 'lucide-react';
 
-export default function ImageSlider({ images, name, interval = 6000, className = "" }) {
+export default function ImageSlider({ images, name, interval = 6000, className = "", autoPlay = false }) {
   const [index, setIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -16,11 +16,12 @@ export default function ImageSlider({ images, name, interval = 6000, className =
   }, [images.length]);
 
   useEffect(() => {
-    if (!images || images.length <= 1 || isLightboxOpen || !isHovered) return;
-    
+    if (!images || images.length <= 1 || isLightboxOpen) return;
+    // auto-advance always if autoPlay=true, otherwise only on hover
+    if (!autoPlay && !isHovered) return;
     const timer = setInterval(next, interval);
     return () => clearInterval(timer);
-  }, [images, interval, next, isLightboxOpen, isHovered]);
+  }, [images, interval, next, isLightboxOpen, isHovered, autoPlay]);
 
   if (!images || images.length === 0) return null;
 
@@ -36,10 +37,10 @@ export default function ImageSlider({ images, name, interval = 6000, className =
             key={index}
             src={images[index]}
             alt={`${name} gallery image ${index + 1}`}
-            initial={{ opacity: 0, scale: 1.05 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 1.2, ease: "easeInOut" }}
+            initial={{ opacity: 0, x: 60 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -60 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
             className="absolute inset-0 w-full h-full object-cover cursor-pointer"
             onClick={() => setIsLightboxOpen(true)}
           />

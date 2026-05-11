@@ -206,21 +206,21 @@ export default function Home() {
             <div className="space-y-10">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <h3 className="font-heading text-2xl lg:text-3xl font-semibold">Governments</h3>
-                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
+                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white hover:text-navy border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
                   <Link to="/solutions/governments">LEARN MORE</Link>
                 </Button>
               </div>
 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <h3 className="font-heading text-2xl lg:text-3xl font-semibold">Housing Developers</h3>
-                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
+                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white hover:text-navy border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
                   <Link to="/solutions/housing-developers">LEARN MORE</Link>
                 </Button>
               </div>
 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <h3 className="font-heading text-2xl lg:text-3xl font-semibold">Corporations</h3>
-                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
+                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white hover:text-navy border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
                   <Link to="/solutions/corporations">LEARN MORE</Link>
                 </Button>
               </div>
@@ -239,6 +239,7 @@ export default function Home() {
             ]} 
             name="Solutions Gallery" 
             interval={4000}
+            autoPlay={true}
             className="w-full h-full object-cover absolute inset-0"
           />
         </div>
