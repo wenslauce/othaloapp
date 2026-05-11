@@ -107,8 +107,8 @@ export default function Products() {
           {/* Left: Othalo branding image */}
           <div className="w-full lg:w-2/5 min-h-[260px] relative overflow-hidden">
             <img
-              src="/images/The House Kenya crop.png"
-              alt="Othalo housing"
+              src="/images/vincent.jpg"
+              alt="Dr. Vincent Kitio"
               className="w-full h-full object-cover absolute inset-0"
             />
             <div className="absolute inset-0 bg-navy/40" />
