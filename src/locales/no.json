@@ -257,10 +257,10 @@
     "tech_label": "Teknisk fordel",
     "tech_title": "Markedsledende teknologi og innovasjon",
     "panel_features": [
-      { "title": "Kostnadseffektivt", "desc": "Bruk av plastavfall, begrenset behov for maskineri på stedet, rask byggemetode." },
-      { "title": "Kvalitet og holdbarhet", "desc": "60 års levetid, 7x sterkere enn betong, isolasjon 3x mer effektiv enn betong." },
-      { "title": "Sikkerhet", "desc": "Brannbestandig, orkan- og jordskjelvsikker. Testet etter internasjonale standarder." },
-      { "title": "Karboneffektivt", "desc": "Laget av 100 % resirkulert plast. Ingen sement eller stål brukt. Lavt vannforbruk." }
+      { "title": "Kostnadseffektivt", "desc": "Bruk av plastavfall, Begrenset behov for maskineri på stedet, Rask konstruksjon" },
+      { "title": "Kvalitet og holdbarhet", "desc": "60 års levetid, x7 sterkere enn betong, Isolasjon x3 mer effektiv enn betong" },
+      { "title": "Sikkerhet", "desc": "Brannbestandig, Orkan- og jordskjelvsikker" },
+      { "title": "Karboneffektivt", "desc": "Laget av 100 % resirkulert plast, Ingen sement eller stål brukt, Lavt vannforbruk" }
     ],
     "material_label": "Materiale",
     "material_value": "100 % resirkulert plast",

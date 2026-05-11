@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import { ArrowRight, Recycle, Clock, Shield, Leaf, ChevronRight } from 'lucide-react';
+import { ArrowRight, Recycle, Clock, Shield, Leaf, ChevronRight, DollarSign, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import ImageSlider from '@/components/shared/ImageSlider';
@@ -152,114 +152,85 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Technology Section */}
-      <section className="bg-white py-24 lg:py-32">
+      {/* Market Leading Technology */}
+      <section className="bg-surface py-24 lg:py-32">
         <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <SlotIn>
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
-                <span className="w-8 h-px bg-teal" />
-                {t('home.tech_label')}
-                <span className="w-8 h-px bg-teal" />
-              </div>
-              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-4">
-                {t('home.tech_title')}
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                {t('home.tech_subtitle')}
-              </p>
-            </div>
-          </SlotIn>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {techFeatures.map((f, i) => {
-              const Icon = f.icon;
-              return (
-                <SlotIn key={f.title} delay={i * 0.08}>
-                  <div className="bg-surface border border-tech-slate rounded-sm p-6 h-full hover:border-teal/40 hover:shadow-md transition-all duration-300 group">
-                    <div className="w-12 h-12 bg-teal/10 rounded-sm flex items-center justify-center mb-5 group-hover:bg-teal/20 transition-colors">
-                      <Icon className="w-6 h-6 text-teal" />
-                    </div>
-                    <h3 className="font-heading font-semibold text-navy text-base mb-2">{f.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
-                  </div>
-                </SlotIn>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Quote Section */}
-      <section className="bg-navy py-20 lg:py-28">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left: 3D Panel Image with UN-Habitat Overlay */}
             <SlotIn>
-              <img
-                src="/images/Panel 3D.jpg"
-                alt="Community impact"
-                className="w-full h-80 lg:h-96 object-cover rounded-sm"
-              />
-            </SlotIn>
-            <SlotIn delay={0.15}>
-              <div className="text-white/20 font-heading text-8xl leading-none mb-4">"</div>
-              <blockquote className="font-heading text-xl lg:text-2xl text-white font-light leading-relaxed mb-8 -mt-6">
-                {t('home.quote_text')}
-              </blockquote>
-              <div className="flex items-center gap-4 border-t border-white/10 pt-6">
-                <div className="w-12 h-12 rounded-full bg-teal/20 border border-teal/40 overflow-hidden">
-                  <img
-                    src="/placeholder.svg"
-                    alt={t('home.quote_author')}
-                    className="w-full h-full object-cover"
+              <div className="relative bg-white p-8 lg:p-12 rounded-sm border border-tech-slate shadow-sm">
+                <img
+                  src="/images/Panel 3D.jpg"
+                  alt="Othalo 3D Panel Exploded View"
+                  className="w-full h-auto object-contain"
+                />
+                {/* UN-Habitat Badge Overlay */}
+                <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 max-w-[140px] md:max-w-[180px]">
+                  <img 
+                    src="/images/UN Habitat endorsed logo 6.png" 
+                    alt="Endorsed by UN-Habitat" 
+                    className="w-full h-auto drop-shadow-md"
                   />
                 </div>
-                <div>
-                  <div className="font-heading font-semibold text-white text-sm">{t('home.quote_author')}</div>
-                  <div className="text-white/50 text-xs">{t('home.quote_title')}</div>
-                </div>
               </div>
-              <Button
-                asChild
-                className="mt-8 bg-teal hover:bg-teal-light text-white font-semibold px-6 h-10 rounded-sm text-sm"
-              >
-                <Link to="/about">{t('home.quote_cta')}</Link>
-              </Button>
             </SlotIn>
+
+            {/* Right: Market Leading Features */}
+            <div className="flex flex-col">
+              <SlotIn>
+                <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
+                  <span className="w-8 h-px bg-teal" />
+                  {t('products.tech_label')}
+                </div>
+                <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-8">
+                  {t('products.comparison_title')}
+                </h2>
+                
+                <div className="space-y-8">
+                  {[
+                    { icon: DollarSign, title: t('products.panel_features.0.title'), desc: t('products.panel_features.0.desc') },
+                    { icon: Award, title: t('products.panel_features.1.title'), desc: t('products.panel_features.1.desc') },
+                    { icon: Shield, title: t('products.panel_features.2.title'), desc: t('products.panel_features.2.desc') },
+                    { icon: Recycle, title: t('products.panel_features.3.title'), desc: t('products.panel_features.3.desc') },
+                  ].map((f, i) => {
+                    const Icon = f.icon;
+                    return (
+                      <SlotIn key={f.title} delay={i * 0.1}>
+                        <div className="flex gap-5 group">
+                          <div className="w-12 h-12 bg-teal/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-teal group-hover:text-white transition-all duration-300">
+                            <Icon className="w-6 h-6 text-teal group-hover:text-white transition-colors" />
+                          </div>
+                          <div>
+                            <h3 className="font-heading font-semibold text-navy text-lg mb-1">{f.title}</h3>
+                            <p className="text-muted-foreground text-sm leading-relaxed max-w-md">{f.desc}</p>
+                          </div>
+                        </div>
+                      </SlotIn>
+                    );
+                  })}
+                </div>
+              </SlotIn>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Build the Future */}
+
+      {/* Gallery Section */}
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-8xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <div className="mb-16">
+            <div className="mb-14 text-center">
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
                 <span className="w-8 h-px bg-teal" />
-                {t('home.approach_label')}
+                {t('home.gallery_categories.community')} & {t('home.gallery_categories.factory')}
+                <span className="w-8 h-px bg-teal" />
               </div>
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy">
-                {t('home.approach_title')}
+                Othalo in Action
               </h2>
             </div>
           </SlotIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            {Array.isArray(buildFuture) && buildFuture.map((item, i) => (
-              <SlotIn key={item.num} delay={i * 0.08}>
-                <div className="flex gap-6 p-6 border border-tech-slate rounded-sm hover:border-teal/30 hover:shadow-sm transition-all group">
-                  <div className="font-heading font-semibold text-teal text-3xl leading-none flex-shrink-0">
-                    {item.num}
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold text-navy text-base mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                  </div>
-                </div>
-              </SlotIn>
-            ))}
-          </div>
 
           {/* Gallery */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -277,60 +248,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Comparison Table */}
-      <section className="bg-navy py-24 lg:py-32">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <SlotIn>
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
-                <span className="w-8 h-px bg-teal" />
-                {t('home.comparison.label')}
-                <span className="w-8 h-px bg-teal" />
-              </div>
-              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-white mb-4">
-                {t('home.comparison.title')}
-              </h2>
-              <p className="text-white/60 max-w-xl mx-auto">
-                {t('home.comparison.subtitle')}
-              </p>
-            </div>
-          </SlotIn>
-          <SlotIn delay={0.1}>
-            <div className="overflow-x-auto rounded-sm border border-white/10">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-white/10 bg-white/5">
-                    {t('home.comparison.headers', { returnObjects: true }).map((header, idx) => (
-                      <th 
-                        key={header}
-                        className={`py-4 px-5 font-heading font-semibold uppercase text-xs tracking-widest ${
-                          idx === 0 ? 'text-left text-white/50' : idx === 1 ? 'text-center text-teal' : 'text-center text-white/40'
-                        }`}
-                      >
-                        {header}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {Array.isArray(comparisonRows) && comparisonRows.map((row, i) => (
-                    <tr
-                      key={row.f}
-                      className={`border-b border-white/5 ${i % 2 === 0 ? 'bg-white/[0.02]' : ''}`}
-                    >
-                      <td className="py-4 px-5 text-white/70">{row.f}</td>
-                      <td className="py-4 px-5 text-center font-semibold text-teal font-heading">{row.o}</td>
-                      <td className="py-4 px-5 text-center text-white/40">{row.c}</td>
-                      <td className="py-4 px-5 text-center text-white/40">{row.s}</td>
-                      <td className="py-4 px-5 text-center text-white/40">{row.t}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </SlotIn>
-        </div>
-      </section>
 
       {/* ESG Goals */}
       <section className="bg-white py-24 lg:py-32">

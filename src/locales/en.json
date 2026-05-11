@@ -257,10 +257,10 @@
     "tech_label": "Technical Advantage",
     "tech_title": "Market leading technology and innovation",
     "panel_features": [
-      { "title": "Cost Effective", "desc": "Use of plastic waste, limited manpower and machinery needed on site, fast construction methodology." },
-      { "title": "Quality and durability", "desc": "60 years lifespan, x7 stronger than concrete, insulation x3 more effective than concrete." },
-      { "title": "Safety", "desc": "Fire resistant, hurricane and earthquake resistant. Tested to international standards." },
-      { "title": "Carbon efficient", "desc": "Made from 100% recycled plastic. No cement or steel used. Low water use in construction." }
+      { "title": "Cost Effective", "desc": "Use of plastic waste, Limited manpower and machinery needed on site, Fast construction" },
+      { "title": "Quality and durability", "desc": "60 years lifespan, x7 stronger than concrete, Insulation x3 more effective than concrete" },
+      { "title": "Safety", "desc": "Fire resistant, Hurricane & earthquake resistant" },
+      { "title": "Carbon efficient", "desc": "Made from 100% recycled plastic, No cement or steel used, Low water use in construction" }
     ],
     "material_label": "Material",
     "material_value": "100% Recycled Plastic",
