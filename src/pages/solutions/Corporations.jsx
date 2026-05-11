@@ -36,9 +36,9 @@ export default function Corporations() {
 
       {/* Hero */}
       <section className="relative bg-navy py-28 lg:py-36 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0">
           <img src="/images/The House step by step 2.png" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-navy/70" />
+          <div className="absolute inset-0 bg-navy/60" />
         </div>
         <div className="relative z-10 max-w-8xl mx-auto px-6 lg:px-12">
           <SlotIn>
@@ -141,30 +141,6 @@ export default function Corporations() {
               );
             })}
           </div>
-        </div>
-      </section>
-
-      {/* ESG Metrics */}
-      <section className="bg-navy py-24 lg:py-32">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <SlotIn>
-            <div className="text-center mb-12">
-              <h2 className="font-heading text-3xl font-semibold text-white mb-3">
-                {t('corporations.metrics_title')}
-              </h2>
-              <p className="text-white/60 max-w-lg mx-auto">{t('corporations.metrics_subtitle')}</p>
-            </div>
-          </SlotIn>
-          <SlotIn delay={0.1}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {Array.isArray(esgMetrics) && esgMetrics.map((m) => (
-                <div key={m.label} className="bg-white/5 border border-white/10 rounded-sm p-6 hover:border-teal/40 transition-colors">
-                  <div className="text-xs text-white/40 uppercase tracking-widest font-heading font-semibold mb-2">{m.label}</div>
-                  <div className="font-heading font-semibold text-teal text-xl">{m.value}</div>
-                </div>
-              ))}
-            </div>
-          </SlotIn>
         </div>
       </section>
 

@@ -66,8 +66,8 @@ export default function Solutions() {
 
       {/* Hero */}
       <section className="bg-navy py-28 lg:py-36 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-40">
-          <img src="/images/The Community crop.png" alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0">
+          <img src="/images/The House step by step 2.png" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-navy/60" />
         </div>
         <div className="relative z-10 max-w-8xl mx-auto px-6 lg:px-12 text-center">

@@ -36,9 +36,9 @@ export default function HousingDevelopers() {
 
       {/* Hero */}
       <section className="relative bg-navy py-28 lg:py-36 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0">
           <img src="/images/The community 1a.png" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-navy/70" />
+          <div className="absolute inset-0 bg-navy/60" />
         </div>
         <div className="relative z-10 max-w-8xl mx-auto px-6 lg:px-12">
           <SlotIn>
@@ -144,40 +144,6 @@ export default function HousingDevelopers() {
         </div>
       </section>
 
-      {/* ROI Metrics */}
-      <section className="bg-surface py-24 lg:py-32">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <SlotIn>
-            <div className="mb-12">
-              <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
-                <span className="w-8 h-px bg-teal" />
-                {t('housing_dev.roi_label')}
-              </div>
-              <h2 className="font-heading text-3xl font-semibold text-navy">{t('housing_dev.roi_title')}</h2>
-            </div>
-          </SlotIn>
-          <SlotIn delay={0.1}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {Array.isArray(roiMetrics) && roiMetrics.map((m) => (
-                <div
-                  key={m.label}
-                  className={`rounded-sm p-6 border ${m.highlight ? 'bg-navy border-navy text-white' : 'bg-white border-tech-slate'}`}
-                >
-                  <div className={`text-xs uppercase tracking-widest font-heading font-semibold mb-2 ${m.highlight ? 'text-teal' : 'text-muted-foreground'}`}>
-                    {m.label}
-                  </div>
-                  <div className={`font-heading font-semibold text-2xl ${m.highlight ? 'text-white' : 'text-navy'}`}>
-                    {m.value}
-                  </div>
-                  <div className={`text-[10px] mt-1 ${m.highlight ? 'text-white/50' : 'text-muted-foreground/60'}`}>
-                    {m.desc}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </SlotIn>
-        </div>
-      </section>
 
 
       {/* CTA */}

@@ -35,9 +35,9 @@ export default function Governments() {
 
       {/* Hero */}
       <section className="relative bg-navy py-28 lg:py-36 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0">
           <img src="/images/The District 2b.png" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-navy/70" />
+          <div className="absolute inset-0 bg-navy/60" />
         </div>
         <div className="relative z-10 max-w-8xl mx-auto px-6 lg:px-12">
           <SlotIn>
@@ -143,44 +143,6 @@ export default function Governments() {
               );
             })}
           </div>
-        </div>
-      </section>
-
-      {/* Comparison */}
-      <section className="bg-navy py-24 lg:py-32">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <SlotIn>
-            <div className="text-center mb-12">
-              <h2 className="font-heading text-3xl font-semibold text-white mb-3">
-                {t('governments.comparison_title')}
-              </h2>
-              <p className="text-white/60 max-w-xl mx-auto">{t('governments.comparison_subtitle')}</p>
-            </div>
-          </SlotIn>
-          <SlotIn delay={0.1}>
-            <div className="overflow-x-auto rounded-sm border border-white/10">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-white/10 bg-white/5">
-                    {t('governments.comparison_headers', { returnObjects: true }).map((header, idx) => (
-                      <th key={header} className={`py-4 px-6 font-heading font-semibold text-xs uppercase tracking-widest ${idx === 0 ? 'text-left text-white/50' : idx === 1 ? 'text-center text-teal' : 'text-center text-white/40'}`}>
-                        {header}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {Array.isArray(comparisonRows) && comparisonRows.map((row, i) => (
-                    <tr key={row.f} className={`border-b border-white/5 ${i % 2 === 0 ? 'bg-white/[0.02]' : ''}`}>
-                      <td className="py-4 px-6 text-white/70">{row.f}</td>
-                      <td className="py-4 px-6 text-center font-semibold text-teal font-heading">{row.o}</td>
-                      <td className="py-4 px-6 text-center text-white/40">{row.t}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </SlotIn>
         </div>
       </section>
 
