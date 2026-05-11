@@ -471,29 +471,32 @@
     "challenge_label": "El desafío",
     "challenge_title": "Navegando por expectativas ESG complejas",
     "challenge_bullets": [
-      "Responsabilidad de fin de vida para plásticos y envases",
-      "Regulaciones de circularidad más estrictas y presión de cumplimiento",
-      "Necesidad de soluciones escalables, creíbles y verificables",
-      "Demanda de acción concreta por parte de las partes interesadas"
+      "Responsabilidad de fin de vida para plástico (incluidos residuos plásticos)",
+      "Regulaciones de circularidad más estrictas",
+      "Presión de cumplimiento creciente",
+      "Necesidad de soluciones escalables y creíbles",
+      "Demanda creciente de consumidores, empleados e inversores"
     ],
     "solution_label": "La solución Othalo",
     "solution_title": "Una plataforma ESG llave en mano",
     "solution_bullets": [
-      "Plataforma ESG que vincula cumplimiento con impacto ambiental y social",
-      "Convertir residuos en materiales de construcción y hogares",
+      "Plataforma ESG llave en mano",
+      "Vincule cumplimiento + impacto ambiental + social",
+      "Convertir residuos en materiales de construcción tangibles",
       "Impacto escalable, verificado y medible para informes",
-      "Ejecución rápida y programas de participación sólidos"
+      "Ejecución rápida",
+      "Programas de participación de partes interesadas"
     ],
     "benefits_label": "Ventaja corporativa",
     "benefits_title": "Impacto ESG estructurado para empresas visionarias",
     "benefits": [
-      { "title": "Cumpla con EPR", "desc": "Cumpla con los requisitos de EPR con resultados medibles." },
-      { "title": "Residuos a valor", "desc": "Adopte un modelo circular que transforma el plástico en hogares." },
-      { "title": "Impacto ESG real", "desc": "Impacto real en las dimensiones ambiental, social y de gobernanza." },
-      { "title": "Despliegue rápido", "desc": "Permite una acción inmediata y resultados medibles." },
-      { "title": "Confianza de marca", "desc": "Fortalezca la confianza con impacto visible a nivel comunitario." },
-      { "title": "Seguimiento transparente", "desc": "Seguimiento de impacto compatible con GRI y SASB." },
-      { "title": "Escalable globalmente", "desc": "Escalable para coincidir con su huella operativa global." }
+      { "title": "Cumplir requisitos EPR con resultados medibles", "desc": "Cumpla con los requisitos de EPR con resultados medibles." },
+      { "title": "Convertir residuos en valor a través de modelo circular", "desc": "Adopte un modelo circular que transforma el plástico en hogares." },
+      { "title": "Entregar impacto ESG real", "desc": "Impacto real en las dimensiones ambiental, social y de gobernanza." },
+      { "title": "Despliegue rápido, acción inmediata", "desc": "Permite una acción inmediata y resultados medibles." },
+      { "title": "Fortalecer la confianza de marca y partes interesadas", "desc": "Fortalezca la confianza con impacto visible a nivel comunitario." },
+      { "title": "Seguimiento de impacto transparente y reporting", "desc": "Seguimiento de impacto compatible con GRI y SASB." },
+      { "title": "Escalable en todos los mercados", "desc": "Escalable para coincidir con su huella operativa global." }
     ],
     "metrics_title": "Métricas en las que su equipo de sostenibilidad confiará",
     "metrics_subtitle": "Cada despliegue corporativo genera un paquete completo de datos de impacto.",

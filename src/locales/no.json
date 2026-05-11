@@ -373,10 +373,11 @@
     "challenge_label": "Utfordringen",
     "challenge_title": "Begrensningene ved tradisjonell bygging",
     "challenge_bullets": [
-      "Økende boligbehov drevet av rask urbanisering",
-      "Stigende byggekostnader og budsjettbegrensninger",
+      "Økende boligbehov",
+      "Rask urbanisering + befolkningsvekst",
+      "Stigende byggekostnader",
       "Tradisjonell bygging er tregt, dyrt og har høye utslipp",
-      "Dagens metoder er ikke bærekraftige i nødvendig nasjonal skala"
+      "Ikke bærekraftig i nødvendig nasjonal skala"
     ],
     "solution_label": "Othalo-løsningen",
     "solution_title": "Skala uten kompromisser",
@@ -390,12 +391,12 @@
     "benefits_label": "Hvorfor Othalo for myndigheter",
     "benefits_title": "En offentlig boligstrategi som leverer",
     "benefits": [
-      { "title": "Skaler raskt", "desc": "Rull ut rimelige boliger raskt og effektivt for å møte behovet." },
-      { "title": "Høyere tetthet", "desc": "Bygg urbane prosjekter med høyere tetthet med fleretasjes-løsninger." },
-      { "title": "Reduser kostnader", "desc": "Reduser kostnader med våre alternativer til dyrt stål og sement." },
-      { "title": "Bygg raskere", "desc": "Bygg raskere med prefabrikasjon — lever boliger på dager, ikke måneder." },
-      { "title": "Lavere karbonavtrykk", "desc": "Lavere karbonavtrykk med bærekraftige, sirkulære materialer." },
-      { "title": "Fleksibelt design", "desc": "Fleksibelt design som møter lokale behov og regelverk." }
+      { "title": "Skalere rimelige boliger raskt og effektivt", "desc": "Rull ut rimelige boliger raskt og effektivt for å møte behovet." },
+      { "title": "Bygge for høyere tetthet i urbane prosjekter", "desc": "Bygg urbane prosjekter med høyere tetthet med fleretasjes-løsninger." },
+      { "title": "Redusere kostnader med alternativer til stål og sement", "desc": "Reduser kostnader med våre alternativer til dyrt stål og sement." },
+      { "title": "Bygge raskere med prefabrikasjon (dager, ikke måneder)", "desc": "Bygg raskere med prefabrikasjon — lever boliger på dager, ikke måneder." },
+      { "title": "Lavere karbonavtrykk med sirkulære materialer", "desc": "Lavere karbonavtrykk med bærekraftige, sirkulære materialer." },
+      { "title": "Designe fleksibelt for å møte lokale behov", "desc": "Fleksibelt design som møter lokale behov og regelverk." }
     ],
     "comparison_title": "Othalo vs. tradisjonell offentlig boligbygging",
     "comparison_subtitle": "En direkte sammenligning av nøkkeltall.",
@@ -421,29 +422,30 @@
     "challenge_label": "Utfordringen",
     "challenge_title": "Markedspress som begrenser vekst",
     "challenge_bullets": [
-      "Stigende kostnader og lav forutsigbarhet i marginer",
-      "Prosjektforsinkelser og uforutsigbare tidslinjer",
-      "Mangel på stål, sement og faglært arbeidskraft",
-      "Komplekse byggemetoder som er vanskelige å skalere"
+      "Stigende kostnader (høy prisvolatilitet), reduserte marginer",
+      "Forsinkelser, uforutsigbare tidslinjer",
+      "Mangel på stål, sement, arbeidskraft",
+      "Kompleks og ineffektiv konstruksjon å skalere"
     ],
     "solution_label": "Othalo-løsningen",
     "solution_title": "En raskere og mer kostnadseffektiv modell",
     "solution_bullets": [
       "Raskere og mer kostnadseffektiv konstruksjon",
       "Prefabrikkerte modulære systemer av resirkulert plast",
-      "Forenklet montering med lette komponenter",
-      "Fleksibelt design tilpasset ditt prosjekt"
+      "Forenklet montering på stedet",
+      "Lette og skalerbare komponenter",
+      "Fleksibelt design tilpasset ditt prosjekt, marked og regelverk"
     ],
     "benefits_label": "Fordeler for utbyggere",
     "benefits_title": "Bygget for å forbedre din prosjektøkonomi",
     "benefits": [
-      { "title": "Kostnadskontroll", "desc": "Bedre kontroll på kostnader og redusert risiko for prisendringer på materialer." },
-      { "title": "Bygg raskere", "desc": "Bygg raskere med prefabrikasjon — lever boliger på dager, ikke måneder." },
+      { "title": "Kontrollere kostnader og redusere eksponering for prisvolatilitet", "desc": "Bedre kontroll på kostnader og redusert risiko for prisendringer på materialer." },
+      { "title": "Bygge raskere med prefabrikasjon (dager, ikke måneder)", "desc": "Bygg raskere med prefabrikasjon — lever boliger på dager, ikke måneder." },
       { "title": "Lavere personellbehov", "desc": "Behov for færre folk på byggeplassen med forenklet montering." },
-      { "title": "Høyere effektivitet", "desc": "Høyere effektivitet og skalerbar levering for store prosjekter." },
-      { "title": "Nye markeder", "desc": "Få tilgang til markedet for rimelige boliger." },
-      { "title": "Styrket ESG", "desc": "Styrk bedriftens ESG-profil med sirkulære lavkarbon-materialer." },
-      { "title": "Tilpasningsdyktig", "desc": "Design som kan tilpasses ditt prosjekt og lokale regler." }
+      { "title": "Høyere effektivitet, skalerbar levering", "desc": "Høyere effektivitet og skalerbar levering for store prosjekter." },
+      { "title": "Tilgang til nye markeder (rimelig segment)", "desc": "Få tilgang til markedet for rimelige boliger." },
+      { "title": "Styrke ESG med sirkulære lavkarbon-materialer", "desc": "Styrk bedriftens ESG-profil med sirkulære lavkarbon-materialer." },
+      { "title": "Tilpasningsdyktig design", "desc": "Design som kan tilpasses ditt prosjekt og lokale regler." }
     ],
     "roi_label": "ROI-målinger",
     "roi_title": "Tallene som styrker ditt business case",
@@ -469,29 +471,32 @@
     "challenge_label": "Utfordringen",
     "challenge_title": "Navigering i komplekse ESG-forventninger",
     "challenge_bullets": [
-      "Ansvar for plast- og emballasjeavfall ved livsslutt",
-      "Strengere regler for sirkularitet og økende etterlevelsespress",
-      "Behov for skalerbare og verifiserbare løsninger",
-      "Økende krav om handling fra kunder, ansatte og investorer"
+      "Ansvar for plast ved livsslutt (inkludert plastavfall)",
+      "Strengere regler for sirkularitet",
+      "Økende etterlevelsespress",
+      "Behov for skalerbare og troverdige løsninger",
+      "Økende krav fra kunder, ansatte og investorer"
     ],
     "solution_label": "Othalo-løsningen",
     "solution_title": "En nøkkelferdig ESG-plattform",
     "solution_bullets": [
-      "ESG-plattform som kobler samsvar med miljømessig og sosial påvirkning",
-      "Forvandle avfall til byggematerialer og boliger",
+      "Nøkkelferdig ESG-plattform",
+      "Koble samsvar + miljømessig + sosial påvirkning",
+      "Forvandle avfall til konkrete byggematerialer",
       "Skalerbar, verifisert og målbar påvirkning for rapportering",
-      "Rask utførelse og gode programmer for interessentengasjement"
+      "Rask utførelse",
+      "Programmer for interessentengasjement"
     ],
     "benefits_label": "Bedriftsfordeler",
     "benefits_title": "Strukturert ESG-påvirkning for fremtidsrettede selskaper",
     "benefits": [
-      { "title": "Oppfyll EPR-krav", "desc": "Møt EPR-krav med målbare resultater gjennom plastfjerning." },
-      { "title": "Avfall til verdi", "desc": "Bruk en sirkulær modell som forvandler plast til boliger." },
-      { "title": "Reell ESG-påvirkning", "desc": "Lever konkret påvirkning på miljø, sosiale forhold og styring." },
-      { "title": "Rask utrulling", "desc": "Muliggjør umiddelbar handling og målbare resultater." },
-      { "title": "Styrket merkevare", "desc": "Styrk tilliten til merkevaren med synlig påvirkning i lokalsamfunn." },
-      { "title": "Gjennomsiktig sporing", "desc": "Effektiv sporing av påvirkning kompatibel med GRI og SASB." },
-      { "title": "Global skalering", "desc": "Kan skaleres for å matche selskapets globale fotavtrykk." }
+      { "title": "Oppfylle EPR-krav med målbare resultater", "desc": "Møt EPR-krav med målbare resultater gjennom plastfjerning." },
+      { "title": "Forvandle avfall til verdi gjennom sirkulær modell", "desc": "Bruk en sirkulær modell som forvandler plast til boliger." },
+      { "title": "Levere reell ESG-påvirkning", "desc": "Lever konkret påvirkning på miljø, sosiale forhold og styring." },
+      { "title": "Rask utrulling, umiddelbar handling", "desc": "Muliggjør umiddelbar handling og målbare resultater." },
+      { "title": "Styrke merkevare og interessenttillit", "desc": "Styrk tilliten til merkevaren med synlig påvirkning i lokalsamfunn." },
+      { "title": "Gjennomsiktig påvirkningssporing og rapportering", "desc": "Effektiv sporing av påvirkning kompatibel med GRI og SASB." },
+      { "title": "Skalerbar på tvers av markeder", "desc": "Kan skaleres for å matche selskapets globale fotavtrykk." }
     ],
     "metrics_title": "Tall ditt bærekraftsteam kan stole på",
     "metrics_subtitle": "Hver utrulling genererer en fullstendig pakke med data om påvirkning.",
