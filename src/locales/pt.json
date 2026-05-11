@@ -373,10 +373,11 @@
     "challenge_label": "O Desafio",
     "challenge_title": "Os limites da construção tradicional",
     "challenge_bullets": [
-      "Demanda crescente impulsionada pela rápida urbanização",
-      "Aumento dos custos de construção e restrições orçamentais",
-      "Construção tradicional é lenta, cara e de alto carbono",
-      "Métodos atuais não são viáveis na escala nacional necessária"
+      "Demanda crescente de habitação",
+      "Urbanização rápida + crescimento populacional",
+      "Aumento dos custos de construção",
+      "Construção tradicional lenta, cara e de alto carbono",
+      "Não viável na escala necessária"
     ],
     "solution_label": "A Solução Othalo",
     "solution_title": "Escala sem compromisso",
@@ -390,12 +391,12 @@
     "benefits_label": "Por que a Othalo para Governos",
     "benefits_title": "Uma estratégia de habitação pública que entrega",
     "benefits": [
-      { "title": "Escalabilidade rápida", "desc": "Implemente habitação acessível rapidamente para atender à demanda." },
-      { "title": "Projetos de alta densidade", "desc": "Construa para densidade urbana com unidades de vários andares." },
-      { "title": "Redução de custos", "desc": "Reduza custos com nossas alternativas patenteadas ao aço e cimento." },
-      { "title": "Construção veloz", "desc": "Construa mais rápido com pré-fabricação — entregue em dias, não meses." },
-      { "title": "Menor pegada de carbono", "desc": "Menor pegada de carbono com materiais sustentáveis e circulares." },
-      { "title": "Design flexível", "desc": "Design flexível para atender às necessidades locais e regulatórias." }
+      { "title": "Escalar habitação acessível de forma rápida e eficiente", "desc": "Implemente habitação acessível rapidamente para atender à demanda." },
+      { "title": "Construir para projetos urbanos de alta densidade", "desc": "Construa para densidade urbana com unidades de vários andares." },
+      { "title": "Reduzir custos com alternativas ao aço e cimento", "desc": "Reduza custos com nossas alternativas patenteadas ao aço e cimento." },
+      { "title": "Construir mais rápido com pré-fabricação (dias, não meses)", "desc": "Construa mais rápido com pré-fabricação — entregue em dias, não meses." },
+      { "title": "Menor pegada de carbono com materiais circulares", "desc": "Menor pegada de carbono com materiais sustentáveis e circulares." },
+      { "title": "Projetar com flexibilidade para atender às necessidades locais", "desc": "Design flexível para atender às necessidades locais e regulatórias." }
     ],
     "comparison_title": "Othalo vs. Construção de Habitação Pública Tradicional",
     "comparison_subtitle": "Uma comparação direta das principais métricas de aquisição governamental.",
@@ -421,28 +422,29 @@
     "challenge_label": "O Desafio",
     "challenge_title": "Pressões de mercado restringindo o crescimento",
     "challenge_bullets": [
-      "Custos crescentes, alta volatilidade de preços e margens reduzidas",
-      "Atrasos em projetos e cronogramas imprevisíveis",
-      "Escassez de aço, cimento e mão de obra qualificada",
-      "Métodos de construção complexos e ineficientes para escalar"
+      "Custos crescentes (alta volatilidade de preços), margens reduzidas",
+      "Atrasos, cronogramas imprevisíveis",
+      "Escassez de aço, cimento, mão de obra",
+      "Construção complexa e ineficiente para escalar"
     ],
     "solution_label": "A Solução Othalo",
     "solution_title": "Um modelo mais rápido e económico",
     "solution_bullets": [
       "Construção mais rápida e económica",
       "Sistemas modulares pré-fabricados feitos de plástico reciclado",
-      "Execução simplificada no local com componentes leves",
-      "Designs flexíveis adaptados ao seu projeto e mercado"
+      "Execução simplificada no local",
+      "Componentes leves e escaláveis",
+      "Designs flexíveis adaptados ao seu projeto, mercado e regulação"
     ],
     "benefits_label": "Vantagens do Desenvolvedor",
     "benefits_title": "Construído para melhorar a economia do seu desenvolvimento",
     "benefits": [
-      { "title": "Controle de custos", "desc": "Controle custos e reduza a exposição à volatilidade dos materiais." },
-      { "title": "Construção veloz", "desc": "Construa mais rápido com pré-fabricação — entregue em dias, não meses." },
+      { "title": "Controlar custos e reduzir exposição à volatilidade de materiais", "desc": "Controle custos e reduza a exposição à volatilidade dos materiais." },
+      { "title": "Construir mais rápido com pré-fabricação (dias, não meses)", "desc": "Construa mais rápido com pré-fabricação — entregue em dias, não meses." },
       { "title": "Menos mão de obra", "desc": "Menor necessidade de mão de obra no local com execução simplificada." },
-      { "title": "Maior eficiência", "desc": "Maior eficiência e entrega escalável para grandes projetos." },
-      { "title": "Novos mercados", "desc": "Aceda a novos mercados, particularmente o de habitação acessível." },
-      { "title": "Fortaleça o ESG", "desc": "Fortaleça seu ESG com materiais circulares de baixo carbono." },
+      { "title": "Maior eficiência, entrega escalável", "desc": "Maior eficiência e entrega escalável para grandes projetos." },
+      { "title": "Aceder a novos mercados (segmento acessível)", "desc": "Aceda a novos mercados, particularmente o de habitação acessível." },
+      { "title": "Fortalecer ESG com materiais circulares de baixo carbono", "desc": "Fortaleça seu ESG com materiais circulares de baixo carbono." },
       { "title": "Design personalizável", "desc": "Adaptável ao seu projeto, mercado e regulação." }
     ],
     "roi_label": "Métricas de ROI",
@@ -469,29 +471,32 @@
     "challenge_label": "O Desafio",
     "challenge_title": "Navegando por expectativas ESG complexas",
     "challenge_bullets": [
-      "Responsabilidade de fim de vida para plásticos e embalagens",
-      "Regulamentações de circularidade mais rígidas e pressão de conformidade",
-      "Necessidade de soluções escaláveis, credíveis e verificáveis",
-      "Demanda por ação concreta de stakeholders e investidores"
+      "Responsabilidade de fim de vida para plástico (incluindo resíduos plásticos)",
+      "Regulamentações de circularidade mais rígidas",
+      "Pressão de conformidade crescente",
+      "Necessidade de soluções escaláveis e credíveis",
+      "Demanda crescente de consumidores, funcionários e investidores"
     ],
     "solution_label": "A Solução Othalo",
     "solution_title": "Uma plataforma ESG chave na mão",
     "solution_bullets": [
-      "Plataforma ESG vinculando conformidade com impacto ambiental e social",
-      "Converter resíduos em materiais de construção e casas",
+      "Plataforma ESG chave na mão",
+      "Vincule conformidade + impacto ambiental + social",
+      "Converter resíduos em materiais de construção tangíveis",
       "Impacto escalável, verificado e mensurável para relatórios",
-      "Execução rápida e programas robustos de engajamento"
+      "Execução rápida",
+      "Programas de engajamento de stakeholders"
     ],
     "benefits_label": "Vantagem Corporativa",
     "benefits_title": "Impacto ESG estruturado para empresas visionárias",
     "benefits": [
-      { "title": "Atenda aos requisitos EPR", "desc": "Cumpra os requisitos EPR com resultados mensuráveis." },
-      { "title": "Resíduos em valor", "desc": "Adote um modelo circular que transforma plástico em casas." },
-      { "title": "Impacto ESG real", "desc": "Impacto real nas dimensões ambiental, social e de governança." },
-      { "title": "Implantação rápida", "desc": "Permite ação imediata e resultados mensuráveis." },
-      { "title": "Confiança na marca", "desc": "Fortaleça a confiança com impacto visível no nível comunitário." },
-      { "title": "Rastreamento transparente", "desc": "Rastreamento compatível com os principais frameworks (GRI, SASB)." },
-      { "title": "Escalável globalmente", "desc": "Escalável para coincidir com sua pegada operacional global." }
+      { "title": "Cumprir requisitos EPR com resultados mensuráveis", "desc": "Cumpra os requisitos EPR com resultados mensuráveis." },
+      { "title": "Transformar resíduos em valor através de modelo circular", "desc": "Adote um modelo circular que transforma plástico em casas." },
+      { "title": "Entregar impacto ESG real", "desc": "Impacto real nas dimensões ambiental, social e de governança." },
+      { "title": "Implantação rápida, ação imediata", "desc": "Permite ação imediata e resultados mensuráveis." },
+      { "title": "Fortalecer a confiança na marca e stakeholders", "desc": "Fortaleça a confiança com impacto visível no nível comunitário." },
+      { "title": "Rastreamento de impacto transparente e reporting", "desc": "Rastreamento compatível com os principais frameworks (GRI, SASB)." },
+      { "title": "Escalável em todos os mercados", "desc": "Escalável para coincidir com sua pegada operacional global." }
     ],
     "metrics_title": "Métricas que sua equipe de sustentabilidade confiará",
     "metrics_subtitle": "Cada implantação gera um pacote completo de dados de impacto.",

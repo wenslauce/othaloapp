@@ -373,10 +373,11 @@
     "challenge_label": "El desafío",
     "challenge_title": "Los límites de la construcción tradicional",
     "challenge_bullets": [
-      "Demanda de vivienda creciente impulsada por la rápida urbanización",
-      "Aumento de costos de construcción y restricciones presupuestarias",
-      "La construcción tradicional es lenta, costosa y genera mucho carbono",
-      "Los métodos actuales no son viables a la escala nacional requerida"
+      "Demanda creciente de vivienda",
+      "Urbanización rápida + crecimiento demográfico",
+      "Aumento de costos de construcción",
+      "Construcción tradicional lenta, costosa y de alto carbono",
+      "No viable a la escala requerida"
     ],
     "solution_label": "La solución Othalo",
     "solution_title": "Escala sin compromisos",
@@ -390,12 +391,12 @@
     "benefits_label": "Por qué Othalo para gobiernos",
     "benefits_title": "Una estrategia de vivienda pública que cumple",
     "benefits": [
-      { "title": "Escale rápido", "desc": "Escale viviendas asequibles de forma rápida para satisfacer la demanda." },
-      { "title": "Proyectos de alta densidad", "desc": "Construya para alta densidad urbana con capacidades de varios pisos." },
-      { "title": "Reduzca costos", "desc": "Reduzca costos con nuestras alternativas patentadas al acero y cemento." },
-      { "title": "Construya más rápido", "desc": "Construya más rápido con prefabricación: entregue en días, no meses." },
-      { "title": "Menor huella de carbono", "desc": "Menor huella de carbono con materiales sostenibles y circulares." },
-      { "title": "Diseño flexible", "desc": "Diseño flexible para satisfacer necesidades locales y regulatorias." }
+      { "title": "Escalar viviendas asequibles de forma rápida y eficiente", "desc": "Escale viviendas asequibles de forma rápida para satisfacer la demanda." },
+      { "title": "Construir para proyectos urbanos de alta densidad", "desc": "Construya para alta densidad urbana con capacidades de varios pisos." },
+      { "title": "Reducir costos con alternativas al acero y cemento", "desc": "Reduzca costos con nuestras alternativas patentadas al acero y cemento." },
+      { "title": "Construir más rápido con prefabricación (días, no meses)", "desc": "Construya más rápido con prefabricación: entregue en días, no meses." },
+      { "title": "Menor huella de carbono con materiales circulares", "desc": "Menor huella de carbono con materiales sostenibles y circulares." },
+      { "title": "Diseñar con flexibilidad para satisfacer necesidades locales", "desc": "Diseño flexible para satisfacer necesidades locales y regulatorias." }
     ],
     "comparison_title": "Othalo frente a construcción tradicional de vivienda pública",
     "comparison_subtitle": "Comparación directa de métricas clave de contratación pública.",
@@ -421,28 +422,29 @@
     "challenge_label": "El desafío",
     "challenge_title": "Presiones del mercado que restringen el crecimiento",
     "challenge_bullets": [
-      "Aumento de costos, alta volatilidad de precios y márgenes reducidos",
-      "Retrasos en proyectos y cronogramas impredecibles",
-      "Escasez de acero, cemento y mano de obra calificada",
-      "Métodos de construcción complejos e ineficientes para escalar"
+      "Costos crecientes (alta volatilidad de precios), márgenes reducidos",
+      "Retrasos, cronogramas impredecibles",
+      "Escasez de acero, cemento, mano de obra",
+      "Construcción compleja e ineficiente para escalar"
     ],
     "solution_label": "La solución Othalo",
     "solution_title": "Un modelo más rápido y rentable",
     "solution_bullets": [
       "Construcción más rápida y más económica",
       "Sistemas modulares prefabricados de plástico reciclado",
-      "Ejecución simplificada en el sitio con componentes ligeros",
-      "Diseños flexibles que se adaptan a su proyecto y mercado"
+      "Ejecución simplificada en el sitio",
+      "Componentes ligeros y escalables",
+      "Diseños flexibles que se adaptan a su proyecto, mercado y regulación"
     ],
     "benefits_label": "Ventajas para el promotor",
     "benefits_title": "Diseñado para mejorar la economía de su desarrollo",
     "benefits": [
-      { "title": "Control de costos", "desc": "Controle costos y reduzca la exposición a la volatilidad de los materiales." },
-      { "title": "Construya más rápido", "desc": "Construya más rápido con prefabricación: entregue en días, no meses." },
+      { "title": "Controlar costos y reducir exposición a la volatilidad de materiales", "desc": "Controle costos y reduzca la exposición a la volatilidad de los materiales." },
+      { "title": "Construir más rápido con prefabricación (días, no meses)", "desc": "Construya más rápido con prefabricación: entregue en días, no meses." },
       { "title": "Menos mano de obra", "desc": "Menor necesidad de mano de obra en el sitio con ejecución simplificada." },
-      { "title": "Mayor eficiencia", "desc": "Mayor eficiencia y entrega escalable para grandes proyectos." },
-      { "title": "Nuevos mercados", "desc": "Acceda a nuevos mercados, particularmente el de vivienda asequible." },
-      { "title": "Fortalezca ESG", "desc": "Fortalezca su ESG con materiales circulares de bajo carbono." },
+      { "title": "Mayor eficiencia, entrega escalable", "desc": "Mayor eficiencia y entrega escalable para grandes proyectos." },
+      { "title": "Acceder a nuevos mercados (segmento asequible)", "desc": "Acceda a nuevos mercados, particularmente el de vivienda asequible." },
+      { "title": "Fortalecer ESG con materiales circulares de bajo carbono", "desc": "Fortalezca su ESG con materiales circulares de bajo carbono." },
       { "title": "Diseño personalizable", "desc": "Personalizable para adaptarse a su proyecto y regulación." }
     ],
     "roi_label": "Métricas de ROI",
