@@ -38,7 +38,7 @@ export default function Corporations() {
       {/* Hero */}
       <section className="relative bg-navy py-28 lg:py-36 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1462206092226-f46025ffe607?w=1800&q=80" alt="" className="w-full h-full object-cover" />
+          <img src="/images/The House step by step 2.png" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-navy/70" />
         </div>
         <div className="relative z-10 max-w-8xl mx-auto px-6 lg:px-12">

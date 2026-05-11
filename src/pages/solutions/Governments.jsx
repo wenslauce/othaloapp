@@ -37,7 +37,7 @@ export default function Governments() {
       {/* Hero */}
       <section className="relative bg-navy py-28 lg:py-36 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&q=80" alt="" className="w-full h-full object-cover" />
+          <img src="/images/The District 2b.png" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-navy/70" />
         </div>
         <div className="relative z-10 max-w-8xl mx-auto px-6 lg:px-12">
