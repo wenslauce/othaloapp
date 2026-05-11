@@ -261,7 +261,7 @@ export default function Products() {
         <div className="max-w-8xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <SlotIn>
-              <img src="https://images.unsplash.com/photo-1604599340287-2042e85a3802?w=700&q=85" alt="Plastic waste crisis" className="w-full h-72 object-cover rounded-sm" />
+              <img src="/images/House in Dumpsite crop.png" alt="Plastic waste crisis" className="w-full h-72 object-cover rounded-sm" />
             </SlotIn>
             <SlotIn delay={0.12}>
               <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-5 font-heading">

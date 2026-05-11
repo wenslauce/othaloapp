@@ -1,7 +1,7 @@
 // Home page
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { ArrowRight, Recycle, Clock, Shield, Leaf, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
@@ -15,6 +15,13 @@ export default function Home() {
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
   const heroY = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.75;
+    }
+  }, []);
 
   const techFeatures = [
     { icon: Recycle, title: t('home.tech_features.0.title'), desc: t('home.tech_features.0.desc') },
@@ -82,17 +89,18 @@ export default function Home() {
         >
           {/* Video Background */}
           <video
+            ref={videoRef}
             autoPlay
             loop
             muted
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1800&q=90"
+            poster="/images/The House Kenya crop.png"
           >
             <source src="/hero-loop.mp4" type="video/mp4" />
             {/* Fallback image if video is not supported */}
             <img
-              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1800&q=90"
+              src="/images/The House Kenya crop.png"
               alt="Othalo sustainable housing"
               className="w-full h-full object-cover"
             />

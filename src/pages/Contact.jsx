@@ -100,8 +100,12 @@ export default function Contact() {
         keywords={t('seo.contact.keywords').split(', ')}
       />
       {/* Hero */}
-      <section className="bg-navy py-24 lg:py-28">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
+      <section className="relative bg-navy py-24 lg:py-28 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <img src="/images/The District 2b.png" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-navy/60" />
+        </div>
+        <div className="relative z-10 max-w-8xl mx-auto px-6 lg:px-12">
           <SlotIn>
             <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-5 font-heading">
               <span className="w-8 h-px bg-teal" />

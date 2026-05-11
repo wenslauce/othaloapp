@@ -5,6 +5,7 @@ import { Building2, TrendingUp, Briefcase, ArrowRight, ChevronRight } from 'luci
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
+import SolutionFAQ from '@/components/shared/SolutionFAQ';
 import SEOHead from '@/components/shared/SEOHead';
 import { useTranslation } from 'react-i18next';
 
@@ -67,7 +68,7 @@ export default function Solutions() {
       {/* Hero */}
       <section className="bg-navy py-28 lg:py-36 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=1800&q=80" alt="" className="w-full h-full object-cover" />
+          <img src="/images/The Community crop.png" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-navy/60" />
         </div>
         <div className="relative z-10 max-w-8xl mx-auto px-6 lg:px-12 text-center">
@@ -151,6 +152,8 @@ export default function Solutions() {
           })}
         </div>
       </section>
+      
+      <SolutionFAQ />
 
       {/* Bottom CTA */}
       <section className="bg-navy py-20">

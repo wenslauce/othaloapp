@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { 
   DropdownMenu, 
@@ -20,15 +21,16 @@ const languages = [
 
 export default function LanguageSwitcher({ variant = 'default', className = '' }) {
   const { i18n } = useTranslation();
+  const currentLanguage = languages.find(lang => i18n.language?.startsWith(lang.code)) || languages[0];
   
-  const currentLanguage = languages.find(lang => lang.code === (i18n.language?.split('-')[0] || 'en')) || languages[0];
+  useEffect(() => {
+    const code = i18n.language?.split('-')[0] || 'en';
+    document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = code;
+  }, [i18n.language]);
 
   const changeLanguage = (code) => {
     i18n.changeLanguage(code);
-    document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.lang = code;
-    
-    // Force persistence check
     localStorage.setItem('i18nextLng', code);
   };
 
@@ -41,8 +43,8 @@ export default function LanguageSwitcher({ variant = 'default', className = '' }
           className={`gap-2 h-9 rounded-sm border-white/20 text-white hover:bg-white/10 hover:text-white px-2 lg:px-3 ${className}`}
         >
           <img 
-            src={`https://flagcdn.com/w20/${currentLanguage.flag}.png`}
-            width="18"
+            src={`https://flagcdn.com/w40/${currentLanguage.flag}.png`}
+            width="20"
             alt=""
             className="rounded-[1px] shadow-sm flex-shrink-0"
           />
@@ -61,7 +63,7 @@ export default function LanguageSwitcher({ variant = 'default', className = '' }
           >
             <span className="flex items-center gap-2.5">
               <img 
-                src={`https://flagcdn.com/w20/${lang.flag}.png`}
+                src={`https://flagcdn.com/w40/${lang.flag}.png`}
                 width="20"
                 alt=""
                 className="rounded-[1px] shadow-sm flex-shrink-0"

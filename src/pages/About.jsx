@@ -208,11 +208,9 @@ export default function About() {
               </blockquote>
               <div className="flex items-center gap-4 border-t border-tech-slate pt-6">
                 <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-teal/30">
-                  <img
-                    src="/placeholder.svg"
-                    alt="Frank Cato Lahti"
-                    className="w-full h-full object-cover"
-                  />
+                  <div className="w-full h-full bg-navy flex items-center justify-center text-teal font-heading font-bold text-xl">
+                    FL
+                  </div>
                 </div>
                 <div>
                   <div className="font-heading font-semibold text-navy">Frank Cato Lahti</div>
@@ -312,8 +310,8 @@ export default function About() {
             </SlotIn>
             <SlotIn delay={0.15}>
               <img
-                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=85"
-                alt="Team culture"
+                src="/images/Panels in the factory.png"
+                alt="Othalo production"
                 className="w-full h-[480px] object-cover rounded-sm"
               />
             </SlotIn>
@@ -353,7 +351,7 @@ export default function About() {
             </div>
             <SlotIn delay={0.1}>
               <img
-                src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=800&q=85"
+                src="/images/The community 1a.png"
                 alt="Community impact"
                 className="w-full h-[500px] object-cover rounded-sm"
               />
