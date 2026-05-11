@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, Maximize2, X } from 'lucide-react';
 export default function ImageSlider({ images, name, interval = 6000, className = "" }) {
   const [index, setIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const next = useCallback(() => {
     setIndex((prev) => (prev + 1) % images.length);
@@ -15,17 +16,21 @@ export default function ImageSlider({ images, name, interval = 6000, className =
   }, [images.length]);
 
   useEffect(() => {
-    if (!images || images.length <= 1 || isLightboxOpen) return;
+    if (!images || images.length <= 1 || isLightboxOpen || !isHovered) return;
     
     const timer = setInterval(next, interval);
     return () => clearInterval(timer);
-  }, [images, interval, next, isLightboxOpen]);
+  }, [images, interval, next, isLightboxOpen, isHovered]);
 
   if (!images || images.length === 0) return null;
 
   return (
     <>
-      <div className={`relative w-full h-full overflow-hidden group ${className}`}>
+      <div 
+        className={`relative w-full h-full overflow-hidden group ${className}`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <AnimatePresence initial={false} mode="wait">
           <motion.img
             key={index}

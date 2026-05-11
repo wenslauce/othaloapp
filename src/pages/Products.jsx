@@ -71,16 +71,12 @@ export default function Products() {
         </div>
 
         {/* UN-Habitat Badge */}
-        <div className="absolute top-24 right-6 lg:right-12 z-20">
-          <div className="bg-white rounded-sm p-4 shadow-xl max-w-[160px] text-center border border-tech-slate">
-            <div className="w-12 h-12 bg-teal/10 rounded-full flex items-center justify-center mx-auto mb-2">
-              <Award className="w-6 h-6 text-teal" />
-            </div>
-            <div className="text-navy font-heading font-bold text-[10px] uppercase tracking-wider leading-tight">
-              {t('products.un_habitat_badge')}
-            </div>
-            <div className="text-muted-foreground text-[9px] mt-1">{t('products.un_habitat_note')}</div>
-          </div>
+        <div className="absolute top-24 right-6 lg:right-12 z-20 max-w-[140px] md:max-w-[180px]">
+          <img 
+            src="/images/UN Habitat endorsed logo 5.png" 
+            alt="Endorsed by UN-Habitat" 
+            className="w-full h-auto drop-shadow-xl"
+          />
         </div>
 
         <div className="relative z-10 max-w-8xl mx-auto px-6 lg:px-12">
