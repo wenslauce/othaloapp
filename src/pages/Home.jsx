@@ -132,7 +132,7 @@ export default function Home() {
                 size="lg"
                 className="bg-teal hover:bg-teal-light text-white font-semibold px-8 h-12 rounded-sm text-base"
               >
-                <Link to="/solutions/governments">
+                <Link to="/solutions">
                   {t('home.hero_cta1')}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
@@ -214,35 +214,52 @@ export default function Home() {
       </section>
 
 
-      {/* Gallery Section */}
-      <section className="bg-white py-24 lg:py-32">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
+      {/* Solutions Split Section */}
+      <section className="flex flex-col lg:flex-row w-full bg-teal text-white">
+        <div className="w-full lg:w-1/2 p-12 lg:p-24 xl:p-32 flex flex-col justify-center">
           <SlotIn>
-            <div className="mb-14 text-center">
-              <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-4 font-heading">
-                <span className="w-8 h-px bg-teal" />
-                {t('home.gallery_categories.community')} & {t('home.gallery_categories.factory')}
-                <span className="w-8 h-px bg-teal" />
+            <h2 className="font-heading text-4xl lg:text-5xl xl:text-6xl font-semibold mb-16">
+              Your solution starts here
+            </h2>
+            
+            <div className="space-y-10">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <h3 className="font-heading text-2xl lg:text-3xl font-semibold">Governments</h3>
+                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
+                  <Link to="/solutions/governments">LEARN MORE</Link>
+                </Button>
               </div>
-              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy">
-                Othalo in Action
-              </h2>
+
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <h3 className="font-heading text-2xl lg:text-3xl font-semibold">Housing Developers</h3>
+                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
+                  <Link to="/solutions/housing-developers">LEARN MORE</Link>
+                </Button>
+              </div>
+
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <h3 className="font-heading text-2xl lg:text-3xl font-semibold">Corporations</h3>
+                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
+                  <Link to="/solutions/corporations">LEARN MORE</Link>
+                </Button>
+              </div>
             </div>
           </SlotIn>
+        </div>
 
-          {/* Gallery */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {galleryCategories.map((cat, i) => (
-              <SlotIn key={cat.label} delay={i * 0.06}>
-                <div className="relative overflow-hidden rounded-sm aspect-video group cursor-pointer border border-tech-slate">
-                  <ImageSlider images={cat.images} name={cat.label} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end z-10 pointer-events-none">
-                    <span className="text-white text-sm font-heading font-medium p-4">{cat.label}</span>
-                  </div>
-                </div>
-              </SlotIn>
-            ))}
-          </div>
+        {/* Right side: Rotating Images */}
+        <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-auto flex items-stretch">
+          <ImageSlider 
+            images={[
+              '/images/The community 1a.png',
+              '/images/The community 2c.png',
+              '/images/The District 2a.png',
+              '/images/The Worker Accomodation 6a.png'
+            ]} 
+            name="Solutions Gallery" 
+            interval={4000}
+            className="w-full h-full object-cover absolute inset-0"
+          />
         </div>
       </section>
 
@@ -304,42 +321,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Strip */}
-      <section className="bg-teal py-16">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
-          <SlotIn>
-            <div>
-              <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-white mb-2">
-                {t('home.cta_title')}
-              </h2>
-              <p className="text-white/80 max-w-lg">
-                {t('home.cta_subtitle')}
-              </p>
-            </div>
-          </SlotIn>
-          <SlotIn delay={0.1}>
-            <div className="flex flex-col sm:flex-row gap-4 flex-shrink-0">
-              {[
-                { label: t('nav.gov'), href: '/solutions/governments' },
-                { label: t('nav.dev'), href: '/solutions/housing-developers' },
-                { label: t('nav.corp'), href: '/solutions/corporations' },
-              ].map((s) => (
-                <Button
-                  key={s.label}
-                  asChild
-                  variant="outline"
-                  className="border-white/40 text-white bg-transparent hover:bg-white hover:text-teal font-semibold px-5 h-11 rounded-sm text-sm transition-all"
-                >
-                  <Link to={s.href}>
-                    {s.label}
-                    <ChevronRight className="ml-1 w-4 h-4" />
-                  </Link>
-                </Button>
-              ))}
-            </div>
-          </SlotIn>
-        </div>
-      </section>
+
     </div>
   );
 }
