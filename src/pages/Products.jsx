@@ -51,7 +51,7 @@ export default function Products() {
     },
   ];
 
-  const dualImpactItems = t('products.dual_items', { returnObjects: true });
+
 
   return (
     <div className="overflow-hidden">
@@ -252,36 +252,7 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Dual Impact CTA */}
-      <section className="bg-navy py-24 lg:py-32">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <SlotIn>
-              <img src="/images/House in Dumpsite crop.png" alt="Plastic waste crisis" className="w-full h-72 object-cover rounded-sm" />
-            </SlotIn>
-            <SlotIn delay={0.12}>
-              <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-5 font-heading">
-                <span className="w-8 h-px bg-teal" />
-                {t('products.dual_label')}
-              </div>
-              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-white mb-8">
-                {t('products.dual_title')}
-              </h2>
-              <div className="space-y-6">
-                {Array.isArray(dualImpactItems) && dualImpactItems.map((item, idx) => (
-                  <div key={item.title} className="border-l-2 border-teal pl-5">
-                    <h3 className="font-heading font-semibold text-white text-base mb-1">{item.title}</h3>
-                    <p className="text-white/60 text-sm mb-3">{item.desc}</p>
-                    <Button asChild size="sm" className="bg-teal hover:bg-teal-light text-white font-semibold px-4 h-9 rounded-sm text-xs">
-                      <Link to={idx === 0 ? '/about' : '/solutions/governments'}>{t('solutions.learn_more')}</Link>
-                    </Button>
-                  </div>
-                ))}
-              </div>
-            </SlotIn>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }
