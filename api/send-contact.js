@@ -67,16 +67,29 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Security service unavailable. Please try again later.' });
   }
 
-  // Server-side validation
+  // Server-side validation — only name, email and message are strictly required
   if (!name?.trim()) return res.status(400).json({ error: 'Name is required' });
   if (!email || !validateEmail(email)) return res.status(400).json({ error: 'Valid email is required' });
-  if (!country?.trim()) return res.status(400).json({ error: 'Country is required' });
-  if (!profileType?.trim()) return res.status(400).json({ error: 'Profile type is required' });
-  if (!enquiryType?.trim()) return res.status(400).json({ error: 'Enquiry type is required' });
   if (!message?.trim() || message.trim().length < 10) return res.status(400).json({ error: 'Please include a message (at least 10 characters)' });
 
   const submittedAt = new Date().toISOString();
-  const payload = { name, email, phone, dialCode, org, country, profileType, enquiryType, solution, product, units, timeline, budget, message, submittedAt };
+  const payload = {
+    name,
+    email,
+    phone: phone || '',
+    dialCode: dialCode || '',
+    org: org || '',
+    country: country || '',
+    profileType: profileType || '',
+    enquiryType: enquiryType || '',
+    solution: solution || '',
+    product: product || '',
+    units: units || '',
+    timeline: timeline || '',
+    budget: budget || '',
+    message,
+    submittedAt,
+  };
 
   try {
     // 1. Internal notification email to Othalo team

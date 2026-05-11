@@ -3,8 +3,8 @@ import { emailWrapper, fieldRow, dataTable, ctaButton, sectionHeading, subHeadin
 
 export function contactInternalEmail({ name, email, phone, dialCode, org, country, profileType, enquiryType, solution, product, units, timeline, budget, message, submittedAt }) {
   const fullPhone = dialCode && phone ? `${dialCode} ${phone}` : phone || '—';
-  const profileLabel = formatProfile(profileType);
-  const enquiryLabel = formatEnquiry(enquiryType);
+  const profileLabel = profileType ? formatProfile(profileType) : '—';
+  const enquiryLabel = enquiryType ? formatEnquiry(enquiryType) : '—';
   const dateStr = submittedAt ? new Date(submittedAt).toLocaleString('en-GB', { dateStyle: 'full', timeStyle: 'short' }) : new Date().toLocaleString('en-GB');
 
   const timelineMap = {
@@ -38,14 +38,14 @@ export function contactInternalEmail({ name, email, phone, dialCode, org, countr
       ${fieldRow('Full Name', name, true)}
       ${fieldRow('Email', email)}
       ${fieldRow('Phone', fullPhone)}
-      ${fieldRow('Organization', org || '—')}
-      ${fieldRow('Country', country)}
-      ${fieldRow('Profile Type', profileLabel)}
+      ${org ? fieldRow('Organization', org) : ''}
+      ${country ? fieldRow('Country', country) : ''}
+      ${profileType ? fieldRow('Profile Type', profileLabel) : ''}
     `)}
 
     <p style="margin:0 0 8px 0; font-size:11px; font-weight:700; color:${BRAND.muted}; text-transform:uppercase; letter-spacing:0.8px;">Enquiry Details</p>
     ${dataTable(`
-      ${fieldRow('Enquiry Type', enquiryLabel, true)}
+      ${enquiryType ? fieldRow('Reason / Enquiry Type', enquiryLabel, true) : ''}
       ${solution ? fieldRow('Solution Interest', solutionMap[solution] || solution) : ''}
       ${product ? fieldRow('Product Interest', formatProduct(product)) : ''}
       ${units ? fieldRow('Units Required', formatUnits(units)) : ''}
@@ -63,7 +63,7 @@ export function contactInternalEmail({ name, email, phone, dialCode, org, countr
   `;
 
   return {
-    subject: `New Contact Enquiry — ${enquiryLabel} — ${country}`,
+    subject: `New Contact Enquiry — ${enquiryLabel}${country ? ' — ' + country : ''}`,
     html: emailWrapper(content),
   };
 }

@@ -3,7 +3,7 @@ import { emailWrapper, ctaButton, sectionHeading, subHeading, badge, divider, fo
 
 export function contactConfirmationEmail({ name, email, enquiryType }) {
   const firstName = name.split(' ')[0];
-  const enquiryLabel = formatEnquiry(enquiryType);
+  const enquiryLabel = enquiryType ? formatEnquiry(enquiryType) : 'General Enquiry';
 
   const content = `
     ${badge('Message Received')}
