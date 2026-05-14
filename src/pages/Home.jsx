@@ -65,15 +65,15 @@ export default function Home() {
   ];
 
   const esgGoals = [
-    { num: '1', color: '#E5243B', label: t('home.sdg_names.1') },
-    { num: '6', color: '#26BDE2', label: t('home.sdg_names.6') },
-    { num: '8', color: '#A21942', label: t('home.sdg_names.8') },
-    { num: '9', color: '#FD6925', label: t('home.sdg_names.9') },
-    { num: '10', color: '#DD1367', label: t('home.sdg_names.10') },
-    { num: '11', color: '#FD9D24', label: t('home.sdg_names.11') },
-    { num: '12', color: '#BF8B2E', label: t('home.sdg_names.12') },
-    { num: '13', color: '#3F7E44', label: t('home.sdg_names.13') },
-    { num: '17', color: '#19486A', label: t('home.sdg_names.17') },
+    { id: '1', image: '/images/SDG1.png', label: t('home.sdg_names.1') },
+    { id: '6', image: '/images/SDG6.png', label: t('home.sdg_names.6') },
+    { id: '8', image: '/images/SDG8.png', label: t('home.sdg_names.8') },
+    { id: '9', image: '/images/SDG9.png', label: t('home.sdg_names.9') },
+    { id: '10', image: '/images/SDG10.png', label: t('home.sdg_names.10') },
+    { id: '11', image: '/images/SDG11.png', label: t('home.sdg_names.11') },
+    { id: '12', image: '/images/SDG12.png', label: t('home.sdg_names.12') },
+    { id: '13', image: '/images/SDG13.png', label: t('home.sdg_names.13') },
+    { id: '17', image: '/images/SDG17.png', label: t('home.sdg_names.17') },
   ];
 
   return (
@@ -393,18 +393,17 @@ export default function Home() {
 
             </div>
           </SlotIn>
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-5 md:gap-6">
             {esgGoals.map((goal, i) => (
-              <SlotIn key={goal.num} delay={i * 0.05}>
-                <div
-                  className="w-16 h-16 sm:w-[4.5rem] sm:h-[4.5rem] rounded-sm flex flex-col items-center justify-center cursor-pointer hover:scale-105 transition-transform"
-                  style={{ backgroundColor: goal.color }}
-                >
-                  <span className="text-white font-heading font-bold text-lg leading-none">{goal.num}</span>
-                  <span className="text-white/80 text-[8px] sm:text-[9px] text-center mt-0.5 px-0.5 leading-tight font-heading uppercase tracking-wide">
-                    {goal.label}
-                  </span>
-                </div>
+              <SlotIn key={goal.id} delay={i * 0.05}>
+                <img
+                  src={goal.image}
+                  alt={goal.label}
+                  title={goal.label}
+                  loading="lazy"
+                  decoding="async"
+                  className="size-16 sm:size-[4.5rem] md:size-24 object-contain hover:scale-105 transition-transform drop-shadow-sm"
+                />
               </SlotIn>
             ))}
           </div>
