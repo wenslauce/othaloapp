@@ -5,6 +5,7 @@ import { DollarSign, Award, Shield, Recycle, Zap, Leaf, ArrowRight, Play, X } fr
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 import SlotIn from '@/components/shared/SlotIn';
+import ImageSlider from '@/components/shared/ImageSlider';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
 import SEOHead from '@/components/shared/SEOHead';
 import { useTranslation } from 'react-i18next';
@@ -29,14 +30,24 @@ export default function Products() {
   // 4 numbered approach items
   const approachItems = t('home.approach_items', { returnObjects: true });
 
-  // Product lines — 2-col image grid
+  // Four product lines — two images each
   const productLines = [
-    { name: 'The Community',           image: '/images/The community 1a.png' },
-    { name: 'The District',            image: '/images/The District 2a.png' },
-    { name: 'The Emergency Shelter',   image: '/images/The Emergency Shelter 1.png' },
-    { name: 'The Medical Unit',        image: '/images/The Medical Unit 3.png' },
-    { name: 'The Worker Accommodation',image: '/images/The Worker Accomodation 5a.png' },
-    { name: 'The Medical Unit',        image: '/images/The Medical Unit 2a.png' },
+    {
+      name: 'The Community',
+      images: ['/images/The District 2a.png', '/images/The community 1a.png'],
+    },
+    {
+      name: 'The Emergency Shelter',
+      images: ['/images/The Emergency Shelter 1.png', '/images/The Emergency Shelter 2c.png'],
+    },
+    {
+      name: 'The Medical Unit and Cold Storage',
+      images: ['/images/The Medical Unit 3b.png', '/images/The Medical Unit 2a.png'],
+    },
+    {
+      name: 'The Worker Accomodation',
+      images: ['/images/The Worker Accomodation 6b.png', '/images/The Worker Accomodation 5a.png'],
+    },
   ];
 
   return (
@@ -214,21 +225,25 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── PRODUCT LINES: 2-col image grid with labels ── */}
+      {/* ── PRODUCT LINES: 2×2 grid; each solution uses ImageSlider (2 images) ── */}
       <section className="bg-white py-20 lg:py-28">
         <div className="max-w-5xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-2 gap-4 md:gap-6">
-            {productLines.map((p, i) => (
-              <SlotIn key={`${p.name}-${i}`} delay={i * 0.07}>
+            {productLines.map((line, i) => (
+              <SlotIn key={line.name} delay={i * 0.07}>
                 <div>
-                  <div className="aspect-video overflow-hidden rounded-sm bg-surface">
-                    <img
-                      src={p.image}
-                      alt={p.name}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                    />
+                  <div className="relative aspect-video overflow-hidden rounded-sm bg-surface">
+                    <div className="absolute inset-0">
+                      <ImageSlider
+                        images={line.images}
+                        name={line.name}
+                        interval={4500}
+                        autoPlay
+                        className="h-full w-full min-h-0"
+                      />
+                    </div>
                   </div>
-                  <p className="text-navy text-xs font-heading font-semibold mt-2 pl-0.5">{p.name}</p>
+                  <p className="text-navy text-xs font-heading font-semibold mt-2 pl-0.5">{line.name}</p>
                 </div>
               </SlotIn>
             ))}
@@ -250,7 +265,10 @@ export default function Products() {
                 <thead>
                   <tr className="bg-navy text-white text-xs font-semibold tracking-wide">
                     {t('products.comparison_headers', { returnObjects: true }).map((header, idx) => (
-                      <th key={header} className={`py-4 px-5 font-heading ${idx === 0 ? 'text-left' : 'text-center'}`}>
+                      <th
+                        key={header}
+                        className={`py-4 px-5 font-heading border-l border-navy/20 first:border-l-0 ${idx === 0 ? 'text-left' : 'text-center'}`}
+                      >
                         {header}
                       </th>
                     ))}
@@ -259,20 +277,22 @@ export default function Products() {
                 <tbody>
                   {Array.isArray(comparisonData) && comparisonData.map((row, i) => (
                     <tr key={row.p} className={`border-b border-navy/10 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
-                      <td className="py-3.5 px-5 text-left font-semibold text-navy/90 font-heading text-xs">{row.p}</td>
-                      <td className="py-3.5 px-5 text-center text-base">
+                      <td className="py-3.5 px-5 text-left font-semibold text-navy/90 font-heading text-xs">
+                        {row.p}
+                      </td>
+                      <td className="py-3.5 px-5 text-center text-base border-l border-navy/20">
                         {row.o === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.o === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
-                      <td className="py-3.5 px-5 text-center text-base">
+                      <td className="py-3.5 px-5 text-center text-base border-l border-navy/20">
                         {row.d === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.d === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
-                      <td className="py-3.5 px-5 text-center text-base">
+                      <td className="py-3.5 px-5 text-center text-base border-l border-navy/20">
                         {row.r === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.r === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
-                      <td className="py-3.5 px-5 text-center text-base">
+                      <td className="py-3.5 px-5 text-center text-base border-l border-navy/20">
                         {row.t === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.t === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
