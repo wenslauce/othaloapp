@@ -10,14 +10,14 @@ export default function About() {
   const { t } = useTranslation();
 
   const team = [
-    { name: t('about.team_members.frank.name'),     title: t('about.team_members.frank.title'),     img: '/placeholder.svg', linkedin: '#', slug: 'frank-cato-lahti' },
-    { name: t('about.team_members.claus.name'),     title: t('about.team_members.claus.title'),     img: '/placeholder.svg', linkedin: '#', slug: 'claus-skadkjaer' },
-    { name: t('about.team_members.martin.name'),    title: t('about.team_members.martin.title'),    img: '/placeholder.svg', linkedin: '#', slug: 'martin-dokkedal' },
-    { name: t('about.team_members.thomas.name'),    title: t('about.team_members.thomas.title'),    img: '/placeholder.svg', linkedin: '#', slug: 'thomas-meidell-laan' },
-    { name: t('about.team_members.kjell.name'),     title: t('about.team_members.kjell.title'),     img: '/placeholder.svg', linkedin: '#', slug: 'kjell-steen' },
-    { name: t('about.team_members.bengt.name'),     title: t('about.team_members.bengt.title'),     img: '/placeholder.svg', linkedin: '#', slug: 'bengt-erling-berg' },
-    { name: t('about.team_members.stephane.name'),  title: t('about.team_members.stephane.title'),  img: '/placeholder.svg', linkedin: '#', slug: 'stephane-bernard' },
-    { name: t('about.team_members.wenslauce.name'), title: t('about.team_members.wenslauce.title'), img: '/placeholder.svg', linkedin: '#', slug: 'wenslauce-chengo' },
+    { name: t('about.team_members.frank.name'),     title: t('about.team_members.frank.title'),     img: '/placeholder.svg', linkedin: 'https://www.linkedin.com/in/frank-cato-lahti-01b4072/', slug: 'frank-cato-lahti' },
+    { name: t('about.team_members.claus.name'),     title: t('about.team_members.claus.title'),     img: '/placeholder.svg', linkedin: 'https://www.linkedin.com/in/claus-skadkjaer-6457383/', slug: 'claus-skadkjaer' },
+    { name: t('about.team_members.martin.name'),    title: t('about.team_members.martin.title'),    img: '/placeholder.svg', linkedin: 'https://www.linkedin.com/in/martin-dokkedal-a1499/', slug: 'martin-dokkedal' },
+    { name: t('about.team_members.thomas.name'),    title: t('about.team_members.thomas.title'),    img: '/placeholder.svg', linkedin: 'https://www.linkedin.com/in/thomas-meidell-l%C3%B8snes-8b051b22/', slug: 'thomas-meidell-laan' },
+    { name: t('about.team_members.kjell.name'),     title: t('about.team_members.kjell.title'),     img: '/placeholder.svg', linkedin: 'https://www.linkedin.com/in/kjell-steen-57438ab2/', slug: 'kjell-steen' },
+    { name: t('about.team_members.bengt.name'),     title: t('about.team_members.bengt.title'),     img: '/placeholder.svg', linkedin: 'https://www.linkedin.com/in/bengt-erling-berg-a4831b3a/', slug: 'bengt-erling-berg' },
+    { name: t('about.team_members.stephane.name'),  title: t('about.team_members.stephane.title'),  img: '/placeholder.svg', linkedin: 'https://www.linkedin.com/in/stephanebernard-iam/', slug: 'stephane-bernard' },
+    { name: t('about.team_members.wenslauce.name'), title: t('about.team_members.wenslauce.title'), img: '/placeholder.svg', linkedin: 'https://www.linkedin.com/in/chengo-wenslauce/', slug: 'wenslauce-chengo' },
   ];
 
   const cultureValues = t('about.culture_values', { returnObjects: true });
