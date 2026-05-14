@@ -1,6 +1,5 @@
 // Products page
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { DollarSign, Award, Shield, Recycle, Zap, Leaf, Play, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -191,7 +190,13 @@ export default function Products() {
                 asChild
                 className="bg-navy hover:bg-navy/90 text-white font-semibold px-7 h-10 rounded-sm self-start uppercase tracking-wide text-xs"
               >
-                <Link to="/about">Learn More</Link>
+                <a
+                  href="https://unhabitat.org/news/06-oct-2020/un-habitat-aims-to-use-plastic-waste-to-support-housing-for-all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Learn More
+                </a>
               </Button>
             </SlotIn>
           </div>
