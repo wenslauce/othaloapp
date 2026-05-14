@@ -22,9 +22,12 @@ export default function Footer() {
     <footer className="bg-navy text-white">
       <div className="max-w-8xl mx-auto px-6 lg:px-12 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
 
-        {/* Left: social icons + label */}
+        {/* Left: label then social icons (matches homepage comp) */}
         <div>
-          <div className="flex items-center gap-3 mb-2">
+          <p className="text-white/40 text-[10px] uppercase tracking-widest font-heading mb-3">
+            Join, share, like, follow us on:
+          </p>
+          <div className="flex items-center gap-3">
             {socials.map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
@@ -36,9 +39,6 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <p className="text-white/40 text-[10px] uppercase tracking-widest font-heading">
-            Join, share, like, follow us on:
-          </p>
         </div>
 
         {/* Right: nav links */}

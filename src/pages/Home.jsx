@@ -85,7 +85,7 @@ export default function Home() {
         keywords={t('seo.home.keywords').split(', ')}
       />
       {/* Hero */}
-      <section ref={heroRef} className="relative h-[90vh] min-h-[640px] flex items-center overflow-hidden">
+      <section ref={heroRef} className="relative h-[min(72vh,720px)] min-h-[560px] flex items-center overflow-hidden">
         <motion.div
           style={{ y: heroY }}
           className="absolute inset-0"
@@ -126,7 +126,7 @@ export default function Home() {
                 size="lg"
                 className="bg-teal hover:bg-teal-light text-white font-semibold px-8 h-12 rounded-sm text-base"
               >
-                <Link to="/solutions">
+                <Link to="/products">
                   {t('home.hero_cta1')}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
@@ -137,9 +137,9 @@ export default function Home() {
       </section>
 
       {/* Market Leading Technology */}
-      <section className="bg-surface py-24 lg:py-32">
+      <section className="bg-white py-16 lg:py-24">
         <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14 items-center">
             {/* Left: 3D Panel Image with UN-Habitat Overlay */}
             <SlotIn>
               <div className="relative bg-white p-8 lg:p-12 rounded-sm border border-tech-slate shadow-sm">
@@ -198,7 +198,7 @@ export default function Home() {
 
       {/* Solutions Split Section */}
       <section className="flex flex-col lg:flex-row w-full bg-teal text-white">
-        <div className="w-full lg:w-1/2 p-12 lg:p-24 xl:p-32 flex flex-col justify-center">
+        <div className="w-full lg:w-1/2 p-10 lg:p-16 xl:p-20 flex flex-col justify-center">
           <SlotIn>
             <h2 className="font-heading text-4xl lg:text-5xl xl:text-6xl font-semibold mb-16">
               Your solution starts here
@@ -230,7 +230,7 @@ export default function Home() {
         </div>
 
         {/* Right side: Rotating Images */}
-        <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-auto flex items-stretch">
+        <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-[min(58vh,620px)] flex items-stretch">
           <ImageSlider 
             images={[
               '/images/The community 1a.png',
@@ -246,14 +246,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Dual Impact CTA */}
-      <section className="bg-white py-24 lg:py-32">
-        <div className="max-w-8xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <SlotIn>
-              <img src="/images/House in Dumpsite crop.png" alt="Plastic waste crisis" className="w-full h-72 object-cover rounded-sm border border-tech-slate" />
-            </SlotIn>
-            <SlotIn delay={0.12}>
+      {/* Dual Impact CTA — full-bleed split (image | copy) */}
+      <section className="flex flex-col lg:flex-row w-full">
+        <div className="relative w-full lg:w-1/2 min-h-[400px] lg:min-h-[min(60vh,640px)] overflow-hidden">
+          <SlotIn className="absolute inset-0 size-full">
+            <img
+              src="/images/House in Dumpsite crop.png"
+              alt="Plastic waste crisis"
+              className="size-full object-cover"
+            />
+          </SlotIn>
+        </div>
+        <div className="w-full lg:w-1/2 bg-surface flex flex-col justify-center px-6 py-14 sm:px-10 lg:px-16 xl:px-20 lg:py-16">
+          <SlotIn delay={0.12}>
+            <div className="max-w-xl">
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-8">
                 {t('products.dual_title')}
               </h2>
@@ -272,8 +278,8 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-            </SlotIn>
-          </div>
+            </div>
+          </SlotIn>
         </div>
       </section>
 
@@ -377,25 +383,25 @@ export default function Home() {
       </AnimatePresence>
 
       {/* ESG Goals */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-20 lg:py-28">
         <div className="max-w-8xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <div className="text-center mb-12">
+            <div className="text-center mb-10 lg:mb-12">
               <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-4">
                 {t('home.esg_title')}
               </h2>
 
             </div>
           </SlotIn>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
             {esgGoals.map((goal, i) => (
               <SlotIn key={goal.num} delay={i * 0.05}>
                 <div
-                  className="w-20 h-20 rounded-sm flex flex-col items-center justify-center cursor-pointer hover:scale-105 transition-transform"
+                  className="w-16 h-16 sm:w-[4.5rem] sm:h-[4.5rem] rounded-sm flex flex-col items-center justify-center cursor-pointer hover:scale-105 transition-transform"
                   style={{ backgroundColor: goal.color }}
                 >
-                  <span className="text-white font-heading font-bold text-xl leading-none">{goal.num}</span>
-                  <span className="text-white/80 text-[9px] text-center mt-1 px-1 leading-tight font-heading uppercase tracking-wide">
+                  <span className="text-white font-heading font-bold text-lg leading-none">{goal.num}</span>
+                  <span className="text-white/80 text-[8px] sm:text-[9px] text-center mt-0.5 px-0.5 leading-tight font-heading uppercase tracking-wide">
                     {goal.label}
                   </span>
                 </div>
