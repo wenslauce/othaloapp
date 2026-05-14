@@ -1,8 +1,9 @@
 // Products page
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { DollarSign, Award, Shield, Recycle, Zap, Leaf, ArrowRight } from 'lucide-react';
+import { DollarSign, Award, Shield, Recycle, Zap, Leaf, ArrowRight, Play, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { motion, AnimatePresence } from 'framer-motion';
 import SlotIn from '@/components/shared/SlotIn';
 import GetQuoteModal from '@/components/shared/GetQuoteModal';
 import SEOHead from '@/components/shared/SEOHead';
@@ -11,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 export default function Products() {
   const { t } = useTranslation();
   const [quoteOpen, setQuoteOpen] = useState(false);
+  const [videoOpen, setVideoOpen] = useState(false);
 
   const comparisonData = t('products.comparison_rows', { returnObjects: true });
 
@@ -52,9 +54,18 @@ export default function Products() {
         {/* Left — navy text panel */}
         <div className="w-full lg:w-1/2 bg-navy flex items-center px-8 md:px-14 lg:px-16 py-16 lg:py-20">
           <SlotIn>
-            <p className="text-white font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug max-w-md">
+            <p className="text-white font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug max-w-md mb-8">
               {t('products.subtitle')}
             </p>
+            <Button
+              onClick={() => setVideoOpen(true)}
+              className="flex items-center gap-3 bg-teal hover:bg-teal-light text-white font-semibold px-6 h-11 rounded-sm text-sm"
+            >
+              <div className="w-7 h-7 rounded-full border-2 border-white/60 flex items-center justify-center flex-shrink-0">
+                <Play className="w-3 h-3 fill-white text-white ml-0.5" />
+              </div>
+              See how it works
+            </Button>
           </SlotIn>
         </div>
         {/* Right — factory image */}
@@ -67,6 +78,43 @@ export default function Products() {
           />
         </div>
       </section>
+
+      {/* ── VIDEO MODAL ── */}
+      <AnimatePresence>
+        {videoOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy/90 backdrop-blur-sm"
+            onClick={() => setVideoOpen(false)}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
+              className="relative w-full max-w-4xl rounded-sm overflow-hidden shadow-2xl"
+              onClick={e => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setVideoOpen(false)}
+                className="absolute top-3 right-3 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-navy/60 text-white hover:bg-navy transition-colors"
+                aria-label="Close video"
+              >
+                <X className="w-5 h-5" />
+              </button>
+              <video
+                src="/Building of Othalo housing 30s.mp4"
+                autoPlay
+                controls
+                playsInline
+                className="w-full h-auto block"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* ── TECHNOLOGY: centered title + 6-icon grid ── */}
       <section className="bg-white py-20 lg:py-28">
