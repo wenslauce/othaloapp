@@ -1,7 +1,7 @@
 // Products page
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { DollarSign, Award, Shield, Recycle, Zap, Leaf, ArrowRight, Play, X } from 'lucide-react';
+import { DollarSign, Award, Shield, Recycle, Zap, Leaf, Play, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 import SlotIn from '@/components/shared/SlotIn';
@@ -60,32 +60,31 @@ export default function Products() {
       />
       <GetQuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} context="products" />
 
-      {/* ── HERO: split navy left / factory image right ── */}
-      <section className="flex flex-col lg:flex-row min-h-[340px]">
+      {/* ── HERO: 50/50 split, capped height (homepage-style) ── */}
+      <section className="flex flex-col lg:flex-row lg:items-stretch">
         {/* Left — navy text panel */}
-        <div className="w-full lg:w-1/2 bg-navy flex items-center px-8 md:px-14 lg:px-16 py-16 lg:py-20">
+        <div className="w-full lg:w-1/2 bg-navy flex items-center px-8 md:px-12 lg:px-14 py-14 lg:py-16 xl:py-20 min-h-[min(52vh,520px)] lg:min-h-[min(58vh,620px)]">
           <SlotIn>
-            <p className="text-white font-heading text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug max-w-md mb-8">
+            <p className="text-white font-heading text-2xl md:text-3xl lg:text-[2rem] xl:text-4xl font-semibold leading-snug max-w-xl lg:max-w-none mb-8">
               {t('products.subtitle')}
             </p>
             <Button
               onClick={() => setVideoOpen(true)}
-              className="flex items-center gap-3 bg-teal hover:bg-teal-light text-white font-semibold px-6 h-11 rounded-sm text-sm"
+              className="flex items-center gap-3 bg-white text-navy hover:bg-white/90 font-semibold px-6 h-11 rounded-sm text-sm shadow-sm border-0"
             >
-              <div className="w-7 h-7 rounded-full border-2 border-white/60 flex items-center justify-center flex-shrink-0">
-                <Play className="w-3 h-3 fill-white text-white ml-0.5" />
+              <div className="w-7 h-7 rounded-full border-2 border-navy/25 flex items-center justify-center flex-shrink-0">
+                <Play className="w-3 h-3 fill-navy text-navy ml-0.5" />
               </div>
               See how it works
             </Button>
           </SlotIn>
         </div>
         {/* Right — factory image */}
-        <div className="w-full lg:w-1/2 min-h-[260px] lg:min-h-0">
+        <div className="w-full lg:w-1/2 relative min-h-[min(44vh,380px)] lg:min-h-[min(58vh,620px)]">
           <img
             src="/images/Panels in the factory.png"
             alt="Othalo panels in the factory"
-            className="w-full h-full object-cover"
-            style={{ minHeight: '260px' }}
+            className="absolute inset-0 size-full object-cover"
           />
         </div>
       </section>
@@ -127,11 +126,11 @@ export default function Products() {
         )}
       </AnimatePresence>
 
-      {/* ── TECHNOLOGY: centered title + 6-icon grid ── */}
-      <section className="bg-white py-20 lg:py-28">
-        <div className="max-w-5xl mx-auto px-6 lg:px-12">
+      {/* ── TECHNOLOGY: centered title + 6-icon grid (extra row spacing like mock) ── */}
+      <section className="bg-white py-16 lg:py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <div className="text-center mb-12">
+            <div className="text-center mb-10 lg:mb-12">
               <h2 className="font-heading text-2xl md:text-3xl font-semibold text-navy mb-3">
                 Technology
               </h2>
@@ -141,14 +140,14 @@ export default function Products() {
             </div>
           </SlotIn>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-12 md:gap-y-16">
             {techFeatures.map((f, i) => {
               const Icon = f.icon;
               return (
                 <SlotIn key={f.title} delay={i * 0.07}>
-                  <div className="flex flex-col items-center text-center gap-3">
-                    <div className="w-12 h-12 bg-teal/10 rounded-full flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-teal" />
+                  <div className="flex flex-col items-center text-center gap-3.5 max-w-xs mx-auto">
+                    <div className="w-14 h-14 bg-teal/10 rounded-full flex items-center justify-center">
+                      <Icon className="w-7 h-7 text-teal" />
                     </div>
                     <h3 className="font-heading font-semibold text-navy text-sm">{f.title}</h3>
                     <p className="text-muted-foreground text-xs leading-relaxed">{f.desc}</p>
@@ -160,37 +159,37 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── QUOTE BANNER ── */}
+      {/* ── QUOTE BANNER: portrait left / light panel + navy copy (mock) ── */}
       <section className="bg-navy py-0">
-        <div className="flex flex-col lg:flex-row">
-          {/* Left: Othalo branding image */}
-          <div className="w-full lg:w-2/5 min-h-[260px] relative overflow-hidden">
+        <div className="flex flex-col lg:flex-row lg:items-stretch">
+          {/* Left: portrait */}
+          <div className="w-full lg:w-1/2 relative min-h-[min(44vh,360px)] lg:min-h-[min(52vh,560px)] overflow-hidden">
             <img
               src="/images/vincent.jpg"
               alt="Dr. Vincent Kitio"
-              className="w-full h-full object-cover absolute inset-0"
+              className="absolute inset-0 size-full object-cover object-top lg:object-center"
             />
-            <div className="absolute inset-0 bg-navy/40" />
-            <div className="relative z-10 p-8 flex flex-col justify-end h-full min-h-[260px]">
+            <div className="absolute inset-0 bg-navy/35" />
+            <div className="relative z-10 p-8 lg:p-10 flex flex-col justify-end min-h-[min(44vh,360px)] lg:min-h-full">
               <div className="inline-flex items-center gap-2 mb-2">
                 <img src="/images/logo.png" alt="Othalo" className="h-7 w-auto brightness-0 invert" />
               </div>
               <p className="text-white/60 text-xs font-heading uppercase tracking-widest">Mission</p>
             </div>
           </div>
-          {/* Right: quote */}
-          <div className="w-full lg:w-3/5 bg-navy px-8 md:px-14 lg:px-16 py-14 lg:py-20 flex flex-col justify-center">
+          {/* Right: light gray, navy quote */}
+          <div className="w-full lg:w-1/2 bg-surface px-8 md:px-12 lg:px-14 xl:px-16 py-12 lg:py-16 flex flex-col justify-center">
             <SlotIn>
-              <blockquote className="text-white font-heading text-lg md:text-xl lg:text-2xl font-medium leading-relaxed mb-6 max-w-xl">
-                "{t('home.quote_text')}"
+              <blockquote className="text-navy font-heading text-lg md:text-xl lg:text-2xl font-medium leading-relaxed mb-6 max-w-xl">
+                &ldquo;{t('home.quote_text')}&rdquo;
               </blockquote>
               <div className="mb-8">
                 <p className="text-teal font-semibold text-sm font-heading">{t('home.quote_author')}</p>
-                <p className="text-white/50 text-xs">{t('home.quote_title')}</p>
+                <p className="text-navy/50 text-xs">{t('home.quote_title')}</p>
               </div>
               <Button
                 asChild
-                className="bg-teal hover:bg-teal-light text-white font-semibold px-7 h-10 rounded-sm text-sm self-start"
+                className="bg-navy hover:bg-navy/90 text-white font-semibold px-7 h-10 rounded-sm self-start uppercase tracking-wide text-xs"
               >
                 <Link to="/about">Learn More</Link>
               </Button>
@@ -200,14 +199,14 @@ export default function Products() {
       </section>
 
       {/* ── BUILD THE FUTURE: 4 numbered items 2×2 ── */}
-      <section className="bg-surface py-20 lg:py-28">
-        <div className="max-w-5xl mx-auto px-6 lg:px-12">
+      <section className="bg-surface py-16 lg:py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold text-navy mb-12 text-center">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold text-navy mb-10 lg:mb-12 text-center">
               {t('home.approach_title')}
             </h2>
           </SlotIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {Array.isArray(approachItems) && approachItems.map((item, i) => (
               <SlotIn key={item.title} delay={i * 0.08}>
                 <div className="flex gap-5">
@@ -225,14 +224,14 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── PRODUCT LINES: 2×2 grid; each solution uses ImageSlider (2 images) ── */}
-      <section className="bg-white py-20 lg:py-28">
-        <div className="max-w-5xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-2 gap-4 md:gap-6">
+      {/* ── PRODUCT LINES: 2×2; taller tiles + sliders (mock proportions) ── */}
+      <section className="bg-white py-16 lg:py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-2 gap-4 sm:gap-5 md:gap-6">
             {productLines.map((line, i) => (
               <SlotIn key={line.name} delay={i * 0.07}>
                 <div>
-                  <div className="relative aspect-video overflow-hidden rounded-sm bg-surface">
+                  <div className="relative aspect-[4/3] sm:aspect-[5/4] overflow-hidden rounded-sm bg-surface min-h-[160px] sm:min-h-[180px]">
                     <div className="absolute inset-0">
                       <ImageSlider
                         images={line.images}
@@ -243,7 +242,9 @@ export default function Products() {
                       />
                     </div>
                   </div>
-                  <p className="text-navy text-xs font-heading font-semibold mt-2 pl-0.5">{line.name}</p>
+                  <p className="text-navy text-xs sm:text-sm font-heading font-semibold mt-2.5 pl-0.5 leading-snug">
+                    {line.name}
+                  </p>
                 </div>
               </SlotIn>
             ))}
@@ -252,15 +253,15 @@ export default function Products() {
       </section>
 
       {/* ── COMPARISON TABLE ── */}
-      <section className="bg-teal py-20 lg:py-28">
-        <div className="max-w-5xl mx-auto px-6 lg:px-12">
+      <section className="bg-teal py-16 lg:py-24">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <SlotIn>
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold text-white mb-10 text-center">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold text-white mb-8 lg:mb-10 text-center">
               {t('products.comparison_title')}
             </h2>
           </SlotIn>
           <SlotIn delay={0.1}>
-            <div className="overflow-x-auto rounded-sm border border-white/20 bg-white">
+            <div className="overflow-x-auto rounded-sm border border-white/20 bg-white shadow-sm">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="bg-navy text-white text-xs font-semibold tracking-wide">
