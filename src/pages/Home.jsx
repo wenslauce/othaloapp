@@ -1,8 +1,8 @@
 // Home page
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useEffect, useRef } from 'react';
-import { ArrowRight, Recycle, Clock, Shield, Leaf, ChevronRight, DollarSign, Award } from 'lucide-react';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { ArrowRight, Recycle, Clock, Shield, Leaf, ChevronRight, DollarSign, Award, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import ImageSlider from '@/components/shared/ImageSlider';
@@ -11,6 +11,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function Home() {
   const { t } = useTranslation();
+  const [impactModal, setImpactModal] = useState(null); // 'plastic' | 'housing' | null
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
   const heroY = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
@@ -261,8 +262,12 @@ export default function Home() {
                   <div key={item.title} className="border-l-2 border-teal pl-5">
                     <h3 className="font-heading font-semibold text-navy text-base mb-1">{item.title}</h3>
                     <p className="text-muted-foreground text-sm mb-3">{item.desc}</p>
-                    <Button asChild size="sm" className="bg-teal hover:bg-teal-light text-white font-semibold px-4 h-9 rounded-sm text-xs">
-                      <Link to={idx === 0 ? '/about' : '/solutions/governments'}>{t('solutions.learn_more')}</Link>
+                    <Button
+                      size="sm"
+                      className="bg-teal hover:bg-teal-light text-white font-semibold px-4 h-9 rounded-sm text-xs"
+                      onClick={() => setImpactModal(idx === 0 ? 'plastic' : 'housing')}
+                    >
+                      {t('solutions.learn_more')}
                     </Button>
                   </div>
                 ))}
@@ -271,6 +276,105 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Plastic Waste Modal */}
+      <AnimatePresence>
+        {impactModal === 'plastic' && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy/70 backdrop-blur-sm"
+            onClick={() => setImpactModal(null)}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 24, scale: 0.97 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 24, scale: 0.97 }}
+              transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-white rounded-sm shadow-2xl max-w-lg w-full p-8 relative"
+              onClick={e => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setImpactModal(null)}
+                className="absolute top-4 right-4 text-navy/40 hover:text-navy transition-colors"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
+              <div className="w-10 h-10 bg-teal/10 rounded-sm flex items-center justify-center mb-5">
+                <Recycle className="w-5 h-5 text-teal" />
+              </div>
+              <h2 className="font-heading font-bold text-navy text-xl mb-1">Plastic Waste</h2>
+              <p className="text-muted-foreground text-sm mb-6">The scale of the global plastic crisis</p>
+              <ul className="space-y-3">
+                {[
+                  { stat: '10 billion tons', detail: 'of plastic have ever been produced (OECD 2022, Global Plastics Outlook)' },
+                  { stat: '400 million tons', detail: 'are produced each year' },
+                  { stat: '40%', detail: 'of all plastic is single-use — used once, then discarded' },
+                  { stat: '~9%', detail: 'of plastic waste is actually recycled globally' },
+                  { stat: '80%', detail: 'of plastic waste ends up in landfills — up to 93% in very low-income economies' },
+                  { stat: '11 million tonnes', detail: 'of plastic enter the ocean every year' },
+                  { stat: '2022', detail: 'Scientists detected microplastics in human blood for the first time' },
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-3 items-start">
+                    <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[110px]">{item.stat}</span>
+                    <span className="text-navy/80 text-sm leading-relaxed">{item.detail}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Affordable Homes Modal */}
+      <AnimatePresence>
+        {impactModal === 'housing' && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy/70 backdrop-blur-sm"
+            onClick={() => setImpactModal(null)}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 24, scale: 0.97 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 24, scale: 0.97 }}
+              transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-white rounded-sm shadow-2xl max-w-lg w-full p-8 relative"
+              onClick={e => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setImpactModal(null)}
+                className="absolute top-4 right-4 text-navy/40 hover:text-navy transition-colors"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
+              <div className="w-10 h-10 bg-teal/10 rounded-sm flex items-center justify-center mb-5">
+                <Shield className="w-5 h-5 text-teal" />
+              </div>
+              <h2 className="font-heading font-bold text-navy text-xl mb-1">Affordable Homes</h2>
+              <p className="text-muted-foreground text-sm mb-6">The scale of the global housing crisis</p>
+              <ul className="space-y-3">
+                {[
+                  { stat: '1.1+ billion', detail: 'people live in slums or informal settlements, concentrated primarily in Africa and Asia (≈90%) — UN Habitat Annual Report, 2025' },
+                  { stat: '80%', detail: 'of cities already lack affordable housing for most residents' },
+                  { stat: '70%', detail: 'of the global population will live in cities by 2050, further driving demand beyond current supply capacity — UN Statistics Division, 2022' },
+                  { stat: 'Finance gap', detail: 'Limited access to formal housing finance; insufficient public-sector budgets to close the gap' },
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-3 items-start">
+                    <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[110px]">{item.stat}</span>
+                    <span className="text-navy/80 text-sm leading-relaxed">{item.detail}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* ESG Goals */}
       <section className="bg-white py-24 lg:py-32">
