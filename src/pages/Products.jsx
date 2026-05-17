@@ -85,6 +85,14 @@ export default function Products() {
             alt="Othalo panels in the factory"
             className="absolute inset-0 size-full object-cover"
           />
+          {/* UN-Habitat Endorsed Badge Overlay */}
+          <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 max-w-[120px] md:max-w-[160px]">
+            <img
+              src="/images/UN_HABITAT_ENDORSED.png"
+              alt="Endorsed by UN-Habitat"
+              className="w-full h-auto drop-shadow-lg"
+            />
+          </div>
         </div>
       </section>
 

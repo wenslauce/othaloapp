@@ -151,7 +151,7 @@ export default function Home() {
                 {/* UN-Habitat Badge Overlay */}
                 <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 max-w-[140px] md:max-w-[180px]">
                   <img 
-                    src="/images/UN Habitat endorsed logo 5.png" 
+                    src="/images/UN_HABITAT_ENDORSED.png" 
                     alt="Endorsed by UN-Habitat" 
                     className="w-full h-auto drop-shadow-md"
                   />
