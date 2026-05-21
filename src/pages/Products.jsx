@@ -62,9 +62,9 @@ export default function Products() {
       {/* ── HERO: 50/50 split, capped height (homepage-style) ── */}
       <section className="flex flex-col lg:flex-row lg:items-stretch">
         {/* Left — navy text panel */}
-        <div className="w-full lg:w-1/2 bg-navy flex items-center px-8 md:px-12 lg:px-14 py-14 lg:py-16 xl:py-20 min-h-[min(52vh,520px)] lg:min-h-[min(58vh,620px)]">
+        <div className="w-full lg:w-1/2 bg-navy flex items-center px-8 md:px-12 lg:px-14 py-12 lg:py-16 min-h-[min(44vh,420px)] lg:min-h-[min(52vh,520px)]">
           <SlotIn>
-            <p className="text-white font-heading text-2xl md:text-3xl lg:text-[2rem] xl:text-4xl font-semibold leading-snug max-w-xl lg:max-w-none mb-8">
+            <p className="text-white font-heading text-lg md:text-xl lg:text-2xl font-semibold leading-snug max-w-xl lg:max-w-none mb-7">
               {t('products.subtitle')}
             </p>
             <Button
@@ -79,7 +79,7 @@ export default function Products() {
           </SlotIn>
         </div>
         {/* Right — factory image */}
-        <div className="w-full lg:w-1/2 relative min-h-[min(44vh,380px)] lg:min-h-[min(58vh,620px)]">
+        <div className="w-full lg:w-1/2 relative min-h-[220px] sm:min-h-[300px] lg:min-h-[min(52vh,520px)]">
           <img
             src="/images/Panels in the factory.png"
             alt="Othalo panels in the factory"
@@ -133,31 +133,31 @@ export default function Products() {
         )}
       </AnimatePresence>
 
-      {/* ── TECHNOLOGY: centered title + 6-icon grid (extra row spacing like mock) ── */}
-      <section className="bg-white py-16 lg:py-24">
+      {/* ── TECHNOLOGY: centered title + 6-icon grid ── */}
+      <section className="bg-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <div className="text-center mb-16 lg:mb-24">
-              <h2 className="font-heading font-bold text-navy text-4xl lg:text-[50px] mb-8 leading-tight">
+            <div className="text-center mb-10 lg:mb-14">
+              <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">
                 Technology
               </h2>
-              <p className="text-navy/80 text-xl lg:text-[28px] font-medium max-w-5xl mx-auto leading-snug">
+              <p className="text-navy/70 text-sm lg:text-base max-w-3xl mx-auto leading-relaxed">
                 Our standardized modules combine innovation with practicality, delivering cost efficient, fast to build, and durable and sustainable construction solutions
               </p>
             </div>
           </SlotIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-16 md:gap-y-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
             {techFeatures.map((f, i) => {
               const Icon = f.icon;
               return (
                 <SlotIn key={f.title} delay={i * 0.07}>
-                  <div className="flex flex-col items-center text-center gap-6 max-w-sm mx-auto">
-                    <div className="w-20 h-20 bg-teal/10 rounded-full flex items-center justify-center">
-                      <Icon className="w-10 h-10 text-teal" />
+                  <div className="flex flex-col items-center text-center gap-3 max-w-xs mx-auto">
+                    <div className="w-14 h-14 bg-teal/10 rounded-full flex items-center justify-center">
+                      <Icon className="w-7 h-7 text-teal" />
                     </div>
-                    <h3 className="font-heading font-bold text-navy text-2xl lg:text-[36px] leading-tight">{f.title}</h3>
-                    <p className="text-muted-foreground text-lg lg:text-[24px] font-medium leading-[36px]">{f.desc}</p>
+                    <h3 className="font-heading font-semibold text-navy text-base leading-tight">{f.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
                   </div>
                 </SlotIn>
               );
@@ -223,8 +223,8 @@ export default function Products() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {Array.isArray(approachItems) && approachItems.map((item, i) => (
               <SlotIn key={item.title} delay={i * 0.08}>
-                <div className="flex gap-5">
-                  <span className="font-heading font-bold text-teal text-3xl leading-none flex-shrink-0 w-8">
+                <div className="flex gap-4">
+                  <span className="font-heading font-bold text-teal text-xl leading-none flex-shrink-0 w-7">
                     {i + 1}
                   </span>
                   <div>
@@ -275,14 +275,14 @@ export default function Products() {
             </h2>
           </SlotIn>
           <SlotIn delay={0.1}>
-            <div className="overflow-x-auto rounded-sm border border-white/20 bg-white shadow-sm">
-              <table className="w-full text-sm">
+          <div className="overflow-x-auto rounded-sm border border-white/20 bg-white shadow-sm -mx-2 sm:mx-0">
+              <table className="w-full text-xs sm:text-sm min-w-[480px]">
                 <thead>
                   <tr className="bg-navy text-white text-xs font-semibold tracking-wide">
                     {t('products.comparison_headers', { returnObjects: true }).map((header, idx) => (
                       <th
                         key={header}
-                        className={`py-4 px-5 font-heading border-l border-navy/20 first:border-l-0 ${idx === 0 ? 'text-left' : 'text-center'}`}
+                        className={`py-3 px-2 sm:px-5 font-heading border-l border-navy/20 first:border-l-0 ${idx === 0 ? 'text-left' : 'text-center'}`}
                       >
                         {header}
                       </th>
@@ -292,22 +292,22 @@ export default function Products() {
                 <tbody>
                   {Array.isArray(comparisonData) && comparisonData.map((row, i) => (
                     <tr key={row.p} className={`border-b border-navy/10 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
-                      <td className="py-3.5 px-5 text-left font-semibold text-navy/90 font-heading text-xs">
+                      <td className="py-3 px-2 sm:px-5 text-left font-semibold text-navy/90 font-heading text-xs">
                         {row.p}
                       </td>
-                      <td className="py-3.5 px-5 text-center text-base border-l border-navy/20">
+                      <td className="py-3 px-2 sm:px-5 text-center text-sm border-l border-navy/20">
                         {row.o === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.o === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
-                      <td className="py-3.5 px-5 text-center text-base border-l border-navy/20">
+                      <td className="py-3 px-2 sm:px-5 text-center text-sm border-l border-navy/20">
                         {row.d === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.d === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
-                      <td className="py-3.5 px-5 text-center text-base border-l border-navy/20">
+                      <td className="py-3 px-2 sm:px-5 text-center text-sm border-l border-navy/20">
                         {row.r === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.r === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
-                      <td className="py-3.5 px-5 text-center text-base border-l border-navy/20">
+                      <td className="py-3 px-2 sm:px-5 text-center text-sm border-l border-navy/20">
                         {row.t === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.t === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>

@@ -38,37 +38,36 @@ export default function About() {
 
       {/* ── VISION / MISSION / VALUES + IMAGE ── */}
       <section className="bg-white">
-        <div className="flex flex-col lg:flex-row min-h-[520px]">
+        <div className="flex flex-col lg:flex-row lg:items-stretch">
           {/* Left: text */}
-          <div className="w-full lg:w-1/2 px-8 md:px-14 lg:px-16 py-16 lg:py-20 flex flex-col justify-center">
+          <div className="w-full lg:w-1/2 px-8 md:px-12 lg:px-14 py-12 lg:py-16 flex flex-col justify-center">
             <SlotIn>
-              <div className="space-y-12 max-w-2xl">
+              <div className="space-y-7 max-w-lg">
                 {/* Vision */}
                 <div>
-                  <h2 className="font-heading font-bold text-navy text-4xl lg:text-[50px] mb-4 leading-tight">{t('about.vision_label')}</h2>
-                  <p className="text-muted-foreground text-xl lg:text-[28px] font-medium leading-snug">{t('about.vision')}</p>
+                  <h2 className="font-heading font-bold text-navy text-xl lg:text-2xl mb-1.5 leading-tight">{t('about.vision_label')}</h2>
+                  <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">{t('about.vision')}</p>
                 </div>
                 {/* Mission */}
                 <div>
-                  <h2 className="font-heading font-bold text-navy text-4xl lg:text-[50px] mb-4 leading-tight">{t('about.mission_label')}</h2>
-                  <p className="text-muted-foreground text-xl lg:text-[28px] font-medium leading-snug">{t('about.mission')}</p>
+                  <h2 className="font-heading font-bold text-navy text-xl lg:text-2xl mb-1.5 leading-tight">{t('about.mission_label')}</h2>
+                  <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">{t('about.mission')}</p>
                 </div>
                 {/* Values */}
                 <div>
-                  <h2 className="font-heading font-bold text-navy text-4xl lg:text-[50px] mb-4 leading-tight">{t('about.values_label')}</h2>
-                  <ul className="space-y-2">
+                  <h2 className="font-heading font-bold text-navy text-xl lg:text-2xl mb-1.5 leading-tight">{t('about.values_label')}</h2>
+                  <ul className="space-y-1">
                     {Array.isArray(valuesItems) && valuesItems.map(item => (
-                      <li key={item} className="text-muted-foreground text-xl lg:text-[28px] font-medium leading-snug">{item}</li>
+                      <li key={item} className="text-muted-foreground text-sm lg:text-base leading-relaxed">{item}</li>
                     ))}
                   </ul>
                 </div>
                 <Button
-                  size="lg"
                   onClick={() => setVideoOpen(true)}
-                  className="flex items-center gap-3 bg-teal hover:bg-teal-light text-white font-bold px-8 h-14 rounded-md uppercase text-[20px] self-start mt-4"
+                  className="flex items-center gap-2.5 bg-teal hover:bg-teal-light text-white font-semibold px-6 h-10 rounded-sm text-sm self-start"
                 >
-                  <div className="w-8 h-8 rounded-full border-2 border-white/40 flex items-center justify-center flex-shrink-0">
-                    <Play className="w-3.5 h-3.5 fill-white text-white ml-0.5" />
+                  <div className="w-6 h-6 rounded-full border-2 border-white/40 flex items-center justify-center flex-shrink-0">
+                    <Play className="w-2.5 h-2.5 fill-white text-white ml-0.5" />
                   </div>
                   Discover
                 </Button>
@@ -76,12 +75,11 @@ export default function About() {
             </SlotIn>
           </div>
           {/* Right: kids image */}
-          <div className="w-full lg:w-1/2 min-h-[320px] lg:min-h-0">
+          <div className="w-full lg:w-1/2 min-h-[280px] lg:min-h-[420px]">
             <img
               src="/images/Kids crop.jpg"
               alt="Community impact"
               className="w-full h-full object-cover"
-              style={{ minHeight: '320px' }}
             />
           </div>
         </div>
@@ -89,32 +87,31 @@ export default function About() {
 
       {/* ── OUR STORY ── */}
       <section className="bg-white">
-        <div className="flex flex-col lg:flex-row min-h-[400px]">
+        <div className="flex flex-col lg:flex-row lg:items-stretch">
           {/* Left: slum image */}
-          <div className="w-full lg:w-2/5 min-h-[280px] lg:min-h-0">
+          <div className="w-full lg:w-2/5 min-h-[240px] lg:min-h-[400px]">
             <img
               src="/images/Slum house crop.png"
               alt="Housing challenges"
               className="w-full h-full object-cover"
-              style={{ minHeight: '280px' }}
             />
           </div>
           {/* Right: quote */}
-          <div className="w-full lg:w-3/5 bg-navy px-8 md:px-14 lg:px-16 py-14 lg:py-20 flex flex-col justify-center">
+          <div className="w-full lg:w-3/5 bg-navy px-8 md:px-12 lg:px-14 py-12 lg:py-16 flex flex-col justify-center">
             <SlotIn delay={0.1}>
-              <h2 className="font-heading font-bold text-white text-4xl lg:text-[50px] mb-8 leading-tight">{t('about.story_label')}</h2>
-              <blockquote className="text-white/90 text-2xl lg:text-[36px] font-bold leading-snug mb-12 max-w-4xl">
+              <h2 className="font-heading font-bold text-white text-xl lg:text-2xl mb-4 leading-tight">{t('about.story_label')}</h2>
+              <blockquote className="text-white/90 text-sm lg:text-base leading-relaxed mb-8 max-w-xl">
                 "{t('about.story_quote')}"
               </blockquote>
               {/* Frank avatar + name */}
-              <div className="flex items-center gap-5">
-                <div className="relative w-20 h-20 rounded-full bg-surface/20 flex items-center justify-center text-white font-heading font-bold text-2xl flex-shrink-0 overflow-hidden">
+              <div className="flex items-center gap-4">
+                <div className="relative w-12 h-12 rounded-full bg-surface/20 flex items-center justify-center text-white font-heading font-bold text-sm flex-shrink-0 overflow-hidden">
                   <span className="z-0">FL</span>
                   <img src="/images/frank-cato.webp" alt="Frank" className="absolute inset-0 w-full h-full object-cover z-10" onError={(e) => e.target.style.display='none'} />
                 </div>
                 <div>
-                  <p className="font-heading font-bold text-white text-xl lg:text-[24px]">Frank Cato Lahti</p>
-                  <p className="text-white/70 text-base mt-1">{t('about.team_members.frank.title')}</p>
+                  <p className="font-heading font-semibold text-white text-sm">Frank Cato Lahti</p>
+                  <p className="text-white/60 text-xs mt-0.5">{t('about.team_members.frank.title')}</p>
                 </div>
               </div>
             </SlotIn>
@@ -123,12 +120,12 @@ export default function About() {
       </section>
 
       {/* ── TEAM ── */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <div className="text-center mb-16 lg:mb-20">
-              <h2 className="font-heading font-bold text-navy text-4xl lg:text-[50px] mb-6 leading-tight">Team</h2>
-              <p className="text-navy/80 text-xl lg:text-[28px] font-medium leading-[1.4] max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">Team</h2>
+              <p className="text-navy/70 text-sm lg:text-base max-w-2xl mx-auto leading-relaxed">
                 "A diverse group of innovators, engineers, and visionaries united by the mission to create sustainable housing solutions"
               </p>
             </div>
@@ -176,20 +173,20 @@ export default function About() {
       </section>
 
       {/* ── OUR CULTURE ── */}
-      <section className="bg-teal py-16 lg:py-24">
+      <section className="bg-teal py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <h2 className="font-heading font-bold text-white text-4xl lg:text-[50px] mb-6 leading-tight">Our culture</h2>
-            <p className="text-white/80 text-xl lg:text-[28px] font-medium leading-snug mb-16 max-w-4xl">
+            <h2 className="font-heading font-bold text-white text-2xl lg:text-3xl mb-1.5 leading-tight">Our culture</h2>
+            <p className="text-white/70 text-sm lg:text-base mb-10 max-w-2xl">
               What shapes our approach to work and guides us in making a positive impact on the world
             </p>
           </SlotIn>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10">
             {Array.isArray(cultureValues) && cultureValues.map((v, i) => (
               <SlotIn key={v.title} delay={i * 0.08}>
                 <div>
-                  <h3 className="font-heading font-bold text-white text-4xl lg:text-[50px] mb-4 leading-tight">{v.title}</h3>
-                  <p className="text-white/80 text-xl lg:text-[28px] font-medium leading-snug">{v.desc}</p>
+                  <h3 className="font-heading font-semibold text-white text-base lg:text-lg mb-1.5">{v.title}</h3>
+                  <p className="text-white/70 text-sm leading-relaxed">{v.desc}</p>
                 </div>
               </SlotIn>
             ))}
@@ -199,20 +196,20 @@ export default function About() {
 
       {/* ── IMPACT ── */}
       <section className="bg-white">
-        <div className="flex flex-col lg:flex-row min-h-[400px]">
+        <div className="flex flex-col lg:flex-row lg:items-stretch">
           {/* Left: numbered impact items */}
-          <div className="w-full lg:w-1/2 px-8 md:px-14 lg:px-16 py-16 lg:py-20 flex flex-col justify-center">
+          <div className="w-full lg:w-1/2 px-8 md:px-12 lg:px-14 py-12 lg:py-16 flex flex-col justify-center">
             <SlotIn>
-              <h2 className="font-heading font-bold text-navy text-4xl lg:text-[50px] mb-12 leading-tight">Impact created by Othalo</h2>
-              <div className="space-y-12">
+              <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-8 leading-tight">Impact created by Othalo</h2>
+              <div className="space-y-6">
                 {Array.isArray(impacts) && impacts.map((item, i) => (
-                  <div key={item.num} className="flex gap-8">
-                    <span className="font-heading font-bold text-teal text-4xl lg:text-[50px] leading-tight flex-shrink-0 w-12 pt-1">
+                  <div key={item.num} className="flex gap-5">
+                    <span className="font-heading font-bold text-teal text-2xl leading-tight flex-shrink-0 w-7 pt-0.5">
                       {i + 1}
                     </span>
                     <div>
-                      <h3 className="font-heading font-bold text-navy text-4xl lg:text-[50px] mb-4 leading-tight">{item.title}</h3>
-                      <p className="text-muted-foreground text-xl lg:text-[28px] font-medium leading-snug">{item.desc}</p>
+                      <h3 className="font-heading font-semibold text-navy text-base mb-1">{item.title}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -220,12 +217,11 @@ export default function About() {
             </SlotIn>
           </div>
           {/* Right: community image */}
-          <div className="w-full lg:w-1/2 min-h-[320px] lg:min-h-0">
+          <div className="w-full lg:w-1/2 min-h-[280px] lg:min-h-[400px]">
             <img
               src="/images/The community 1a.png"
               alt="Community impact"
               className="w-full h-full object-cover"
-              style={{ minHeight: '320px' }}
             />
           </div>
         </div>
