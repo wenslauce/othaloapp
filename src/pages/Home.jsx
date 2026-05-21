@@ -114,17 +114,17 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-white max-w-2xl leading-tight mb-6">
+            <h1 className="font-heading text-5xl lg:text-[70px] font-bold text-white max-w-3xl leading-tight mb-6">
               {t('home.hero_title')}
             </h1>
-            <p className="text-white/70 text-lg max-w-xl leading-relaxed mb-8">
+            <p className="text-white/70 text-xl lg:text-[28px] font-medium max-w-2xl leading-relaxed mb-8">
               {t('home.hero_subtitle')}
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
                 asChild
                 size="lg"
-                className="bg-teal hover:bg-teal-light text-white font-semibold px-8 h-12 rounded-sm text-base"
+                className="bg-teal hover:bg-teal-light text-white font-bold px-10 h-14 rounded-md text-[20px] uppercase"
               >
                 <Link to="/products">
                   {t('home.hero_cta1')}
@@ -162,11 +162,11 @@ export default function Home() {
             {/* Right: Market Leading Features */}
             <div className="flex flex-col">
               <SlotIn>
-                <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-8">
+                <h2 className="font-heading text-4xl lg:text-[50px] font-bold text-navy mb-10 leading-tight">
                   {t('products.comparison_title')}
                 </h2>
                 
-                <div className="space-y-8">
+                <div className="space-y-12">
                   {[
                     { icon: DollarSign, title: t('products.panel_features.0.title'), desc: t('products.panel_features.0.desc') },
                     { icon: Award, title: t('products.panel_features.1.title'), desc: t('products.panel_features.1.desc') },
@@ -176,13 +176,13 @@ export default function Home() {
                     const Icon = f.icon;
                     return (
                       <SlotIn key={f.title} delay={i * 0.1}>
-                        <div className="flex gap-5 group">
-                          <div className="w-12 h-12 bg-teal/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-teal group-hover:text-white transition-all duration-300">
-                            <Icon className="w-6 h-6 text-teal group-hover:text-white transition-colors" />
+                        <div className="flex gap-6 group">
+                          <div className="w-14 h-14 lg:w-16 lg:h-16 bg-teal/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-teal group-hover:text-white transition-all duration-300 mt-1">
+                            <Icon className="w-7 h-7 lg:w-8 lg:h-8 text-teal group-hover:text-white transition-colors" />
                           </div>
                           <div>
-                            <h3 className="font-heading font-semibold text-navy text-lg mb-1">{f.title}</h3>
-                            <p className="text-muted-foreground text-sm leading-relaxed max-w-md">{f.desc}</p>
+                            <h3 className="font-heading font-bold text-navy text-2xl lg:text-[36px] mb-3 leading-tight">{f.title}</h3>
+                            <p className="text-muted-foreground text-lg lg:text-[24px] font-medium leading-[36px] max-w-2xl">{f.desc}</p>
                           </div>
                         </div>
                       </SlotIn>
@@ -200,28 +200,28 @@ export default function Home() {
       <section className="flex flex-col lg:flex-row w-full bg-teal text-white">
         <div className="w-full lg:w-1/2 p-10 lg:p-16 xl:p-20 flex flex-col justify-center">
           <SlotIn>
-            <h2 className="font-heading text-4xl lg:text-5xl xl:text-6xl font-semibold mb-16">
+            <h2 className="font-heading text-4xl lg:text-[50px] font-bold mb-16 leading-tight">
               Your solution starts here
             </h2>
             
-            <div className="space-y-10">
+            <div className="space-y-12">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <h3 className="font-heading text-2xl lg:text-3xl font-semibold">Governments</h3>
-                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white hover:text-navy border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
+                <h3 className="font-heading text-2xl lg:text-[36px] font-bold">Governments</h3>
+                <Button asChild variant="outline" className="bg-[#E7E9EC] text-navy hover:bg-white hover:text-navy border-0 font-bold px-8 h-14 rounded-md self-start sm:self-auto uppercase text-[20px]">
                   <Link to="/solutions/governments">LEARN MORE</Link>
                 </Button>
               </div>
 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <h3 className="font-heading text-2xl lg:text-3xl font-semibold">Housing Developers</h3>
-                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white hover:text-navy border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
+                <h3 className="font-heading text-2xl lg:text-[36px] font-bold">Housing Developers</h3>
+                <Button asChild variant="outline" className="bg-[#E7E9EC] text-navy hover:bg-white hover:text-navy border-0 font-bold px-8 h-14 rounded-md self-start sm:self-auto uppercase text-[20px]">
                   <Link to="/solutions/housing-developers">LEARN MORE</Link>
                 </Button>
               </div>
 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <h3 className="font-heading text-2xl lg:text-3xl font-semibold">Corporations</h3>
-                <Button asChild variant="outline" className="bg-[#e9ecef] text-navy hover:bg-white hover:text-navy border-0 font-bold px-8 py-6 rounded-sm self-start sm:self-auto uppercase tracking-widest text-xs">
+                <h3 className="font-heading text-2xl lg:text-[36px] font-bold">Corporations</h3>
+                <Button asChild variant="outline" className="bg-[#E7E9EC] text-navy hover:bg-white hover:text-navy border-0 font-bold px-8 h-14 rounded-md self-start sm:self-auto uppercase text-[20px]">
                   <Link to="/solutions/corporations">LEARN MORE</Link>
                 </Button>
               </div>
@@ -259,18 +259,18 @@ export default function Home() {
         </div>
         <div className="w-full lg:w-1/2 bg-surface flex flex-col justify-center px-6 py-14 sm:px-10 lg:px-16 xl:px-20 lg:py-16">
           <SlotIn delay={0.12}>
-            <div className="max-w-xl">
-              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-8">
+            <div className="max-w-3xl">
+              <h2 className="font-heading text-4xl lg:text-[50px] font-bold text-navy mb-12 leading-tight">
                 {t('products.dual_title')}
               </h2>
-              <div className="space-y-6">
+              <div className="space-y-12">
                 {Array.isArray(dualImpactItems) && dualImpactItems.map((item, idx) => (
-                  <div key={item.title} className="border-l-2 border-teal pl-5">
-                    <h3 className="font-heading font-semibold text-navy text-base mb-1">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm mb-3">{item.desc}</p>
+                  <div key={item.title}>
+                    <h3 className="font-heading font-bold text-navy text-2xl lg:text-[36px] mb-3 leading-tight">{item.title}</h3>
+                    <p className="text-muted-foreground text-lg lg:text-[24px] font-medium leading-[36px] mb-6">{item.desc}</p>
                     <Button
-                      size="sm"
-                      className="bg-teal hover:bg-teal-light text-white font-semibold px-4 h-9 rounded-sm text-xs"
+                      size="lg"
+                      className="bg-teal hover:bg-teal-light text-white font-bold px-8 h-14 rounded-md uppercase text-[20px]"
                       onClick={() => setImpactModal(idx === 0 ? 'plastic' : 'housing')}
                     >
                       {t('solutions.learn_more')}
@@ -387,7 +387,7 @@ export default function Home() {
         <div className="max-w-8xl mx-auto px-6 lg:px-12">
           <SlotIn>
             <div className="text-center mb-10 lg:mb-12">
-              <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-navy mb-4">
+              <h2 className="font-heading text-4xl lg:text-[50px] font-bold text-navy mb-10 leading-tight">
                 {t('home.esg_title')}
               </h2>
 

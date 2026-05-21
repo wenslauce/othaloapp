@@ -48,28 +48,6 @@ export default function Solutions() {
         keywords={t('seo.solutions.keywords').split(', ')}
       />
 
-      {/* Hero: 50/50 — navy + title | six-quadrant image */}
-      <section className="flex flex-col lg:flex-row lg:items-stretch min-h-0">
-        <div className="w-full lg:w-1/2 bg-navy flex items-center px-8 md:px-12 lg:px-14 xl:px-16 py-16 lg:py-20 min-h-[min(44vh,400px)] lg:min-h-[min(52vh,560px)]">
-          <SlotIn>
-            <div className="inline-flex items-center gap-2 text-teal text-xs font-semibold uppercase tracking-widest mb-6 font-heading">
-              <span className="w-8 h-px bg-teal" />
-              {t('solutions.label')}
-              <span className="w-8 h-px bg-teal" />
-            </div>
-            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-semibold text-white max-w-4xl leading-[1.08]">
-              {t('solutions.title')}
-            </h1>
-          </SlotIn>
-        </div>
-        <div className="w-full lg:w-1/2 relative min-h-[min(40vh,320px)] lg:min-h-[min(52vh,560px)]">
-          <img
-            src="/images/The House step by step 2.png"
-            alt={t('solutions.title')}
-            className="absolute inset-0 size-full object-cover object-center"
-          />
-        </div>
-      </section>
 
       {/* Solution rows */}
       {solutions.map((sol, i) => {
@@ -90,9 +68,6 @@ export default function Solutions() {
                       alt={sol.headline}
                       className={`w-full h-72 lg:h-[440px] object-cover ${brightImage ? 'brightness-110 contrast-[1.03]' : ''}`}
                     />
-                    {i === 2 && (
-                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy/15 to-transparent" />
-                    )}
                   </div>
 
                   <div className={!isEven ? 'lg:order-1' : ''}>

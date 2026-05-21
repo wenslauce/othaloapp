@@ -24,8 +24,8 @@ module.exports = {
           light: '#008577',
           50: '#e6f4f3',
         },
-        'tech-slate': '#E2E8F0',
-        surface: '#F8FAFC',
+        'tech-slate': '#E7E9EC',
+        surface: '#E7E9EC',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

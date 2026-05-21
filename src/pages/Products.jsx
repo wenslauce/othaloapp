@@ -18,12 +18,12 @@ export default function Products() {
 
   // 6 tech features for the icon grid
   const techFeatures = [
-    { icon: DollarSign, title: t('products.panel_features.0.title'), desc: t('products.panel_features.0.desc') },
-    { icon: Leaf,       title: t('products.panel_features.3.title'), desc: t('products.panel_features.3.desc') },
-    { icon: Zap,        title: 'Fast construction',                  desc: 'From raw panels to completed structure in as little as 72 hours using local labor.' },
-    { icon: Shield,     title: t('products.panel_features.2.title'), desc: t('products.panel_features.2.desc') },
-    { icon: Award,      title: t('products.panel_features.1.title'), desc: t('products.panel_features.1.desc') },
-    { icon: Recycle,    title: 'High standards',                     desc: 'Meets ISO, Eurocodes, and local equivalents. Independently tested and UN-Habitat endorsed.' },
+    { icon: DollarSign, title: 'Innovative patented technology',  desc: '75% of all plastic types including hard to recycle plastic such as sachets, films, and flexibles — not recycled to date.' },
+    { icon: Leaf,       title: 'Environmental friendly',          desc: 'No use of cement and steel, very limited usage of water.' },
+    { icon: Zap,        title: 'Fast construction',               desc: 'Installed in 6 hours with manpower only — no heavy machinery requirements.' },
+    { icon: Shield,     title: 'Safety',                          desc: 'Hurricane & earthquake resilient design, fire retardant.' },
+    { icon: Award,      title: 'Superior performance',            desc: 'x7 stronger than concrete.' },
+    { icon: Recycle,    title: 'High standards',                  desc: 'Meets all relevant construction regulations.' },
   ];
 
   // 4 numbered approach items
@@ -135,29 +135,29 @@ export default function Products() {
 
       {/* ── TECHNOLOGY: centered title + 6-icon grid (extra row spacing like mock) ── */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <div className="text-center mb-10 lg:mb-12">
-              <h2 className="font-heading text-2xl md:text-3xl font-semibold text-navy mb-3">
+            <div className="text-center mb-16 lg:mb-24">
+              <h2 className="font-heading font-bold text-navy text-4xl lg:text-[50px] mb-8 leading-tight">
                 Technology
               </h2>
-              <p className="text-muted-foreground text-sm max-w-2xl mx-auto leading-relaxed">
-                Our standardised modular solution excels with practicality, combining cost efficient, fast to build, and durable and sustainable construction solutions.
+              <p className="text-navy/80 text-xl lg:text-[28px] font-medium max-w-5xl mx-auto leading-snug">
+                Our standardized modules combine innovation with practicality, delivering cost efficient, fast to build, and durable and sustainable construction solutions
               </p>
             </div>
           </SlotIn>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-12 md:gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-16 md:gap-y-20">
             {techFeatures.map((f, i) => {
               const Icon = f.icon;
               return (
                 <SlotIn key={f.title} delay={i * 0.07}>
-                  <div className="flex flex-col items-center text-center gap-3.5 max-w-xs mx-auto">
-                    <div className="w-14 h-14 bg-teal/10 rounded-full flex items-center justify-center">
-                      <Icon className="w-7 h-7 text-teal" />
+                  <div className="flex flex-col items-center text-center gap-6 max-w-sm mx-auto">
+                    <div className="w-20 h-20 bg-teal/10 rounded-full flex items-center justify-center">
+                      <Icon className="w-10 h-10 text-teal" />
                     </div>
-                    <h3 className="font-heading font-semibold text-navy text-sm">{f.title}</h3>
-                    <p className="text-muted-foreground text-xs leading-relaxed">{f.desc}</p>
+                    <h3 className="font-heading font-bold text-navy text-2xl lg:text-[36px] leading-tight">{f.title}</h3>
+                    <p className="text-muted-foreground text-lg lg:text-[24px] font-medium leading-[36px]">{f.desc}</p>
                   </div>
                 </SlotIn>
               );
@@ -176,7 +176,8 @@ export default function Products() {
               alt="Dr. Vincent Kitio"
               className="absolute inset-0 size-full object-cover object-top lg:object-center"
             />
-            <div className="absolute inset-0 bg-navy/35" />
+            {/* Subtle bottom gradient only — keeps text legible without tinting the photo */}
+            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
             <div className="relative z-10 p-8 lg:p-10 flex flex-col justify-end min-h-[min(44vh,360px)] lg:min-h-full">
               <div className="inline-flex items-center gap-2 mb-2">
                 <img src="/images/logo.png" alt="Othalo" className="h-7 w-auto brightness-0 invert" />
@@ -187,7 +188,7 @@ export default function Products() {
           {/* Right: light gray, navy quote */}
           <div className="w-full lg:w-1/2 bg-surface px-8 md:px-12 lg:px-14 xl:px-16 py-12 lg:py-16 flex flex-col justify-center">
             <SlotIn>
-              <blockquote className="text-navy font-heading text-lg md:text-xl lg:text-2xl font-medium leading-relaxed mb-6 max-w-xl">
+              <blockquote className="text-navy font-heading text-lg md:text-xl lg:text-2xl font-bold leading-relaxed mb-6 max-w-xl">
                 &ldquo;{t('home.quote_text')}&rdquo;
               </blockquote>
               <div className="mb-8">
