@@ -219,7 +219,7 @@ export default function About() {
           {/* Right: community image */}
           <div className="w-full lg:w-1/2 min-h-[280px] lg:min-h-[400px]">
             <img
-              src="/images/The community 1a.png"
+              src="/images/Child crop 1.jpg"
               alt="Community impact"
               className="w-full h-full object-cover"
             />
