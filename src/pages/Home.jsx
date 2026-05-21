@@ -140,22 +140,14 @@ export default function Home() {
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-8xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14 items-center">
-            {/* Left: 3D Panel Image with UN-Habitat Overlay */}
+            {/* Left: 3D Panel Image */}
             <SlotIn>
-              <div className="relative bg-white p-8 lg:p-12 rounded-sm border border-tech-slate shadow-sm">
+              <div className="bg-white p-8 lg:p-12 rounded-sm border border-tech-slate shadow-sm">
                 <img
-                  src="/images/Panel 3D.jpg"
+                  src="/images/Panel-3D-v2.jpg"
                   alt="Othalo 3D Panel Exploded View"
                   className="w-full h-auto object-contain"
                 />
-                {/* UN-Habitat Badge Overlay */}
-                <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 max-w-[140px] md:max-w-[180px]">
-                  <img 
-                    src="/images/UN_HABITAT_ENDORSED.png" 
-                    alt="Endorsed by UN-Habitat" 
-                    className="w-full h-auto drop-shadow-md"
-                  />
-                </div>
               </div>
             </SlotIn>
 
