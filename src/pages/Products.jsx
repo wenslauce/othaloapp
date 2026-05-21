@@ -33,19 +33,19 @@ export default function Products() {
   const productLines = [
     {
       name: 'The Community',
-      images: ['/images/The District 2a.png', '/images/The community 1a.png'],
+      images: ['/images/The%20District%202a.png', '/images/The%20community%201a.png'],
     },
     {
       name: 'The Emergency Shelter',
-      images: ['/images/The Emergency Shelter 1.png', '/images/The Emergency Shelter 2c.png'],
+      images: ['/images/The%20Emergency%20Shelter%201.png', '/images/The%20Emergency%20Shelter%202c.png'],
     },
     {
       name: 'The Medical Unit and Cold Storage',
-      images: ['/images/The Medical Unit 3b.png', '/images/The Medical Unit 2a.png'],
+      images: ['/images/The%20Medical%20Unit%203b.png', '/images/The%20Medical%20Unit%202a.png'],
     },
     {
       name: 'The Worker Accomodation',
-      images: ['/images/The Worker Accomodation 6b.png', '/images/The Worker Accomodation 5a.png'],
+      images: ['/images/The%20Worker%20Accomodation%206b.png', '/images/The%20Worker%20Accomodation%205a.png'],
     },
   ];
 
@@ -246,15 +246,13 @@ export default function Products() {
               <SlotIn key={line.name} delay={i * 0.07}>
                 <div>
                   <div className="relative aspect-[4/3] sm:aspect-[5/4] overflow-hidden rounded-sm bg-surface min-h-[160px] sm:min-h-[180px]">
-                    <div className="absolute inset-0">
-                      <ImageSlider
-                        images={line.images}
-                        name={line.name}
-                        interval={4500}
-                        autoPlay
-                        className="h-full w-full min-h-0"
-                      />
-                    </div>
+                    <ImageSlider
+                      images={line.images}
+                      name={line.name}
+                      interval={4500}
+                      autoPlay
+                      className="h-full w-full object-cover"
+                    />
                   </div>
                   <p className="text-navy text-xs sm:text-sm font-heading font-semibold mt-2.5 pl-0.5 leading-snug">
                     {line.name}
@@ -273,7 +271,8 @@ export default function Products() {
             <h2 className="font-heading text-2xl md:text-3xl font-semibold text-white mb-8 lg:mb-10 text-center">
               {t('products.comparison_title')}
             </h2>
-          </SlotIn>
+            </SlotIn>
+          
           <SlotIn delay={0.1}>
           <div className="overflow-x-auto rounded-sm border border-white/20 bg-white shadow-sm -mx-2 sm:mx-0">
               <table className="w-full text-xs sm:text-sm min-w-[480px]">
