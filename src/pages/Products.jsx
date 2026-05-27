@@ -33,19 +33,19 @@ export default function Products() {
   const productLines = [
     {
       name: 'The Community',
-      images: ['/images/The%20District%202a.png', '/images/The%20community%201a.png'],
+      images: ['/images/The District 2a.png', '/images/The community 1a.png'],
     },
     {
       name: 'The Emergency Shelter',
-      images: ['/images/The%20Emergency%20Shelter%201.png', '/images/The%20Emergency%20Shelter%202c.png'],
+      images: ['/images/The Emergency Shelter 1.png', '/images/The Emergency Shelter 2c.png'],
     },
     {
       name: 'The Medical Unit and Cold Storage',
-      images: ['/images/The%20Medical%20Unit%203b.png', '/images/The%20Medical%20Unit%202a.png'],
+      images: ['/images/The Medical Unit 3b.png', '/images/The Medical Unit 2a.png'],
     },
     {
       name: 'The Worker Accomodation',
-      images: ['/images/The%20Worker%20Accomodation%206b.png', '/images/The%20Worker%20Accomodation%205a.png'],
+      images: ['/images/The Worker Accomodation 6b.png', '/images/The Worker Accomodation 5a.png'],
     },
   ];
 
@@ -86,7 +86,7 @@ export default function Products() {
             className="absolute inset-0 size-full object-cover"
           />
           {/* UN-Habitat Endorsed Badge Overlay */}
-          <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 max-w-[120px] md:max-w-[160px]">
+          <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 max-w-[160px] md:max-w-[200px] lg:max-w-[220px]">
             <img
               src="/images/UN_HABITAT_ENDORSED.png"
               alt="Endorsed by UN-Habitat"
@@ -275,13 +275,13 @@ export default function Products() {
           
           <SlotIn delay={0.1}>
           <div className="overflow-x-auto rounded-sm border border-white/20 bg-white shadow-sm -mx-2 sm:mx-0">
-              <table className="w-full text-xs sm:text-sm min-w-[480px]">
+              <table className="w-full text-xs sm:text-sm min-w-[480px] table-fixed">
                 <thead>
                   <tr className="bg-navy text-white text-xs font-semibold tracking-wide">
                     {t('products.comparison_headers', { returnObjects: true }).map((header, idx) => (
                       <th
                         key={header}
-                        className={`py-3 px-2 sm:px-5 font-heading border-l border-navy/20 first:border-l-0 ${idx === 0 ? 'text-left' : 'text-center'}`}
+                        className={`w-1/5 py-3 px-2 sm:px-4 font-heading border-l border-navy/20 first:border-l-0 ${idx === 0 ? 'text-left' : 'text-center'}`}
                       >
                         {header}
                       </th>
@@ -291,22 +291,22 @@ export default function Products() {
                 <tbody>
                   {Array.isArray(comparisonData) && comparisonData.map((row, i) => (
                     <tr key={row.p} className={`border-b border-navy/10 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
-                      <td className="py-3 px-2 sm:px-5 text-left font-semibold text-navy/90 font-heading text-xs">
+                      <td className="w-1/5 py-3 px-2 sm:px-4 text-left font-semibold text-navy/90 font-heading text-xs">
                         {row.p}
                       </td>
-                      <td className="py-3 px-2 sm:px-5 text-center text-sm border-l border-navy/20">
+                      <td className="w-1/5 py-3 px-2 sm:px-4 text-center text-sm border-l border-navy/20">
                         {row.o === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.o === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
-                      <td className="py-3 px-2 sm:px-5 text-center text-sm border-l border-navy/20">
+                      <td className="w-1/5 py-3 px-2 sm:px-4 text-center text-sm border-l border-navy/20">
                         {row.d === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.d === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
-                      <td className="py-3 px-2 sm:px-5 text-center text-sm border-l border-navy/20">
+                      <td className="w-1/5 py-3 px-2 sm:px-4 text-center text-sm border-l border-navy/20">
                         {row.r === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.r === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>
-                      <td className="py-3 px-2 sm:px-5 text-center text-sm border-l border-navy/20">
+                      <td className="w-1/5 py-3 px-2 sm:px-4 text-center text-sm border-l border-navy/20">
                         {row.t === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.t === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
                       </td>

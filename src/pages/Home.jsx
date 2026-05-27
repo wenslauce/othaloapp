@@ -309,7 +309,7 @@ export default function Home() {
                   { stat: '~9%', detail: 'of plastic waste is actually recycled globally' },
                   { stat: '80%', detail: 'of plastic waste ends up in landfills — up to 93% in very low-income economies' },
                   { stat: '11 million tonnes', detail: 'of plastic enter the ocean every year' },
-                  { stat: '2022', detail: 'Scientists detected microplastics in human blood for the first time' },
+                  { stat: 'In 2022', detail: 'Scientists detected microplastics in human blood for the first time' },
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3 items-start">
                     <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[110px]">{item.stat}</span>

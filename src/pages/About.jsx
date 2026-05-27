@@ -15,7 +15,6 @@ export default function About() {
   const team = [
     { name: t('about.team_members.frank.name'),     title: t('about.team_members.frank.title'),     img: '/images/frank-cato.webp',       linkedin: 'https://www.linkedin.com/in/frank-cato-lahti-01b4072/', slug: 'frank-cato-lahti' },
     { name: t('about.team_members.claus.name'),     title: t('about.team_members.claus.title'),     img: '/images/claus.jpg',             linkedin: 'https://www.linkedin.com/in/claus-skadkjaer-6457383/', slug: 'claus-skadkjaer' },
-    { name: t('about.team_members.martin.name'),    title: t('about.team_members.martin.title'),    img: '/placeholder.svg',              linkedin: 'https://www.linkedin.com/in/martin-dokkedal-a1499/', slug: 'martin-dokkedal' },
     { name: t('about.team_members.thomas.name'),    title: t('about.team_members.thomas.title'),    img: '/images/thomas.jpg',            linkedin: 'https://www.linkedin.com/in/thomas-meidell-l%C3%B8snes-8b051b22/', slug: 'thomas-meidell-laan' },
     { name: t('about.team_members.kjell.name'),     title: t('about.team_members.kjell.title'),     img: '/images/Kjell-headshot.jpg',    linkedin: 'https://www.linkedin.com/in/kjell-steen-57438ab2/', slug: 'kjell-steen' },
     { name: t('about.team_members.bengt.name'),     title: t('about.team_members.bengt.title'),     img: '/images/bengt-erling.webp',     linkedin: 'https://www.linkedin.com/in/bengt-erling-berg-a4831b3a/', slug: 'bengt-erling-berg' },
@@ -40,25 +39,25 @@ export default function About() {
       <section className="bg-white">
         <div className="flex flex-col lg:flex-row lg:items-stretch">
           {/* Left: text */}
-          <div className="w-full lg:w-1/2 px-8 md:px-12 lg:px-14 py-12 lg:py-16 flex flex-col justify-center">
+          <div className="w-full lg:w-1/2 px-8 md:px-12 lg:px-14 py-14 lg:py-20 flex flex-col justify-center">
             <SlotIn>
-              <div className="space-y-7 max-w-lg">
+              <div className="space-y-8 max-w-lg">
                 {/* Vision */}
                 <div>
-                  <h2 className="font-heading font-bold text-navy text-xl lg:text-2xl mb-1.5 leading-tight">{t('about.vision_label')}</h2>
-                  <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">{t('about.vision')}</p>
+                  <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.vision_label')}</h2>
+                  <p className="text-navy/70 text-base lg:text-lg leading-relaxed">{t('about.vision')}</p>
                 </div>
                 {/* Mission */}
                 <div>
-                  <h2 className="font-heading font-bold text-navy text-xl lg:text-2xl mb-1.5 leading-tight">{t('about.mission_label')}</h2>
-                  <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">{t('about.mission')}</p>
+                  <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.mission_label')}</h2>
+                  <p className="text-navy/70 text-base lg:text-lg leading-relaxed">{t('about.mission')}</p>
                 </div>
                 {/* Values */}
                 <div>
-                  <h2 className="font-heading font-bold text-navy text-xl lg:text-2xl mb-1.5 leading-tight">{t('about.values_label')}</h2>
-                  <ul className="space-y-1">
+                  <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.values_label')}</h2>
+                  <ul className="space-y-1.5">
                     {Array.isArray(valuesItems) && valuesItems.map(item => (
-                      <li key={item} className="text-muted-foreground text-sm lg:text-base leading-relaxed">{item}</li>
+                      <li key={item} className="text-navy/70 text-base lg:text-lg leading-relaxed">{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -97,10 +96,10 @@ export default function About() {
             />
           </div>
           {/* Right: quote */}
-          <div className="w-full lg:w-3/5 bg-navy px-8 md:px-12 lg:px-14 py-12 lg:py-16 flex flex-col justify-center">
+          <div className="w-full lg:w-3/5 bg-navy px-8 md:px-12 lg:px-14 py-14 lg:py-20 flex flex-col justify-center">
             <SlotIn delay={0.1}>
-              <h2 className="font-heading font-bold text-white text-xl lg:text-2xl mb-4 leading-tight">{t('about.story_label')}</h2>
-              <blockquote className="text-white/90 text-sm lg:text-base leading-relaxed mb-8 max-w-xl">
+              <h2 className="font-heading font-bold text-white text-2xl lg:text-3xl mb-5 leading-tight">{t('about.story_label')}</h2>
+              <blockquote className="text-white/90 text-base lg:text-lg leading-relaxed mb-10 max-w-xl">
                 "{t('about.story_quote')}"
               </blockquote>
               {/* Frank avatar + name */}
@@ -110,8 +109,8 @@ export default function About() {
                   <img src="/images/frank-cato.webp" alt="Frank" className="absolute inset-0 w-full h-full object-cover z-10" onError={(e) => e.target.style.display='none'} />
                 </div>
                 <div>
-                  <p className="font-heading font-semibold text-white text-sm">Frank Cato Lahti</p>
-                  <p className="text-white/60 text-xs mt-0.5">{t('about.team_members.frank.title')}</p>
+                  <p className="font-heading font-semibold text-white text-base">Frank Cato Lahti</p>
+                  <p className="text-white/60 text-sm mt-0.5">{t('about.team_members.frank.title')}</p>
                 </div>
               </div>
             </SlotIn>

@@ -219,17 +219,17 @@
       {
         "num": "01",
         "title": "Environmental impact",
-        "desc": "Plastic removed from the environment, no use of cement or steel — measurable planetary impact per unit built."
+        "desc": "Plastic removed from the environment; no use of cement and steel."
       },
       {
         "num": "02",
         "title": "Social impact",
-        "desc": "Homes for low to mid-income communities. Dignified, safe housing that transforms lives and breaks cycles of poverty."
+        "desc": "Homes for low to mid income communities."
       },
       {
         "num": "03",
         "title": "Economic impact",
-        "desc": "Enabling jobs in emerging economies. Every Othalo factory and build site creates sustainable local employment."
+        "desc": "Create jobs in emerging economies."
       }
     ],
     "contributions": {
@@ -249,7 +249,7 @@
   "products": {
     "label": "Product Portfolio",
     "title": "The Othalo Panel System",
-    "subtitle": "Patented structural wall panels manufactured from 100% recycled plastic — the foundation of every Othalo structure.",
+    "subtitle": "Our patented, UN-Habitat endorsed technology delivers affordable and sustainable housing solutions with speed and scale, using recycled plastic",
     "un_habitat_badge": "Endorsed by UN-HABITAT",
     "un_habitat_note": "For a Better Urban Future",
     "cta_quote": "Get a Product Quote",
