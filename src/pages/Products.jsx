@@ -142,7 +142,7 @@ export default function Products() {
                 Technology
               </h2>
               <p className="text-navy/70 text-sm lg:text-base max-w-3xl mx-auto leading-relaxed">
-                Our standardized modules combine innovation with practicality, delivering cost efficient, fast to build, and durable and sustainable construction solutions
+                Our standardized modules combine innovation with practicality, delivering cost efficient, fast to build, and durable and sustainable construction solutions.
               </p>
             </div>
           </SlotIn>
@@ -166,8 +166,34 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── QUOTE BANNER: portrait left / light panel + navy copy (mock) ── */}
-      <section className="bg-navy py-0">
+      {/* ── PRODUCT LINES: 2×2 grid — shown right after technology ── */}
+      <section className="bg-surface py-12 lg:py-16">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-2 gap-4 sm:gap-5 md:gap-6">
+            {productLines.map((line, i) => (
+              <SlotIn key={line.name} delay={i * 0.07}>
+                <div>
+                  <div className="relative aspect-[4/3] sm:aspect-[5/4] overflow-hidden rounded-sm bg-white min-h-[160px] sm:min-h-[180px]">
+                    <ImageSlider
+                      images={line.images}
+                      name={line.name}
+                      interval={4500}
+                      autoPlay
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <p className="text-navy text-xs sm:text-sm font-heading font-semibold mt-2.5 pl-0.5 leading-snug">
+                    {line.name}
+                  </p>
+                </div>
+              </SlotIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── QUOTE BANNER: portrait left / grey right panel ── */}
+      <section className="bg-[#E7E9EC] py-0">
         <div className="flex flex-col lg:flex-row lg:items-stretch">
           {/* Left: portrait */}
           <div className="w-full lg:w-1/2 relative min-h-[min(44vh,360px)] lg:min-h-[min(52vh,560px)] overflow-hidden">
@@ -176,7 +202,7 @@ export default function Products() {
               alt="Dr. Vincent Kitio"
               className="absolute inset-0 size-full object-cover object-top lg:object-center"
             />
-            {/* Subtle bottom gradient only — keeps text legible without tinting the photo */}
+            {/* Subtle bottom gradient — keeps text legible */}
             <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
             <div className="relative z-10 p-8 lg:p-10 flex flex-col justify-end min-h-[min(44vh,360px)] lg:min-h-full">
               <div className="inline-flex items-center gap-2 mb-2">
@@ -185,8 +211,8 @@ export default function Products() {
               <p className="text-white/60 text-xs font-heading uppercase tracking-widest">Mission</p>
             </div>
           </div>
-          {/* Right: light gray, navy quote */}
-          <div className="w-full lg:w-1/2 bg-surface px-8 md:px-12 lg:px-14 xl:px-16 py-12 lg:py-16 flex flex-col justify-center">
+          {/* Right: grey panel, navy quote */}
+          <div className="w-full lg:w-1/2 bg-[#E7E9EC] px-8 md:px-12 lg:px-14 xl:px-16 py-12 lg:py-16 flex flex-col justify-center">
             <SlotIn>
               <blockquote className="text-navy font-heading text-lg md:text-xl lg:text-2xl font-bold leading-relaxed mb-6 max-w-xl">
                 &ldquo;{t('home.quote_text')}&rdquo;
@@ -216,7 +242,7 @@ export default function Products() {
       <section className="bg-surface py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold text-navy mb-10 lg:mb-12 text-center">
+            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-10 lg:mb-12 text-center">
               {t('home.approach_title')}
             </h2>
           </SlotIn>
@@ -231,32 +257,6 @@ export default function Products() {
                     <h3 className="font-heading font-semibold text-navy text-base mb-2">{item.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
                   </div>
-                </div>
-              </SlotIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── PRODUCT LINES: 2×2; taller tiles + sliders (mock proportions) ── */}
-      <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-2 gap-4 sm:gap-5 md:gap-6">
-            {productLines.map((line, i) => (
-              <SlotIn key={line.name} delay={i * 0.07}>
-                <div>
-                  <div className="relative aspect-[4/3] sm:aspect-[5/4] overflow-hidden rounded-sm bg-surface min-h-[160px] sm:min-h-[180px]">
-                    <ImageSlider
-                      images={line.images}
-                      name={line.name}
-                      interval={4500}
-                      autoPlay
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                  <p className="text-navy text-xs sm:text-sm font-heading font-semibold mt-2.5 pl-0.5 leading-snug">
-                    {line.name}
-                  </p>
                 </div>
               </SlotIn>
             ))}
