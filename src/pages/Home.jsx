@@ -337,34 +337,111 @@ export default function Home() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 24, scale: 0.97 }}
               transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-              className="bg-white rounded-sm shadow-2xl max-w-lg w-full p-5 sm:p-8 relative"
+              className="bg-white rounded-sm shadow-2xl max-w-2xl w-full p-5 sm:p-8 relative max-h-[90vh] overflow-y-auto"
               onClick={e => e.stopPropagation()}
             >
               <button
                 onClick={() => setImpactModal(null)}
-                className="absolute top-4 right-4 text-navy/40 hover:text-navy transition-colors"
+                className="sticky top-0 float-right ml-4 mb-2 w-8 h-8 flex items-center justify-center rounded-full bg-navy/10 hover:bg-navy/20 text-navy transition-colors"
                 aria-label="Close"
               >
-                <X className="w-5 h-5" />
+                <X className="w-4 h-4" />
               </button>
-              <div className="w-10 h-10 bg-teal/10 rounded-sm flex items-center justify-center mb-5">
+
+              <div className="w-10 h-10 bg-teal/10 rounded-sm flex items-center justify-center mb-4">
                 <Shield className="w-5 h-5 text-teal" />
               </div>
-              <h2 className="font-heading font-bold text-navy text-xl mb-1">Affordable Homes</h2>
-              <p className="text-muted-foreground text-sm mb-6">The scale of the global housing crisis</p>
-              <ul className="space-y-3">
-                {[
-                  { stat: '1.1+ billion', detail: 'people live in slums or informal settlements, concentrated primarily in Africa and Asia (≈90%) — UN Habitat Annual Report, 2025' },
-                  { stat: '80%', detail: 'of cities already lack affordable housing for most residents' },
-                  { stat: '70%', detail: 'of the global population will live in cities by 2050, further driving demand beyond current supply capacity — UN Statistics Division, 2022' },
-                  { stat: 'Finance gap', detail: 'Limited access to formal housing finance; insufficient public-sector budgets to close the gap' },
-                ].map((item, i) => (
-                  <li key={i} className="flex gap-3 items-start">
-                    <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[110px]">{item.stat}</span>
-                    <span className="text-navy/80 text-sm leading-relaxed">{item.detail}</span>
-                  </li>
-                ))}
-              </ul>
+              <h2 className="font-heading font-bold text-navy text-xl mb-1">Affordable Housing</h2>
+              <p className="text-muted-foreground text-sm mb-6">The scale of the global housing crisis — UN-Habitat, 2025</p>
+
+              {/* Section 1 — Homelessness */}
+              <div className="mb-6">
+                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-2">People with No Housing (Homelessness)</h3>
+                <ul className="space-y-2">
+                  {[
+                    { stat: '300M+', detail: 'people experiencing homelessness globally (UN-Habitat 2025) — grown significantly due to conflict, urbanization, and affordability crises' },
+                    { stat: '123M+', detail: 'people forcibly displaced by conflict, persecution, and human rights violations as of end-2024 — double the figure from a decade prior' },
+                  ].map((item, i) => (
+                    <li key={i} className="flex gap-3 items-start">
+                      <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[60px]">{item.stat}</span>
+                      <span className="text-navy/80 text-sm leading-relaxed">{item.detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Section 2 — Inadequate Housing */}
+              <div className="mb-6">
+                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-2">People in Inadequate Housing</h3>
+                <ul className="space-y-2">
+                  {[
+                    { stat: '~3 billion', detail: 'people — close to 40% of the world\'s population — caught in an adequate housing crisis: unaffordable prices, poor quality, shortages, or lack of basic services' },
+                    { stat: '268–288M', detail: 'unit housing deficit globally in 2023, up from 251M in 2010 — a ~30% increase in just over a decade' },
+                    { stat: '96,000', detail: 'affordable homes would need to be built every single day between now and 2030 to close the gap (WRI)' },
+                  ].map((item, i) => (
+                    <li key={i} className="flex gap-3 items-start">
+                      <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[80px]">{item.stat}</span>
+                      <span className="text-navy/80 text-sm leading-relaxed">{item.detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Section 3 — Slums */}
+              <div className="mb-6">
+                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-2">People Living in Slums / Informal Settlements</h3>
+                <ul className="space-y-2">
+                  {[
+                    { stat: '1.12 billion', detail: 'global slum population in 2022 — up 130M from 2015, reversing earlier progress (UN SDG Report 2024)' },
+                    { stat: '~25%', detail: 'of the world\'s urban population lives in slum conditions' },
+                  ].map((item, i) => (
+                    <li key={i} className="flex gap-3 items-start">
+                      <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[80px]">{item.stat}</span>
+                      <span className="text-navy/80 text-sm leading-relaxed">{item.detail}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-3 pl-2 space-y-1 text-sm text-navy/70">
+                  <p><span className="font-semibold text-navy">Central & Southern Asia:</span> ~359 million</p>
+                  <p><span className="font-semibold text-navy">Eastern & South-Eastern Asia:</span> ~306 million</p>
+                  <p><span className="font-semibold text-navy">Sub-Saharan Africa:</span> ~230 million</p>
+                </div>
+              </div>
+
+              {/* Section 4 — 2050 Table */}
+              <div className="mb-5">
+                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-3">2050 Projections</h3>
+                <div className="overflow-x-auto rounded-sm border border-navy/10">
+                  <table className="w-full text-xs min-w-[400px]">
+                    <thead>
+                      <tr className="bg-navy text-white">
+                        <th className="py-2 px-3 text-left font-heading font-semibold">Category</th>
+                        <th className="py-2 px-3 text-left font-heading font-semibold border-l border-white/10">Current (2024–25)</th>
+                        <th className="py-2 px-3 text-left font-heading font-semibold border-l border-white/10">Projected 2050</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        { cat: 'Homeless / no housing', now: '~300 million', future: 'Expected to worsen significantly without intervention' },
+                        { cat: 'Inadequate housing', now: '~3 billion', future: 'Cities absorb 2B additional residents; pressure intensifies dramatically' },
+                        { cat: 'Slum / informal dwellers', now: '~1.1 billion', future: 'More than 3 billion — a near-tripling' },
+                        { cat: 'Urban population share', now: '~55–57%', future: '~68–70% of world population in cities' },
+                      ].map((row, i) => (
+                        <tr key={i} className={`border-t border-navy/10 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}`}>
+                          <td className="py-2 px-3 font-semibold text-navy">{row.cat}</td>
+                          <td className="py-2 px-3 text-navy/70 border-l border-navy/10">{row.now}</td>
+                          <td className="py-2 px-3 text-navy/70 border-l border-navy/10">{row.future}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Closing statement */}
+              <p className="text-navy/60 text-xs leading-relaxed italic border-t border-navy/10 pt-4">
+                The UN predicts more than 3 billion people could be living in slums by 2050 — roughly triple today's figure — driven by rapid urbanization in Sub-Saharan Africa and South Asia. Nearly three-quarters of the urban infrastructure that will exist by 2050 has not been built yet. This is one of the defining infrastructure and humanitarian challenges of this century — and a strong structural tailwind for what Othalo is building.
+              </p>
             </motion.div>
           </motion.div>
         )}
