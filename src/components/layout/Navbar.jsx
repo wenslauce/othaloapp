@@ -138,7 +138,7 @@ export default function Navbar() {
             <LanguageSwitcher variant="light" />
             <Button
               asChild
-              className="bg-teal hover:bg-teal-light text-white font-semibold px-6 h-10 rounded-sm text-sm tracking-wide"
+              className="bg-teal hover:bg-teal-light text-white font-semibold px-4 h-8 rounded-[6px] text-xs tracking-wide"
             >
               <Link to="/contact">{t('nav.contact')}</Link>
             </Button>

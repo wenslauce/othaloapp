@@ -37,7 +37,7 @@ export default function About() {
 
       {/* ── VISION / MISSION / VALUES + IMAGE ── */}
       <section className="bg-white">
-        <div className="flex flex-col lg:flex-row lg:items-stretch">
+        <div className="flex flex-col lg:flex-row lg:min-h-[560px]">
           {/* Left: text */}
           <div className="w-full lg:w-1/2 px-8 md:px-12 lg:px-14 py-14 lg:py-20 flex flex-col justify-center">
             <SlotIn>
@@ -57,28 +57,29 @@ export default function About() {
                   <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.values_label')}</h2>
                   <ul className="space-y-1.5">
                     {Array.isArray(valuesItems) && valuesItems.map(item => (
-                      <li key={item} className="text-navy/70 text-base lg:text-lg leading-relaxed">{item}</li>
+                      <li key={item} className="flex items-start gap-2 text-navy/70 text-base lg:text-lg leading-relaxed">
+                        <span className="w-1.5 h-1.5 bg-teal rounded-full flex-shrink-0 mt-2.5" />
+                        {item}
+                      </li>
                     ))}
                   </ul>
                 </div>
                 <Button
                   onClick={() => setVideoOpen(true)}
-                  className="flex items-center gap-2.5 bg-teal hover:bg-teal-light text-white font-semibold px-6 h-10 rounded-sm text-sm self-start"
+                  className="flex items-center gap-2.5 bg-teal hover:bg-teal-light text-white font-semibold px-5 h-8 rounded-[6px] text-xs self-start uppercase tracking-wide"
                 >
-                  <div className="w-6 h-6 rounded-full border-2 border-white/40 flex items-center justify-center flex-shrink-0">
-                    <Play className="w-2.5 h-2.5 fill-white text-white ml-0.5" />
-                  </div>
+                  <Play className="w-3 h-3 fill-white" />
                   Discover
                 </Button>
               </div>
             </SlotIn>
           </div>
           {/* Right: kids image */}
-          <div className="w-full lg:w-1/2 min-h-[280px] lg:min-h-[420px]">
+          <div className="w-full lg:w-1/2 min-h-[300px] lg:min-h-0">
             <img
               src="/images/Kids crop.jpg"
               alt="Community impact"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </div>
@@ -86,13 +87,13 @@ export default function About() {
 
       {/* ── OUR STORY ── */}
       <section className="bg-white">
-        <div className="flex flex-col lg:flex-row lg:items-stretch">
+        <div className="flex flex-col lg:flex-row lg:min-h-[480px]">
           {/* Left: slum image */}
-          <div className="w-full lg:w-2/5 min-h-[240px] lg:min-h-[400px]">
+          <div className="w-full lg:w-2/5 min-h-[280px] lg:min-h-0">
             <img
               src="/images/Slum house crop.png"
               alt="Housing challenges"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
           {/* Right: quote */}
@@ -125,7 +126,7 @@ export default function About() {
             <div className="text-center mb-10">
               <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">Team</h2>
               <p className="text-navy/70 text-sm lg:text-base max-w-2xl mx-auto leading-relaxed">
-                "A diverse group of innovators, engineers, and visionaries united by the mission to create sustainable housing solutions"
+                "A diverse group of innovators, engineers, and visionaries united by the mission to create sustainable housing solutions."
               </p>
             </div>
           </SlotIn>
@@ -177,7 +178,7 @@ export default function About() {
           <SlotIn>
             <h2 className="font-heading font-bold text-white text-2xl lg:text-3xl mb-1.5 leading-tight">Our culture</h2>
             <p className="text-white/70 text-sm lg:text-base mb-10 max-w-2xl">
-              What shapes our approach to work and guides us in making a positive impact on the world
+              What shapes our approach to work and guides us in making a positive impact on the world.
             </p>
           </SlotIn>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10">
@@ -226,7 +227,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── VIDEO MODAL ── */}
+      {/* ── VIDEO MODAL (YouTube) ── */}
       <AnimatePresence>
         {videoOpen && (
           <motion.div
@@ -242,6 +243,7 @@ export default function About() {
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
               className="relative w-full max-w-4xl rounded-sm overflow-hidden shadow-2xl"
+              style={{ aspectRatio: '16/9' }}
               onClick={e => e.stopPropagation()}
             >
               <button
@@ -251,12 +253,12 @@ export default function About() {
               >
                 <X className="w-5 h-5" />
               </button>
-              <video
-                src="/Building of Othalo housing 30s.mp4"
-                autoPlay
-                controls
-                playsInline
-                className="w-full h-auto block"
+              <iframe
+                src="https://www.youtube.com/embed/alKO9meYgrU?autoplay=1&rel=0"
+                title="Othalo — Building homes from recycled plastic"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
               />
             </motion.div>
           </motion.div>

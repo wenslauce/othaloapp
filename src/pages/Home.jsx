@@ -123,12 +123,10 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <Button
                 asChild
-                size="lg"
-                className="bg-teal hover:bg-teal-light text-white font-semibold px-8 h-11 rounded-sm text-sm uppercase tracking-wide"
+                className="bg-teal hover:bg-teal-light text-white font-semibold px-5 h-8 rounded-[6px] text-xs uppercase tracking-wide"
               >
                 <Link to="/products">
                   {t('home.hero_cta1')}
-                  <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
             </div>
@@ -196,20 +194,20 @@ export default function Home() {
             </h2>
             <div className="space-y-6">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <h3 className="font-heading text-lg lg:text-xl font-semibold">Governments</h3>
-                <Button asChild variant="outline" className="bg-white/15 hover:bg-white/25 text-white border-white/30 font-semibold px-6 h-10 rounded-sm self-start sm:self-auto uppercase text-xs tracking-wide">
+                <h3 className="font-heading text-lg font-semibold">Governments — Municipalities</h3>
+                <Button asChild variant="outline" className="bg-[#E7E9EC] hover:bg-white text-teal border-0 font-semibold px-4 h-8 rounded-[6px] self-start sm:self-auto uppercase text-xs tracking-wide">
                   <Link to="/solutions/governments">LEARN MORE</Link>
                 </Button>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <h3 className="font-heading text-lg lg:text-xl font-semibold">Housing Developers</h3>
-                <Button asChild variant="outline" className="bg-white/15 hover:bg-white/25 text-white border-white/30 font-semibold px-6 h-10 rounded-sm self-start sm:self-auto uppercase text-xs tracking-wide">
+                <h3 className="font-heading text-lg font-semibold">Housing Developers</h3>
+                <Button asChild variant="outline" className="bg-[#E7E9EC] hover:bg-white text-teal border-0 font-semibold px-4 h-8 rounded-[6px] self-start sm:self-auto uppercase text-xs tracking-wide">
                   <Link to="/solutions/housing-developers">LEARN MORE</Link>
                 </Button>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <h3 className="font-heading text-lg lg:text-xl font-semibold">Corporations</h3>
-                <Button asChild variant="outline" className="bg-white/15 hover:bg-white/25 text-white border-white/30 font-semibold px-6 h-10 rounded-sm self-start sm:self-auto uppercase text-xs tracking-wide">
+                <h3 className="font-heading text-lg font-semibold">Corporations</h3>
+                <Button asChild variant="outline" className="bg-[#E7E9EC] hover:bg-white text-teal border-0 font-semibold px-4 h-8 rounded-[6px] self-start sm:self-auto uppercase text-xs tracking-wide">
                   <Link to="/solutions/corporations">LEARN MORE</Link>
                 </Button>
               </div>
@@ -245,20 +243,20 @@ export default function Home() {
             />
           </SlotIn>
         </div>
-        <div className="w-full lg:w-1/2 bg-surface flex flex-col justify-center px-6 py-12 sm:px-10 lg:px-14 xl:px-16 lg:py-14">
+        <div className="w-full lg:w-1/2 bg-[#E7E9EC] flex flex-col justify-center px-6 py-12 sm:px-10 lg:px-14 xl:px-16 lg:py-14">
           <SlotIn delay={0.12}>
             <div className="max-w-xl">
               <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-8 leading-tight">
-                {t('products.dual_title')}
+                Othalo using one global challenge to solve another
               </h2>
               <div className="space-y-7">
                 {Array.isArray(dualImpactItems) && dualImpactItems.map((item, idx) => (
-                  <div key={item.title} className="border-l-2 border-teal pl-4">
+                  <div key={item.title}>
                     <h3 className="font-heading font-semibold text-navy text-base mb-1 leading-tight">{item.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed mb-3">{item.desc}</p>
                     <Button
                       size="sm"
-                      className="bg-teal hover:bg-teal-light text-white font-semibold px-4 h-9 rounded-sm text-xs uppercase tracking-wide"
+                      className="bg-teal hover:bg-teal-light text-white font-semibold px-4 h-8 rounded-[6px] text-xs uppercase tracking-wide"
                       onClick={() => setImpactModal(idx === 0 ? 'plastic' : 'housing')}
                     >
                       {t('solutions.learn_more')}

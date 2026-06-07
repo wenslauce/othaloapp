@@ -33,7 +33,7 @@
     "products": "Products",
     "contact": "Contact",
     "solutions_label": "Solutions",
-    "gov": "Governments",
+    "gov": "Governments — Municipalities",
     "gov_desc": "Urban planning at scale",
     "dev": "Housing Developers",
     "dev_desc": "Rapid ROI & speed-to-market",
@@ -45,7 +45,7 @@
   "home": {
     "hero_badge": "Patented Technology",
     "hero_title": "Affordable, sustainable, prefabricated modular housing solutions",
-    "hero_subtitle": "Our patented technology delivers flexible design, using panels made from recycled plastic",
+    "hero_subtitle": "Our patented technology delivers flexible design, using panels made from recycled plastic.",
     "hero_cta1": "Products",
     "hero_cta2": "View the Technology",
     "tech_label": "Core Technology",
@@ -257,10 +257,10 @@
     "tech_label": "Technical Advantage",
     "tech_title": "Market leading technology and innovation",
     "panel_features": [
-      { "title": "Cost Effective", "desc": "Use of plastic waste, Limited manpower and machinery needed on site, Fast construction" },
-      { "title": "Quality and durability", "desc": "60 years lifespan, x7 stronger than concrete, Insulation x3 more effective than concrete" },
-      { "title": "Safety", "desc": "Fire resistant, Hurricane & earthquake resistant" },
-      { "title": "Carbon efficient", "desc": "Made from 100% recycled plastic, No cement or steel used, Low water use in construction" }
+      { "title": "Cost Effective", "desc": "Pre-fabricated offsite with low waste. Limited manpower and machinery needed on site. Build 100% from cost effective recycled plastic material.\n• Fast Construction: a 2-bedroom house can be set up within one day due to market leading interlock assembling technology." },
+      { "title": "Quality and durability", "desc": "60 years lifespan. x7 stronger than concrete. Insulation x3 more effective than concrete." },
+      { "title": "Safety", "desc": "Fire resistant. Hurricane & earthquake resistant." },
+      { "title": "Carbon negative / Highly Sustainable", "desc": "Made from 100% recycled plastic. No cement or steel used. Low water use in construction." }
     ],
     "material_label": "Material",
     "material_value": "100% Recycled Plastic",
@@ -306,8 +306,8 @@
     "dual_label": "Dual Impact",
     "dual_title": "Using one global challenge to solve another",
     "dual_items": [
-      { "title": "Plastic waste", "desc": "A global liability, over 9 billion tons already accumulated in the environment." },
-      { "title": "Affordable homes", "desc": "An ever-rising crisis: 1.6 billion people live without adequate housing." }
+      { "title": "Plastic waste", "desc": "A global liability: over 10 billion tonnes already accumulated in the environment." },
+      { "title": "Affordable housing", "desc": "3.4 billion people globally lack adequate housing (UN-Habitat, 2026)." }
     ]
   },
   "solutions": {
@@ -320,7 +320,7 @@
     "contact_us": "Contact Us",
     "cards": [
       {
-        "label": "Governments",
+        "label": "Governments — Municipalities",
         "tag": "Public Sector",
         "headline": "Housing at the scale and speed governments need",
         "desc": "Affordable homes from recycled plastic for scale. Prefabricated modular systems with UN-endorsed, patented technology.",
@@ -365,7 +365,7 @@
     ]
   },
   "governments": {
-    "label": "Solutions — Governments",
+    "label": "Solutions — Governments & Municipalities",
     "title": "Housing at the scale governments need",
     "subtitle": "Affordable, disaster-resilient, SDG-aligned housing deployed at national scale — without the delays and costs of traditional construction.",
     "cta1": "Request a Government Brief",

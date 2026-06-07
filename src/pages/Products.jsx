@@ -192,54 +192,8 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── QUOTE BANNER: portrait left / grey right panel ── */}
-      <section className="bg-[#E7E9EC] py-0">
-        <div className="flex flex-col lg:flex-row lg:items-stretch">
-          {/* Left: portrait */}
-          <div className="w-full lg:w-1/2 relative min-h-[min(44vh,360px)] lg:min-h-[min(52vh,560px)] overflow-hidden">
-            <img
-              src="/images/vincent.jpg"
-              alt="Dr. Vincent Kitio"
-              className="absolute inset-0 size-full object-cover object-top lg:object-center"
-            />
-            {/* Subtle bottom gradient — keeps text legible */}
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
-            <div className="relative z-10 p-8 lg:p-10 flex flex-col justify-end min-h-[min(44vh,360px)] lg:min-h-full">
-              <div className="inline-flex items-center gap-2 mb-2">
-                <img src="/images/logo.png" alt="Othalo" className="h-7 w-auto brightness-0 invert" />
-              </div>
-              <p className="text-white/60 text-xs font-heading uppercase tracking-widest">Mission</p>
-            </div>
-          </div>
-          {/* Right: grey panel, navy quote */}
-          <div className="w-full lg:w-1/2 bg-[#E7E9EC] px-8 md:px-12 lg:px-14 xl:px-16 py-12 lg:py-16 flex flex-col justify-center">
-            <SlotIn>
-              <blockquote className="text-navy font-heading text-lg md:text-xl lg:text-2xl font-bold leading-relaxed mb-6 max-w-xl">
-                &ldquo;{t('home.quote_text')}&rdquo;
-              </blockquote>
-              <div className="mb-8">
-                <p className="text-teal font-semibold text-sm font-heading">{t('home.quote_author')}</p>
-                <p className="text-navy/50 text-xs">{t('home.quote_title')}</p>
-              </div>
-              <Button
-                asChild
-                className="bg-navy hover:bg-navy/90 text-white font-semibold px-7 h-10 rounded-sm self-start uppercase tracking-wide text-xs"
-              >
-                <a
-                  href="https://unhabitat.org/news/06-oct-2020/un-habitat-aims-to-use-plastic-waste-to-support-housing-for-all"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Learn More
-                </a>
-              </Button>
-            </SlotIn>
-          </div>
-        </div>
-      </section>
-
       {/* ── BUILD THE FUTURE: 4 numbered items 2×2 ── */}
-      <section className="bg-surface py-16 lg:py-24">
+      <section className="bg-white py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <SlotIn>
             <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-10 lg:mb-12 text-center">
@@ -268,13 +222,12 @@ export default function Products() {
       <section className="bg-teal py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <SlotIn>
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold text-white mb-8 lg:mb-10 text-center">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mb-8 lg:mb-10 text-center">
               {t('products.comparison_title')}
             </h2>
-            </SlotIn>
-          
+          </SlotIn>
           <SlotIn delay={0.1}>
-          <div className="overflow-x-auto rounded-sm border border-white/20 bg-white shadow-sm -mx-2 sm:mx-0">
+            <div className="overflow-x-auto rounded-sm border border-white/20 bg-white shadow-sm -mx-2 sm:mx-0">
               <table className="w-full text-xs sm:text-sm min-w-[480px] table-fixed">
                 <thead>
                   <tr className="bg-navy text-white text-xs font-semibold tracking-wide">
@@ -291,9 +244,7 @@ export default function Products() {
                 <tbody>
                   {Array.isArray(comparisonData) && comparisonData.map((row, i) => (
                     <tr key={row.p} className={`border-b border-navy/10 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
-                      <td className="w-1/5 py-3 px-2 sm:px-4 text-left font-semibold text-navy/90 font-heading text-xs">
-                        {row.p}
-                      </td>
+                      <td className="w-1/5 py-3 px-2 sm:px-4 text-left font-semibold text-navy/90 font-heading text-xs">{row.p}</td>
                       <td className="w-1/5 py-3 px-2 sm:px-4 text-center text-sm border-l border-navy/20">
                         {row.o === 'full' && <span className="text-teal font-bold">✓</span>}
                         {row.o === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
@@ -320,6 +271,51 @@ export default function Products() {
               <span className="flex items-center gap-1"><span className="font-bold text-white text-sm">(✓)</span> {t('products.partially_fulfilled')}</span>
             </div>
           </SlotIn>
+        </div>
+      </section>
+
+      {/* ── QUOTE BANNER: portrait left / grey right panel — last section ── */}
+      <section className="bg-[#E7E9EC] py-0">
+        <div className="flex flex-col lg:flex-row lg:items-stretch">
+          {/* Left: portrait */}
+          <div className="w-full lg:w-1/2 relative min-h-[min(44vh,360px)] lg:min-h-[min(52vh,520px)] overflow-hidden">
+            <img
+              src="/images/vincent.jpg"
+              alt="Dr. Vincent Kitio"
+              className="absolute inset-0 size-full object-cover object-top lg:object-center"
+            />
+            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+            <div className="relative z-10 p-8 lg:p-10 flex flex-col justify-end min-h-[min(44vh,360px)] lg:min-h-full">
+              <div className="inline-flex items-center gap-2 mb-2">
+                <img src="/images/logo.png" alt="Othalo" className="h-7 w-auto brightness-0 invert" />
+              </div>
+              <p className="text-white/60 text-xs font-heading uppercase tracking-widest">Mission</p>
+            </div>
+          </div>
+          {/* Right: grey panel, navy quote */}
+          <div className="w-full lg:w-1/2 bg-[#E7E9EC] px-8 md:px-12 lg:px-14 xl:px-16 py-12 lg:py-16 flex flex-col justify-center">
+            <SlotIn>
+              <blockquote className="text-navy font-heading text-lg md:text-xl lg:text-2xl font-bold leading-relaxed mb-6 max-w-xl">
+                &ldquo;{t('home.quote_text')}&rdquo;
+              </blockquote>
+              <div className="mb-8">
+                <p className="text-teal font-semibold text-sm font-heading">{t('home.quote_author')}</p>
+                <p className="text-navy/50 text-xs">{t('home.quote_title')}</p>
+              </div>
+              <Button
+                asChild
+                className="bg-navy hover:bg-navy/90 text-white font-semibold px-4 h-8 rounded-[6px] self-start uppercase tracking-wide text-xs"
+              >
+                <a
+                  href="https://unhabitat.org/news/06-oct-2020/un-habitat-aims-to-use-plastic-waste-to-support-housing-for-all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Learn More
+                </a>
+              </Button>
+            </SlotIn>
+          </div>
         </div>
       </section>
 

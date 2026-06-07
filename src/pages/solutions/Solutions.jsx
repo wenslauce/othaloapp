@@ -91,11 +91,10 @@ export default function Solutions() {
                     <div className="flex flex-wrap gap-3">
                       <Button
                         asChild
-                        className="bg-teal hover:bg-teal-light text-white font-semibold px-6 h-11 rounded-sm text-sm"
+                        className="bg-teal hover:bg-teal-light text-white font-semibold px-4 h-8 rounded-[6px] text-xs uppercase tracking-wide"
                       >
                         <Link to={sol.href}>
                           {t('solutions.learn_more')}
-                          <ChevronRight className="ml-1 w-4 h-4" />
                         </Link>
                       </Button>
                     </div>
