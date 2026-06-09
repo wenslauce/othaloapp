@@ -133,6 +133,32 @@ export default function Products() {
         )}
       </AnimatePresence>
 
+      {/* ── PRODUCT LINES: 2×2 grid — shown right after technology ── */}
+      <section className="bg-surface py-12 lg:py-16">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-2 gap-4 sm:gap-5 md:gap-6">
+            {productLines.map((line, i) => (
+              <SlotIn key={line.name} delay={i * 0.07}>
+                <div>
+                  <div className="relative aspect-[4/3] sm:aspect-[5/4] overflow-hidden rounded-sm bg-white min-h-[160px] sm:min-h-[180px]">
+                    <ImageSlider
+                      images={line.images}
+                      name={line.name}
+                      interval={4500}
+                      autoPlay
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <p className="text-navy text-xs sm:text-sm font-heading font-semibold mt-2.5 pl-0.5 leading-snug">
+                    {line.name}
+                  </p>
+                </div>
+              </SlotIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── TECHNOLOGY: centered title + 6-icon grid ── */}
       <section className="bg-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -162,32 +188,6 @@ export default function Products() {
                 </SlotIn>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* ── PRODUCT LINES: 2×2 grid — shown right after technology ── */}
-      <section className="bg-surface py-12 lg:py-16">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-2 gap-4 sm:gap-5 md:gap-6">
-            {productLines.map((line, i) => (
-              <SlotIn key={line.name} delay={i * 0.07}>
-                <div>
-                  <div className="relative aspect-[4/3] sm:aspect-[5/4] overflow-hidden rounded-sm bg-white min-h-[160px] sm:min-h-[180px]">
-                    <ImageSlider
-                      images={line.images}
-                      name={line.name}
-                      interval={4500}
-                      autoPlay
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                  <p className="text-navy text-xs sm:text-sm font-heading font-semibold mt-2.5 pl-0.5 leading-snug">
-                    {line.name}
-                  </p>
-                </div>
-              </SlotIn>
-            ))}
           </div>
         </div>
       </section>

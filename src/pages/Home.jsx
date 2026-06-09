@@ -140,12 +140,15 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14 items-center">
             {/* Left: 3D Panel Image */}
             <SlotIn>
-              <div className="bg-white p-8 lg:p-12 rounded-sm border border-tech-slate shadow-sm">
+              <div className="bg-white p-8 lg:p-12 rounded-sm border border-tech-slate shadow-sm relative">
                 <img
                   src="/images/Panel-3D-v2.jpg"
                   alt="Othalo 3D Panel Exploded View"
                   className="w-full h-auto object-contain"
                 />
+                <div className="absolute top-5 left-5 bg-navy/80 backdrop-blur-sm text-white text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-sm">
+                  Prefabricated Panels
+                </div>
               </div>
             </SlotIn>
 
