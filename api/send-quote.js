@@ -7,7 +7,7 @@ import { quoteConfirmationEmail } from './templates/quote-confirmation.js';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const SALES_EMAIL = process.env.SALES_EMAIL || 'sales@othalo.com';
+const SALES_EMAIL = process.env.SALES_EMAIL || 'contact@othalo.com'; // Temporarily routed to contact@othalo.com
 const FROM_EMAIL = process.env.FROM_EMAIL || 'quotes@othalo.com';
 const FROM_NAME = 'Othalo Quote System';
 

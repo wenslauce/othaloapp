@@ -30,7 +30,7 @@ function FieldError({ msg }) {
 }
 
 const INITIAL_FORM = {
-  name: '', email: '', dialCode: '', phone: '', org: '',
+  name: '', email: '', countryCode: '', dialCode: '', phone: '', org: '',
   country: '', profileType: '', product: '', units: '', message: ''
 };
 
@@ -55,7 +55,7 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
     const errs = {};
     if (!form.name.trim()) errs.name = t('quote.err_name');
     if (!form.email || !validateEmail(form.email)) errs.email = t('quote.err_email');
-    if (form.phone && !validatePhone(form.phone)) errs.phone = t('quote.err_phone');
+    if (form.phone && !validatePhone(form.phone, form.countryCode)) errs.phone = t('quote.err_phone');
     if (!form.country) errs.country = t('quote.err_country');
     if (!form.profileType) errs.profileType = t('quote.err_profile');
     if (!form.product) errs.product = t('quote.err_product');
@@ -194,13 +194,19 @@ export default function GetQuoteModal({ open, onClose, context = 'general' }) {
                   <div className="space-y-1.5">
                     <Label className="text-[10px] font-bold uppercase tracking-wider text-navy opacity-70">{t('quote.phone')}</Label>
                     <div className="flex gap-1.5">
-                      <Select onValueChange={v => set('dialCode', v)} value={form.dialCode}>
+                      <Select 
+                        onValueChange={v => {
+                          const country = COUNTRIES.find(c => c.code === v);
+                          setForm(f => ({ ...f, countryCode: v, dialCode: country ? country.dial : '' }));
+                        }} 
+                        value={form.countryCode}
+                      >
                         <SelectTrigger className="w-20 h-9 rounded-sm text-[10px] flex-shrink-0">
                           <SelectValue placeholder="+00" />
                         </SelectTrigger>
                         <SelectContent className="max-h-52">
                           {COUNTRIES.map(c => (
-                            <SelectItem key={c.code} value={c.dial} className="text-xs">{c.dial} {c.code}</SelectItem>
+                            <SelectItem key={c.code} value={c.code} className="text-xs">{c.dial} {c.code}</SelectItem>
                           ))}
                         </SelectContent>
                       </Select>

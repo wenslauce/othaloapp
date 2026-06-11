@@ -1,3 +1,5 @@
+import { isValidPhoneNumber } from 'libphonenumber-js';
+
 // Countries data
 // Full list of countries with dial codes for phone validation
 export const COUNTRIES = [
@@ -97,10 +99,15 @@ export const COUNTRIES = [
   { name: 'Zimbabwe', code: 'ZW', dial: '+263' },
 ];
 
-export function validatePhone(phone) {
+export function validatePhone(phone, countryCode) {
   if (!phone) return true; // phone is optional
-  const digits = phone.replace(/[\s\-().]/g, '');
-  return /^\+?[0-9]{6,15}$/.test(digits);
+  try {
+    // Requires a country code (e.g. 'US', 'GB') for local numbers, 
+    // or validates absolute numbers starting with '+' even without a country code.
+    return isValidPhoneNumber(phone, countryCode);
+  } catch (err) {
+    return false;
+  }
 }
 
 export function validateEmail(email) {

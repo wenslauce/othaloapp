@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import SlotIn from '@/components/shared/SlotIn';
 import SEOHead from '@/components/shared/SEOHead';
 import { useTranslation } from 'react-i18next';
-import { validatePhone, validateEmail } from '@/lib/countries';
+import { COUNTRIES, validatePhone, validateEmail } from '@/lib/countries';
 import { Turnstile } from '@marsidev/react-turnstile';
 
 function FieldError({ msg }) {
@@ -32,7 +32,9 @@ const REASONS = [
   { value: 'careers',     label: 'Careers' },
 ];
 
-const INITIAL_FORM = { name: '', email: '', phone: '', org: '', title: '', reason: '', message: '' };
+const INITIAL_FORM = {
+  name: '', email: '', countryCode: '', dialCode: '', phone: '', org: '', title: '', reason: '', message: '',
+};
 
 export default function Corporations() {
   const { t } = useTranslation();
@@ -53,7 +55,7 @@ export default function Corporations() {
     const errs = {};
     if (!form.name.trim()) errs.name = t('contact.err_name');
     if (!form.email || !validateEmail(form.email)) errs.email = t('contact.err_email');
-    if (form.phone && !validatePhone(form.phone)) errs.phone = t('contact.err_phone');
+    if (form.phone && !validatePhone(form.phone, form.countryCode)) errs.phone = t('contact.err_phone');
     if (!form.org.trim()) errs.org = 'Organisation is required';
     if (!form.reason) errs.reason = 'Please select a reason';
     if (!form.message.trim() || form.message.trim().length < 10) errs.message = t('contact.err_message');
@@ -185,7 +187,25 @@ export default function Corporations() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">Phone</Label>
-                      <Input value={form.phone} onChange={e => set('phone', e.target.value.replace(/[^0-9\s\-().+]/g, ''))} placeholder="+1 234 567 8900" className={`h-10 rounded-sm ${errors.phone ? 'border-destructive' : ''}`} />
+                      <div className="flex gap-2">
+                        <Select 
+                          onValueChange={v => {
+                            const country = COUNTRIES.find(c => c.code === v);
+                            setForm(f => ({ ...f, countryCode: v, dialCode: country ? country.dial : '' }));
+                          }} 
+                          value={form.countryCode}
+                        >
+                          <SelectTrigger className="w-[100px] h-10 rounded-sm text-xs flex-shrink-0">
+                            <SelectValue placeholder="+00" />
+                          </SelectTrigger>
+                          <SelectContent className="max-h-52">
+                            {COUNTRIES.map(c => (
+                              <SelectItem key={c.code} value={c.code} className="text-xs">{c.dial} {c.code}</SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                        <Input value={form.phone} onChange={e => set('phone', e.target.value.replace(/[^0-9\s\-().]/g, ''))} placeholder="Phone number" className={`h-10 rounded-sm flex-1 ${errors.phone ? 'border-destructive' : ''}`} />
+                      </div>
                       <FieldError msg={errors.phone} />
                     </div>
                     <div>
