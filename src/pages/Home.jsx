@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, Recycle, Clock, Shield, Leaf, ChevronRight, DollarSign, Award, X } from 'lucide-react';
+import { Recycle, Clock, Shield, Leaf, DollarSign, Award, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import ImageSlider from '@/components/shared/ImageSlider';
@@ -35,6 +35,8 @@ export default function Home() {
 
   const comparisonRows = t('home.comparison.rows', { returnObjects: true });
   const dualImpactItems = t('products.dual_items', { returnObjects: true });
+  const panelFeatures = t('products.panel_features', { returnObjects: true });
+  const featureIcons = [DollarSign, Clock, Award, Shield, Recycle];
 
 
   const galleryCategories = [
@@ -159,13 +161,8 @@ export default function Home() {
                   {t('products.comparison_title')}
                 </h2>
                 <div className="space-y-7">
-                  {[
-                    { icon: DollarSign, title: t('products.panel_features.0.title'), desc: t('products.panel_features.0.desc') },
-                    { icon: Award, title: t('products.panel_features.1.title'), desc: t('products.panel_features.1.desc') },
-                    { icon: Shield, title: t('products.panel_features.2.title'), desc: t('products.panel_features.2.desc') },
-                    { icon: Recycle, title: t('products.panel_features.3.title'), desc: t('products.panel_features.3.desc') },
-                  ].map((f, i) => {
-                    const Icon = f.icon;
+                  {Array.isArray(panelFeatures) && panelFeatures.map((f, i) => {
+                    const Icon = featureIcons[i] || Recycle;
                     return (
                       <SlotIn key={f.title} delay={i * 0.1}>
                         <div className="flex gap-4 group">

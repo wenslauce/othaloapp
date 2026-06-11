@@ -262,10 +262,11 @@
     "tech_label": "Ventaja técnica",
     "tech_title": "Tecnología e innovación líder en el mercado",
     "panel_features": [
-      { "title": "Rentable", "desc": "Uso de residuos plásticos, mano de obra y maquinaria limitada en el sitio, metodología de construcción rápida." },
+      { "title": "Rentable", "desc": "Prefabricado fuera del sitio con pocos residuos. Mano de obra y maquinaria limitadas en el sitio. Construido al 100% con material plástico reciclado rentable." },
+      { "title": "Construcción rápida", "desc": "Una casa de 2 dormitorios se puede instalar en un día gracias a la tecnología de ensamblaje entrelazado líder en el mercado." },
       { "title": "Calidad y durabilidad", "desc": "Vida útil de 60 años, 7 veces más fuerte que el hormigón, aislamiento 3 veces más efectivo que el hormigón." },
       { "title": "Seguridad", "desc": "Resistente al fuego, huracanes y terremotos. Probado según estándares internacionales." },
-      { "title": "Eficiencia de carbono", "desc": "Fabricado con plástico 100% reciclado. Sin cemento ni acero. Bajo uso de agua en la construcción." }
+      { "title": "Altamente sostenible", "desc": "Sin cemento ni acero. Bajo uso de agua en la construcción." }
     ],
     "material_label": "Material",
     "material_value": "Plástico 100% reciclado",

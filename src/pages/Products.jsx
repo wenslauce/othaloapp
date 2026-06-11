@@ -14,7 +14,6 @@ export default function Products() {
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [videoOpen, setVideoOpen] = useState(false);
 
-  const comparisonData = t('products.comparison_rows', { returnObjects: true });
 
   // 6 tech features for the icon grid
   const techFeatures = [
@@ -69,10 +68,10 @@ export default function Products() {
             </p>
             <Button
               onClick={() => setVideoOpen(true)}
-              className="flex items-center gap-3 bg-white text-navy hover:bg-white/90 font-semibold px-6 h-11 rounded-sm text-sm shadow-sm border-0"
+              className="flex items-center gap-3 bg-teal hover:bg-teal-light text-white font-semibold px-5 h-8 rounded-[6px] text-xs shadow-sm border-0 uppercase tracking-wide"
             >
-              <div className="w-7 h-7 rounded-full border-2 border-navy/25 flex items-center justify-center flex-shrink-0">
-                <Play className="w-3 h-3 fill-navy text-navy ml-0.5" />
+              <div className="w-5 h-5 rounded-full border-2 border-white/40 flex items-center justify-center flex-shrink-0">
+                <Play className="w-2.5 h-2.5 fill-white text-white ml-0.5" />
               </div>
               See how it works
             </Button>
@@ -86,11 +85,11 @@ export default function Products() {
             className="absolute inset-0 size-full object-cover"
           />
           {/* UN-Habitat Endorsed Badge Overlay */}
-          <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 max-w-[160px] md:max-w-[200px] lg:max-w-[220px]">
+          <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 max-w-[200px] md:max-w-[260px] lg:max-w-[300px]">
             <img
               src="/images/UN_HABITAT_ENDORSED.png"
               alt="Endorsed by UN-Habitat"
-              className="w-full h-auto drop-shadow-lg"
+              className="w-full h-auto drop-shadow-xl"
             />
           </div>
         </div>
@@ -193,10 +192,10 @@ export default function Products() {
       </section>
 
       {/* ── BUILD THE FUTURE: 4 numbered items 2×2 ── */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-teal py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-10 lg:mb-12 text-center">
+            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-white mb-10 lg:mb-12 text-center">
               {t('home.approach_title')}
             </h2>
           </SlotIn>
@@ -204,12 +203,12 @@ export default function Products() {
             {Array.isArray(approachItems) && approachItems.map((item, i) => (
               <SlotIn key={item.title} delay={i * 0.08}>
                 <div className="flex gap-4">
-                  <span className="font-heading font-bold text-teal text-xl leading-none flex-shrink-0 w-7">
+                  <span className="font-heading font-bold text-white/60 text-xl leading-none flex-shrink-0 w-7">
                     {i + 1}
                   </span>
                   <div>
-                    <h3 className="font-heading font-semibold text-navy text-base mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                    <h3 className="font-heading font-bold text-white text-base mb-2">{item.title}</h3>
+                    <p className="text-white/80 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               </SlotIn>
@@ -218,57 +217,21 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── COMPARISON TABLE ── */}
-      <section className="bg-teal py-16 lg:py-24">
+      {/* ── COMPARISON IMAGE ── */}
+      <section className="bg-white py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <SlotIn>
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mb-8 lg:mb-10 text-center">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mb-8 lg:mb-10 text-center">
               {t('products.comparison_title')}
             </h2>
           </SlotIn>
           <SlotIn delay={0.1}>
-            <div className="overflow-x-auto rounded-sm border border-white/20 bg-white shadow-sm -mx-2 sm:mx-0">
-              <table className="w-full text-xs sm:text-sm min-w-[480px] table-fixed">
-                <thead>
-                  <tr className="bg-navy text-white text-xs font-semibold tracking-wide">
-                    {t('products.comparison_headers', { returnObjects: true }).map((header, idx) => (
-                      <th
-                        key={header}
-                        className={`w-1/5 py-3 px-2 sm:px-4 font-heading border-l border-navy/20 first:border-l-0 ${idx === 0 ? 'text-left' : 'text-center'}`}
-                      >
-                        {header}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {Array.isArray(comparisonData) && comparisonData.map((row, i) => (
-                    <tr key={row.p} className={`border-b border-navy/10 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
-                      <td className="w-1/5 py-3 px-2 sm:px-4 text-left font-semibold text-navy/90 font-heading text-xs">{row.p}</td>
-                      <td className="w-1/5 py-3 px-2 sm:px-4 text-center text-sm border-l border-navy/20">
-                        {row.o === 'full' && <span className="text-teal font-bold">✓</span>}
-                        {row.o === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
-                      </td>
-                      <td className="w-1/5 py-3 px-2 sm:px-4 text-center text-sm border-l border-navy/20">
-                        {row.d === 'full' && <span className="text-teal font-bold">✓</span>}
-                        {row.d === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
-                      </td>
-                      <td className="w-1/5 py-3 px-2 sm:px-4 text-center text-sm border-l border-navy/20">
-                        {row.r === 'full' && <span className="text-teal font-bold">✓</span>}
-                        {row.r === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
-                      </td>
-                      <td className="w-1/5 py-3 px-2 sm:px-4 text-center text-sm border-l border-navy/20">
-                        {row.t === 'full' && <span className="text-teal font-bold">✓</span>}
-                        {row.t === 'partial' && <span className="text-teal/70 font-bold">(✓)</span>}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <div className="mt-5 flex justify-end text-white/90 text-xs gap-4 font-medium font-heading">
-              <span className="flex items-center gap-1"><span className="font-bold text-white text-sm">✓</span> {t('products.fulfilled')}</span>
-              <span className="flex items-center gap-1"><span className="font-bold text-white text-sm">(✓)</span> {t('products.partially_fulfilled')}</span>
+            <div className="overflow-hidden rounded-sm border-2 border-navy/20 shadow-md">
+              <img
+                src="/images/Comparison different solutions vs Othalo.png"
+                alt="Comparison of different housing solutions vs Othalo"
+                className="w-full h-auto block"
+              />
             </div>
           </SlotIn>
         </div>

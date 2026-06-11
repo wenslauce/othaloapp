@@ -1,6 +1,5 @@
 // About page
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Linkedin, X, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -20,7 +19,7 @@ export default function About() {
     { name: t('about.team_members.bengt.name'),     title: t('about.team_members.bengt.title'),     img: '/images/bengt-erling.webp',     linkedin: 'https://www.linkedin.com/in/bengt-erling-berg-a4831b3a/', slug: 'bengt-erling-berg' },
     { name: t('about.team_members.stephane.name'),  title: t('about.team_members.stephane.title'),  img: '/images/Stephane-headshot.jpg', linkedin: 'https://www.linkedin.com/in/stephanebernard-iam/', slug: 'stephane-bernard' },
     { name: t('about.team_members.wenslauce.name'), title: t('about.team_members.wenslauce.title'), img: '/images/wenslauce-chengo.webp', linkedin: 'https://www.linkedin.com/in/chengo-wenslauce/', slug: 'wenslauce-chengo' },
-    { name: t('about.team_members.meranda.name'),   title: t('about.team_members.meranda.title'),   img: '/images/meranda-chan.jpg',       linkedin: 'https://www.linkedin.com/in/meranda-chan/', slug: 'meranda-chan' },
+    { name: t('about.team_members.meranda.name'),   title: t('about.team_members.meranda.title'),   img: '/images/meranda-chan.jpg',       linkedin: 'https://www.linkedin.com/in/meranda-chan-b64ab520/', slug: 'meranda-chan' },
   ];
 
   const cultureValues = t('about.culture_values', { returnObjects: true });
@@ -46,19 +45,19 @@ export default function About() {
                 {/* Vision */}
                 <div>
                   <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.vision_label')}</h2>
-                  <p className="text-navy/70 text-base lg:text-lg leading-relaxed">{t('about.vision')}</p>
+                  <p className="text-navy/70 text-base leading-relaxed">{t('about.vision')}</p>
                 </div>
                 {/* Mission */}
                 <div>
                   <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.mission_label')}</h2>
-                  <p className="text-navy/70 text-base lg:text-lg leading-relaxed">{t('about.mission')}</p>
+                  <p className="text-navy/70 text-base leading-relaxed">{t('about.mission')}</p>
                 </div>
                 {/* Values */}
                 <div>
                   <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.values_label')}</h2>
                   <ul className="space-y-1.5">
                     {Array.isArray(valuesItems) && valuesItems.map(item => (
-                      <li key={item} className="flex items-start gap-2 text-navy/70 text-base lg:text-lg leading-relaxed">
+                      <li key={item} className="flex items-start gap-2 text-navy/70 text-base leading-relaxed">
                         <span className="w-1.5 h-1.5 bg-teal rounded-full flex-shrink-0 mt-2.5" />
                         {item}
                       </li>
@@ -90,7 +89,7 @@ export default function About() {
       <section className="bg-white">
         <div className="flex flex-col lg:flex-row lg:min-h-[480px]">
           {/* Left: slum image */}
-          <div className="w-full lg:w-2/5 min-h-[280px] lg:min-h-0">
+          <div className="w-full lg:w-1/2 min-h-[280px] lg:min-h-0">
             <img
               src="/images/Slum house crop.png"
               alt="Housing challenges"
@@ -98,7 +97,7 @@ export default function About() {
             />
           </div>
           {/* Right: quote */}
-          <div className="w-full lg:w-3/5 bg-navy px-8 md:px-12 lg:px-14 py-14 lg:py-20 flex flex-col justify-center">
+          <div className="w-full lg:w-1/2 bg-navy px-8 md:px-12 lg:px-14 py-14 lg:py-20 flex flex-col justify-center">
             <SlotIn delay={0.1}>
               <h2 className="font-heading font-bold text-white text-2xl lg:text-3xl mb-5 leading-tight">{t('about.story_label')}</h2>
               <blockquote className="text-white/90 text-base lg:text-lg leading-relaxed mb-10 max-w-xl">

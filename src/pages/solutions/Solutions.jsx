@@ -1,6 +1,6 @@
 // Solutions page
 import { Link } from 'react-router-dom';
-import { Building2, TrendingUp, Briefcase, ChevronRight, ArrowRight } from 'lucide-react';
+import { Building2, TrendingUp, Briefcase, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import SEOHead from '@/components/shared/SEOHead';
@@ -77,7 +77,7 @@ export default function Solutions() {
                       </div>
                       <span className="font-heading font-semibold text-teal text-xs uppercase tracking-widest">{sol.label}</span>
                     </div>
-                    <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-navy mb-4 leading-tight">
+                    <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-4 leading-tight">
                       {sol.headline}
                     </h2>
                     <ul className="space-y-2.5 mb-8">
@@ -110,7 +110,7 @@ export default function Solutions() {
       <section className="bg-navy py-20">
         <div className="max-w-8xl mx-auto px-6 lg:px-12 text-center">
           <SlotIn>
-            <h2 className="font-heading text-3xl font-semibold text-white mb-4">{t('solutions.not_sure_title')}</h2>
+            <h2 className="font-heading text-3xl font-bold text-white mb-4">{t('solutions.not_sure_title')}</h2>
             <p className="text-white/60 max-w-xl mx-auto mb-8">
               {t('solutions.not_sure_subtitle')}
             </p>

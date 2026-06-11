@@ -262,10 +262,11 @@
     "tech_label": "Teknisk fordel",
     "tech_title": "Markedsledende teknologi og innovasjon",
     "panel_features": [
-      { "title": "Kostnadseffektivt", "desc": "Bruk av plastavfall, Begrenset behov for maskineri på stedet, Rask konstruksjon" },
+      { "title": "Kostnadseffektivt", "desc": "Prefabrikert utenfor byggeplassen med lite avfall. Begrenset behov for arbeidskraft og maskineri på stedet. Bygget 100 % av kostnadseffektivt resirkulert plastmateriale." },
+      { "title": "Rask konstruksjon", "desc": "En 2-roms bolig kan monteres i løpet av én dag takket være markedsledende interlock-monteringsteknologi." },
       { "title": "Kvalitet og holdbarhet", "desc": "60 års levetid, x7 sterkere enn betong, Isolasjon x3 mer effektiv enn betong" },
       { "title": "Sikkerhet", "desc": "Brannbestandig, Orkan- og jordskjelvsikker" },
-      { "title": "Karboneffektivt", "desc": "Laget av 100 % resirkulert plast, Ingen sement eller stål brukt, Lavt vannforbruk" }
+      { "title": "Svært bærekraftig", "desc": "Ingen sement eller stål brukt. Lavt vannforbruk i byggingen." }
     ],
     "material_label": "Materiale",
     "material_value": "100 % resirkulert plast",

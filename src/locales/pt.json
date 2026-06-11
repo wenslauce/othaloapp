@@ -262,10 +262,11 @@
     "tech_label": "Vantagem Técnica",
     "tech_title": "Tecnologia e inovação líder de mercado",
     "panel_features": [
-      { "title": "Custo-Efetivo", "desc": "Uso de resíduos plásticos, mão de obra e maquinaria limitada no local, metodologia de construção rápida." },
+      { "title": "Custo-Efetivo", "desc": "Pré-fabricado fora do local com baixo desperdício. Mão de obra e maquinário limitados no local. Construído 100% a partir de material plástico reciclado de baixo custo." },
+      { "title": "Construção rápida", "desc": "Uma casa de 2 quartos pode ser montada em um dia devido à tecnologia de montagem intertravada líder de mercado." },
       { "title": "Qualidade e Durabilidade", "desc": "60 anos de vida útil, 7x mais forte que o concreto, isolamento 3x mais eficaz que o concreto." },
       { "title": "Segurança", "desc": "Resistente ao fogo, furacões e terremotos. Testado conforme padrões internacionais." },
-      { "title": "Eficiência de Carbono", "desc": "Feito de plástico 100% reciclado. Sem uso de cimento ou aço. Baixo uso de água na construção." }
+      { "title": "Altamente sustentável", "desc": "Sem uso de cimento ou aço. Baixo uso de água na construção." }
     ],
     "material_label": "Material",
     "material_value": "Plástico 100% Reciclado",

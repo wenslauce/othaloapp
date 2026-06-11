@@ -262,10 +262,11 @@
     "tech_label": "Avantage technique",
     "tech_title": "Technologie et innovation de pointe",
     "panel_features": [
-      { "title": "Rentable", "desc": "Utilisation de déchets plastiques, main-d'œuvre et machines limitées sur site, méthodologie de construction rapide." },
+      { "title": "Rentable", "desc": "Préfabriqué hors site avec peu de déchets. Main-d'œuvre et machines limitées sur site. Construit à 100 % à partir de plastique recyclé rentable." },
+      { "title": "Construction rapide", "desc": "Une maison de 2 chambres peut être installée en une journée grâce à une technologie d'assemblage par emboîtement de pointe." },
       { "title": "Qualité et durabilité", "desc": "Durée de vie de 60 ans, 7 fois plus solide que le béton, isolation 3 fois plus efficace que le béton." },
       { "title": "Sécurité", "desc": "Résistant au feu, aux ouragans et aux séismes. Testé selon les normes internationales." },
-      { "title": "Efficacité carbone", "desc": "Fabriqué à partir de plastique 100 % recyclé. Aucun ciment ni acier utilisé. Faible consommation d'eau pour la construction." }
+      { "title": "Hautement durable", "desc": "Aucun ciment ni acier utilisé. Faible consommation d'eau pour la construction." }
     ],
     "material_label": "Matériau",
     "material_value": "Plastique 100 % recyclé",
