@@ -19,7 +19,7 @@ export default function About() {
     { name: t('about.team_members.bengt.name'),     title: t('about.team_members.bengt.title'),     img: '/images/bengt-erling.webp',     linkedin: 'https://www.linkedin.com/in/bengt-erling-berg-a4831b3a/', slug: 'bengt-erling-berg' },
     { name: t('about.team_members.stephane.name'),  title: t('about.team_members.stephane.title'),  img: '/images/Stephane-headshot.jpg', linkedin: 'https://www.linkedin.com/in/stephanebernard-iam/', slug: 'stephane-bernard' },
     { name: t('about.team_members.wenslauce.name'), title: t('about.team_members.wenslauce.title'), img: '/images/wenslauce-chengo.webp', linkedin: 'https://www.linkedin.com/in/chengo-wenslauce/', slug: 'wenslauce-chengo' },
-    { name: t('about.team_members.meranda.name'),   title: t('about.team_members.meranda.title'),   img: '/images/meranda-chan.jpg',       linkedin: 'https://www.linkedin.com/in/meranda-chan-b64ab520/', slug: 'meranda-chan' },
+    { name: t('about.team_members.meranda.name'),   title: t('about.team_members.meranda.title'),   img: '/images/merenda-chan.jpg',       linkedin: 'https://www.linkedin.com/in/meranda-chan-b64ab520/', slug: 'meranda-chan' },
   ];
 
   const cultureValues = t('about.culture_values', { returnObjects: true });
