@@ -21,7 +21,7 @@
 | # | Change | File |
 |---|--------|------|
 | 6 | Hero subtitle: added full stop after "from recycled plastic" | `en.json` |
-| 7 | **Cost Effective** feature description rewritten: "Pre-fabricated offsite with low waste. Limited manpower and machinery needed on site. Build 100% from cost effective recycled plastic material. • Fast Construction: a 2-bedroom house can be set up within one day due to market leading interlock assembling technology." | `en.json` |
+| 7 | **Cost Effective** feature description rewritten: "Pre-fabricated offsite with low waste. Limited manpower and machinery needed on site. Built 100% from cost effective recycled plastic material. • Fast Construction: a 2-bedroom house can be set up within one day due to market leading interlock assembling technology." | `en.json` |
 | 8 | **Carbon efficient** renamed to **Carbon negative / Highly Sustainable** | `en.json` |
 | 9 | Solutions section: "Governments" → **"Governments — Municipalities"** | `Home.jsx` |
 | 10 | Solutions LEARN MORE buttons: style changed from white/transparent to `bg-[#E7E9EC] text-teal border-0` | `Home.jsx` |

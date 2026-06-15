@@ -56,6 +56,26 @@ export default function Footer() {
         </ul>
 
       </div>
+
+      <div className="max-w-8xl mx-auto px-6 lg:px-12 pb-8">
+        <div className="border-t border-white/10 pt-8 mt-4 flex flex-col md:flex-row justify-between gap-8 text-xs text-white/40">
+          <div>
+            <h4 className="text-white/70 font-medium mb-2 text-sm uppercase tracking-wider">Othalo Group Ltd</h4>
+            <div className="flex flex-col gap-1.5">
+              <p>Registration no.: <span className="text-white/60">01010884</span></p>
+              <p>License no.: <span className="text-white/60">07010857</span></p>
+            </div>
+          </div>
+          <div className="md:text-right">
+            <h4 className="text-white/70 font-medium mb-2 text-sm uppercase tracking-wider">Address</h4>
+            <address className="not-italic flex flex-col gap-1.5">
+              <p>RAK Innovation City, Post Box #30099</p>
+              <p>RAKBANK Headquarters, Government of Ras Al Khaimah</p>
+              <p>United Arab Emirates</p>
+            </address>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }

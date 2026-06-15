@@ -32,7 +32,7 @@ on the cost effective
 
 
 
-Under Cost Effective write: Pre Fabricated offsite with low waste, limited manpower and machinery needed on site, build 100% from cost effective recycled plastic material
+Under Cost Effective write: Pre Fabricated offsite with low waste, limited manpower and machinery needed on site, Built 100% from cost effective recycled plastic material
 
 Add bullet point with: Fast Construction: 2 bedroom house can be setup within one day due to market leading interlock assembling technology
 
