@@ -1,5 +1,6 @@
 // Housing Developers solutions page
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AlertCircle, CheckCircle, XCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -144,6 +145,11 @@ export default function HousingDevelopers() {
                     </li>
                   ))}
                 </ul>
+                <div className="mt-6">
+                  <Button asChild className="bg-navy hover:bg-navy/90 text-white font-semibold px-6 h-10 rounded-[6px] text-sm tracking-wide uppercase">
+                    <Link to="/products">Products</Link>
+                  </Button>
+                </div>
               </div>
 
               <p className="font-heading font-semibold text-navy text-sm">
