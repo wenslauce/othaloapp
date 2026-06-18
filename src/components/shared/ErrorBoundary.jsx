@@ -1,6 +1,7 @@
 import React from 'react';
 import { AlertTriangle, Home, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { withTranslation } from 'react-i18next';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class ErrorBoundary extends React.Component {
   };
 
   render() {
+    const { t } = this.props;
     if (this.state.hasError) {
       return (
         <div className="min-h-screen flex items-center justify-center bg-surface px-6">
@@ -29,9 +31,9 @@ class ErrorBoundary extends React.Component {
             <div className="w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <AlertTriangle className="w-8 h-8 text-destructive" />
             </div>
-            <h1 className="font-heading text-3xl font-bold text-navy mb-4">Something went wrong</h1>
+            <h1 className="font-heading text-3xl font-bold text-navy mb-4">{t ? t('error.boundary_title') : 'Something went wrong'}</h1>
             <p className="text-muted-foreground mb-8">
-              We encountered an unexpected error while rendering this page. Our technical team has been notified.
+              {t ? t('error.boundary_desc') : 'We encountered an unexpected error while rendering this page.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button 
@@ -39,7 +41,7 @@ class ErrorBoundary extends React.Component {
                 className="bg-navy hover:bg-navy/90 text-white font-semibold rounded-sm"
               >
                 <RefreshCw className="mr-2 h-4 w-4" />
-                Retry Page
+                {t ? t('error.refresh') : 'Retry Page'}
               </Button>
               <Button 
                 onClick={this.handleReset}
@@ -47,7 +49,7 @@ class ErrorBoundary extends React.Component {
                 className="border-tech-slate text-navy hover:bg-navy/5 font-semibold rounded-sm"
               >
                 <Home className="mr-2 h-4 w-4" />
-                Go to Home
+                {t ? t('error.home') : 'Go to Home'}
               </Button>
             </div>
             {process.env.NODE_ENV === 'development' && (
@@ -64,4 +66,4 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-export default ErrorBoundary;
+export default withTranslation()(ErrorBoundary);

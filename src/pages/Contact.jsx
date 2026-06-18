@@ -21,17 +21,6 @@ function FieldError({ msg }) {
   );
 }
 
-// Reason for contacting us options (from design spec)
-const REASONS = [
-  { value: 'general',     label: 'General Inquiry' },
-  { value: 'partnership', label: 'Partnerships & Projects' },
-  { value: 'pricing',     label: 'Request Pricing / Proposal' },
-  { value: 'technical',   label: 'Technical & Product Information' },
-  { value: 'investor',    label: 'Investor Inquiry' },
-  { value: 'media',       label: 'Media / Press' },
-  { value: 'careers',     label: 'Careers' },
-];
-
 const INITIAL_FORM = {
   name: '', email: '', countryCode: '', dialCode: '', phone: '', org: '', title: '', reason: '', message: '',
 };

@@ -32,12 +32,17 @@ export default function Home() {
   ];
 
   const buildFuture = t('home.approach_items', { returnObjects: true });
-
   const comparisonRows = t('home.comparison.rows', { returnObjects: true });
   const dualImpactItems = t('products.dual_items', { returnObjects: true });
   const panelFeatures = t('products.panel_features', { returnObjects: true });
   const featureIcons = [DollarSign, Clock, Award, Shield, Recycle];
-
+  const plasticStats = t('home.plastic_modal_stats', { returnObjects: true });
+  const housingSection1Stats = t('home.housing_modal_section1_stats', { returnObjects: true });
+  const housingSection2Stats = t('home.housing_modal_section2_stats', { returnObjects: true });
+  const housingSection3Stats = t('home.housing_modal_section3_stats', { returnObjects: true });
+  const housingSection3Regions = t('home.housing_modal_section3_regions', { returnObjects: true });
+  const housingSection4Headers = t('home.housing_modal_section4_headers', { returnObjects: true });
+  const housingSection4Rows = t('home.housing_modal_section4_rows', { returnObjects: true });
 
   const galleryCategories = [
     {
@@ -92,7 +97,6 @@ export default function Home() {
           style={{ y: heroY }}
           className="absolute inset-0"
         >
-          {/* Video Background */}
           <video
             ref={videoRef}
             autoPlay
@@ -105,7 +109,6 @@ export default function Home() {
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/60 to-transparent" />
         </motion.div>
-
 
         <motion.div
           style={{ opacity: heroOpacity }}
@@ -140,7 +143,6 @@ export default function Home() {
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-8xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14 items-center">
-            {/* Left: 3D Panel Image */}
             <SlotIn>
               <div className="bg-white p-8 lg:p-12 rounded-sm border border-tech-slate shadow-sm relative">
                 <img
@@ -149,12 +151,11 @@ export default function Home() {
                   className="w-full h-auto object-contain"
                 />
                 <div className="absolute top-5 left-5 bg-navy/80 backdrop-blur-sm text-white text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-sm">
-                  Prefabricated Panels
+                  {t('products.panel_label')}
                 </div>
               </div>
             </SlotIn>
 
-            {/* Right: Market Leading Features */}
             <div className="flex flex-col">
               <SlotIn>
                 <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-8 leading-tight">
@@ -184,38 +185,36 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Solutions Split Section */}
       <section className="flex flex-col lg:flex-row w-full bg-teal text-white">
         <div className="w-full lg:w-1/2 p-10 lg:p-14 xl:p-16 flex flex-col justify-center">
           <SlotIn>
             <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-10 leading-tight">
-              Your solution starts here
+              {t('home.solutions_section_title')}
             </h2>
             <div className="space-y-6">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <h3 className="font-heading text-lg font-semibold">Governments — Municipalities</h3>
+                <h3 className="font-heading text-lg font-semibold">{t('home.solutions_gov_name')}</h3>
                 <Button asChild variant="outline" className="bg-[#E7E9EC] hover:bg-white text-teal border-0 font-semibold px-4 h-8 rounded-[6px] self-start sm:self-auto uppercase text-xs tracking-wide">
-                  <Link to="/solutions/governments">LEARN MORE</Link>
+                  <Link to="/solutions/governments">{t('home.solutions_learn_more')}</Link>
                 </Button>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <h3 className="font-heading text-lg font-semibold">Housing Developers</h3>
+                <h3 className="font-heading text-lg font-semibold">{t('home.solutions_dev_name')}</h3>
                 <Button asChild variant="outline" className="bg-[#E7E9EC] hover:bg-white text-teal border-0 font-semibold px-4 h-8 rounded-[6px] self-start sm:self-auto uppercase text-xs tracking-wide">
-                  <Link to="/solutions/housing-developers">LEARN MORE</Link>
+                  <Link to="/solutions/housing-developers">{t('home.solutions_learn_more')}</Link>
                 </Button>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <h3 className="font-heading text-lg font-semibold">Corporations</h3>
+                <h3 className="font-heading text-lg font-semibold">{t('home.solutions_corp_name')}</h3>
                 <Button asChild variant="outline" className="bg-[#E7E9EC] hover:bg-white text-teal border-0 font-semibold px-4 h-8 rounded-[6px] self-start sm:self-auto uppercase text-xs tracking-wide">
-                  <Link to="/solutions/corporations">LEARN MORE</Link>
+                  <Link to="/solutions/corporations">{t('home.solutions_learn_more')}</Link>
                 </Button>
               </div>
             </div>
           </SlotIn>
         </div>
 
-        {/* Right side: Rotating Images */}
         <div className="w-full lg:w-1/2 relative min-h-[260px] sm:min-h-[320px] lg:min-h-[min(52vh,560px)] flex items-stretch">
           <ImageSlider 
             images={[
@@ -232,7 +231,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Dual Impact CTA — full-bleed split (image | copy) */}
+      {/* Dual Impact CTA */}
       <section className="flex flex-col lg:flex-row w-full">
         <div className="relative w-full lg:w-1/2 min-h-[260px] sm:min-h-[320px] lg:min-h-[min(55vh,580px)] overflow-hidden">
           <SlotIn className="absolute inset-0 size-full">
@@ -247,7 +246,7 @@ export default function Home() {
           <SlotIn delay={0.12}>
             <div className="max-w-xl">
               <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-8 leading-tight">
-                Othalo using one global challenge to solve another
+                {t('home.dual_impact_title')}
               </h2>
               <div className="space-y-7">
                 {Array.isArray(dualImpactItems) && dualImpactItems.map((item, idx) => (
@@ -297,18 +296,10 @@ export default function Home() {
               <div className="w-10 h-10 bg-teal/10 rounded-sm flex items-center justify-center mb-5">
                 <Recycle className="w-5 h-5 text-teal" />
               </div>
-              <h2 className="font-heading font-bold text-navy text-xl mb-1">Plastic Waste</h2>
-              <p className="text-muted-foreground text-sm mb-6">The scale of the global plastic crisis</p>
+              <h2 className="font-heading font-bold text-navy text-xl mb-1">{t('home.plastic_modal_title')}</h2>
+              <p className="text-muted-foreground text-sm mb-6">{t('home.plastic_modal_subtitle')}</p>
               <ul className="space-y-3">
-                {[
-                  { stat: '10 billion tons', detail: 'of plastic have ever been produced (OECD 2022, Global Plastics Outlook)' },
-                  { stat: '400 million tons', detail: 'are produced each year' },
-                  { stat: '40%', detail: 'of all plastic is single-use — used once, then discarded' },
-                  { stat: '~9%', detail: 'of plastic waste is actually recycled globally' },
-                  { stat: '80%', detail: 'of plastic waste ends up in landfills — up to 93% in very low-income economies' },
-                  { stat: '11 million tonnes', detail: 'of plastic enter the ocean every year' },
-                  { stat: 'In 2022', detail: 'Scientists detected microplastics in human blood for the first time' },
-                ].map((item, i) => (
+                {Array.isArray(plasticStats) && plasticStats.map((item, i) => (
                   <li key={i} className="flex gap-3 items-start">
                     <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[110px]">{item.stat}</span>
                     <span className="text-navy/80 text-sm leading-relaxed">{item.detail}</span>
@@ -349,17 +340,14 @@ export default function Home() {
               <div className="w-10 h-10 bg-teal/10 rounded-sm flex items-center justify-center mb-4">
                 <Shield className="w-5 h-5 text-teal" />
               </div>
-              <h2 className="font-heading font-bold text-navy text-xl mb-1">Affordable Housing</h2>
-              <p className="text-muted-foreground text-sm mb-6">The scale of the global housing crisis — UN-Habitat, 2025</p>
+              <h2 className="font-heading font-bold text-navy text-xl mb-1">{t('home.housing_modal_title')}</h2>
+              <p className="text-muted-foreground text-sm mb-6">{t('home.housing_modal_subtitle')}</p>
 
               {/* Section 1 — Homelessness */}
               <div className="mb-6">
-                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-2">People with No Housing (Homelessness)</h3>
+                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-2">{t('home.housing_modal_section1_title')}</h3>
                 <ul className="space-y-2">
-                  {[
-                    { stat: '300M+', detail: 'people experiencing homelessness globally (UN-Habitat 2025) — grown significantly due to conflict, urbanization, and affordability crises' },
-                    { stat: '123M+', detail: 'people forcibly displaced by conflict, persecution, and human rights violations as of end-2024 — double the figure from a decade prior' },
-                  ].map((item, i) => (
+                  {Array.isArray(housingSection1Stats) && housingSection1Stats.map((item, i) => (
                     <li key={i} className="flex gap-3 items-start">
                       <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[60px]">{item.stat}</span>
                       <span className="text-navy/80 text-sm leading-relaxed">{item.detail}</span>
@@ -370,13 +358,9 @@ export default function Home() {
 
               {/* Section 2 — Inadequate Housing */}
               <div className="mb-6">
-                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-2">People in Inadequate Housing</h3>
+                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-2">{t('home.housing_modal_section2_title')}</h3>
                 <ul className="space-y-2">
-                  {[
-                    { stat: '~3 billion', detail: 'people — close to 40% of the world\'s population — caught in an adequate housing crisis: unaffordable prices, poor quality, shortages, or lack of basic services' },
-                    { stat: '268–288M', detail: 'unit housing deficit globally in 2023, up from 251M in 2010 — a ~30% increase in just over a decade' },
-                    { stat: '96,000', detail: 'affordable homes would need to be built every single day between now and 2030 to close the gap (WRI)' },
-                  ].map((item, i) => (
+                  {Array.isArray(housingSection2Stats) && housingSection2Stats.map((item, i) => (
                     <li key={i} className="flex gap-3 items-start">
                       <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[80px]">{item.stat}</span>
                       <span className="text-navy/80 text-sm leading-relaxed">{item.detail}</span>
@@ -387,12 +371,9 @@ export default function Home() {
 
               {/* Section 3 — Slums */}
               <div className="mb-6">
-                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-2">People Living in Slums / Informal Settlements</h3>
+                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-2">{t('home.housing_modal_section3_title')}</h3>
                 <ul className="space-y-2">
-                  {[
-                    { stat: '1.12 billion', detail: 'global slum population in 2022 — up 130M from 2015, reversing earlier progress (UN SDG Report 2024)' },
-                    { stat: '~25%', detail: 'of the world\'s urban population lives in slum conditions' },
-                  ].map((item, i) => (
+                  {Array.isArray(housingSection3Stats) && housingSection3Stats.map((item, i) => (
                     <li key={i} className="flex gap-3 items-start">
                       <span className="font-heading font-bold text-teal text-sm flex-shrink-0 min-w-[80px]">{item.stat}</span>
                       <span className="text-navy/80 text-sm leading-relaxed">{item.detail}</span>
@@ -400,31 +381,27 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="mt-3 pl-2 space-y-1 text-sm text-navy/70">
-                  <p><span className="font-semibold text-navy">Central & Southern Asia:</span> ~359 million</p>
-                  <p><span className="font-semibold text-navy">Eastern & South-Eastern Asia:</span> ~306 million</p>
-                  <p><span className="font-semibold text-navy">Sub-Saharan Africa:</span> ~230 million</p>
+                  <p className="font-semibold text-navy">{t('home.housing_modal_section3_regions_title')}</p>
+                  {Array.isArray(housingSection3Regions) && housingSection3Regions.map((r, i) => (
+                    <p key={i}><span className="font-semibold text-navy">{r.region}:</span> {r.value}</p>
+                  ))}
                 </div>
               </div>
 
               {/* Section 4 — 2050 Table */}
               <div className="mb-5">
-                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-3">2050 Projections</h3>
+                <h3 className="font-heading font-semibold text-navy text-sm uppercase tracking-wide mb-3">{t('home.housing_modal_section4_title')}</h3>
                 <div className="overflow-x-auto rounded-sm border border-navy/10">
                   <table className="w-full text-xs min-w-[400px]">
                     <thead>
                       <tr className="bg-navy text-white">
-                        <th className="py-2 px-3 text-left font-heading font-semibold">Category</th>
-                        <th className="py-2 px-3 text-left font-heading font-semibold border-l border-white/10">Current (2024–25)</th>
-                        <th className="py-2 px-3 text-left font-heading font-semibold border-l border-white/10">Projected 2050</th>
+                        {Array.isArray(housingSection4Headers) && housingSection4Headers.map((h, i) => (
+                          <th key={i} className={`py-2 px-3 text-left font-heading font-semibold ${i > 0 ? 'border-l border-white/10' : ''}`}>{h}</th>
+                        ))}
                       </tr>
                     </thead>
                     <tbody>
-                      {[
-                        { cat: 'Homeless / no housing', now: '~300 million', future: 'Expected to worsen significantly without intervention' },
-                        { cat: 'Inadequate housing', now: '~3 billion', future: 'Cities absorb 2B additional residents; pressure intensifies dramatically' },
-                        { cat: 'Slum / informal dwellers', now: '~1.1 billion', future: 'More than 3 billion — a near-tripling' },
-                        { cat: 'Urban population share', now: '~55–57%', future: '~68–70% of world population in cities' },
-                      ].map((row, i) => (
+                      {Array.isArray(housingSection4Rows) && housingSection4Rows.map((row, i) => (
                         <tr key={i} className={`border-t border-navy/10 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}`}>
                           <td className="py-2 px-3 font-semibold text-navy">{row.cat}</td>
                           <td className="py-2 px-3 text-navy/70 border-l border-navy/10">{row.now}</td>
@@ -436,9 +413,8 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Closing statement */}
               <p className="text-navy/60 text-xs leading-relaxed italic border-t border-navy/10 pt-4">
-                The UN predicts more than 3 billion people could be living in slums by 2050 — roughly triple today's figure — driven by rapid urbanization in Sub-Saharan Africa and South Asia. Nearly three-quarters of the urban infrastructure that will exist by 2050 has not been built yet. This is one of the defining infrastructure and humanitarian challenges of this century — and a strong structural tailwind for what Othalo is building.
+                {t('home.housing_modal_closing')}
               </p>
             </motion.div>
           </motion.div>
@@ -471,8 +447,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
     </div>
   );
 }

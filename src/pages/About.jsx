@@ -38,21 +38,17 @@ export default function About() {
       {/* ── VISION / MISSION / VALUES + IMAGE ── */}
       <section className="bg-white">
         <div className="flex flex-col lg:flex-row lg:min-h-[560px]">
-          {/* Left: text */}
           <div className="w-full lg:w-1/2 px-8 md:px-12 lg:px-14 py-14 lg:py-20 flex flex-col justify-center">
             <SlotIn>
               <div className="space-y-8 max-w-lg">
-                {/* Vision */}
                 <div>
                   <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.vision_label')}</h2>
                   <p className="text-navy/70 text-base leading-relaxed">{t('about.vision')}</p>
                 </div>
-                {/* Mission */}
                 <div>
                   <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.mission_label')}</h2>
                   <p className="text-navy/70 text-base leading-relaxed">{t('about.mission')}</p>
                 </div>
-                {/* Values */}
                 <div>
                   <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.values_label')}</h2>
                   <ul className="space-y-1.5">
@@ -69,12 +65,11 @@ export default function About() {
                   className="flex items-center gap-2.5 bg-teal hover:bg-teal-light text-white font-semibold px-5 h-8 rounded-[6px] text-xs self-start uppercase tracking-wide"
                 >
                   <Play className="w-3 h-3 fill-white" />
-                  Discover
+                  {t('about.discover_btn')}
                 </Button>
               </div>
             </SlotIn>
           </div>
-          {/* Right: kids image */}
           <div className="w-full lg:w-1/2 min-h-[300px] lg:min-h-0">
             <img
               src="/images/Kids crop.jpg"
@@ -88,7 +83,6 @@ export default function About() {
       {/* ── OUR STORY ── */}
       <section className="bg-white">
         <div className="flex flex-col lg:flex-row lg:min-h-[480px]">
-          {/* Left: slum image */}
           <div className="w-full lg:w-1/2 min-h-[280px] lg:min-h-0">
             <img
               src="/images/Slum house crop.png"
@@ -96,14 +90,12 @@ export default function About() {
               className="w-full h-full object-cover object-center"
             />
           </div>
-          {/* Right: quote */}
           <div className="w-full lg:w-1/2 bg-navy px-8 md:px-12 lg:px-14 py-14 lg:py-20 flex flex-col justify-center">
             <SlotIn delay={0.1}>
               <h2 className="font-heading font-bold text-white text-2xl lg:text-3xl mb-5 leading-tight">{t('about.story_label')}</h2>
               <blockquote className="text-white/90 text-base lg:text-lg leading-relaxed mb-10 max-w-xl">
                 "{t('about.story_quote')}"
               </blockquote>
-              {/* Frank avatar + name */}
               <div className="flex items-center gap-4">
                 <div className="relative w-12 h-12 rounded-full bg-surface/20 flex items-center justify-center text-white font-heading font-bold text-sm flex-shrink-0 overflow-hidden">
                   <span className="z-0">FL</span>
@@ -124,9 +116,9 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <SlotIn>
             <div className="text-center mb-10">
-              <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">Team</h2>
+              <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.team_heading')}</h2>
               <p className="text-navy/70 text-sm lg:text-base max-w-2xl mx-auto leading-relaxed">
-                "A diverse group of innovators, engineers, and visionaries united by the mission to create sustainable housing solutions."
+                "{t('about.team_subtitle_text')}"
               </p>
             </div>
           </SlotIn>
@@ -138,7 +130,6 @@ export default function About() {
                   id={member.slug}
                   className="border border-navy/30 rounded-lg overflow-hidden bg-[#E7E9EC] hover:shadow-lg transition-shadow scroll-mt-24 flex flex-col h-full"
                 >
-                  {/* Portrait */}
                   <div className="pt-8 pb-4 flex justify-center">
                     <img
                       src={member.img}
@@ -150,11 +141,9 @@ export default function About() {
                       }}
                     />
                   </div>
-                  {/* Info */}
                   <div className="px-4 pb-8 flex flex-col items-center flex-grow text-center">
                     <p className="font-heading font-bold text-navy text-xl lg:text-[22px] leading-tight mb-2">{member.name}</p>
                     <p className="text-navy/80 text-sm lg:text-[16px] leading-snug mb-6 flex-grow">{member.title}</p>
-                    {/* LinkedIn */}
                     <a
                       href={member.linkedin}
                       target="_blank"
@@ -176,9 +165,9 @@ export default function About() {
       <section className="bg-teal py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <SlotIn>
-            <h2 className="font-heading font-bold text-white text-2xl lg:text-3xl mb-1.5 leading-tight">Our culture</h2>
+            <h2 className="font-heading font-bold text-white text-2xl lg:text-3xl mb-1.5 leading-tight">{t('about.culture_heading')}</h2>
             <p className="text-white/70 text-sm lg:text-base mb-10 max-w-2xl">
-              What shapes our approach to work and guides us in making a positive impact on the world.
+              {t('about.culture_subtitle_text')}
             </p>
           </SlotIn>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10">
@@ -197,10 +186,9 @@ export default function About() {
       {/* ── IMPACT ── */}
       <section className="bg-white">
         <div className="flex flex-col lg:flex-row lg:items-stretch">
-          {/* Left: numbered impact items */}
           <div className="w-full lg:w-1/2 px-8 md:px-12 lg:px-14 py-12 lg:py-16 flex flex-col justify-center">
             <SlotIn>
-              <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-8 leading-tight">Impact created by Othalo</h2>
+              <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-8 leading-tight">{t('about.impact_heading')}</h2>
               <div className="space-y-6">
                 {Array.isArray(impacts) && impacts.map((item, i) => (
                   <div key={item.num} className="flex gap-5">
@@ -216,7 +204,6 @@ export default function About() {
               </div>
             </SlotIn>
           </div>
-          {/* Right: community image */}
           <div className="w-full lg:w-1/2 min-h-[280px] lg:min-h-[400px]">
             <img
               src="/images/Child crop 1.jpg"
@@ -227,7 +214,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── VIDEO MODAL (YouTube) ── */}
+      {/* ── VIDEO MODAL ── */}
       <AnimatePresence>
         {videoOpen && (
           <motion.div
@@ -264,7 +251,6 @@ export default function About() {
           </motion.div>
         )}
       </AnimatePresence>
-
     </div>
   );
 }

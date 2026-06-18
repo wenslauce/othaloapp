@@ -14,36 +14,26 @@ export default function Products() {
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [videoOpen, setVideoOpen] = useState(false);
 
-
-  // 6 tech features for the icon grid
-  const techFeatures = [
-    { icon: DollarSign, title: 'Innovative patented technology',  desc: '75% of all plastic types including hard to recycle plastic such as sachets, films, and flexibles — not recycled to date.' },
-    { icon: Leaf,       title: 'Environmental friendly',          desc: 'No use of cement and steel, very limited usage of water.' },
-    { icon: Zap,        title: 'Fast construction',               desc: 'Installed in 6 hours with manpower only — no heavy machinery requirements.' },
-    { icon: Shield,     title: 'Safety',                          desc: 'Hurricane & earthquake resilient design, fire retardant.' },
-    { icon: Award,      title: 'Superior performance',            desc: 'x7 stronger than concrete.' },
-    { icon: Recycle,    title: 'High standards',                  desc: 'Meets all relevant construction regulations.' },
-  ];
-
-  // 4 numbered approach items
+  const techFeatures = t('products.tech_features_alt', { returnObjects: true });
+  const techFeatureIcons = [DollarSign, Leaf, Zap, Shield, Award, Recycle];
   const approachItems = t('home.approach_items', { returnObjects: true });
+  const productLinesNames = t('products.product_lines_names', { returnObjects: true });
 
-  // Four product lines — two images each
   const productLines = [
     {
-      name: 'The Community',
+      name: Array.isArray(productLinesNames) ? productLinesNames[0] : 'The Community',
       images: ['/images/The District 2a.png', '/images/The community 1a.png'],
     },
     {
-      name: 'The Emergency Shelter',
+      name: Array.isArray(productLinesNames) ? productLinesNames[1] : 'The Emergency Shelter',
       images: ['/images/The Emergency Shelter 1.png', '/images/The Emergency Shelter 2c.png'],
     },
     {
-      name: 'The Medical Unit and Cold Storage',
+      name: Array.isArray(productLinesNames) ? productLinesNames[2] : 'The Medical Unit and Cold Storage',
       images: ['/images/The Medical Unit 3b.png', '/images/The Medical Unit 2a.png'],
     },
     {
-      name: 'The Worker Accomodation',
+      name: Array.isArray(productLinesNames) ? productLinesNames[3] : 'The Worker Accomodation',
       images: ['/images/The Worker Accomodation 6b.png', '/images/The Worker Accomodation 5a.png'],
     },
   ];
@@ -58,9 +48,8 @@ export default function Products() {
       />
       <GetQuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} context="products" />
 
-      {/* ── HERO: 50/50 split, capped height (homepage-style) ── */}
+      {/* ── HERO ── */}
       <section className="flex flex-col lg:flex-row lg:items-stretch">
-        {/* Left — navy text panel */}
         <div className="w-full lg:w-1/2 bg-navy flex items-center px-8 md:px-12 lg:px-14 py-12 lg:py-16 min-h-[min(44vh,420px)] lg:min-h-[min(52vh,520px)]">
           <SlotIn>
             <p className="text-white font-heading text-lg md:text-xl lg:text-2xl font-semibold leading-snug max-w-xl lg:max-w-none mb-7">
@@ -73,18 +62,16 @@ export default function Products() {
               <div className="w-5 h-5 rounded-full border-2 border-white/40 flex items-center justify-center flex-shrink-0">
                 <Play className="w-2.5 h-2.5 fill-white text-white ml-0.5" />
               </div>
-              See how it works
+              {t('products.see_how_it_works')}
             </Button>
           </SlotIn>
         </div>
-        {/* Right — factory image */}
         <div className="w-full lg:w-1/2 relative min-h-[220px] sm:min-h-[300px] lg:min-h-[min(52vh,520px)]">
           <img
             src="/images/Panels in the factory.png"
             alt="Othalo panels in the factory"
             className="absolute inset-0 size-full object-cover"
           />
-          {/* UN-Habitat Endorsed Badge Overlay */}
           <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 max-w-[200px] md:max-w-[260px] lg:max-w-[300px]">
             <img
               src="/images/UN_HABITAT_ENDORSED.png"
@@ -132,7 +119,7 @@ export default function Products() {
         )}
       </AnimatePresence>
 
-      {/* ── PRODUCT LINES: 2×2 grid — shown right after technology ── */}
+      {/* ── PRODUCT LINES ── */}
       <section className="bg-surface py-12 lg:py-16">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-2 gap-4 sm:gap-5 md:gap-6">
@@ -158,23 +145,23 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── TECHNOLOGY: centered title + 6-icon grid ── */}
+      {/* ── TECHNOLOGY ── */}
       <section className="bg-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <SlotIn>
             <div className="text-center mb-10 lg:mb-14">
               <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">
-                Technology
+                {t('products.technology_heading')}
               </h2>
               <p className="text-navy/70 text-sm lg:text-base max-w-3xl mx-auto leading-relaxed">
-                Our standardized modules combine innovation with practicality, delivering cost efficient, fast to build, and durable and sustainable construction solutions.
+                {t('products.technology_desc')}
               </p>
             </div>
           </SlotIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
-            {techFeatures.map((f, i) => {
-              const Icon = f.icon;
+            {Array.isArray(techFeatures) && techFeatures.map((f, i) => {
+              const Icon = techFeatureIcons[i] || Recycle;
               return (
                 <SlotIn key={f.title} delay={i * 0.07}>
                   <div className="flex flex-col items-center text-center gap-3 max-w-xs mx-auto">
@@ -191,7 +178,7 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── BUILD THE FUTURE: 4 numbered items 2×2 ── */}
+      {/* ── BUILD THE FUTURE ── */}
       <section className="bg-teal py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <SlotIn>
@@ -237,10 +224,9 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── QUOTE BANNER: portrait left / grey right panel — last section ── */}
+      {/* ── QUOTE BANNER ── */}
       <section className="bg-[#E7E9EC] py-0">
         <div className="flex flex-col lg:flex-row lg:items-stretch">
-          {/* Left: portrait */}
           <div className="w-full lg:w-1/2 relative min-h-[min(44vh,360px)] lg:min-h-[min(52vh,520px)] overflow-hidden">
             <img
               src="/images/vincent.jpg"
@@ -252,10 +238,9 @@ export default function Products() {
               <div className="inline-flex items-center gap-2 mb-2">
                 <img src="/images/logo.png" alt="Othalo" className="h-7 w-auto brightness-0 invert" />
               </div>
-              <p className="text-white/60 text-xs font-heading uppercase tracking-widest">Mission</p>
+              <p className="text-white/60 text-xs font-heading uppercase tracking-widest">{t('about.label')}</p>
             </div>
           </div>
-          {/* Right: grey panel, navy quote */}
           <div className="w-full lg:w-1/2 bg-[#E7E9EC] px-8 md:px-12 lg:px-14 xl:px-16 py-12 lg:py-16 flex flex-col justify-center">
             <SlotIn>
               <blockquote className="text-navy font-heading text-lg md:text-xl lg:text-2xl font-bold leading-relaxed mb-6 max-w-xl">
@@ -274,14 +259,13 @@ export default function Products() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Learn More
+                  {t('products.cta_learn_more')}
                 </a>
               </Button>
             </SlotIn>
           </div>
         </div>
       </section>
-
     </div>
   );
 }
