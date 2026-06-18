@@ -1,4 +1,11 @@
 {
+  "404": {
+    "code": "404",
+    "title": "الصفحة غير موجودة",
+    "subtitle": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "home": "العودة للرئيسية",
+    "contact": "Contact Us"
+  },
   "seo": {
     "home": {
       "title": "أوثالو — منازل مستدامة وبأسعار معقولة من البلاستيك المعاد تدويره",
@@ -104,16 +111,70 @@
       "label": "التحليل التنافسي",
       "title": "التكنولوجيا والابتكار الرائد في السوق",
       "subtitle": "مقارنة مباشرة مع طرق البناء التقليدية.",
-      "headers": ["الميزة", "أوثالو", "خرسانة", "إطار فولاذي", "خشب"],
+      "headers": [
+        "الميزة",
+        "أوثالو",
+        "خرسانة",
+        "إطار فولاذي",
+        "خشب"
+      ],
       "rows": [
-        { "f": "وقت البناء (وحدة 2BR)", "o": "72 ساعة", "c": "3-6 أشهر", "s": "2-4 أشهر", "t": "1-3 أشهر" },
-        { "f": "تحويل نفايات البلاستيك", "o": "8 أطنان", "c": "لاشيء", "s": "لاشيء", "t": "لاشيء" },
-        { "f": "عمر الافتراضي", "o": "60+ سنة", "c": "40-50 سنة", "s": "30-50 سنة", "t": "20-30 سنة" },
-        { "f": "مقاوم للحريق", "o": "نعم", "c": "نعم", "s": "لا", "t": "لا" },
-        { "f": "مقاوم للزلازل", "o": "نعم", "c": "متفاوت", "s": "نعم", "t": "جزئي" },
-        { "f": "استخدام الماء في البناء", "o": "لاشيء", "c": "عالي", "s": "متوسط", "t": "منخفض" },
-        { "f": "الأسمنت/الفولاذ المطلوب", "o": "لاشيء", "c": "عالي", "s": "عالي", "t": "بعض" },
-        { "f": "معتمد من UN-Habitat", "o": "نعم", "c": "متفاوت", "s": "متفاوت", "t": "متفاوت" }
+        {
+          "f": "وقت البناء (وحدة 2BR)",
+          "o": "72 ساعة",
+          "c": "3-6 أشهر",
+          "s": "2-4 أشهر",
+          "t": "1-3 أشهر"
+        },
+        {
+          "f": "تحويل نفايات البلاستيك",
+          "o": "8 أطنان",
+          "c": "لاشيء",
+          "s": "لاشيء",
+          "t": "لاشيء"
+        },
+        {
+          "f": "عمر الافتراضي",
+          "o": "60+ سنة",
+          "c": "40-50 سنة",
+          "s": "30-50 سنة",
+          "t": "20-30 سنة"
+        },
+        {
+          "f": "مقاوم للحريق",
+          "o": "نعم",
+          "c": "نعم",
+          "s": "لا",
+          "t": "لا"
+        },
+        {
+          "f": "مقاوم للزلازل",
+          "o": "نعم",
+          "c": "متفاوت",
+          "s": "نعم",
+          "t": "جزئي"
+        },
+        {
+          "f": "استخدام الماء في البناء",
+          "o": "لاشيء",
+          "c": "عالي",
+          "s": "متوسط",
+          "t": "منخفض"
+        },
+        {
+          "f": "الأسمنت/الفولاذ المطلوب",
+          "o": "لاشيء",
+          "c": "عالي",
+          "s": "عالي",
+          "t": "بعض"
+        },
+        {
+          "f": "معتمد من UN-Habitat",
+          "o": "نعم",
+          "c": "متفاوت",
+          "s": "متفاوت",
+          "t": "متفاوت"
+        }
       ]
     },
     "esg_title": "أوثالو تساعد في تحقيق نتائج ESG ملموسة وقابلة للقياس",
@@ -126,13 +187,133 @@
       "10": "الحد من عدم المساواة",
       "11": "مدن مستدامة",
       "12": "الاستهلاك المسؤول",
-      "13": "العمل المناخي",
       "13": "Climate Action",
       "17": "الشراكات"
     },
     "cta_title": "حلك يبدأ هنا",
     "cta_subtitle": "سواء كنت حكومة أو مطورًا أو شركة - لدينا استراتيجية نشر مصممة لسياقك.",
-    "quote_cta": "تعرف على المزيد"
+    "quote_cta": "تعرف على المزيد",
+    "solutions_section_title": "Your solution starts here",
+    "solutions_gov_name": "Governments — Municipalities",
+    "solutions_dev_name": "Housing Developers",
+    "solutions_corp_name": "Corporations",
+    "solutions_learn_more": "LEARN MORE",
+    "dual_impact_title": "Othalo using one global challenge to solve another",
+    "plastic_modal_title": "Plastic Waste",
+    "plastic_modal_subtitle": "The scale of the global plastic crisis",
+    "plastic_modal_stats": [
+      {
+        "stat": "10 billion tons",
+        "detail": "of plastic have ever been produced (OECD 2022, Global Plastics Outlook)"
+      },
+      {
+        "stat": "400 million tons",
+        "detail": "are produced each year"
+      },
+      {
+        "stat": "40%",
+        "detail": "of all plastic is single-use — used once, then discarded"
+      },
+      {
+        "stat": "~9%",
+        "detail": "of plastic waste is actually recycled globally"
+      },
+      {
+        "stat": "80%",
+        "detail": "of plastic waste ends up in landfills — up to 93% in very low-income economies"
+      },
+      {
+        "stat": "11 million tonnes",
+        "detail": "of plastic enter the ocean every year"
+      },
+      {
+        "stat": "In 2022",
+        "detail": "Scientists detected microplastics in human blood for the first time"
+      }
+    ],
+    "housing_modal_title": "Affordable Housing",
+    "housing_modal_subtitle": "The scale of the global housing crisis — UN-Habitat, 2025",
+    "housing_modal_section1_title": "People with No Housing (Homelessness)",
+    "housing_modal_section1_stats": [
+      {
+        "stat": "300M+",
+        "detail": "people experiencing homelessness globally (UN-Habitat 2025) — grown significantly due to conflict, urbanization, and affordability crises"
+      },
+      {
+        "stat": "123M+",
+        "detail": "people forcibly displaced by conflict, persecution, and human rights violations as of end-2024 — double the figure from a decade prior"
+      }
+    ],
+    "housing_modal_section2_title": "People in Inadequate Housing",
+    "housing_modal_section2_stats": [
+      {
+        "stat": "~3 billion",
+        "detail": "people — close to 40% of the world's population — caught in an adequate housing crisis: unaffordable prices, poor quality, shortages, or lack of basic services"
+      },
+      {
+        "stat": "268–288M",
+        "detail": "unit housing deficit globally in 2023, up from 251M in 2010 — a ~30% increase in just over a decade"
+      },
+      {
+        "stat": "96,000",
+        "detail": "affordable homes would need to be built every single day between now and 2030 to close the gap (WRI)"
+      }
+    ],
+    "housing_modal_section3_title": "People Living in Slums / Informal Settlements",
+    "housing_modal_section3_stats": [
+      {
+        "stat": "1.12 billion",
+        "detail": "global slum population in 2022 — up 130M from 2015, reversing earlier progress (UN SDG Report 2024)"
+      },
+      {
+        "stat": "~25%",
+        "detail": "of the world's urban population lives in slum conditions"
+      }
+    ],
+    "housing_modal_section3_regions_title": "Regional breakdown",
+    "housing_modal_section3_regions": [
+      {
+        "region": "Central & Southern Asia",
+        "value": "~359 million"
+      },
+      {
+        "region": "Eastern & South-Eastern Asia",
+        "value": "~306 million"
+      },
+      {
+        "region": "Sub-Saharan Africa",
+        "value": "~230 million"
+      }
+    ],
+    "housing_modal_section4_title": "2050 Projections",
+    "housing_modal_section4_headers": [
+      "Category",
+      "Current (2024–25)",
+      "Projected 2050"
+    ],
+    "housing_modal_section4_rows": [
+      {
+        "cat": "Homeless / no housing",
+        "now": "~300 million",
+        "future": "Expected to worsen significantly without intervention"
+      },
+      {
+        "cat": "Inadequate housing",
+        "now": "~3 billion",
+        "future": "Cities absorb 2B additional residents; pressure intensifies dramatically"
+      },
+      {
+        "cat": "Slum / informal dwellers",
+        "now": "~1.1 billion",
+        "future": "More than 3 billion — a near-tripling"
+      },
+      {
+        "cat": "Urban population share",
+        "now": "~55–57%",
+        "future": "~68–70% of world population in cities"
+      }
+    ],
+    "housing_modal_closing": "The UN predicts more than 3 billion people could be living in slums by 2050 — roughly triple today's figure — driven by rapid urbanization in Sub-Saharan Africa and South Asia. Nearly three-quarters of the urban infrastructure that will exist by 2050 has not been built yet. This is one of the defining infrastructure and humanitarian challenges of this century — and a strong structural tailwind for what Othalo is building."
   },
   "about": {
     "label": "هدفنا",
@@ -250,7 +431,14 @@
     },
     "story_label": "قصتنا",
     "story_quote": "بعد خدمتي في الجيش والاستخبارات النرويجية في بعثات الناتو في التسعينيات، شهدت صمود الناس والواقع القاسي لمخيمات اللاجئين. بعد سنوات، أدركت أن أزمة النفايات العالمية كانت أقرب مما نعتقد. أشعلت تلك اللحظة فكرة جريئة: هل يمكننا تحويل نفايات البلاستيك إلى منازل آمنة وكريمة؟ أصبح هذا السؤال هو الأساس لأوثالو.",
-    "cta": "اكتشف تقنيتنا"
+    "cta": "اكتشف تقنيتنا",
+    "page_title": "About",
+    "team_heading": "Team",
+    "team_subtitle_text": "A diverse group of innovators, engineers, and visionaries united by the mission to create sustainable housing solutions.",
+    "discover_btn": "Discover",
+    "culture_heading": "Our culture",
+    "culture_subtitle_text": "What shapes our approach to work and guides us in making a positive impact on the world.",
+    "impact_heading": "Impact created by Othalo"
   },
   "products": {
     "label": "محفظة المنتجات",
@@ -263,24 +451,87 @@
     "tech_label": "الميزة التقنية",
     "tech_title": "التكنولوجيا والابتكار الرائد في السوق",
     "panel_features": [
-      { "title": "فعال من حيث التكلفة", "desc": "مسبق الصنع خارج الموقع مع نفايات منخفضة. قوى عاملة وآلات محدودة مطلوبة في الموقع. مبني بنسبة 100٪ من مواد بلاستيكية معاد تدويرها موفرة للتكلفة." },
-      { "title": "بناء سريع", "desc": "يمكن تركيب منزل مكون من غرفتي نوم في غضون يوم واحد بفضل تقنية التجميع المتداخلة الرائدة في السوق." },
-      { "title": "الجودة والمتانة", "desc": "عمر افتراضي 60 عامًا، أقوى بـ 7 مرات من الخرسانة، عزل أكثر فعالية بـ 3 مرات من الخرسانة" },
-      { "title": "الأمان", "desc": "مقاوم للحريق، مقاوم للأعاصير والزلازل" },
-      { "title": "مستدام للغاية", "desc": "لا يستخدم الأسمنت أو الفولاذ، استهلاك منخفض للمياه" }
+      {
+        "title": "فعال من حيث التكلفة",
+        "desc": "مسبق الصنع خارج الموقع مع نفايات منخفضة. قوى عاملة وآلات محدودة مطلوبة في الموقع. مبني بنسبة 100٪ من مواد بلاستيكية معاد تدويرها موفرة للتكلفة."
+      },
+      {
+        "title": "بناء سريع",
+        "desc": "يمكن تركيب منزل مكون من غرفتي نوم في غضون يوم واحد بفضل تقنية التجميع المتداخلة الرائدة في السوق."
+      },
+      {
+        "title": "الجودة والمتانة",
+        "desc": "عمر افتراضي 60 عامًا، أقوى بـ 7 مرات من الخرسانة، عزل أكثر فعالية بـ 3 مرات من الخرسانة"
+      },
+      {
+        "title": "الأمان",
+        "desc": "مقاوم للحريق، مقاوم للأعاصير والزلازل"
+      },
+      {
+        "title": "مستدام للغاية",
+        "desc": "لا يستخدم الأسمنت أو الفولاذ، استهلاك منخفض للمياه"
+      }
     ],
     "material_label": "المادة",
     "material_value": "بلاستيك معاد تدويره بنسبة 100٪",
     "comparison_title": "التكنولوجيا والابتكار الرائد في السوق",
-    "comparison_headers": ["التفاصيل", "أوثالو", "الطباعة ثلاثية الأبعاد", "الألواح الثلاثية", "البناء التقليدي"],
+    "comparison_headers": [
+      "التفاصيل",
+      "أوثالو",
+      "الطباعة ثلاثية الأبعاد",
+      "الألواح الثلاثية",
+      "البناء التقليدي"
+    ],
     "comparison_rows": [
-      { "p": "جاهز للسوق", "o": "كامل", "d": "لا يوجد", "r": "جزئي", "t": "كامل" },
-      { "p": "وقت إنتاج منخفض", "o": "كامل", "d": "لا يوجد", "r": "لا يوجد", "t": "جزئي" },
-      { "p": "قابل لإعادة التدوير", "o": "كامل", "d": "جزئي", "r": "جزئي", "t": "لا يوجد" },
-      { "p": "مستدام", "o": "كامل", "d": "جزئي", "r": "جزئي", "t": "لا يوجد" },
-      { "p": "مواد خام ميسورة", "o": "كامل", "d": "لا يوجد", "r": "جزئي", "t": "لا يوجد" },
-      { "p": "تكلفة منخفضة", "o": "كامل", "d": "لا يوجد", "r": "لا يوجد", "t": "جزئي" },
-      { "p": "إنتاج صناعي", "o": "كامل", "d": "لا يوجد", "r": "لا يوجد", "t": "جزئي" }
+      {
+        "p": "جاهز للسوق",
+        "o": "كامل",
+        "d": "لا يوجد",
+        "r": "جزئي",
+        "t": "كامل"
+      },
+      {
+        "p": "وقت إنتاج منخفض",
+        "o": "كامل",
+        "d": "لا يوجد",
+        "r": "لا يوجد",
+        "t": "جزئي"
+      },
+      {
+        "p": "قابل لإعادة التدوير",
+        "o": "كامل",
+        "d": "جزئي",
+        "r": "جزئي",
+        "t": "لا يوجد"
+      },
+      {
+        "p": "مستدام",
+        "o": "كامل",
+        "d": "جزئي",
+        "r": "جزئي",
+        "t": "لا يوجد"
+      },
+      {
+        "p": "مواد خام ميسورة",
+        "o": "كامل",
+        "d": "لا يوجد",
+        "r": "جزئي",
+        "t": "لا يوجد"
+      },
+      {
+        "p": "تكلفة منخفضة",
+        "o": "كامل",
+        "d": "لا يوجد",
+        "r": "لا يوجد",
+        "t": "جزئي"
+      },
+      {
+        "p": "إنتاج صناعي",
+        "o": "كامل",
+        "d": "لا يوجد",
+        "r": "لا يوجد",
+        "t": "جزئي"
+      }
     ],
     "fulfilled": "مستوفى",
     "partially_fulfilled": "مستوفى جزئياً",
@@ -313,9 +564,52 @@
     "dual_label": "تأثير مزدوج",
     "dual_title": "استخدام تحدٍ عالمي لحل آخر",
     "dual_items": [
-      { "title": "نفايات البلاستيك", "desc": "التزام عالمي، تراكم أكثر من 9 مليارات طن بالفعل في البيئة." },
-      { "title": "منازل ميسورة", "desc": "أزمة متصاعدة: يعيش 1.6 مليار شخص بدون سكن ملائم." }
-    ]
+      {
+        "title": "نفايات البلاستيك",
+        "desc": "التزام عالمي، تراكم أكثر من 9 مليارات طن بالفعل في البيئة."
+      },
+      {
+        "title": "منازل ميسورة",
+        "desc": "أزمة متصاعدة: يعيش 1.6 مليار شخص بدون سكن ملائم."
+      }
+    ],
+    "see_how_it_works": "See how it works",
+    "technology_heading": "Technology",
+    "technology_desc": "Our standardized modules combine innovation with practicality, delivering cost efficient, fast to build, and durable and sustainable construction solutions.",
+    "tech_features_alt": [
+      {
+        "title": "Innovative patented technology",
+        "desc": "75% of all plastic types including hard to recycle plastic such as sachets, films, and flexibles — not recycled to date."
+      },
+      {
+        "title": "Environmental friendly",
+        "desc": "No use of cement and steel, very limited usage of water."
+      },
+      {
+        "title": "Fast construction",
+        "desc": "Installed in 6 hours with manpower only — no heavy machinery requirements."
+      },
+      {
+        "title": "Safety",
+        "desc": "Hurricane & earthquake resilient design, fire retardant."
+      },
+      {
+        "title": "Superior performance",
+        "desc": "x7 stronger than concrete."
+      },
+      {
+        "title": "High standards",
+        "desc": "Meets all relevant construction regulations."
+      }
+    ],
+    "product_lines_names": [
+      "The Community",
+      "The Emergency Shelter",
+      "The Medical Unit and Cold Storage",
+      "The Worker Accomodation"
+    ],
+    "panel_label": "Prefabricated Panels",
+    "cta_learn_more": "Learn More"
   },
   "solutions": {
     "label": "ماذا نقدم",
@@ -398,27 +692,85 @@
     "benefits_label": "لماذا أوثالو للحكومات",
     "benefits_title": "استراتيجية إسكان عام تقدم النتائج",
     "benefits": [
-      { "title": "توسيع نطاق المساكن الميسورة بسرعة وكفاءة", "desc": "توسيع نطاق المساكن الميسورة بسرعة وكفاءة لتلبية الطلب." },
-      { "title": "البناء لمشاريع حضرية عالية الكثافة", "desc": "البناء لمشاريع حضرية عالية الكثافة مع قدرات متعددة الطوابق." },
-      { "title": "تقليل التكاليف ببدائل للفولاذ والأسمنت", "desc": "تقليل التكاليف ببدائلنا الحاصلة على براءة اختراع للفولاذ والأسمنت." },
-      { "title": "البناء أسرع بالبناء المسبق (أيام وليس أشهر)", "desc": "بناء أسرع بالبناء المسبق - تسليم المنازل في أيام وليس أشهر." },
-      { "title": "بصمة كربونية منخفضة بمواد دائرية", "desc": "بصمة كربونية منخفضة بمواد مستدامة ودائرية محولة من النفايات." },
-      { "title": "التصميم بمرونة لتلبية الاحتياجات المحلية", "desc": "تصميم مرن لتلبية الاحتياجات المحلية والمتطلبات التنظيمية." }
+      {
+        "title": "توسيع نطاق المساكن الميسورة بسرعة وكفاءة",
+        "desc": "توسيع نطاق المساكن الميسورة بسرعة وكفاءة لتلبية الطلب."
+      },
+      {
+        "title": "البناء لمشاريع حضرية عالية الكثافة",
+        "desc": "البناء لمشاريع حضرية عالية الكثافة مع قدرات متعددة الطوابق."
+      },
+      {
+        "title": "تقليل التكاليف ببدائل للفولاذ والأسمنت",
+        "desc": "تقليل التكاليف ببدائلنا الحاصلة على براءة اختراع للفولاذ والأسمنت."
+      },
+      {
+        "title": "البناء أسرع بالبناء المسبق (أيام وليس أشهر)",
+        "desc": "بناء أسرع بالبناء المسبق - تسليم المنازل في أيام وليس أشهر."
+      },
+      {
+        "title": "بصمة كربونية منخفضة بمواد دائرية",
+        "desc": "بصمة كربونية منخفضة بمواد مستدامة ودائرية محولة من النفايات."
+      },
+      {
+        "title": "التصميم بمرونة لتلبية الاحتياجات المحلية",
+        "desc": "تصميم مرن لتلبية الاحتياجات المحلية والمتطلبات التنظيمية."
+      }
     ],
     "comparison_title": "أوثالو مقابل بناء المساكن العامة التقليدية",
     "comparison_subtitle": "مقارنة مباشرة لمقاييس المشتريات الحكومية الرئيسية.",
-    "comparison_headers": ["المقياس", "أوثالو", "تقليدي"],
+    "comparison_headers": [
+      "المقياس",
+      "أوثالو",
+      "تقليدي"
+    ],
     "comparison_rows": [
-      { "f": "وقت البناء (100 وحدة)", "o": "< 3 أشهر", "t": "18-36 شهراً" },
-      { "f": "التكلفة لكل وحدة (2BR)", "o": "30-50٪ أقل", "t": "خط الأساس" },
-      { "f": "خلق فرص عمل محلية", "o": "عالية - لا آلات ثقيلة", "t": "متوسطة - تعتمد على الآلات" },
-      { "f": "المسؤولية البيئية", "o": "بلاستيك محول", "t": "انبعاثات CO2" },
-      { "f": "تقارير SDG", "o": "مقاييس مدمجة", "t": "مطلوب تدقيق يدوي" },
-      { "f": "صمود أمام الكوارث", "o": "إعصار Cat.5 + زلزال Z4", "t": "متفاوت - غالباً أقل" }
+      {
+        "f": "وقت البناء (100 وحدة)",
+        "o": "< 3 أشهر",
+        "t": "18-36 شهراً"
+      },
+      {
+        "f": "التكلفة لكل وحدة (2BR)",
+        "o": "30-50٪ أقل",
+        "t": "خط الأساس"
+      },
+      {
+        "f": "خلق فرص عمل محلية",
+        "o": "عالية - لا آلات ثقيلة",
+        "t": "متوسطة - تعتمد على الآلات"
+      },
+      {
+        "f": "المسؤولية البيئية",
+        "o": "بلاستيك محول",
+        "t": "انبعاثات CO2"
+      },
+      {
+        "f": "تقارير SDG",
+        "o": "مقاييس مدمجة",
+        "t": "مطلوب تدقيق يدوي"
+      },
+      {
+        "f": "صمود أمام الكوارث",
+        "o": "إعصار Cat.5 + زلزال Z4",
+        "t": "متفاوت - غالباً أقل"
+      }
     ],
     "cta_section_title": "جاهز لاستكشاف النشر الوطني؟",
     "cta_section_subtitle": "يعمل فريقنا مباشرة مع الوزارات ووكالات الإسكان والمنظمات غير الحكومية.",
-    "cta_contact": "اتصل بفريقنا"
+    "cta_contact": "اتصل بفريقنا",
+    "hero_label": "Solutions — Governments & Municipalities",
+    "hero_title": "You are a Government — Municipality",
+    "hero_challenge": "Challenge",
+    "hero_solution": "Othalo Solution",
+    "hero_benefits": "Key Benefits",
+    "hero_partner": "Partner with Othalo to deliver affordable, sustainable, safe housing at scale.",
+    "hero_products_btn": "Products",
+    "form_heading": "Contact our team",
+    "form_org_required": "Organisation is required",
+    "form_reason_required": "Please select a reason",
+    "form_submit": "Send Message",
+    "form_send_another": "Send another message"
   },
   "housing_dev": {
     "label": "الحلول — مطورو الإسكان",
@@ -446,28 +798,85 @@
     "benefits_label": "مزايا المطور",
     "benefits_title": "بني لتحسين اقتصاديات التطوير الخاصة بك",
     "benefits": [
-      { "title": "التحكم في التكاليف وتقليل التعرض لتقلبات المواد", "desc": "التحكم في التكاليف وتقليل التعرض لتقلبات المواد." },
-      { "title": "البناء أسرع بالبناء المسبق (أيام وليس أشهر)", "desc": "بناء أسرع بالبناء المسبق - تسليم المنازل في أيام وليس أشهر." },
-      { "title": "احتياجات عمالة أقل", "desc": "حاجة أقل للعمالة في الموقع مع تنفيذ وتجميع مبسط." },
-      { "title": "كفاءة أعلى، تسليم قابل للتطوير", "desc": "كفاءة أعلى وتسليم قابل للتطوير للمشاريع الكبيرة." },
-      { "title": "الوصول إلى أسواق جديدة (قطاع ميسور التكلفة)", "desc": "الوصول إلى أسواق جديدة، خاصة قطاع الإسكان الميسور." },
-      { "title": "تعزيز ESG بمواد دائرية منخفضة الكربون", "desc": "تعزيز ESG بمواد دائرية منخفضة الكربون." },
-      { "title": "تصميم قابل للتخصيص", "desc": "تصميم قابل للتخصيص للتكيف مع مشروعك ولوائحك." }
+      {
+        "title": "التحكم في التكاليف وتقليل التعرض لتقلبات المواد",
+        "desc": "التحكم في التكاليف وتقليل التعرض لتقلبات المواد."
+      },
+      {
+        "title": "البناء أسرع بالبناء المسبق (أيام وليس أشهر)",
+        "desc": "بناء أسرع بالبناء المسبق - تسليم المنازل في أيام وليس أشهر."
+      },
+      {
+        "title": "احتياجات عمالة أقل",
+        "desc": "حاجة أقل للعمالة في الموقع مع تنفيذ وتجميع مبسط."
+      },
+      {
+        "title": "كفاءة أعلى، تسليم قابل للتطوير",
+        "desc": "كفاءة أعلى وتسليم قابل للتطوير للمشاريع الكبيرة."
+      },
+      {
+        "title": "الوصول إلى أسواق جديدة (قطاع ميسور التكلفة)",
+        "desc": "الوصول إلى أسواق جديدة، خاصة قطاع الإسكان الميسور."
+      },
+      {
+        "title": "تعزيز ESG بمواد دائرية منخفضة الكربون",
+        "desc": "تعزيز ESG بمواد دائرية منخفضة الكربون."
+      },
+      {
+        "title": "تصميم قابل للتخصيص",
+        "desc": "تصميم قابل للتخصيص للتكيف مع مشروعك ولوائحك."
+      }
     ],
     "roi_label": "مقاييس ROI",
     "roi_title": "الأرقام التي تحرك دراسة جدوى عملك",
     "roi_items": [
-      { "label": "التكلفة مقابل الخرسانة", "value": "30-50٪ أقل", "highlight": true },
-      { "label": "الجدول الزمني (100 وحدة)", "value": "< 3 أشهر", "highlight": true },
-      { "label": "متطلبات العمالة المحلية", "value": "نصف ماهرة فقط", "highlight": false },
-      { "label": "الآلات المطلوبة في الموقع", "value": "لاشيء", "highlight": true },
-      { "label": "هدر المواد في الموقع", "value": "قريب من الصفر", "highlight": false },
-      { "label": "حماية هامش المشروع", "value": "تكلفة ألواح ثابتة", "highlight": false }
+      {
+        "label": "التكلفة مقابل الخرسانة",
+        "value": "30-50٪ أقل",
+        "highlight": true
+      },
+      {
+        "label": "الجدول الزمني (100 وحدة)",
+        "value": "< 3 أشهر",
+        "highlight": true
+      },
+      {
+        "label": "متطلبات العمالة المحلية",
+        "value": "نصف ماهرة فقط",
+        "highlight": false
+      },
+      {
+        "label": "الآلات المطلوبة في الموقع",
+        "value": "لاشيء",
+        "highlight": true
+      },
+      {
+        "label": "هدر المواد في الموقع",
+        "value": "قريب من الصفر",
+        "highlight": false
+      },
+      {
+        "label": "حماية هامش المشروع",
+        "value": "تكلفة ألواح ثابتة",
+        "highlight": false
+      }
     ],
     "cta_title": "جاهز للتطوير مع أوثالو؟",
     "cta_subtitle": "سيقوم فريقنا بإطلاعك على المواصفات واللوجستيات والنموذج المالي الكامل.",
     "cta1_bottom": "اطلب موجزاً للتطوير",
-    "cta_contact": "اتصل بفريقنا"
+    "cta_contact": "اتصل بفريقنا",
+    "hero_label": "Solutions — Housing Developers",
+    "hero_title": "You are a Housing Developer",
+    "hero_challenge": "Challenge",
+    "hero_solution": "Othalo Solution",
+    "hero_benefits": "Key Benefits",
+    "hero_partner": "Partner with Othalo to build faster, reduce costs, and unlock new growth opportunities.",
+    "hero_products_btn": "Products",
+    "form_heading": "Contact our team",
+    "form_org_required": "Organisation is required",
+    "form_reason_required": "Please select a reason",
+    "form_submit": "Send Message",
+    "form_send_another": "Send another message"
   },
   "corporations": {
     "label": "الحلول — الشركات",
@@ -497,28 +906,79 @@
     "benefits_label": "مزايا الشركات",
     "benefits_title": "تأثير ESG مهيكل للشركات ذات التفكير المستقبلي",
     "benefits": [
-      { "title": "تلبية متطلبات EPR", "desc": "تلبية متطلبات EPR بنتائج قابلة للقياس من خلال تحويل البلاستيك." },
-      { "title": "تحويل النفايات إلى قيمة", "desc": "تحويل النفايات إلى قيمة من خلال نموذج دائري يحول البلاستيك لمنازل." },
-      { "title": "تحقيق تأثير ESG حقيقي", "desc": "تحقيق تأثير ESG حقيقي عبر الأبعاد البيئية والاجتماعية والحوكمة." },
-      { "title": "نشر سريع", "desc": "تمكين العمل الفوري والنتائج القابلة للقياس." },
-      { "title": "تعزيز ثقة العلامة التجارية", "desc": "تعزيز ثقة أصحاب المصلحة بتأثير مرئي على مستوى المجتمع." },
-      { "title": "تتبع شفاف", "desc": "تتبع تأثير شفاف وإعداد تقارير متوافقة مع الأطر الرئيسية." },
-      { "title": "قابل للتطوير عبر الأسواق", "desc": "قابل للتطوير لمطابقة بصمتك التشغيلية عالمياً." }
+      {
+        "title": "تلبية متطلبات EPR",
+        "desc": "تلبية متطلبات EPR بنتائج قابلة للقياس من خلال تحويل البلاستيك."
+      },
+      {
+        "title": "تحويل النفايات إلى قيمة",
+        "desc": "تحويل النفايات إلى قيمة من خلال نموذج دائري يحول البلاستيك لمنازل."
+      },
+      {
+        "title": "تحقيق تأثير ESG حقيقي",
+        "desc": "تحقيق تأثير ESG حقيقي عبر الأبعاد البيئية والاجتماعية والحوكمة."
+      },
+      {
+        "title": "نشر سريع",
+        "desc": "تمكين العمل الفوري والنتائج القابلة للقياس."
+      },
+      {
+        "title": "تعزيز ثقة العلامة التجارية",
+        "desc": "تعزيز ثقة أصحاب المصلحة بتأثير مرئي على مستوى المجتمع."
+      },
+      {
+        "title": "تتبع شفاف",
+        "desc": "تتبع تأثير شفاف وإعداد تقارير متوافقة مع الأطر الرئيسية."
+      },
+      {
+        "title": "قابل للتطوير عبر الأسواق",
+        "desc": "قابل للتطوير لمطابقة بصمتك التشغيلية عالمياً."
+      }
     ],
     "metrics_title": "مقاييس سيثق بها فريق الاستدامة لديك",
     "metrics_subtitle": "يولد كل نشر لشركة أوثالو حزمة بيانات تأثير كاملة.",
     "metrics_items": [
-      { "label": "البلاستيك المحول لكل وحدة 2BR", "value": "8 أطنان" },
-      { "label": "CO2 المتجنب مقابل الخرسانة", "value": "~12 طناً لكل وحدة" },
-      { "label": "أهداف التنمية المستدامة", "value": "9 من أصل 17" },
-      { "label": "الوظائف المحلية / 100 وحدة", "value": "80-120 دوراً" },
-      { "label": "أطر التأثير المدعومة", "value": "GRI, SASB, TCFD" },
-      { "label": "التحقق", "value": "قابل للتدقيق من طرف ثالث" }
+      {
+        "label": "البلاستيك المحول لكل وحدة 2BR",
+        "value": "8 أطنان"
+      },
+      {
+        "label": "CO2 المتجنب مقابل الخرسانة",
+        "value": "~12 طناً لكل وحدة"
+      },
+      {
+        "label": "أهداف التنمية المستدامة",
+        "value": "9 من أصل 17"
+      },
+      {
+        "label": "الوظائف المحلية / 100 وحدة",
+        "value": "80-120 دوراً"
+      },
+      {
+        "label": "أطر التأثير المدعومة",
+        "value": "GRI, SASB, TCFD"
+      },
+      {
+        "label": "التحقق",
+        "value": "قابل للتدقيق من طرف ثالث"
+      }
     ],
     "cta_title": "حول التزامات ESG الخاصة بك إلى تأثير محقق",
     "cta_subtitle": "تحدث مع فريق شراكات الشركات لدينا لتحديد برنامج متوافق مع أهدافك.",
     "cta1_bottom": "اتصل بشراكات الشركات",
-    "cta_contact": "اتصل بفريقنا"
+    "cta_contact": "اتصل بفريقنا",
+    "hero_label": "Solutions — Corporations",
+    "hero_title": "You are a Corporation",
+    "hero_challenge": "Challenge",
+    "hero_solution": "Othalo Solution",
+    "hero_benefits": "Key Benefits",
+    "hero_partner": "Partner with Othalo to turn plastic waste into measurable impact and strategic value.",
+    "hero_products_btn": "Products",
+    "form_heading": "Contact our team",
+    "form_org_required": "Company is required",
+    "form_reason_required": "Please select a reason",
+    "form_submit": "Send Message",
+    "form_send_another": "Send another message"
   },
   "contact": {
     "label": "تواصل معنا",
@@ -622,7 +1082,51 @@
       "2m_10m": "2 مليون - 10 ملايين دولار",
       "10m_plus": "أكثر من 10 ملايين دولار",
       "unsure": "سيتم تحديده"
-    }
+    },
+    "page_title": "Contact us",
+    "name_placeholder": "John Smith",
+    "name_asterisk": "Full Name *",
+    "email_placeholder": "john@company.com",
+    "email_asterisk": "Email Address *",
+    "phone_placeholder": "Phone number",
+    "org_label": "Company/Organisation",
+    "title_label": "Title",
+    "title_placeholder": "Job Title",
+    "reason_label": "Reason for contacting us",
+    "reason_placeholder": "Partnerships & Projects",
+    "reason_required": "Please select a reason for contacting us",
+    "message_placeholder_contact": "Tell us about your interest...",
+    "success_send_another": "Send another message",
+    "reasons": [
+      {
+        "value": "general",
+        "label": "General Inquiry"
+      },
+      {
+        "value": "partnership",
+        "label": "Partnerships & Projects"
+      },
+      {
+        "value": "pricing",
+        "label": "Request Pricing / Proposal"
+      },
+      {
+        "value": "technical",
+        "label": "Technical & Product Information"
+      },
+      {
+        "value": "investor",
+        "label": "Investor Inquiry"
+      },
+      {
+        "value": "media",
+        "label": "Media / Press"
+      },
+      {
+        "value": "careers",
+        "label": "Careers"
+      }
+    ]
   },
   "quote": {
     "gov_title": "اطلب موجزاً حكومياً",
@@ -637,7 +1141,12 @@
     "main_subtitle": "املأ التفاصيل - سنرد خلال يومي عمل.",
     "sidebar_title": "طلب عرض سعر للمشروع",
     "sidebar_desc": "سيقوم متخصصونا بإعداد مقترح فني ومالي مفصل.",
-    "sidebar_items": ["نشر سريع", "تقنية حاصلة على براءة اختراع", "معتمد من UN-Habitat", "تأثير عالمي"],
+    "sidebar_items": [
+      "نشر سريع",
+      "تقنية حاصلة على براءة اختراع",
+      "معتمد من UN-Habitat",
+      "تأثير عالمي"
+    ],
     "name": "الاسم الكامل",
     "email": "بريد إلكتروني",
     "phone": "هاتف",
@@ -708,13 +1217,58 @@
   },
   "footer": {
     "tagline": "تحويل نفايات البلاستيك إلى سكن كريم ومستدام للمجتمعات في جميع أنحاء العالم.",
-    
-    
     "company": "الشركة",
     "solutions": "الحلول",
     "legal": "قانوني",
     "rights": "جميع الحقوق محفوظة.",
-    "registered": "مسجل في النرويج — بناء مستقبل مستدام"
+    "registered": "مسجل في النرويج — بناء مستقبل مستدام",
+    "social_label": "Join, share, like, follow us on:",
+    "links": [
+      {
+        "label": "Contact us",
+        "href": "/contact"
+      },
+      {
+        "label": "Products",
+        "href": "/products"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Terms of service",
+        "href": "/terms"
+      },
+      {
+        "label": "Privacy policy",
+        "href": "/privacy"
+      }
+    ],
+    "socials": [
+      {
+        "label": "Twitter"
+      },
+      {
+        "label": "Facebook"
+      },
+      {
+        "label": "LinkedIn"
+      },
+      {
+        "label": "YouTube"
+      },
+      {
+        "label": "Instagram"
+      }
+    ],
+    "company_name": "Othalo Group Ltd",
+    "registration_no": "Registration no.:",
+    "license_no": "License no.:",
+    "address_heading": "Address",
+    "address_line1": "RAK Innovation City, Post Box #30099",
+    "address_line2": "RAKBANK Headquarters, Government of Ras Al Khaimah",
+    "address_line3": "United Arab Emirates"
   },
   "privacy": {
     "label": "قانوني",
@@ -730,12 +1284,7 @@
     "boundary_title": "حدث خطأ ما",
     "boundary_subtitle": "حدث خطأ غير متوقع. يرجى محاولة تحديث الصفحة.",
     "refresh": "تحديث الصفحة",
-    "home": "الذهاب للرئيسية"
-  },
-  "404": {
-    "code": "404",
-    "title": "الصفحة غير موجودة",
-    "subtitle": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
-    "home": "العودة للرئيسية"
+    "home": "الذهاب للرئيسية",
+    "boundary_desc": "We encountered an unexpected error while rendering this page. Our technical team has been notified."
   }
 }

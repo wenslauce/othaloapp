@@ -23,16 +23,6 @@ function FieldError({ msg }) {
   );
 }
 
-const REASONS = [
-  { value: 'general',     label: 'General Inquiry' },
-  { value: 'partnership', label: 'Partnerships & Projects' },
-  { value: 'pricing',     label: 'Request Pricing / Proposal' },
-  { value: 'technical',   label: 'Technical & Product Information' },
-  { value: 'investor',    label: 'Investor Inquiry' },
-  { value: 'media',       label: 'Media / Press' },
-  { value: 'careers',     label: 'Careers' },
-];
-
 const INITIAL_FORM = {
   name: '', email: '', countryCode: '', dialCode: '', phone: '', org: '', title: '', reason: '', message: '',
 };
@@ -46,6 +36,8 @@ export default function HousingDevelopers() {
   const [token, setToken] = useState(null);
   const [form, setForm] = useState(INITIAL_FORM);
 
+  const reasons = t('contact.reasons', { returnObjects: true });
+
   const set = (key, val) => {
     setForm(f => ({ ...f, [key]: val }));
     if (errors[key]) setErrors(e => ({ ...e, [key]: '' }));
@@ -57,8 +49,8 @@ export default function HousingDevelopers() {
     if (!form.name.trim()) errs.name = t('contact.err_name');
     if (!form.email || !validateEmail(form.email)) errs.email = t('contact.err_email');
     if (form.phone && !validatePhone(form.phone, form.countryCode)) errs.phone = t('contact.err_phone');
-    if (!form.org.trim()) errs.org = 'Organisation is required';
-    if (!form.reason) errs.reason = 'Please select a reason';
+    if (!form.org.trim()) errs.org = t('housing_dev.form_org_required');
+    if (!form.reason) errs.reason = t('housing_dev.form_reason_required');
     if (!form.message.trim() || form.message.trim().length < 10) errs.message = t('contact.err_message');
     return errs;
   };
@@ -90,29 +82,29 @@ export default function HousingDevelopers() {
   const challengeBullets = t('housing_dev.challenge_bullets', { returnObjects: true });
   const solutionBullets  = t('housing_dev.solution_bullets',  { returnObjects: true });
   const benefits         = t('housing_dev.benefits',          { returnObjects: true });
+  const roiItems         = t('housing_dev.roi_items',         { returnObjects: true });
 
   return (
     <div className="overflow-hidden bg-white">
       <SEOHead
-        title="Housing Developers — Othalo Housing Solutions"
+        title={t('seo.solutions.title')}
         description={t('seo.solutions.description')}
         canonical="https://othalo.com/solutions/housing-developers"
         keywords={t('seo.solutions.keywords').split(', ')}
       />
 
-      {/* ── HERO: image right / content left ── */}
+      {/* ── HERO ── */}
       <section className="bg-white">
         <div className="flex flex-col lg:flex-row lg:min-h-[520px]">
-          {/* Left: content */}
           <div className="w-full lg:w-1/2 px-8 md:px-12 lg:px-14 py-14 lg:py-20 flex flex-col justify-center">
             <SlotIn>
-              <p className="text-teal text-xs font-heading font-semibold uppercase tracking-widest mb-3">Solutions — Housing Developers</p>
+              <p className="text-teal text-xs font-heading font-semibold uppercase tracking-widest mb-3">{t('housing_dev.hero_label')}</p>
               <h1 className="font-heading text-3xl lg:text-4xl font-bold text-navy mb-8 leading-tight">
-                You are a Housing Developer
+                {t('housing_dev.hero_title')}
               </h1>
 
               <div className="mb-6">
-                <h2 className="font-heading font-bold text-navy text-lg mb-3">Challenge</h2>
+                <h2 className="font-heading font-bold text-navy text-lg mb-3">{t('housing_dev.hero_challenge')}</h2>
                 <ul className="space-y-2">
                   {Array.isArray(challengeBullets) && challengeBullets.map((item, i) => (
                     <li key={i} className="flex items-start gap-2.5 text-navy/70 text-sm">
@@ -124,7 +116,7 @@ export default function HousingDevelopers() {
               </div>
 
               <div className="mb-6">
-                <h2 className="font-heading font-bold text-navy text-lg mb-3">Othalo Solution</h2>
+                <h2 className="font-heading font-bold text-navy text-lg mb-3">{t('housing_dev.hero_solution')}</h2>
                 <ul className="space-y-2">
                   {Array.isArray(solutionBullets) && solutionBullets.map((item, i) => (
                     <li key={i} className="flex items-start gap-2.5 text-navy/70 text-sm">
@@ -136,7 +128,7 @@ export default function HousingDevelopers() {
               </div>
 
               <div className="mb-8">
-                <h2 className="font-heading font-bold text-navy text-lg mb-3">Key Benefits</h2>
+                <h2 className="font-heading font-bold text-navy text-lg mb-3">{t('housing_dev.hero_benefits')}</h2>
                 <ul className="space-y-2">
                   {Array.isArray(benefits) && benefits.map((b, i) => (
                     <li key={i} className="flex items-start gap-2.5 text-navy/70 text-sm">
@@ -147,23 +139,41 @@ export default function HousingDevelopers() {
                 </ul>
                 <div className="mt-6">
                   <Button asChild className="bg-navy hover:bg-navy/90 text-white font-semibold px-6 h-10 rounded-[6px] text-sm tracking-wide uppercase">
-                    <Link to="/products">Products</Link>
+                    <Link to="/products">{t('housing_dev.hero_products_btn')}</Link>
                   </Button>
                 </div>
               </div>
 
               <p className="font-heading font-semibold text-navy text-sm">
-                Partner with Othalo to build faster, reduce costs, and unlock new growth opportunities.
+                {t('housing_dev.hero_partner')}
               </p>
             </SlotIn>
           </div>
-          {/* Right: image */}
           <div className="w-full lg:w-1/2 min-h-[300px] lg:min-h-0">
             <img
-              src="/images/The community 2c.png"
+              src="/images/The Worker Accomodation 6a.png"
               alt="Housing developer solutions"
               className="w-full h-full object-cover"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* ── ROI METRICS ── */}
+      <section className="bg-[#E7E9EC] py-12 lg:py-16">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
+          <SlotIn>
+            <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-8 text-center">{t('housing_dev.roi_title')}</h2>
+          </SlotIn>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {Array.isArray(roiItems) && roiItems.map((item, i) => (
+              <SlotIn key={item.label} delay={i * 0.06}>
+                <div className={`bg-white border border-tech-slate rounded-sm p-6 ${item.highlight ? 'ring-1 ring-teal' : ''}`}>
+                  <p className="text-navy/60 text-xs uppercase tracking-wider mb-1">{item.label}</p>
+                  <p className="font-heading font-bold text-navy text-2xl">{item.value}</p>
+                </div>
+              </SlotIn>
+            ))}
           </div>
         </div>
       </section>
@@ -172,7 +182,7 @@ export default function HousingDevelopers() {
       <section className="bg-surface py-14 lg:py-20 px-4">
         <div className="max-w-2xl mx-auto">
           <SlotIn>
-            <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-8 text-center">Contact our team</h2>
+            <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-8 text-center">{t('housing_dev.form_heading')}</h2>
           </SlotIn>
           <SlotIn delay={0.1}>
             <div className="bg-white border border-tech-slate rounded-sm shadow-sm p-6 sm:p-8">
@@ -180,19 +190,19 @@ export default function HousingDevelopers() {
                 <form onSubmit={handleSubmit} className="space-y-5" noValidate>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">Full Name *</Label>
-                      <Input value={form.name} onChange={e => set('name', e.target.value)} placeholder="John Smith" className={`h-10 rounded-sm ${errors.name ? 'border-destructive' : ''}`} />
+                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.name_asterisk')}</Label>
+                      <Input value={form.name} onChange={e => set('name', e.target.value)} placeholder={t('contact.name_placeholder')} className={`h-10 rounded-sm ${errors.name ? 'border-destructive' : ''}`} />
                       <FieldError msg={errors.name} />
                     </div>
                     <div>
-                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">Email Address *</Label>
-                      <Input type="email" value={form.email} onChange={e => set('email', e.target.value)} placeholder="john@company.com" className={`h-10 rounded-sm ${errors.email ? 'border-destructive' : ''}`} />
+                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.email_asterisk')}</Label>
+                      <Input type="email" value={form.email} onChange={e => set('email', e.target.value)} placeholder={t('contact.email_placeholder')} className={`h-10 rounded-sm ${errors.email ? 'border-destructive' : ''}`} />
                       <FieldError msg={errors.email} />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">Phone</Label>
+                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.phone')}</Label>
                       <div className="flex gap-2">
                         <Select 
                           onValueChange={v => {
@@ -210,35 +220,35 @@ export default function HousingDevelopers() {
                             ))}
                           </SelectContent>
                         </Select>
-                        <Input value={form.phone} onChange={e => set('phone', e.target.value.replace(/[^0-9\s\-().]/g, ''))} placeholder="Phone number" className={`h-10 rounded-sm flex-1 ${errors.phone ? 'border-destructive' : ''}`} />
+                        <Input value={form.phone} onChange={e => set('phone', e.target.value.replace(/[^0-9\s\-().]/g, ''))} placeholder={t('contact.phone_placeholder')} className={`h-10 rounded-sm flex-1 ${errors.phone ? 'border-destructive' : ''}`} />
                       </div>
                       <FieldError msg={errors.phone} />
                     </div>
                     <div>
-                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">Company *</Label>
-                      <Input value={form.org} onChange={e => set('org', e.target.value)} placeholder="Company Name" className={`h-10 rounded-sm ${errors.org ? 'border-destructive' : ''}`} />
+                      <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.org_label')}</Label>
+                      <Input value={form.org} onChange={e => set('org', e.target.value)} placeholder={t('contact.org_placeholder')} className={`h-10 rounded-sm ${errors.org ? 'border-destructive' : ''}`} />
                       <FieldError msg={errors.org} />
                     </div>
                   </div>
                   <div>
-                    <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">Title</Label>
-                    <Input value={form.title} onChange={e => set('title', e.target.value)} placeholder="Job Title" className="h-10 rounded-sm" />
+                    <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.title_label')}</Label>
+                    <Input value={form.title} onChange={e => set('title', e.target.value)} placeholder={t('contact.title_placeholder')} className="h-10 rounded-sm" />
                   </div>
                   <div>
-                    <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">Reason for contacting us</Label>
+                    <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">{t('contact.reason_label')}</Label>
                     <Select onValueChange={v => set('reason', v)} value={form.reason}>
                       <SelectTrigger className={`h-10 rounded-sm ${errors.reason ? 'border-destructive' : ''}`}>
-                        <SelectValue placeholder="Select a reason" />
+                        <SelectValue placeholder={t('contact.reason_placeholder')} />
                       </SelectTrigger>
                       <SelectContent>
-                        {REASONS.map(r => <SelectItem key={r.value} value={r.value}>{r.label}</SelectItem>)}
+                        {Array.isArray(reasons) && reasons.map(r => <SelectItem key={r.value} value={r.value}>{r.label}</SelectItem>)}
                       </SelectContent>
                     </Select>
                     <FieldError msg={errors.reason} />
                   </div>
                   <div>
                     <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">Message *</Label>
-                    <Textarea rows={5} value={form.message} onChange={e => set('message', e.target.value)} placeholder="Tell us about your project..." className={`rounded-sm resize-none ${errors.message ? 'border-destructive' : ''}`} />
+                    <Textarea rows={5} value={form.message} onChange={e => set('message', e.target.value)} placeholder={t('contact.message_placeholder')} className={`rounded-sm resize-none ${errors.message ? 'border-destructive' : ''}`} />
                     <FieldError msg={errors.message} />
                   </div>
                   <div className="py-1">
@@ -252,7 +262,7 @@ export default function HousingDevelopers() {
                   )}
                   <div className="flex justify-center pt-1">
                     <Button type="submit" disabled={loading} className="bg-navy hover:bg-navy/90 text-white font-semibold px-10 h-10 rounded-[6px] text-sm tracking-wide uppercase">
-                      {loading ? <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" /> : 'Send Message'}
+                      {loading ? <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" /> : t('housing_dev.form_submit')}
                     </Button>
                   </div>
                 </form>
@@ -264,7 +274,7 @@ export default function HousingDevelopers() {
                   <h3 className="font-heading font-semibold text-navy text-2xl mb-3">{t('contact.success_title')}</h3>
                   <p className="text-muted-foreground max-w-sm mx-auto text-sm leading-relaxed">{t('contact.success_note')}</p>
                   <Button onClick={() => { setSubmitted(false); setForm(INITIAL_FORM); }} className="mt-8 bg-navy hover:bg-navy/90 text-white font-semibold px-8 rounded-[6px]">
-                    Send another message
+                    {t('housing_dev.form_send_another')}
                   </Button>
                 </div>
               )}

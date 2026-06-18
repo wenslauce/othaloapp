@@ -34,6 +34,8 @@ export default function Contact() {
   const [token, setToken] = useState(null);
   const [form, setForm] = useState(INITIAL_FORM);
 
+  const reasons = t('contact.reasons', { returnObjects: true });
+
   const set = (key, val) => {
     setForm(f => ({ ...f, [key]: val }));
     if (errors[key]) setErrors(e => ({ ...e, [key]: '' }));
@@ -45,7 +47,7 @@ export default function Contact() {
     if (!form.name.trim()) errs.name = t('contact.err_name');
     if (!form.email || !validateEmail(form.email)) errs.email = t('contact.err_email');
     if (form.phone && !validatePhone(form.phone, form.countryCode)) errs.phone = t('contact.err_phone');
-    if (!form.reason) errs.reason = 'Please select a reason for contacting us';
+    if (!form.reason) errs.reason = t('contact.reason_required');
     if (!form.message.trim() || form.message.trim().length < 10) errs.message = t('contact.err_message');
     return errs;
   };
@@ -98,50 +100,46 @@ export default function Contact() {
       <section className="py-16 lg:py-24 px-4">
         <div className="max-w-2xl mx-auto">
 
-          {/* Page title */}
           <h1 className="font-heading text-3xl md:text-4xl font-semibold text-navy text-center mb-10">
-            Contact us
+            {t('contact.page_title')}
           </h1>
 
-          {/* Card */}
           <div className="bg-white border border-tech-slate rounded-sm shadow-sm p-8 md:p-10">
             {!submitted ? (
               <form onSubmit={handleSubmit} className="space-y-5" noValidate>
 
-                {/* Full Name + Email Address */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
-                      Full Name *
+                      {t('contact.name_asterisk')}
                     </Label>
                     <Input
                       value={form.name}
                       onChange={e => set('name', e.target.value)}
-                      placeholder="John Smith"
+                      placeholder={t('contact.name_placeholder')}
                       className={`h-10 rounded-sm ${errors.name ? 'border-destructive' : ''}`}
                     />
                     <FieldError msg={errors.name} />
                   </div>
                   <div>
                     <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
-                      Email Address *
+                      {t('contact.email_asterisk')}
                     </Label>
                     <Input
                       type="email"
                       value={form.email}
                       onChange={e => set('email', e.target.value)}
-                      placeholder="john@company.com"
+                      placeholder={t('contact.email_placeholder')}
                       className={`h-10 rounded-sm ${errors.email ? 'border-destructive' : ''}`}
                     />
                     <FieldError msg={errors.email} />
                   </div>
                 </div>
 
-                {/* Phone + Company/Organisation */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
-                      Phone
+                      {t('contact.phone')}
                     </Label>
                     <div className="flex gap-2">
                       <Select 
@@ -163,7 +161,7 @@ export default function Contact() {
                       <Input
                         value={form.phone}
                         onChange={e => set('phone', e.target.value.replace(/[^0-9\s\-().]/g, ''))}
-                        placeholder="Phone number"
+                        placeholder={t('contact.phone_placeholder')}
                         className={`h-10 rounded-sm flex-1 ${errors.phone ? 'border-destructive' : ''}`}
                       />
                     </div>
@@ -171,41 +169,39 @@ export default function Contact() {
                   </div>
                   <div>
                     <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
-                      Company/Organisation
+                      {t('contact.org_label')}
                     </Label>
                     <Input
                       value={form.org}
                       onChange={e => set('org', e.target.value)}
-                      placeholder="Company Name"
+                      placeholder={t('contact.org_placeholder')}
                       className="h-10 rounded-sm"
                     />
                   </div>
                 </div>
 
-                {/* Title */}
                 <div>
                   <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
-                    Title
+                    {t('contact.title_label')}
                   </Label>
                   <Input
                     value={form.title}
                     onChange={e => set('title', e.target.value)}
-                    placeholder="Job Title"
+                    placeholder={t('contact.title_placeholder')}
                     className="h-10 rounded-sm"
                   />
                 </div>
 
-                {/* Reason for contacting us */}
                 <div>
                   <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
-                    Reason for contacting us
+                    {t('contact.reason_label')}
                   </Label>
                   <Select onValueChange={v => set('reason', v)} value={form.reason}>
                     <SelectTrigger className={`h-10 rounded-sm ${errors.reason ? 'border-destructive' : ''}`}>
-                      <SelectValue placeholder="Partnerships & Projects" />
+                      <SelectValue placeholder={t('contact.reason_placeholder')} />
                     </SelectTrigger>
                     <SelectContent>
-                      {REASONS.map(r => (
+                      {Array.isArray(reasons) && reasons.map(r => (
                         <SelectItem key={r.value} value={r.value}>{r.label}</SelectItem>
                       ))}
                     </SelectContent>
@@ -213,7 +209,6 @@ export default function Contact() {
                   <FieldError msg={errors.reason} />
                 </div>
 
-                {/* Message */}
                 <div>
                   <Label className="text-navy text-xs font-semibold font-heading uppercase tracking-wider mb-1.5 block">
                     Message *
@@ -222,13 +217,12 @@ export default function Contact() {
                     rows={5}
                     value={form.message}
                     onChange={e => set('message', e.target.value)}
-                    placeholder="Tell us about your interest..."
+                    placeholder={t('contact.message_placeholder_contact')}
                     className={`rounded-sm resize-none ${errors.message ? 'border-destructive' : ''}`}
                   />
                   <FieldError msg={errors.message} />
                 </div>
 
-                {/* Turnstile */}
                 <div className="py-1">
                   <Turnstile
                     // @ts-ignore
@@ -238,7 +232,6 @@ export default function Contact() {
                   />
                 </div>
 
-                {/* API Error */}
                 {apiError && (
                   <div className="flex items-start gap-2 bg-destructive/5 border border-destructive/20 rounded-sm p-3">
                     <XCircle className="w-4 h-4 text-destructive flex-shrink-0 mt-0.5" />
@@ -246,7 +239,6 @@ export default function Contact() {
                   </div>
                 )}
 
-                {/* Submit */}
                 <div className="flex justify-center pt-1">
                   <Button
                     type="submit"
@@ -255,7 +247,7 @@ export default function Contact() {
                   >
                     {loading ? (
                       <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    ) : 'Send Message'}
+                    ) : t('contact.submit')}
                   </Button>
                 </div>
 
@@ -271,7 +263,7 @@ export default function Contact() {
                   onClick={() => { setSubmitted(false); setForm(INITIAL_FORM); }}
                   className="mt-8 bg-navy hover:bg-navy/90 text-white font-semibold px-8 rounded-sm"
                 >
-                  Send another message
+                  {t('contact.success_send_another')}
                 </Button>
               </div>
             )}
