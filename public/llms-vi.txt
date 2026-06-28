@@ -1,0 +1,44 @@
+# Othalo
+
+> Biến rác thải nhựa thành nhà ở đàng hoàng, bền vững cho các cộng đồng trên toàn thế giới.
+
+Othalo là một công ty công nghệ của Na Uy chuyên biến rác thải nhựa tái chế thành các tấm panel xây dựng cấu trúc bằng cách sử dụng công nghệ sản xuất đã được cấp bằng sáng chế. Các tấm panel này được sử dụng để xây dựng những ngôi nhà giá cả phải chăng, bền bỉ và bền vững — giải quyết đồng thời hai cuộc khủng hoảng toàn cầu: đại dịch rác thải nhựa và sự thiếu hụt nhà ở giá rẻ.
+
+## Các Trang Chính
+
+- [Trang chủ](https://othalo.com/): Tổng quan về công ty và giới thiệu công nghệ
+- [Sản phẩm](https://othalo.com/products): Hệ thống tấm panel Othalo — thông số kỹ thuật và các dòng sản phẩm
+- [Giải pháp](https://othalo.com/solutions): Các giải pháp triển khai cho các bên liên quan khác nhau
+- [Giải pháp / Chính phủ](https://othalo.com/solutions/governments): Các chương trình nhà ở giá rẻ cấp quốc gia và thành phố
+- [Giải pháp / Nhà phát triển nhà ở](https://othalo.com/solutions/housing-developers): Xây dựng tiết kiệm chi phí cho các nhà phát triển tư nhân
+- [Giải pháp / Doanh nghiệp](https://othalo.com/solutions/corporations): Các chương trình ESG và CSR trọn gói
+- [Giới thiệu](https://othalo.com/about): Sứ mệnh, đội ngũ và tác động
+- [Liên hệ](https://othalo.com/contact): Liên hệ hoặc yêu cầu báo giá
+
+## Sản phẩm: Hệ thống tấm panel Othalo
+
+Tấm tường cấu trúc được sản xuất từ 100% nhựa tái chế. Các thông số kỹ thuật chính:
+- Tuổi thọ: 60+ năm
+- Độ bền: Mạnh hơn bê tông gấp 7 lần
+- Cách nhiệt: Hiệu quả hơn bê tông gấp 3 lần
+- Xếp hạng cháy: Lớp B1 (tự dập tắt)
+- Khả năng chống gió: Bão cấp 5 (>200 km/h)
+- Địa chấn: Chống động đất Cấp 4
+- Không cần xi măng, thép hay nước trong xây dựng
+- Mỗi căn hộ 2 phòng ngủ chuyển hướng khoảng 8 tấn nhựa khỏi môi trường
+- Được UN-Habitat chứng nhận vì một Tương lai Đô thị Tốt đẹp hơn
+
+## Các Dòng Sản Phẩm
+
+- **The Community**: Các căn hộ nhà ở đơn gia đình và đa gia đình (42m² mỗi căn)
+- **The District**: Cụm dân cư mật độ trung bình với cơ sở hạ tầng đầy đủ
+- **The Emergency Shelter**: Triển khai nhanh chóng cho cứu trợ thiên tai
+- **The Medical Units**: Phòng khám, phòng cách ly, trung tâm chẩn đoán
+- **The Worker Accommodation**: Được xây dựng chuyên dụng cho công trường xây dựng và công nghiệp
+
+## Công ty
+
+- **Thành lập**: Na Uy (Othalo AS)
+- **Trụ sở chính**: Oslo, Na Uy
+- **Thị trường mục tiêu**: Châu Phi, Đông Nam Á, Caribe và các thị trường mới nổi khác
+- **Sự chứng nhận của LHQ**: UN-Habitat vì một Tương lai Đô thị Tốt đẹp hơn

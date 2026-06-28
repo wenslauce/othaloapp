@@ -1,0 +1,44 @@
+# Othalo
+
+> Paggawa ng disenteng at sustainable na pabahay para sa mga komunidad sa buong mundo mula sa basura ng plastik.
+
+Ang Othalo ay isang Norwegian technology company na nagbabago ng recycled na basurang plastik upang maging structural building panels gamit ang patented na teknolohiya sa pagmamanupaktura. Ang mga panel ay ginagamit upang magtayo ng abot-kaya, matibay, at sustainable na mga tahanan — tinutugunan ang dalawang pandaigdigang krisis nang sabay: ang epidemya sa basurang plastik at ang kakulangan sa abot-kayang pabahay.
+
+## Mga Pangunahing Pahina
+
+- [Home](https://othalo.com/): Pangkalahatang-ideya ng kumpanya at pagpapakilala sa teknolohiya
+- [Mga Produkto](https://othalo.com/products): Ang Othalo Panel System — mga detalye at mga linya ng produkto
+- [Mga Solusyon](https://othalo.com/solutions): Mga solusyon sa deployment para sa iba't ibang stakeholder
+- [Mga Solusyon / Mga Pamahalaan](https://othalo.com/solutions/governments): Pambansa at munisipyong mga programa sa abot-kayang pabahay
+- [Mga Solusyon / Mga Developer ng Pabahay](https://othalo.com/solutions/housing-developers): Matipid sa gastos na konstruksyon para sa mga pribadong developer
+- [Mga Solusyon / Mga Korporasyon](https://othalo.com/solutions/corporations): Turnkey na mga programa sa ESG at CSR
+- [Tungkol sa Amin](https://othalo.com/about): Misyon, koponan, at epekto
+- [Makipag-ugnayan](https://othalo.com/contact): Makipag-ugnayan o humiling ng quote
+
+## Produkto: Ang Othalo Panel System
+
+Mga structural wall panel na gawa sa 100% recycled na plastik. Mga pangunahing detalye:
+- Lifespan: 60+ taon
+- Tibay: 7x na mas matibay kaysa sa semento
+- Insulation: 3x na mas epektibo kaysa sa semento
+- Fire rating: Class B1 (self-extinguishing)
+- Wind resistance: Kategorya 5 na bagyo (>200 km/h)
+- Seismic: Tahan sa Zone 4 na lindol
+- Walang semento, bakal, o tubig na kailangan sa pagtatayo
+- Ang bawat 2-bedroom na yunit ay naglilihis ng ~8 tonelada ng plastik mula sa kapaligiran
+- Inendorso ng UN-Habitat para sa Mas Mabuting Urbanong Hinaharap
+
+## Mga Linya ng Produkto
+
+- **The Community**: Mga yunit ng tirahan para sa iisang pamilya at maraming pamilya (42m² bawat yunit)
+- **The District**: Mga cluster ng tirahan na may katamtamang densidad at buong imprastraktura
+- **The Emergency Shelter**: Mabilis na deployment para sa relief sa sakuna
+- **The Medical Units**: Mga klinika, ward sa paghihiwalay, mga diagnostic center
+- **The Worker Accommodation**: Binuo para sa konstruksyon at mga industriyal na site
+
+## Kumpanya
+
+- **Itinatag**: Norway (Othalo AS)
+- **Pangunahing Tanggapan**: Oslo, Norway
+- **Mga Pokus na Merkado**: Africa, Timog-Silangang Asya, Caribbean, at iba pang umuusbong na merkado
+- **Endorsement ng UN**: UN-Habitat para sa Mas Mabuting Urbanong Hinaharap

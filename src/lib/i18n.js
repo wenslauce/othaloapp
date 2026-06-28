@@ -10,6 +10,11 @@ import es from '@/locales/es.json';
 import pt from '@/locales/pt.json';
 import ru from '@/locales/ru.json';
 import ar from '@/locales/ar.json';
+import hi from '@/locales/hi.json';
+import id from '@/locales/id.json';
+import fil from '@/locales/fil.json';
+import th from '@/locales/th.json';
+import vi from '@/locales/vi.json';
 
 i18n
   .use(LanguageDetector)
@@ -23,6 +28,11 @@ i18n
       pt: { translation: pt },
       ru: { translation: ru },
       ar: { translation: ar },
+      hi: { translation: hi },
+      id: { translation: id },
+      fil: { translation: fil },
+      th: { translation: th },
+      vi: { translation: vi },
     },
     fallbackLng: 'en',
     interpolation: { escapeValue: false },

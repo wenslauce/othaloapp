@@ -17,6 +17,11 @@ const languages = [
   { code: 'pt', name: 'Português', flag: 'pt' },
   { code: 'ar', name: 'العربية', flag: 'ae' },
   { code: 'ru', name: 'Русский', flag: 'ru' },
+  { code: 'hi', name: 'हिन्दी', flag: 'in' },
+  { code: 'id', name: 'Bahasa Indonesia', flag: 'id' },
+  { code: 'fil', name: 'Filipino', flag: 'ph' },
+  { code: 'th', name: 'ไทย', flag: 'th' },
+  { code: 'vi', name: 'Tiếng Việt', flag: 'vn' },
 ];
 
 export default function LanguageSwitcher({ variant = 'default', className = '' }) {
