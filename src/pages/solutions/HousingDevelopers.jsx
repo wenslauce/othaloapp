@@ -82,7 +82,6 @@ export default function HousingDevelopers() {
   const challengeBullets = t('housing_dev.challenge_bullets', { returnObjects: true });
   const solutionBullets  = t('housing_dev.solution_bullets',  { returnObjects: true });
   const benefits         = t('housing_dev.benefits',          { returnObjects: true });
-  const roiItems         = t('housing_dev.roi_items',         { returnObjects: true });
 
   return (
     <div className="overflow-hidden bg-white">
@@ -155,25 +154,6 @@ export default function HousingDevelopers() {
               alt="Housing developer solutions"
               className="w-full h-full object-cover"
             />
-          </div>
-        </div>
-      </section>
-
-      {/* ── ROI METRICS ── */}
-      <section className="bg-[#E7E9EC] py-12 lg:py-16">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <SlotIn>
-            <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-8 text-center">{t('housing_dev.roi_title')}</h2>
-          </SlotIn>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {Array.isArray(roiItems) && roiItems.map((item, i) => (
-              <SlotIn key={item.label} delay={i * 0.06}>
-                <div className={`bg-white border border-tech-slate rounded-sm p-6 ${item.highlight ? 'ring-1 ring-teal' : ''}`}>
-                  <p className="text-navy/60 text-xs uppercase tracking-wider mb-1">{item.label}</p>
-                  <p className="font-heading font-bold text-navy text-2xl">{item.value}</p>
-                </div>
-              </SlotIn>
-            ))}
           </div>
         </div>
       </section>

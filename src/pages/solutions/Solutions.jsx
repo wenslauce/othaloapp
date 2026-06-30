@@ -5,6 +5,12 @@ import SlotIn from '@/components/shared/SlotIn';
 import SEOHead from '@/components/shared/SEOHead';
 import { useTranslation } from 'react-i18next';
 
+const CTA_LINKS = [
+  '/solutions/governments',
+  '/solutions/housing-developers',
+  '/solutions/corporations'
+];
+
 export default function Solutions() {
   const { t } = useTranslation();
   const cards = t('solutions.cards', { returnObjects: true });
@@ -55,7 +61,7 @@ export default function Solutions() {
                     asChild
                     className="bg-teal hover:bg-teal-light text-white font-semibold px-4 h-8 rounded-[6px] text-xs self-start uppercase tracking-wide"
                   >
-                    <Link to={card.cta_link || '#'}>{card.cta}</Link>
+                    <Link to={card.cta_link || CTA_LINKS[i] || '#'}>{card.cta}</Link>
                   </Button>
                 </div>
               </SlotIn>
