@@ -150,7 +150,7 @@ export default function Corporations() {
           </div>
           <div className="w-full lg:w-1/2 min-h-[300px] lg:min-h-0">
             <img
-              src="/images/Stakeholders.png"
+              src="/images/The House Kenya crop.png"
               alt="Corporate ESG solutions"
               className="w-full h-full object-cover"
             />
