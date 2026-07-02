@@ -15,6 +15,8 @@ import id from '@/locales/id.json';
 import fil from '@/locales/fil.json';
 import th from '@/locales/th.json';
 import vi from '@/locales/vi.json';
+import de from '@/locales/de.json';
+import pl from '@/locales/pl.json';
 
 i18n
   .use(LanguageDetector)
@@ -33,6 +35,8 @@ i18n
       fil: { translation: fil },
       th: { translation: th },
       vi: { translation: vi },
+    de: { translation: de },
+    pl: { translation: pl },
     },
     fallbackLng: 'en',
     interpolation: { escapeValue: false },

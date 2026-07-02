@@ -1,6 +1,6 @@
 // Corporations solutions page
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from '@/components/shared/LocalizedLink';
 import { AlertCircle, CheckCircle, XCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -86,10 +86,10 @@ export default function Corporations() {
   return (
     <div className="overflow-hidden bg-white">
       <SEOHead
-        title={t('seo.solutions.title')}
-        description={t('seo.solutions.description')}
-        canonical="https://othalo.com/solutions/corporations"
-        keywords={t('seo.solutions.keywords').split(', ')}
+        title={t('seo.corporations.title')}
+        description={t('seo.corporations.description')}
+        pagePath="/solutions/corporations"
+        keywords={t('seo.corporations.keywords').split(', ')}
       />
 
       {/* ── HERO ── */}

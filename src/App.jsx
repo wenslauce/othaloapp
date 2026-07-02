@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Toaster } from "@/components/ui/toaster"
-import ErrorBoundary from '@/components/shared/ErrorBoundary'
-import { QueryClientProvider } from '@tanstack/react-query'
-import { queryClientInstance } from '@/lib/query-client'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Toaster } from "@/components/ui/toaster";
+import ErrorBoundary from '@/components/shared/ErrorBoundary';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClientInstance } from '@/lib/query-client';
+import { BrowserRouter as Router, Route, Routes, Navigate, useParams, useLocation, useNavigate } from 'react-router-dom';
+import LocaleWrapper from '@/components/LocaleWrapper';
 import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
@@ -21,9 +22,18 @@ import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import TermsOfService from '@/pages/TermsOfService';
 import ScrollToTop from '@/components/shared/ScrollToTop';
 import BackToTop from '@/components/shared/BackToTop';
+import CookiesBanner from '@/components/shared/CookiesBanner';
+
+const NavigateWithQuery = ({ to, replace }) => {
+  const location = useLocation();
+  return <Navigate to={{ pathname: to, search: location.search }} replace={replace} />;
+};
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
+  const { i18n } = useTranslation();
+
+  const supportedLocales = ['en','de','pl','no','fr','es','pt','ru','ar','hi','id','fil','th','vi'];
 
   if (isLoadingPublicSettings || isLoadingAuth) {
     return (
@@ -32,7 +42,7 @@ const AuthenticatedApp = () => {
           <div className="w-8 h-8 bg-teal rounded-sm flex items-center justify-center">
             <div className="w-4 h-4 border-2 border-white rounded-sm" />
           </div>
-          <div className="w-6 h-6 border-2 border-teal/30 border-t-teal rounded-full animate-spin"></div>
+          <div className="w-6 h-6 border-2 border-teal/30 border-t-teal rounded-full animate-spin" />
         </div>
       </div>
     );
@@ -49,18 +59,8 @@ const AuthenticatedApp = () => {
 
   return (
     <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/solutions" element={<Solutions />} />
-        <Route path="/solutions/governments" element={<Governments />} />
-        <Route path="/solutions/housing-developers" element={<HousingDevelopers />} />
-        <Route path="/solutions/corporations" element={<Corporations />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy" element={<PrivacyPolicy />} />
-        <Route path="/terms" element={<TermsOfService />} />
-      </Route>
+      <Route path="/" element={<NavigateWithQuery to="/en" replace />} />
+      <Route path="/:lang/*" element={<LocaleWrapper />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
@@ -83,6 +83,7 @@ function App() {
           <Router>
             <ScrollToTop />
             <BackToTop />
+            <CookiesBanner />
             <AuthenticatedApp />
           </Router>
           <Toaster />

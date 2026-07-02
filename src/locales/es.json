@@ -4,7 +4,7 @@
     "title": "Página no encontrada",
     "subtitle": "La página que busca no existe o ha sido movida.",
     "home": "Volver al inicio",
-    "contact": "Contact Us"
+    "contact": "Contáctenos"
   },
   "seo": {
     "home": {
@@ -31,6 +31,21 @@
       "title": "Contactar con Othalo — Colabore con nosotros",
       "description": "Póngase en contacto con Othalo. Ya sea un gobierno, un promotor o una empresa, estamos aquí para ayudarle a desplegar soluciones de vivienda sostenibles.",
       "keywords": "contacto Othalo, asociaciones Othalo, consulta de proyecto de vivienda"
+    },
+    "governments": {
+      "title": "Gobiernos y Municipios — Soluciones de Vivienda Othalo",
+      "description": "Despliegue viviendas asequibles y sostenibles a gran escala. Othalo colabora con gobiernos para cerrar la brecha habitacional con plástico reciclado.",
+      "keywords": "vivienda pública, vivienda social, vivienda asequible, ONU-Hábitat, construcción sostenible"
+    },
+    "housing_dev": {
+      "title": "Promotores Inmobiliarios — Construcción Sostenible y Rápido ROI",
+      "description": "Construya viviendas modulares de calidad en 72 horas. Colabore con Othalo para reducir costos y acelerar plazos de entrega.",
+      "keywords": "promotores inmobiliarios, construcción modular, inmobiliaria sostenible, rápido ROI, paneles Othalo"
+    },
+    "corporations": {
+      "title": "Soluciones de Vivienda ESG y RSE para Corporaciones — Othalo",
+      "description": "Convierta residuos plásticos en impacto social medible. Descubra las alianzas de Othalo para informes ESG y responsabilidad social.",
+      "keywords": "vivienda ESG corporativa, proyectos RSE, compensación de plástico, alianza sostenible"
     }
   },
   "nav": {
@@ -100,8 +115,8 @@
       }
     ],
     "gallery_categories": {
-      "community": "The Community",
-      "district": "The District",
+      "community": "La Comunidad",
+      "district": "El Distrito",
       "emergency": "Refugio de emergencia",
       "medical": "Unidades médicas",
       "worker": "Alojamiento para trabajadores",
@@ -193,47 +208,47 @@
     "cta_title": "Su solución comienza aquí",
     "cta_subtitle": "Ya sea un gobierno, un promotor o una corporación, tenemos una estrategia de despliegue diseñada para su contexto.",
     "quote_cta": "Saber más",
-    "solutions_section_title": "Your solution starts here",
-    "solutions_gov_name": "Governments — Municipalities",
-    "solutions_dev_name": "Housing Developers",
-    "solutions_corp_name": "Corporations",
-    "solutions_learn_more": "LEARN MORE",
-    "dual_impact_title": "Othalo using one global challenge to solve another",
-    "plastic_modal_title": "Plastic Waste",
-    "plastic_modal_subtitle": "The scale of the global plastic crisis",
+    "solutions_section_title": "Su solución comienza aquí",
+    "solutions_gov_name": "Gobiernos — Municipios",
+    "solutions_dev_name": "Promotores inmobiliarios",
+    "solutions_corp_name": "Corporaciones",
+    "solutions_learn_more": "MÁS INFORMACIÓN",
+    "dual_impact_title": "Othalo usa un desafío global para resolver otro",
+    "plastic_modal_title": "Residuos plásticos",
+    "plastic_modal_subtitle": "La magnitud de la crisis global del plástico",
     "plastic_modal_stats": [
       {
-        "stat": "10 billion tons",
-        "detail": "of plastic have ever been produced (OECD 2022, Global Plastics Outlook)"
+        "stat": "10 mil millones de toneladas",
+        "detail": "de plástico se han producido en total (OCDE 2022, Global Plastics Outlook)"
       },
       {
-        "stat": "400 million tons",
-        "detail": "are produced each year"
+        "stat": "400 millones de toneladas",
+        "detail": "se producen cada año"
       },
       {
-        "stat": "40%",
-        "detail": "of all plastic is single-use — used once, then discarded"
+        "stat": "40 %",
+        "detail": "de todo el plástico es de un solo uso — usado una vez y luego descartado"
       },
       {
-        "stat": "~9%",
-        "detail": "of plastic waste is actually recycled globally"
+        "stat": "~9 %",
+        "detail": "de los residuos plásticos se reciclan realmente a nivel global"
       },
       {
-        "stat": "80%",
-        "detail": "of plastic waste ends up in landfills — up to 93% in very low-income economies"
+        "stat": "80 %",
+        "detail": "de los residuos plásticos terminan en vertederos — hasta el 93 % en economías de muy bajos ingresos"
       },
       {
-        "stat": "11 million tonnes",
-        "detail": "of plastic enter the ocean every year"
+        "stat": "11 millones de toneladas",
+        "detail": "de plástico entran en el océano cada año"
       },
       {
-        "stat": "In 2022",
-        "detail": "Scientists detected microplastics in human blood for the first time"
+        "stat": "En 2022",
+        "detail": "los científicos detectaron microplásticos en la sangre humana por primera vez"
       }
     ],
-    "housing_modal_title": "Affordable Housing",
-    "housing_modal_subtitle": "The scale of the global housing crisis — UN-Habitat, 2025",
-    "housing_modal_section1_title": "People with No Housing (Homelessness)",
+    "housing_modal_title": "Vivienda asequible",
+    "housing_modal_subtitle": "La magnitud de la crisis global de vivienda — ONU-Hábitat, 2025",
+    "housing_modal_section1_title": "Personas sin vivienda (personas sin hogar)",
     "housing_modal_section1_stats": [
       {
         "stat": "300M+",
@@ -244,7 +259,7 @@
         "detail": "people forcibly displaced by conflict, persecution, and human rights violations as of end-2024 — double the figure from a decade prior"
       }
     ],
-    "housing_modal_section2_title": "People in Inadequate Housing",
+    "housing_modal_section2_title": "Personas en viviendas inadecuadas",
     "housing_modal_section2_stats": [
       {
         "stat": "~3 billion",
@@ -259,7 +274,7 @@
         "detail": "affordable homes would need to be built every single day between now and 2030 to close the gap (WRI)"
       }
     ],
-    "housing_modal_section3_title": "People Living in Slums / Informal Settlements",
+    "housing_modal_section3_title": "Personas que viven en asentamientos informales",
     "housing_modal_section3_stats": [
       {
         "stat": "1.12 billion",
@@ -270,7 +285,7 @@
         "detail": "of the world's urban population lives in slum conditions"
       }
     ],
-    "housing_modal_section3_regions_title": "Regional breakdown",
+    "housing_modal_section3_regions_title": "Distribución regional",
     "housing_modal_section3_regions": [
       {
         "region": "Central & Southern Asia",
@@ -285,7 +300,7 @@
         "value": "~230 million"
       }
     ],
-    "housing_modal_section4_title": "2050 Projections",
+    "housing_modal_section4_title": "Proyecciones 2050",
     "housing_modal_section4_headers": [
       "Category",
       "Current (2024–25)",
@@ -313,7 +328,7 @@
         "future": "~68–70% of world population in cities"
       }
     ],
-    "housing_modal_closing": "The UN predicts more than 3 billion people could be living in slums by 2050 — roughly triple today's figure — driven by rapid urbanization in Sub-Saharan Africa and South Asia. Nearly three-quarters of the urban infrastructure that will exist by 2050 has not been built yet. This is one of the defining infrastructure and humanitarian challenges of this century — and a strong structural tailwind for what Othalo is building."
+    "housing_modal_closing": "La ONU predice que más de 3 mil millones de personas podrían vivir en asentamientos informales para 2050 — aproximadamente el triple de la cifra actual — impulsado por la urbanización rápida en África subsahariana y Asia meridional. Casi tres cuartas partes de la infraestructura urbana que existirá en 2050 aún no se ha construido. Este es uno de los desafíos de infraestructura y humanitarios más importantes de este siglo — y un fuerte impulso estructural para lo que Othalo está construyendo."
   },
   "about": {
     "label": "Nuestro propósito",
@@ -432,13 +447,13 @@
     "story_label": "Nuestra historia",
     "story_quote": "Tras servir en el ejército y la inteligencia noruegos en los 90, presencié la resiliencia de las personas en conflictos y la dura realidad de los campos de refugiados. Años después, en una playa cubierta de plástico en el norte de Noruega, me di cuenta de que la crisis de los residuos estaba más cerca de lo que pensamos. Ese momento encendió una idea: ¿podríamos convertir los residuos en hogares seguros? Esa pregunta fue la base de Othalo.",
     "cta": "Descubra nuestra tecnología",
-    "page_title": "About",
+    "page_title": "Acerca de",
     "team_heading": "Team",
-    "team_subtitle_text": "A diverse group of innovators, engineers, and visionaries united by the mission to create sustainable housing solutions.",
-    "discover_btn": "Discover",
-    "culture_heading": "Our culture",
-    "culture_subtitle_text": "What shapes our approach to work and guides us in making a positive impact on the world.",
-    "impact_heading": "Impact created by Othalo"
+    "team_subtitle_text": "Un grupo diverso de innovadores, ingenieros y visionarios unidos por la misión de crear soluciones de vivienda sostenibles.",
+    "discover_btn": "Descubrir",
+    "culture_heading": "Nuestra cultura",
+    "culture_subtitle_text": "Lo que forma nuestro enfoque del trabajo y nos guía para generar un impacto positivo en el mundo.",
+    "impact_heading": "Impacto creado por Othalo"
   },
   "products": {
     "label": "Portafolio de productos",
@@ -573,9 +588,9 @@
         "desc": "Una crisis creciente: 1.600 millones de personas viven sin una vivienda adecuada."
       }
     ],
-    "see_how_it_works": "See how it works",
-    "technology_heading": "Technology",
-    "technology_desc": "Our standardized modules combine innovation with practicality, delivering cost efficient, fast to build, and durable and sustainable construction solutions.",
+    "see_how_it_works": "Vea cómo funciona",
+    "technology_heading": "Tecnología",
+    "technology_desc": "Nuestros módulos estandarizados combinan innovación con practicidad, ofreciendo soluciones de construcción rentables, rápidas y duraderas.",
     "tech_features_alt": [
       {
         "title": "Innovative patented technology",
@@ -608,8 +623,8 @@
       "The Medical Unit and Cold Storage",
       "The Worker Accomodation"
     ],
-    "panel_label": "Prefabricated Panels",
-    "cta_learn_more": "Learn More"
+    "panel_label": "Paneles prefabricados",
+    "cta_learn_more": "Más información"
   },
   "solutions": {
     "label": "Lo que ofrecemos",
@@ -759,18 +774,18 @@
     "cta_section_title": "¿Listo para explorar un despliegue nacional?",
     "cta_section_subtitle": "Nuestro equipo trabaja directamente con ministerios, agencias de vivienda y ONGs.",
     "cta_contact": "Contactar a nuestro equipo",
-    "hero_label": "Solutions — Governments & Municipalities",
-    "hero_title": "You are a Government — Municipality",
-    "hero_challenge": "Challenge",
-    "hero_solution": "Othalo Solution",
-    "hero_benefits": "Key Benefits",
-    "hero_partner": "Partner with Othalo to deliver affordable, sustainable, safe housing at scale.",
-    "hero_products_btn": "Products",
-    "form_heading": "Contact our team",
-    "form_org_required": "Organisation is required",
-    "form_reason_required": "Please select a reason",
-    "form_submit": "Send Message",
-    "form_send_another": "Send another message"
+    "hero_label": "Soluciones — Gobiernos y Municipios",
+    "hero_title": "Usted es un gobierno — municipio",
+    "hero_challenge": "Desafío",
+    "hero_solution": "Solución Othalo",
+    "hero_benefits": "Beneficios clave",
+    "hero_partner": "Colabore con Othalo para ofrecer viviendas asequibles, sostenibles y seguras a gran escala.",
+    "hero_products_btn": "Productos",
+    "form_heading": "Contacte a nuestro equipo",
+    "form_org_required": "La organización es obligatoria",
+    "form_reason_required": "Por favor seleccione una razón",
+    "form_submit": "Enviar mensaje",
+    "form_send_another": "Enviar otro mensaje"
   },
   "housing_dev": {
     "label": "Soluciones — Promotores",
@@ -865,18 +880,18 @@
     "cta_subtitle": "Nuestro equipo le guiará a través de especificaciones, logística y modelo financiero.",
     "cta1_bottom": "Solicitar informe de desarrollo",
     "cta_contact": "Contactar a nuestro equipo",
-    "hero_label": "Solutions — Housing Developers",
-    "hero_title": "You are a Housing Developer",
-    "hero_challenge": "Challenge",
-    "hero_solution": "Othalo Solution",
-    "hero_benefits": "Key Benefits",
-    "hero_partner": "Partner with Othalo to build faster, reduce costs, and unlock new growth opportunities.",
-    "hero_products_btn": "Products",
-    "form_heading": "Contact our team",
-    "form_org_required": "Organisation is required",
-    "form_reason_required": "Please select a reason",
-    "form_submit": "Send Message",
-    "form_send_another": "Send another message"
+    "hero_label": "Soluciones — Promotores inmobiliarios",
+    "hero_title": "Usted es un promotor inmobiliario",
+    "hero_challenge": "Desafío",
+    "hero_solution": "Solución Othalo",
+    "hero_benefits": "Beneficios clave",
+    "hero_partner": "Colabore con Othalo para construir más rápido, reducir costos y abrir nuevas oportunidades de crecimiento.",
+    "hero_products_btn": "Productos",
+    "form_heading": "Contacte a nuestro equipo",
+    "form_org_required": "La organización es obligatoria",
+    "form_reason_required": "Por favor seleccione una razón",
+    "form_submit": "Enviar mensaje",
+    "form_send_another": "Enviar otro mensaje"
   },
   "corporations": {
     "label": "Soluciones — Corporaciones",
@@ -967,18 +982,18 @@
     "cta_subtitle": "Hable con nuestro equipo de alianzas para definir un programa alineado con sus objetivos.",
     "cta1_bottom": "Contactar alianzas corporativas",
     "cta_contact": "Contactar a nuestro equipo",
-    "hero_label": "Solutions — Corporations",
-    "hero_title": "You are a Corporation",
-    "hero_challenge": "Challenge",
-    "hero_solution": "Othalo Solution",
-    "hero_benefits": "Key Benefits",
-    "hero_partner": "Partner with Othalo to turn plastic waste into measurable impact and strategic value.",
-    "hero_products_btn": "Products",
-    "form_heading": "Contact our team",
-    "form_org_required": "Company is required",
-    "form_reason_required": "Please select a reason",
-    "form_submit": "Send Message",
-    "form_send_another": "Send another message"
+    "hero_label": "Soluciones — Corporaciones",
+    "hero_title": "Usted es una corporación",
+    "hero_challenge": "Desafío",
+    "hero_solution": "Solución Othalo",
+    "hero_benefits": "Beneficios clave",
+    "hero_partner": "Colabore con Othalo para convertir los residuos plásticos en impacto medible y valor estratégico.",
+    "hero_products_btn": "Productos",
+    "form_heading": "Contacte a nuestro equipo",
+    "form_org_required": "La empresa es obligatoria",
+    "form_reason_required": "Por favor seleccione una razón",
+    "form_submit": "Enviar mensaje",
+    "form_send_another": "Enviar otro mensaje"
   },
   "contact": {
     "label": "Contacto",
@@ -1082,20 +1097,20 @@
       "10m_plus": "$10M+",
       "unsure": "Por determinar"
     },
-    "page_title": "Contact us",
+    "page_title": "Contáctenos",
     "name_placeholder": "John Smith",
-    "name_asterisk": "Full Name *",
+    "name_asterisk": "Nombre completo *",
     "email_placeholder": "john@company.com",
-    "email_asterisk": "Email Address *",
-    "phone_placeholder": "Phone number",
-    "org_label": "Company/Organisation",
-    "title_label": "Title",
-    "title_placeholder": "Job Title",
-    "reason_label": "Reason for contacting us",
-    "reason_placeholder": "Partnerships & Projects",
-    "reason_required": "Please select a reason for contacting us",
-    "message_placeholder_contact": "Tell us about your interest...",
-    "success_send_another": "Send another message",
+    "email_asterisk": "Correo electrónico *",
+    "phone_placeholder": "Número de teléfono",
+    "org_label": "Empresa/Organización",
+    "title_label": "Cargo",
+    "title_placeholder": "Cargo laboral",
+    "reason_label": "Motivo de contacto",
+    "reason_placeholder": "Asociaciones y proyectos",
+    "reason_required": "Por favor seleccione un motivo para contactarnos",
+    "message_placeholder_contact": "Cuéntenos sobre su interés...",
+    "success_send_another": "Enviar otro mensaje",
     "reasons": [
       {
         "value": "general",
@@ -1182,7 +1197,7 @@
     "legal": "Legal",
     "rights": "Todos los derechos reservados.",
     "registered": "Registrado en Noruega — Construyendo un futuro sostenible",
-    "social_label": "Join, share, like, follow us on:",
+    "social_label": "Únase, comparta, dé me gusta, síganos en:",
     "links": [
       {
         "label": "Contact us",
@@ -1225,7 +1240,7 @@
     "company_name": "Othalo Group Ltd",
     "registration_no": "Registration no.:",
     "license_no": "License no.:",
-    "address_heading": "Address",
+    "address_heading": "Dirección",
     "address_line1": "RAK Innovation City, Post Box #30099",
     "address_line2": "RAKBANK Headquarters, Government of Ras Al Khaimah",
     "address_line3": "United Arab Emirates"
@@ -1233,24 +1248,136 @@
   "privacy": {
     "label": "Legal",
     "title": "Política de privacidad",
-    "effective": "Fecha de vigencia: 9 de mayo de 2026 · Actualizado: 9 de mayo de 2026"
+    "effective": "Fecha de vigencia: 9 de mayo de 2026 · Actualizado: 9 de mayo de 2026",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "Othalo AS (\"Othalo,\" \"we,\" \"us,\" or \"our\") is committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website othalo.com (the \"Site\") or engage with our services. Please read this policy carefully. If you disagree with its terms, please discontinue use of the Site."
+      },
+      {
+        "title": "2. Information We Collect",
+        "content": "We may collect the following types of information:\n\nPersonal Identification Information: Name, email address, phone number, job title, and organization name when you submit a contact form, request a quote, or otherwise communicate with us.\n\nTechnical Information: IP address, browser type and version, operating system, referral source, length of visit, page views, and website navigation paths, collected through cookies and similar tracking technologies.\n\nCommunications: Records of correspondence if you contact us, including emails and messages submitted through our website.\n\nWe do not collect sensitive personal data (such as health data, financial account information, or government identification numbers) through this Site."
+      },
+      {
+        "title": "3. How We Use Your Information",
+        "content": "We use the information we collect to:\n\n• Respond to enquiries and provide the services you request\n• Send you information about our products and solutions you have requested\n• Process transactions and send related information\n• Improve and optimize our website and user experience\n• Comply with legal obligations\n• Send periodic emails regarding our services (you may opt out at any time)\n• Monitor and analyze usage trends to improve functionality\n\nWe do not sell, trade, or otherwise transfer your personally identifiable information to third parties without your consent, except as described in this policy."
+      },
+      {
+        "title": "4. Legal Basis for Processing (GDPR)",
+        "content": "For users in the European Economic Area (EEA), we process your personal data under the following legal bases:\n\nConsent: Where you have given explicit consent (e.g., subscribing to our newsletter).\n\nLegitimate Interests: To respond to business enquiries, improve our services, and conduct marketing activities where these interests are not overridden by your data protection rights.\n\nContractual Necessity: Where processing is necessary to perform a contract or take steps at your request prior to entering a contract.\n\nLegal Obligation: Where we are required to comply with applicable laws."
+      },
+      {
+        "title": "5. Cookies and Tracking Technologies",
+        "content": "Our Site uses cookies and similar tracking technologies to enhance your browsing experience. Types of cookies we use:\n\nEssential Cookies: Necessary for the website to function and cannot be switched off.\n\nAnalytics Cookies: Help us understand how visitors interact with our Site (e.g., Google Analytics). Data collected is aggregated and anonymous.\n\nMarketing Cookies: Used to deliver relevant advertisements and track campaign effectiveness.\n\nYou can control or disable cookies through your browser settings. Note that disabling certain cookies may affect website functionality."
+      },
+      {
+        "title": "6. Data Retention",
+        "content": "We retain personal data only as long as necessary for the purposes for which it was collected, or as required by applicable law. Enquiry data is typically retained for up to 3 years. Marketing contact data is retained until you unsubscribe or request deletion. Analytics data may be retained in anonymized form indefinitely."
+      },
+      {
+        "title": "7. International Data Transfers",
+        "content": "Othalo AS is registered in Norway and operates under the jurisdiction of the European Economic Area. If we transfer your data outside the EEA, we ensure appropriate safeguards are in place, such as Standard Contractual Clauses approved by the European Commission, to protect your information in accordance with this Privacy Policy."
+      },
+      {
+        "title": "8. Your Rights",
+        "content": "Depending on your jurisdiction, you may have the following rights regarding your personal data:\n\n• Right of Access: Request a copy of the personal data we hold about you\n• Right to Rectification: Request correction of inaccurate or incomplete data\n• Right to Erasure: Request deletion of your personal data (\"right to be forgotten\")\n• Right to Restrict Processing: Request that we limit how we use your data\n• Right to Data Portability: Receive your data in a structured, machine-readable format\n• Right to Object: Object to our processing of your personal data\n• Right to Withdraw Consent: Withdraw consent at any time where processing is based on consent\n\nTo exercise any of these rights, please contact us at privacy@othalo.com."
+      },
+      {
+        "title": "9. Third-Party Links",
+        "content": "Our Site may contain links to third-party websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites. We encourage you to review the privacy policy of every site you visit."
+      },
+      {
+        "title": "10. Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These include encrypted data transmission (HTTPS), access controls, and regular security reviews. However, no method of transmission over the Internet or electronic storage is 100% secure."
+      },
+      {
+        "title": "11. Children's Privacy",
+        "content": "Our Site is not directed to individuals under the age of 16. We do not knowingly collect personal data from children. If you believe we have inadvertently collected information from a child, please contact us immediately so we can delete it."
+      },
+      {
+        "title": "12. Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated effective date. We encourage you to review this policy periodically."
+      },
+      {
+        "title": "13. Contact Us",
+        "content": "If you have questions or concerns about this Privacy Policy or our data practices, please contact:\n\nOthalo AS\nData Privacy Officer\nEmail: privacy@othalo.com\nAddress: Oslo, Norway\n\nYou also have the right to lodge a complaint with the Norwegian Data Protection Authority (Datatilsynet) at www.datatilsynet.no."
+      }
+    ]
   },
   "terms": {
     "label": "Legal",
     "title": "Términos de servicio",
-    "effective": "Fecha de vigencia: 9 de mayo de 2026 · Actualizado: 9 de mayo de 2026"
+    "effective": "Fecha de vigencia: 9 de mayo de 2026 · Actualizado: 9 de mayo de 2026",
+    "sections": [
+      {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing or using the Othalo AS website at othalo.com (the \"Site\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, please do not use the Site. These Terms apply to all visitors, users, and others who access or use the Site."
+      },
+      {
+        "title": "2. About Othalo",
+        "content": "Othalo AS is a Norwegian technology company registered under Norwegian law. We develop and commercialize patented modular housing solutions manufactured from recycled plastic, serving governments, housing developers, corporations, and NGOs globally.\n\nCompany registration: Othalo AS, Oslo, Norway\nContact: contact@othalo.com"
+      },
+      {
+        "title": "3. Use of the Site",
+        "content": "You agree to use the Site only for lawful purposes and in accordance with these Terms. You agree not to:\n\n• Use the Site in any way that violates any applicable local, national, or international law or regulation\n• Transmit any unsolicited or unauthorized advertising or promotional material\n• Knowingly transmit any data or material that contains viruses, Trojan horses, or other harmful code\n• Attempt to gain unauthorized access to any portion of the Site or its related systems\n• Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Site\n• Use the Site to scrape, harvest, or otherwise collect information about other users\n\nWe reserve the right to terminate your access to the Site immediately, without notice, if we reasonably believe you have breached these Terms."
+      },
+      {
+        "title": "4. Intellectual Property",
+        "content": "All content on this Site — including text, graphics, logos, images, product designs, technology descriptions, and software — is the property of Othalo AS or its content suppliers and is protected by Norwegian and international intellectual property laws.\n\nThe Othalo name, logo, and all related product names, design marks, and slogans are trademarks of Othalo AS. You may not use any trademark or trade name without our prior written permission.\n\nThe Othalo structural panel system is protected by patents filed in multiple jurisdictions. Nothing on this Site grants any license or right to use any patented technology.\n\nYou may view and download content from this Site solely for your personal, non-commercial use, provided you keep all copyright and other proprietary notices intact."
+      },
+      {
+        "title": "5. Products and Services",
+        "content": "The products and services described on this Site are subject to availability and may vary by region. Product specifications, pricing, and delivery timelines are indicative and subject to formal quotation. Nothing on this Site constitutes a binding offer to sell.\n\nAll product quotations, partnerships, and deployment agreements are subject to separate written agreements between Othalo AS and the relevant party. These Terms do not govern such agreements."
+      },
+      {
+        "title": "6. Accuracy of Information",
+        "content": "We strive to ensure that the information on this Site is accurate and up-to-date. However, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, products, services, or related graphics on the Site.\n\nTechnical specifications, impact metrics, and performance claims are based on controlled testing and representative deployments. Actual results may vary depending on local conditions, site preparation, and construction practices."
+      },
+      {
+        "title": "7. Third-Party Links",
+        "content": "The Site may contain links to third-party websites or resources. These links are provided for your convenience only. We have no control over the content of those sites or resources and accept no responsibility for them or for any loss or damage that may arise from your use of them."
+      },
+      {
+        "title": "8. Disclaimer of Warranties",
+        "content": "THE SITE AND ALL CONTENT IS PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, OTHALO AS DISCLAIMS ALL WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.\n\nWe do not warrant that the Site will be uninterrupted or error-free, that defects will be corrected, or that the Site or the server that makes it available are free of viruses or other harmful components."
+      },
+      {
+        "title": "9. Limitation of Liability",
+        "content": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL OTHALO AS, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.\n\nThis limitation applies whether the liability arises in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable."
+      },
+      {
+        "title": "10. Privacy",
+        "content": "Your use of the Site is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our Privacy Policy to understand our practices regarding the collection and use of your personal information."
+      },
+      {
+        "title": "11. Governing Law and Jurisdiction",
+        "content": "These Terms and any dispute or claim arising out of or in connection with them shall be governed by and construed in accordance with the laws of Norway, without regard to its conflict of law provisions.\n\nAny disputes shall be subject to the exclusive jurisdiction of the courts of Oslo, Norway, unless mandatory consumer protection laws in your country require otherwise."
+      },
+      {
+        "title": "12. Changes to These Terms",
+        "content": "We reserve the right to modify these Terms at any time. We will post the revised Terms on this page with an updated effective date. By continuing to use the Site after any changes become effective, you agree to the revised Terms. We encourage you to review these Terms periodically."
+      },
+      {
+        "title": "13. Severability",
+        "content": "If any provision of these Terms is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall remain in full force and effect."
+      },
+      {
+        "title": "14. Contact",
+        "content": "If you have any questions about these Terms of Service, please contact us:\n\nOthalo AS\nEmail: legal@othalo.com\nAddress: Oslo, Norway"
+      }
+    ]
   },
   "error": {
     "boundary_title": "Algo salió mal",
     "boundary_subtitle": "Ocurrió un error inesperado. Por favor, recargue la página.",
     "refresh": "Recargar página",
     "home": "Ir al inicio",
-    "boundary_desc": "We encountered an unexpected error while rendering this page. Our technical team has been notified."
+    "boundary_desc": "Encontramos un error inesperado al renderizar esta página. Nuestro equipo técnico ha sido notificado."
   },
   "faqs": {
     "label": "FAQ",
-    "title": "Technical & Sustainability Questions",
-    "subtitle": "Common questions from governments, developers, and partners about Othalo's building system, standards, and environmental credentials.",
+    "title": "Preguntas técnicas y de sostenibilidad",
+    "subtitle": "Preguntas frecuentes de gobiernos, promotores y socios sobre el sistema constructivo de Othalo, normas y credenciales ambientales.",
     "items": [
       {
         "q": "What is the Othalo panel made from?",
@@ -1285,5 +1412,12 @@
         "a": "Othalo is endorsed by UN-HABITAT for a Better Urban Future. The system has been tested and validated through independent structural and fire safety laboratories. Specific test reports and compliance documentation are available upon request for government procurement and NGO vetting processes."
       }
     ]
+  },
+  "cookies": {
+    "title": "Valoramos su privacidad",
+    "text": "Utilizamos cookies para mejorar su experiencia de navegación, ofrecer contenido personalizado y analizar nuestro tráfico. Al hacer clic en \"Aceptar todo\", usted acepta nuestro uso de cookies.",
+    "accept": "Aceptar todo",
+    "reject": "Rechazar",
+    "learn_more": "Más información"
   }
 }

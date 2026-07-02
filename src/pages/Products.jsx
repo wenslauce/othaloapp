@@ -43,7 +43,7 @@ export default function Products() {
       <SEOHead
         title={t('seo.products.title')}
         description={t('seo.products.description')}
-        canonical="https://othalo.com/products"
+        pagePath="/products"
         keywords={t('seo.products.keywords').split(', ')}
       />
       <GetQuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} context="products" />
@@ -68,7 +68,7 @@ export default function Products() {
         </div>
         <div className="w-full lg:w-1/2 relative min-h-[220px] sm:min-h-[300px] lg:min-h-[min(52vh,520px)]">
           <img
-            src="/images/Panels in the factory.png"
+            src="/images/panels-factory.png"
             alt="Othalo panels in the factory"
             className="absolute inset-0 size-full object-cover"
           />

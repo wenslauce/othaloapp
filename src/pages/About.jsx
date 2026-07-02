@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 import SlotIn from '@/components/shared/SlotIn';
 import SEOHead from '@/components/shared/SEOHead';
+import StructuredData, { teamPersonSchemas } from '@/components/shared/StructuredData';
 import { useTranslation } from 'react-i18next';
 
 export default function About() {
@@ -31,9 +32,10 @@ export default function About() {
       <SEOHead
         title={t('seo.about.title')}
         description={t('seo.about.description')}
-        canonical="https://othalo.com/about"
+        pagePath="/about"
         keywords={t('seo.about.keywords').split(', ')}
       />
+      <StructuredData schemas={teamPersonSchemas} />
 
       {/* ── VISION / MISSION / VALUES + IMAGE ── */}
       <section className="bg-white">
@@ -73,7 +75,7 @@ export default function About() {
           <div className="w-full lg:w-1/2 min-h-[300px] lg:min-h-0">
             <img
               src="/images/Kids crop.jpg"
-              alt="Community impact"
+              alt="Children in an Othalo community housing project, showcasing the social impact of sustainable building"
               className="w-full h-full object-cover object-center"
             />
           </div>
@@ -86,7 +88,7 @@ export default function About() {
           <div className="w-full lg:w-1/2 min-h-[280px] lg:min-h-0">
             <img
               src="/images/Slum house crop.png"
-              alt="Housing challenges"
+              alt="Informal slum housing representing the global affordable housing crisis that Othalo is solving"
               className="w-full h-full object-cover object-center"
             />
           </div>
@@ -94,7 +96,7 @@ export default function About() {
             <SlotIn delay={0.1}>
               <h2 className="font-heading font-bold text-white text-2xl lg:text-3xl mb-5 leading-tight">{t('about.story_label')}</h2>
               <blockquote className="text-white/90 text-base lg:text-lg leading-relaxed mb-10 max-w-xl">
-                "{t('about.story_quote')}"
+                “{t('about.story_quote')}”
               </blockquote>
               <div className="flex items-center gap-4">
                 <div className="relative w-12 h-12 rounded-full bg-surface/20 flex items-center justify-center text-white font-heading font-bold text-sm flex-shrink-0 overflow-hidden">
@@ -118,7 +120,7 @@ export default function About() {
             <div className="text-center mb-10">
               <h2 className="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3 leading-tight">{t('about.team_heading')}</h2>
               <p className="text-navy/70 text-sm lg:text-base max-w-2xl mx-auto leading-relaxed">
-                "{t('about.team_subtitle_text')}"
+                {t('about.team_subtitle_text')}
               </p>
             </div>
           </SlotIn>
@@ -133,7 +135,8 @@ export default function About() {
                   <div className="pt-8 pb-4 flex justify-center">
                     <img
                       src={member.img}
-                      alt={member.name}
+                      alt={`${member.name}, ${member.title} at Othalo`}
+                      title={`${member.name} — ${member.title}`}
                       className="w-28 h-28 lg:w-36 lg:h-36 rounded-full object-cover border border-navy/20 shadow-sm"
                       onError={(e) => {
                         e.target.onerror = null;
@@ -207,7 +210,7 @@ export default function About() {
           <div className="w-full lg:w-1/2 min-h-[280px] lg:min-h-[400px]">
             <img
               src="/images/Child crop 1.jpg"
-              alt="Community impact"
+              alt="Child in front of Othalo recycled plastic modular housing — community impact in action"
               className="w-full h-full object-cover"
             />
           </div>

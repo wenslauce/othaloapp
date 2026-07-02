@@ -6,14 +6,14 @@ Othalo is a Norwegian technology company that transforms recycled plastic waste 
 
 ## Key Pages
 
-- [Home](https://othalo.com/): Company overview and technology introduction
-- [Products](https://othalo.com/products): The Othalo Panel System — specifications and product lines
-- [Solutions](https://othalo.com/solutions): Deployment solutions for different stakeholders
-- [Solutions / Governments](https://othalo.com/solutions/governments): National and municipal affordable housing programs
-- [Solutions / Housing Developers](https://othalo.com/solutions/housing-developers): Cost-efficient construction for private developers
-- [Solutions / Corporations](https://othalo.com/solutions/corporations): Turnkey ESG and CSR programs
-- [About](https://othalo.com/about): Mission, team, and impact
-- [Contact](https://othalo.com/contact): Get in touch or request a quote
+- [Home](https://othalo.com/en/): Company overview and technology introduction
+- [Products](https://othalo.com/enducts): The Othalo Panel System — specifications and product lines
+- [Solutions](https://othalo.com/enutions): Deployment solutions for different stakeholders
+- [Solutions / Governments](https://othalo.com/enutions/governments): National and municipal affordable housing programs
+- [Solutions / Housing Developers](https://othalo.com/enutions/housing-developers): Cost-efficient construction for private developers
+- [Solutions / Corporations](https://othalo.com/enutions/corporations): Turnkey ESG and CSR programs
+- [About](https://othalo.com/enut): Mission, team, and impact
+- [Contact](https://othalo.com/entact): Get in touch or request a quote
 
 ## Product: The Othalo Panel System
 

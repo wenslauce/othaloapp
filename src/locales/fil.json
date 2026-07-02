@@ -1,4 +1,11 @@
 {
+  "404": {
+    "code": "404",
+    "title": "Hindi Nahanap ang Pahina",
+    "subtitle": "Ang pahinang hinahanap mo ay hindi umiiral o nailipat na.",
+    "home": "Bumalik sa Home",
+    "contact": "Makipag-ugnayan"
+  },
   "seo": {
     "home": {
       "title": "Othalo — Abot-kaya, Sustainable na mga Bahay mula sa Recycled na Plastik",
@@ -24,6 +31,21 @@
       "title": "Contact Othalo — Partner with Us",
       "description": "Get in touch with Othalo. Whether you're a government, developer, or corporation, we're here to help you deploy sustainable housing solutions.",
       "keywords": "contact Othalo, Othalo partnerships, housing project inquiry"
+    },
+    "governments": {
+      "title": "Governments & Municipalities — Othalo Housing Solutions",
+      "description": "Deploy affordable, sustainable housing at scale. Othalo partners with governments and municipalities to close the housing gap using recycled plastic technology.",
+      "keywords": "government housing program, municipal housing, affordable housing deployment, UN-Habitat, recycled plastic construction"
+    },
+    "housing_dev": {
+      "title": "Housing Developers — Sustainable & Fast ROI Construction",
+      "description": "Build high-quality modular housing in 72 hours. Partner with Othalo to lower construction costs, accelerate project timelines, and deliver eco-friendly developments.",
+      "keywords": "housing developers, modular construction, sustainable real estate, fast ROI building, Othalo panels"
+    },
+    "corporations": {
+      "title": "Corporate ESG & CSR Housing Solutions — Othalo",
+      "description": "Turn plastic waste into measurable social impact and carbon offsets. Discover Othalo's corporate solutions for ESG reporting and community development.",
+      "keywords": "corporate ESG housing, CSR housing projects, plastic waste offsets, sustainable corporate partnership"
     }
   },
   "nav": {
@@ -52,45 +74,116 @@
     "plastic_modal_title": "Basurang Plastik",
     "plastic_modal_subtitle": "Ang laki ng pandaigdigang krisis sa plastik",
     "plastic_modal_stats": [
-      { "stat": "10 bilyong tonelada", "detail": "ng plastik ang nagawa na (OECD 2022, Global Plastics Outlook)" },
-      { "stat": "400 milyong tonelada", "detail": "ang nagagawa bawat taon" },
-      { "stat": "40%", "detail": "ng lahat ng plastik ay single-use — ginagamit nang isang beses, pagkatapos ay itinatapon" },
-      { "stat": "~9%", "detail": "ng basurang plastik ay aktwal na nairerecycle sa buong mundo" },
-      { "stat": "80%", "detail": "ng basurang plastik ay napupunta sa mga landfill — hanggang 93% sa mga ekonomiyang napakababa ang kita" },
-      { "stat": "11 milyong tonelada", "detail": "ng plastik ang pumapasok sa karagatan bawat taon" },
-      { "stat": "Noong 2022", "detail": "Natuklasan ng mga siyentipiko ang microplastics sa dugo ng tao sa unang pagkakataon" }
+      {
+        "stat": "10 bilyong tonelada",
+        "detail": "ng plastik ang nagawa na (OECD 2022, Global Plastics Outlook)"
+      },
+      {
+        "stat": "400 milyong tonelada",
+        "detail": "ang nagagawa bawat taon"
+      },
+      {
+        "stat": "40%",
+        "detail": "ng lahat ng plastik ay single-use — ginagamit nang isang beses, pagkatapos ay itinatapon"
+      },
+      {
+        "stat": "~9%",
+        "detail": "ng basurang plastik ay aktwal na nairerecycle sa buong mundo"
+      },
+      {
+        "stat": "80%",
+        "detail": "ng basurang plastik ay napupunta sa mga landfill — hanggang 93% sa mga ekonomiyang napakababa ang kita"
+      },
+      {
+        "stat": "11 milyong tonelada",
+        "detail": "ng plastik ang pumapasok sa karagatan bawat taon"
+      },
+      {
+        "stat": "Noong 2022",
+        "detail": "Natuklasan ng mga siyentipiko ang microplastics sa dugo ng tao sa unang pagkakataon"
+      }
     ],
     "housing_modal_title": "Abot-kayang Pabahay",
     "housing_modal_subtitle": "Ang laki ng pandaigdigang krisis sa pabahay — UN-Habitat, 2025",
     "housing_modal_section1_title": "Mga Taong Walang Pabahay (Walang Bahay)",
     "housing_modal_section1_stats": [
-      { "stat": "300M+", "detail": "mga taong nakakaranas ng kawalan ng tahanan sa buong mundo (UN-Habitat 2025) — lumaki nang malaki dahil sa salungatan, urbanisasyon, at mga krisis sa abot-kayang halaga" },
-      { "stat": "123M+", "detail": "mga taong sapilitang nawalan ng tirahan dahil sa salungatan, pag-uusig, at mga paglabag sa karapatang pantao sa katapusan ng 2024 — doble ang bilang mula sa isang dekada bago nito" }
+      {
+        "stat": "300M+",
+        "detail": "mga taong nakakaranas ng kawalan ng tahanan sa buong mundo (UN-Habitat 2025) — lumaki nang malaki dahil sa salungatan, urbanisasyon, at mga krisis sa abot-kayang halaga"
+      },
+      {
+        "stat": "123M+",
+        "detail": "mga taong sapilitang nawalan ng tirahan dahil sa salungatan, pag-uusig, at mga paglabag sa karapatang pantao sa katapusan ng 2024 — doble ang bilang mula sa isang dekada bago nito"
+      }
     ],
     "housing_modal_section2_title": "Mga Taong nasa Hindi Sapat na Pabahay",
     "housing_modal_section2_stats": [
-      { "stat": "~3 bilyon", "detail": "mga tao — malapit sa 40% ng populasyon ng mundo — ang nahuli sa isang sapat na krisis sa pabahay: hindi abot-kayang presyo, masamang kalidad, kakulangan, o kawalan ng pangunahing serbisyo" },
-      { "stat": "268–288M", "detail": "kakulangan ng yunit ng pabahay sa buong mundo noong 2023, mas mataas mula sa 251M noong 2010 — isang ~30% na pagtaas sa loob lamang ng isang dekada" },
-      { "stat": "96,000", "detail": "na abot-kayang tahanan ang kailangang itayo araw-araw mula ngayon hanggang 2030 upang mapunan ang puwang (WRI)" }
+      {
+        "stat": "~3 bilyon",
+        "detail": "mga tao — malapit sa 40% ng populasyon ng mundo — ang nahuli sa isang sapat na krisis sa pabahay: hindi abot-kayang presyo, masamang kalidad, kakulangan, o kawalan ng pangunahing serbisyo"
+      },
+      {
+        "stat": "268–288M",
+        "detail": "kakulangan ng yunit ng pabahay sa buong mundo noong 2023, mas mataas mula sa 251M noong 2010 — isang ~30% na pagtaas sa loob lamang ng isang dekada"
+      },
+      {
+        "stat": "96,000",
+        "detail": "na abot-kayang tahanan ang kailangang itayo araw-araw mula ngayon hanggang 2030 upang mapunan ang puwang (WRI)"
+      }
     ],
     "housing_modal_section3_title": "Mga Taong Nakatira sa Slums / Impormal na Pamayanan",
     "housing_modal_section3_stats": [
-      { "stat": "1.12 bilyon", "detail": "pandaigdigang populasyon sa slums noong 2022 — tumaas ng 130M mula noong 2015, na nagpabaligtad sa naunang pag-unlad (UN SDG Report 2024)" },
-      { "stat": "~25%", "detail": "ng urbanong populasyon sa mundo ay nakatira sa kondisyong slums" }
+      {
+        "stat": "1.12 bilyon",
+        "detail": "pandaigdigang populasyon sa slums noong 2022 — tumaas ng 130M mula noong 2015, na nagpabaligtad sa naunang pag-unlad (UN SDG Report 2024)"
+      },
+      {
+        "stat": "~25%",
+        "detail": "ng urbanong populasyon sa mundo ay nakatira sa kondisyong slums"
+      }
     ],
     "housing_modal_section3_regions_title": "Panrehiyong paghahati",
     "housing_modal_section3_regions": [
-      { "region": "Gitna at Timog Asya", "value": "~359 milyon" },
-      { "region": "Silangan at Timog-Silangang Asya", "value": "~306 milyon" },
-      { "region": "Sub-Saharan Africa", "value": "~230 milyon" }
+      {
+        "region": "Gitna at Timog Asya",
+        "value": "~359 milyon"
+      },
+      {
+        "region": "Silangan at Timog-Silangang Asya",
+        "value": "~306 milyon"
+      },
+      {
+        "region": "Sub-Saharan Africa",
+        "value": "~230 milyon"
+      }
     ],
     "housing_modal_section4_title": "Mga Proyeksyon para sa 2050",
-    "housing_modal_section4_headers": ["Kategorya", "Kasalukuyan (2024–25)", "Inaasahang 2050"],
+    "housing_modal_section4_headers": [
+      "Kategorya",
+      "Kasalukuyan (2024–25)",
+      "Inaasahang 2050"
+    ],
     "housing_modal_section4_rows": [
-      { "cat": "Walang bahay / walang pabahay", "now": "~300 milyon", "future": "Inaasahang lalong lala nang malaki kung walang interbensyon" },
-      { "cat": "Hindi sapat na pabahay", "now": "~3 bilyon", "future": "Ang mga lungsod ay tatanggap ng karagdagang 2B residente; lalong hihigpit ang presyon" },
-      { "cat": "Nakatira sa slums / impormal", "now": "~1.1 bilyon", "future": "Higit sa 3 bilyon — halos triple" },
-      { "cat": "Bahagi ng populasyon sa lungsod", "now": "~55–57%", "future": "~68–70% ng populasyon ng mundo sa mga lungsod" }
+      {
+        "cat": "Walang bahay / walang pabahay",
+        "now": "~300 milyon",
+        "future": "Inaasahang lalong lala nang malaki kung walang interbensyon"
+      },
+      {
+        "cat": "Hindi sapat na pabahay",
+        "now": "~3 bilyon",
+        "future": "Ang mga lungsod ay tatanggap ng karagdagang 2B residente; lalong hihigpit ang presyon"
+      },
+      {
+        "cat": "Nakatira sa slums / impormal",
+        "now": "~1.1 bilyon",
+        "future": "Higit sa 3 bilyon — halos triple"
+      },
+      {
+        "cat": "Bahagi ng populasyon sa lungsod",
+        "now": "~55–57%",
+        "future": "~68–70% ng populasyon ng mundo sa mga lungsod"
+      }
     ],
     "housing_modal_closing": "Inihuhula ng UN na higit sa 3 bilyong tao ang maaaring manirahan sa mga slum bago sumapit ang 2050 — humigit-kumulang triple sa bilang ngayon — udyok ng mabilis na urbanisasyon sa Sub-Saharan Africa at Timog Asya. Halos tatlong-kapat ng urbanong imprastraktura na iiral sa 2050 ay tidak pa naitatayo ngayon. Ito ang isa sa mga pangunahing hamon sa imprastraktura at makataong aspeto ng daang taong ito — at isang malakas na suportang istruktural para sa itinatayo ng Othalo.",
     "hero_badge": "Patented na Teknolohiya",
@@ -102,10 +195,22 @@
     "tech_title": "Ang pinaka-epektibong solusyon sa hamon sa pabahay sa Africa",
     "tech_subtitle": "Tinutugunan ng aming mga panel ang krisis sa basurang plastik at ang kakulangan sa abot-kayang pabahay nang sabay — isang pandaigdigang hamon na lumulutas sa isa pa.",
     "tech_features": [
-      { "title": "Makabagong patented na teknolohiya", "desc": "Ang aming pagmay-ari na proseso ay nagbabago ng basurang plastik upang maging mga structural panel na 7x na mas matibay kaysa sa semento." },
-      { "title": "Ligtas sa kapaligiran", "desc": "Walang semento, walang bakal, walang tubig sa konstruksyon. 8 tonelada ng plastik ang naililihis sa bawat yunit ng pabahay." },
-      { "title": "Mabilis na konstruksyon", "desc": "Mula sa mga hilaw na panel hanggang sa kumpletong istruktura sa loob ng 72 oras gamit ang lokal na paggawa." },
-      { "title": "Sinubukan para sa kaligtasan", "desc": "Tahan sa apoy, bagyo, at lindol. Sumusunod sa mga pandaigdigang pamantayan sa pagtatayo." }
+      {
+        "title": "Makabagong patented na teknolohiya",
+        "desc": "Ang aming pagmay-ari na proseso ay nagbabago ng basurang plastik upang maging mga structural panel na 7x na mas matibay kaysa sa semento."
+      },
+      {
+        "title": "Ligtas sa kapaligiran",
+        "desc": "Walang semento, walang bakal, walang tubig sa konstruksyon. 8 tonelada ng plastik ang naililihis sa bawat yunit ng pabahay."
+      },
+      {
+        "title": "Mabilis na konstruksyon",
+        "desc": "Mula sa mga hilaw na panel hanggang sa kumpletong istruktura sa loob ng 72 oras gamit ang lokal na paggawa."
+      },
+      {
+        "title": "Sinubukan para sa kaligtasan",
+        "desc": "Tahan sa apoy, bagyo, at lindol. Sumusunod sa mga pandaigdigang pamantayan sa pagtatayo."
+      }
     ],
     "quote_text": "Mayroon lamang isang teknolohiya sa mundo ngayon na maaaring gumawa ng isang bagay na totoo tungkol sa kakulangan sa pabahay sa Africa at sa problema sa basurang plastik, at iyon ay ang Othalo.",
     "quote_author": "Dr. Vincent Kitio",
@@ -113,10 +218,22 @@
     "approach_label": "Ang Ating Pamamaraan",
     "approach_title": "Itayo ang hinaharap ng pabahay mula sa recycled na plastik",
     "approach_items": [
-      { "title": "Mula plastik patungo sa mataas na kalidad na konstruksyon", "desc": "Ang aming patented na teknolohiya ay nagbabago ng recycled na plastik upang maging structural wall panels na 7x na mas matibay kaysa sa semento, ganap na fire resistant, at dinisenyo upang tumagal ng 60+ na taon." },
-      { "title": "Dinisenyo para sa totoong mga kondisyon", "desc": "Tahan sa bagyo, lindol, at baha. Ang aming mga panel ay sinubukan upang gumanap sa matitinding klima, mula sa baybaying tropiko hanggang sa tuyong kabundukan — binuo para sa kung saan higit na kinakailangan ang pabahay." },
-      { "title": "Flexible na mga solusyon na iniangkop sa lokal", "desc": "Ang aming modular system ay umaangkop sa anumang layout — single units, multi-family blocks, paaralan, mga klinika sa kalusugan. Ang bawat proyekto ay isinasaayos para sa mga lokal na pangangailangan at binuo ng mga lokal na manggagawa." },
-      { "title": "Itinayo para sa scale, bilis, at epekto", "desc": "Ang aming factory-to-field supply chain ay nagbibigay-daan sa mabilis na pagpapatayo. Ang isang container ng mga panel ay nakakabuo ng isang kumpletong dalawang silid-tulugan na bahay, naihatid at handang buuin sa loob ng mas mababa sa isang linggo." }
+      {
+        "title": "Mula plastik patungo sa mataas na kalidad na konstruksyon",
+        "desc": "Ang aming patented na teknolohiya ay nagbabago ng recycled na plastik upang maging structural wall panels na 7x na mas matibay kaysa sa semento, ganap na fire resistant, at dinisenyo upang tumagal ng 60+ na taon."
+      },
+      {
+        "title": "Dinisenyo para sa totoong mga kondisyon",
+        "desc": "Tahan sa bagyo, lindol, at baha. Ang aming mga panel ay sinubukan upang gumanap sa matitinding klima, mula sa baybaying tropiko hanggang sa tuyong kabundukan — binuo para sa kung saan higit na kinakailangan ang pabahay."
+      },
+      {
+        "title": "Flexible na mga solusyon na iniangkop sa lokal",
+        "desc": "Ang aming modular system ay umaangkop sa anumang layout — single units, multi-family blocks, paaralan, mga klinika sa kalusugan. Ang bawat proyekto ay isinasaayos para sa mga lokal na pangangailangan at binuo ng mga lokal na manggagawa."
+      },
+      {
+        "title": "Itinayo para sa scale, bilis, at epekto",
+        "desc": "Ang aming factory-to-field supply chain ay nagbibigay-daan sa mabilis na pagpapatayo. Ang isang container ng mga panel ay nakakabuo ng isang kumpletong dalawang silid-tulugan na bahay, naihatid at handang buuin sa loob ng mas mababa sa isang linggo."
+      }
     ],
     "gallery_categories": {
       "community": "Ang Komunidad",
@@ -130,24 +247,84 @@
       "label": "Mapagkumpitensyang Pagsusuri",
       "title": "Nangungunang teknolohiya at makabagong ideya sa merkado",
       "subtitle": "Isang direktang paghahambing laban sa mga tradisyonal na pamamaraan ng konstruksyon.",
-      "headers": ["Tampok", "Othalo", "Semento", "Steel Frame", "Kahoy"],
+      "headers": [
+        "Tampok",
+        "Othalo",
+        "Semento",
+        "Steel Frame",
+        "Kahoy"
+      ],
       "rows": [
-        { "f": "Oras ng pagtatayo (2BR yunit)", "o": "72 oras", "c": "3–6 na buwan", "s": "2–4 na buwan", "t": "1–3 na buwan" },
-        { "f": "Nailihis na basurang plastik", "o": "8 tonelada", "c": "Wala", "s": "Wala", "t": "Wala" },
-        { "f": "Lifespan", "o": "60+ na taon", "c": "40–50 na taon", "s": "30–50 na taon", "t": "20–30 na taon" },
-        { "f": "Tahan sa apoy", "o": "Oo", "c": "Oo", "s": "Hindi", "t": "Hindi" },
-        { "f": "Tahan sa lindol", "o": "Oo", "c": "Iba-iba", "s": "Oo", "t": "Bahagya" },
-        { "f": "Paggamit ng tubig sa konstruksyon", "o": "Wala", "c": "Mataas", "s": "Katamtaman", "t": "Mababa" },
-        { "f": "Kinakailangang semento/bakal", "o": "Wala", "c": "Mataas", "s": "Mataas", "t": "Mayroon" },
-        { "f": "Sertipikado ng UN-Habitat", "o": "Oo", "c": "Iba-iba", "s": "Iba-iba", "t": "Iba-iba" }
+        {
+          "f": "Oras ng pagtatayo (2BR yunit)",
+          "o": "72 oras",
+          "c": "3–6 na buwan",
+          "s": "2–4 na buwan",
+          "t": "1–3 na buwan"
+        },
+        {
+          "f": "Nailihis na basurang plastik",
+          "o": "8 tonelada",
+          "c": "Wala",
+          "s": "Wala",
+          "t": "Wala"
+        },
+        {
+          "f": "Lifespan",
+          "o": "60+ na taon",
+          "c": "40–50 na taon",
+          "s": "30–50 na taon",
+          "t": "20–30 na taon"
+        },
+        {
+          "f": "Tahan sa apoy",
+          "o": "Oo",
+          "c": "Oo",
+          "s": "Hindi",
+          "t": "Hindi"
+        },
+        {
+          "f": "Tahan sa lindol",
+          "o": "Oo",
+          "c": "Iba-iba",
+          "s": "Oo",
+          "t": "Bahagya"
+        },
+        {
+          "f": "Paggamit ng tubig sa konstruksyon",
+          "o": "Wala",
+          "c": "Mataas",
+          "s": "Katamtaman",
+          "t": "Mababa"
+        },
+        {
+          "f": "Kinakailangang semento/bakal",
+          "o": "Wala",
+          "c": "Mataas",
+          "s": "Mataas",
+          "t": "Mayroon"
+        },
+        {
+          "f": "Sertipikado ng UN-Habitat",
+          "o": "Oo",
+          "c": "Iba-iba",
+          "s": "Iba-iba",
+          "t": "Iba-iba"
+        }
       ]
     },
     "esg_title": "Tumutulong ang Othalo na maghatid ng mga tangible at measurable na kinalabasan ng ESG",
     "esg_subtitle": "Nakahanay sa 9 sa 17 United Nations Sustainable Development Goals.",
     "sdg_names": {
-      "1": "Walang Kahirapan", "6": "Malinis na Tubig", "8": "Disenteng Trabaho", "9": "Industriya at Makabagong Ideya",
-      "10": "Bawas na Hindi Pagkakapantay-pantay", "11": "Sustainable na mga Lungsod", "12": "Responsableng Pagkonsumo",
-      "13": "Aksyon sa Klima", "17": "Mga Pakikipagtulungan"
+      "1": "Walang Kahirapan",
+      "6": "Malinis na Tubig",
+      "8": "Disenteng Trabaho",
+      "9": "Industriya at Makabagong Ideya",
+      "10": "Bawas na Hindi Pagkakapantay-pantay",
+      "11": "Sustainable na mga Lungsod",
+      "12": "Responsableng Pagkonsumo",
+      "13": "Aksyon sa Klima",
+      "17": "Mga Pakikipagtulungan"
     },
     "cta_title": "Dito nagsisimula ang iyong solusyon",
     "cta_subtitle": "Pamahalaan man, developer, o korporasyon — mayroon kaming diskarte sa pagpapatayo na dinisenyo para sa iyong konteksto.",
@@ -167,41 +344,112 @@
     "mission_label": "Ang ating misyon",
     "mission": "Gawing pabahay ang basurang plastik at gawing pag-asa ang pabahay.",
     "values_label": "Ang ating mga halaga",
-    "values_items": ["Gumawa ng mabuti", "Integridad", "Pagkakapantay-pantay para sa lahat", "Lokal na pagpapalakas", "Ligtas na mga komunidad para sa susunod na henerasyon"],
+    "values_items": [
+      "Gumawa ng mabuti",
+      "Integridad",
+      "Pagkakapantay-pantay para sa lahat",
+      "Lokal na pagpapalakas",
+      "Ligtas na mga komunidad para sa susunod na henerasyon"
+    ],
     "team_label": "Ang mga Tao",
     "team_title": "Ang Ating Koponan",
     "team_subtitle": "Isang magkakaibang grupo ng mga innovator, engineer, at visionary na nagkakaisa sa misyon na lumikha ng mga sustainable na solusyon sa pabahay.",
     "team_members": {
-      "frank": { "name": "Frank Cato Lahti", "title": "Tagapagtatag & CEO", "bio": "Visionary entrepreneur na may karanasan sa intelligence ng militar at hilig sa environmental innovation." },
-      "claus": { "name": "Claus Skadkjaer", "title": "Pangulo & COO", "bio": "Dalubhasa sa operasyon na nakatuon sa pagpapalawak ng mga sustainable na teknolohiya at pandaigdigang deployment." },
-      "martin": { "name": "Martin Dokkedal", "title": "Chief Supply Chain Officer", "bio": "Pag-optimize ng pandaigdigang logistik upang dalhin ang teknolohiya ng Othalo sa pinakamalalayong komunidad." },
-      "thomas": { "name": "Thomas Meidell Loesnes", "title": "Chief Legal Officer", "bio": "Pagtitiyak ng pagsunod sa regulasyon at pagprotekta sa aming pandaigdigang patent portfolio." },
-      "kjell": { "name": "Kjell Steen", "title": "Pinuno ng Produksyon", "bio": "Industrial manufacturing veteran na nangunguna sa aming mga pasilidad sa produksyon ng panel." },
-      "bengt": { "name": "Bengt Erling Berg", "title": "Pinuno ng Teknikal na Suporta", "bio": "Nagbibigay ng teknikal na kaalaman at on-site na gabay para sa mga Othalo deployment." },
-      "stephane": { "name": "Stephane Bernard", "title": "Chief Commercial Officer", "bio": "Nangunguna sa paglago at mga strategic partnership sa buong internasyonal na merkado." },
-      "wenslauce": { "name": "Wenslauce Chengo", "title": "Tagapamahala ng Bansa Kenya", "bio": "Nangunguna sa epekto at relasyong pampubliko ng Othalo sa Silangang Africa." },
-      "meranda": { "name": "Meranda Chan", "title": "Pinuno ng Marketing", "bio": "Nangunguna sa pandaigdigang diskarte sa marketing at komunikasyon ng brand ng Othalo." }
+      "frank": {
+        "name": "Frank Cato Lahti",
+        "title": "Tagapagtatag & CEO",
+        "bio": "Visionary entrepreneur na may karanasan sa intelligence ng militar at hilig sa environmental innovation."
+      },
+      "claus": {
+        "name": "Claus Skadkjaer",
+        "title": "Pangulo & COO",
+        "bio": "Dalubhasa sa operasyon na nakatuon sa pagpapalawak ng mga sustainable na teknolohiya at pandaigdigang deployment."
+      },
+      "martin": {
+        "name": "Martin Dokkedal",
+        "title": "Chief Supply Chain Officer",
+        "bio": "Pag-optimize ng pandaigdigang logistik upang dalhin ang teknolohiya ng Othalo sa pinakamalalayong komunidad."
+      },
+      "thomas": {
+        "name": "Thomas Meidell Loesnes",
+        "title": "Chief Legal Officer",
+        "bio": "Pagtitiyak ng pagsunod sa regulasyon at pagprotekta sa aming pandaigdigang patent portfolio."
+      },
+      "kjell": {
+        "name": "Kjell Steen",
+        "title": "Pinuno ng Produksyon",
+        "bio": "Industrial manufacturing veteran na nangunguna sa aming mga pasilidad sa produksyon ng panel."
+      },
+      "bengt": {
+        "name": "Bengt Erling Berg",
+        "title": "Pinuno ng Teknikal na Suporta",
+        "bio": "Nagbibigay ng teknikal na kaalaman at on-site na gabay para sa mga Othalo deployment."
+      },
+      "stephane": {
+        "name": "Stephane Bernard",
+        "title": "Chief Commercial Officer",
+        "bio": "Nangunguna sa paglago at mga strategic partnership sa buong internasyonal na merkado."
+      },
+      "wenslauce": {
+        "name": "Wenslauce Chengo",
+        "title": "Tagapamahala ng Bansa Kenya",
+        "bio": "Nangunguna sa epekto at relasyong pampubliko ng Othalo sa Silangang Africa."
+      },
+      "meranda": {
+        "name": "Meranda Chan",
+        "title": "Pinuno ng Marketing",
+        "bio": "Nangunguna sa pandaigdigang diskarte sa marketing at komunikasyon ng brand ng Othalo."
+      }
     },
     "culture_label": "Ang Ating Kultura",
     "culture_title": "Hinihimok ng layunin, nakaangkla sa kahusayan.",
     "culture_subtitle": "Kung ano ang humuhubog sa ating diskarte sa pagtatrabaho at gumagabay sa atin sa paglikha ng positibong epekto sa mundo.",
     "culture_values": [
-      { "title": "Bayanihan", "desc": "Ang pakikipagtulungan at pagtutulungan ang nagpapatakbo sa aming tagumpay. Naniniwala kami sa kapangyarihan ng sama-samang pagtatrabaho upang makamit ang mga pambihirang resulta." },
-      { "title": "Kapanahunan", "desc": "Iginagalang namin ang mga takdang-panahon at tinutupad ang aming mga pangako. Ang pagiging maagap at kahusayan ay pangunahing bahagi ng aming operational excellence." },
-      { "title": "Komunikasyon", "desc": "Ang bukas at malinaw na diyalogo ay nagtitiyak ng pagkakahanay at pag-unawa sa lahat ng antas ng aming organisasyon." },
-      { "title": "Dedikasyon", "desc": "Kami ay nakatuon sa aming misyon na lumikha ng mga sustainable na solusyon sa pabahay at gumawa ng positibong epekto sa mundo." }
+      {
+        "title": "Bayanihan",
+        "desc": "Ang pakikipagtulungan at pagtutulungan ang nagpapatakbo sa aming tagumpay. Naniniwala kami sa kapangyarihan ng sama-samang pagtatrabaho upang makamit ang mga pambihirang resulta."
+      },
+      {
+        "title": "Kapanahunan",
+        "desc": "Iginagalang namin ang mga takdang-panahon at tinutupad ang aming mga pangako. Ang pagiging maagap at kahusayan ay pangunahing bahagi ng aming operational excellence."
+      },
+      {
+        "title": "Komunikasyon",
+        "desc": "Ang bukas at malinaw na diyalogo ay nagtitiyak ng pagkakahanay at pag-unawa sa lahat ng antas ng aming organisasyon."
+      },
+      {
+        "title": "Dedikasyon",
+        "desc": "Kami ay nakatuon sa aming misyon na lumikha ng mga sustainable na solusyon sa pabahay at gumawa ng positibong epekto sa mundo."
+      }
     ],
     "impact_label": "Masusukat na Pagbabago",
     "impact_title": "Ang aming triple bottom line impact — tao, planeta, at kaunlaran.",
     "impact_items": [
-      { "num": "01", "title": "Epekto sa kapaligiran", "desc": "Plastik na tinanggal sa kapaligiran; walang paggamit ng semento at bakal." },
-      { "num": "02", "title": "Epekto sa lipunan", "desc": "Mga tahanan para sa mga komunidad na may mababa hanggang katamtamang kita." },
-      { "num": "03", "title": "Epekto sa ekonomiya", "desc": "Lumikha ng mga trabaho sa umuusbong na mga ekonomiya." }
+      {
+        "num": "01",
+        "title": "Epekto sa kapaligiran",
+        "desc": "Plastik na tinanggal sa kapaligiran; walang paggamit ng semento at bakal."
+      },
+      {
+        "num": "02",
+        "title": "Epekto sa lipunan",
+        "desc": "Mga tahanan para sa mga komunidad na may mababa hanggang katamtamang kita."
+      },
+      {
+        "num": "03",
+        "title": "Epekto sa ekonomiya",
+        "desc": "Lumikha ng mga trabaho sa umuusbong na mga ekonomiya."
+      }
     ],
     "contributions": {
-      "vision": "Pananaw & Estratehiya", "operations": "Mga Operasyon", "supply": "Supply Chain",
-      "legal": "Legal & Pagsunod", "manufacturing": "Paggawa", "engineering": "Inhinyerya",
-      "business": "Pagpapaunlad ng Negosyo", "pr": "Kenya & PR"
+      "vision": "Pananaw & Estratehiya",
+      "operations": "Mga Operasyon",
+      "supply": "Supply Chain",
+      "legal": "Legal & Pagsunod",
+      "manufacturing": "Paggawa",
+      "engineering": "Inhinyerya",
+      "business": "Pagpapaunlad ng Negosyo",
+      "pr": "Kenya & PR"
     },
     "story_label": "Ang Ating Kuwento",
     "story_quote": "Pagkatapos maglingkod sa Norwegian Army at Intelligence sa mga misyon ng NATO noong 1990s, nasaksihan ko ang katatagan ng mga taong nabubuhay sa gitna ng salungatan at ang malupit na katotohanan ng mga kampo ng mga bakwit. Pagkalipas ng ilang taon, habang nakatayo sa isang dalampasigang puno ng plastik sa hilagang Norway, natanto ko na ang pandaigdigang krisis sa basura ay mas malapit kaysa sa ating iniisip. Ang sandaling iyon ay nagbunga ng isang matapang na ideya: maaari ba nating gawing ligtas at disenteng tahanan ang basurang plastik? Ang tanong na iyon ang naging pundasyon ng Othalo.",
@@ -215,14 +463,37 @@
     "technology_heading": "Teknolohiya",
     "technology_desc": "Pinagsasama ng aming mga karaniwang module ang makabagong ideya at pagiging praktikal, na naghahatid ng cost efficient, mabilis itayo, at matibay at sustainable na mga solusyon sa konstruksyon.",
     "tech_features_alt": [
-      { "title": "Makabagong patented na teknolohiya", "desc": "75% ng lahat ng uri ng plastik kabilang ang mga mahirap i-recycle tulad ng mga sachet, film, at flexible — na hindi nairerecycle hanggang ngayon." },
-      { "title": "Ligtas sa kapaligiran", "desc": "Walang paggamit ng semento at bakal, napakalimitadong paggamit ng tubig." },
-      { "title": "Mabilis na konstruksyon", "desc": "Inilalagay sa loob ng 6 na oras gamit lamang ang lakas ng tao — walang kailangang mabibigat na makinarya." },
-      { "title": "Kaligtasan", "desc": "Disenyong tahan sa bagyo at lindol, fire retardant." },
-      { "title": "Superyor na pagganap", "desc": "7x na mas matibay kaysa sa semento." },
-      { "title": "Mataas na pamantayan", "desc": "Sumusunod sa lahat ng may-katuturang regulasyon sa pagtatayo." }
+      {
+        "title": "Makabagong patented na teknolohiya",
+        "desc": "75% ng lahat ng uri ng plastik kabilang ang mga mahirap i-recycle tulad ng mga sachet, film, at flexible — na hindi nairerecycle hanggang ngayon."
+      },
+      {
+        "title": "Ligtas sa kapaligiran",
+        "desc": "Walang paggamit ng semento at bakal, napakalimitadong paggamit ng tubig."
+      },
+      {
+        "title": "Mabilis na konstruksyon",
+        "desc": "Inilalagay sa loob ng 6 na oras gamit lamang ang lakas ng tao — walang kailangang mabibigat na makinarya."
+      },
+      {
+        "title": "Kaligtasan",
+        "desc": "Disenyong tahan sa bagyo at lindol, fire retardant."
+      },
+      {
+        "title": "Superyor na pagganap",
+        "desc": "7x na mas matibay kaysa sa semento."
+      },
+      {
+        "title": "Mataas na pamantayan",
+        "desc": "Sumusunod sa lahat ng may-katuturang regulasyon sa pagtatayo."
+      }
     ],
-    "product_lines_names": ["Ang Komunidad", "Ang Emergency na Silungan", "Ang Medikal na Yunit at Cold Storage", "Ang Akomodasyon ng Manggagawa"],
+    "product_lines_names": [
+      "Ang Komunidad",
+      "Ang Emergency na Silungan",
+      "Ang Medikal na Yunit at Cold Storage",
+      "Ang Akomodasyon ng Manggagawa"
+    ],
     "panel_label": "Prefabricated na mga Panel",
     "un_habitat_badge": "Inendorso ng UN-HABITAT",
     "un_habitat_note": "Para sa Mas Mabuting Urbanong Hinaharap",
@@ -231,24 +502,87 @@
     "tech_label": "Teknikal na Kahigtan",
     "tech_title": "Nangungunang teknolohiya at makabagong ideya sa merkado",
     "panel_features": [
-      { "title": "Cost Effective", "desc": "Pre-fabricated offsite na may kaunting basura. Limitadong tao at makinarya ang kailangan sa site. Binuo 100% mula sa cost effective na recycled plastic." },
-      { "title": "Mabilis na Pagtatayo", "desc": "Ang isang 2-bedroom na bahay ay maaaring maitayo sa loob ng isang araw dahil sa nangungunang interlock assembling technology sa merkado." },
-      { "title": "Kalidad at tibay", "desc": "60 taon na lifespan. 7x na mas matibay kaysa sa semento. Ang insulation ay 3x na mas epektibo kaysa sa semento." },
-      { "title": "Kaligtasan", "desc": "Fire resistant. Tahan sa bagyo & lindol." },
-      { "title": "Lubos na Sustainable", "desc": "Walang semento o bakal na ginamit. Mababang paggamit ng tubig sa konstruksyon." }
+      {
+        "title": "Cost Effective",
+        "desc": "Pre-fabricated offsite na may kaunting basura. Limitadong tao at makinarya ang kailangan sa site. Binuo 100% mula sa cost effective na recycled plastic."
+      },
+      {
+        "title": "Mabilis na Pagtatayo",
+        "desc": "Ang isang 2-bedroom na bahay ay maaaring maitayo sa loob ng isang araw dahil sa nangungunang interlock assembling technology sa merkado."
+      },
+      {
+        "title": "Kalidad at tibay",
+        "desc": "60 taon na lifespan. 7x na mas matibay kaysa sa semento. Ang insulation ay 3x na mas epektibo kaysa sa semento."
+      },
+      {
+        "title": "Kaligtasan",
+        "desc": "Fire resistant. Tahan sa bagyo & lindol."
+      },
+      {
+        "title": "Lubos na Sustainable",
+        "desc": "Walang semento o bakal na ginamit. Mababang paggamit ng tubig sa konstruksyon."
+      }
     ],
     "material_label": "Materyal",
     "material_value": "100% Recycled na Plastik",
     "comparison_title": "Nangungunang teknolohiya at makabagong ideya sa merkado",
-    "comparison_headers": ["Mga Detalye", "Othalo", "3D Printing", "Triple Panel Buildings", "Tradisyonal na konstruksyon"],
+    "comparison_headers": [
+      "Mga Detalye",
+      "Othalo",
+      "3D Printing",
+      "Triple Panel Buildings",
+      "Tradisyonal na konstruksyon"
+    ],
     "comparison_rows": [
-      { "p": "Handa sa merkado", "o": "buo", "d": "wala", "r": "bahagya", "t": "buo" },
-      { "p": "Mababang oras ng produksyon", "o": "buo", "d": "wala", "r": "wala", "t": "bahagya" },
-      { "p": "Nairerecycle", "o": "buo", "d": "bahagya", "r": "bahagya", "t": "wala" },
-      { "p": "Sustainable", "o": "buo", "d": "bahagya", "r": "bahagya", "t": "wala" },
-      { "p": "Madaling makuha ang hilaw na materyal", "o": "buo", "d": "wala", "r": "bahagya", "t": "wala" },
-      { "p": "Mababang halaga", "o": "buo", "d": "wala", "r": "wala", "t": "bahagya" },
-      { "p": "Pang-industriyang produksyon", "o": "buo", "d": "wala", "r": "wala", "t": "bahagya" }
+      {
+        "p": "Handa sa merkado",
+        "o": "buo",
+        "d": "wala",
+        "r": "bahagya",
+        "t": "buo"
+      },
+      {
+        "p": "Mababang oras ng produksyon",
+        "o": "buo",
+        "d": "wala",
+        "r": "wala",
+        "t": "bahagya"
+      },
+      {
+        "p": "Nairerecycle",
+        "o": "buo",
+        "d": "bahagya",
+        "r": "bahagya",
+        "t": "wala"
+      },
+      {
+        "p": "Sustainable",
+        "o": "buo",
+        "d": "bahagya",
+        "r": "bahagya",
+        "t": "wala"
+      },
+      {
+        "p": "Madaling makuha ang hilaw na materyal",
+        "o": "buo",
+        "d": "wala",
+        "r": "bahagya",
+        "t": "wala"
+      },
+      {
+        "p": "Mababang halaga",
+        "o": "buo",
+        "d": "wala",
+        "r": "wala",
+        "t": "bahagya"
+      },
+      {
+        "p": "Pang-industriyang produksyon",
+        "o": "buo",
+        "d": "wala",
+        "r": "wala",
+        "t": "bahagya"
+      }
     ],
     "fulfilled": "Natupad",
     "partially_fulfilled": "Bahagyang natupad",
@@ -256,18 +590,39 @@
     "lines_title": "Mga pagsasaayos ng pabahay",
     "lines_subtitle": "Ang bawat pagsasaayos ay purpose-engineered, modular, at lokal na naiaangkop.",
     "product_lines": [
-      { "name": "Ang Komunidad", "desc": "Mga yunit para sa iisang pamilya at maraming pamilya na na-optimize para sa mabilis na pagpapatayo sa lungsod at mga programa sa pabahay para sa mababang kita." },
-      { "name": "Ang Distrito", "desc": "Medium-density residential clusters para sa mga pamilya. Buong integrasyon ng imprastraktura kabilang ang mga utility." },
-      { "name": "Ang Emergency na Silungan", "desc": "Mabilis na pagpapatayo ng emergency housing para sa disaster relief at humanitarian aid missions." },
-      { "name": "Ang mga Medikal na Yunit", "desc": "Mga espesyal na healthcare module kabilang ang mga klinika, isolation ward, at diagnostic center." },
-      { "name": "Ang Akomodasyon ng Manggagawa", "desc": "Akomodasyong itinayo para sa mga manggagawa sa mga construction site, operasyon ng minahan, at industriyal na pagpapatayo." }
+      {
+        "name": "Ang Komunidad",
+        "desc": "Mga yunit para sa iisang pamilya at maraming pamilya na na-optimize para sa mabilis na pagpapatayo sa lungsod at mga programa sa pabahay para sa mababang kita."
+      },
+      {
+        "name": "Ang Distrito",
+        "desc": "Medium-density residential clusters para sa mga pamilya. Buong integrasyon ng imprastraktura kabilang ang mga utility."
+      },
+      {
+        "name": "Ang Emergency na Silungan",
+        "desc": "Mabilis na pagpapatayo ng emergency housing para sa disaster relief at humanitarian aid missions."
+      },
+      {
+        "name": "Ang mga Medikal na Yunit",
+        "desc": "Mga espesyal na healthcare module kabilang ang mga klinika, isolation ward, at diagnostic center."
+      },
+      {
+        "name": "Ang Akomodasyon ng Manggagawa",
+        "desc": "Akomodasyong itinayo para sa mga manggagawa sa mga construction site, operasyon ng minahan, at industriyal na pagpapatayo."
+      }
     ],
     "get_quote": "Kumuha ng Quote",
     "dual_label": "Dalawahang Epekto",
     "dual_title": "Paggamit ng isang pandaigdigang hamon upang malutas ang isa pa",
     "dual_items": [
-      { "title": "Basurang plastik", "desc": "Isang pandaigdigang pananagutan: higit sa 10 bilyong tonelada na ang naipon sa kapaligiran." },
-      { "title": "Abot-kayang pabahay", "desc": "3.4 bilyong tao sa buong mundo ang walang sapat na pabahay (UN-Habitat, 2026)." }
+      {
+        "title": "Basurang plastik",
+        "desc": "Isang pandaigdigang pananagutan: higit sa 10 bilyong tonelada na ang naipon sa kapaligiran."
+      },
+      {
+        "title": "Abot-kayang pabahay",
+        "desc": "3.4 bilyong tao sa buong mundo ang walang sapat na pabahay (UN-Habitat, 2026)."
+      }
     ],
     "cta_learn_more": "Alamin ang Higit Pa"
   },
@@ -281,24 +636,46 @@
     "contact_us": "Makipag-ugnayan sa Amin",
     "cards": [
       {
-        "label": "Mga Pamahalaan — Munisipyo", "tag": "Pampublikong Sektor",
+        "label": "Mga Pamahalaan — Munisipyo",
+        "tag": "Pampublikong Sektor",
         "headline": "Pabahay sa scale at bilis na kailangan ng mga pamahalaan",
         "desc": "Abot-kayang mga tahanan mula sa recycled na plastik para sa scale. Prefabricated na mga modular system na may teknolohiyang inendorso ng UN at patented.",
-        "bullets": ["Abot-kayang mga tahanan mula sa recycled na plastik para sa scale", "Prefabricated na mga modular system na may teknolohiyang inendorso ng UN at patented", "Mas mabilis na pagtatayo para sa bilis", "Multi-storey (hanggang 4 na palapag)", "Sumusunod sa pandaigdigang pamantayan, lokal na naiaangkop"],
+        "bullets": [
+          "Abot-kayang mga tahanan mula sa recycled na plastik para sa scale",
+          "Prefabricated na mga modular system na may teknolohiyang inendorso ng UN at patented",
+          "Mas mabilis na pagtatayo para sa bilis",
+          "Multi-storey (hanggang 4 na palapag)",
+          "Sumusunod sa pandaigdigang pamantayan, lokal na naiaangkop"
+        ],
         "cta": "Humiling ng Government Brief"
       },
       {
-        "label": "Mga Developer ng Pabahay", "tag": "Pribadong Sektor",
+        "label": "Mga Developer ng Pabahay",
+        "tag": "Pribadong Sektor",
         "headline": "Ang pinakamabilis na landas mula sa lupa hanggang sa naihatid na pabahay",
         "desc": "Mas mabilis, mas matipid sa gastos na konstruksyon. Ang mga flexible na disenyo ay umaangkop sa iyong proyekto, merkado, at regulasyon.",
-        "bullets": ["Mas mabilis, mas matipid sa gastos na konstruksyon", "Prefabricated na mga modular system mula sa recycled na plastik", "Mas simpleng pagpapatupad sa site", "Magaan at madaling palawaking mga bahagi", "Ang mga flexible na disenyo ay umaangkop sa iyong proyekto, merkado, at regulasyon"],
+        "bullets": [
+          "Mas mabilis, mas matipid sa gastos na konstruksyon",
+          "Prefabricated na mga modular system mula sa recycled na plastik",
+          "Mas simpleng pagpapatupad sa site",
+          "Magaan at madaling palawaking mga bahagi",
+          "Ang mga flexible na disenyo ay umaangkop sa iyong proyekto, merkado, at regulasyon"
+        ],
         "cta": "Humiling ng Developer Quote"
       },
       {
-        "label": "Mga Korporasyon", "tag": "Corporate ESG",
+        "label": "Mga Korporasyon",
+        "tag": "Corporate ESG",
         "headline": "Kahusayan sa ESG na naghahatid ng tunay na pagbabago sa mundo",
         "desc": "Turnkey na platform ng ESG. Iugnay ang pagsunod + kapaligiran + epekto sa lipunan. Gawing kapaki-pakinabang na materyales sa pagtatayo ang basura.",
-        "bullets": ["Turnkey na platform ng ESG", "Iugnay ang pagsunod + kapaligiran + epekto sa lipunan", "Gawing kapaki-pakinabang na materyales sa pagtatayo ang basura", "Madaling palawakin, napatunayan, at masusukat na epekto para sa pag-uulat", "Mabilis na pagpapatupad", "Mga programa sa pakikipag-ugnayan ng mga stakeholder"],
+        "bullets": [
+          "Turnkey na platform ng ESG",
+          "Iugnay ang pagsunod + kapaligiran + epekto sa lipunan",
+          "Gawing kapaki-pakinabang na materyales sa pagtatayo ang basura",
+          "Madaling palawakin, napatunayan, at masusukat na epekto para sa pag-uulat",
+          "Mabilis na pagpapatupad",
+          "Mga programa sa pakikipag-ugnayan ng mga stakeholder"
+        ],
         "cta": "Galugarin ang Corporate Partnership"
       }
     ]
@@ -318,30 +695,88 @@
     "cta2": "Makipag-ugnayan sa Amin",
     "challenge_label": "Ang Hamon",
     "challenge_title": "Ang mga limitasyon ng tradisyonal na pagtatayo",
-    "challenge_bullets": ["Tumataas na demand sa pabahay", "Mabilis na urbanisasyon + paglaki ng populasyon", "Tumataas na gastos sa konstruksyon", "Tradisyonal na pagtatayo ay mabagal, mahal, at mataas ang carbon", "Hindi praktikal sa kinakailangang scale"],
+    "challenge_bullets": [
+      "Tumataas na demand sa pabahay",
+      "Mabilis na urbanisasyon + paglaki ng populasyon",
+      "Tumataas na gastos sa konstruksyon",
+      "Tradisyonal na pagtatayo ay mabagal, mahal, at mataas ang carbon",
+      "Hindi praktikal sa kinakailangang scale"
+    ],
     "solution_label": "Ang Solusyon ng Othalo",
     "solution_title": "Scale nang walang kompromiso",
-    "solution_bullets": ["Abot-kayang mga tahanan mula sa recycled na plastik para sa scale", "Prefabricated na mga modular system na may teknolohiyang inendorso ng UN at patented", "Mas mabilis na pagtatayo para sa bilis", "Multi-storey (hanggang 4 na palapag)", "Sumusunod sa pandaigdigang pamantayan, lokal na naiaangkop"],
+    "solution_bullets": [
+      "Abot-kayang mga tahanan mula sa recycled na plastik para sa scale",
+      "Prefabricated na mga modular system na may teknolohiyang inendorso ng UN at patented",
+      "Mas mabilis na pagtatayo para sa bilis",
+      "Multi-storey (hanggang 4 na palapag)",
+      "Sumusunod sa pandaigdigang pamantayan, lokal na naiaangkop"
+    ],
     "benefits_label": "Bakit Othalo para sa mga Pamahalaan",
     "benefits_title": "Isang diskarte sa pabahay sa pampublikong sektor na naghahatid ng resulta",
     "benefits": [
-      { "title": "Palawakin ang abot-kayang pabahay nang mabilis at mahusay", "desc": "Palawakin ang abot-kayang mga tahanan nang mabilis at mahusay upang matugunan ang tumataas na demand ng populasyon." },
-      { "title": "Binuo para sa mas matataas na urbanong proyekto", "desc": "Binuo para sa mas matataas na urbanong proyekto na may kakayahang magtayo ng hanggang 4 na palapag." },
-      { "title": "Bawasan ang gastos gamit ang mga alternatibo sa bakal at semento", "desc": "Bawasan ang mga gastos gamit ang aming patented na mga alternatibo sa mahal na bakal at semento." },
-      { "title": "Mas mabilis na pagtatayo gamit ang prefabrication (mga araw, hindi buwan)", "desc": "Mas mabilis na pagtatayo gamit ang prefabrication — naghahatid ng mga tahanan sa loob ng ilang araw, hindi buwan." },
-      { "title": "Mas mababang carbon footprint gamit ang mga circular material", "desc": "Mas mababang carbon footprint gamit ang mga sustainable at circular na materyal na iniligtas mula sa basura." },
-      { "title": "Flexible na disenyo upang matugunan ang lokal na pangangailangan", "desc": "Flexible na disenyo upang matugunan ang mga partikular na lokal na pangangailangan at kinakailangan sa regulasyon." }
+      {
+        "title": "Palawakin ang abot-kayang pabahay nang mabilis at mahusay",
+        "desc": "Palawakin ang abot-kayang mga tahanan nang mabilis at mahusay upang matugunan ang tumataas na demand ng populasyon."
+      },
+      {
+        "title": "Binuo para sa mas matataas na urbanong proyekto",
+        "desc": "Binuo para sa mas matataas na urbanong proyekto na may kakayahang magtayo ng hanggang 4 na palapag."
+      },
+      {
+        "title": "Bawasan ang gastos gamit ang mga alternatibo sa bakal at semento",
+        "desc": "Bawasan ang mga gastos gamit ang aming patented na mga alternatibo sa mahal na bakal at semento."
+      },
+      {
+        "title": "Mas mabilis na pagtatayo gamit ang prefabrication (mga araw, hindi buwan)",
+        "desc": "Mas mabilis na pagtatayo gamit ang prefabrication — naghahatid ng mga tahanan sa loob ng ilang araw, hindi buwan."
+      },
+      {
+        "title": "Mas mababang carbon footprint gamit ang mga circular material",
+        "desc": "Mas mababang carbon footprint gamit ang mga sustainable at circular na materyal na iniligtas mula sa basura."
+      },
+      {
+        "title": "Flexible na disenyo upang matugunan ang lokal na pangangailangan",
+        "desc": "Flexible na disenyo upang matugunan ang mga partikular na lokal na pangangailangan at kinakailangan sa regulasyon."
+      }
     ],
     "comparison_title": "Othalo vs. Tradisyonal na Pampublikong Pabahay",
     "comparison_subtitle": "Isang direktang paghahambing ng mga pangunahing metrik sa pagkuha ng pamahalaan.",
-    "comparison_headers": ["Metrik", "Othalo", "Tradisyonal"],
+    "comparison_headers": [
+      "Metrik",
+      "Othalo",
+      "Tradisyonal"
+    ],
     "comparison_rows": [
-      { "f": "Oras ng pagtatayo (100 yunit)", "o": "< 3 buwan", "t": "18–36 na buwan" },
-      { "f": "Gastos bawat yunit (2BR)", "o": "30–50% mas mababa", "t": "Baseline" },
-      { "f": "Lokal na paglikha ng trabaho", "o": "Mataas — walang mabibigat na makinarya", "t": "Katamtaman — nakadepende sa makinarya" },
-      { "f": "Pananagutan sa kapaligiran", "o": "Plastik na nailihis", "t": "CO₂ na ibinuga" },
-      { "f": "Pag-uulat ng SDG", "o": "Built-in na mga metrik", "t": "Kailangan ng manu-manong audit" },
-      { "f": "Katatagan sa sakuna", "o": "Bagyo Cat.5 + Seismic Z4", "t": "Iba-iba — kadalasang mas mababa" }
+      {
+        "f": "Oras ng pagtatayo (100 yunit)",
+        "o": "< 3 buwan",
+        "t": "18–36 na buwan"
+      },
+      {
+        "f": "Gastos bawat yunit (2BR)",
+        "o": "30–50% mas mababa",
+        "t": "Baseline"
+      },
+      {
+        "f": "Lokal na paglikha ng trabaho",
+        "o": "Mataas — walang mabibigat na makinarya",
+        "t": "Katamtaman — nakadepende sa makinarya"
+      },
+      {
+        "f": "Pananagutan sa kapaligiran",
+        "o": "Plastik na nailihis",
+        "t": "CO₂ na ibinuga"
+      },
+      {
+        "f": "Pag-uulat ng SDG",
+        "o": "Built-in na mga metrik",
+        "t": "Kailangan ng manu-manong audit"
+      },
+      {
+        "f": "Katatagan sa sakuna",
+        "o": "Bagyo Cat.5 + Seismic Z4",
+        "t": "Iba-iba — kadalasang mas mababa"
+      }
     ],
     "cta_section_title": "Handang galugarin ang isang pambansang deployment?",
     "cta_section_subtitle": "Direktang nakikipagtulungan ang aming koponan sa mga ministri ng pamahalaan, mga ahensya ng pabahay, at mga NGO upang magplano at magpatayo sa malawak na scale.",
@@ -367,30 +802,86 @@
     "cta2": "Makipag-ugnayan sa Amin",
     "challenge_label": "Ang Hamon",
     "challenge_title": "Mga presyon sa merkado na naglilimita sa paglago",
-    "challenge_bullets": ["Tumataas na gastos (mataas na pagbabago sa presyo), lumiliit na kita", "Mga pagkaantala, hindi matantiya na mga timeline", "Kakulangan sa bakal, semento, at paggawa", "Komplikado at hindi mahusay na konstruksyon para sa pagpapalawak"],
+    "challenge_bullets": [
+      "Tumataas na gastos (mataas na pagbabago sa presyo), lumiliit na kita",
+      "Mga pagkaantala, hindi matantiya na mga timeline",
+      "Kakulangan sa bakal, semento, at paggawa",
+      "Komplikado at hindi mahusay na konstruksyon para sa pagpapalawak"
+    ],
     "solution_label": "Ang Solusyon ng Othalo",
     "solution_title": "Isang mas mabilis, matipid sa gastos na modelo",
-    "solution_bullets": ["Mas mabilis, mas matipid sa gastos na konstruksyon", "Prefabricated na mga modular system mula sa recycled na plastik", "Mas simpleng pagpapatupad sa site", "Magaan at madaling palawaking mga bahagi", "Ang mga flexible na disenyo ay umaangkop sa iyong proyekto, merkado, at regulasyon"],
+    "solution_bullets": [
+      "Mas mabilis, mas matipid sa gastos na konstruksyon",
+      "Prefabricated na mga modular system mula sa recycled na plastik",
+      "Mas simpleng pagpapatupad sa site",
+      "Magaan at madaling palawaking mga bahagi",
+      "Ang mga flexible na disenyo ay umaangkop sa iyong proyekto, merkado, at regulasyon"
+    ],
     "benefits_label": "Mga Bentahe ng Developer",
     "benefits_title": "Binuo upang mapabuti ang ekonomiya ng iyong pagpapaunlad",
     "benefits": [
-      { "title": "Kontrolin ang gastos at bawasan ang panganib sa pagbabago ng presyo ng materyal", "desc": "Kontrolin ang mga gastos at bawasan ang exposure sa pabago-bagong presyo ng materyal gamit ang aming mga prefabricated na system." },
-      { "title": "Magtayo nang mas mabilis gamit ang prefabrication (mga araw, hindi buwan)", "desc": "Magtayo nang mas mabilis gamit ang prefabrication — naghahatid ng mga tahanan sa loob ng mga araw, hindi buwan." },
-      { "title": "Mas kaunting pangangailangan sa paggawa sa site", "desc": "Mas mababang pangangailangan sa paggawa sa site na may mas simpleng pagpapatupad at pagbuo." },
-      { "title": "Mas mataas na kahusayan, madaling mapalawak na paghahatid", "desc": "Mas mataas na kahusayan at madaling mapalawak na paghahatid para sa malalaking proyekto." },
-      { "title": "Pasukin ang mga bagong merkado (abot-kayang segment)", "desc": "Pasukin ang mga bagong merkado, partikular ang segment ng abot-kayang pabahay." },
-      { "title": "Palakasin ang ESG gamit ang mababang carbon, circular na materyal", "desc": "Palakasin ang ESG gamit ang mababang carbon at circular na mga materyal." },
-      { "title": "Nako-customize na disenyo", "desc": "Nako-customize na disenyo upang umangkop sa iyong proyekto, merkado, at regulasyon." }
+      {
+        "title": "Kontrolin ang gastos at bawasan ang panganib sa pagbabago ng presyo ng materyal",
+        "desc": "Kontrolin ang mga gastos at bawasan ang exposure sa pabago-bagong presyo ng materyal gamit ang aming mga prefabricated na system."
+      },
+      {
+        "title": "Magtayo nang mas mabilis gamit ang prefabrication (mga araw, hindi buwan)",
+        "desc": "Magtayo nang mas mabilis gamit ang prefabrication — naghahatid ng mga tahanan sa loob ng mga araw, hindi buwan."
+      },
+      {
+        "title": "Mas kaunting pangangailangan sa paggawa sa site",
+        "desc": "Mas mababang pangangailangan sa paggawa sa site na may mas simpleng pagpapatupad at pagbuo."
+      },
+      {
+        "title": "Mas mataas na kahusayan, madaling mapalawak na paghahatid",
+        "desc": "Mas mataas na kahusayan at madaling mapalawak na paghahatid para sa malalaking proyekto."
+      },
+      {
+        "title": "Pasukin ang mga bagong merkado (abot-kayang segment)",
+        "desc": "Pasukin ang mga bagong merkado, partikular ang segment ng abot-kayang pabahay."
+      },
+      {
+        "title": "Palakasin ang ESG gamit ang mababang carbon, circular na materyal",
+        "desc": "Palakasin ang ESG gamit ang mababang carbon at circular na mga materyal."
+      },
+      {
+        "title": "Nako-customize na disenyo",
+        "desc": "Nako-customize na disenyo upang umangkop sa iyong proyekto, merkado, at regulasyon."
+      }
     ],
     "roi_label": "Mga Metrik sa ROI",
     "roi_title": "Ang mga numero na nagpapasigla sa iyong kaso ng negosyo",
     "roi_items": [
-      { "label": "Gastos vs. semento", "value": "30–50% mas mababa", "highlight": true },
-      { "label": "Timeline ng konstruksyon (100 yunit)", "value": "< 3 buwan", "highlight": true },
-      { "label": "Pangangailangan sa lokal na paggawa", "value": "Semi-skilled lamang", "highlight": false },
-      { "label": "Makinaryang kailangan sa site", "value": "Wala", "highlight": true },
-      { "label": "Basura ng materyal sa site", "value": "Malapit sa zero", "highlight": false },
-      { "label": "Proteksyon sa kita ng proyekto", "value": "Tiyak na gastos sa panel", "highlight": false }
+      {
+        "label": "Gastos vs. semento",
+        "value": "30–50% mas mababa",
+        "highlight": true
+      },
+      {
+        "label": "Timeline ng konstruksyon (100 yunit)",
+        "value": "< 3 buwan",
+        "highlight": true
+      },
+      {
+        "label": "Pangangailangan sa lokal na paggawa",
+        "value": "Semi-skilled lamang",
+        "highlight": false
+      },
+      {
+        "label": "Makinaryang kailangan sa site",
+        "value": "Wala",
+        "highlight": true
+      },
+      {
+        "label": "Basura ng materyal sa site",
+        "value": "Malapit sa zero",
+        "highlight": false
+      },
+      {
+        "label": "Proteksyon sa kita ng proyekto",
+        "value": "Tiyak na gastos sa panel",
+        "highlight": false
+      }
     ],
     "cta_title": "Handang magtayo kasama ang Othalo?",
     "cta_subtitle": "Gagabayan ka ng aming koponan sa mga detalye, logistik, at isang buong financial model para sa iyong pagpapaunlad.",
@@ -417,30 +908,82 @@
     "cta2": "Makipag-ugnayan sa Amin",
     "challenge_label": "Ang Hamon",
     "challenge_title": "Pag-navigate sa mga kumplikadong inaasahan sa ESG",
-    "challenge_bullets": ["Responsibilidad sa katapusan ng buhay ng plastik (kabilang ang basurang plastik)", "Mas mahigpit na mga regulasyon sa sirkularidad", "Tumataas na presyon sa pagsunod", "Kailangan ng mapagkakatiwalaan at madaling palawaking solusyon", "Tumataas na demand mula sa mga mamimili, empleyado, at mamumuhunan"],
+    "challenge_bullets": [
+      "Responsibilidad sa katapusan ng buhay ng plastik (kabilang ang basurang plastik)",
+      "Mas mahigpit na mga regulasyon sa sirkularidad",
+      "Tumataas na presyon sa pagsunod",
+      "Kailangan ng mapagkakatiwalaan at madaling palawaking solusyon",
+      "Tumataas na demand mula sa mga mamimili, empleyado, at mamumuhunan"
+    ],
     "solution_label": "Ang Solusyon ng Othalo",
     "solution_title": "Isang turnkey na platform ng ESG",
-    "solution_bullets": ["Turnkey na platform ng ESG", "Iugnay ang pagsunod + kapaligiran + epekto sa lipunan", "Gawing kapaki-pakinabang na materyales sa pagtatayo ang basura", "Madaling palawakin, napatunayan, at masusukat na epekto para sa pag-uulat", "Mabilis na pagpapatupad", "Mga programa sa pakikipag-ugnayan ng mga stakeholder"],
+    "solution_bullets": [
+      "Turnkey na platform ng ESG",
+      "Iugnay ang pagsunod + kapaligiran + epekto sa lipunan",
+      "Gawing kapaki-pakinabang na materyales sa pagtatayo ang basura",
+      "Madaling palawakin, napatunayan, at masusukat na epekto para sa pag-uulat",
+      "Mabilis na pagpapatupad",
+      "Mga programa sa pakikipag-ugnayan ng mga stakeholder"
+    ],
     "benefits_label": "Bentahe ng Korporasyon",
     "benefits_title": "Structured na epekto ng ESG para sa mga kumpanyang may pasulong na pag-iisip",
     "benefits": [
-      { "title": "Tugunan ang mga kinakailangan sa EPR na may masusukat na resulta", "desc": "Tugunan ang mga kinakailangan sa EPR na may masusukat na resulta sa pamamagitan ng pag-alis ng plastik." },
-      { "title": "Gawing halaga ang basura sa pamamagitan ng circular model", "desc": "Gawing kapaki-pakinabang na halaga ang basura sa pamamagitan ng isang circular na modelo na nagbabago ng plastik upang maging mga tahanan." },
-      { "title": "Maghatid ng tunay na epekto sa ESG", "desc": "Maghatid ng tunay na epekto sa ESG sa buong aspeto ng kapaligiran, lipunan, at pamamahala." },
-      { "title": "Mabilis na pagpapatayo, agarang aksyon", "desc": "Ang mabilis na pagpapatayo ay nagbibigay-daan sa agarang aksyon at masusukat na mga resulta." },
-      { "title": "Palakasin ang brand at tiwala ng mga stakeholder", "desc": "Palakasin ang tiwala ng brand at mga stakeholder na may malinaw, antas-komunidad na epekto." },
-      { "title": "Transparent na pagsubaybay at pag-uulat ng epekto", "desc": "Transparent na pagsubaybay at pag-uulat ng epekto na katugma sa mga pangunahing framework." },
-      { "title": "Madaling palawakin sa buong merkado", "desc": "Madaling palawakin sa mga merkado upang tumugma sa iyong operational footprint sa buong mundo." }
+      {
+        "title": "Tugunan ang mga kinakailangan sa EPR na may masusukat na resulta",
+        "desc": "Tugunan ang mga kinakailangan sa EPR na may masusukat na resulta sa pamamagitan ng pag-alis ng plastik."
+      },
+      {
+        "title": "Gawing halaga ang basura sa pamamagitan ng circular model",
+        "desc": "Gawing kapaki-pakinabang na halaga ang basura sa pamamagitan ng isang circular na modelo na nagbabago ng plastik upang maging mga tahanan."
+      },
+      {
+        "title": "Maghatid ng tunay na epekto sa ESG",
+        "desc": "Maghatid ng tunay na epekto sa ESG sa buong aspeto ng kapaligiran, lipunan, at pamamahala."
+      },
+      {
+        "title": "Mabilis na pagpapatayo, agarang aksyon",
+        "desc": "Ang mabilis na pagpapatayo ay nagbibigay-daan sa agarang aksyon at masusukat na mga resulta."
+      },
+      {
+        "title": "Palakasin ang brand at tiwala ng mga stakeholder",
+        "desc": "Palakasin ang tiwala ng brand at mga stakeholder na may malinaw, antas-komunidad na epekto."
+      },
+      {
+        "title": "Transparent na pagsubaybay at pag-uulat ng epekto",
+        "desc": "Transparent na pagsubaybay at pag-uulat ng epekto na katugma sa mga pangunahing framework."
+      },
+      {
+        "title": "Madaling palawakin sa buong merkado",
+        "desc": "Madaling palawakin sa mga merkado upang tumugma sa iyong operational footprint sa buong mundo."
+      }
     ],
     "metrics_title": "Mga metrik na pagkakatiwalaan ng iyong sustainability team",
     "metrics_subtitle": "Ang bawat corporate deployment ng Othalo ay bumubuo ng isang buong impact data package.",
     "metrics_items": [
-      { "label": "Nailihis na plastik bawat 2BR unit", "value": "8 tonelada" },
-      { "label": "CO₂ na naiwasan kumpara sa semento", "value": "~12 tonelada bawat yunit" },
-      { "label": "Mga SDG na natugunan", "value": "9 ng 17" },
-      { "label": "Mga lokal na trabahong nilikha bawat 100 yunit", "value": "80–120 na tungkulin" },
-      { "label": "Mga sinusuportahang framework ng epekto", "value": "GRI, SASB, TCFD" },
-      { "label": "Pagpapatunay", "value": "Maaaring i-audit ng ikatlong partido" }
+      {
+        "label": "Nailihis na plastik bawat 2BR unit",
+        "value": "8 tonelada"
+      },
+      {
+        "label": "CO₂ na naiwasan kumpara sa semento",
+        "value": "~12 tonelada bawat yunit"
+      },
+      {
+        "label": "Mga SDG na natugunan",
+        "value": "9 ng 17"
+      },
+      {
+        "label": "Mga lokal na trabahong nilikha bawat 100 yunit",
+        "value": "80–120 na tungkulin"
+      },
+      {
+        "label": "Mga sinusuportahang framework ng epekto",
+        "value": "GRI, SASB, TCFD"
+      },
+      {
+        "label": "Pagpapatunay",
+        "value": "Maaaring i-audit ng ikatlong partido"
+      }
     ],
     "cta_title": "Gawing napatunayang epekto ang iyong mga pangako sa ESG",
     "cta_subtitle": "Makipag-usap sa aming koponan sa mga corporate partnership upang magplano ng programa na nakaangkop sa iyong mga layunin sa sustainability.",
@@ -514,13 +1057,34 @@
     "err_enquiry": "Mangyaring pumili ng uri ng inquiry",
     "err_message": "Kinakailangan ang mensahe (minimum na 10 character)",
     "reasons": [
-      { "value": "general", "label": "Pangkalahatang Inquiry" },
-      { "value": "partnership", "label": "Mga Pakikipagtulungan & Proyekto" },
-      { "value": "pricing", "label": "Humiling ng Presyo / Proposal" },
-      { "value": "technical", "label": "Teknikal at Impormasyon ng Produkto" },
-      { "value": "investor", "label": "Inquiry ng Investor" },
-      { "value": "media", "label": "Media / Press" },
-      { "value": "careers", "label": "Mga Karera" }
+      {
+        "value": "general",
+        "label": "Pangkalahatang Inquiry"
+      },
+      {
+        "value": "partnership",
+        "label": "Mga Pakikipagtulungan & Proyekto"
+      },
+      {
+        "value": "pricing",
+        "label": "Humiling ng Presyo / Proposal"
+      },
+      {
+        "value": "technical",
+        "label": "Teknikal at Impormasyon ng Produkto"
+      },
+      {
+        "value": "investor",
+        "label": "Inquiry ng Investor"
+      },
+      {
+        "value": "media",
+        "label": "Media / Press"
+      },
+      {
+        "value": "careers",
+        "label": "Mga Karera"
+      }
     ],
     "profiles": {
       "government": "Pamahalaan / Pampublikong Ahensya",
@@ -591,13 +1155,25 @@
     "main_subtitle": "Ipasok ang iyong mga detalye — tutugon kami sa loob ng 2 araw ng negosyo.",
     "sidebar_title": "Humiling ng Project Quote",
     "sidebar_desc": "Ang aming mga espesyalista ay maghahanda ng detalyadong teknikal at pinansyal na proposal na inangkop sa iyong mga kinakailangan at scale.",
-    "sidebar_items": ["Mabilis na Deployment", "Patented na Teknolohiya", "Inendorso ng UN-Habitat", "Pandaigdigang Epekto"],
-    "name": "Buong Pangalan", "email": "Email", "phone": "Telepono",
-    "org": "Organisasyon (Opsyonal)", "org_placeholder": "Kumpanya / Ministri",
-    "country": "Bansa", "select_country": "Pumili ng bansa",
-    "profile": "Uri ng Profile", "select_profile": "Kinakatawan ko ang...",
-    "product": "Pagsasaayos ng Produkto", "select_product": "Pumili ng pagsasaayos",
-    "units": "Mga Yunit na Kailangan", "select_units": "Skala ng proyekto",
+    "sidebar_items": [
+      "Mabilis na Deployment",
+      "Patented na Teknolohiya",
+      "Inendorso ng UN-Habitat",
+      "Pandaigdigang Epekto"
+    ],
+    "name": "Buong Pangalan",
+    "email": "Email",
+    "phone": "Telepono",
+    "org": "Organisasyon (Opsyonal)",
+    "org_placeholder": "Kumpanya / Ministri",
+    "country": "Bansa",
+    "select_country": "Pumili ng bansa",
+    "profile": "Uri ng Profile",
+    "select_profile": "Kinakatawan ko ang...",
+    "product": "Pagsasaayos ng Produkto",
+    "select_product": "Pumili ng pagsasaayos",
+    "units": "Mga Yunit na Kailangan",
+    "select_units": "Skala ng proyekto",
     "message": "Karagdagang Tala",
     "message_placeholder": "Sabihin sa amin ang tungkol sa iyong proyekto, timeline, o anumang partikular na kinakailangan...",
     "submit": "Humiling ng Quote",
@@ -619,32 +1195,81 @@
     "title": "Mga Teknikal at Sustainability na Tanong",
     "subtitle": "Mga karaniwang tanong mula sa mga pamahalaan, developer, at mga kasosyo tungkol sa building system, mga pamantayan, at mga environmental credential ng Othalo.",
     "items": [
-      { "q": "Saan gawa ang mga Othalo panel?", "a": "Ang mga Othalo panel ay gawa sa 100% recycled na plastik — pangunahing nagmumula sa nakolektang basurang plastik sa karagatan at landfill. Walang virgin plastic, semento, o bakal ang ginagamit sa structural system." },
-      { "q": "Paano natutugunan ng building system ang mga pandaigdigang pamantayan sa pabahay?", "a": "Ang mga istruktura ng Othalo ay inhinyero upang sumunod sa mga pandaigdigang building code kabilang ang ISO, Eurocodes, at lokal na katumbas. Ang bawat panel ay independyenteng sinusubukan para sa structural load, fire resistance (Class B1 self-extinguishing), wind loads (Kategorya 5 na bagyo, >200 km/h), at mga seismic zone hanggang Zone 4." },
-      { "q": "Ano ang lifespan ng isang istruktura ng Othalo?", "a": "Ang mga Othalo panel ay na-rate para sa minimum na 60 taon sa ilalim ng normal na kondisyon ng kapaligiran. Ang recycled na plastik ay hindi nabubulok, kinakalawang, o nasisira mula sa pagkakalantad sa kahalumigmigan, na ginagawa itong partikular na matibay sa tropikal, baybayin, at mataas ang kahalumigmigan na klima." },
-      { "q": "Paano sinisiguro ang thermal performance?", "a": "Ang Othalo panel system ay nagbibigay ng thermal insulation na humigit-kumulang 3× na mas epektibo kaysa sa katumbas na mga dingding na semento. Ang hollow-core na disenyo ay lumilikha ng natural na air insulation, binabawasan ang pangangailangan para sa karagdagang insulation na materyales at nagpapababa ng mga gastos sa enerhiya sa pagpapalamig at pagpapainit." },
-      { "q": "Ligtas ba ang materyal — mayroon bang anumang mapanganib na emisyon?", "a": "Ang recycled na plastik na ginagamit namin ay inuri bilang isa sa mga pinakaligtas na plastik. Ito ay food-grade certified, hindi naglalabas ng gas sa ilalim ng normal na mga kondisyon, at hindi nagtatapon ng mga mapanganib na kemikal. Ang mga Othalo panel ay sinubukan upang kumpirmahin na walang volatile organic compound (VOC) emissions sa mga tinitirahang kapaligiran." },
-      { "q": "Paano nag-aambag ang Othalo sa sustainability at pagbawas ng carbon?", "a": "Ang bawat 2-bedroom unit ay naglilihis ng humigit-kumulang 8 tonelada ng plastik mula sa kapaligiran. Ang proseso ng konstruksyon ay hindi nangangailangan ng semento (isang pangunahing pinagmumulan ng CO₂), walang bakal, at kaunting tubig. Ang buong lifecycle — mula sa pagkolekta hanggang sa pagtatayo — ay dinisenyo upang i-maximize ang kahusayan sa carbon at bumuo ng mga nabe-verify na SDG impact data." },
-      { "q": "Maaari bang iangkop ang mga istruktura sa mga lokal na building code at klima?", "a": "Oo. Direktang nakikipagtulungan ang Othalo sa mga lokal na inhinyero at awtoridad upang matiyak ang pagsunod sa mga pambansang regulasyon sa pagtatayo. Ang modular panel system ay maaaring i-configure para sa iba't ibang uri ng bubong, pundasyon, kapal ng dingding, at pagsasama ng utility upang umangkop sa tropikal, tuyo, o katamtamang klima." },
-      { "q": "Anong mga sertipikasyon at endorsement ang mayroon ang Othalo?", "a": "Ang Othalo ay inendorso ng UN-HABITAT para sa isang Mas Mabuting Urbanong Hinaharap. Ang sistema ay sinubukan at pinalad sa pamamagitan ng mga independyenteng structural at fire safety laboratory. Ang mga partikular na ulat sa pagsubok at dokumentasyon ng pagsunod ay magagamit kapag hiniling para sa pagkuha ng pamahalaan at mga proseso ng pagsusuri ng NGO." }
+      {
+        "q": "Saan gawa ang mga Othalo panel?",
+        "a": "Ang mga Othalo panel ay gawa sa 100% recycled na plastik — pangunahing nagmumula sa nakolektang basurang plastik sa karagatan at landfill. Walang virgin plastic, semento, o bakal ang ginagamit sa structural system."
+      },
+      {
+        "q": "Paano natutugunan ng building system ang mga pandaigdigang pamantayan sa pabahay?",
+        "a": "Ang mga istruktura ng Othalo ay inhinyero upang sumunod sa mga pandaigdigang building code kabilang ang ISO, Eurocodes, at lokal na katumbas. Ang bawat panel ay independyenteng sinusubukan para sa structural load, fire resistance (Class B1 self-extinguishing), wind loads (Kategorya 5 na bagyo, >200 km/h), at mga seismic zone hanggang Zone 4."
+      },
+      {
+        "q": "Ano ang lifespan ng isang istruktura ng Othalo?",
+        "a": "Ang mga Othalo panel ay na-rate para sa minimum na 60 taon sa ilalim ng normal na kondisyon ng kapaligiran. Ang recycled na plastik ay hindi nabubulok, kinakalawang, o nasisira mula sa pagkakalantad sa kahalumigmigan, na ginagawa itong partikular na matibay sa tropikal, baybayin, at mataas ang kahalumigmigan na klima."
+      },
+      {
+        "q": "Paano sinisiguro ang thermal performance?",
+        "a": "Ang Othalo panel system ay nagbibigay ng thermal insulation na humigit-kumulang 3× na mas epektibo kaysa sa katumbas na mga dingding na semento. Ang hollow-core na disenyo ay lumilikha ng natural na air insulation, binabawasan ang pangangailangan para sa karagdagang insulation na materyales at nagpapababa ng mga gastos sa enerhiya sa pagpapalamig at pagpapainit."
+      },
+      {
+        "q": "Ligtas ba ang materyal — mayroon bang anumang mapanganib na emisyon?",
+        "a": "Ang recycled na plastik na ginagamit namin ay inuri bilang isa sa mga pinakaligtas na plastik. Ito ay food-grade certified, hindi naglalabas ng gas sa ilalim ng normal na mga kondisyon, at hindi nagtatapon ng mga mapanganib na kemikal. Ang mga Othalo panel ay sinubukan upang kumpirmahin na walang volatile organic compound (VOC) emissions sa mga tinitirahang kapaligiran."
+      },
+      {
+        "q": "Paano nag-aambag ang Othalo sa sustainability at pagbawas ng carbon?",
+        "a": "Ang bawat 2-bedroom unit ay naglilihis ng humigit-kumulang 8 tonelada ng plastik mula sa kapaligiran. Ang proseso ng konstruksyon ay hindi nangangailangan ng semento (isang pangunahing pinagmumulan ng CO₂), walang bakal, at kaunting tubig. Ang buong lifecycle — mula sa pagkolekta hanggang sa pagtatayo — ay dinisenyo upang i-maximize ang kahusayan sa carbon at bumuo ng mga nabe-verify na SDG impact data."
+      },
+      {
+        "q": "Maaari bang iangkop ang mga istruktura sa mga lokal na building code at klima?",
+        "a": "Oo. Direktang nakikipagtulungan ang Othalo sa mga lokal na inhinyero at awtoridad upang matiyak ang pagsunod sa mga pambansang regulasyon sa pagtatayo. Ang modular panel system ay maaaring i-configure para sa iba't ibang uri ng bubong, pundasyon, kapal ng dingding, at pagsasama ng utility upang umangkop sa tropikal, tuyo, o katamtamang klima."
+      },
+      {
+        "q": "Anong mga sertipikasyon at endorsement ang mayroon ang Othalo?",
+        "a": "Ang Othalo ay inendorso ng UN-HABITAT para sa isang Mas Mabuting Urbanong Hinaharap. Ang sistema ay sinubukan at pinalad sa pamamagitan ng mga independyenteng structural at fire safety laboratory. Ang mga partikular na ulat sa pagsubok at dokumentasyon ng pagsunod ay magagamit kapag hiniling para sa pagkuha ng pamahalaan at mga proseso ng pagsusuri ng NGO."
+      }
     ]
   },
   "footer": {
     "tagline": "Paggawa ng disenteng at sustainable na pabahay para sa mga komunidad sa buong mundo mula sa basura ng plastik.",
     "social_label": "Sumali, ibahagi, i-like, i-follow kami sa:",
     "links": [
-      { "label": "Makipag-ugnayan", "href": "/contact" },
-      { "label": "Mga Produkto", "href": "/products" },
-      { "label": "Tungkol sa amin", "href": "/about" },
-      { "label": "Mga tuntunin ng serbisyo", "href": "/terms" },
-      { "label": "Patakaran sa pribado", "href": "/privacy" }
+      {
+        "label": "Makipag-ugnayan",
+        "href": "/contact"
+      },
+      {
+        "label": "Mga Produkto",
+        "href": "/products"
+      },
+      {
+        "label": "Tungkol sa amin",
+        "href": "/about"
+      },
+      {
+        "label": "Mga tuntunin ng serbisyo",
+        "href": "/terms"
+      },
+      {
+        "label": "Patakaran sa pribado",
+        "href": "/privacy"
+      }
     ],
     "socials": [
-      { "label": "Twitter" },
-      { "label": "Facebook" },
-      { "label": "LinkedIn" },
-      { "label": "YouTube" },
-      { "label": "Instagram" }
+      {
+        "label": "Twitter"
+      },
+      {
+        "label": "Facebook"
+      },
+      {
+        "label": "LinkedIn"
+      },
+      {
+        "label": "YouTube"
+      },
+      {
+        "label": "Instagram"
+      }
     ],
     "company": "Kumpanya",
     "solutions": "Mga Solusyon",
@@ -662,12 +1287,124 @@
   "privacy": {
     "label": "Legal",
     "title": "Patakaran sa Pribado",
-    "effective": "Petsa ng Bisa: Mayo 9, 2026 · Huling Na-update: Mayo 9, 2026"
+    "effective": "Petsa ng Bisa: Mayo 9, 2026 · Huling Na-update: Mayo 9, 2026",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "Othalo AS (\"Othalo,\" \"we,\" \"us,\" or \"our\") is committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website othalo.com (the \"Site\") or engage with our services. Please read this policy carefully. If you disagree with its terms, please discontinue use of the Site."
+      },
+      {
+        "title": "2. Information We Collect",
+        "content": "We may collect the following types of information:\n\nPersonal Identification Information: Name, email address, phone number, job title, and organization name when you submit a contact form, request a quote, or otherwise communicate with us.\n\nTechnical Information: IP address, browser type and version, operating system, referral source, length of visit, page views, and website navigation paths, collected through cookies and similar tracking technologies.\n\nCommunications: Records of correspondence if you contact us, including emails and messages submitted through our website.\n\nWe do not collect sensitive personal data (such as health data, financial account information, or government identification numbers) through this Site."
+      },
+      {
+        "title": "3. How We Use Your Information",
+        "content": "We use the information we collect to:\n\n• Respond to enquiries and provide the services you request\n• Send you information about our products and solutions you have requested\n• Process transactions and send related information\n• Improve and optimize our website and user experience\n• Comply with legal obligations\n• Send periodic emails regarding our services (you may opt out at any time)\n• Monitor and analyze usage trends to improve functionality\n\nWe do not sell, trade, or otherwise transfer your personally identifiable information to third parties without your consent, except as described in this policy."
+      },
+      {
+        "title": "4. Legal Basis for Processing (GDPR)",
+        "content": "For users in the European Economic Area (EEA), we process your personal data under the following legal bases:\n\nConsent: Where you have given explicit consent (e.g., subscribing to our newsletter).\n\nLegitimate Interests: To respond to business enquiries, improve our services, and conduct marketing activities where these interests are not overridden by your data protection rights.\n\nContractual Necessity: Where processing is necessary to perform a contract or take steps at your request prior to entering a contract.\n\nLegal Obligation: Where we are required to comply with applicable laws."
+      },
+      {
+        "title": "5. Cookies and Tracking Technologies",
+        "content": "Our Site uses cookies and similar tracking technologies to enhance your browsing experience. Types of cookies we use:\n\nEssential Cookies: Necessary for the website to function and cannot be switched off.\n\nAnalytics Cookies: Help us understand how visitors interact with our Site (e.g., Google Analytics). Data collected is aggregated and anonymous.\n\nMarketing Cookies: Used to deliver relevant advertisements and track campaign effectiveness.\n\nYou can control or disable cookies through your browser settings. Note that disabling certain cookies may affect website functionality."
+      },
+      {
+        "title": "6. Data Retention",
+        "content": "We retain personal data only as long as necessary for the purposes for which it was collected, or as required by applicable law. Enquiry data is typically retained for up to 3 years. Marketing contact data is retained until you unsubscribe or request deletion. Analytics data may be retained in anonymized form indefinitely."
+      },
+      {
+        "title": "7. International Data Transfers",
+        "content": "Othalo AS is registered in Norway and operates under the jurisdiction of the European Economic Area. If we transfer your data outside the EEA, we ensure appropriate safeguards are in place, such as Standard Contractual Clauses approved by the European Commission, to protect your information in accordance with this Privacy Policy."
+      },
+      {
+        "title": "8. Your Rights",
+        "content": "Depending on your jurisdiction, you may have the following rights regarding your personal data:\n\n• Right of Access: Request a copy of the personal data we hold about you\n• Right to Rectification: Request correction of inaccurate or incomplete data\n• Right to Erasure: Request deletion of your personal data (\"right to be forgotten\")\n• Right to Restrict Processing: Request that we limit how we use your data\n• Right to Data Portability: Receive your data in a structured, machine-readable format\n• Right to Object: Object to our processing of your personal data\n• Right to Withdraw Consent: Withdraw consent at any time where processing is based on consent\n\nTo exercise any of these rights, please contact us at privacy@othalo.com."
+      },
+      {
+        "title": "9. Third-Party Links",
+        "content": "Our Site may contain links to third-party websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites. We encourage you to review the privacy policy of every site you visit."
+      },
+      {
+        "title": "10. Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These include encrypted data transmission (HTTPS), access controls, and regular security reviews. However, no method of transmission over the Internet or electronic storage is 100% secure."
+      },
+      {
+        "title": "11. Children's Privacy",
+        "content": "Our Site is not directed to individuals under the age of 16. We do not knowingly collect personal data from children. If you believe we have inadvertently collected information from a child, please contact us immediately so we can delete it."
+      },
+      {
+        "title": "12. Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated effective date. We encourage you to review this policy periodically."
+      },
+      {
+        "title": "13. Contact Us",
+        "content": "If you have questions or concerns about this Privacy Policy or our data practices, please contact:\n\nOthalo AS\nData Privacy Officer\nEmail: privacy@othalo.com\nAddress: Oslo, Norway\n\nYou also have the right to lodge a complaint with the Norwegian Data Protection Authority (Datatilsynet) at www.datatilsynet.no."
+      }
+    ]
   },
   "terms": {
     "label": "Legal",
     "title": "Mga Tuntunin ng Serbisyo",
-    "effective": "Petsa ng Bisa: Mayo 9, 2026 · Huling Na-update: Mayo 9, 2026"
+    "effective": "Petsa ng Bisa: Mayo 9, 2026 · Huling Na-update: Mayo 9, 2026",
+    "sections": [
+      {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing or using the Othalo AS website at othalo.com (the \"Site\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, please do not use the Site. These Terms apply to all visitors, users, and others who access or use the Site."
+      },
+      {
+        "title": "2. About Othalo",
+        "content": "Othalo AS is a Norwegian technology company registered under Norwegian law. We develop and commercialize patented modular housing solutions manufactured from recycled plastic, serving governments, housing developers, corporations, and NGOs globally.\n\nCompany registration: Othalo AS, Oslo, Norway\nContact: contact@othalo.com"
+      },
+      {
+        "title": "3. Use of the Site",
+        "content": "You agree to use the Site only for lawful purposes and in accordance with these Terms. You agree not to:\n\n• Use the Site in any way that violates any applicable local, national, or international law or regulation\n• Transmit any unsolicited or unauthorized advertising or promotional material\n• Knowingly transmit any data or material that contains viruses, Trojan horses, or other harmful code\n• Attempt to gain unauthorized access to any portion of the Site or its related systems\n• Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Site\n• Use the Site to scrape, harvest, or otherwise collect information about other users\n\nWe reserve the right to terminate your access to the Site immediately, without notice, if we reasonably believe you have breached these Terms."
+      },
+      {
+        "title": "4. Intellectual Property",
+        "content": "All content on this Site — including text, graphics, logos, images, product designs, technology descriptions, and software — is the property of Othalo AS or its content suppliers and is protected by Norwegian and international intellectual property laws.\n\nThe Othalo name, logo, and all related product names, design marks, and slogans are trademarks of Othalo AS. You may not use any trademark or trade name without our prior written permission.\n\nThe Othalo structural panel system is protected by patents filed in multiple jurisdictions. Nothing on this Site grants any license or right to use any patented technology.\n\nYou may view and download content from this Site solely for your personal, non-commercial use, provided you keep all copyright and other proprietary notices intact."
+      },
+      {
+        "title": "5. Products and Services",
+        "content": "The products and services described on this Site are subject to availability and may vary by region. Product specifications, pricing, and delivery timelines are indicative and subject to formal quotation. Nothing on this Site constitutes a binding offer to sell.\n\nAll product quotations, partnerships, and deployment agreements are subject to separate written agreements between Othalo AS and the relevant party. These Terms do not govern such agreements."
+      },
+      {
+        "title": "6. Accuracy of Information",
+        "content": "We strive to ensure that the information on this Site is accurate and up-to-date. However, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, products, services, or related graphics on the Site.\n\nTechnical specifications, impact metrics, and performance claims are based on controlled testing and representative deployments. Actual results may vary depending on local conditions, site preparation, and construction practices."
+      },
+      {
+        "title": "7. Third-Party Links",
+        "content": "The Site may contain links to third-party websites or resources. These links are provided for your convenience only. We have no control over the content of those sites or resources and accept no responsibility for them or for any loss or damage that may arise from your use of them."
+      },
+      {
+        "title": "8. Disclaimer of Warranties",
+        "content": "THE SITE AND ALL CONTENT IS PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, OTHALO AS DISCLAIMS ALL WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.\n\nWe do not warrant that the Site will be uninterrupted or error-free, that defects will be corrected, or that the Site or the server that makes it available are free of viruses or other harmful components."
+      },
+      {
+        "title": "9. Limitation of Liability",
+        "content": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL OTHALO AS, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.\n\nThis limitation applies whether the liability arises in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable."
+      },
+      {
+        "title": "10. Privacy",
+        "content": "Your use of the Site is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our Privacy Policy to understand our practices regarding the collection and use of your personal information."
+      },
+      {
+        "title": "11. Governing Law and Jurisdiction",
+        "content": "These Terms and any dispute or claim arising out of or in connection with them shall be governed by and construed in accordance with the laws of Norway, without regard to its conflict of law provisions.\n\nAny disputes shall be subject to the exclusive jurisdiction of the courts of Oslo, Norway, unless mandatory consumer protection laws in your country require otherwise."
+      },
+      {
+        "title": "12. Changes to These Terms",
+        "content": "We reserve the right to modify these Terms at any time. We will post the revised Terms on this page with an updated effective date. By continuing to use the Site after any changes become effective, you agree to the revised Terms. We encourage you to review these Terms periodically."
+      },
+      {
+        "title": "13. Severability",
+        "content": "If any provision of these Terms is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall remain in full force and effect."
+      },
+      {
+        "title": "14. Contact",
+        "content": "If you have any questions about these Terms of Service, please contact us:\n\nOthalo AS\nEmail: legal@othalo.com\nAddress: Oslo, Norway"
+      }
+    ]
   },
   "error": {
     "boundary_title": "May nagkamali",
@@ -676,11 +1413,11 @@
     "refresh": "Subukan Muli",
     "home": "Pumunta sa Home"
   },
-  "404": {
-    "code": "404",
-    "title": "Hindi Nahanap ang Pahina",
-    "subtitle": "Ang pahinang hinahanap mo ay hindi umiiral o nailipat na.",
-    "home": "Bumalik sa Home",
-    "contact": "Makipag-ugnayan"
+  "cookies": {
+    "title": "We value your privacy",
+    "text": "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+    "accept": "Accept All",
+    "reject": "Reject",
+    "learn_more": "Learn More"
   }
 }

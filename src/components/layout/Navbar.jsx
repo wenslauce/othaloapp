@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import Link from '@/components/shared/LocalizedLink';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Menu, X, Building2, TrendingUp, Briefcase, LayoutGrid } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -7,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 
 export default function Navbar() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);

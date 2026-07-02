@@ -1,5 +1,5 @@
 // Solutions page
-import { Link } from 'react-router-dom';
+import Link from '@/components/shared/LocalizedLink';
 import { Button } from '@/components/ui/button';
 import SlotIn from '@/components/shared/SlotIn';
 import SEOHead from '@/components/shared/SEOHead';
@@ -20,7 +20,7 @@ export default function Solutions() {
       <SEOHead
         title={t('seo.solutions.title')}
         description={t('seo.solutions.description')}
-        canonical="https://othalo.com/solutions"
+        pagePath="/solutions"
         keywords={t('seo.solutions.keywords').split(', ')}
       />
 

@@ -1,0 +1,1423 @@
+{
+  "404": {
+    "code": "404",
+    "title": "Nie znaleziono strony",
+    "subtitle": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "home": "Wróć do strony głównej",
+    "contact": "Skontaktuj się z nami"
+  },
+  "seo": {
+    "home": {
+      "title": "Othalo — Niedrogie, ekologiczne domy z plastiku z recyklingu",
+      "description": "Othalo przekształca plastik z recyklingu w niedrogie, trwałe domy. Opatentowana technologia paneli. Czas budowy 72 godziny. Rekomendowane przez UN-Habitat.",
+      "keywords": "domy z plastiku z recyklingu, ekologiczne budownictwo, tanie domy, technologia Othalo, rozwiązanie problemu plastikowych odpadów"
+    },
+    "about": {
+      "title": "O Othalo — Nasza misja, zespół i wpływ społeczny",
+      "description": "Poznaj zespół stojący za Othalo. Dowiedz się więcej o naszej misji rozwiązywania światowego kryzysu mieszkaniowego za pomocą odpadów z tworzyw sztucznych i wywierania wpływu społecznego.",
+      "keywords": "zespół Othalo, Frank Cato Lahti, Claus Skadkjaer, misja ekologicznego budownictwa mieszkaniowego, wpływ recyklingu plastiku"
+    },
+    "products": {
+      "title": "Produkty Othalo — System paneli i linie domów",
+      "description": "Poznaj konstrukcyjny system paneli Othalo. Wyprodukowane w 100% z plastiku z recyklingu, nasze konfiguracje domów są modułowe, trwałe i skalowalne.",
+      "keywords": "plastikowe panele ścienne, budownictwo modułowe, materiały budowlane z plastiku z recyklingu, produkty Othalo"
+    },
+    "solutions": {
+      "title": "Rozwiązania mieszkaniowe dla rządów, deweloperów i korporacji",
+      "description": "Othalo zapewnia dostosowane strategie wdrażania budownictwa mieszkaniowego dla sektora publicznego i prywatnego, koncentrując się na szybkości, ROI i celach ESG.",
+      "keywords": "rządowe rozwiązania mieszkaniowe, ROI dewelopera w budownictwie, mieszkalnictwo ESG dla firm, zrównoważony rozwój"
+    },
+    "contact": {
+      "title": "Kontakt z Othalo — Partnerstwo",
+      "description": "Skontaktuj się z Othalo. Niezależnie od tego, czy reprezentujesz rząd, jesteś deweloperem czy firmą, pomożemy Ci wdrożyć zrównoważone rozwiązania mieszkaniowe.",
+      "keywords": "kontakt Othalo, partnerstwo Othalo, zapytanie o projekty mieszkaniowe"
+    },
+    "governments": {
+      "title": "Governments & Municipalities — Othalo Housing Solutions",
+      "description": "Deploy affordable, sustainable housing at scale. Othalo partners with governments and municipalities to close the housing gap using recycled plastic technology.",
+      "keywords": "government housing program, municipal housing, affordable housing deployment, UN-Habitat, recycled plastic construction"
+    },
+    "housing_dev": {
+      "title": "Housing Developers — Sustainable & Fast ROI Construction",
+      "description": "Build high-quality modular housing in 72 hours. Partner with Othalo to lower construction costs, accelerate project timelines, and deliver eco-friendly developments.",
+      "keywords": "housing developers, modular construction, sustainable real estate, fast ROI building, Othalo panels"
+    },
+    "corporations": {
+      "title": "Corporate ESG & CSR Housing Solutions — Othalo",
+      "description": "Turn plastic waste into measurable social impact and carbon offsets. Discover Othalo's corporate solutions for ESG reporting and community development.",
+      "keywords": "corporate ESG housing, CSR housing projects, plastic waste offsets, sustainable corporate partnership"
+    }
+  },
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "solutions": "Rozwiązania",
+    "products": "Produkty",
+    "contact": "Kontakt",
+    "solutions_label": "Rozwiązania",
+    "gov": "Rządy i gminy",
+    "gov_desc": "Planowanie urbanistyczne na dużą skalę",
+    "dev": "Deweloperzy",
+    "dev_desc": "Szybki ROI i wejście na rynek",
+    "corp": "Korporacje",
+    "corp_desc": "Doskonałość ESG i raportowanie",
+    "all_solutions": "Wszystkie rozwiązania",
+    "solutions_overview": "Przegląd wszystkich kontekstów wdrożenia"
+  },
+  "home": {
+    "solutions_section_title": "Twoje rozwiązanie zaczyna się tutaj",
+    "solutions_gov_name": "Rządy i gminy",
+    "solutions_dev_name": "Deweloperzy",
+    "solutions_corp_name": "Korporacje",
+    "solutions_learn_more": "DOWIEDZ SIĘ WIĘCEJ",
+    "dual_impact_title": "Othalo rozwiązuje jedno globalne wyzwanie za pomocą drugiego",
+    "plastic_modal_title": "Odpady plastikowe",
+    "plastic_modal_subtitle": "Skala globalnego kryzysu plastikowego",
+    "plastic_modal_stats": [
+      {
+        "stat": "10 miliardów ton",
+        "detail": "plastiku zostało wyprodukowane w historii ludzkości (OECD 2022, Global Plastics Outlook)"
+      },
+      {
+        "stat": "400 milionów ton",
+        "detail": "jest produkowane każdego roku"
+      },
+      {
+        "stat": "40%",
+        "detail": "całego plastiku to produkty jednorazowego użytku — używane raz, a następnie wyrzucane"
+      },
+      {
+        "stat": "~9%",
+        "detail": "odpadów z tworzyw sztucznych jest faktycznie poddawane recyklingowi na świecie"
+      },
+      {
+        "stat": "80%",
+        "detail": "odpadów plastikowych trafia na wysypiska — do 93% w krajach o bardzo niskich dochodach"
+      },
+      {
+        "stat": "11 milionów ton",
+        "detail": "plastiku trafia rocznie do oceanów"
+      },
+      {
+        "stat": "W 2022 roku",
+        "detail": "naukowcy po raz pierwszy wykryli mikroplastik w ludzkiej krwi"
+      }
+    ],
+    "housing_modal_title": "Niedrogie mieszkalnictwo",
+    "housing_modal_subtitle": "Skala globalnego kryzysu mieszkaniowego — UN-Habitat, 2025",
+    "housing_modal_section1_title": "Osoby bez dachu nad głową (Bezdomność)",
+    "housing_modal_section1_stats": [
+      {
+        "stat": "300M+",
+        "detail": "ludzi doświadczających bezdomności na całym świecie (UN-Habitat 2025) — liczba ta znacznie wzrosła z powodu konfliktów, urbanizacji i kryzysów finansowych"
+      },
+      {
+        "stat": "123M+",
+        "detail": "ludzi przymusowo przesiedlonych przez konflikty, prześladowania i naruszenia praw człowieka na koniec 2024 r. — dwukrotność liczby sprzed dekady"
+      }
+    ],
+    "housing_modal_section2_title": "Ludzie w nieodpowiednich warunkach mieszkaniowych",
+    "housing_modal_section2_stats": [
+      {
+        "stat": "~3 miliardy",
+        "detail": "ludzi — blisko 40% ludności świata — zmaga się z kryzysem mieszkaniowym: nieprzystępne ceny, złe warunki bytowe, niedobory lub brak podstawowych usług"
+      },
+      {
+        "stat": "268–288M",
+        "detail": "deficytu jednostek mieszkalnych na świecie w 2023 r., w porównaniu z 251M w 2010 r. — wzrost o ~30% w niewiele ponad dekadę"
+      },
+      {
+        "stat": "96 000",
+        "detail": "niedrogich domów musiałoby powstawać każdego dnia do 2030 r., aby zniwelować tę lukę (WRI)"
+      }
+    ],
+    "housing_modal_section3_title": "Ludzie żyjący w slumsach / nieformalnych osiedlach",
+    "housing_modal_section3_stats": [
+      {
+        "stat": "1,12 miliarda",
+        "detail": "globalna populacja slumsów w 2022 r. — o 130 milionów więcej niż w 2015 r., co cofa wcześniejsze postępy (Raport SDG ONZ 2024)"
+      },
+      {
+        "stat": "~25%",
+        "detail": "miejskiej populacji świata żyje w warunkach slumsowych"
+      }
+    ],
+    "housing_modal_section3_regions_title": "Podział regionalny",
+    "housing_modal_section3_regions": [
+      {
+        "region": "Azja Środkowa i Południowa",
+        "value": "~359 milionów"
+      },
+      {
+        "region": "Azja Wschodnia i Południowo-Wschodnia",
+        "value": "~306 milionów"
+      },
+      {
+        "region": "Afryka Subsaharyjska",
+        "value": "~230 milionów"
+      }
+    ],
+    "housing_modal_section4_title": "Prognozy na rok 2050",
+    "housing_modal_section4_headers": [
+      "Kategoria",
+      "Obecnie (2024–25)",
+      "Prognoza na 2050"
+    ],
+    "housing_modal_section4_rows": [
+      {
+        "cat": "Bezdomni / brak mieszkania",
+        "now": "~300 milionów",
+        "future": "Spodziewane znaczne pogorszenie sytuacji bez interwencji"
+      },
+      {
+        "cat": "Nieodpowiednie warunki",
+        "now": "~3 miliardy",
+        "future": "Miasta wchłoną kolejne 2 mld mieszkańców; presja dramatycznie wzrośnie"
+      },
+      {
+        "cat": "Mieszkańcy slumsów",
+        "now": "~1,1 miliarda",
+        "future": "Ponad 3 miliardy — niemal trzykrotny wzrost"
+      },
+      {
+        "cat": "Udział ludności miejskiej",
+        "now": "~55–57%",
+        "future": "~68–70% ludności świata zamieszka w miastach"
+      }
+    ],
+    "housing_modal_closing": "ONZ przewiduje, że do 2050 roku ponad 3 miliardy ludzi może mieszkać w slumsach — około trzykrotnie więcej niż obecnie, głównie ze względu na szybką urbanizację w Afryce Subsaharyjskiej i Azji Południowej. Prawie trzy czwarte infrastruktury miejskiej, która będzie istnieć w 2050 roku, nie została jeszcze wybudowana. To jedno z kluczowych wyzwań infrastrukturalnych i humanitarnych tego stulecia — oraz silny impuls dla rozwiązań, które buduje Othalo.",
+    "hero_badge": "Opatentowana technologia",
+    "hero_title": "Niedrogie, ekologiczne, prefabrykowane modułowe rozwiązania mieszkaniowe",
+    "hero_subtitle": "Nasza opatentowana technologia zapewnia elastyczność projektowania przy użyciu paneli z plastiku z recyklingu.",
+    "hero_cta1": "Produkty",
+    "hero_cta2": "Zobacz technologię",
+    "tech_label": "Kluczowa technologia",
+    "tech_title": "Najbardziej efektywne rozwiązanie problemu mieszkaniowego w Afryce",
+    "tech_subtitle": "Nasze panele jednocześnie rozwiązują kryzys odpadów z tworzyw sztucznych i deficyt tanich mieszkań — jedno globalne wyzwanie rozwiązuje drugie.",
+    "tech_features": [
+      {
+        "title": "Innowacyjna opatentowana technologia",
+        "desc": "Nasz autorski proces przekształca odpady z tworzyw sztucznych w panele konstrukcyjne 7-krotnie mocniejsze od betonu."
+      },
+      {
+        "title": "Przyjazne dla środowiska",
+        "desc": "Zero cementu, zero stali, zero wody w procesie budowy. 8 ton plastiku zagospodarowane w jednej jednostce mieszkalnej."
+      },
+      {
+        "title": "Szybka budowa",
+        "desc": "Od surowych paneli do gotowej konstrukcji w zaledwie 72 godziny przy użyciu lokalnej siły roboczej."
+      },
+      {
+        "title": "Bezpieczeństwo potwierdzone testami",
+        "desc": "Ognioodporne, odporne na huragany i trzęsienia ziemi. Spełnia międzynarodowe normy budowlane."
+      }
+    ],
+    "quote_text": "Istnieje dziś na świecie tylko jedna technologia, która może realnie wpłynąć na niedobór mieszkań w Afryce oraz problem plastikowych odpadów, i jest to Othalo.",
+    "quote_author": "Dr Vincent Kitio",
+    "quote_title": "Szef Działu Energii Miejskiej, UN-Habitat",
+    "approach_label": "Nasze podejście",
+    "approach_title": "Buduj przyszłość mieszkalnictwa z recyklingowanego plastiku",
+    "approach_items": [
+      {
+        "title": "Od plastiku do wysokiej jakości konstrukcji",
+        "desc": "Nasza opatentowana technologia przekształca plastik z recyklingu w konstrukcyjne panele ścienne, które są 7-krotnie mocniejsze od betonu, w pełni ognioodporne i zaprojektowane na ponad 60 lat użytkowania."
+      },
+      {
+        "title": "Zaprojektowane z myślą o ekstremalnych warunkach",
+        "desc": "Odporne na huragany, trzęsienia ziemi i powodzie. Nasze panele są testowane pod kątem działania w skrajnych klimatach, od wilgotnych tropików po suche wyżyny — stworzone tam, wo domy są najbardziej potrzebne."
+      },
+      {
+        "title": "Elastyczne rozwiązania dostosowane lokalnie",
+        "desc": "Nasz system modułowy dostosowuje się do każdego układu — domów jednorodzinnych, bloków wielorodzinnych, szkół, przychodni zdrowia. Każdy projekt jest konfigurowany pod kątem lokalnych potrzeb i montowany przez lokalnych pracowników."
+      },
+      {
+        "title": "Stworzone z myślą o skali, szybkości i wpływie",
+        "desc": "Nasz łańcuch dostaw z fabryki na plac budowy umożliwia błyskawiczne wdrożenie. Jeden kontener paneli pozwala na budowę kompletnego domu z dwoma sypialniami, dostarczonego i gotowego do montażu w niecały tydzień."
+      }
+    ],
+    "gallery_categories": {
+      "community": "Społeczność",
+      "district": "Osiedle",
+      "emergency": "Schronienie awaryjne",
+      "medical": "Jednostki medyczne",
+      "worker": "Kwatery pracownicze",
+      "factory": "Produkcja fabryczna"
+    },
+    "comparison": {
+      "label": "Analiza porównawcza",
+      "title": "Lider technologii i innowacji na rynku",
+      "subtitle": "Bezpośrednie porównanie z tradycyjnymi metodami budowlanymi.",
+      "headers": [
+        "Cecha",
+        "Othalo",
+        "Beton",
+        "Rama stalowa",
+        "Drewno"
+      ],
+      "rows": [
+        {
+          "f": "Czas budowy (dom 2-pokojowy)",
+          "o": "72 godziny",
+          "c": "3–6 miesięcy",
+          "s": "2–4 miesiące",
+          "t": "1–3 miesiące"
+        },
+        {
+          "f": "Ilość odzyskanego plastiku",
+          "o": "8 ton",
+          "c": "Brak",
+          "s": "Brak",
+          "t": "Brak"
+        },
+        {
+          "f": "Żywotność",
+          "o": "60+ lat",
+          "c": "40–50 lat",
+          "s": "30–50 lat",
+          "t": "20–30 lat"
+        },
+        {
+          "f": "Ognioodporność",
+          "o": "Tak",
+          "c": "Tak",
+          "s": "Nie",
+          "t": "Nie"
+        },
+        {
+          "f": "Odporność na trzęsienia ziemi",
+          "o": "Tak",
+          "c": "Zmienna",
+          "s": "Tak",
+          "t": "Częściowa"
+        },
+        {
+          "f": "Zużycie wody w budowie",
+          "o": "Brak",
+          "c": "Wysokie",
+          "s": "Średnie",
+          "t": "Niskie"
+        },
+        {
+          "f": "Wymagany cement/stal",
+          "o": "Brak",
+          "c": "Wysokie",
+          "s": "Wysokie",
+          "t": "Niewielkie"
+        },
+        {
+          "f": "Certyfikacja UN-Habitat",
+          "o": "Tak",
+          "c": "Zmienna",
+          "s": "Zmienna",
+          "t": "Zmienna"
+        }
+      ]
+    },
+    "esg_title": "Othalo pomaga osiągać konkretne, wymierne cele ESG",
+    "esg_subtitle": "Zgodność z 9 spośród 17 Celów Zrównoważonego Rozwoju Organizacji Narodów Zjednoczonych.",
+    "sdg_names": {
+      "1": "Koniec z ubóstwem",
+      "6": "Czysta woda i warunki sanitarne",
+      "8": "Wzrost gospodarczy i godna praca",
+      "9": "Innowacyjność, przemysł i infrastruktura",
+      "10": "Mniej nierówności",
+      "11": "Zrównoważone miasta i społeczności",
+      "12": "Odpowiedzialna konsumpcja i produkcja",
+      "13": "Działania w dziedzinie klimatu",
+      "17": "Partnerstwa na rzecz celów"
+    },
+    "cta_title": "Twoje rozwiązanie zaczyna się tutaj",
+    "cta_subtitle": "Niezależnie od tego, czy reprezentujesz rząd, jesteś deweloperem czy korporacją — posiadamy strategię wdrożenia zaprojektowaną dla Twojego kontekstu.",
+    "quote_cta": "Dowiedz się więcej"
+  },
+  "about": {
+    "page_title": "O nas",
+    "team_heading": "Zespół",
+    "team_subtitle_text": "Zróżnicowana grupa innowatorów, inżynierów i wizjonerów zjednoczonych misją tworzenia ekologicznych rozwiązań mieszkaniowych.",
+    "discover_btn": "Odkryj",
+    "culture_heading": "Nasza kultura",
+    "culture_subtitle_text": "To, co kształtuje nasze podejście do pracy i kieruje nami w wywieraniu pozytywnego wpływu na świat.",
+    "impact_heading": "Wpływ stworzony przez Othalo",
+    "label": "Nasz Cel",
+    "vision_label": "Nasza wizja",
+    "vision": "Świat, w którym odpady są zasobem — gdzie każda społeczność ma zastosowanie do godnych, zrównoważonych i bezpiecznych mieszkań.",
+    "mission_label": "Nasza misja",
+    "mission": "Przekształcać plastikowe odpady w domy, a domy w nadzieję.",
+    "values_label": "Nasze wartości",
+    "values_items": [
+      "Czyń dobro",
+      "Integralność",
+      "Równość dla każdego",
+      "Wspieranie lokalnych społeczności",
+      "Bezpieczne społeczności dla przyszłych pokoleń"
+    ],
+    "team_label": "Ludzie",
+    "team_title": "Nasz Zespół",
+    "team_subtitle": "Zróżnicowana grupa innowatorów, inżynierów i wizjonerów zjednoczonych misją tworzenia ekologicznych rozwiązań mieszkaniowych.",
+    "team_members": {
+      "frank": {
+        "name": "Frank Cato Lahti",
+        "title": "Założyciel & CEO",
+        "bio": "Wizjonerski przedsiębiorca z doświadczeniem w wywiadzie wojskowym oraz pasją do innowacji ekologicznych."
+      },
+      "claus": {
+        "name": "Claus Skadkjaer",
+        "title": "Prezes & COO",
+        "bio": "Ekspert operacyjny skupiony na skalowaniu zrównoważonych technologii i globalnym wdrożeniu."
+      },
+      "martin": {
+        "name": "Martin Dokkedal",
+        "title": "Dyrektor ds. Łańcucha Dostaw",
+        "bio": "Optymalizacja globalnej logistyki w celu dostarczenia technologii Othalo do najbardziej odległych społeczności."
+      },
+      "thomas": {
+        "name": "Thomas Meidell Loesnes",
+        "title": "Dyrektor Prawny",
+        "bio": "Zapewnienie zgodności z przepisami i ochrona naszego globalnego portfolio patentowego."
+      },
+      "kjell": {
+        "name": "Kjell Steen",
+        "title": "Dyrektor ds. Produkcji",
+        "bio": "Weteran produkcji przemysłowej kierujący naszymi zakładami produkującymi panele."
+      },
+      "bengt": {
+        "name": "Bengt Erling Berg",
+        "title": "Szef Wsparcia Technicznego",
+        "bio": "Zapewnienie specjalistycznej wiedzy technicznej i wskazówek na miejscu przy wdrożeniach Othalo."
+      },
+      "stephane": {
+        "name": "Stephane Bernard",
+        "title": "Dyrektor Handlowy",
+        "bio": "Napędzanie wzrostu i strategicznych partnerstw na rynkach międzynarodowych."
+      },
+      "wenslauce": {
+        "name": "Wenslauce Chengo",
+        "title": "Dyrektor Krajowy na Kenię",
+        "bio": "Kierowanie działaniami w zakresie wpływu społecznego i PR-u Othalo w Afryce Wschodniej."
+      },
+      "meranda": {
+        "name": "Meranda Chan",
+        "title": "Dyrektor ds. Marketingu",
+        "bio": "Kierowanie globalną strategią marketingową i komunikacją marki Othalo."
+      }
+    },
+    "culture_label": "Nasza Kultura",
+    "culture_title": "Kierowani celem, zakotwiczeni w doskonałości.",
+    "culture_subtitle": "To, co kształtuje nasze podejście do pracy i kieruje nami w wywieraniu pozytywnego wpływu na świat.",
+    "culture_values": [
+      {
+        "title": "Praca zespołowa",
+        "desc": "Współpraca i wzajemne wsparcie napędzają nasz sukces. Wierzymy w moc wspólnej pracy dla osiągania niezwykłych rezultatów."
+      },
+      {
+        "title": "Terminowość",
+        "desc": "Szanujemy terminy i dotrzymujemy obietnic. Punktualność i wydajność są kluczowe for naszej doskonałości operacyjnej."
+      },
+      {
+        "title": "Komunikacja",
+        "desc": "Otwarty i przejrzysty dialog zapewnia spójność i zrozumienie na wszystkich szczeblach naszej organizacji."
+      },
+      {
+        "title": "Zaangażowanie",
+        "desc": "Poświęcamy się naszej misji tworzenia zrównoważonych rozwiązań mieszkaniowych i wywierania pozytywnego wpływu na świat."
+      }
+    ],
+    "impact_label": "Wymierna Zmiana",
+    "impact_title": "Nasz potrójny bilans wpływu — ludzie, planeta i dobrobyt.",
+    "impact_items": [
+      {
+        "num": "01",
+        "title": "Wpływ na środowisko",
+        "desc": "Plastik usunięty ze środowiska; brak zużycia cementu i stali."
+      },
+      {
+        "num": "02",
+        "title": "Wpływ społeczny",
+        "desc": "Domy dla społeczności o niskich i średnich dochodach."
+      },
+      {
+        "num": "03",
+        "title": "Wpływ gospodarczy",
+        "desc": "Tworzenie miejsc pracy w gospodarkach wschodzących."
+      }
+    ],
+    "contributions": {
+      "vision": "Wizja & Strategia",
+      "operations": "Operacje",
+      "supply": "Łańcuch Dostaw",
+      "legal": "Obsługa Prawna & Zgodność",
+      "manufacturing": "Produkcja",
+      "engineering": "Inżynieria",
+      "business": "Rozwój Biznesu",
+      "pr": "Kenia & PR"
+    },
+    "story_label": "Nasza Historia",
+    "story_quote": "Po służbie w armii norweskiej i wywiadzie podczas misji NATO w latach 90., byłem świadkiem zarówno odporności ludzi żyjących w strefach konfliktów, jak i trudnych realiów obozów dla uchodźców. Lata później, standing na plaży pokrytej plastikiem w północnej Norwegii, zdałem sobie sprawę, że globalny kryzys odpadowy jest bliżej, niż myślimy. Ten moment zrodził odważne pytanie: czy możemy zamienić plastikowe odpady w bezpieczne, godne domy? To pytanie stało się fundamentem Othalo.",
+    "cta": "Odkryj Naszą Technologię"
+  },
+  "products": {
+    "label": "Portfolio Produktów",
+    "title": "System Paneli Othalo",
+    "subtitle": "Nasza opatentowana, rekomendowana przez UN-Habitat technologia zapewnia niedrogie i ekologiczne rozwiązania mieszkaniowe z szybkością i w skali, przy użyciu plastiku z recyklingu",
+    "see_how_it_works": "Zobacz, jak to działa",
+    "technology_heading": "Technologia",
+    "technology_desc": "Nasze standaryzowane moduły łączą innowacyjność z praktycznością, dostarczając opłacalne, szybkie w montażu oraz trwałe i ekologiczne rozwiązania budowlane.",
+    "tech_features_alt": [
+      {
+        "title": "Innowacyjna opatentowana technologia",
+        "desc": "75% wszystkich rodzajów plastiku, w tym trudnych do recyklingu tworzyw, takich jak saszetki, folie i materiały elastyczne — dotychczas niepoddawanych recyklingowi."
+      },
+      {
+        "title": "Przyjazne dla środowiska",
+        "desc": "Brak użycia cementu i stali, bardzo ograniczone zużycie wody."
+      },
+      {
+        "title": "Szybka budowa",
+        "desc": "Montaż w 6 godzin przy użyciu wyłącznie siły ludzkich rąk — brak wymagań dotyczących ciężkiego sprzętu."
+      },
+      {
+        "title": "Bezpieczeństwo",
+        "desc": "Konstrukcja odporna na huragany i trzęsienia ziemi, materiał trudnopalny."
+      },
+      {
+        "title": "Wyjątkowa wytrzymałość",
+        "desc": "7-krotnie mocniejsze od betonu."
+      },
+      {
+        "title": "Wysokie standardy",
+        "desc": "Spełnia wszelkie istotne przepisy budowlane."
+      }
+    ],
+    "product_lines_names": [
+      "The Community",
+      "The Emergency Shelter",
+      "The Medical Unit and Cold Storage",
+      "The Worker Accomodation"
+    ],
+    "panel_label": "Prefabrykowane Panele",
+    "un_habitat_badge": "Rekomendowane przez UN-HABITAT",
+    "un_habitat_note": "Na Rzecz Lepszej Przyszłości Obszarów Miejskich",
+    "cta_quote": "Poproś o Wycenę Produktu",
+    "cta_solutions": "Zobacz Rozwiązania",
+    "tech_label": "Przewaga Techniczna",
+    "tech_title": "Lider technologii i innowacji na rynku",
+    "panel_features": [
+      {
+        "title": "Opłacalność",
+        "desc": "Prefabrykacja poza placem budowy z niską ilością odpadów. Ograniczone wymagania sprzętowe i kadrowe na miejscu. Zbudowane w 100% z tanich tworzyw z recyklingu."
+      },
+      {
+        "title": "Szybka budowa",
+        "desc": "Dom z 2 sypialniami można postawić w jeden dzień dzięki wiodącej technologii łączenia na zatrzaski."
+      },
+      {
+        "title": "Jakość i trwałość",
+        "desc": "Żywotność 60 lat. 7x mocniejsze od betonu. Izolacja 3x bardziej efektywna niż w przypadku betonu."
+      },
+      {
+        "title": "Bezpieczeństwo",
+        "desc": "Ognioodporność. Odporność na huragany i trzęsienia ziemi."
+      },
+      {
+        "title": "Wysoce ekologiczne",
+        "desc": "Brak użycia cementu czy stali. Niskie zużycie wody podczas budowy."
+      }
+    ],
+    "material_label": "Materiał",
+    "material_value": "100% Plastik z Recyklingu",
+    "comparison_title": "Lider technologii i innowacji na rynku",
+    "comparison_headers": [
+      "Parametry",
+      "Othalo",
+      "Druk 3D",
+      "Budynki z potrójnych paneli",
+      "Budownictwo tradycyjne"
+    ],
+    "comparison_rows": [
+      {
+        "p": "Gotowość rynkowa",
+        "o": "pełna",
+        "d": "brak",
+        "r": "częściowa",
+        "t": "pełna"
+      },
+      {
+        "p": "Krótki czas produkcji",
+        "o": "pełna",
+        "d": "brak",
+        "r": "brak",
+        "t": "częściowa"
+      },
+      {
+        "p": "Zdatność do recyklingu",
+        "o": "pełna",
+        "d": "częściowa",
+        "r": "częściowa",
+        "t": "brak"
+      },
+      {
+        "p": "Zrównoważony charakter",
+        "o": "pełna",
+        "d": "częściowa",
+        "r": "częściowa",
+        "t": "brak"
+      },
+      {
+        "p": "Dostępne surowce",
+        "o": "pełna",
+        "d": "brak",
+        "r": "częściowa",
+        "t": "brak"
+      },
+      {
+        "p": "Niskie koszty",
+        "o": "pełna",
+        "d": "brak",
+        "r": "brak",
+        "t": "częściowa"
+      },
+      {
+        "p": "Produkcja przemysłowa",
+        "o": "pełna",
+        "d": "brak",
+        "r": "brak",
+        "t": "częściowa"
+      }
+    ],
+    "fulfilled": "Spełnione",
+    "partially_fulfilled": "Częściowo spełnione",
+    "lines_label": "Linie Produktowe",
+    "lines_title": "Konfiguracje domów",
+    "lines_subtitle": "Każda konfiguracja jest zaprojektowana celowo, modułowa i lokalnie adaptowalna.",
+    "product_lines": [
+      {
+        "name": "The Community",
+        "desc": "Jednostki jedno- i wielorodzinne zoptymalizowane pod kątem szybkiego wdrożenia miejskiego oraz programów socjalnych."
+      },
+      {
+        "name": "The District",
+        "desc": "Osiedla mieszkaniowe o średniej gęstości dla rodzin. Pełna integracja infrastruktury, w tym mediów."
+      },
+      {
+        "name": "The Emergency Shelter",
+        "desc": "Szybko wdrażane domy ratunkowe na potrzeby pomocy humanitarnej i klęsk żywiołowych."
+      },
+      {
+        "name": "The Medical Units",
+        "desc": "Specjalistyczne moduły opieki zdrowotnej, w tym kliniki, oddziały izolacyjne i centra diagnostyczne."
+      },
+      {
+        "name": "The Worker Accommodation",
+        "desc": "Kwatery pracownicze zaprojektowane dla placów budowy, kopalń i wdrożeń przemysłowych."
+      }
+    ],
+    "get_quote": "Uzyskaj wycenę",
+    "dual_label": "Podwójny Wpływ",
+    "dual_title": "Rozwiązanie jednego wyzwania za pomocą drugiego",
+    "dual_items": [
+      {
+        "title": "Plastikowe odpady",
+        "desc": "Globalne obciążenie: ponad 10 miliardów ton nagromadzonych już w środowisku naturalnym."
+      },
+      {
+        "title": "Tanie mieszkania",
+        "desc": "3,4 miliarda ludzi na świecie nie ma dostępu do godnych warunków mieszkaniowych (UN-Habitat, 2026)."
+      }
+    ],
+    "cta_learn_more": "Dowiedz się więcej"
+  },
+  "solutions": {
+    "label": "Co Oferujemy",
+    "title": "Rozwiązania stworzone dla każdego kontekstu wdrożenia",
+    "subtitle": "Niezależnie od tego, czy jesteś rządem wdrażającym projekty na skalę krajową, deweloperem szukającym ROI, czy korporacją budującą swój wizerunek ESG — Othalo ma rozwiązanie dla Ciebie.",
+    "learn_more": "Dowiedz się więcej",
+    "not_sure_title": "Nie masz pewności, które rozwiązanie wybrać?",
+    "not_sure_subtitle": "Nasz zespół chętnie pomoże dobrać odpowiednie podejście. Skontaktuj się z nami, a odpowiemy w ciągu 2 dni roboczych.",
+    "contact_us": "Skontaktuj się z nami",
+    "cards": [
+      {
+        "label": "Rządy i gminy",
+        "tag": "Sektor Publiczny",
+        "headline": "Mieszkalnictwo w skali i tempie, jakich potrzebują rządy",
+        "desc": "Tanie domy z recyklingowanego plastiku na dużą skalę. Prefabrykowane systemy modułowe z opatentowaną technologią polecaną przez ONZ.",
+        "bullets": [
+          "Tanie domy z recyklingowanego plastiku na dużą skalę",
+          "Prefabrykowane systemy modułowe z opatentowaną technologią polecaną przez ONZ",
+          "Szybsza budowa dla oszczędności czasu",
+          "Budynki wielokondygnacyjne (do 4 pięter)",
+          "Zgodne z globalnymi normami, dostosowane lokalnie"
+        ],
+        "cta": "Zamów rządowy brief"
+      },
+      {
+        "label": "Deweloperzy",
+        "tag": "Sektor Prywatny",
+        "headline": "Najszybsza droga od posiadania gruntu do oddania mieszkań",
+        "desc": "Szybsza, bardziej opłacalna budowa. Elastyczne projekty dostosowują się do Twojego projektu, rynku i przepisów.",
+        "bullets": [
+          "Szybsza, bardziej opłacalna budowa",
+          "Prefabrykowane systemy modułowe z plastiku z recyklingu",
+          "Uproszczona realizacja na miejscu",
+          "Lekkie, skalowalne komponenty",
+          "Elastyczne projekty dostosowują się do Twojego projektu, rynku i przepisów"
+        ],
+        "cta": "Poproś o wycenę deweloperską"
+      },
+      {
+        "label": "Korporacje",
+        "tag": "ESG i Biznes",
+        "headline": "Doskonałość ESG, która przynosi realną zmianę",
+        "desc": "Kompleksowa platforma ESG. Połącz zgodność z przepisami, ochronę środowiska i wpływ społeczny. Przetwarzaj odpady w namacalne materiały budowlane.",
+        "bullets": [
+          "Kompleksowa platforma ESG",
+          "Połącz zgodność z przepisami, ochronę środowiska i wpływ społeczny",
+          "Przetwarzaj odpady w namacalne materiały budowlane",
+          "Skalowalny, zweryfikowany i mierzalny wpływ na potrzeby raportowania",
+          "Szybka realizacja",
+          "Programy angażowania interesariuszy"
+        ],
+        "cta": "Poznaj partnerstwo korporacyjne"
+      }
+    ]
+  },
+  "governments": {
+    "label": "Rozwiązania — Rządy & Gminy",
+    "title": "Mieszkalnictwo w skali, jakiej potrzebują rządy",
+    "hero_label": "Rozwiązania — Rządy & Gminy",
+    "hero_title": "Reprezentujesz Rząd — Gminę",
+    "hero_challenge": "Wyzwanie",
+    "hero_solution": "Rozwiązanie Othalo",
+    "hero_benefits": "Kluczowe Korzyści",
+    "hero_partner": "Zostań partnerem Othalo, aby dostarczać tanie, ekologiczne i bezpieczne domy na dużą skalę.",
+    "hero_products_btn": "Produkty",
+    "subtitle": "Tanie, odporne na katastrofy naturalne, zgodne z celami SDG mieszkalnictwo wdrażane na skalę krajową — bez opóźnień i kosztów tradycyjnej budowy.",
+    "cta1": "Zamów rządowy brief",
+    "cta2": "Skontaktuj się z nami",
+    "challenge_label": "Wyzwanie",
+    "challenge_title": "Ograniczenia tradycyjnego budownictwa",
+    "challenge_bullets": [
+      "Rosnące zapotrzebowanie na mieszkania",
+      "Szybka urbanizacja + wzrost populacji",
+      "Rosnące koszty budowy",
+      "Tradycyjne budownictwo jest powolne, drogie i wysokoemisyjne",
+      "Brak rentowności przy wymaganej skali"
+    ],
+    "solution_label": "Rozwiązanie Othalo",
+    "solution_title": "Skalowanie bez kompromisów",
+    "solution_bullets": [
+      "Tanie domy z recyklingowanego plastiku na dużą skalę",
+      "Prefabrykowane systemy modułowe z opatentowaną technologią polecaną przez ONZ",
+      "Szybsza budowa dla oszczędności czasu",
+      "Budynki wielokondygnacyjne (do 4 pięter)",
+      "Zgodne z globalnymi normami, dostosowane lokalnie"
+    ],
+    "benefits_label": "Dlaczego Othalo dla Rządów",
+    "benefits_title": "Strategia mieszkaniowa sektora publicznego, która działa",
+    "benefits": [
+      {
+        "title": "Szybkie i sprawne skalowanie tanich mieszkań",
+        "desc": "Skaluj tanie mieszkania szybko i wydajnie, aby zaspokoić rosnące potrzeby populacji."
+      },
+      {
+        "title": "Budowa na potrzeby gęstej zabudowy miejskiej",
+        "desc": "Buduj z myślą o gęstszej zabudowie miejskiej dzięki możliwościom wielokondygnacyjnym."
+      },
+      {
+        "title": "Obniżenie kosztów dzięki alternatywom dla stali i cementu",
+        "desc": "Obniż koszty dzięki naszym opatentowanym alternatywom dla drogiej stali i cementu."
+      },
+      {
+        "title": "Szybsza budowa dzięki prefabrykacji (dni, nie miesiące)",
+        "desc": "Buduj szybciej dzięki prefabrykacji — dostarczając domy w dni, nie miesiące."
+      },
+      {
+        "title": "Mniejszy ślad węglowy dzięki materiałom cyrkularnym",
+        "desc": "Zmniejsz ślad węglowy dzięki ekologicznym materiałom pochodzącym z recyklingu odpadów."
+      },
+      {
+        "title": "Elastyczne projektowanie dla lokalnych potrzeb",
+        "desc": "Projektuj elastycznie, by spełniać specyficzne lokalne potrzeby i wymogi prawne."
+      }
+    ],
+    "comparison_title": "Othalo vs Tradycyjne Budownictwo Socjalne",
+    "comparison_subtitle": "Bezpośrednie porównanie kluczowych wskaźników zakupów rządowych.",
+    "comparison_headers": [
+      "Metryka",
+      "Othalo",
+      "Tradycyjne"
+    ],
+    "comparison_rows": [
+      {
+        "f": "Czas budowy (100 jednostek)",
+        "o": "< 3 miesiące",
+        "t": "18–36 miesięcy"
+      },
+      {
+        "f": "Koszt jednostkowy (2 pokoje)",
+        "o": "30–50% niższy",
+        "t": "Punkt odniesienia"
+      },
+      {
+        "f": "Lokalne miejsca pracy",
+        "o": "Wysokie — brak ciężkiego sprzętu",
+        "t": "Średnie — zależne od maszyn"
+      },
+      {
+        "f": "Obciążenie środowiskowe",
+        "o": "Odzyskany plastik",
+        "t": "Emisja CO₂"
+      },
+      {
+        "f": "Raportowanie SDG",
+        "o": "Wbudowane metryki",
+        "t": "Wymagany audyt ręczny"
+      },
+      {
+        "f": "Odporność na katastrofy",
+        "o": "Huragan Kat.5 + Sejsmiczna Z4",
+        "t": "Różna — często niska"
+      }
+    ],
+    "cta_section_title": "Gotowy na wdrożenie na skalę krajową?",
+    "cta_section_subtitle": "Nasz zespół współpracuje bezpośrednio z ministerstwami, agencjami mieszkaniowymi oraz organizacjami pozarządowymi.",
+    "cta_contact": "Skontaktuj się z naszym zespołem",
+    "form_heading": "Skontaktuj się z zespołem",
+    "form_org_required": "Nazwa organizacji jest wymagana",
+    "form_reason_required": "Proszę wybrać powód kontaktu",
+    "form_submit": "Wyślij wiadomość",
+    "form_send_another": "Wyślij kolejną wiadomość"
+  },
+  "housing_dev": {
+    "label": "Rozwiązania — Deweloperzy",
+    "title": "Najszybsza droga od zakupu gruntu do oddania kluczy",
+    "hero_label": "Rozwiązania — Deweloperzy",
+    "hero_title": "Jesteś Deweloperem Mieszkaniowym",
+    "hero_challenge": "Wyzwanie",
+    "hero_solution": "Rozwiązanie Othalo",
+    "hero_benefits": "Kluczowe Korzyści",
+    "hero_partner": "Zostań partnerem Othalo, by budować szybciej, obniżać koszty i odblokować nowe możliwości wzrostu.",
+    "hero_products_btn": "Produkty",
+    "subtitle": "Doskonały ROI, szybkość wejścia na rynek i przewidywalne koszty. Othalo daje deweloperom przewagę na każdym rynku.",
+    "cta1": "Poproś o wycenę deweloperską",
+    "cta2": "Skontaktuj się z nami",
+    "challenge_label": "Wyzwanie",
+    "challenge_title": "Presje rynkowe ograniczające rozwój",
+    "challenge_bullets": [
+      "Rosnące koszty (wysoka zmienność cen), kurczące się marże",
+      "Opóźnienia, nieprzewidywalne harmonogramy",
+      "Niedobory stali, cementu i siły roboczej",
+      "Złożona, nieefektywna budowa przy skali"
+    ],
+    "solution_label": "Rozwiązanie Othalo",
+    "solution_title": "Szybszy, bardziej rentowny model",
+    "solution_bullets": [
+      "Szybsza, bardziej opłacalna budowa",
+      "Prefabrykowane systemy modułowe z plastiku z recyklingu",
+      "Uproszczona realizacja na miejscu",
+      "Lekkie, skalowalne komponenty",
+      "Elastyczne projekty dostosowują się do Twojego projektu, rynku i przepisów"
+    ],
+    "benefits_label": "Korzyści dla Dewelopera",
+    "benefits_title": "Stworzone, aby poprawić ekonomikę Twoich inwestycji",
+    "benefits": [
+      {
+        "title": "Kontrola kosztów i ograniczenie ryzyka cenowego",
+        "desc": "Kontroluj koszty i ograniczaj ekspozycję na wahania cen materiałów dzięki naszym prefabrykowanym systemom."
+      },
+      {
+        "title": "Szybsza budowa dzięki prefabrykacji (dni, nie miesiące)",
+        "desc": "Buduj szybciej dzięki prefabrykacji — oddanie inwestycji w dni, nie miesiące."
+      },
+      {
+        "title": "Mniejsze zapotrzebowanie na pracowników",
+        "desc": "Mniejsze zapotrzebowanie na robotników budowlanych na miejscu dzięki prostemu montażowi."
+      },
+      {
+        "title": "Wyższa wydajność, skalowalna realizacja",
+        "desc": "Wyższa wydajność i łatwiejsze skalowanie przy dużych projektach."
+      },
+      {
+        "title": "Dostęp do nowych rynków (segment ekonomiczny)",
+        "desc": "Uzyskaj dostęp do nowych rynków, zwłaszcza do segmentu niedrogich mieszkań."
+      },
+      {
+        "title": "Wzmocnienie ESG dzięki materiałom cyrkularnym",
+        "desc": "Wzmocnij profil ESG swojej firmy dzięki niskoemisyjnym materiałom z recyklingu."
+      },
+      {
+        "title": "Dostosowywalny design",
+        "desc": "Możliwość modyfikacji projektów w celu dopasowania do Twojej inwestycji, rynku oraz lokalnych przepisów."
+      }
+    ],
+    "roi_label": "Wskaźniki ROI",
+    "roi_title": "Liczby, które budują Twój biznesplan",
+    "roi_items": [
+      {
+        "label": "Koszt vs. beton",
+        "value": "30–50% niższy",
+        "highlight": true
+      },
+      {
+        "label": "Czas budowy (100 jednostek)",
+        "value": "< 3 miesiące",
+        "highlight": true
+      },
+      {
+        "label": "Wymagania dot. robotników",
+        "value": "Tylko przyuczeni",
+        "highlight": false
+      },
+      {
+        "label": "Wymagany ciężki sprzęt",
+        "value": "Brak",
+        "highlight": true
+      },
+      {
+        "label": "Odpady materiałowe na budowie",
+        "value": "Bliskie zeru",
+        "highlight": false
+      },
+      {
+        "label": "Ochrona marży projektu",
+        "value": "Stały koszt paneli",
+        "highlight": false
+      }
+    ],
+    "cta_title": "Gotowy do budowania z Othalo?",
+    "cta_subtitle": "Nasz zespół przedstawi parametry techniczne, logistykę oraz pełny model finansowy dla Twojej inwestycji.",
+    "cta1_bottom": "Zamów brief inwestycyjny",
+    "cta_contact": "Skontaktuj się z naszym zespołem",
+    "form_heading": "Skontaktuj się z zespołem",
+    "form_org_required": "Nazwa organizacji jest wymagana",
+    "form_reason_required": "Proszę wybrać powód kontaktu",
+    "form_submit": "Wyślij wiadomość",
+    "form_send_another": "Wyślij kolejną wiadomość"
+  },
+  "corporations": {
+    "label": "Rozwiązania — Korporacje",
+    "title": "Doskonałość ESG, która przynosi realną zmianę",
+    "hero_label": "Rozwiązania — Korporacje",
+    "hero_title": "Reprezentujesz Korporację",
+    "hero_challenge": "Wyzwanie",
+    "hero_solution": "Rozwiązanie Othalo",
+    "hero_benefits": "Kluczowe Korzyści",
+    "hero_partner": "Zamieniaj odpady plastikowe w mierzalną wartość i wpływ społeczny.",
+    "hero_products_btn": "Produkty",
+    "subtitle": "Zostań partnerem Othalo, aby przekształcić swoje zobowiązania ESG w wymierny, niezależnie weryfikowalny wpływ na mieszkalnictwo, odpady i społeczności.",
+    "cta1": "Poznaj partnerstwo korporacyjne",
+    "cta2": "Skontaktuj się z nami",
+    "challenge_label": "Wyzwanie",
+    "challenge_title": "Sprostanie złożonym oczekiwaniom ESG",
+    "challenge_bullets": [
+      "Odpowiedzialność za cykl życia tworzyw (w tym odpady)",
+      "Zaostrzające się przepisy dotyczące gospodarki o obiegu zamkniętym",
+      "Rosnąca presja regulacyjna i audytowa",
+      "Potrzeba skalowalnych, wiarygodnych rozwiązań",
+      "Rosnące wymagania konsumentów, pracowników i inwestorów"
+    ],
+    "solution_label": "Rozwiązanie Othalo",
+    "solution_title": "Kompleksowa platforma ESG",
+    "solution_bullets": [
+      "Kompleksowa platforma ESG",
+      "Połącz zgodność z przepisami, ochronę środowiska i wpływ społeczny",
+      "Przetwarzaj odpady w namacalne materiały budowlane",
+      "Skalowalny, zweryfikowany i mierzalny wpływ na potrzeby raportowania",
+      "Szybka realizacja",
+      "Programy angażowania interesariuszy"
+    ],
+    "benefits_label": "Korzyści dla Korporacji",
+    "benefits_title": "Strukturyzowany wpływ ESG dla postępowych firm",
+    "benefits": [
+      {
+        "title": "Spełnienie wymogów EPR z mierzalnymi wynikami",
+        "desc": "Realizuj wymogi Rozszerzonej Odpowiedzialności Producenta dzięki mierzalnemu odzyskowi plastiku."
+      },
+      {
+        "title": "Zamiana odpadów w wartość dzięki modelowi cyrkularnemu",
+        "desc": "Zamieniaj odpady w wartość w ramach modelu zamkniętego obiegu, który tworzy domy z plastiku."
+      },
+      {
+        "title": "Dostarczenie realnego wpływu ESG",
+        "desc": "Generuj rzeczywisty wpływ w obszarach środowiskowych, społecznych i ładu korporacyjnego."
+      },
+      {
+        "title": "Szybkie wdrożenie, natychmiastowe działanie",
+        "desc": "Szybki start projektów pozwala na natychmiastowe efekty i pozyskanie mierzalnych danych."
+      },
+      {
+        "title": "Wzmocnienie marki i zaufania interesariuszy",
+        "desc": "Buduj zaufanie do marki poprzez namacalną, widoczną pomoc lokalnym społecznościom."
+      },
+      {
+        "title": "Przejrzyste śledzenie wpływu i raportowanie",
+        "desc": "Transparentny pomiar i raportowanie efektów zgodne z głównymi standardami ESG."
+      },
+      {
+        "title": "Skalowalność na rynkach",
+        "desc": "Skalowalność pozwalająca na dopasowanie projektów do Twojego globalnego zasięgu."
+      }
+    ],
+    "metrics_title": "Wskaźniki, którym zaufa Twój zespół ds. zrównoważonego rozwoju",
+    "metrics_subtitle": "Każde wdrożenie korporacyjne Othalo generuje pełny pakiet danych o wywartym wpływie.",
+    "metrics_items": [
+      {
+        "label": "Plastik odzyskany na jednostkę 2BR",
+        "value": "8 ton"
+      },
+      {
+        "label": "Uniknięta emisja CO₂ vs. beton",
+        "value": "~12 ton na jednostkę"
+      },
+      {
+        "label": "Wspierane cele SDG",
+        "value": "9 z 17"
+      },
+      {
+        "label": "Lokalne miejsca pracy na 100 jednostek",
+        "value": "80–120 stanowisk"
+      },
+      {
+        "label": "Obsługiwane standardy raportowania",
+        "value": "GRI, SASB, TCFD"
+      },
+      {
+        "label": "Weryfikacja",
+        "value": "Możliwość audytu zewnętrznego"
+      }
+    ],
+    "cta_title": "Zmień swoje zobowiązania ESG w zweryfikowany wpływ",
+    "cta_subtitle": "Skontaktuj się z naszym zespołem ds. partnerstw korporacyjnych, aby opracować program zgodny z Twoimi celami zrównoważonego rozwoju.",
+    "cta1_bottom": "Kontakt dla Partnerstw Korporacyjnych",
+    "cta_contact": "Skontaktuj się z naszym zespołem",
+    "form_heading": "Skontaktuj sich z zespołem",
+    "form_org_required": "Nazwa firmy jest wymagana",
+    "form_reason_required": "Proszę wybrać powód kontaktu",
+    "form_submit": "Wyślij wiadomość",
+    "form_send_another": "Wyślij kolejną wiadomość"
+  },
+  "contact": {
+    "label": "Napisz Do Nas",
+    "page_title": "Kontakt",
+    "title": "Rozpocznijmy rozmowę",
+    "subtitle": "Niezależnie od tego, czy planujesz wdrożenie, szukasz partnerstwa, czy po prostu chcesz dowiedzieć się więcej o Othalo — jesteśmy tu, aby pomóc.",
+    "offices": "Nasze biura",
+    "hq": "Centrala",
+    "email_label": "E-mail",
+    "phone_label": "Telefon",
+    "response_label": "Czas Reakcji",
+    "response_time": "W ciągu 2 dni roboczych",
+    "response_note": "Nasz zespół obsługuje zapytania rządowe, deweloperskie i korporacyjne z całego świata. W pilnych sprawach prosimy o kontakt telefoniczny.",
+    "name": "Imię i nazwisko",
+    "name_placeholder": "Jan Kowalski",
+    "name_asterisk": "Imię i Nazwisko *",
+    "email": "E-mail",
+    "email_placeholder": "jan@firma.pl",
+    "email_asterisk": "Adres E-mail *",
+    "phone": "Telefon",
+    "phone_placeholder": "Numer telefonu",
+    "phone_code": "Kod kraju",
+    "org": "Organizacja",
+    "org_label": "Firma/Organizacja",
+    "org_placeholder": "Nazwa firmy",
+    "title_label": "Stanowisko",
+    "title_placeholder": "Nazwa stanowiska",
+    "country": "Kraj",
+    "select_country": "Wybierz kraj",
+    "profile": "Reprezentuję",
+    "select_profile": "Wybierz profil",
+    "enquiry": "Przedmiot Zapytania",
+    "select_enquiry": "Czego dotyczy Twoje zapytanie?",
+    "reason_label": "Powód kontaktu",
+    "reason_placeholder": "Partnerstwo i Projekty",
+    "reason_required": "Proszę wybrać powód skontaktowania się z nami",
+    "solution": "Odpowiednie Rozwiązanie",
+    "select_solution": "Wybierz rozwiązanie",
+    "product": "Produkt, Którym Jesteś Zainteresowany",
+    "select_product": "Wybierz produkt",
+    "units": "Liczba Jednostek",
+    "select_units": "Wybierz zakres",
+    "timeline": "Pożądany Czas Realizacji",
+    "select_timeline": "Wybierz czas realizacji",
+    "budget": "Szacowany Budżet",
+    "select_budget": "Wybierz zakres",
+    "message": "Wiadomość",
+    "message_placeholder_contact": "Napisz o swoich obszarach zainteresowania...",
+    "message_placeholder": "Opowiedz nam o swoim projekcie, kontekście lub pytaniach...",
+    "submit": "Wyślij wiadomość",
+    "respond_note": "Odpowiadamy w ciągu 2 dni roboczych.",
+    "success_title": "Wiadomość została odebrana",
+    "success_note": "Dziękujemy za kontakt. Członek naszego zespołu skontaktuje się z Tobą w ciągu 2 dni roboczych.",
+    "success_send_another": "Wyślij kolejną wiadomość",
+    "security_check": "Proszę ukończyć weryfikację bezpieczeństwa.",
+    "err_name": "Imię i nazwisko jest wymagane",
+    "err_email": "Wymagany jest poprawny adres e-mail",
+    "err_phone": "Wprowadź poprawny numer telefonu (same cyfry, 6–15 znaków)",
+    "err_country": "Proszę wybrać kraj",
+    "err_profile": "Proszę wybrać typ profilu",
+    "err_enquiry": "Proszę wybrać rodzaj zapytania",
+    "err_message": "Wiadomość jest wymagana (min. 10 znaków)",
+    "reasons": [
+      {
+        "value": "general",
+        "label": "Zapytanie ogólne"
+      },
+      {
+        "value": "partnership",
+        "label": "Partnerstwo i Projekty"
+      },
+      {
+        "value": "pricing",
+        "label": "Prośba o wycenę / ofertę"
+      },
+      {
+        "value": "technical",
+        "label": "Informacje techniczne i produktowe"
+      },
+      {
+        "value": "investor",
+        "label": "Zapytanie inwestorskie"
+      },
+      {
+        "value": "media",
+        "label": "Media i prasa"
+      },
+      {
+        "value": "careers",
+        "label": "Kariera"
+      }
+    ],
+    "profiles": {
+      "government": "Rząd / Agencja Rządowa",
+      "developer": "Deweloper Mieszkaniowy",
+      "corporation": "Korporacja / Przedsiębiorstwo",
+      "ngo": "NGO / Organizacja Międzynarodowa",
+      "media": "Media i prasa",
+      "investor": "Inwestor",
+      "other": "Inny"
+    },
+    "enquiries": {
+      "quote": "Prośba o wycenę / cennik",
+      "solutions": "Rozwiązania i planowanie wdrożenia",
+      "products": "Informacje o produktach i specyfikacje",
+      "partnership": "Partnerstwo korporacyjne / Program ESG",
+      "investment": "Możliwości inwestycyjne",
+      "media": "Zapytanie prasowe / medialne",
+      "general": "Informacje ogólne"
+    },
+    "solutions_list": {
+      "governments": "Rządy — Budownictwo socjalne/komunalne",
+      "housing_developers": "Deweloperzy — Inwestycje prywatne",
+      "corporations": "Korporacje — Program ESG / CSR",
+      "worker_accommodation": "Kwatery pracownicze",
+      "multiple": "Wiele / Brak pewności"
+    },
+    "products_list": {
+      "community_1a": "The Community 1a — Dom 2-pokojowy (42m²)",
+      "community_2c": "The Community 2c — Blok 6-rodzinny (252m²)",
+      "district_2a": "The District 2a — Osiedle 24-rodzinne (1 008m²)",
+      "worker_6x": "Kwatera pracownicza 6x (144m²)",
+      "panel_system": "Sam system paneli",
+      "custom": "Konfiguracja niestandardowa"
+    },
+    "units_list": {
+      "1_10": "1–10 jednostek",
+      "10_50": "10–50 jednostek",
+      "50_200": "50–200 jednostek",
+      "200_1000": "200–1 000 jednostek",
+      "1000_plus": "1 000+ jednostek",
+      "unsure": "Jeszcze nieokreślone"
+    },
+    "timelines_list": {
+      "asap": "Jak najszybciej",
+      "3months": "W ciągu 3 miesięcy",
+      "6months": "3–6 miesięcy",
+      "12months": "6–12 miesięcy",
+      "planning": "Tylko faza planowania"
+    },
+    "budgets_list": {
+      "under_500k": "Poniżej $500 000",
+      "500k_2m": "$500K – $2M",
+      "2m_10m": "$2M – $10M",
+      "10m_plus": "$10M+",
+      "unsure": "Do ustalenia"
+    }
+  },
+  "quote": {
+    "gov_title": "Zamów Rządowy Brief",
+    "gov_subtitle": "Nasz zespół ds. sektora publicznego przygotuje dostosowaną ofertę wdrożeniową.",
+    "dev_title": "Poproś o Wycenę Deweloperską",
+    "dev_subtitle": "Otrzymaj model finansowy i plan logistyczny dla swojej inwestycji.",
+    "corp_title": "Zapytanie o Partnerstwo Korporacyjne",
+    "corp_subtitle": "Nasz zespół ds. ESG zaprojektuje program dopasowany do Twoich celów zrównoważonego rozwoju.",
+    "prod_title": "Poproś o Wycenę Produktu",
+    "prod_subtitle": "Wskaż, którego produktu potrzebujesz, a prześlemy kompletny cennik i specyfikacje.",
+    "main_title": "Uzyskaj Wycenę",
+    "main_subtitle": "Wypełnij formularz — odpowiemy w ciągu 2 dni roboczych.",
+    "sidebar_title": "Prośba o Wycenę Projektu",
+    "sidebar_desc": "Nasi specjaliści przygotują szczegółową ofertę techniczną i finansową dostosowaną do Twoich wymagań i skali projektu.",
+    "sidebar_items": [
+      "Szybkie wdrożenie",
+      "Opatentowana technologia",
+      "Rekomendacja UN-Habitat",
+      "Globalny wpływ"
+    ],
+    "name": "Imię i nazwisko",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "org": "Organizacja (Opcjonalnie)",
+    "org_placeholder": "Firma / Ministerstwo",
+    "country": "Kraj",
+    "select_country": "Wybierz kraj",
+    "profile": "Typ Profilu",
+    "select_profile": "Reprezentuję...",
+    "product": "Konfiguracja Produktu",
+    "select_product": "Wybierz konfigurację",
+    "units": "Wymagane Jednostki",
+    "select_units": "Skala projektu",
+    "message": "Dodatkowe Uwagi",
+    "message_placeholder": "Opowiedz nam o projekcie, oczekiwanym czasie realizacji lub specyficznych wymaganiach...",
+    "submit": "Poproś o wycenę",
+    "respond_note": "Odpowiadamy w ciągu 2 dni roboczych.",
+    "success_title": "Wysłano prośbę o wycenę",
+    "success_note": "Dziękujemy za zainteresowanie ofertą Othalo. Potwierdzenie zostało wysłane na adres {{email}}.",
+    "success_review": "Regionalny specjalista przeanalizuje Twoje wymagania i skontaktuje się w ciągu 2 dni roboczych.",
+    "done": "Gotowe",
+    "security_check": "Proszę ukończyć weryfikację bezpieczeństwa.",
+    "err_name": "Imię i nazwisko jest wymagane",
+    "err_email": "Poprawny adres e-mail jest wymagany",
+    "err_phone": "Niepoprawny format numeru telefonu",
+    "err_country": "Kraj jest wymagany",
+    "err_profile": "Proszę wybrać typ profilu",
+    "err_product": "Proszę wybrać konfigurację produktu"
+  },
+  "faqs": {
+    "label": "FAQ",
+    "title": "Pytania Techniczne i Ekologiczne",
+    "subtitle": "Najczęstsze pytania od rządów, deweloperów i partnerów dotyczące systemu budowlanego Othalo, norm oraz kwalifikacji środowiskowych.",
+    "items": [
+      {
+        "q": "Z czego wykonany jest panel Othalo?",
+        "a": "Panele Othalo produkowane są w 100% z plastiku z recyklingu — głównie pochodzącego z plastiku odzyskiwanego z oceanów i wysypisk śmieci. Do budowy systemu nośnego nie stosuje się pierwotnego plastiku, cementu ani stali."
+      },
+      {
+        "q": "Jak system budowlany spełnia międzynarodowe normy?",
+        "a": "Konstrukcje Othalo są projektowane zgodnie z międzynarodowymi przepisami budowlanymi, w tym normami ISO, Eurokodami i ich lokalnymi odpowiednikami. Każdy panel jest niezależnie testowany pod kątem obciążeń konstrukcyjnych, odporności ogniowej (klasa B1 samogasnąca), odporności na wiatr (huragan kategorii 5, >200 km/h) oraz stref sejsmicznych do Strefy 4 włącznie."
+      },
+      {
+        "q": "Jaka jest żywotność konstrukcji Othalo?",
+        "a": "Panele Othalo są przewidziane na minimum 60 lat użytkowania w normalnych warunkach środowiskowych. Odzyskany plastik nie gnije, nie koroduje ani nie ulega degradacji pod wpływem wilgoci, co czyni go wyjątkowo trwałym w klimatach tropikalnych, nadmorskich i o wysokiej wilgotności."
+      },
+      {
+        "q": "Jak zapewniona jest wydajność termiczna?",
+        "a": "System paneli Othalo zapewnia izolację termiczną około 3-krotnie bardziej skuteczną niż tradycyjne ściany betonowe. Konstrukcja z pustym rdzeniem tworzy naturalną izolację powietrzną, co eliminuje potrzebę stosowania dodatkowych materiałów izolacyjnych i obniża koszty energii na chłodzenie oraz ogrzewanie."
+      },
+      {
+        "q": "Czy materiał jest bezpieczny — czy występują szkodliwe emisje?",
+        "a": "Plastik z recyklingu, którego używamy, jest klasyfikowany jako jedno z najbezpieczniejszych tworzyw sztucznych. Posiada certyfikację do kontaktu z żywnością, nie wydziela gazów w normalnych warunkach i nie uwalnia szkodliwych substancji chemicznych. Panele Othalo zostały przetestowane i nie wykazują emisji lotnych związków organicznych (LZO) w pomieszczeniach mieszkalnych."
+      },
+      {
+        "q": "W jaki sposób Othalo przyczynia się do zrównoważonego rozwoju i redukcji emisji dwutlenku węgla?",
+        "a": "Każdy dom z 2 sypialniami pozwala zagospodarować około 8 ton plastiku, który inaczej zanieczyszczałby środowisko. Proces budowlany nie wymaga użycia cementu (który jest głównym źródłem CO₂), stali oraz minimalizuje zużycie wody. Cały cykl życia — od zbiórki odpadów po budowę — zaplanowano tak, aby zmaksymalizować efektywność węglową i generować wiarygodne dane o wpływie na cele SDG."
+      },
+      {
+        "q": "Czy konstrukcje można dostosować do lokalnych przepisów i klimatu?",
+        "a": "Tak. Othalo współpracuje bezpośrednio z lokalnymi inżynierami i urzędami w celu zapewnienia pełnej zgodności z krajowymi przepisami budowlanymi. Modułowy system paneli można konfigurować pod kątem różnych typów dachów, fundamentów, grubości ścian i przyłączy mediów, aby dostosować je do warunków tropikalnych, suchych lub umiarkowanych."
+      },
+      {
+        "q": "Jakie certyfikaty i rekomendacje posiada Othalo?",
+        "a": "Othalo posiada rekomendację UN-HABITAT (Program Narodów Zjednoczonych ds. Osiedli Ludzkich). System został przetestowany i zatwierdzony przez niezależne laboratoria badawcze w zakresie bezpieczeństwa konstrukcji i ochrony przeciwpożarowej. Szczegółowe raporty z badań i dokumentacja zgodności są dostępne na żądanie na potrzeby procedur zakupów rządowych oraz weryfikacji przez organizacje pozarządowe."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Przekształcamy odpady plastikowe w godne, zrównoważone domy dla społeczności na całym świecie.",
+    "social_label": "Dołącz do nas, udostępniaj, polub i obserwuj nas na:",
+    "links": [
+      {
+        "label": "Skontaktuj się z nami",
+        "href": "/contact"
+      },
+      {
+        "label": "Produkty",
+        "href": "/products"
+      },
+      {
+        "label": "O nas",
+        "href": "/about"
+      },
+      {
+        "label": "Warunki świadczenia usług",
+        "href": "/terms"
+      },
+      {
+        "label": "Polityka prywatności",
+        "href": "/privacy"
+      }
+    ],
+    "socials": [
+      {
+        "label": "Twitter"
+      },
+      {
+        "label": "Facebook"
+      },
+      {
+        "label": "LinkedIn"
+      },
+      {
+        "label": "YouTube"
+      },
+      {
+        "label": "Instagram"
+      }
+    ],
+    "company": "Firma",
+    "solutions": "Rozwiązania",
+    "legal": "Kwestie prawne",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "registered": "Zarejestrowano w Norwegii — Budujemy ekologiczną przyszłość",
+    "company_name": "Othalo Group Ltd",
+    "registration_no": "Nr rejestracyjny:",
+    "license_no": "Nr licencji:",
+    "address_heading": "Adres",
+    "address_line1": "RAK Innovation City, Post Box #30099",
+    "address_line2": "RAKBANK Headquarters, Government of Ras Al Khaimah",
+    "address_line3": "Zjednoczone Emiraty Arabskie"
+  },
+  "privacy": {
+    "label": "Kwestie prawne",
+    "title": "Polityka prywatności",
+    "effective": "Data wejścia w życie: 9 maja 2026 r. · Ostatnia aktualizacja: 9 maja 2026 r.",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "Othalo AS (\"Othalo,\" \"we,\" \"us,\" or \"our\") is committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website othalo.com (the \"Site\") or engage with our services. Please read this policy carefully. If you disagree with its terms, please discontinue use of the Site."
+      },
+      {
+        "title": "2. Information We Collect",
+        "content": "We may collect the following types of information:\n\nPersonal Identification Information: Name, email address, phone number, job title, and organization name when you submit a contact form, request a quote, or otherwise communicate with us.\n\nTechnical Information: IP address, browser type and version, operating system, referral source, length of visit, page views, and website navigation paths, collected through cookies and similar tracking technologies.\n\nCommunications: Records of correspondence if you contact us, including emails and messages submitted through our website.\n\nWe do not collect sensitive personal data (such as health data, financial account information, or government identification numbers) through this Site."
+      },
+      {
+        "title": "3. How We Use Your Information",
+        "content": "We use the information we collect to:\n\n• Respond to enquiries and provide the services you request\n• Send you information about our products and solutions you have requested\n• Process transactions and send related information\n• Improve and optimize our website and user experience\n• Comply with legal obligations\n• Send periodic emails regarding our services (you may opt out at any time)\n• Monitor and analyze usage trends to improve functionality\n\nWe do not sell, trade, or otherwise transfer your personally identifiable information to third parties without your consent, except as described in this policy."
+      },
+      {
+        "title": "4. Legal Basis for Processing (GDPR)",
+        "content": "For users in the European Economic Area (EEA), we process your personal data under the following legal bases:\n\nConsent: Where you have given explicit consent (e.g., subscribing to our newsletter).\n\nLegitimate Interests: To respond to business enquiries, improve our services, and conduct marketing activities where these interests are not overridden by your data protection rights.\n\nContractual Necessity: Where processing is necessary to perform a contract or take steps at your request prior to entering a contract.\n\nLegal Obligation: Where we are required to comply with applicable laws."
+      },
+      {
+        "title": "5. Cookies and Tracking Technologies",
+        "content": "Our Site uses cookies and similar tracking technologies to enhance your browsing experience. Types of cookies we use:\n\nEssential Cookies: Necessary for the website to function and cannot be switched off.\n\nAnalytics Cookies: Help us understand how visitors interact with our Site (e.g., Google Analytics). Data collected is aggregated and anonymous.\n\nMarketing Cookies: Used to deliver relevant advertisements and track campaign effectiveness.\n\nYou can control or disable cookies through your browser settings. Note that disabling certain cookies may affect website functionality."
+      },
+      {
+        "title": "6. Data Retention",
+        "content": "We retain personal data only as long as necessary for the purposes for which it was collected, or as required by applicable law. Enquiry data is typically retained for up to 3 years. Marketing contact data is retained until you unsubscribe or request deletion. Analytics data may be retained in anonymized form indefinitely."
+      },
+      {
+        "title": "7. International Data Transfers",
+        "content": "Othalo AS is registered in Norway and operates under the jurisdiction of the European Economic Area. If we transfer your data outside the EEA, we ensure appropriate safeguards are in place, such as Standard Contractual Clauses approved by the European Commission, to protect your information in accordance with this Privacy Policy."
+      },
+      {
+        "title": "8. Your Rights",
+        "content": "Depending on your jurisdiction, you may have the following rights regarding your personal data:\n\n• Right of Access: Request a copy of the personal data we hold about you\n• Right to Rectification: Request correction of inaccurate or incomplete data\n• Right to Erasure: Request deletion of your personal data (\"right to be forgotten\")\n• Right to Restrict Processing: Request that we limit how we use your data\n• Right to Data Portability: Receive your data in a structured, machine-readable format\n• Right to Object: Object to our processing of your personal data\n• Right to Withdraw Consent: Withdraw consent at any time where processing is based on consent\n\nTo exercise any of these rights, please contact us at privacy@othalo.com."
+      },
+      {
+        "title": "9. Third-Party Links",
+        "content": "Our Site may contain links to third-party websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites. We encourage you to review the privacy policy of every site you visit."
+      },
+      {
+        "title": "10. Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These include encrypted data transmission (HTTPS), access controls, and regular security reviews. However, no method of transmission over the Internet or electronic storage is 100% secure."
+      },
+      {
+        "title": "11. Children's Privacy",
+        "content": "Our Site is not directed to individuals under the age of 16. We do not knowingly collect personal data from children. If you believe we have inadvertently collected information from a child, please contact us immediately so we can delete it."
+      },
+      {
+        "title": "12. Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated effective date. We encourage you to review this policy periodically."
+      },
+      {
+        "title": "13. Contact Us",
+        "content": "If you have questions or concerns about this Privacy Policy or our data practices, please contact:\n\nOthalo AS\nData Privacy Officer\nEmail: privacy@othalo.com\nAddress: Oslo, Norway\n\nYou also have the right to lodge a complaint with the Norwegian Data Protection Authority (Datatilsynet) at www.datatilsynet.no."
+      }
+    ]
+  },
+  "terms": {
+    "label": "Kwestie prawne",
+    "title": "Warunki świadczenia usług",
+    "effective": "Data wejścia w życie: 9 maja 2026 r. · Ostatnia aktualizacja: 9 maja 2026 r.",
+    "sections": [
+      {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing or using the Othalo AS website at othalo.com (the \"Site\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, please do not use the Site. These Terms apply to all visitors, users, and others who access or use the Site."
+      },
+      {
+        "title": "2. About Othalo",
+        "content": "Othalo AS is a Norwegian technology company registered under Norwegian law. We develop and commercialize patented modular housing solutions manufactured from recycled plastic, serving governments, housing developers, corporations, and NGOs globally.\n\nCompany registration: Othalo AS, Oslo, Norway\nContact: contact@othalo.com"
+      },
+      {
+        "title": "3. Use of the Site",
+        "content": "You agree to use the Site only for lawful purposes and in accordance with these Terms. You agree not to:\n\n• Use the Site in any way that violates any applicable local, national, or international law or regulation\n• Transmit any unsolicited or unauthorized advertising or promotional material\n• Knowingly transmit any data or material that contains viruses, Trojan horses, or other harmful code\n• Attempt to gain unauthorized access to any portion of the Site or its related systems\n• Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Site\n• Use the Site to scrape, harvest, or otherwise collect information about other users\n\nWe reserve the right to terminate your access to the Site immediately, without notice, if we reasonably believe you have breached these Terms."
+      },
+      {
+        "title": "4. Intellectual Property",
+        "content": "All content on this Site — including text, graphics, logos, images, product designs, technology descriptions, and software — is the property of Othalo AS or its content suppliers and is protected by Norwegian and international intellectual property laws.\n\nThe Othalo name, logo, and all related product names, design marks, and slogans are trademarks of Othalo AS. You may not use any trademark or trade name without our prior written permission.\n\nThe Othalo structural panel system is protected by patents filed in multiple jurisdictions. Nothing on this Site grants any license or right to use any patented technology.\n\nYou may view and download content from this Site solely for your personal, non-commercial use, provided you keep all copyright and other proprietary notices intact."
+      },
+      {
+        "title": "5. Products and Services",
+        "content": "The products and services described on this Site are subject to availability and may vary by region. Product specifications, pricing, and delivery timelines are indicative and subject to formal quotation. Nothing on this Site constitutes a binding offer to sell.\n\nAll product quotations, partnerships, and deployment agreements are subject to separate written agreements between Othalo AS and the relevant party. These Terms do not govern such agreements."
+      },
+      {
+        "title": "6. Accuracy of Information",
+        "content": "We strive to ensure that the information on this Site is accurate and up-to-date. However, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, products, services, or related graphics on the Site.\n\nTechnical specifications, impact metrics, and performance claims are based on controlled testing and representative deployments. Actual results may vary depending on local conditions, site preparation, and construction practices."
+      },
+      {
+        "title": "7. Third-Party Links",
+        "content": "The Site may contain links to third-party websites or resources. These links are provided for your convenience only. We have no control over the content of those sites or resources and accept no responsibility for them or for any loss or damage that may arise from your use of them."
+      },
+      {
+        "title": "8. Disclaimer of Warranties",
+        "content": "THE SITE AND ALL CONTENT IS PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, OTHALO AS DISCLAIMS ALL WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.\n\nWe do not warrant that the Site will be uninterrupted or error-free, that defects will be corrected, or that the Site or the server that makes it available are free of viruses or other harmful components."
+      },
+      {
+        "title": "9. Limitation of Liability",
+        "content": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL OTHALO AS, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.\n\nThis limitation applies whether the liability arises in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable."
+      },
+      {
+        "title": "10. Privacy",
+        "content": "Your use of the Site is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our Privacy Policy to understand our practices regarding the collection and use of your personal information."
+      },
+      {
+        "title": "11. Governing Law and Jurisdiction",
+        "content": "These Terms and any dispute or claim arising out of or in connection with them shall be governed by and construed in accordance with the laws of Norway, without regard to its conflict of law provisions.\n\nAny disputes shall be subject to the exclusive jurisdiction of the courts of Oslo, Norway, unless mandatory consumer protection laws in your country require otherwise."
+      },
+      {
+        "title": "12. Changes to These Terms",
+        "content": "We reserve the right to modify these Terms at any time. We will post the revised Terms on this page with an updated effective date. By continuing to use the Site after any changes become effective, you agree to the revised Terms. We encourage you to review these Terms periodically."
+      },
+      {
+        "title": "13. Severability",
+        "content": "If any provision of these Terms is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall remain in full force and effect."
+      },
+      {
+        "title": "14. Contact",
+        "content": "If you have any questions about these Terms of Service, please contact us:\n\nOthalo AS\nEmail: legal@othalo.com\nAddress: Oslo, Norway"
+      }
+    ]
+  },
+  "error": {
+    "boundary_title": "Coś poszło nie tak",
+    "boundary_subtitle": "Wystąpił nieoczekiwany błąd. Spróbuj odświeżyć stronę.",
+    "boundary_desc": "Napotkaliśmy nieoczekiwany błąd podczas ładowania tej strony. Nasz zespół techniczny został powiadomiony.",
+    "refresh": "Spróbuj ponownie",
+    "home": "Przejdź do strony głównej"
+  },
+  "cookies": {
+    "title": "We value your privacy",
+    "text": "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+    "accept": "Accept All",
+    "reject": "Reject",
+    "learn_more": "Learn More"
+  }
+}

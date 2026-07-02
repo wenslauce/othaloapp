@@ -6,14 +6,14 @@ Othalo er et norsk teknologiselskap som forvandler resirkulert plastavfall til s
 
 ## Nøkkelsider
 
-- [Hjem](https://othalo.com/): Oversikt over selskapet og introduksjon til teknologien
-- [Produkter](https://othalo.com/products): Othalo panelsystem — spesifikasjoner og produktlinjer
-- [Løsninger](https://othalo.com/solutions): Implementeringsløsninger for ulike interessenter
-- [Løsninger / Myndigheter](https://othalo.com/solutions/governments): Nasjonale og kommunale boligprogrammer
-- [Løsninger / Eiendomsutviklere](https://othalo.com/solutions/housing-developers): Kostnadseffektiv konstruksjon for private utviklere
-- [Løsninger / Bedrifter](https://othalo.com/solutions/corporations): Nøkkelferdige ESG- og CSR-programmer
-- [Om oss](https://othalo.com/about): Misjon, team og påvirkning
-- [Kontakt](https://othalo.com/contact): Ta kontakt eller be om et tilbud
+- [Hjem](https://othalo.com/no/): Oversikt over selskapet og introduksjon til teknologien
+- [Produkter](https://othalo.com/noducts): Othalo panelsystem — spesifikasjoner og produktlinjer
+- [Løsninger](https://othalo.com/noutions): Implementeringsløsninger for ulike interessenter
+- [Løsninger / Myndigheter](https://othalo.com/noutions/governments): Nasjonale og kommunale boligprogrammer
+- [Løsninger / Eiendomsutviklere](https://othalo.com/noutions/housing-developers): Kostnadseffektiv konstruksjon for private utviklere
+- [Løsninger / Bedrifter](https://othalo.com/noutions/corporations): Nøkkelferdige ESG- og CSR-programmer
+- [Om oss](https://othalo.com/nout): Misjon, team og påvirkning
+- [Kontakt](https://othalo.com/notact): Ta kontakt eller be om et tilbud
 
 ## Produkt: Othalo panelsystem
 

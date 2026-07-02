@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { 
-  DropdownMenu, 
-  DropdownMenuContent, 
-  DropdownMenuItem, 
-  DropdownMenuTrigger 
+import { useNavigate, useLocation } from 'react-router-dom';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
@@ -22,12 +23,19 @@ const languages = [
   { code: 'fil', name: 'Filipino', flag: 'ph' },
   { code: 'th', name: 'ไทย', flag: 'th' },
   { code: 'vi', name: 'Tiếng Việt', flag: 'vn' },
+  { code: 'pl', name: 'Polski', flag: 'pl' },
+  { code: 'de', name: 'Deutsch', flag: 'de' },
 ];
+
+const supportedLocales = ['en','de','pl','no','fr','es','pt','ru','ar','hi','id','fil','th','vi'];
+const localesRegex = new RegExp(`^\\/(${supportedLocales.join('|')})(\\/|$)`);
 
 export default function LanguageSwitcher({ variant = 'default', className = '' }) {
   const { i18n } = useTranslation();
-  const currentLanguage = languages.find(lang => i18n.language?.startsWith(lang.code)) || languages[0];
-  
+  const navigate = useNavigate();
+  const location = useLocation();
+  const currentLanguage = languages.find((lang) => i18n.language?.startsWith(lang.code)) || languages[0];
+
   useEffect(() => {
     const code = i18n.language?.split('-')[0] || 'en';
     document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
@@ -37,6 +45,15 @@ export default function LanguageSwitcher({ variant = 'default', className = '' }
   const changeLanguage = (code) => {
     i18n.changeLanguage(code);
     localStorage.setItem('i18nextLng', code);
+    
+    // Strip any existing locale prefix and append the new one
+    const cleanPath = location.pathname.replace(localesRegex, '/');
+    const newPath = `/${code}${cleanPath === '/' ? '' : cleanPath}`;
+    
+    navigate({
+      pathname: newPath,
+      search: location.search
+    }, { replace: true });
   };
 
   const isLight = variant === 'light';
@@ -44,26 +61,31 @@ export default function LanguageSwitcher({ variant = 'default', className = '' }
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button 
-          variant="ghost" 
-          size="sm" 
+        <Button
+          variant="ghost"
+          size="sm"
           className={`gap-2 h-9 rounded-sm px-2 lg:px-3 transition-colors ${
-            isLight 
-              ? 'text-navy hover:bg-navy/5 border-navy/10' 
+            isLight
+              ? 'text-navy hover:bg-navy/5 border-navy/10'
               : 'text-white hover:bg-white/10 border-white/20'
           } ${className}`}
         >
-          <img 
+          <img
             src={`https://flagcdn.com/w40/${currentLanguage.flag}.png`}
             width="20"
             alt=""
             className="rounded-[1px] shadow-sm flex-shrink-0"
           />
-          <span className="uppercase text-[10px] font-bold tracking-widest hidden lg:inline">{currentLanguage.code}</span>
+          <span className="uppercase text-[10px] font-bold tracking-widest hidden lg:inline">
+            {currentLanguage.code}
+          </span>
           <ChevronDown className="w-3 h-3 opacity-40 ml-0.5" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="bg-white border-tech-slate rounded-sm p-1 min-w-[160px] z-[60]">
+      <DropdownMenuContent
+        align="end"
+        className="bg-white border-tech-slate rounded-sm p-1 min-w-[160px] z-[60]"
+      >
         {languages.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
@@ -73,7 +95,7 @@ export default function LanguageSwitcher({ variant = 'default', className = '' }
             }`}
           >
             <span className="flex items-center gap-2.5">
-              <img 
+              <img
                 src={`https://flagcdn.com/w40/${lang.flag}.png`}
                 width="20"
                 alt=""

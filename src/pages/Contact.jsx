@@ -93,7 +93,7 @@ export default function Contact() {
       <SEOHead
         title={t('seo.contact.title')}
         description={t('seo.contact.description')}
-        canonical="https://othalo.com/contact"
+        pagePath="/contact"
         keywords={t('seo.contact.keywords').split(', ')}
       />
 

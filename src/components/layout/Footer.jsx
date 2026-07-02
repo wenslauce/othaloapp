@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from '@/components/shared/LocalizedLink';
 import { Twitter, Facebook, Linkedin, Youtube, Instagram } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 

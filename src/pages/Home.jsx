@@ -1,5 +1,5 @@
 // Home page
-import { Link } from 'react-router-dom';
+import Link from '@/components/shared/LocalizedLink';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { Recycle, Clock, Shield, Leaf, DollarSign, Award, X } from 'lucide-react';
@@ -67,7 +67,7 @@ export default function Home() {
     },
     {
       label: t('home.gallery_categories.factory'),
-      images: ['/images/Panels in the factory.png', '/images/Panel 3D.jpg'],
+      images: ['/images/panels-factory.png', '/images/Panel 3D.jpg'],
     },
   ];
 
@@ -88,7 +88,7 @@ export default function Home() {
       <SEOHead
         title={t('seo.home.title')}
         description={t('seo.home.description')}
-        canonical="https://othalo.com/"
+        pagePath=""
         keywords={t('seo.home.keywords').split(', ')}
       />
       {/* Hero */}
@@ -237,7 +237,7 @@ export default function Home() {
           <SlotIn className="absolute inset-0 size-full">
             <img
               src="/images/House in Dumpsite crop.png"
-              alt="Plastic waste crisis"
+              alt="House surrounded by plastic waste — illustrating the global plastic crisis Othalo addresses"
               className="size-full object-cover"
             />
           </SlotIn>

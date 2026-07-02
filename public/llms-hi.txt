@@ -6,14 +6,14 @@
 
 ## मुख्य पृष्ठ
 
-- [होम](https://othalo.com/): कंपनी का अवलोकन और तकनीक का परिचय
-- [उत्पाद](https://othalo.com/products): ओथेलो पैनल सिस्टम — विनिर्देश और उत्पाद लाइनें
-- [समाधान](https://othalo.com/solutions): विभिन्न हितधारकों के लिए परिनियोजन समाधान
-- [समाधान / सरकारें](https://othalo.com/solutions/governments): राष्ट्रीय और नगरपालिका किफायती आवास कार्यक्रम
-- [समाधान / आवास डेवलपर्स](https://othalo.com/solutions/housing-developers): निजी डेवलपर्स के लिए लागत प्रभावी निर्माण
-- [समाधान / कॉरपोरेशन](https://othalo.com/solutions/corporations): टर्नकी ईएसजी और सीएसआर कार्यक्रम
-- [हमारे बारे में](https://othalo.com/about): मिशन, टीम और प्रभाव
-- [संपर्क](https://othalo.com/contact): संपर्क करें या उद्धरण का अनुरोध करें
+- [होम](https://othalo.com/hi/): कंपनी का अवलोकन और तकनीक का परिचय
+- [उत्पाद](https://othalo.com/hiducts): ओथेलो पैनल सिस्टम — विनिर्देश और उत्पाद लाइनें
+- [समाधान](https://othalo.com/hiutions): विभिन्न हितधारकों के लिए परिनियोजन समाधान
+- [समाधान / सरकारें](https://othalo.com/hiutions/governments): राष्ट्रीय और नगरपालिका किफायती आवास कार्यक्रम
+- [समाधान / आवास डेवलपर्स](https://othalo.com/hiutions/housing-developers): निजी डेवलपर्स के लिए लागत प्रभावी निर्माण
+- [समाधान / कॉरपोरेशन](https://othalo.com/hiutions/corporations): टर्नकी ईएसजी और सीएसआर कार्यक्रम
+- [हमारे बारे में](https://othalo.com/hiut): मिशन, टीम और प्रभाव
+- [संपर्क](https://othalo.com/hitact): संपर्क करें या उद्धरण का अनुरोध करें
 
 ## उत्पाद: ओथेलो पैनल सिस्टम
 

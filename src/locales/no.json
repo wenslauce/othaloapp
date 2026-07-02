@@ -4,7 +4,7 @@
     "title": "Siden ble ikke funnet",
     "subtitle": "Siden du leter etter eksisterer ikke eller har blitt flyttet.",
     "home": "Tilbake til forsiden",
-    "contact": "Contact Us"
+    "contact": "Kontakt oss"
   },
   "seo": {
     "home": {
@@ -31,6 +31,21 @@
       "title": "Kontakt Othalo — Samarbeid med oss",
       "description": "Ta kontakt med Othalo. Enten du er en myndighet, utbygger eller et selskap, er vi her for å hjelpe deg med bærekraftige boligløsninger.",
       "keywords": "kontakt Othalo, Othalo-partnerskap, boligprosjekt forespørsel"
+    },
+    "governments": {
+      "title": "Regjeringer og kommuner — Othalo boligløsninger",
+      "description": "Lever rimelige, bærekraftige boliger i stor skala. Othalo samarbeider med myndigheter og kommuner for å løse boligkrisen med resirkulert plastteknologi.",
+      "keywords": "kommunale boliger, offentlig boligbygging, rimelige boliger, UN-Habitat, resirkulert plast"
+    },
+    "housing_dev": {
+      "title": "Boligutbyggere — Bærekraftig og rask ROI",
+      "description": "Bygg moduler av høy kvalitet på 72 timer. Samarbeid med Othalo for å redusere byggekostnader og akselerere tidslinjer.",
+      "keywords": "boligutbyggere, modulbasert konstruksjon, bærekraftig eiendom, rask ROI, Othalo paneler"
+    },
+    "corporations": {
+      "title": "Bedrifters ESG- og CSR-boligløsninger — Othalo",
+      "description": "Gjør plastavfall om til målbare sosiale resultater og karbonreduksjon. Oppdag Othalos bedriftsløsninger for ESG-rapportering.",
+      "keywords": "bedrift ESG bolig, CSR prosjekter, plastavfall kompensasjon, bærekraftig partnerskap"
     }
   },
   "nav": {
@@ -100,8 +115,8 @@
       }
     ],
     "gallery_categories": {
-      "community": "The Community",
-      "district": "The District",
+      "community": "Bofellesskapet",
+      "district": "Bydelen",
       "emergency": "Nødboliger",
       "medical": "Medisinske enheter",
       "worker": "Arbeiderboliger",
@@ -193,127 +208,127 @@
     "cta_title": "Din løsning starter her",
     "cta_subtitle": "Enten du representerer myndigheter, er utbygger eller et selskap — vi har en strategi for din kontekst.",
     "quote_cta": "Lær mer",
-    "solutions_section_title": "Your solution starts here",
-    "solutions_gov_name": "Governments — Municipalities",
-    "solutions_dev_name": "Housing Developers",
-    "solutions_corp_name": "Corporations",
-    "solutions_learn_more": "LEARN MORE",
-    "dual_impact_title": "Othalo using one global challenge to solve another",
-    "plastic_modal_title": "Plastic Waste",
-    "plastic_modal_subtitle": "The scale of the global plastic crisis",
+    "solutions_section_title": "Din løsning starter her",
+    "solutions_gov_name": "Myndigheter — Kommuner",
+    "solutions_dev_name": "Boligutbyggere",
+    "solutions_corp_name": "Selskaper",
+    "solutions_learn_more": "LES MER",
+    "dual_impact_title": "Othalo bruker én global utfordring til å løse en annen",
+    "plastic_modal_title": "Plastavfall",
+    "plastic_modal_subtitle": "Omfanget av den globale plastkrisen",
     "plastic_modal_stats": [
       {
-        "stat": "10 billion tons",
-        "detail": "of plastic have ever been produced (OECD 2022, Global Plastics Outlook)"
+        "stat": "10 milliarder tonn",
+        "detail": "plast har noensinne blitt produsert (OECD 2022, Global Plastics Outlook)"
       },
       {
-        "stat": "400 million tons",
-        "detail": "are produced each year"
+        "stat": "400 millioner tonn",
+        "detail": "produseres hvert år"
       },
       {
-        "stat": "40%",
-        "detail": "of all plastic is single-use — used once, then discarded"
+        "stat": "40 %",
+        "detail": "av all plast er engangsbruk — brukt én gang, deretter kastet"
       },
       {
-        "stat": "~9%",
-        "detail": "of plastic waste is actually recycled globally"
+        "stat": "~9 %",
+        "detail": "av plastavfall resirkuleres faktisk globalt"
       },
       {
-        "stat": "80%",
-        "detail": "of plastic waste ends up in landfills — up to 93% in very low-income economies"
+        "stat": "80 %",
+        "detail": "av plastavfall havner på søppelfyllinger — opptil 93 % i svært lavinntektsøkonomier"
       },
       {
-        "stat": "11 million tonnes",
-        "detail": "of plastic enter the ocean every year"
+        "stat": "11 millioner tonn",
+        "detail": "plast havner i havet hvert år"
       },
       {
-        "stat": "In 2022",
-        "detail": "Scientists detected microplastics in human blood for the first time"
+        "stat": "I 2022",
+        "detail": "oppdaget forskere mikroplast i menneskeblod for første gang"
       }
     ],
-    "housing_modal_title": "Affordable Housing",
-    "housing_modal_subtitle": "The scale of the global housing crisis — UN-Habitat, 2025",
-    "housing_modal_section1_title": "People with No Housing (Homelessness)",
+    "housing_modal_title": "Rimelige boliger",
+    "housing_modal_subtitle": "Omfanget av den globale boligkrisen — UN-Habitat, 2025",
+    "housing_modal_section1_title": "Mennesker uten bolig (hjemløshet)",
     "housing_modal_section1_stats": [
       {
         "stat": "300M+",
-        "detail": "people experiencing homelessness globally (UN-Habitat 2025) — grown significantly due to conflict, urbanization, and affordability crises"
+        "detail": "mennesker opplever hjemløshet globalt (UN-Habitat 2025) — vokst betydelig på grunn av konflikter, urbanisering og overkommelighets­kriser"
       },
       {
         "stat": "123M+",
-        "detail": "people forcibly displaced by conflict, persecution, and human rights violations as of end-2024 — double the figure from a decade prior"
+        "detail": "mennesker tvangsfordrevet av konflikter, forfølgelse og menneskerettighets­brudd ved utgangen av 2024 — dobbelt så mange som for et tiår siden"
       }
     ],
-    "housing_modal_section2_title": "People in Inadequate Housing",
+    "housing_modal_section2_title": "Mennesker i utilstrekkelige boliger",
     "housing_modal_section2_stats": [
       {
-        "stat": "~3 billion",
-        "detail": "people — close to 40% of the world's population — caught in an adequate housing crisis: unaffordable prices, poor quality, shortages, or lack of basic services"
+        "stat": "~3 milliarder",
+        "detail": "mennesker — nær 40 % av verdens befolkning — rammet av boligkrise: uoverkommelige priser, dårlig kvalitet, mangel eller fravær av grunnleggende tjenester"
       },
       {
         "stat": "268–288M",
-        "detail": "unit housing deficit globally in 2023, up from 251M in 2010 — a ~30% increase in just over a decade"
+        "detail": "enheter boligunderskudd globalt i 2023, opp fra 251M i 2010 — en ~30 % økning på litt over et tiår"
       },
       {
-        "stat": "96,000",
-        "detail": "affordable homes would need to be built every single day between now and 2030 to close the gap (WRI)"
+        "stat": "96 000",
+        "detail": "rimelige boliger måtte bygges hver eneste dag mellom nå og 2030 for å tette gapet (WRI)"
       }
     ],
-    "housing_modal_section3_title": "People Living in Slums / Informal Settlements",
+    "housing_modal_section3_title": "Mennesker som bor i slumområder / uformelle bosetninger",
     "housing_modal_section3_stats": [
       {
-        "stat": "1.12 billion",
-        "detail": "global slum population in 2022 — up 130M from 2015, reversing earlier progress (UN SDG Report 2024)"
+        "stat": "1,12 milliarder",
+        "detail": "global slumbefolkning i 2022 — opp 130M fra 2015, reverserer tidligere fremgang (FNs SDG-rapport 2024)"
       },
       {
-        "stat": "~25%",
-        "detail": "of the world's urban population lives in slum conditions"
+        "stat": "~25 %",
+        "detail": "av verdens urbane befolkning bor under slumforhold"
       }
     ],
-    "housing_modal_section3_regions_title": "Regional breakdown",
+    "housing_modal_section3_regions_title": "Regional fordeling",
     "housing_modal_section3_regions": [
       {
-        "region": "Central & Southern Asia",
-        "value": "~359 million"
+        "region": "Sentral- og Sør-Asia",
+        "value": "~359 millioner"
       },
       {
-        "region": "Eastern & South-Eastern Asia",
-        "value": "~306 million"
+        "region": "Øst- og Sørøst-Asia",
+        "value": "~306 millioner"
       },
       {
-        "region": "Sub-Saharan Africa",
-        "value": "~230 million"
+        "region": "Afrika sør for Sahara",
+        "value": "~230 millioner"
       }
     ],
-    "housing_modal_section4_title": "2050 Projections",
+    "housing_modal_section4_title": "2050-prognoser",
     "housing_modal_section4_headers": [
-      "Category",
-      "Current (2024–25)",
-      "Projected 2050"
+      "Kategori",
+      "Nåværende (2024–25)",
+      "Prognostisert 2050"
     ],
     "housing_modal_section4_rows": [
       {
-        "cat": "Homeless / no housing",
-        "now": "~300 million",
-        "future": "Expected to worsen significantly without intervention"
+        "cat": "Hjemløs / uten bolig",
+        "now": "~300 millioner",
+        "future": "Forventet å forverres betydelig uten tiltak"
       },
       {
-        "cat": "Inadequate housing",
-        "now": "~3 billion",
-        "future": "Cities absorb 2B additional residents; pressure intensifies dramatically"
+        "cat": "Utilstrekkelig bolig",
+        "now": "~3 milliarder",
+        "future": "Byer absorberer 2 mrd. flere innbyggere; presset øker dramatisk"
       },
       {
-        "cat": "Slum / informal dwellers",
-        "now": "~1.1 billion",
-        "future": "More than 3 billion — a near-tripling"
+        "cat": "Slum / uformelle bosatte",
+        "now": "~1,1 milliarder",
+        "future": "Mer enn 3 milliarder — nesten en tredobling"
       },
       {
-        "cat": "Urban population share",
-        "now": "~55–57%",
-        "future": "~68–70% of world population in cities"
+        "cat": "Andel urban befolkning",
+        "now": "~55–57 %",
+        "future": "~68–70 % av verdens befolkning i byer"
       }
     ],
-    "housing_modal_closing": "The UN predicts more than 3 billion people could be living in slums by 2050 — roughly triple today's figure — driven by rapid urbanization in Sub-Saharan Africa and South Asia. Nearly three-quarters of the urban infrastructure that will exist by 2050 has not been built yet. This is one of the defining infrastructure and humanitarian challenges of this century — and a strong structural tailwind for what Othalo is building."
+    "housing_modal_closing": "FN forutsier at mer enn 3 milliarder mennesker kan bo i slumområder innen 2050 — omtrent tre ganger dagens tall — drevet av rask urbanisering i Afrika sør for Sahara og Sør-Asia. Nesten tre fjerdedeler av den urbane infrastrukturen som vil eksistere i 2050 er ennå ikke bygget. Dette er en av de definerende infrastruktur- og humanitære utfordringene i dette århundret — og en sterk strukturell medvind for det Othalo bygger."
   },
   "about": {
     "label": "Vårt Formål",
@@ -432,13 +447,13 @@
     "story_label": "Vår Historie",
     "story_quote": "Etter å ha tjenestegjort i den norske hæren og etterretning på 90-tallet, så jeg menneskers motstandskraft i konflikter og den harde virkeligheten i flyktningleirer. År senere, på en plastbelagt strand i Nord-Norge, innså jeg at plastkrisen var nærmere enn vi tror. Det øyeblikket tente en idé: kan vi forvandle plastavfall til trygge hjem? Det spørsmålet ble fundamentet for Othalo.",
     "cta": "Oppdag vår teknologi",
-    "page_title": "About",
-    "team_heading": "Team",
-    "team_subtitle_text": "A diverse group of innovators, engineers, and visionaries united by the mission to create sustainable housing solutions.",
-    "discover_btn": "Discover",
-    "culture_heading": "Our culture",
-    "culture_subtitle_text": "What shapes our approach to work and guides us in making a positive impact on the world.",
-    "impact_heading": "Impact created by Othalo"
+    "page_title": "Om oss",
+    "team_heading": "Teamet",
+    "team_subtitle_text": "En mangfoldig gruppe innovatører, ingeniører og visjonærer forent i misjonen om å skape bærekraftige boligløsninger.",
+    "discover_btn": "Oppdag",
+    "culture_heading": "Vår kultur",
+    "culture_subtitle_text": "Det som former vår tilnærming til arbeid og veileder oss i å skape en positiv påvirkning på verden.",
+    "impact_heading": "Påvirkning skapt av Othalo"
   },
   "products": {
     "label": "Produktportefølje",
@@ -573,43 +588,43 @@
         "desc": "En stadig økende krise: 1,6 milliarder mennesker lever uten tilfredsstillende bolig."
       }
     ],
-    "see_how_it_works": "See how it works",
-    "technology_heading": "Technology",
-    "technology_desc": "Our standardized modules combine innovation with practicality, delivering cost efficient, fast to build, and durable and sustainable construction solutions.",
+    "see_how_it_works": "Se hvordan det fungerer",
+    "technology_heading": "Teknologi",
+    "technology_desc": "Våre standardiserte moduler kombinerer innovasjon med praktisk nytte, og leverer kostnadseffektive, raske å bygge og holdbare og bærekraftige konstruksjonsløsninger.",
     "tech_features_alt": [
       {
-        "title": "Innovative patented technology",
-        "desc": "75% of all plastic types including hard to recycle plastic such as sachets, films, and flexibles — not recycled to date."
+        "title": "Innovativ patentert teknologi",
+        "desc": "75 % av alle plasttyper inkludert vanskelig å resirkulere plast som poser, filmer og fleksibel emballasje — ikke resirkulert til dags dato."
       },
       {
-        "title": "Environmental friendly",
-        "desc": "No use of cement and steel, very limited usage of water."
+        "title": "Miljøvennlig",
+        "desc": "Ingen bruk av sement og stål, svært begrenset vannforbruk."
       },
       {
-        "title": "Fast construction",
-        "desc": "Installed in 6 hours with manpower only — no heavy machinery requirements."
+        "title": "Rask konstruksjon",
+        "desc": "Installert på 6 timer med kun arbeidskraft — ingen krav til tungt maskineri."
       },
       {
-        "title": "Safety",
-        "desc": "Hurricane & earthquake resilient design, fire retardant."
+        "title": "Sikkerhet",
+        "desc": "Orkan- og jordskjelvsikker design, brannhemmende."
       },
       {
-        "title": "Superior performance",
-        "desc": "x7 stronger than concrete."
+        "title": "Overlegen ytelse",
+        "desc": "x7 sterkere enn betong."
       },
       {
-        "title": "High standards",
-        "desc": "Meets all relevant construction regulations."
+        "title": "Høye standarder",
+        "desc": "Oppfyller alle relevante byggeforskrifter."
       }
     ],
     "product_lines_names": [
       "The Community",
       "The Emergency Shelter",
       "The Medical Unit and Cold Storage",
-      "The Worker Accomodation"
+      "The Worker Accommodation"
     ],
-    "panel_label": "Prefabricated Panels",
-    "cta_learn_more": "Learn More"
+    "panel_label": "Prefabrikkerte paneler",
+    "cta_learn_more": "Lær mer"
   },
   "solutions": {
     "label": "Hva vi tilbyr",
@@ -759,18 +774,18 @@
     "cta_section_title": "Klar for å utforske en nasjonal utrulling?",
     "cta_section_subtitle": "Vårt team samarbeider direkte med departementer, boligbyggelag og frivillige organisasjoner.",
     "cta_contact": "Kontakt vårt team",
-    "hero_label": "Solutions — Governments & Municipalities",
-    "hero_title": "You are a Government — Municipality",
-    "hero_challenge": "Challenge",
-    "hero_solution": "Othalo Solution",
-    "hero_benefits": "Key Benefits",
-    "hero_partner": "Partner with Othalo to deliver affordable, sustainable, safe housing at scale.",
-    "hero_products_btn": "Products",
-    "form_heading": "Contact our team",
-    "form_org_required": "Organisation is required",
-    "form_reason_required": "Please select a reason",
-    "form_submit": "Send Message",
-    "form_send_another": "Send another message"
+    "hero_label": "Løsninger — Myndigheter og kommuner",
+    "hero_title": "Du er en myndighet — kommune",
+    "hero_challenge": "Utfordring",
+    "hero_solution": "Othalo-løsningen",
+    "hero_benefits": "Viktige fordeler",
+    "hero_partner": "Samarbeid med Othalo for å levere rimelige, bærekraftige og trygge boliger i stor skala.",
+    "hero_products_btn": "Produkter",
+    "form_heading": "Kontakt teamet vårt",
+    "form_org_required": "Organisasjon er påkrevd",
+    "form_reason_required": "Vennligst velg en grunn",
+    "form_submit": "Send melding",
+    "form_send_another": "Send en ny melding"
   },
   "housing_dev": {
     "label": "Løsninger — Utbyggere",
@@ -865,18 +880,18 @@
     "cta_subtitle": "Vi veileder deg gjennom spesifikasjoner, logistikk og den finansielle modellen.",
     "cta1_bottom": "Be om et utbyggingsbrief",
     "cta_contact": "Kontakt vårt team",
-    "hero_label": "Solutions — Housing Developers",
-    "hero_title": "You are a Housing Developer",
-    "hero_challenge": "Challenge",
-    "hero_solution": "Othalo Solution",
-    "hero_benefits": "Key Benefits",
-    "hero_partner": "Partner with Othalo to build faster, reduce costs, and unlock new growth opportunities.",
-    "hero_products_btn": "Products",
-    "form_heading": "Contact our team",
-    "form_org_required": "Organisation is required",
-    "form_reason_required": "Please select a reason",
-    "form_submit": "Send Message",
-    "form_send_another": "Send another message"
+    "hero_label": "Løsninger — Boligutbyggere",
+    "hero_title": "Du er en boligutbygger",
+    "hero_challenge": "Utfordring",
+    "hero_solution": "Othalo-løsningen",
+    "hero_benefits": "Viktige fordeler",
+    "hero_partner": "Samarbeid med Othalo for å bygge raskere, redusere kostnader og låse opp nye vekstmuligheter.",
+    "hero_products_btn": "Produkter",
+    "form_heading": "Kontakt teamet vårt",
+    "form_org_required": "Organisasjon er påkrevd",
+    "form_reason_required": "Vennligst velg en grunn",
+    "form_submit": "Send melding",
+    "form_send_another": "Send en ny melding"
   },
   "corporations": {
     "label": "Løsninger — Selskaper",
@@ -967,18 +982,18 @@
     "cta_subtitle": "Snakk med vårt team for å sette opp et program tilpasset dine mål.",
     "cta1_bottom": "Kontakt bedriftspartnerskap",
     "cta_contact": "Kontakt vårt team",
-    "hero_label": "Solutions — Corporations",
-    "hero_title": "You are a Corporation",
-    "hero_challenge": "Challenge",
-    "hero_solution": "Othalo Solution",
-    "hero_benefits": "Key Benefits",
-    "hero_partner": "Partner with Othalo to turn plastic waste into measurable impact and strategic value.",
-    "hero_products_btn": "Products",
-    "form_heading": "Contact our team",
-    "form_org_required": "Company is required",
-    "form_reason_required": "Please select a reason",
-    "form_submit": "Send Message",
-    "form_send_another": "Send another message"
+    "hero_label": "Løsninger — Selskaper",
+    "hero_title": "Du er et selskap",
+    "hero_challenge": "Utfordring",
+    "hero_solution": "Othalo-løsningen",
+    "hero_benefits": "Viktige fordeler",
+    "hero_partner": "Samarbeid med Othalo for å forvandle plastavfall til målbar påvirkning og strategisk verdi.",
+    "hero_products_btn": "Produkter",
+    "form_heading": "Kontakt teamet vårt",
+    "form_org_required": "Selskap er påkrevd",
+    "form_reason_required": "Vennligst velg en grunn",
+    "form_submit": "Send melding",
+    "form_send_another": "Send en ny melding"
   },
   "contact": {
     "label": "Kontakt",
@@ -1082,48 +1097,48 @@
       "10m_plus": "$10M+",
       "unsure": "Ikke bestemt"
     },
-    "page_title": "Contact us",
+    "page_title": "Kontakt oss",
     "name_placeholder": "John Smith",
-    "name_asterisk": "Full Name *",
+    "name_asterisk": "Fullt navn *",
     "email_placeholder": "john@company.com",
-    "email_asterisk": "Email Address *",
-    "phone_placeholder": "Phone number",
-    "org_label": "Company/Organisation",
-    "title_label": "Title",
-    "title_placeholder": "Job Title",
-    "reason_label": "Reason for contacting us",
-    "reason_placeholder": "Partnerships & Projects",
-    "reason_required": "Please select a reason for contacting us",
-    "message_placeholder_contact": "Tell us about your interest...",
-    "success_send_another": "Send another message",
+    "email_asterisk": "E-postadresse *",
+    "phone_placeholder": "Telefonnummer",
+    "org_label": "Selskap/Organisasjon",
+    "title_label": "Tittel",
+    "title_placeholder": "Stillingstittel",
+    "reason_label": "Grunn til kontakt",
+    "reason_placeholder": "Partnerskap og prosjekter",
+    "reason_required": "Vennligst velg en grunn for å kontakte oss",
+    "message_placeholder_contact": "Fortell oss om din interesse...",
+    "success_send_another": "Send en ny melding",
     "reasons": [
       {
         "value": "general",
-        "label": "General Inquiry"
+        "label": "Generell henvendelse"
       },
       {
         "value": "partnership",
-        "label": "Partnerships & Projects"
+        "label": "Partnerskap og prosjekter"
       },
       {
         "value": "pricing",
-        "label": "Request Pricing / Proposal"
+        "label": "Prisforespørsel / Tilbud"
       },
       {
         "value": "technical",
-        "label": "Technical & Product Information"
+        "label": "Teknisk og produktinformasjon"
       },
       {
         "value": "investor",
-        "label": "Investor Inquiry"
+        "label": "Investorhenvendelse"
       },
       {
         "value": "media",
-        "label": "Media / Press"
+        "label": "Media / Presse"
       },
       {
         "value": "careers",
-        "label": "Careers"
+        "label": "Karriere"
       }
     ]
   },
@@ -1170,10 +1185,10 @@
     "security_check": "Vennligst fullfør sikkerhetssjekken.",
     "err_profile": "Vennligst velg profiltype",
     "err_product": "Vennligst velg produktkonfigurasjon",
-    "err_name": "Full name is required",
-    "err_email": "Valid email address required",
-    "err_phone": "Invalid phone number format",
-    "err_country": "Country is required"
+    "err_name": "Fullt navn er påkrevd",
+    "err_email": "Gyldig e-postadresse er påkrevd",
+    "err_phone": "Ugyldig telefonnummerformat",
+    "err_country": "Land er påkrevd"
   },
   "footer": {
     "tagline": "Forvandler plastavfall til verdige, bærekraftige boliger for lokalsamfunn over hele verden.",
@@ -1182,26 +1197,26 @@
     "legal": "Juridisk",
     "rights": "Alle rettigheter forbeholdt.",
     "registered": "Registrert i Norge — Bygger en bærekraftig fremtid",
-    "social_label": "Join, share, like, follow us on:",
+    "social_label": "Bli med, del, lik, følg oss på:",
     "links": [
       {
-        "label": "Contact us",
+        "label": "Kontakt oss",
         "href": "/contact"
       },
       {
-        "label": "Products",
+        "label": "Produkter",
         "href": "/products"
       },
       {
-        "label": "About",
+        "label": "Om oss",
         "href": "/about"
       },
       {
-        "label": "Terms of service",
+        "label": "Brukervilkår",
         "href": "/terms"
       },
       {
-        "label": "Privacy policy",
+        "label": "Personvernerklæring",
         "href": "/privacy"
       }
     ],
@@ -1223,9 +1238,9 @@
       }
     ],
     "company_name": "Othalo Group Ltd",
-    "registration_no": "Registration no.:",
-    "license_no": "License no.:",
-    "address_heading": "Address",
+    "registration_no": "Registreringsnr.:",
+    "license_no": "Lisenssnr.:",
+    "address_heading": "Adresse",
     "address_line1": "RAK Innovation City, Post Box #30099",
     "address_line2": "RAKBANK Headquarters, Government of Ras Al Khaimah",
     "address_line3": "United Arab Emirates"
@@ -1233,57 +1248,176 @@
   "privacy": {
     "label": "Juridisk",
     "title": "Personvernerklæring",
-    "effective": "Ikrafttredelse: 9. mai 2026"
+    "effective": "Ikrafttredelse: 9. mai 2026",
+    "sections": [
+      {
+        "title": "1. Innledning",
+        "content": "Othalo AS («Othalo», «vi», «oss» eller «vår») er forpliktet til å beskytte og respektere ditt personvern. Denne personvernerklæringen forklarer hvordan vi samler inn, bruker, utleverer og sikrer informasjonen din når du besøker nettstedet vårt othalo.com («nettstedet») eller benytter deg av tjenestene våre. Vennligst les denne erklæringen nøye. Hvis du ikke er enig i vilkårene, må du slutte å bruke nettstedet."
+      },
+      {
+        "title": "2. Informasjon vi samler inn",
+        "content": "Vi kan samle inn følgende typer informasjon:\n\nPersonlig identifikasjonsinformasjon: Navn, e-postadresse, telefonnummer, stillingstittel og organisasjonsnavn når du sender inn et kontaktskjema, ber om et tilbud eller på annen måte kommuniserer med oss.\n\nTeknisk informasjon: IP-adresse, nettlesertype og -versjon, operativsystem, henvisningskilde, besøkets varighet, sidevisninger og navigasjonsveier på nettstedet, samlet inn via informasjonskapsler (cookies) og lignende sporingsteknologi.\n\nKommunikasjon: Logger over korrespondanse hvis du kontakter oss, inkludert e-post og meldinger sendt via nettstedet vårt.\n\nVi samler ikke inn sensitive personopplysninger (som helseopplysninger, økonomisk kontoinformasjon eller nasjonale identifikasjonsnumre) via dette nettstedet."
+      },
+      {
+        "title": "3. Hvordan vi bruker informasjonen din",
+        "content": "Vi bruker informasjonen vi samler inn til å:\n\n• Svare på henvendelser og levere tjenestene du ber om\n• Sende deg informasjon om våre produkter og løsninger som du har bedt om\n• Behandle transaksjoner og sende relatert informasjon\n• Forbedre og optimalisere nettstedet vårt og brukeropplevelsen\n• Overholde juridiske forpliktelser\n• Sende periodiske e-poster angående våre tjenester (du kan melde deg av når som helst)\n• Overvåke og analysere bruksmønstre for å forbedre funksjonaliteten\n\nVi selger, bytter eller på annen måte overfører ikke dine personopplysninger til tredjeparter uten ditt samtykke, unntatt som beskrevet i denne erklæringen."
+      },
+      {
+        "title": "4. Rettslig grunnlag for behandlingen (GDPR)",
+        "content": "For brukere i Det europeiske økonomiske samarbeidsområdet (EØS) behandler vi dine personopplysninger under følgende rettslige grunnlag:\n\nSamtykke: Der du har gitt uttrykkelig samtykke (f.eks. ved å abonnere på nyhetsbrevet vårt).\n\nBerettigede interesser: For å svare på henvendelser, forbedre tjenestene våre og utføre markedsføringsaktiviteter der disse interessene ikke overstyres av dine personvernsrettigheter.\n\nAvtalemessig nødvendighet: Der behandling er nødvendig for å oppfylle en avtale eller ta skritt på din forespørsel før en avtale inngås.\n\nRettslig forpliktelse: Der vi er pålagt å overholde gjeldende lover."
+      },
+      {
+        "title": "5. Informasjonskapsler og sporingsteknologi",
+        "content": "Nettstedet vårt bruker informasjonskapsler og lignende sporingsteknologier for å forbedre nettleseropplevelsen din. Typer informasjonskapsler vi bruker:\n\nNødvendige informasjonskapsler: Nødvendige for at nettstedet skal fungere, og kan ikke slås av.\n\nAnalyse-informasjonskapsler: Hjelper oss å forstå hvordan besøkende samhandler med nettstedet vårt (f.eks. Google Analytics). Data som samles inn er aggregert og anonymisert.\n\nMarkedsføringsinformasjonskapsler: Brukes til å levere relevante annonser og spore kampanjens effektivitet.\n\nDu kan kontrollere eller deaktivere informasjonskapsler via nettleserinnstillingene dine. Vær oppmerksom på at deaktivering av visse informasjonskapsler kan påvirke nettstedets funksjonalitet."
+      },
+      {
+        "title": "6. Lagring av data",
+        "content": "Vi lagrer personopplysninger bare så lenge det er nødvendig for formålene de ble samlet inn for, eller som kreves av gjeldende lov. Henvendelsesdata lagres vanligvis i opptil 3 år. Markedsføringsdata lagres til du melder deg av eller ber om sletting. Analysedata kan lagres i anonymisert form på ubestemt tid."
+      },
+      {
+        "title": "7. Internasjonale dataoverføringer",
+        "content": "Othalo AS er registrert i Norge og opererer under EØS-lovgivningen. Hvis vi overfører dataene dine utenfor EØS, sikrer vi at nødvendige garantier er på plass, for eksempel standardkontrakter godkjent av EU-kommisjonen, for å beskytte informasjonen din i samsvar med denne personvernerklæringen."
+      },
+      {
+        "title": "8. Dine rettigheter",
+        "content": "Avhengig av din jurisdiksjon kan du ha følgende rettigheter knyttet til dine personopplysninger:\n\n• Rett til innsyn: Be om en kopi av personopplysningene vi har om deg\n• Rett til retting: Be om korrigering av unøyaktige eller ufullstendige data\n• Rett til sletting: Be om sletting av dine personopplysninger («retten til å bli glemt»)\n• Rett til begrensning av behandling: Be om at vi begrenser hvordan vi bruker dataene dine\n• Rett til dataportabilitet: Motta dataene dine i et strukturert, maskinlesbart format\n• Rett til å protestere: Protestere mot vår behandling av dine personopplysninger\n• Rett til å trekke tilbake samtykke: Trekke tilbake samtykket når som helst der behandlingen er basert på samtykke\n\nFor å utøve noen av disse rettighetene, vennligst kontakt oss på privacy@othalo.com."
+      },
+      {
+        "title": "9. Lenker til tredjeparter",
+        "content": "Nettstedet vårt kan inneholde lenker til tredjeparts nettsteder. Vi har ingen kontroll over, og påtar oss intet ansvar for, innholdet, personvernreglene eller praksisen til tredjeparts nettsteder. Vi oppfordrer deg til å lese personvernerklæringen for alle nettsteder du besøker."
+      },
+      {
+        "title": "10. Datasikkerhet",
+        "content": "Vi iverksetter egnede tekniske og organisatoriske tiltak for å beskytte personopplysningene dine mot uautorisert tilgang, endring, utlevering eller ødeleggelse. Disse inkluderer kryptert dataoverføring (HTTPS), tilgangskontroll og regelmessige sikkerhetsvurderinger. Ingen metode for overføring over Internett eller elektronisk lagring er imidlertid 100 % sikker."
+      },
+      {
+        "title": "11. Barns personvern",
+        "content": "Nettstedet vårt er ikke rettet mot personer under 16 år. Vi samler ikke bevisst inn personopplysninger fra barn. Hvis du tror vi utilsiktet har samlet inn informasjon fra et barn, vennligst kontakt oss umiddelbart slik at vi kan slette den."
+      },
+      {
+        "title": "12. Endringer i denne erklæringen",
+        "content": "Vi kan oppdatere denne personvernerklæringen fra tid til annen. Vi vil varsle deg om vesentlige endringer ved å legge ut den nye erklæringen på denne siden med en oppdatert ikrafttredelsesdato. Vi oppfordrer deg til å lese gjennom denne erklæringen med jevne mellomrom."
+      },
+      {
+        "title": "13. Kontakt oss",
+        "content": "Hvis du har spørsmål eller bekymringer om denne personvernerklæringen eller vår datapraksis, vennligst kontakt:\n\nOthalo AS\nPersonvernombud\nE-post: privacy@othalo.com\nAdresse: Oslo, Norge\n\nDu har også rett til å klage til Datatilsynet på www.datatilsynet.no."
+      }
+    ]
   },
   "terms": {
     "label": "Juridisk",
     "title": "Brukervilkår",
-    "effective": "Ikrafttredelse: 9. mai 2026"
+    "effective": "Ikrafttredelse: 9. mai 2026",
+    "sections": [
+      {
+        "title": "1. Godkjenning av vilkår",
+        "content": "Ved å gå inn på eller bruke nettstedet til Othalo AS på othalo.com («nettstedet»), godtar du å være bundet av disse brukervilkårene («vilkårene»). Hvis du ikke godtar disse vilkårene, må du ikke bruke nettstedet. Disse vilkårene gjelder for alle besøkende, brukere og andre som besøker eller bruker nettstedet."
+      },
+      {
+        "title": "2. Om Othalo",
+        "content": "Othalo AS er et norsk teknologiselskap registrert under norsk lov. Vi utvikler og kommersialiserer patenterte modulære boligløsninger produsert av resirkulert plast, og betjener regjeringer, boligutbyggere, selskaper og frivillige organisasjoner globalt.\n\nSelskapsregistrering: Othalo AS, Oslo, Norge\nKontakt: contact@othalo.com"
+      },
+      {
+        "title": "3. Bruk av nettstedet",
+        "content": "Du godtar å bruke nettstedet kun til lovlige formål og i samsvar med disse vilkårene. Du godtar å ikke:\n\n• Bruke nettstedet på noen måte som bryter med gjeldende lokale, nasjonale eller internasjonale lover eller regler\n• Sende uoppfordret reklame eller kampanjemateriell\n• Bevisst overføre data eller materiale som inneholder virus, trojanske hester eller annen skadelig kode\n• Forsøke å få uautorisert tilgang til noen del av nettstedet eller tilhørende systemer\n• Utføre handlinger som hindrer eller begrenser andres bruk eller glede av nettstedet\n• Bruke nettstedet til å samle inn informasjon om andre brukere uten samtykke\n\nVi forbeholder oss retten til å avslutte tilgangen din til nettstedet umiddelbart, uten varsel, dersom vi har rimelig grunn til å tro at du har brutt disse vilkårene."
+      },
+      {
+        "title": "4. Immaterielle rettigheter",
+        "content": "Alt innhold på dette nettstedet — inkludert tekst, grafikk, logoer, bilder, produktdesign, teknologibeskrivelser og programvare — tilhører Othalo AS eller dets innholdsleverandører og er beskyttet av norsk og internasjonal lovgivning om immaterielle rettigheter.\n\nNavnet Othalo, logoen og alle relaterte produktnavn, designmerker og slagord er varemerker for Othalo AS. Du kan ikke bruke varemerker eller varenavn uten skriftlig forhåndssamtykke.\n\nOthalos strukturelle panelsystem er beskyttet av patenter i flere jurisdiksjoner. Ingenting på dette nettstedet gir lisens eller rett til å bruke patentert teknologi.\n\nDu kan vise og laste ned innhold fra dette nettstedet utelukkende til personlig, ikke-kommersiell bruk, forutsatt at du beholder alle merknader om opphavsrett og andre eiendomsrettigheter inntakt."
+      },
+      {
+        "title": "5. Produkter og tjenester",
+        "content": "Produktene og tjenestene som beskrives på dette nettstedet er avhengig av tilgjengelighet og kan variere fra region til region. Produktspesifikasjoner, priser og leveringstider er veiledende og krever formelle tilbud. Ingenting på dette nettstedet utgjør et bindende tilbud om salg.\n\nAlle produkttilbud, partnerskap og utbyggingsavtaler er underlagt separate skriftlige avtaler mellom Othalo AS og den relevante parten. Disse vilkårene regulerer ikke slike avtaler."
+      },
+      {
+        "title": "6. Informasjonens nøyaktighet",
+        "content": "Vi bestreber oss på å sikre at informasjonen på dette nettstedet er nøyaktig og oppdatert. Vi gir imidlertid ingen garantier av noe slag, uttrykkelig eller underforstått, om fullstendigheten, nøyaktigheten, påliteligheten, egnetheten eller tilgjengeligheten til informasjonen, produktene eller tjenestene på nettstedet.\n\nTekniske spesifikasjoner, effektberegninger og ytelsespåstander er basert på kontrollerte tester og representative installasjoner. Faktiske resultater kan variere avhengig av lokale forhold, klargjøring av tomten og byggeskikk."
+      },
+      {
+        "title": "7. Tredjeparts lenker",
+        "content": "Nettstedet kan inneholde lenker til tredjeparts nettsteder eller ressurser. Disse lenkene er kun ment som en tjeneste for deg. Vi har ingen kontroll over innholdet på disse nettstedene eller ressursene, og påtar oss intet ansvar for dem eller for tap eller skade som måtte oppstå som følge av din bruk av dem."
+      },
+      {
+        "title": "8. Ansvarsfraskrivelse",
+        "content": "NETTSTEDET OG ALT INNHOLD LEVERES «SOM DET ER» UTEN NOEN FORM FOR GARANTI, UTTRYKKELIG ELLER UNDERFORSTÅTT. OTHALO AS FRASKRIVER SEG ALLE GARANTIER, INKLUDERT GARANTIER FOR SALGBARHET, EGNETHET FOR ET BESTEMT FORMÅL OG IKKE-INNFIRING, I DEN GRAD DET ER TILLATT ETTER GJELDENDE LOV.\n\nVi garanterer ikke at nettstedet vil være uavbrutt eller feilfritt, at feil vil bli rettet, eller at nettstedet eller serveren som gjør det tilgjengelig, er fri for virus eller andre skadelige komponenter."
+      },
+      {
+        "title": "9. Ansvarsbegrensning",
+        "content": "OTHALO AS, DETS DIREKTØRER, ANSATTE, PARTNERE ELLER AGENTER SKAL IKKE UNDER NOEN OMSTENDIGHETER HOLDES ANSVARLIG FOR INDIREKTE, TILFELDIGE, SPESIELLE ELLER KONSEKVENSSKADER, INKLUDERT MEN IKKE BEGRENSET TIL TAP AV FORTJENESTE, DATA ELLER GOODWILL, SOM FØLGE AV DIN BRUK AV NETTSTEDET.\n\nDenne ansvarsbegrensningen gjelder uansett om ansvaret oppstår på grunnlag av kontrakt, erstatningsrett (inkludert uaktsomhet) eller på annen måte, selv om skaden var forutsigbar."
+      },
+      {
+        "title": "10. Personvern",
+        "content": "Din bruk av nettstedet er også underlagt vår personvernerklæring, som er innlemmet i disse vilkårene ved referanse. Vennligst les personvernerklæringen for å forstå vår praksis angående innsamling og bruk av personopplysninger."
+      },
+      {
+        "title": "11. Lovvalg og jurisdiksjon",
+        "content": "Disse vilkårene og eventuelle tvister som måtte oppstå som følge av eller i forbindelse med dem, skal reguleres av og tolkes i samsvar med norsk lov.\n\nEventuelle tvister skal være underlagt den eksklusive jurisdiksjonen til domstolene i Oslo, Norge, med mindre ufravikelige regler for forbrukerbeskyttelse i ditt land krever noe annet."
+      },
+      {
+        "title": "12. Endringer i vilkårene",
+        "content": "Vi forbeholder oss retten til å endre disse vilkårene når som helst. Vi vil legge ut de reviderte vilkårene på denne siden med en oppdatert dato. Ved å fortsette å bruke nettstedet etter at endringene har trådt i kraft, godtar du de reviderte vilkårene."
+      },
+      {
+        "title": "13. Bestemmelsers gyldighet",
+        "content": "Dersom en bestemmelse i disse vilkårene blir funnet å være ugyldig eller ikke kan håndheves, skal denne bestemmelsen falle bort, og de øvrige bestemmelsene skal forbli i full kraft."
+      },
+      {
+        "title": "14. Kontakt",
+        "content": "Hvis du har spørsmål om disse brukervilkårene, kan du kontakte oss:\n\nOthalo AS\nE-post: legal@othalo.com\nAdresse: Oslo, Norway"
+      }
+    ]
   },
   "error": {
     "boundary_title": "Noe gikk galt",
     "boundary_subtitle": "En uventet feil har oppstått. Vennligst prøv å laste siden på nytt.",
     "refresh": "Last siden på nytt",
     "home": "Gå til forsiden",
-    "boundary_desc": "We encountered an unexpected error while rendering this page. Our technical team has been notified."
+    "boundary_desc": "Vi oppdaget en uventet feil under visning av denne siden. Vårt tekniske team har blitt varslet."
   },
   "faqs": {
     "label": "FAQ",
-    "title": "Technical & Sustainability Questions",
-    "subtitle": "Common questions from governments, developers, and partners about Othalo's building system, standards, and environmental credentials.",
+    "title": "Tekniske og bærekraftsspørsmål",
+    "subtitle": "Vanlige spørsmål fra myndigheter, utbyggere og partnere om Othalos byggesystem, standarder og miljøegenskaper.",
     "items": [
       {
-        "q": "What is the Othalo panel made from?",
-        "a": "Othalo panels are manufactured from 100% recycled plastic — primarily sourced from collected ocean-bound and landfill plastic waste. No virgin plastic, cement, or steel is used in the structural system."
+        "q": "Hva er Othalo-panelet laget av?",
+        "a": "Othalo-paneler er produsert av 100 % resirkulert plast — primært hentet fra innsamlet havnær og deponibasert plastavfall. Ingen jomfruelig plast, sement eller stål brukes i det strukturelle systemet."
       },
       {
-        "q": "How does the building system meet international housing standards?",
-        "a": "Othalo structures are engineered to comply with international building codes including ISO, Eurocodes, and local equivalents. Each panel is independently tested for structural load, fire resistance (Class B1 self-extinguishing), wind loads (Category 5 hurricane, >200 km/h), and seismic zones up to Zone 4."
+        "q": "Hvordan oppfyller byggesystemet internasjonale boligstandarder?",
+        "a": "Othalo-konstruksjoner er ingeniørmessig utviklet for å overholde internasjonale byggeforskrifter inkludert ISO, Eurokoder og lokale tilsvarende. Hvert panel er uavhengig testet for strukturell belastning, brannmotstand (Klasse B1 selvslukking), vindlaster (Kategori 5 orkan, >200 km/t), og seismiske soner opptil Sone 4."
       },
       {
-        "q": "What is the lifespan of an Othalo structure?",
-        "a": "Othalo panels are rated for a minimum of 60 years under normal environmental conditions. The recycled plastic does not rot, corrode, or degrade from moisture exposure, making it particularly durable in tropical, coastal, and high-humidity climates."
+        "q": "Hva er levetiden til en Othalo-konstruksjon?",
+        "a": "Othalo-paneler er vurdert for minimum 60 års levetid under normale miljøforhold. Den resirkulerte plasten råtner ikke, korroderer ikke eller brytes ned av fukteksponering, noe som gjør den spesielt holdbar i tropiske, kystnære og høyfuktighetsklima."
       },
       {
-        "q": "How is thermal performance ensured?",
-        "a": "The Othalo panel system provides thermal insulation approximately 3× more effective than equivalent concrete walls. The hollow-core design creates natural air insulation, reducing the need for additional insulation materials and lowering cooling and heating energy costs."
+        "q": "Hvordan sikres termisk ytelse?",
+        "a": "Othalo-panelsystemet gir termisk isolasjon som er omtrent 3× mer effektiv enn tilsvarende betongvegger. Hulkjernedesignet skaper naturlig luftisolasjon, som reduserer behovet for ekstra isolasjonsmaterialer og senker oppvarmings- og avkjølingskostnader."
       },
       {
-        "q": "Is the material safe — are there any harmful emissions?",
-        "a": "The recycled plastic we use is classified as one of the safest plastics. It is food-grade certified, does not off-gas under normal conditions, and does not leach harmful chemicals. Othalo panels have been tested to confirm no volatile organic compound (VOC) emissions in occupied environments."
+        "q": "Er materialet trygt — finnes det skadelige utslipp?",
+        "a": "Den resirkulerte plasten vi bruker er klassifisert som en av de tryggeste plasttypene. Den er matvaregodkjent, avgasser ikke under normale forhold, og lekker ikke skadelige kjemikalier. Othalo-paneler er testet for å bekrefte ingen flyktige organiske forbindelser (VOC) i beboede miljøer."
       },
       {
-        "q": "How does Othalo contribute to sustainability and carbon reduction?",
-        "a": "Each 2-bedroom unit diverts approximately 8 tonnes of plastic from the environment. The construction process requires no cement (a major CO₂ source), no steel, and minimal water. The entire lifecycle — from collection to construction — is designed to maximize carbon efficiency and generate verifiable SDG impact data."
+        "q": "Hvordan bidrar Othalo til bærekraft og karbonreduksjon?",
+        "a": "Hver 2-roms enhet fjerner omtrent 8 tonn plast fra miljøet. Byggeprosessen krever ingen sement (en stor CO₂-kilde), inget stål, og minimalt med vann. Hele livssyklusen — fra innsamling til konstruksjon — er designet for å maksimere karboneffektivitet og generere verifiserbare SDG-påvirkningsdata."
       },
       {
-        "q": "Can the structures be adapted to local building codes and climates?",
-        "a": "Yes. Othalo works directly with local engineers and authorities to ensure compliance with national building regulations. The modular panel system can be configured for different roof types, foundations, wall thicknesses, and utility integrations to suit tropical, arid, or temperate climate conditions."
+        "q": "Kan konstruksjonene tilpasses lokale byggeforskrifter og klimaforhold?",
+        "a": "Ja. Othalo samarbeider direkte med lokale ingeniører og myndigheter for å sikre overholdelse av nasjonale byggeforskrifter. Det modulære panelsystemet kan konfigureres for ulike taktyper, fundamenter, veggtykkelser og installasjonsintegrasjoner for å passe tropiske, tørre eller tempererte klimaforhold."
       },
       {
-        "q": "What certifications and endorsements does Othalo hold?",
-        "a": "Othalo is endorsed by UN-HABITAT for a Better Urban Future. The system has been tested and validated through independent structural and fire safety laboratories. Specific test reports and compliance documentation are available upon request for government procurement and NGO vetting processes."
+        "q": "Hvilke sertifiseringer og godkjenninger har Othalo?",
+        "a": "Othalo er godkjent av UN-HABITAT for en bedre urban fremtid. Systemet er testet og validert gjennom uavhengige strukturelle og brannsikkerhetslaboratorier. Spesifikke testrapporter og samsvardokumentasjon er tilgjengelig på forespørsel for offentlige anskaffelser og NGO-vurderingsprosesser."
       }
     ]
+  },
+  "cookies": {
+    "title": "Vi verdsetter ditt personvern",
+    "text": "Vi bruker informasjonskapsler for å forbedre din nettleseropplevelse, vise personlig tilpasset innhold og analysere trafikken vår. Ved å klikke på «Godta alle», samtykker du til vår bruk av informasjonskapsler.",
+    "accept": "Godta alle",
+    "reject": "Avvis",
+    "learn_more": "Les mer"
   }
 }

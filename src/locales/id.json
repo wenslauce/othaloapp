@@ -1,4 +1,11 @@
 {
+  "404": {
+    "code": "404",
+    "title": "Halaman Tidak Ditemukan",
+    "subtitle": "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+    "home": "Kembali ke Beranda",
+    "contact": "Hubungi Kami"
+  },
   "seo": {
     "home": {
       "title": "Othalo — Rumah Terjangkau dan Berkelanjutan dari Plastik Daur Ulang",
@@ -24,6 +31,21 @@
       "title": "Contact Othalo — Partner with Us",
       "description": "Get in touch with Othalo. Whether you're a government, developer, or corporation, we're here to help you deploy sustainable housing solutions.",
       "keywords": "contact Othalo, Othalo partnerships, housing project inquiry"
+    },
+    "governments": {
+      "title": "Governments & Municipalities — Othalo Housing Solutions",
+      "description": "Deploy affordable, sustainable housing at scale. Othalo partners with governments and municipalities to close the housing gap using recycled plastic technology.",
+      "keywords": "government housing program, municipal housing, affordable housing deployment, UN-Habitat, recycled plastic construction"
+    },
+    "housing_dev": {
+      "title": "Housing Developers — Sustainable & Fast ROI Construction",
+      "description": "Build high-quality modular housing in 72 hours. Partner with Othalo to lower construction costs, accelerate project timelines, and deliver eco-friendly developments.",
+      "keywords": "housing developers, modular construction, sustainable real estate, fast ROI building, Othalo panels"
+    },
+    "corporations": {
+      "title": "Corporate ESG & CSR Housing Solutions — Othalo",
+      "description": "Turn plastic waste into measurable social impact and carbon offsets. Discover Othalo's corporate solutions for ESG reporting and community development.",
+      "keywords": "corporate ESG housing, CSR housing projects, plastic waste offsets, sustainable corporate partnership"
     }
   },
   "nav": {
@@ -52,45 +74,116 @@
     "plastic_modal_title": "Sampah Plastik",
     "plastic_modal_subtitle": "Skala krisis plastik global",
     "plastic_modal_stats": [
-      { "stat": "10 militar ton", "detail": "plastik telah diproduksi (OECD 2022, Global Plastics Outlook)" },
-      { "stat": "400 juta ton", "detail": "diproduksi setiap tahun" },
-      { "stat": "40%", "detail": "dari semua plastik adalah plastik sekali pakai — digunakan sekali, lalu dibuang" },
-      { "stat": "~9%", "detail": "sampah plastik yang benar-benar didaur ulang secara global" },
-      { "stat": "80%", "detail": "sampah plastik berakhir di tempat pembuangan akhir — hingga 93% di negara berpenghasilan sangat rendah" },
-      { "stat": "11 juta ton", "detail": "plastik masuk ke laut setiap tahun" },
-      { "stat": "Pada tahun 2022", "detail": "Para ilmuwan mendeteksi mikroplastik dalam darah manusia untuk pertama kalinya" }
+      {
+        "stat": "10 militar ton",
+        "detail": "plastik telah diproduksi (OECD 2022, Global Plastics Outlook)"
+      },
+      {
+        "stat": "400 juta ton",
+        "detail": "diproduksi setiap tahun"
+      },
+      {
+        "stat": "40%",
+        "detail": "dari semua plastik adalah plastik sekali pakai — digunakan sekali, lalu dibuang"
+      },
+      {
+        "stat": "~9%",
+        "detail": "sampah plastik yang benar-benar didaur ulang secara global"
+      },
+      {
+        "stat": "80%",
+        "detail": "sampah plastik berakhir di tempat pembuangan akhir — hingga 93% di negara berpenghasilan sangat rendah"
+      },
+      {
+        "stat": "11 juta ton",
+        "detail": "plastik masuk ke laut setiap tahun"
+      },
+      {
+        "stat": "Pada tahun 2022",
+        "detail": "Para ilmuwan mendeteksi mikroplastik dalam darah manusia untuk pertama kalinya"
+      }
     ],
     "housing_modal_title": "Perumahan Terjangkau",
     "housing_modal_subtitle": "Skala krisis perumahan global — UN-Habitat, 2025",
     "housing_modal_section1_title": "Orang Tanpa Tempat Tinggal (Tunawisma)",
     "housing_modal_section1_stats": [
-      { "stat": "300 Juta+", "detail": "orang mengalami tunawisma secara global (UN-Habitat 2025) — tumbuh signifikan karena konflik, urbanisasi, dan krisis keterjangkauan" },
-      { "stat": "123 Juta+", "detail": "orang terpaksa mengungsi akibat konflik, penganiayaan, dan pelanggaran hak asasi manusia hingga akhir 2024 — dua kali lipat dari angka satu dekade sebelumnya" }
+      {
+        "stat": "300 Juta+",
+        "detail": "orang mengalami tunawisma secara global (UN-Habitat 2025) — tumbuh signifikan karena konflik, urbanisasi, dan krisis keterjangkauan"
+      },
+      {
+        "stat": "123 Juta+",
+        "detail": "orang terpaksa mengungsi akibat konflik, penganiayaan, dan pelanggaran hak asasi manusia hingga akhir 2024 — dua kali lipat dari angka satu dekade sebelumnya"
+      }
     ],
     "housing_modal_section2_title": "Orang di Perumahan yang Tidak Layak",
     "housing_modal_section2_stats": [
-      { "stat": "~3 miliar", "detail": "orang — mendekati 40% dari populasi dunia — terjebak dalam krisis perumahan yang layak: harga yang tidak terjangkau, kualitas buruk, kekurangan, atau kurangnya layanan dasar" },
-      { "stat": "268–288 Juta", "detail": "defisit unit perumahan secara global pada tahun 2023, naik dari 251 Juta pada tahun 2010 — peningkatan ~30% hanya dalam waktu satu dekade" },
-      { "stat": "96.000", "detail": "rumah terjangkau perlu dibangun setiap hari antara sekarang dan tahun 2030 untuk menutup kesenjangan tersebut (WRI)" }
+      {
+        "stat": "~3 miliar",
+        "detail": "orang — mendekati 40% dari populasi dunia — terjebak dalam krisis perumahan yang layak: harga yang tidak terjangkau, kualitas buruk, kekurangan, atau kurangnya layanan dasar"
+      },
+      {
+        "stat": "268–288 Juta",
+        "detail": "defisit unit perumahan secara global pada tahun 2023, naik dari 251 Juta pada tahun 2010 — peningkatan ~30% hanya dalam waktu satu dekade"
+      },
+      {
+        "stat": "96.000",
+        "detail": "rumah terjangkau perlu dibangun setiap hari antara sekarang dan tahun 2030 untuk menutup kesenjangan tersebut (WRI)"
+      }
     ],
     "housing_modal_section3_title": "Orang yang Tinggal di Permukiman Kumuh / Liar",
     "housing_modal_section3_stats": [
-      { "stat": "1,12 miliar", "detail": "populasi kumuh global pada tahun 2022 — naik 130 Juta dari tahun 2015, membalikkan kemajuan sebelumnya (Laporan SDG PBB 2024)" },
-      { "stat": "~25%", "detail": "dari populasi perkotaan dunia tinggal dalam kondisi kumuh" }
+      {
+        "stat": "1,12 miliar",
+        "detail": "populasi kumuh global pada tahun 2022 — naik 130 Juta dari tahun 2015, membalikkan kemajuan sebelumnya (Laporan SDG PBB 2024)"
+      },
+      {
+        "stat": "~25%",
+        "detail": "dari populasi perkotaan dunia tinggal dalam kondisi kumuh"
+      }
     ],
     "housing_modal_section3_regions_title": "Rincian wilayah",
     "housing_modal_section3_regions": [
-      { "region": "Asia Tengah & Selatan", "value": "~359 juta" },
-      { "region": "Asia Timur & Tenggara", "value": "~306 juta" },
-      { "region": "Afrika Sub-Sahara", "value": "~230 juta" }
+      {
+        "region": "Asia Tengah & Selatan",
+        "value": "~359 juta"
+      },
+      {
+        "region": "Asia Timur & Tenggara",
+        "value": "~306 juta"
+      },
+      {
+        "region": "Afrika Sub-Sahara",
+        "value": "~230 juta"
+      }
     ],
     "housing_modal_section4_title": "Proyeksi 2050",
-    "housing_modal_section4_headers": ["Kategori", "Saat Ini (2024–25)", "Proyeksi 2050"],
+    "housing_modal_section4_headers": [
+      "Kategori",
+      "Saat Ini (2024–25)",
+      "Proyeksi 2050"
+    ],
     "housing_modal_section4_rows": [
-      { "cat": "Tunawisma / tanpa perumahan", "now": "~300 juta", "future": "Diperkirakan memburuk secara signifikan tanpa intervensi" },
-      { "cat": "Perumahan tidak layak", "now": "~3 hilyar", "future": "Kota menyerap 2 miliar penduduk tambahan; tekanan meningkat drastis" },
-      { "cat": "Penduduk kumuh / liar", "now": "~1,1 miliar", "future": "Lebih dari 3 hilyar — hampir tiga kali lipat" },
-      { "cat": "Pangsa populasi perkotaan", "now": "~55–57%", "future": "~68–70% populasi dunia di perkotaan" }
+      {
+        "cat": "Tunawisma / tanpa perumahan",
+        "now": "~300 juta",
+        "future": "Diperkirakan memburuk secara signifikan tanpa intervensi"
+      },
+      {
+        "cat": "Perumahan tidak layak",
+        "now": "~3 hilyar",
+        "future": "Kota menyerap 2 miliar penduduk tambahan; tekanan meningkat drastis"
+      },
+      {
+        "cat": "Penduduk kumuh / liar",
+        "now": "~1,1 miliar",
+        "future": "Lebih dari 3 hilyar — hampir tiga kali lipat"
+      },
+      {
+        "cat": "Pangsa populasi perkotaan",
+        "now": "~55–57%",
+        "future": "~68–70% populasi dunia di perkotaan"
+      }
     ],
     "housing_modal_closing": "PBB memproyeksikan lebih dari 3 miliar orang dapat tinggal di permukiman kumuh pada tahun 2050 — sekitar tiga kali lipat dari angka saat ini — didorong by urbanisasi yang cepat di Afrika Sub-Sahara dan Asia Selatan. Hampir tiga perempat dari infrastruktur perkotaan yang akan ada pada tahun 2050 belum dibangun saat ini. Ini adalah salah satu tantangan infrastruktur dan kemanusiaan yang menentukan di abad ini — dan angin pendorong struktural yang kuat untuk apa yang sedang dibangun Othalo.",
     "hero_badge": "Teknologi yang Dipatenkan",
@@ -102,10 +195,22 @@
     "tech_title": "Solusi paling efektif untuk tantangan perumahan di Afrika",
     "tech_subtitle": "Panel kami mengatasi krisis sampah plastik dan defisit perumahan terjangkau secara bersamaan — satu tantangan global menyelesaikan tantangan lainnya.",
     "tech_features": [
-      { "title": "Teknologi paten yang inovatif", "desc": "Proses milik kami mengubah limbah plastik menjadi panel struktural 7x lebih kuat dari beton." },
-      { "title": "Ramah lingkungan", "desc": "Nol semen, nol baja, nol air dalam konstruksi. 8 ton plastik dialihkan per unit rumah." },
-      { "title": "Konstruksi cepat", "desc": "Dari panel mentah hingga struktur selesai hanya dalam waktu 72 jam menggunakan tenaga kerja lokal." },
-      { "title": "Diuji keamanannya", "desc": "Tahan api, tahan badai dan gempa bumi. Memenuhi standar bangunan internasional." }
+      {
+        "title": "Teknologi paten yang inovatif",
+        "desc": "Proses milik kami mengubah limbah plastik menjadi panel struktural 7x lebih kuat dari beton."
+      },
+      {
+        "title": "Ramah lingkungan",
+        "desc": "Nol semen, nol baja, nol air dalam konstruksi. 8 ton plastik dialihkan per unit rumah."
+      },
+      {
+        "title": "Konstruksi cepat",
+        "desc": "Dari panel mentah hingga struktur selesai hanya dalam waktu 72 jam menggunakan tenaga kerja lokal."
+      },
+      {
+        "title": "Diuji keamanannya",
+        "desc": "Tahan api, tahan badai dan gempa bumi. Memenuhi standar bangunan internasional."
+      }
     ],
     "quote_text": "Hanya ada satu teknologi di dunia saat ini yang dapat melakukan sesuatu yang nyata tentang kekurangan perumahan di Afrika dan masalah sampah plastik, dan itu adalah Othalo.",
     "quote_author": "Dr. Vincent Kitio",
@@ -113,10 +218,22 @@
     "approach_label": "Pendekatan Kami",
     "approach_title": "Membangun masa depan perumahan dari plastik daur ulang",
     "approach_items": [
-      { "title": "Dari plastik ke konstruksi berkualitas tinggi", "desc": "Teknologi kami yang dipatenkan mengubah plastik daur ulang menjadi panel dinding struktural yang 7x lebih kuat dari beton, sepenuhnya tahan api, dan dirancang untuk bertahan 60+ tahun." },
-      { "title": "Dirancang untuk kondisi dunia nyata", "desc": "Tahan badai, gempa bumi, dan banjir. Panel kami diuji untuk berkinerja di iklim ekstrem, dari tropis pesisir hingga dataran tinggi gersang — dibangun untuk tempat di mana perumahan paling dibutuhkan." },
-      { "title": "Solusi fleksibel yang disesuaikan secara lokal", "desc": "Sistem modular kami beradaptasi dengan tata letak apa pun — unit tunggal, blok multi-keluarga, sekolah, klinik kesehatan. Setiap proyek dikonfigurasi untuk kebutuhan lokal dan dirakit oleh pekerja lokal." },
-      { "title": "Dibangun untuk skala, kecepatan, dan dampak", "desc": "Rantai pasokan pabrik-ke-lapangan kami memungkinkan penerapan yang cepat. Satu kontainer panel membangun rumah dua kamar tidur lengkap, dikirim dan siap dirakit dalam waktu kurang dari seminggu." }
+      {
+        "title": "Dari plastik ke konstruksi berkualitas tinggi",
+        "desc": "Teknologi kami yang dipatenkan mengubah plastik daur ulang menjadi panel dinding struktural yang 7x lebih kuat dari beton, sepenuhnya tahan api, dan dirancang untuk bertahan 60+ tahun."
+      },
+      {
+        "title": "Dirancang untuk kondisi dunia nyata",
+        "desc": "Tahan badai, gempa bumi, dan banjir. Panel kami diuji untuk berkinerja di iklim ekstrem, dari tropis pesisir hingga dataran tinggi gersang — dibangun untuk tempat di mana perumahan paling dibutuhkan."
+      },
+      {
+        "title": "Solusi fleksibel yang disesuaikan secara lokal",
+        "desc": "Sistem modular kami beradaptasi dengan tata letak apa pun — unit tunggal, blok multi-keluarga, sekolah, klinik kesehatan. Setiap proyek dikonfigurasi untuk kebutuhan lokal dan dirakit oleh pekerja lokal."
+      },
+      {
+        "title": "Dibangun untuk skala, kecepatan, dan dampak",
+        "desc": "Rantai pasokan pabrik-ke-lapangan kami memungkinkan penerapan yang cepat. Satu kontainer panel membangun rumah dua kamar tidur lengkap, dikirim dan siap dirakit dalam waktu kurang dari seminggu."
+      }
     ],
     "gallery_categories": {
       "community": "Komunitas",
@@ -130,24 +247,84 @@
       "label": "Analisis Kompetitif",
       "title": "Teknologi dan inovasi terdepan di pasar",
       "subtitle": "Perbandingan langsung dengan metode konstruksi tradisional.",
-      "headers": ["Fitur", "Othalo", "Beton", "Rangka Baja", "Kayu"],
+      "headers": [
+        "Fitur",
+        "Othalo",
+        "Beton",
+        "Rangka Baja",
+        "Kayu"
+      ],
       "rows": [
-        { "f": "Waktu pembangunan (unit 2BR)", "o": "72 jam", "c": "3–6 bulan", "s": "2–4 bulan", "t": "1–3 bulan" },
-        { "f": "Sampah plastik dialihkan", "o": "8 ton", "c": "Tidak ada", "s": "Tidak ada", "t": "Tidak ada" },
-        { "f": "Masa hidup", "o": "60+ tahun", "c": "40–50 tahun", "s": "30–50 tahun", "t": "20–30 tahun" },
-        { "f": "Tahan api", "o": "Ya", "c": "Ya", "s": "Tidak", "t": "Tidak" },
-        { "f": "Tahan gempa", "o": "Ya", "c": "Bervariasi", "s": "Ya", "t": "Sebagian" },
-        { "f": "Penggunaan air dalam konstruksi", "o": "Tidak ada", "c": "Tinggi", "s": "Sedang", "t": "Rendah" },
-        { "f": "Semen/baja diperlukan", "o": "Tidak ada", "c": "Tinggi", "s": "Tinggi", "t": "Beberapa" },
-        { "f": "Sertifikasi UN-Habitat", "o": "Ya", "c": "Bervariasi", "s": "Bervariasi", "t": "Bervariasi" }
+        {
+          "f": "Waktu pembangunan (unit 2BR)",
+          "o": "72 jam",
+          "c": "3–6 bulan",
+          "s": "2–4 bulan",
+          "t": "1–3 bulan"
+        },
+        {
+          "f": "Sampah plastik dialihkan",
+          "o": "8 ton",
+          "c": "Tidak ada",
+          "s": "Tidak ada",
+          "t": "Tidak ada"
+        },
+        {
+          "f": "Masa hidup",
+          "o": "60+ tahun",
+          "c": "40–50 tahun",
+          "s": "30–50 tahun",
+          "t": "20–30 tahun"
+        },
+        {
+          "f": "Tahan api",
+          "o": "Ya",
+          "c": "Ya",
+          "s": "Tidak",
+          "t": "Tidak"
+        },
+        {
+          "f": "Tahan gempa",
+          "o": "Ya",
+          "c": "Bervariasi",
+          "s": "Ya",
+          "t": "Sebagian"
+        },
+        {
+          "f": "Penggunaan air dalam konstruksi",
+          "o": "Tidak ada",
+          "c": "Tinggi",
+          "s": "Sedang",
+          "t": "Rendah"
+        },
+        {
+          "f": "Semen/baja diperlukan",
+          "o": "Tidak ada",
+          "c": "Tinggi",
+          "s": "Tinggi",
+          "t": "Beberapa"
+        },
+        {
+          "f": "Sertifikasi UN-Habitat",
+          "o": "Ya",
+          "c": "Bervariasi",
+          "s": "Bervariasi",
+          "t": "Bervariasi"
+        }
       ]
     },
     "esg_title": "Othalo membantu memberikan hasil ESG yang nyata dan terukur",
     "esg_subtitle": "Selaras dengan 9 dari 17 Tujuan Pembangunan Berkelanjutan PBB.",
     "sdg_names": {
-      "1": "Tanpa Kemiskinan", "6": "Air Bersih", "8": "Pekerjaan Layak", "9": "Industri & Inovasi",
-      "10": "Berkurangnya Kesenjangan", "11": "Kota Berkelanjutan", "12": "Konsumsi yang Bertanggung Jawab",
-      "13": "Aksi Iklim", "17": "Kemitraan"
+      "1": "Tanpa Kemiskinan",
+      "6": "Air Bersih",
+      "8": "Pekerjaan Layak",
+      "9": "Industri & Inovasi",
+      "10": "Berkurangnya Kesenjangan",
+      "11": "Kota Berkelanjutan",
+      "12": "Konsumsi yang Bertanggung Jawab",
+      "13": "Aksi Iklim",
+      "17": "Kemitraan"
     },
     "cta_title": "Solusi Anda dimulai di sini",
     "cta_subtitle": "Baik Anda pemerintah, pengembang, atau perusahaan — kami memiliki strategi penerapan yang dirancang untuk konteks Anda.",
@@ -167,41 +344,112 @@
     "mission_label": "Misi kami",
     "mission": "Mengubah sampah plastik menjadi rumah dan perumahan menjadi harapan.",
     "values_label": "Nilai-nilai kami",
-    "values_items": ["Lakukan kebaikan", "Integritas", "Kesetaraan untuk semua orang", "Pemberdayaan lokal", "Komunitas yang aman untuk generasi berikutnya"],
+    "values_items": [
+      "Lakukan kebaikan",
+      "Integritas",
+      "Kesetaraan untuk semua orang",
+      "Pemberdayaan lokal",
+      "Komunitas yang aman untuk generasi berikutnya"
+    ],
     "team_label": "Orang-orang",
     "team_title": "Tim Kami",
     "team_subtitle": "Sekelompok inovator, insinyur, dan visioner yang beragam yang disatukan oleh misi untuk menciptakan solusi perumahan berkelanjutan.",
     "team_members": {
-      "frank": { "name": "Frank Cato Lahti", "title": "Pendiri & CEO", "bio": "Wirausahawan visioner dengan latar belakang intelijen militer dan hasrat akan inovasi lingkungan." },
-      "claus": { "name": "Claus Skadkjaer", "title": "Presiden & COO", "bio": "Pakar operasi yang berfokus pada peningkatan teknologi berkelanjutan dan penerapan global." },
-      "martin": { "name": "Martin Dokkedal", "title": "Chief Supply Chain Officer", "bio": "Mengoptimalkan logistik global untuk menghadirkan teknologi Othalo ke komunitas yang paling terpencil." },
-      "thomas": { "name": "Thomas Meidell Loesnes", "title": "Chief Legal Officer", "bio": "Memastikan kepatuhan regulasi dan melindungi portofolio paten global kami." },
-      "kjell": { "name": "Kjell Steen", "title": "Kepala Produksi", "bio": "Veteran manufaktur industri yang memimpin fasilitas produksi panel kami." },
-      "bengt": { "name": "Bengt Erling Berg", "title": "Kepala Dukungan Teknis", "bio": "Menyediakan keahlian teknis dan panduan di lokasi untuk penerapan Othalo." },
-      "stephane": { "name": "Stephane Bernard", "title": "Chief Commercial Officer", "bio": "Mendorong pertumbuhan dan kemitraan strategis di seluruh pasar internasional." },
-      "wenslauce": { "name": "Wenslauce Chengo", "title": "Manajer Negara Kenya", "bio": "Memimpin dampak Othalo dan hubungan masyarakat di Afrika Timur." },
-      "meranda": { "name": "Meranda Chan", "title": "Kepala Pemasaran", "bio": "Memimpin strategi pemasaran global dan komunikasi merek Othalo." }
+      "frank": {
+        "name": "Frank Cato Lahti",
+        "title": "Pendiri & CEO",
+        "bio": "Wirausahawan visioner dengan latar belakang intelijen militer dan hasrat akan inovasi lingkungan."
+      },
+      "claus": {
+        "name": "Claus Skadkjaer",
+        "title": "Presiden & COO",
+        "bio": "Pakar operasi yang berfokus pada peningkatan teknologi berkelanjutan dan penerapan global."
+      },
+      "martin": {
+        "name": "Martin Dokkedal",
+        "title": "Chief Supply Chain Officer",
+        "bio": "Mengoptimalkan logistik global untuk menghadirkan teknologi Othalo ke komunitas yang paling terpencil."
+      },
+      "thomas": {
+        "name": "Thomas Meidell Loesnes",
+        "title": "Chief Legal Officer",
+        "bio": "Memastikan kepatuhan regulasi dan melindungi portofolio paten global kami."
+      },
+      "kjell": {
+        "name": "Kjell Steen",
+        "title": "Kepala Produksi",
+        "bio": "Veteran manufaktur industri yang memimpin fasilitas produksi panel kami."
+      },
+      "bengt": {
+        "name": "Bengt Erling Berg",
+        "title": "Kepala Dukungan Teknis",
+        "bio": "Menyediakan keahlian teknis dan panduan di lokasi untuk penerapan Othalo."
+      },
+      "stephane": {
+        "name": "Stephane Bernard",
+        "title": "Chief Commercial Officer",
+        "bio": "Mendorong pertumbuhan dan kemitraan strategis di seluruh pasar internasional."
+      },
+      "wenslauce": {
+        "name": "Wenslauce Chengo",
+        "title": "Manajer Negara Kenya",
+        "bio": "Memimpin dampak Othalo dan hubungan masyarakat di Afrika Timur."
+      },
+      "meranda": {
+        "name": "Meranda Chan",
+        "title": "Kepala Pemasaran",
+        "bio": "Memimpin strategi pemasaran global dan komunikasi merek Othalo."
+      }
     },
     "culture_label": "Budaya Kami",
     "culture_title": "Didorong oleh tujuan, berlabuh pada keunggulan.",
     "culture_subtitle": "Apa yang membentuk pendekatan kami dalam bekerja dan memandu kami dalam membuat dampak positif bagi dunia.",
     "culture_values": [
-      { "title": "Kerja sama tim", "desc": "Kolaborasi dan saling mendukung mendorong kesuksesan kami. Kami percaya pada kekuatan bekerja sama untuk mencapai hasil yang luar biasa." },
-      { "title": "Ketepatan waktu", "desc": "Kami menghormati tenggat waktu dan memenuhi janji kami. Ketepatan waktu dan efisiensi adalah inti dari keunggulan operasional kami." },
-      { "title": "Komunikasi", "desc": "Dialog yang terbuka dan transparan memastikan penyelarasan dan pemahaman di semua tingkatan organisasi kami." },
-      { "title": "Komitmen", "desc": "Kami berdedikasi pada misi kami untuk menciptakan solusi perumahan berkelanjutan dan memberikan dampak positif pada dunia." }
+      {
+        "title": "Kerja sama tim",
+        "desc": "Kolaborasi dan saling mendukung mendorong kesuksesan kami. Kami percaya pada kekuatan bekerja sama untuk mencapai hasil yang luar biasa."
+      },
+      {
+        "title": "Ketepatan waktu",
+        "desc": "Kami menghormati tenggat waktu dan memenuhi janji kami. Ketepatan waktu dan efisiensi adalah inti dari keunggulan operasional kami."
+      },
+      {
+        "title": "Komunikasi",
+        "desc": "Dialog yang terbuka dan transparan memastikan penyelarasan dan pemahaman di semua tingkatan organisasi kami."
+      },
+      {
+        "title": "Komitmen",
+        "desc": "Kami berdedikasi pada misi kami untuk menciptakan solusi perumahan berkelanjutan dan memberikan dampak positif pada dunia."
+      }
     ],
     "impact_label": "Perubahan Nyata",
     "impact_title": "Dampak triple bottom line kami — manusia, planet, dan kemakmuran.",
     "impact_items": [
-      { "num": "01", "title": "Dampak lingkungan", "desc": "Plastik dihilangkan dari lingkungan; tidak ada penggunaan semen dan baja." },
-      { "num": "02", "title": "Dampak sosial", "desc": "Rumah untuk masyarakat berpenghasilan rendah hingga menengah." },
-      { "num": "03", "title": "Dampak ekonomi", "desc": "Menciptakan lapangan kerja di negara berkembang." }
+      {
+        "num": "01",
+        "title": "Dampak lingkungan",
+        "desc": "Plastik dihilangkan dari lingkungan; tidak ada penggunaan semen dan baja."
+      },
+      {
+        "num": "02",
+        "title": "Dampak sosial",
+        "desc": "Rumah untuk masyarakat berpenghasilan rendah hingga menengah."
+      },
+      {
+        "num": "03",
+        "title": "Dampak ekonomi",
+        "desc": "Menciptakan lapangan kerja di negara berkembang."
+      }
     ],
     "contributions": {
-      "vision": "Visi & Strategi", "operations": "Operasi", "supply": "Rantai Pasok",
-      "legal": "Hukum & Kepatuhan", "manufacturing": "Manufaktur", "engineering": "Teknik",
-      "business": "Pengembangan Bisnis", "pr": "Kenya & PR"
+      "vision": "Visi & Strategi",
+      "operations": "Operasi",
+      "supply": "Rantai Pasok",
+      "legal": "Hukum & Kepatuhan",
+      "manufacturing": "Manufaktur",
+      "engineering": "Teknik",
+      "business": "Pengembangan Bisnis",
+      "pr": "Kenya & PR"
     },
     "story_label": "Kisah Kami",
     "story_quote": "Setelah bertugas di Tentara Norwegia dan Intelijen dalam misi NATO pada tahun 1990-an, saya menyaksikan ketangguhan orang-orang yang hidup melalui konflik dan realitas keras kamp pengungsi. Bertahun-tahun kemudian, berdiri di pantai tertutup plastik di Norwegia utara, saya menyadari krisis limbah global lebih dekat daripada yang kita pikirkan. Momen itu memicu ide berani: dapatkah kita mengubah limbah plastik menjadi rumah yang aman dan layak? Pertanyaan itu menjadi fondasi Othalo.",
@@ -215,14 +463,37 @@
     "technology_heading": "Teknologi",
     "technology_desc": "Modul standar kami menggabungkan inovasi dengan kepraktisan, menghasilkan solusi konstruksi hemat biaya, cepat dibangun, serta tahan lama dan berkelanjutan.",
     "tech_features_alt": [
-      { "title": "Teknologi paten yang inovatif", "desc": "75% dari semua jenis plastik termasuk plastik yang sulit didaur ulang seperti sachet, film, dan plastik fleksibel — yang belum didaur ulang hingga saat ini." },
-      { "title": "Ramah lingkungan", "desc": "Tidak menggunakan semen dan baja, penggunaan air sangat terbatas." },
-      { "title": "Konstruksi cepat", "desc": "Dipasang dalam waktu 6 jam dengan tenaga manusia saja — tidak ada persyaratan alat berat." },
-      { "title": "Keamanan", "desc": "Desain tahan badai & gempa bumi, tahan api." },
-      { "title": "Kinerja unggul", "desc": "7x lebih kuat dari beton." },
-      { "title": "Standar tinggi", "desc": "Memenuhi semua peraturan konstruksi yang relevan." }
+      {
+        "title": "Teknologi paten yang inovatif",
+        "desc": "75% dari semua jenis plastik termasuk plastik yang sulit didaur ulang seperti sachet, film, dan plastik fleksibel — yang belum didaur ulang hingga saat ini."
+      },
+      {
+        "title": "Ramah lingkungan",
+        "desc": "Tidak menggunakan semen dan baja, penggunaan air sangat terbatas."
+      },
+      {
+        "title": "Konstruksi cepat",
+        "desc": "Dipasang dalam waktu 6 jam dengan tenaga manusia saja — tidak ada persyaratan alat berat."
+      },
+      {
+        "title": "Keamanan",
+        "desc": "Desain tahan badai & gempa bumi, tahan api."
+      },
+      {
+        "title": "Kinerja unggul",
+        "desc": "7x lebih kuat dari beton."
+      },
+      {
+        "title": "Standar tinggi",
+        "desc": "Memenuhi semua peraturan konstruksi yang relevan."
+      }
     ],
-    "product_lines_names": ["Komunitas", "Tempat Penampungan Darurat", "Unit Medis dan Penyimpanan Dingin", "Akomodasi Pekerja"],
+    "product_lines_names": [
+      "Komunitas",
+      "Tempat Penampungan Darurat",
+      "Unit Medis dan Penyimpanan Dingin",
+      "Akomodasi Pekerja"
+    ],
     "panel_label": "Panel Prefabrikasi",
     "un_habitat_badge": "Didukung oleh UN-HABITAT",
     "un_habitat_note": "Untuk Masa Depan Perkotaan yang Lebih Baik",
@@ -231,24 +502,87 @@
     "tech_label": "Keuntungan Teknis",
     "tech_title": "Teknologi dan inovasi terdepan di pasar",
     "panel_features": [
-      { "title": "Hemat Biaya", "desc": "Dipabrikasi di luar lokasi dengan limbah rendah. Tenaga kerja dan mesin terbatas yang dibutuhkan di lokasi. Dibangun 100% dari bahan plastik daur ulang yang hemat biaya." },
-      { "title": "Konstruksi Cepat", "desc": "Rumah dengan 2 kamar tidur dapat didirikan dalam waktu satu hari karena teknologi perakitan interlock terkemuka di pasar." },
-      { "title": "Kualitas dan daya tahan", "desc": "Masa pakai 60 tahun. 7x lebih kuat dari beton. Isolasi 3x lebih efektif daripada beton." },
-      { "title": "Keamanan", "desc": "Tahan api. Tahan badai & gempa bumi." },
-      { "title": "Sangat Berkelanjutan", "desc": "Tidak ada semen atau baja yang digunakan. Penggunaan air rendah dalam konstruksi." }
+      {
+        "title": "Hemat Biaya",
+        "desc": "Dipabrikasi di luar lokasi dengan limbah rendah. Tenaga kerja dan mesin terbatas yang dibutuhkan di lokasi. Dibangun 100% dari bahan plastik daur ulang yang hemat biaya."
+      },
+      {
+        "title": "Konstruksi Cepat",
+        "desc": "Rumah dengan 2 kamar tidur dapat didirikan dalam waktu satu hari karena teknologi perakitan interlock terkemuka di pasar."
+      },
+      {
+        "title": "Kualitas dan daya tahan",
+        "desc": "Masa pakai 60 tahun. 7x lebih kuat dari beton. Isolasi 3x lebih efektif daripada beton."
+      },
+      {
+        "title": "Keamanan",
+        "desc": "Tahan api. Tahan badai & gempa bumi."
+      },
+      {
+        "title": "Sangat Berkelanjutan",
+        "desc": "Tidak ada semen atau baja yang digunakan. Penggunaan air rendah dalam konstruksi."
+      }
     ],
     "material_label": "Bahan",
     "material_value": "100% Plastik Daur Ulang",
     "comparison_title": "Teknologi dan inovasi terdepan di pasar",
-    "comparison_headers": ["Rincian", "Othalo", "Pencetakan 3D", "Bangunan Panel Tiga", "Konstruksi Tradisional"],
+    "comparison_headers": [
+      "Rincian",
+      "Othalo",
+      "Pencetakan 3D",
+      "Bangunan Panel Tiga",
+      "Konstruksi Tradisional"
+    ],
     "comparison_rows": [
-      { "p": "Siap pasar", "o": "penuh", "d": "tidak ada", "r": "sebagian", "t": "penuh" },
-      { "p": "Waktu produksi rendah", "o": "penuh", "d": "tidak ada", "r": "tidak ada", "t": "sebagian" },
-      { "p": "Dapat didaur ulang", "o": "penuh", "d": "sebagian", "r": "sebagian", "t": "tidak ada" },
-      { "p": "Berkelanjutan", "o": "penuh", "d": "sebagian", "r": "sebagian", "t": "tidak ada" },
-      { "p": "Bahan baku mudah diakses", "o": "penuh", "d": "tidak ada", "r": "sebagian", "t": "tidak ada" },
-      { "p": "Biaya rendah", "o": "penuh", "d": "tidak ada", "r": "tidak ada", "t": "sebagian" },
-      { "p": "Produksi industri", "o": "penuh", "d": "tidak ada", "r": "tidak ada", "t": "sebagian" }
+      {
+        "p": "Siap pasar",
+        "o": "penuh",
+        "d": "tidak ada",
+        "r": "sebagian",
+        "t": "penuh"
+      },
+      {
+        "p": "Waktu produksi rendah",
+        "o": "penuh",
+        "d": "tidak ada",
+        "r": "tidak ada",
+        "t": "sebagian"
+      },
+      {
+        "p": "Dapat didaur ulang",
+        "o": "penuh",
+        "d": "sebagian",
+        "r": "sebagian",
+        "t": "tidak ada"
+      },
+      {
+        "p": "Berkelanjutan",
+        "o": "penuh",
+        "d": "sebagian",
+        "r": "sebagian",
+        "t": "tidak ada"
+      },
+      {
+        "p": "Bahan baku mudah diakses",
+        "o": "penuh",
+        "d": "tidak ada",
+        "r": "sebagian",
+        "t": "tidak ada"
+      },
+      {
+        "p": "Biaya rendah",
+        "o": "penuh",
+        "d": "tidak ada",
+        "r": "tidak ada",
+        "t": "sebagian"
+      },
+      {
+        "p": "Produksi industri",
+        "o": "penuh",
+        "d": "tidak ada",
+        "r": "tidak ada",
+        "t": "sebagian"
+      }
     ],
     "fulfilled": "Terpenuhi",
     "partially_fulfilled": "Terpenuhi sebagian",
@@ -256,18 +590,39 @@
     "lines_title": "Konfigurasi perumahan",
     "lines_subtitle": "Setiap konfigurasi dirancang secara khusus, modular, dan dapat disesuaikan secara lokal.",
     "product_lines": [
-      { "name": "Komunitas (The Community)", "desc": "Unit satu keluarga dan multi-keluarga yang dioptimalkan untuk penyebaran perkotaan yang cepat dan program perumahan berpenghasilan rendah." },
-      { "name": "Distrik (The District)", "desc": "Kluster perumahan dengan kepadatan menengah untuk keluarga. Integrasi infrastruktur penuh termasuk utilitas." },
-      { "name": "Tempat Penampungan Darurat (The Emergency Shelter)", "desc": "Perumahan darurat yang cepat diterapkan untuk bantuan bencana dan misi kemanusiaan." },
-      { "name": "Unit Medis (The Medical Units)", "desc": "Modul perawatan kesehatan khusus termasuk klinik, bangsal isolasi, dan pusat diagnosis." },
-      { "name": "Akomodasi Pekerja (The Worker Accommodation)", "desc": "Akomodasi pekerja yang dibangun khusus untuk lokasi konstruksi, operasi penambangan, dan penyebaran industri." }
+      {
+        "name": "Komunitas (The Community)",
+        "desc": "Unit satu keluarga dan multi-keluarga yang dioptimalkan untuk penyebaran perkotaan yang cepat dan program perumahan berpenghasilan rendah."
+      },
+      {
+        "name": "Distrik (The District)",
+        "desc": "Kluster perumahan dengan kepadatan menengah untuk keluarga. Integrasi infrastruktur penuh termasuk utilitas."
+      },
+      {
+        "name": "Tempat Penampungan Darurat (The Emergency Shelter)",
+        "desc": "Perumahan darurat yang cepat diterapkan untuk bantuan bencana dan misi kemanusiaan."
+      },
+      {
+        "name": "Unit Medis (The Medical Units)",
+        "desc": "Modul perawatan kesehatan khusus termasuk klinik, bangsal isolasi, dan pusat diagnosis."
+      },
+      {
+        "name": "Akomodasi Pekerja (The Worker Accommodation)",
+        "desc": "Akomodasi pekerja yang dibangun khusus untuk lokasi konstruksi, operasi penambangan, dan penyebaran industri."
+      }
     ],
     "get_quote": "Dapatkan Penawaran",
     "dual_label": "Dampak Ganda",
     "dual_title": "Menggunakan satu tantangan global untuk menyelesaikan tantangan lainnya",
     "dual_items": [
-      { "title": "Sampah plastik", "desc": "Liabilitas global: lebih dari 10 miliar ton telah terakumulasi di lingkungan." },
-      { "title": "Perumahan terjangkau", "desc": "3,4 miilar orang secara global kekurangan perumahan yang layak (UN-Habitat, 2026)." }
+      {
+        "title": "Sampah plastik",
+        "desc": "Liabilitas global: lebih dari 10 miliar ton telah terakumulasi di lingkungan."
+      },
+      {
+        "title": "Perumahan terjangkau",
+        "desc": "3,4 miilar orang secara global kekurangan perumahan yang layak (UN-Habitat, 2026)."
+      }
     ],
     "cta_learn_more": "Pelajari Lebih Lanjut"
   },
@@ -281,24 +636,46 @@
     "contact_us": "Hubungi Kami",
     "cards": [
       {
-        "label": "Pemerintah — Kotamadya", "tag": "Sektor Publik",
+        "label": "Pemerintah — Kotamadya",
+        "tag": "Sektor Publik",
         "headline": "Perumahan pada skala dan kecepatan yang dibutuhkan pemerintah",
         "desc": "Rumah terjangkau dari plastik daur ulang untuk skala besar. Sistem modular prefabrikasi dengan teknologi yang dipatenkan dan didukung oleh PBB.",
-        "bullets": ["Rumah terjangkau dari plastik daur ulang untuk skala besar", "Sistem modular prefabrikasi dengan teknologi yang dipatenkan dan didukung oleh PBB", "Pembangunan lebih cepat untuk kecepatan", "Multi-lantai (hingga 4 lantai)", "Patuh secara global, dapat disesuaikan secara lokal"],
+        "bullets": [
+          "Rumah terjangkau dari plastik daur ulang untuk skala besar",
+          "Sistem modular prefabrikasi dengan teknologi yang dipatenkan dan didukung oleh PBB",
+          "Pembangunan lebih cepat untuk kecepatan",
+          "Multi-lantai (hingga 4 lantai)",
+          "Patuh secara global, dapat disesuaikan secara lokal"
+        ],
         "cta": "Minta Pengarahan Pemerintah"
       },
       {
-        "label": "Pengembang Perumahan", "tag": "Sektor Swasta",
+        "label": "Pengembang Perumahan",
+        "tag": "Sektor Swasta",
         "headline": "Jalur tercepat dari lahan hingga perumahan yang diserahkan",
         "desc": "Konstruksi yang lebih cepat dan lebih hemat biaya. Desain fleksibel menyesuaikan dengan proyek, pasar, dan regulasi Anda.",
-        "bullets": ["Konstruksi yang lebih cepat dan lebih hemat biaya", "Sistem modular prefabrikasi dari plastik daur ulang", "Eksekusi di lokasi yang disederhanakan", "Komponen ringan dan terukur", "Desain fleksibel menyesuaikan dengan proyek, pasar, dan regulasi Anda"],
+        "bullets": [
+          "Konstruksi yang lebih cepat dan lebih hemat biaya",
+          "Sistem modular prefabrikasi dari plastik daur ulang",
+          "Eksekusi di lokasi yang disederhanakan",
+          "Komponen ringan dan terukur",
+          "Desain fleksibel menyesuaikan dengan proyek, pasar, dan regulasi Anda"
+        ],
         "cta": "Minta Penawaran Pengembang"
       },
       {
-        "label": "Perusahaan", "tag": "ESG Perusahaan",
+        "label": "Perusahaan",
+        "tag": "ESG Perusahaan",
         "headline": "Keunggulan ESG yang memberikan perubahan nyata di dunia",
         "desc": "Platform ESG siap pakai. Hubungkan kepatuhan + dampak lingkungan + sosial. Ubah limbah menjadi bahan konstruksi nyata.",
-        "bullets": ["Platform ESG siap pakai", "Hubungkan kepatuhan + dampak lingkungan + sosial", "Ubah limbah menjadi bahan konstruksi nyata", "Dampak terukur, terverifikasi, dan terukur untuk pelaporan", "Eksekusi cepat", "Program keterlibatan pemangku kepentingan"],
+        "bullets": [
+          "Platform ESG siap pakai",
+          "Hubungkan kepatuhan + dampak lingkungan + sosial",
+          "Ubah limbah menjadi bahan konstruksi nyata",
+          "Dampak terukur, terverifikasi, dan terukur untuk pelaporan",
+          "Eksekusi cepat",
+          "Program keterlibatan pemangku kepentingan"
+        ],
         "cta": "Jelajahi Kemitraan Perusahaan"
       }
     ]
@@ -318,30 +695,88 @@
     "cta2": "Hubungi Kami",
     "challenge_label": "Tantangan",
     "challenge_title": "Batasan bangunan tradisional",
-    "challenge_bullets": ["Meningkatnya permintaan perumahan", "Urbanisasi yang cepat + pertumbuhan populasi", "Meningkatnya biaya konstruksi", "Bangunan tradisional lambat, mahal, karbon tinggi", "Tidak layak pada skala yang dibutuhkan"],
+    "challenge_bullets": [
+      "Meningkatnya permintaan perumahan",
+      "Urbanisasi yang cepat + pertumbuhan populasi",
+      "Meningkatnya biaya konstruksi",
+      "Bangunan tradisional lambat, mahal, karbon tinggi",
+      "Tidak layak pada skala yang dibutuhkan"
+    ],
     "solution_label": "Solusi Othalo",
     "solution_title": "Skala tanpa kompromi",
-    "solution_bullets": ["Rumah terjangkau dari plastik daur ulang untuk skala besar", "Sistem modular prefabrikasi dengan teknologi yang dipatenkan dan didukung oleh PBB", "Pembangunan lebih cepat untuk kecepatan", "Multi-lantai (hingga 4 lantai)", "Patuh secara global, dapat disesuaikan secara lokal"],
+    "solution_bullets": [
+      "Rumah terjangkau dari plastik daur ulang untuk skala besar",
+      "Sistem modular prefabrikasi dengan teknologi yang dipatenkan dan didukung oleh PBB",
+      "Pembangunan lebih cepat untuk kecepatan",
+      "Multi-lantai (hingga 4 lantai)",
+      "Patuh secara global, dapat disesuaikan secara lokal"
+    ],
     "benefits_label": "Mengapa Othalo untuk Pemerintah",
     "benefits_title": "Strategi perumahan sektor publik yang memberikan hasil",
     "benefits": [
-      { "title": "Skala rumah terjangkau dengan cepat dan efisien", "desc": "Skala rumah terjangkau dengan cepat dan efisien untuk memenuhi tuntutan pertumbuhan populasi." },
-      { "title": "Bangun untuk proyek perkotaan dengan kepadatan lebih tinggi", "desc": "Bangun untuk proyek perkotaan dengan kepadatan lebih tinggi dengan kemampuan multi-lantai." },
-      { "title": "Kurangi biaya dengan alternatif pengganti baja dan semen", "desc": "Kurangi biaya dengan alternatif pengganti baja dan semen kami yang dipatenkan." },
-      { "title": "Bangun lebih cepat dengan prefabrikasi (hari, bukan bulan)", "desc": "Bangun lebih cepat dengan prefabrikasi—menyerahkan rumah dalam hitungan hari, bukan bulan." },
-      { "title": "Jejak karbon lebih rendah dengan bahan sirkular", "desc": "Jejak karbon lebih rendah dengan bahan sirkular yang berkelanjutan yang dialihkan dari limbah." },
-      { "title": "Desain fleksibel untuk memenuhi kebutuhan lokal", "desc": "Desain fleksibel untuk memenuhi kebutuhan lokal tertentu dan persyaratan regulasi." }
+      {
+        "title": "Skala rumah terjangkau dengan cepat dan efisien",
+        "desc": "Skala rumah terjangkau dengan cepat dan efisien untuk memenuhi tuntutan pertumbuhan populasi."
+      },
+      {
+        "title": "Bangun untuk proyek perkotaan dengan kepadatan lebih tinggi",
+        "desc": "Bangun untuk proyek perkotaan dengan kepadatan lebih tinggi dengan kemampuan multi-lantai."
+      },
+      {
+        "title": "Kurangi biaya dengan alternatif pengganti baja dan semen",
+        "desc": "Kurangi biaya dengan alternatif pengganti baja dan semen kami yang dipatenkan."
+      },
+      {
+        "title": "Bangun lebih cepat dengan prefabrikasi (hari, bukan bulan)",
+        "desc": "Bangun lebih cepat dengan prefabrikasi—menyerahkan rumah dalam hitungan hari, bukan bulan."
+      },
+      {
+        "title": "Jejak karbon lebih rendah dengan bahan sirkular",
+        "desc": "Jejak karbon lebih rendah dengan bahan sirkular yang berkelanjutan yang dialihkan dari limbah."
+      },
+      {
+        "title": "Desain fleksibel untuk memenuhi kebutuhan lokal",
+        "desc": "Desain fleksibel untuk memenuhi kebutuhan lokal tertentu dan persyaratan regulasi."
+      }
     ],
     "comparison_title": "Othalo vs. Konstruksi Perumahan Publik Tradisional",
     "comparison_subtitle": "Perbandingan langsung dari metrik pengadaan pemerintah utama.",
-    "comparison_headers": ["Metrik", "Othalo", "Tradisional"],
+    "comparison_headers": [
+      "Metrik",
+      "Othalo",
+      "Tradisional"
+    ],
     "comparison_rows": [
-      { "f": "Waktu pembangunan (100 unit)", "o": "< 3 bulan", "t": "18–36 bulan" },
-      { "f": "Biaya per unit (2BR)", "o": "30–50% lebih rendah", "t": "Baseline" },
-      { "f": "Penciptaan lapangan kerja lokal", "o": "Tinggi — tanpa alat berat", "t": "Sedang — tergantung mesin" },
-      { "f": "Kewajiban lingkungan", "o": "Plastik dialihkan", "t": "CO₂ diemisikan" },
-      { "f": "Pelaporan SDG", "o": "Metrik bawaan", "t": "Audit manual diperlukan" },
-      { "f": "Ketahanan bencana", "o": "Badai Kategori 5 + Zona Gempa 4", "t": "Bervariasi — sering kali lebih rendah" }
+      {
+        "f": "Waktu pembangunan (100 unit)",
+        "o": "< 3 bulan",
+        "t": "18–36 bulan"
+      },
+      {
+        "f": "Biaya per unit (2BR)",
+        "o": "30–50% lebih rendah",
+        "t": "Baseline"
+      },
+      {
+        "f": "Penciptaan lapangan kerja lokal",
+        "o": "Tinggi — tanpa alat berat",
+        "t": "Sedang — tergantung mesin"
+      },
+      {
+        "f": "Kewajiban lingkungan",
+        "o": "Plastik dialihkan",
+        "t": "CO₂ diemisikan"
+      },
+      {
+        "f": "Pelaporan SDG",
+        "o": "Metrik bawaan",
+        "t": "Audit manual diperlukan"
+      },
+      {
+        "f": "Ketahanan bencana",
+        "o": "Badai Kategori 5 + Zona Gempa 4",
+        "t": "Bervariasi — sering kali lebih rendah"
+      }
     ],
     "cta_section_title": "Siap mengeksplorasi penerapan nasional?",
     "cta_section_subtitle": "Tim kami bekerja secara langsung dengan kementerian pemerintah, lembaga perumahan, dan LSM untuk menentukan cakupan dan menerapkan skala besar.",
@@ -367,30 +802,86 @@
     "cta2": "Hubungi Us",
     "challenge_label": "Tantangan",
     "challenge_title": "Tekanan pasar yang membatasi pertumbuhan",
-    "challenge_bullets": ["Kenaikan biaya (volatilitas harga tinggi), margin yang menyusut", "Penundaan, garis waktu tidak dapat diprediksi", "Kekurangan baja, semen, dan tenaga kerja", "Konstruksi kompleks dan tidak efisien untuk diskalakan"],
+    "challenge_bullets": [
+      "Kenaikan biaya (volatilitas harga tinggi), margin yang menyusut",
+      "Penundaan, garis waktu tidak dapat diprediksi",
+      "Kekurangan baja, semen, dan tenaga kerja",
+      "Konstruksi kompleks dan tidak efisien untuk diskalakan"
+    ],
     "solution_label": "Solusi Othalo",
     "solution_title": "Model yang lebih cepat dan hemat biaya",
-    "solution_bullets": ["Konstruksi yang lebih cepat dan lebih hemat biaya", "Sistem modular prefabrikasi dari plastik daur ulang", "Eksekusi di lokasi yang disederhanakan", "Komponen ringan dan terukur", "Desain fleksibel menyesuaikan dengan proyek, pasar, dan regulasi Anda"],
+    "solution_bullets": [
+      "Konstruksi yang lebih cepat dan lebih hemat biaya",
+      "Sistem modular prefabrikasi dari plastik daur ulang",
+      "Eksekusi di lokasi yang disederhanakan",
+      "Komponen ringan dan terukur",
+      "Desain fleksibel menyesuaikan dengan proyek, pasar, dan regulasi Anda"
+    ],
     "benefits_label": "Keuntungan Pengembang",
     "benefits_title": "Membangun untuk meningkatkan ekonomi pengembangan Anda",
     "benefits": [
-      { "title": "Kendalikan biaya dan kurangi eksposur terhadap volatilitas bahan", "desc": "Kendalikan biaya dan kurangi eksposur terhadap volatilitas harga bahan dengan sistem prefabrikasi kami." },
-      { "title": "Bangun lebih cepat dengan prefabrikasi (hari, bukan bulan)", "desc": "Bangun lebih cepat dengan prefabrikasi—menyerahkan rumah dalam hitungan hari, bukan bulan." },
-      { "title": "Kebutuhan tenaga kerja lebih rendah", "desc": "Kebutuhan tenaga kerja lebih rendah di lokasi dengan eksekusi dan perakitan yang disederhanakan." },
-      { "title": "Efisiensi lebih tinggi, pengiriman terukur", "desc": "Efisiensi lebih tinggi dan pengiriman terukur untuk proyek-proyek besar." },
-      { "title": "Akses pasar baru (segmen terjangkau)", "desc": "Akses pasar baru, khususnya segmen perumahan terjangkau." },
-      { "title": "Perkuat ESG dengan bahan sirkular rendah karbon", "desc": "Perkuat ESG dengan bahan sirkular yang berkelanjutan dan rendah karbon." },
-      { "title": "Desain yang dapat disesuaikan", "desc": "Desain yang dapat disesuaikan untuk beradaptasi dengan proyek, pasar, dan regulasi Anda." }
+      {
+        "title": "Kendalikan biaya dan kurangi eksposur terhadap volatilitas bahan",
+        "desc": "Kendalikan biaya dan kurangi eksposur terhadap volatilitas harga bahan dengan sistem prefabrikasi kami."
+      },
+      {
+        "title": "Bangun lebih cepat dengan prefabrikasi (hari, bukan bulan)",
+        "desc": "Bangun lebih cepat dengan prefabrikasi—menyerahkan rumah dalam hitungan hari, bukan bulan."
+      },
+      {
+        "title": "Kebutuhan tenaga kerja lebih rendah",
+        "desc": "Kebutuhan tenaga kerja lebih rendah di lokasi dengan eksekusi dan perakitan yang disederhanakan."
+      },
+      {
+        "title": "Efisiensi lebih tinggi, pengiriman terukur",
+        "desc": "Efisiensi lebih tinggi dan pengiriman terukur untuk proyek-proyek besar."
+      },
+      {
+        "title": "Akses pasar baru (segmen terjangkau)",
+        "desc": "Akses pasar baru, khususnya segmen perumahan terjangkau."
+      },
+      {
+        "title": "Perkuat ESG dengan bahan sirkular rendah karbon",
+        "desc": "Perkuat ESG dengan bahan sirkular yang berkelanjutan dan rendah karbon."
+      },
+      {
+        "title": "Desain yang dapat disesuaikan",
+        "desc": "Desain yang dapat disesuaikan untuk beradaptasi dengan proyek, pasar, dan regulasi Anda."
+      }
     ],
     "roi_label": "Metrik ROI",
     "roi_title": "Angka-angka yang menggerakkan kasus bisnis Anda",
     "roi_items": [
-      { "label": "Biaya vs. beton", "value": "30–50% lebih rendah", "highlight": true },
-      { "label": "Garis waktu konstruksi (100 unit)", "value": "< 3 bulan", "highlight": true },
-      { "label": "Persyaratan tenaga kerja lokal", "value": "Setengah terampil saja", "highlight": false },
-      { "label": "Alat berat yang diperlukan di lokasi", "value": "Tidak ada", "highlight": true },
-      { "label": "Limbah material di lokasi", "value": "Mendekati nol", "highlight": false },
-      { "label": "Perlindungan margin proyek", "value": "Biaya panel tetap", "highlight": false }
+      {
+        "label": "Biaya vs. beton",
+        "value": "30–50% lebih rendah",
+        "highlight": true
+      },
+      {
+        "label": "Garis waktu konstruksi (100 unit)",
+        "value": "< 3 bulan",
+        "highlight": true
+      },
+      {
+        "label": "Persyaratan tenaga kerja lokal",
+        "value": "Setengah terampil saja",
+        "highlight": false
+      },
+      {
+        "label": "Alat berat yang diperlukan di lokasi",
+        "value": "Tidak ada",
+        "highlight": true
+      },
+      {
+        "label": "Limbah material di lokasi",
+        "value": "Mendekati nol",
+        "highlight": false
+      },
+      {
+        "label": "Perlindungan margin proyek",
+        "value": "Biaya panel tetap",
+        "highlight": false
+      }
     ],
     "cta_title": "Siap mengembangkan bersama Othalo?",
     "cta_subtitle": "Tim kami akan memandu Anda melalui spesifikasi, logistik, dan model keuangan lengkap untuk pengembangan Anda.",
@@ -417,30 +908,82 @@
     "cta2": "Hubungi Kami",
     "challenge_label": "Tantangan",
     "challenge_title": "Menavigasi harapan ESG yang kompleks",
-    "challenge_bullets": ["Tanggung jawab akhir masa pakai untuk plastik (termasuk sampah plastik)", "Regulasi sirkularitas yang lebih ketat", "Meningkatnya tekanan kepatuhan", "Kebutuhan akan solusi yang kredibel dan terukur", "Meningkatnya permintaan dari konsumen, karyawan, dan investor"],
+    "challenge_bullets": [
+      "Tanggung jawab akhir masa pakai untuk plastik (termasuk sampah plastik)",
+      "Regulasi sirkularitas yang lebih ketat",
+      "Meningkatnya tekanan kepatuhan",
+      "Kebutuhan akan solusi yang kredibel dan terukur",
+      "Meningkatnya permintaan dari konsumen, karyawan, dan investor"
+    ],
     "solution_label": "Solusi Othalo",
     "solution_title": "Platform ESG siap pakai",
-    "solution_bullets": ["Platform ESG siap pakai", "Hubungkan kepatuhan + dampak lingkungan + sosial", "Ubah limbah menjadi bahan konstruksi nyata", "Dampak terukur, terverifikasi, dan terukur untuk pelaporan", "Eksekusi cepat", "Program keterlibatan pemangku kepentingan"],
+    "solution_bullets": [
+      "Platform ESG siap pakai",
+      "Hubungkan kepatuhan + dampak lingkungan + sosial",
+      "Ubah limbah menjadi bahan konstruksi nyata",
+      "Dampak terukur, terverifikasi, dan terukur untuk pelaporan",
+      "Eksekusi cepat",
+      "Program keterlibatan pemangku kepentingan"
+    ],
     "benefits_label": "Keuntungan Perusahaan",
     "benefits_title": "Dampak ESG terstruktur untuk perusahaan yang berpikiran maju",
     "benefits": [
-      { "title": "Penuhi persyaratan EPR dengan hasil terukur", "desc": "Penuhi persyaratan EPR dengan hasil terukur melalui pengalihan limbah plastik." },
-      { "title": "Ubah limbah menjadi nilai melalui model sirkular", "desc": "Ubah limbah menjadi nilai melalui model sirkular yang mengubah plastik menjadi rumah." },
-      { "title": "Berikan dampak ESG yang nyata", "desc": "Berikan dampak ESG yang nyata di seluruh dimensi lingkungan, sosial, dan tata kelola." },
-      { "title": "Penerapan cepat, tindakan segera", "desc": "Penerapan cepat memungkinkan tindakan segera dan hasil yang terukur." },
-      { "title": "Perkuat kepercayaan merek & pemangku kepentingan", "desc": "Perkuat kepercayaan merek dan pemangku kepentingan dengan dampak tingkat komunitas yang nyata." },
-      { "title": "Pelacakan & pelaporan dampak transparan", "desc": "Pelacakan dan pelaporan dampak transparan yang kompatibel dengan kerangka kerja utama." },
-      { "title": "Dapat diskalakan di seluruh pasar", "desc": "Dapat diskalakan di seluruh pasar agar sesuai dengan jejak operasional Anda secara global." }
+      {
+        "title": "Penuhi persyaratan EPR dengan hasil terukur",
+        "desc": "Penuhi persyaratan EPR dengan hasil terukur melalui pengalihan limbah plastik."
+      },
+      {
+        "title": "Ubah limbah menjadi nilai melalui model sirkular",
+        "desc": "Ubah limbah menjadi nilai melalui model sirkular yang mengubah plastik menjadi rumah."
+      },
+      {
+        "title": "Berikan dampak ESG yang nyata",
+        "desc": "Berikan dampak ESG yang nyata di seluruh dimensi lingkungan, sosial, dan tata kelola."
+      },
+      {
+        "title": "Penerapan cepat, tindakan segera",
+        "desc": "Penerapan cepat memungkinkan tindakan segera dan hasil yang terukur."
+      },
+      {
+        "title": "Perkuat kepercayaan merek & pemangku kepentingan",
+        "desc": "Perkuat kepercayaan merek dan pemangku kepentingan dengan dampak tingkat komunitas yang nyata."
+      },
+      {
+        "title": "Pelacakan & pelaporan dampak transparan",
+        "desc": "Pelacakan dan pelaporan dampak transparan yang kompatibel dengan kerangka kerja utama."
+      },
+      {
+        "title": "Dapat diskalakan di seluruh pasar",
+        "desc": "Dapat diskalakan di seluruh pasar agar sesuai dengan jejak operasional Anda secara global."
+      }
     ],
     "metrics_title": "Metrik yang akan dipercaya oleh tim keberlanjutan Anda",
     "metrics_subtitle": "Setiap penerapan korporat Othalo menghasilkan paket data dampak penuh.",
     "metrics_items": [
-      { "label": "Plastik dialihkan per unit 2BR", "value": "8 ton" },
-      { "label": "CO₂ dihindari vs. beton", "value": "~12 ton per unit" },
-      { "label": "SDG yang ditangani", "value": "9 dari 17" },
-      { "label": "Pekerjaan lokal yang diciptakan per 100 unit", "value": "80–120 peran" },
-      { "label": "Kerangka kerja dampak yang didukung", "value": "GRI, SASB, TCFD" },
-      { "label": "Verifikasi", "value": "Dapat diaudit oleh pihak ketiga" }
+      {
+        "label": "Plastik dialihkan per unit 2BR",
+        "value": "8 ton"
+      },
+      {
+        "label": "CO₂ dihindari vs. beton",
+        "value": "~12 ton per unit"
+      },
+      {
+        "label": "SDG yang ditangani",
+        "value": "9 dari 17"
+      },
+      {
+        "label": "Pekerjaan lokal yang diciptakan per 100 unit",
+        "value": "80–120 peran"
+      },
+      {
+        "label": "Kerangka kerja dampak yang didukung",
+        "value": "GRI, SASB, TCFD"
+      },
+      {
+        "label": "Verifikasi",
+        "value": "Dapat diaudit oleh pihak ketiga"
+      }
     ],
     "cta_title": "Ubah komitmen ESG Anda menjadi dampak yang terverifikasi",
     "cta_subtitle": "Bicaralah dengan tim kemitraan perusahaan kami untuk merancang program yang selaras dengan tujuan keberlanjutan Anda.",
@@ -514,13 +1057,34 @@
     "err_enquiry": "Silakan pilih tipe pertanyaan",
     "err_message": "Pesan diperlukan (minimal 10 karakter)",
     "reasons": [
-      { "value": "general", "label": "Pertanyaan Umum" },
-      { "value": "partnership", "label": "Kemitraan & Proyek" },
-      { "value": "pricing", "label": "Minta Harga / Proposal" },
-      { "value": "technical", "label": "Informasi Teknis & Produk" },
-      { "value": "investor", "label": "Pertanyaan Investor" },
-      { "value": "media", "label": "Media / Pers" },
-      { "value": "careers", "label": "Karir" }
+      {
+        "value": "general",
+        "label": "Pertanyaan Umum"
+      },
+      {
+        "value": "partnership",
+        "label": "Kemitraan & Proyek"
+      },
+      {
+        "value": "pricing",
+        "label": "Minta Harga / Proposal"
+      },
+      {
+        "value": "technical",
+        "label": "Informasi Teknis & Produk"
+      },
+      {
+        "value": "investor",
+        "label": "Pertanyaan Investor"
+      },
+      {
+        "value": "media",
+        "label": "Media / Pers"
+      },
+      {
+        "value": "careers",
+        "label": "Karir"
+      }
     ],
     "profiles": {
       "government": "Pemerintah / Lembaga Publik",
@@ -591,13 +1155,25 @@
     "main_subtitle": "Isi detail Anda — kami akan merespons dalam waktu 2 hari kerja.",
     "sidebar_title": "Minta Penawaran Proyek",
     "sidebar_desc": "Spesialis kami akan menyiapkan proposal teknis dan keuangan terperinci yang disesuaikan dengan kebutuhan dan skala Anda.",
-    "sidebar_items": ["Penerapan Cepat", "Teknologi yang Dipatenkan", "Didukung oleh UN-Habitat", "Dampak Global"],
-    "name": "Nama Lengkap", "email": "Email", "phone": "Telepon",
-    "org": "Organisasi (Opsional)", "org_placeholder": "Perusahaan / Kementerian",
-    "country": "Negara", "select_country": "Pilih negara",
-    "profile": "Tipe Profil", "select_profile": "Saya mewakili...",
-    "product": "Konfigurasi Produk", "select_product": "Pilih konfigurasi",
-    "units": "Unit yang Dibutuhkan", "select_units": "Skala proyek",
+    "sidebar_items": [
+      "Penerapan Cepat",
+      "Teknologi yang Dipatenkan",
+      "Didukung oleh UN-Habitat",
+      "Dampak Global"
+    ],
+    "name": "Nama Lengkap",
+    "email": "Email",
+    "phone": "Telepon",
+    "org": "Organisasi (Opsional)",
+    "org_placeholder": "Perusahaan / Kementerian",
+    "country": "Negara",
+    "select_country": "Pilih negara",
+    "profile": "Tipe Profil",
+    "select_profile": "Saya mewakili...",
+    "product": "Konfigurasi Produk",
+    "select_product": "Pilih konfigurasi",
+    "units": "Unit yang Dibutuhkan",
+    "select_units": "Skala proyek",
     "message": "Catatan Tambahan",
     "message_placeholder": "Ceritakan tentang proyek, garis waktu, atau persyaratan khusus Anda...",
     "submit": "Minta Penawaran",
@@ -619,32 +1195,81 @@
     "title": "Pertanyaan Teknis & Berkelanjutan",
     "subtitle": "Pertanyaan umum dari pemerintah, pengembang, dan mitra tentang sistem bangunan, standar, dan kredensial lingkungan Othalo.",
     "items": [
-      { "q": "Terbuat dari apakah panel Othalo?", "a": "Panel Othalo diproduksi dari 100% plastik daur ulang — terutama bersumber dari sampah plastik laut dan tempat pembuangan akhir yang dikumpulkan. Tidak ada plastik murni, semen, atau baja yang digunakan dalam sistem struktural." },
-      { "q": "Bagaimana sistem bangunan memenuhi standar perumahan internasional?", "a": "Struktur Othalo dirancang untuk mematuhi kode bangunan internasional termasuk ISO, Eurocode, dan setara lokal. Setiap panel diuji secara independen untuk beban struktural, ketahanan api (Kelas B1 yang padam sendiri), beban angin (badai Kategori 5, >200 km/jam), dan zona gempa hingga Zona 4." },
-      { "q": "Berapa masa pakai struktur Othalo?", "a": "Panel Othalo dinilai untuk minimal 60 tahun dalam kondisi lingkungan normal. Plastik daur ulang tidak membusuk, berkarat, atau terdegradasi dari paparan kelembapan, menjadikannya sangat tahan lama di iklim tropis, pesisir, dan berkelembapan tinggi." },
-      { "q": "Bagaimana kinerja termal dipastikan?", "a": "Sistem panel Othalo menyediakan isolasi termal sekitar 3× lebih efektif daripada dinding beton yang setara. Desain berongga menciptakan isolasi udara alami, mengurangi kebutuhan akan bahan isolasi tambahan dan menurunkan biaya energi pendinginan dan pemanasan." },
-      { "q": "Apakah bahan tersebut aman — apakah ada emisi berbahaya?", "a": "Plastik daur ulang yang kami gunakan diklasifikasikan sebagai salah satu plastik teraman. Ini bersertifikat food-grade, tidak mengeluarkan gas dalam kondisi normal, dan tidak membocorkan bahan kimia berbahaya. Panel Othalo telah diuji untuk mengonfirmasi tidak adanya emisi senyawa organik volatil (VOC) di lingkungan yang ditempati." },
-      { "q": "Bagaimana Othalo berkontribusi pada keberlanjutan dan pengurangan karbon?", "a": "Setiap unit dengan 2 kamar tidur mengalihkan sekitar 8 ton plastik dari lingkungan. Proses konstruksi tidak memerlukan semen (sumber CO₂ utama), tidak ada baja, dan air minimal. Seluruh siklus hidup — dari pengumpulan hingga konstruksi — dirancang untuk memaksimalkan efisiensi karbon dan menghasilkan data dampak SDG yang dapat diverifikasi." },
-      { "q": "Dapatkah struktur disesuaikan dengan kode bangunan dan iklim setempat?", "a": "Ya. Othalo bekerja secara langsung dengan insinyur dan otoritas setempat untuk memastikan kepatuhan dengan peraturan bangunan nasional. Sistem panel modular dapat dikonfigurasi untuk berbagai jenis atap, fondasi, ketebalan dinding, dan integrasi utilitas agar sesuai dengan kondisi iklim tropis, gersang, atau sedang." },
-      { "q": "Sertifikasi dan dukungan apa yang dimiliki Othalo?", "a": "Othalo didukung oleh UN-HABITAT untuk Masa Depan Perkotaan yang Lebih Baik. Sistem ini telah diuji dan divalidasi melalui laboratorium keselamatan struktural dan kebakaran independen. Laporan pengujian khusus dan dokumentasi kepatuhan tersedia berdasarkan permintaan untuk pengadaan pemerintah dan proses pemeriksaan LSM." }
+      {
+        "q": "Terbuat dari apakah panel Othalo?",
+        "a": "Panel Othalo diproduksi dari 100% plastik daur ulang — terutama bersumber dari sampah plastik laut dan tempat pembuangan akhir yang dikumpulkan. Tidak ada plastik murni, semen, atau baja yang digunakan dalam sistem struktural."
+      },
+      {
+        "q": "Bagaimana sistem bangunan memenuhi standar perumahan internasional?",
+        "a": "Struktur Othalo dirancang untuk mematuhi kode bangunan internasional termasuk ISO, Eurocode, dan setara lokal. Setiap panel diuji secara independen untuk beban struktural, ketahanan api (Kelas B1 yang padam sendiri), beban angin (badai Kategori 5, >200 km/jam), dan zona gempa hingga Zona 4."
+      },
+      {
+        "q": "Berapa masa pakai struktur Othalo?",
+        "a": "Panel Othalo dinilai untuk minimal 60 tahun dalam kondisi lingkungan normal. Plastik daur ulang tidak membusuk, berkarat, atau terdegradasi dari paparan kelembapan, menjadikannya sangat tahan lama di iklim tropis, pesisir, dan berkelembapan tinggi."
+      },
+      {
+        "q": "Bagaimana kinerja termal dipastikan?",
+        "a": "Sistem panel Othalo menyediakan isolasi termal sekitar 3× lebih efektif daripada dinding beton yang setara. Desain berongga menciptakan isolasi udara alami, mengurangi kebutuhan akan bahan isolasi tambahan dan menurunkan biaya energi pendinginan dan pemanasan."
+      },
+      {
+        "q": "Apakah bahan tersebut aman — apakah ada emisi berbahaya?",
+        "a": "Plastik daur ulang yang kami gunakan diklasifikasikan sebagai salah satu plastik teraman. Ini bersertifikat food-grade, tidak mengeluarkan gas dalam kondisi normal, dan tidak membocorkan bahan kimia berbahaya. Panel Othalo telah diuji untuk mengonfirmasi tidak adanya emisi senyawa organik volatil (VOC) di lingkungan yang ditempati."
+      },
+      {
+        "q": "Bagaimana Othalo berkontribusi pada keberlanjutan dan pengurangan karbon?",
+        "a": "Setiap unit dengan 2 kamar tidur mengalihkan sekitar 8 ton plastik dari lingkungan. Proses konstruksi tidak memerlukan semen (sumber CO₂ utama), tidak ada baja, dan air minimal. Seluruh siklus hidup — dari pengumpulan hingga konstruksi — dirancang untuk memaksimalkan efisiensi karbon dan menghasilkan data dampak SDG yang dapat diverifikasi."
+      },
+      {
+        "q": "Dapatkah struktur disesuaikan dengan kode bangunan dan iklim setempat?",
+        "a": "Ya. Othalo bekerja secara langsung dengan insinyur dan otoritas setempat untuk memastikan kepatuhan dengan peraturan bangunan nasional. Sistem panel modular dapat dikonfigurasi untuk berbagai jenis atap, fondasi, ketebalan dinding, dan integrasi utilitas agar sesuai dengan kondisi iklim tropis, gersang, atau sedang."
+      },
+      {
+        "q": "Sertifikasi dan dukungan apa yang dimiliki Othalo?",
+        "a": "Othalo didukung oleh UN-HABITAT untuk Masa Depan Perkotaan yang Lebih Baik. Sistem ini telah diuji dan divalidasi melalui laboratorium keselamatan struktural dan kebakaran independen. Laporan pengujian khusus dan dokumentasi kepatuhan tersedia berdasarkan permintaan untuk pengadaan pemerintah dan proses pemeriksaan LSM."
+      }
     ]
   },
   "footer": {
     "tagline": "Mengubah limbah plastik menjadi hunian yang layak dan berkelanjutan bagi masyarakat di seluruh dunia.",
     "social_label": "Gabung, bagikan, sukai, ikuti kami di:",
     "links": [
-      { "label": "Hubungi kami", "href": "/contact" },
-      { "label": "Produk", "href": "/products" },
-      { "label": "Tentang kami", "href": "/about" },
-      { "label": "Ketentuan layanan", "href": "/terms" },
-      { "label": "Kebijakan privasi", "href": "/privacy" }
+      {
+        "label": "Hubungi kami",
+        "href": "/contact"
+      },
+      {
+        "label": "Produk",
+        "href": "/products"
+      },
+      {
+        "label": "Tentang kami",
+        "href": "/about"
+      },
+      {
+        "label": "Ketentuan layanan",
+        "href": "/terms"
+      },
+      {
+        "label": "Kebijakan privasi",
+        "href": "/privacy"
+      }
     ],
     "socials": [
-      { "label": "Twitter" },
-      { "label": "Facebook" },
-      { "label": "LinkedIn" },
-      { "label": "YouTube" },
-      { "label": "Instagram" }
+      {
+        "label": "Twitter"
+      },
+      {
+        "label": "Facebook"
+      },
+      {
+        "label": "LinkedIn"
+      },
+      {
+        "label": "YouTube"
+      },
+      {
+        "label": "Instagram"
+      }
     ],
     "company": "Perusahaan",
     "solutions": "Solusi",
@@ -662,12 +1287,124 @@
   "privacy": {
     "label": "Hukum",
     "title": "Kebijakan Privasi",
-    "effective": "Tanggal Berlaku: 9 Mei 2026 · Terakhir Diperbarui: 9 Mei 2026"
+    "effective": "Tanggal Berlaku: 9 Mei 2026 · Terakhir Diperbarui: 9 Mei 2026",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "Othalo AS (\"Othalo,\" \"we,\" \"us,\" or \"our\") is committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website othalo.com (the \"Site\") or engage with our services. Please read this policy carefully. If you disagree with its terms, please discontinue use of the Site."
+      },
+      {
+        "title": "2. Information We Collect",
+        "content": "We may collect the following types of information:\n\nPersonal Identification Information: Name, email address, phone number, job title, and organization name when you submit a contact form, request a quote, or otherwise communicate with us.\n\nTechnical Information: IP address, browser type and version, operating system, referral source, length of visit, page views, and website navigation paths, collected through cookies and similar tracking technologies.\n\nCommunications: Records of correspondence if you contact us, including emails and messages submitted through our website.\n\nWe do not collect sensitive personal data (such as health data, financial account information, or government identification numbers) through this Site."
+      },
+      {
+        "title": "3. How We Use Your Information",
+        "content": "We use the information we collect to:\n\n• Respond to enquiries and provide the services you request\n• Send you information about our products and solutions you have requested\n• Process transactions and send related information\n• Improve and optimize our website and user experience\n• Comply with legal obligations\n• Send periodic emails regarding our services (you may opt out at any time)\n• Monitor and analyze usage trends to improve functionality\n\nWe do not sell, trade, or otherwise transfer your personally identifiable information to third parties without your consent, except as described in this policy."
+      },
+      {
+        "title": "4. Legal Basis for Processing (GDPR)",
+        "content": "For users in the European Economic Area (EEA), we process your personal data under the following legal bases:\n\nConsent: Where you have given explicit consent (e.g., subscribing to our newsletter).\n\nLegitimate Interests: To respond to business enquiries, improve our services, and conduct marketing activities where these interests are not overridden by your data protection rights.\n\nContractual Necessity: Where processing is necessary to perform a contract or take steps at your request prior to entering a contract.\n\nLegal Obligation: Where we are required to comply with applicable laws."
+      },
+      {
+        "title": "5. Cookies and Tracking Technologies",
+        "content": "Our Site uses cookies and similar tracking technologies to enhance your browsing experience. Types of cookies we use:\n\nEssential Cookies: Necessary for the website to function and cannot be switched off.\n\nAnalytics Cookies: Help us understand how visitors interact with our Site (e.g., Google Analytics). Data collected is aggregated and anonymous.\n\nMarketing Cookies: Used to deliver relevant advertisements and track campaign effectiveness.\n\nYou can control or disable cookies through your browser settings. Note that disabling certain cookies may affect website functionality."
+      },
+      {
+        "title": "6. Data Retention",
+        "content": "We retain personal data only as long as necessary for the purposes for which it was collected, or as required by applicable law. Enquiry data is typically retained for up to 3 years. Marketing contact data is retained until you unsubscribe or request deletion. Analytics data may be retained in anonymized form indefinitely."
+      },
+      {
+        "title": "7. International Data Transfers",
+        "content": "Othalo AS is registered in Norway and operates under the jurisdiction of the European Economic Area. If we transfer your data outside the EEA, we ensure appropriate safeguards are in place, such as Standard Contractual Clauses approved by the European Commission, to protect your information in accordance with this Privacy Policy."
+      },
+      {
+        "title": "8. Your Rights",
+        "content": "Depending on your jurisdiction, you may have the following rights regarding your personal data:\n\n• Right of Access: Request a copy of the personal data we hold about you\n• Right to Rectification: Request correction of inaccurate or incomplete data\n• Right to Erasure: Request deletion of your personal data (\"right to be forgotten\")\n• Right to Restrict Processing: Request that we limit how we use your data\n• Right to Data Portability: Receive your data in a structured, machine-readable format\n• Right to Object: Object to our processing of your personal data\n• Right to Withdraw Consent: Withdraw consent at any time where processing is based on consent\n\nTo exercise any of these rights, please contact us at privacy@othalo.com."
+      },
+      {
+        "title": "9. Third-Party Links",
+        "content": "Our Site may contain links to third-party websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites. We encourage you to review the privacy policy of every site you visit."
+      },
+      {
+        "title": "10. Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These include encrypted data transmission (HTTPS), access controls, and regular security reviews. However, no method of transmission over the Internet or electronic storage is 100% secure."
+      },
+      {
+        "title": "11. Children's Privacy",
+        "content": "Our Site is not directed to individuals under the age of 16. We do not knowingly collect personal data from children. If you believe we have inadvertently collected information from a child, please contact us immediately so we can delete it."
+      },
+      {
+        "title": "12. Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated effective date. We encourage you to review this policy periodically."
+      },
+      {
+        "title": "13. Contact Us",
+        "content": "If you have questions or concerns about this Privacy Policy or our data practices, please contact:\n\nOthalo AS\nData Privacy Officer\nEmail: privacy@othalo.com\nAddress: Oslo, Norway\n\nYou also have the right to lodge a complaint with the Norwegian Data Protection Authority (Datatilsynet) at www.datatilsynet.no."
+      }
+    ]
   },
   "terms": {
     "label": "Hukum",
     "title": "Ketentuan Layanan",
-    "effective": "Tanggal Berlaku: 9 Mei 2026 · Terakhir Diperbarui: 9 Mei 2026"
+    "effective": "Tanggal Berlaku: 9 Mei 2026 · Terakhir Diperbarui: 9 Mei 2026",
+    "sections": [
+      {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing or using the Othalo AS website at othalo.com (the \"Site\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, please do not use the Site. These Terms apply to all visitors, users, and others who access or use the Site."
+      },
+      {
+        "title": "2. About Othalo",
+        "content": "Othalo AS is a Norwegian technology company registered under Norwegian law. We develop and commercialize patented modular housing solutions manufactured from recycled plastic, serving governments, housing developers, corporations, and NGOs globally.\n\nCompany registration: Othalo AS, Oslo, Norway\nContact: contact@othalo.com"
+      },
+      {
+        "title": "3. Use of the Site",
+        "content": "You agree to use the Site only for lawful purposes and in accordance with these Terms. You agree not to:\n\n• Use the Site in any way that violates any applicable local, national, or international law or regulation\n• Transmit any unsolicited or unauthorized advertising or promotional material\n• Knowingly transmit any data or material that contains viruses, Trojan horses, or other harmful code\n• Attempt to gain unauthorized access to any portion of the Site or its related systems\n• Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Site\n• Use the Site to scrape, harvest, or otherwise collect information about other users\n\nWe reserve the right to terminate your access to the Site immediately, without notice, if we reasonably believe you have breached these Terms."
+      },
+      {
+        "title": "4. Intellectual Property",
+        "content": "All content on this Site — including text, graphics, logos, images, product designs, technology descriptions, and software — is the property of Othalo AS or its content suppliers and is protected by Norwegian and international intellectual property laws.\n\nThe Othalo name, logo, and all related product names, design marks, and slogans are trademarks of Othalo AS. You may not use any trademark or trade name without our prior written permission.\n\nThe Othalo structural panel system is protected by patents filed in multiple jurisdictions. Nothing on this Site grants any license or right to use any patented technology.\n\nYou may view and download content from this Site solely for your personal, non-commercial use, provided you keep all copyright and other proprietary notices intact."
+      },
+      {
+        "title": "5. Products and Services",
+        "content": "The products and services described on this Site are subject to availability and may vary by region. Product specifications, pricing, and delivery timelines are indicative and subject to formal quotation. Nothing on this Site constitutes a binding offer to sell.\n\nAll product quotations, partnerships, and deployment agreements are subject to separate written agreements between Othalo AS and the relevant party. These Terms do not govern such agreements."
+      },
+      {
+        "title": "6. Accuracy of Information",
+        "content": "We strive to ensure that the information on this Site is accurate and up-to-date. However, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, products, services, or related graphics on the Site.\n\nTechnical specifications, impact metrics, and performance claims are based on controlled testing and representative deployments. Actual results may vary depending on local conditions, site preparation, and construction practices."
+      },
+      {
+        "title": "7. Third-Party Links",
+        "content": "The Site may contain links to third-party websites or resources. These links are provided for your convenience only. We have no control over the content of those sites or resources and accept no responsibility for them or for any loss or damage that may arise from your use of them."
+      },
+      {
+        "title": "8. Disclaimer of Warranties",
+        "content": "THE SITE AND ALL CONTENT IS PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, OTHALO AS DISCLAIMS ALL WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.\n\nWe do not warrant that the Site will be uninterrupted or error-free, that defects will be corrected, or that the Site or the server that makes it available are free of viruses or other harmful components."
+      },
+      {
+        "title": "9. Limitation of Liability",
+        "content": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL OTHALO AS, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.\n\nThis limitation applies whether the liability arises in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable."
+      },
+      {
+        "title": "10. Privacy",
+        "content": "Your use of the Site is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our Privacy Policy to understand our practices regarding the collection and use of your personal information."
+      },
+      {
+        "title": "11. Governing Law and Jurisdiction",
+        "content": "These Terms and any dispute or claim arising out of or in connection with them shall be governed by and construed in accordance with the laws of Norway, without regard to its conflict of law provisions.\n\nAny disputes shall be subject to the exclusive jurisdiction of the courts of Oslo, Norway, unless mandatory consumer protection laws in your country require otherwise."
+      },
+      {
+        "title": "12. Changes to These Terms",
+        "content": "We reserve the right to modify these Terms at any time. We will post the revised Terms on this page with an updated effective date. By continuing to use the Site after any changes become effective, you agree to the revised Terms. We encourage you to review these Terms periodically."
+      },
+      {
+        "title": "13. Severability",
+        "content": "If any provision of these Terms is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall remain in full force and effect."
+      },
+      {
+        "title": "14. Contact",
+        "content": "If you have any questions about these Terms of Service, please contact us:\n\nOthalo AS\nEmail: legal@othalo.com\nAddress: Oslo, Norway"
+      }
+    ]
   },
   "error": {
     "boundary_title": "Ada yang salah",
@@ -676,11 +1413,11 @@
     "refresh": "Coba Lagi Halaman",
     "home": "Buka Beranda"
   },
-  "404": {
-    "code": "404",
-    "title": "Halaman Tidak Ditemukan",
-    "subtitle": "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
-    "home": "Kembali ke Beranda",
-    "contact": "Hubungi Kami"
+  "cookies": {
+    "title": "We value your privacy",
+    "text": "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+    "accept": "Accept All",
+    "reject": "Reject",
+    "learn_more": "Learn More"
   }
 }

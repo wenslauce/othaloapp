@@ -6,14 +6,14 @@ Othalo là một công ty công nghệ của Na Uy chuyên biến rác thải nh
 
 ## Các Trang Chính
 
-- [Trang chủ](https://othalo.com/): Tổng quan về công ty và giới thiệu công nghệ
-- [Sản phẩm](https://othalo.com/products): Hệ thống tấm panel Othalo — thông số kỹ thuật và các dòng sản phẩm
-- [Giải pháp](https://othalo.com/solutions): Các giải pháp triển khai cho các bên liên quan khác nhau
-- [Giải pháp / Chính phủ](https://othalo.com/solutions/governments): Các chương trình nhà ở giá rẻ cấp quốc gia và thành phố
-- [Giải pháp / Nhà phát triển nhà ở](https://othalo.com/solutions/housing-developers): Xây dựng tiết kiệm chi phí cho các nhà phát triển tư nhân
-- [Giải pháp / Doanh nghiệp](https://othalo.com/solutions/corporations): Các chương trình ESG và CSR trọn gói
-- [Giới thiệu](https://othalo.com/about): Sứ mệnh, đội ngũ và tác động
-- [Liên hệ](https://othalo.com/contact): Liên hệ hoặc yêu cầu báo giá
+- [Trang chủ](https://othalo.com/vi/): Tổng quan về công ty và giới thiệu công nghệ
+- [Sản phẩm](https://othalo.com/viducts): Hệ thống tấm panel Othalo — thông số kỹ thuật và các dòng sản phẩm
+- [Giải pháp](https://othalo.com/viutions): Các giải pháp triển khai cho các bên liên quan khác nhau
+- [Giải pháp / Chính phủ](https://othalo.com/viutions/governments): Các chương trình nhà ở giá rẻ cấp quốc gia và thành phố
+- [Giải pháp / Nhà phát triển nhà ở](https://othalo.com/viutions/housing-developers): Xây dựng tiết kiệm chi phí cho các nhà phát triển tư nhân
+- [Giải pháp / Doanh nghiệp](https://othalo.com/viutions/corporations): Các chương trình ESG và CSR trọn gói
+- [Giới thiệu](https://othalo.com/viut): Sứ mệnh, đội ngũ và tác động
+- [Liên hệ](https://othalo.com/vitact): Liên hệ hoặc yêu cầu báo giá
 
 ## Sản phẩm: Hệ thống tấm panel Othalo
 

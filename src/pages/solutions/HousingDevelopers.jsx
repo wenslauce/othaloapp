@@ -1,6 +1,6 @@
 // Housing Developers solutions page
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from '@/components/shared/LocalizedLink';
 import { AlertCircle, CheckCircle, XCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -86,10 +86,10 @@ export default function HousingDevelopers() {
   return (
     <div className="overflow-hidden bg-white">
       <SEOHead
-        title={t('seo.solutions.title')}
-        description={t('seo.solutions.description')}
-        canonical="https://othalo.com/solutions/housing-developers"
-        keywords={t('seo.solutions.keywords').split(', ')}
+        title={t('seo.housing_dev.title')}
+        description={t('seo.housing_dev.description')}
+        pagePath="/solutions/housing-developers"
+        keywords={t('seo.housing_dev.keywords').split(', ')}
       />
 
       {/* ── HERO ── */}

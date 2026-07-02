@@ -11,7 +11,7 @@ Othalo is endorsed by UN-Habitat for a Better Urban Future, validating its appro
 **Headquarters**: Oslo, Norway  
 **Registration**: Norway (Othalo AS)  
 **Contact**: contact@othalo.com  
-**Website**: https://othalo.com
+**Website**: https://othalo.com/en
 
 ---
 
@@ -168,7 +168,7 @@ Othalo's model aligns with 9 of the 17 UN Sustainable Development Goals:
 ## Contact & Quote
 
 To request a product quote or explore partnership opportunities:
-- **Website**: https://othalo.com/contact
+- **Website**: https://othalo.com/entact
 - **Email**: contact@othalo.com
-- **Quote Form**: https://othalo.com/products (click "Get a Product Quote")
+- **Quote Form**: https://othalo.com/enducts (click "Get a Product Quote")
 - **Response Time**: Within 2 business days

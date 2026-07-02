@@ -6,14 +6,14 @@ Othalo adalah perusahaan teknologi asal Norwegia yang mengubah sampah plastik da
 
 ## Halaman Kunci
 
-- [Beranda](https://othalo.com/): Ikhtisar perusahaan dan pengenalan teknologi
-- [Produk](https://othalo.com/products): Sistem Panel Othalo — spesifikasi dan lini produk
-- [Solusi](https://othalo.com/solutions): Solusi penerapan untuk berbagai pemangku kepentingan
-- [Solusi / Pemerintah](https://othalo.com/solutions/governments): Program perumahan terjangkau nasional dan kotamadya
-- [Solusi / Pengembang Perumahan](https://othalo.com/solutions/housing-developers): Konstruksi hemat biaya untuk pengembang swasta
-- [Solusi / Perusahaan](https://othalo.com/solutions/corporations): Program ESG dan CSR siap pakai
-- [Tentang Kami](https://othalo.com/about): Misi, tim, dan dampak
-- [Kontak](https://othalo.com/contact): Hubungi kami atau minta penawaran
+- [Beranda](https://othalo.com/id/): Ikhtisar perusahaan dan pengenalan teknologi
+- [Produk](https://othalo.com/idducts): Sistem Panel Othalo — spesifikasi dan lini produk
+- [Solusi](https://othalo.com/idutions): Solusi penerapan untuk berbagai pemangku kepentingan
+- [Solusi / Pemerintah](https://othalo.com/idutions/governments): Program perumahan terjangkau nasional dan kotamadya
+- [Solusi / Pengembang Perumahan](https://othalo.com/idutions/housing-developers): Konstruksi hemat biaya untuk pengembang swasta
+- [Solusi / Perusahaan](https://othalo.com/idutions/corporations): Program ESG dan CSR siap pakai
+- [Tentang Kami](https://othalo.com/idut): Misi, tim, dan dampak
+- [Kontak](https://othalo.com/idtact): Hubungi kami atau minta penawaran
 
 ## Produk: Sistem Panel Othalo
 

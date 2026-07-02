@@ -6,14 +6,14 @@ Ang Othalo ay isang Norwegian technology company na nagbabago ng recycled na bas
 
 ## Mga Pangunahing Pahina
 
-- [Home](https://othalo.com/): Pangkalahatang-ideya ng kumpanya at pagpapakilala sa teknolohiya
-- [Mga Produkto](https://othalo.com/products): Ang Othalo Panel System — mga detalye at mga linya ng produkto
-- [Mga Solusyon](https://othalo.com/solutions): Mga solusyon sa deployment para sa iba't ibang stakeholder
-- [Mga Solusyon / Mga Pamahalaan](https://othalo.com/solutions/governments): Pambansa at munisipyong mga programa sa abot-kayang pabahay
-- [Mga Solusyon / Mga Developer ng Pabahay](https://othalo.com/solutions/housing-developers): Matipid sa gastos na konstruksyon para sa mga pribadong developer
-- [Mga Solusyon / Mga Korporasyon](https://othalo.com/solutions/corporations): Turnkey na mga programa sa ESG at CSR
-- [Tungkol sa Amin](https://othalo.com/about): Misyon, koponan, at epekto
-- [Makipag-ugnayan](https://othalo.com/contact): Makipag-ugnayan o humiling ng quote
+- [Home](https://othalo.com/fil/): Pangkalahatang-ideya ng kumpanya at pagpapakilala sa teknolohiya
+- [Mga Produkto](https://othalo.com/filducts): Ang Othalo Panel System — mga detalye at mga linya ng produkto
+- [Mga Solusyon](https://othalo.com/filutions): Mga solusyon sa deployment para sa iba't ibang stakeholder
+- [Mga Solusyon / Mga Pamahalaan](https://othalo.com/filutions/governments): Pambansa at munisipyong mga programa sa abot-kayang pabahay
+- [Mga Solusyon / Mga Developer ng Pabahay](https://othalo.com/filutions/housing-developers): Matipid sa gastos na konstruksyon para sa mga pribadong developer
+- [Mga Solusyon / Mga Korporasyon](https://othalo.com/filutions/corporations): Turnkey na mga programa sa ESG at CSR
+- [Tungkol sa Amin](https://othalo.com/filut): Misyon, koponan, at epekto
+- [Makipag-ugnayan](https://othalo.com/filtact): Makipag-ugnayan o humiling ng quote
 
 ## Produkto: Ang Othalo Panel System
 

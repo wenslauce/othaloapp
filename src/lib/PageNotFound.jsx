@@ -1,5 +1,5 @@
 // 404 Page Not Found component
-import { Link } from 'react-router-dom';
+import Link from '@/components/shared/LocalizedLink';
 import { useTranslation } from 'react-i18next';
 
 export default function PageNotFound() {

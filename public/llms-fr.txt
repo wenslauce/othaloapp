@@ -6,14 +6,14 @@ Othalo est une entreprise technologique norvégienne qui transforme les déchets
 
 ## Pages Clés
 
-- [Accueil](https://othalo.com/): Présentation de l'entreprise et introduction à la technologie
-- [Produits](https://othalo.com/products): Le système de panneaux Othalo — spécifications et gammes de produits
-- [Solutions](https://othalo.com/solutions): Solutions de déploiement pour les différentes parties prenantes
-- [Solutions / Gouvernements](https://othalo.com/solutions/governments): Programmes nationaux et municipaux de logements abordables
-- [Solutions / Promoteurs Immobiliers](https://othalo.com/solutions/housing-developers): Construction rentable pour les promoteurs privés
-- [Solutions / Entreprises](https://othalo.com/solutions/corporations): Programmes ESG et RSE clés en main
-- [À Propos](https://othalo.com/about): Mission, équipe et impact
-- [Contact](https://othalo.com/contact): Contactez-nous ou demandez un devis
+- [Accueil](https://othalo.com/fr/): Présentation de l'entreprise et introduction à la technologie
+- [Produits](https://othalo.com/frducts): Le système de panneaux Othalo — spécifications et gammes de produits
+- [Solutions](https://othalo.com/frutions): Solutions de déploiement pour les différentes parties prenantes
+- [Solutions / Gouvernements](https://othalo.com/frutions/governments): Programmes nationaux et municipaux de logements abordables
+- [Solutions / Promoteurs Immobiliers](https://othalo.com/frutions/housing-developers): Construction rentable pour les promoteurs privés
+- [Solutions / Entreprises](https://othalo.com/frutions/corporations): Programmes ESG et RSE clés en main
+- [À Propos](https://othalo.com/frut): Mission, équipe et impact
+- [Contact](https://othalo.com/frtact): Contactez-nous ou demandez un devis
 
 ## Produit: Le système de panneaux Othalo
 
