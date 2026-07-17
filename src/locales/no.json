@@ -1419,5 +1419,220 @@
     "accept": "Godta alle",
     "reject": "Avvis",
     "learn_more": "Les mer"
+  },
+  "media": {
+    "page_title": "Mediedekning og presseomtale",
+    "page_subtitle": "Global pressedekning av Othalos resirkulerte plastboligteknologi — fra UN-Habitat-partnerskap til akseleratorgevinster og dybdeartikler.",
+    "articles_heading": "Nyhetsartikler og reportasjer",
+    "articles_subtitle": "Dekning fra ledende medier verden over, listen går fra nyeste til eldste.",
+    "read_article": "Les artikkel",
+    "supplementary_heading": "Bedriftsprofiler, sosiale kanaler og katalogoppføringer",
+    "supplementary_subtitle": "Supplerende referansekilder — ikke nyhetsartikler, men nyttige for å verifisere bedriftsopplysninger, finansiering og sosial tilstedeværelse.",
+    "filter_all_years": "Alle år",
+    "filter_all_regions": "Alle regioner",
+    "filter_year": "År",
+    "filter_region": "Region",
+    "filter_clear": "Fjern filtre",
+    "cta_title": "Pressehenvendelser",
+    "cta_subtitle": "For mediehenvendelser, intervjuforespørsler eller pressemateriell, ta kontakt med vårt team.",
+    "cta_button": "Kontakt vårt team",
+    "articles": [
+      {
+        "date": "9 October 2025",
+        "title": "Dubai Holding opens submissions for second edition of its Innovate For Tomorrow Impact Accelerator 2025",
+        "outlet": "Dubai Media Office / TahawulTech.com",
+        "region": "UAE / Global",
+        "summary": "Cites Othalo (Norway) as a winner of the accelerator's first (2024) edition, noting its plastic-waste-to-housing solution and ongoing partnership with Dubai Holding.",
+        "link": "https://mediaoffice.ae/en/news/2025/october/09-10/dubai-holding-opens-submissions"
+      },
+      {
+        "date": "8 July 2024",
+        "title": "MITdesignX and MISTI in Dubai",
+        "outlet": "Medium – MIT School of Architecture + Planning",
+        "region": "USA / UAE",
+        "summary": "Feature on the MITdesignX Dubai accelerator; profiles Othalo CEO Frank Cato Lahti and the company's 'investment prize' win, plus an MIT student's internship with Othalo.",
+        "link": "https://mitsap.medium.com/mitdesignx-and-misti-in-dubai-94b6553c21bd"
+      },
+      {
+        "date": "3 May 2024",
+        "title": "MITdesignX and MISTI in Dubai",
+        "outlet": "MIT School of Architecture and Planning (SA+P)",
+        "region": "USA / UAE",
+        "summary": "Official MIT SA+P writeup of the Dubai accelerator cohort, again spotlighting Othalo's investment-prize win and an MIT intern's placement at the company.",
+        "link": "https://sap.mit.edu/news/mitdesignx-and-misti-dubai"
+      },
+      {
+        "date": "30 April 2024",
+        "title": "MITdesignX and MISTI in Dubai",
+        "outlet": "MIT News (Massachusetts Institute of Technology)",
+        "region": "USA / UAE",
+        "summary": "MIT's official news article on the MITdesignX Dubai (MDXB) accelerator; names Othalo as winner of the cohort's investment prize.",
+        "link": "https://news.mit.edu/2024/mitdesignx-dubai-0430"
+      },
+      {
+        "date": "24–25 February 2024",
+        "title": "DSO and MIT Honour Winner of MIT DesignX Dubai Accelerator's First Cohort",
+        "outlet": "Dubai PR Network / Mid-East.info",
+        "region": "UAE",
+        "summary": "Reports Othalo (Oslo) as the winning startup of MDXB's Demo Day, awarded a US$200,000 investment prize.",
+        "link": "http://m.dubaiprnetwork.com/pr.asp?pr=177628"
+      },
+      {
+        "date": "February 2024",
+        "title": "MIT DesignX Dubai Accelerator Celebrates Startup Success and Innovation",
+        "outlet": "Dubai Silicon Oasis (DSO)",
+        "region": "UAE",
+        "summary": "Lists Othalo among the 12 graduating startups, described as 'revolutionizing affordable housing with recycled plastic.'",
+        "link": "https://www.dso.ae/w/mit-designx-dubai-accelerator-celebrates-startup-success-and-innovation"
+      },
+      {
+        "date": "4–5 December 2023",
+        "title": "DIEZ and MIT Select 12 Startups for First Cohort of MIT DesignX Dubai Accelerator",
+        "outlet": "Dubai Media Office / MyStartupWorld / Emirates24|7",
+        "region": "UAE",
+        "summary": "Announces Othalo's selection into the inaugural MDXB cohort, described as 'harnessing recycled plastic waste to produce robust construction materials for affordable housing.'",
+        "link": "https://www.mediaoffice.ae/en/news/2023/December/04-12/DIEZ-and-MIT-Select-12-Startups"
+      },
+      {
+        "date": "30 June 2023",
+        "title": "Plastic waste in Nairobi to produce 2,800 housing units annually",
+        "outlet": "News9 Kenya",
+        "region": "Kenya",
+        "summary": "Kenyan coverage linking Othalo's plans to Nairobi's waste and housing challenges, and to the government's Big Four Agenda affordable-housing pillar.",
+        "link": "https://www.news9.co.ke/article/1576/plastic-waste-in-nairobi-to-produce-2-800-housing-units-annually"
+      },
+      {
+        "date": "21 June 2022",
+        "title": "Othalo: Tackling Africa's Housing Crisis and Plastic Pollution at the Same Time",
+        "outlet": "RESET.ORG (Digital for Good)",
+        "region": "Germany / Global",
+        "summary": "In-depth profile of Othalo's founding story, technology, and UN-Habitat partnership.",
+        "link": "https://en.reset.org/othalo-building-affordable-housing-plastic-pollution-12082020/"
+      },
+      {
+        "date": "29 March 2022",
+        "title": "Bidrar til å løse boligkrisen i u-land: Bygger hus av resirkulert plast",
+        "outlet": "Næringsliv Norge",
+        "region": "Norway",
+        "summary": "Norwegian-language feature on founder Frank Cato Lahti, the origin story from Vardø, and Othalo's patent covering 100 countries.",
+        "link": "https://www.xn--nringslivnorge-0ib.no/sirkulaer-okonomi/bidrar-til-a-lose-boligkrisen-i-u-land-bygger-hus-av-resirkulert-plast/"
+      },
+      {
+        "date": "30 June 2023 (secondary listing)",
+        "title": "Norsk selskap skal hamle opp med både plastavfall og hjemløshet",
+        "outlet": "Næringsliv Norge",
+        "region": "Norway",
+        "summary": "Covers Othalo's People's Choice award recognition, module specifications, and plans to eventually incorporate ocean plastic.",
+        "link": "https://www.xn--nringslivnorge-0ib.no/baerekraftige-investeringer/norsk-selskap-skal-hamle-opp-med-bade-plastavfall-og-hjemloshet-vi-bruker-ett-problem-for-a-lose-et-annet-problem/"
+      },
+      {
+        "date": "3 September 2021",
+        "title": "These Norwegian houses are built from recycled plastic",
+        "outlet": "Warp News",
+        "region": "Sweden / Global",
+        "summary": "Optimism-focused outlet covering Othalo's plan to build its first Kenyan factory and demonstration homes in Nairobi, Yaoundé and Dakar.",
+        "link": "https://www.warpnews.org/green-tech/houses-built-from-recycled-plastic/"
+      },
+      {
+        "date": "3 June 2021",
+        "title": "A house out of recycled plastic",
+        "outlet": "The Standard (Kenya)",
+        "region": "Kenya",
+        "summary": "Major Kenyan daily's coverage of the UN-Habitat partnership and plans for a Kenyan production factory.",
+        "link": "https://www.standardmedia.co.ke/real-estate/article/2001414643/a-house-out-of-recycled-plastic"
+      },
+      {
+        "date": "1 December 2020",
+        "title": "Norwegian startup aims to build affordable homes using 100% recycled plastic",
+        "outlet": "Inceptive Mind",
+        "region": "India / Global",
+        "summary": "Detailed technical overview of the Othalo system and the plan to start construction in Africa in 2022.",
+        "link": "https://www.inceptivemind.com/othalo-aims-build-affordable-homes-using-recycled-plastic/16459/"
+      },
+      {
+        "date": "29 November 2020",
+        "title": "Norsk startup løser verdens boligkrise",
+        "outlet": "Nordea Private Banking (Talk)",
+        "region": "Norway",
+        "summary": "Norwegian bank's feature on Othalo, architect Julien De Smedt, and the UN-Habitat collaboration.",
+        "link": "https://talk.nordea.no/privatebanking/norsk-startup-loser-verdens-boligkrise/"
+      },
+      {
+        "date": "November 2020",
+        "title": "Tackling Africa's housing crisis with homes made from plastic waste",
+        "outlet": "World Economic Forum",
+        "region": "Global",
+        "summary": "WEF feature on the UN-Habitat/Othalo partnership and demonstration homes planned for Nairobi, Yaoundé and Dakar.",
+        "link": "https://www.weforum.org/stories/2020/11/un-africa-recycled-plastic-housing/"
+      },
+      {
+        "date": "23 October 2020",
+        "title": "Norwegian startup Othalo envisions homes made from recycled plastic",
+        "outlet": "STIR World",
+        "region": "India / Global",
+        "summary": "Architecture-focused profile of the Othalo/Julien De Smedt partnership announced on World Habitat Day 2020.",
+        "link": "https://www.stirworld.com/see-features-norwegian-startup-othalo-envisions-homes-made-from-recycled-plastic"
+      },
+      {
+        "date": "19 October 2020",
+        "title": "Tech startup Othalo eyes plastic waste as solution to mounting housing crisis",
+        "outlet": "The Architect's Newspaper",
+        "region": "USA / Global",
+        "summary": "US architecture trade press coverage of the UN-Habitat partnership and planned pilot homes in Nairobi, Dakar and Yaoundé.",
+        "link": "https://www.archpaper.com/2020/10/tech-startup-othalo-eyes-plastic-waste-as-solution-to-mounting-housing-crisis/"
+      },
+      {
+        "date": "6 October 2020",
+        "title": "UN-Habitat aims to use plastic waste to support housing for all",
+        "outlet": "UN-Habitat (United Nations)",
+        "region": "Global",
+        "summary": "Official UN-Habitat announcement of its partnership with Othalo, marking World Habitat Day 2020; confirms Kenya as site of the first planned factory.",
+        "link": "https://unhabitat.org/news/06-oct-2020/un-habitat-aims-to-use-plastic-waste-to-support-housing-for-all"
+      }
+    ],
+    "supplementary": [
+      {
+        "source": "Othalo — company page",
+        "platform": "LinkedIn",
+        "link": "https://www.linkedin.com/company/othalo",
+        "notes": ""
+      },
+      {
+        "source": "Othalo — page",
+        "platform": "Facebook (@Othalotech)",
+        "link": "https://www.facebook.com/Othalotech/",
+        "notes": "Company social page."
+      },
+      {
+        "source": "Othalo — company profile & funding",
+        "platform": "Crunchbase",
+        "link": "https://www.crunchbase.com/organization/othalo",
+        "notes": "Funding and organizational data."
+      },
+      {
+        "source": "Othalo — 2025 company profile: valuation, funding & investors",
+        "platform": "PitchBook",
+        "link": "https://pitchbook.com/profiles/company/481574-89",
+        "notes": "Reports Othalo has raised $200K, headquartered in Trondheim, Norway, ~8 employees; investors include MIT Design X Dubai Accelerator and in5."
+      },
+      {
+        "source": "OTHALO solves Africa's housing shortage with plastic waste",
+        "platform": "Business Norway",
+        "link": "https://businessnorway.com/solutions/othalo-solves-africa-housing-shortage-with-plastic-waste",
+        "notes": "Norwegian government trade-promotion profile; states first houses were planned for Ethiopia, Ivory Coast, Kenya, Nigeria, Rwanda and Uganda."
+      },
+      {
+        "source": "Othalo — Business Directory listing",
+        "platform": "D&B (Dun & Bradstreet)",
+        "link": "https://www.dnb.com/business-directory/company-profiles.othalo_as.6c6b5dd2e5941a360b95cd0a0a2a3bd9.html",
+        "notes": "Corporate registry-style listing for Othalo AS."
+      },
+      {
+        "source": "Othalo (Norway) — funding profile",
+        "platform": "RecyclingStartups.pro",
+        "link": "https://www.recyclingstartups.pro/startup/othalo/",
+        "notes": "Lists Othalo's funding at $200K."
+      }
+    ]
   }
 }
