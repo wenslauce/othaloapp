@@ -14,6 +14,7 @@ import Corporations from '@/pages/solutions/Corporations';
 import Contact from '@/pages/Contact';
 import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import TermsOfService from '@/pages/TermsOfService';
+import MediaCoverage from '@/pages/MediaCoverage';
 import PageNotFound from '@/lib/PageNotFound';
 
 const supportedLocales = [
@@ -63,6 +64,7 @@ export default function LocaleWrapper() {
         <Route path="contact" element={<Contact />} />
         <Route path="privacy" element={<PrivacyPolicy />} />
         <Route path="terms" element={<TermsOfService />} />
+        <Route path="press" element={<MediaCoverage />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
